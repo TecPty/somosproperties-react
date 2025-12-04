@@ -68,8 +68,10 @@
       "image": "/images/properties/central-plaza/hero.png",
       "images": [
         "/images/properties/central-plaza/hero.png",
-        "/images/properties/central-plaza/hero-1080.png"
+        "/images/properties/central-plaza/hero-1080.png",
+        "/images/properties/central-plaza/hero-1600.png"
       ],
+      "planos": [],
       "description": "Central Plaza consta de dos niveles con un total de 42 locales comerciales con diferentes metrajes ideales para su proyecto. Restaurantes, Zona de juegos, Gimnasio, Bancos, Ferretería, Salón de belleza, Envíos y más. Cuenta con 70 estacionamientos y acceso entre Av. Juan Demóstenes Arosemena y Av. Omar Torrijos.",
       "amenities": [
         "CCTV",
