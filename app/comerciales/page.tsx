@@ -20,7 +20,7 @@ function ComercialesContent() {
       <main className="py-12 bg-[#fafafa] min-h-screen">
         <div className="container-custom">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold text-[#222222] mb-2">Locales Comerciales en Panamá</h1>
+            <h1 className="text-4xl font-bold text-[#222222] mb-2">Propiedades Comerciales en Panamá</h1>
             <p className="text-lg text-[#999999]">{totalProperties} propiedades encontradas</p>
           </div>
 
