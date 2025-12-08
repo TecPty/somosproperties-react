@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect } from "react"
 import type { PropertyFilters } from "@/lib/types"
 import { useSearchParams, useRouter, usePathname } from "next/navigation"
 
@@ -52,42 +52,10 @@ export function useFilters(initialFilters?: PropertyFilters) {
     return Object.keys(urlFilters).length > 0 ? urlFilters : initialFilters || {}
   })
 
-  const updateFilters = useCallback(
-    (newFilters: Partial<PropertyFilters>) => {
-      setFilters((prev) => {
-        const updated = { ...prev, ...newFilters }
-
-        // Update URL
-        const params = new URLSearchParams()
-        Object.entries(updated).forEach(([key, value]) => {
-          if (value !== undefined && value !== null && value !== "") {
-            if (Array.isArray(value)) {
-              if (value.length > 0) {
-                params.set(key, value.join(","))
-              }
-            } else {
-              params.set(key, String(value))
-            }
-          }
-        })
-
-        const queryString = params.toString()
-        router.replace(`${pathname}${queryString ? `?${queryString}` : ""}`, { scroll: false })
-
-        return updated
-      })
-    },
-    [router, pathname],
-  )
-
-  const clearFilters = useCallback(() => {
-    const clearedFilters = initialFilters || {}
-    setFilters(clearedFilters)
-
-    // Keep only initial filters in URL
-    const params = new URLSearchParams()
-    if (initialFilters) {
-      Object.entries(initialFilters).forEach(([key, value]) => {
+  const syncUrl = useCallback(
+    (payload: PropertyFilters) => {
+      const params = new URLSearchParams()
+      Object.entries(payload).forEach(([key, value]) => {
         if (value !== undefined && value !== null) {
           if (Array.isArray(value)) {
             if (value.length > 0) {
@@ -98,11 +66,25 @@ export function useFilters(initialFilters?: PropertyFilters) {
           }
         }
       })
-    }
+      const queryString = params.toString()
+      router.replace(`${pathname}${queryString ? `?${queryString}` : ""}`, { scroll: false })
+    },
+    [router, pathname],
+  )
 
-    const queryString = params.toString()
-    router.replace(`${pathname}${queryString ? `?${queryString}` : ""}`, { scroll: false })
-  }, [router, pathname, initialFilters])
+  const updateFilters = useCallback((newFilters: Partial<PropertyFilters>) => {
+    setFilters((prev) => ({ ...prev, ...newFilters }))
+  }, [])
+
+  const clearFilters = useCallback(() => {
+    const clearedFilters = initialFilters || {}
+    setFilters(clearedFilters)
+  }, [initialFilters])
+
+  // Sync URL when filters change
+  useEffect(() => {
+    syncUrl(filters)
+  }, [filters, syncUrl])
 
   return {
     filters,

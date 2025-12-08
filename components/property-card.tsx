@@ -87,17 +87,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       </Link>
 
       <div className="p-5">
-        <div className="mb-2">
-          <div className="text-[1.75rem] font-bold text-[#222222] mb-1">{displayPrice}</div>
-        </div>
-
         <Link href={`/propiedad/${property.id}`}>
-          <h3 className="text-xl font-semibold text-[#333333] mb-2 line-clamp-2 hover:text-[#3898EC] transition-colors">
+          <h3 className="text-xl font-semibold text-[#333333] mb-1 line-clamp-2 hover:text-[#3898EC] transition-colors">
             {property.title}
           </h3>
         </Link>
 
-        <div className="flex items-start gap-1 mb-4 text-[#999999] text-sm">
+        <div className="flex items-start gap-1 mb-3 text-[#999999] text-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 text-[#ea384c] flex-shrink-0"
@@ -114,6 +110,33 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
           <span className="line-clamp-1">{property.location}</span>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <span
+            className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm font-semibold ${
+              property.operation === "Venta" ? "bg-[#e8f7ee] text-[#1f8f45]" : "bg-[#e7f3ff] text-[#0c6fdc]"
+            }`}
+          >
+            {displayPrice}
+          </span>
+          <span className="inline-flex items-center gap-1 rounded-full bg-[#f4f6f9] px-3 py-1 text-sm font-medium text-[#555]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+              />
+            </svg>
+            {formatArea(property.area)}
+          </span>
         </div>
 
         {/* Features */}
@@ -156,23 +179,6 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               <span>{property.bathrooms}</span>
             </div>
           )}
-          <div className="flex items-center gap-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
-              />
-            </svg>
-            <span>{formatArea(property.area)}</span>
-          </div>
         </div>
 
         <Link

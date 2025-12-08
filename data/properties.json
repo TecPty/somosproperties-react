@@ -50,6 +50,182 @@
       "status": "available"
     },
     {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 3",
+      "pricePerMonth": 711.17,
+      "area": 132.93,
+      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
+      ],
+      "description": "Local 3 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 132.93 m2 en una sola planta. Alquiler $711.17/mes, deposito $664.65, mantenimiento $265.86. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 136
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 4",
+      "pricePerMonth": 721.71,
+      "area": 134.9,
+      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
+      ],
+      "description": "Local 4 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 134.9 m2 en una sola planta. Alquiler $721.71/mes, deposito $674.50, mantenimiento $269.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 137
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 9",
+      "pricePerMonth": 1636.56,
+      "area": 305.9,
+      "image": "/images/properties/plaza-guayacanes/hero-3.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-3.webp",
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-2.webp"
+      ],
+      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m2 en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 2,
+      "parkingSpots": 4,
+      "id": 138
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 17",
+      "pricePerMonth": 595.77,
+      "area": 111.36,
+      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
+      ],
+      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.80, mantenimiento $222.72. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 139
+    },
+    {
       "id": 2,
       "title": "Central Plaza - Arraiján",
       "type": "Local",
@@ -107,7 +283,14 @@
         "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
       ],
       "description": "Espectacular casa de dos niveles con jardín, terraza y acabados premium. Ubicada en zona exclusiva y tranquila.",
-      "amenities": ["Jardín amplio", "Terraza", "Cuarto de servicio", "Cocina gourmet", "Oficina", "Piscina privada"],
+      "amenities": [
+        "Jardín amplio",
+        "Terraza",
+        "Cuarto de servicio",
+        "Cocina gourmet",
+        "Oficina",
+        "Piscina privada"
+      ],
       "featured": true,
       "status": "available"
     },
@@ -133,7 +316,13 @@
         "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=800"
       ],
       "description": "Apartamento completamente amueblado en el corazón de la ciudad. Cerca de centros comerciales y restaurantes.",
-      "amenities": ["Amueblado", "Gimnasio", "Piscina", "Seguridad 24/7", "Parqueo techado"],
+      "amenities": [
+        "Amueblado",
+        "Gimnasio",
+        "Piscina",
+        "Seguridad 24/7",
+        "Parqueo techado"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -226,7 +415,12 @@
         "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800"
       ],
       "description": "Excelente local comercial en esquina con gran visibilidad. Alto flujo peatonal y vehicular.",
-      "amenities": ["Dos frentes", "Amplio estacionamiento", "Sistema de alarma", "Planta eléctrica"],
+      "amenities": [
+        "Dos frentes",
+        "Amplio estacionamiento",
+        "Sistema de alarma",
+        "Planta eléctrica"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -312,7 +506,9 @@
       "area": 450,
       "builtYear": 2024,
       "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
-      "images": ["https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800"],
+      "images": [
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800"
+      ],
       "description": "Excelente terreno comercial en zona de alto desarrollo. Ideal para proyecto comercial o residencial.",
       "amenities": [
         "Zonificación comercial",
@@ -345,7 +541,12 @@
         "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800"
       ],
       "description": "Acogedor estudio amueblado perfecto para profesionales jóvenes. Ubicación céntrica.",
-      "amenities": ["Amueblado", "Internet incluido", "Seguridad", "Lavandería"],
+      "amenities": [
+        "Amueblado",
+        "Internet incluido",
+        "Seguridad",
+        "Lavandería"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -366,9 +567,17 @@
       "area": 400,
       "builtYear": 2017,
       "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800",
-      "images": ["https://images.unsplash.com/photo-1553413077-190dd305871c?w=800"],
+      "images": [
+        "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800"
+      ],
       "description": "Amplia bodega industrial con alta capacidad de carga. Excelente para logística y almacenamiento.",
-      "amenities": ["Rampa de carga", "Techos altos", "Sistema de seguridad", "Oficinas incluidas", "Amplio parqueo"],
+      "amenities": [
+        "Rampa de carga",
+        "Techos altos",
+        "Sistema de seguridad",
+        "Oficinas incluidas",
+        "Amplio parqueo"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -394,7 +603,13 @@
         "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800"
       ],
       "description": "Hermosa casa en exclusivo condominio familiar. Excelentes áreas comunes y seguridad.",
-      "amenities": ["Piscina comunitaria", "Casa club", "Parque infantil", "Senderos verdes", "Seguridad 24/7"],
+      "amenities": [
+        "Piscina comunitaria",
+        "Casa club",
+        "Parque infantil",
+        "Senderos verdes",
+        "Seguridad 24/7"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -420,7 +635,14 @@
         "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800"
       ],
       "description": "Elegante apartamento con impresionantes vistas al Océano Pacífico. Acabados de primera calidad.",
-      "amenities": ["Vista al mar", "Balcón amplio", "Gimnasio", "Spa", "Salón social", "Seguridad VIP"],
+      "amenities": [
+        "Vista al mar",
+        "Balcón amplio",
+        "Gimnasio",
+        "Spa",
+        "Salón social",
+        "Seguridad VIP"
+      ],
       "featured": true,
       "status": "available"
     },
@@ -441,9 +663,16 @@
       "area": 65,
       "builtYear": 2021,
       "image": "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800",
-      "images": ["https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800"],
+      "images": [
+        "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800"
+      ],
       "description": "Excelente local en el centro comercial más grande de Latinoamérica. Alto flujo de clientes.",
-      "amenities": ["Ubicación premium", "Alto tráfico", "Aire acondicionado", "Seguridad del mall"],
+      "amenities": [
+        "Ubicación premium",
+        "Alto tráfico",
+        "Aire acondicionado",
+        "Seguridad del mall"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -469,7 +698,13 @@
         "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800"
       ],
       "description": "Hermosa casa de playa a pocos metros del mar. Ideal para vacaciones o residencia permanente.",
-      "amenities": ["Cerca de la playa", "Piscina privada", "Rancho BBQ", "Acceso a club de playa", "Seguridad"],
+      "amenities": [
+        "Cerca de la playa",
+        "Piscina privada",
+        "Rancho BBQ",
+        "Acceso a club de playa",
+        "Seguridad"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -490,9 +725,17 @@
       "area": 75,
       "builtYear": 2015,
       "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800",
-      "images": ["https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800"],
+      "images": [
+        "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800"
+      ],
       "description": "Excelente oportunidad de inversión en zona de alta demanda. Actualmente alquilado.",
-      "amenities": ["ROI del 7% anual", "Inquilino estable", "Gimnasio", "Piscina", "Parqueo"],
+      "amenities": [
+        "ROI del 7% anual",
+        "Inquilino estable",
+        "Gimnasio",
+        "Piscina",
+        "Parqueo"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -513,9 +756,16 @@
       "area": 80,
       "builtYear": 2019,
       "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800",
-      "images": ["https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800"],
+      "images": [
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800"
+      ],
       "description": "Moderna oficina lista para ocupar. Excelente ubicación cerca de centros financieros.",
-      "amenities": ["Recepción", "Internet de alta velocidad", "Aire acondicionado", "Estacionamiento"],
+      "amenities": [
+        "Recepción",
+        "Internet de alta velocidad",
+        "Aire acondicionado",
+        "Estacionamiento"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -536,9 +786,17 @@
       "area": 195,
       "builtYear": 2017,
       "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
-      "images": ["https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800"],
+      "images": [
+        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800"
+      ],
       "description": "Encantadora casa con amplio jardín y ambiente tranquilo. Perfecta para familias con mascotas.",
-      "amenities": ["Jardín amplio", "Pet friendly", "Terraza", "Cuarto de servicio", "Seguridad"],
+      "amenities": [
+        "Jardín amplio",
+        "Pet friendly",
+        "Terraza",
+        "Cuarto de servicio",
+        "Seguridad"
+      ],
       "featured": false,
       "status": "available"
     },
@@ -564,170 +822,12 @@
         "https://images.unsplash.com/photo-1502672260066-6bc35f0bc36a?w=800"
       ],
       "description": "Hermoso loft en edificio histórico restaurado. Diseño industrial chic en zona bohemia.",
-      "amenities": ["Techos altos", "Diseño único", "Zona turística", "Restaurantes cercanos", "Vida nocturna"],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 21,
-      "title": "Signature Point - Locales Comerciales en Venta",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Venta",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Vía Brasil, San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 50,
-      "builtYear": 2025,
-      "image": "/images/properties/signature-point/hero.jpg",
-      "images": [
-        "/images/properties/signature-point/hero.jpg"
-      ],
-      "planos": [],
-      "description": "Signature Point es un innovador proyecto comercial ubicado estratégicamente en Vía Brasil, San Francisco, una de las arterias comerciales más importantes de Ciudad de Panamá.\n\nOfrecemos locales comerciales con metrajes variados desde 50m², ideales para diversos tipos de negocios: restaurantes, tiendas, cafeterías, farmacias, boutiques y más.\n\nUbicación Premium:\n• Vía Brasil - Alto flujo vehicular y peatonal\n• San Francisco - Zona comercial consolidada\n• Cerca de bancos, centros comerciales y corporativos\n• Excelente acceso y visibilidad\n\nInversión inteligente en una ubicación de alta plusvalía con retorno garantizado.",
       "amenities": [
-        "Ubicación privilegiada en Vía Brasil",
-        "Alto flujo vehicular y peatonal",
-        "Estacionamientos disponibles",
-        "Seguridad 24/7",
-        "Sistema de CCTV",
-        "Instalaciones modernas",
-        "Acabados de primera calidad",
-        "Áreas comunes climatizadas",
-        "Elevadores de alta velocidad",
-        "Planta eléctrica de respaldo",
-        "Sistema contra incendios",
-        "Acceso controlado",
-        "Zona de carga y descarga",
-        "Cerca de paradas de transporte público"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 22,
-      "title": "Signature Point - Oficinas en Venta",
-      "type": "Oficina",
-      "category": "Comercial",
-      "operation": "Venta",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Vía Brasil, San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 45,
-      "builtYear": 2025,
-      "image": "/images/properties/signature-point/hero.jpg",
-      "images": [
-        "/images/properties/signature-point/hero.jpg"
-      ],
-      "planos": [],
-      "description": "Signature Point ofrece oficinas corporativas diseñadas para profesionales y empresas que buscan un espacio de trabajo moderno en el corazón del distrito financiero y comercial de San Francisco.\n\nOficinas con metrajes desde 45m², perfectas para:\n• Consultorios médicos y odontológicos\n• Bufetes de abogados\n• Oficinas corporativas\n• Estudios de arquitectura y diseño\n• Agencias de marketing y publicidad\n• Empresas de tecnología\n\nVentajas Competitivas:\n• Ubicación estratégica en Vía Brasil\n• Diseño arquitectónico contemporáneo\n• Espacios funcionales y versátiles\n• Tecnología de punta incorporada\n\nInvierta en su futuro profesional con una oficina en Signature Point.",
-      "amenities": [
-        "Ubicación premium en Vía Brasil",
-        "Lobby ejecutivo de doble altura",
-        "Recepción corporativa",
-        "Salas de reuniones compartidas",
-        "Área de coworking",
-        "Estacionamientos asignados",
-        "Seguridad 24/7",
-        "CCTV en todas las áreas",
-        "Control de acceso biométrico",
-        "Aire acondicionado central",
-        "Internet de fibra óptica",
-        "Elevadores inteligentes",
-        "Planta eléctrica",
-        "Zona de cafetería"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 23,
-      "title": "Signature Point - Locales Comerciales en Alquiler",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 1200,
-      "location": "Vía Brasil, San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 50,
-      "builtYear": 2025,
-      "image": "/images/properties/signature-point/hero.jpg",
-      "images": [
-        "/images/properties/signature-point/hero.jpg"
-      ],
-      "planos": [],
-      "description": "Alquile su local comercial en Signature Point, el proyecto más moderno de Vía Brasil, San Francisco. Ideal para emprendedores y empresas establecidas que buscan visibilidad y crecimiento.\n\nLocales disponibles desde 50m² con diferentes distribuciones para adaptarse a su modelo de negocio.\n\nPerfecto para:\n• Retail y tiendas especializadas\n• Restaurantes y cafeterías\n• Farmacias y ópticas\n• Centros de estética y spa\n• Bancos y servicios financieros\n• Gimnasios y centros de bienestar\n\nFlexibilidad de contratos y opciones de personalización del espacio según sus necesidades.\n\nHaga crecer su negocio en la ubicación correcta.",
-      "amenities": [
-        "Ubicación estratégica Vía Brasil",
-        "Máxima visibilidad comercial",
-        "Alto tráfico de clientes potenciales",
-        "Estacionamientos disponibles",
-        "Seguridad permanente 24/7",
-        "Mantenimiento incluido",
-        "Áreas comunes climatizadas",
-        "Sistema contra incendios",
-        "CCTV perimetral",
-        "Servicios básicos disponibles",
-        "Flexibilidad en diseño interior",
-        "Acceso a planta eléctrica",
-        "Zona de carga",
-        "Transporte público cercano"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 24,
-      "title": "Signature Point - Oficinas en Alquiler",
-      "type": "Oficina",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 800,
-      "location": "Vía Brasil, San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 45,
-      "builtYear": 2025,
-      "image": "/images/properties/signature-point/hero.jpg",
-      "images": [
-        "/images/properties/signature-point/hero.jpg"
-      ],
-      "planos": [],
-      "description": "Arriende su oficina ejecutiva en Signature Point y proyecte la imagen profesional que su empresa merece. Espacios corporativos listos para ocupar en el prestigioso sector de San Francisco.\n\nOficinas desde 45m² con acabados premium y diseño moderno.\n\nIdeal para:\n• Profesionales independientes\n• Startups en crecimiento\n• Consultorios médicos y dentales\n• Despachos legales\n• Empresas de consultoría\n• Agencias creativas\n\nBeneficios Exclusivos:\n• Contratos flexibles\n• Servicios incluidos (seguridad, mantenimiento, limpieza)\n• Espacios compartidos disponibles\n• Ambiente profesional y productivo\n\nDé el siguiente paso en el crecimiento de su negocio.",
-      "amenities": [
-        "Ubicación corporativa premium",
-        "Lobby ejecutivo recepcionado",
-        "Salas de juntas disponibles",
-        "Área de coworking opcional",
-        "Business center",
-        "Estacionamiento asignado",
-        "Seguridad y recepción 24/7",
-        "Internet de alta velocidad incluido",
-        "Aire acondicionado individual",
-        "Ventanas panorámicas",
-        "Elevadores rápidos",
-        "Planta eléctrica de respaldo",
-        "Kitchenette compartido",
-        "Cerca de restaurantes y bancos"
+        "Techos altos",
+        "Diseño único",
+        "Zona turística",
+        "Restaurantes cercanos",
+        "Vida nocturna"
       ],
       "featured": false,
       "status": "available"
@@ -997,9 +1097,11 @@
       "parkingSpots": 0,
       "area": 80,
       "builtYear": 2024,
-      "image": "/images/properties/plaza-los-guayacanes/hero.jpg",
+      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
       "images": [
-        "/images/properties/plaza-los-guayacanes/hero.jpg"
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
       ],
       "planos": [],
       "description": "Plaza Los Guayacanes es el nuevo centro comercial de La Chorrera, diseñado para ser el punto de encuentro comercial más importante de Panamá Oeste.\n\n42 locales comerciales distribuidos en 2 niveles, con metrajes variados para adaptarse a diferentes tipos de negocios y emprendimientos.\n\nCaracterísticas del Proyecto:\n• Ubicación estratégica en La Chorrera\n• Alto flujo vehicular y peatonal\n• Diseño moderno y funcional\n• Amplio estacionamiento para clientes\n• Fácil acceso desde la Panamericana\n\nLocales Disponibles:\n• Desde 40m² para tiendas pequeñas\n• Desde 80m² para comercios medianos\n• Desde 150m² para supermercados o gimnasios\n• Locales esquineros con doble vitrina\n\nPerfecto para:\n• Restaurantes y cafeterías\n• Tiendas de ropa y accesorios\n• Farmacias y ópticas\n• Bancos y financieras\n• Supermercados y minisupers\n• Gimnasios y centros de bienestar\n• Oficinas comerciales\n\nInvierta en el crecimiento de Panamá Oeste.",
@@ -1021,50 +1123,6 @@
         "Facilidades para personas con discapacidad",
         "Cercanía a transporte público",
         "Alto potencial de crecimiento"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 32,
-      "title": "Balboa Boutiques - Balboa, Ancón",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Venta",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Balboa, Ancón, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Ancón",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 60,
-      "builtYear": 2024,
-      "image": "/images/properties/balboa-boutiques/hero.jpg",
-      "images": [
-        "/images/properties/balboa-boutiques/hero.jpg"
-      ],
-      "planos": [],
-      "description": "Balboa Boutiques es un exclusivo desarrollo comercial ubicado en la histórica zona de Balboa, Ancón, combinando modernidad con el encanto de una de las áreas más emblemáticas de Ciudad de Panamá.\n\nLocales comerciales boutique diseñados para negocios selectos que buscan un ambiente único, con clientela de alto nivel y flujo turístico constante.\n\nCaracterísticas del Proyecto:\n• Ubicación en zona histórica de Balboa\n• Diseño arquitectónico moderno y elegante\n• Ambiente turístico y cultural\n• Clientela diversa y de poder adquisitivo\n• Vista a áreas verdes y monumentos históricos\n\nLocales Disponibles:\n• Desde 40m² para boutiques especializadas\n• Desde 60m² para tiendas y cafeterías\n• Desde 100m² para restaurantes y galerías\n• Locales con vitrinas panorámicas\n\nPerfecto para:\n• Boutiques de moda y diseño\n• Cafeterías y bistros gourmet\n• Galerías de arte y artesanías\n• Joyerías y tiendas de lujo\n• Spas y centros de bienestar\n• Oficinas de servicios profesionales\n• Tiendas de souvenirs y regalos\n\nInvierta en una ubicación única con historia y proyección.",
-      "amenities": [
-        "Ubicación histórica en Balboa",
-        "Zona turística de alto tráfico",
-        "Diseño arquitectónico contemporáneo",
-        "Estacionamientos disponibles",
-        "Seguridad 24/7",
-        "Sistema de vigilancia CCTV",
-        "Acceso controlado",
-        "Áreas verdes circundantes",
-        "Iluminación arquitectónica",
-        "Vitrinas panorámicas",
-        "Aires acondicionados individuales",
-        "Instalaciones eléctricas modernas",
-        "Sistema contra incendios",
-        "Baños en áreas comunes",
-        "Cercanía a la Calzada de Amador",
-        "Vista a monumentos históricos",
-        "Ambiente cultural y artístico"
       ],
       "featured": true,
       "status": "available"
@@ -1471,6 +1529,424 @@
       ],
       "featured": true,
       "status": "available"
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Balboa, Ancon, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Ancon",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion historica en Balboa",
+        "Zona turistica de alto trafico",
+        "Diseno arquitectonico contemporaneo",
+        "Estacionamientos disponibles",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Vitrinas panoramicas",
+        "Aires acondicionados individuales",
+        "Sistema contra incendios",
+        "Banos en areas comunes",
+        "Cercania a la Calzada de Amador",
+        "Ambiente cultural y artistico"
+      ],
+      "planos": [
+        "/images/properties/balboa-boutique/planos/plano-nivel-100.webp",
+        "/images/properties/balboa-boutique/planos/plano-nivel-200.webp"
+      ],
+      "title": "Balboa Boutiques - Local A-104",
+      "pricePerMonth": 3700,
+      "area": 151,
+      "image": "/images/properties/balboa-boutique/hero/hero-1.webp",
+      "images": [
+        "/images/properties/balboa-boutique/hero/hero-1.webp",
+        "/images/properties/balboa-boutique/hero/hero-2.webp",
+        "/images/properties/balboa-boutique/amenities/terraza-exterior.webp",
+        "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-1.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-terraza.webp"
+      ],
+      "description": "Local A-104 en Balboa Boutiques, mezzanine 100. Area cerrada de 84 m2 mas terraza de 67 m2 (total 151 m2), ideal para restaurante boutique, cafe o retail con outdoor seating. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 32
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Balboa, Ancon, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Ancon",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion historica en Balboa",
+        "Zona turistica de alto trafico",
+        "Diseno arquitectonico contemporaneo",
+        "Estacionamientos disponibles",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Vitrinas panoramicas",
+        "Aires acondicionados individuales",
+        "Sistema contra incendios",
+        "Banos en areas comunes",
+        "Cercania a la Calzada de Amador",
+        "Ambiente cultural y artistico"
+      ],
+      "planos": [
+        "/images/properties/balboa-boutique/planos/plano-nivel-100.webp",
+        "/images/properties/balboa-boutique/planos/plano-nivel-200.webp"
+      ],
+      "title": "Balboa Boutiques - Local A-108",
+      "pricePerMonth": 3200,
+      "area": 111,
+      "image": "/images/properties/balboa-boutique/hero/hero-2.webp",
+      "images": [
+        "/images/properties/balboa-boutique/hero/hero-2.webp",
+        "/images/properties/balboa-boutique/hero/hero-3.webp",
+        "/images/properties/balboa-boutique/amenities/terraza-exterior.webp",
+        "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-terraza.webp"
+      ],
+      "description": "Local A-108 en Balboa Boutiques, mezzanine 100. Area cerrada de 74 m2 mas terraza de 37 m2 (total 111 m2). Ideal para cafe o retail con terraza. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 132
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Balboa, Ancon, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Ancon",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion historica en Balboa",
+        "Zona turistica de alto trafico",
+        "Diseno arquitectonico contemporaneo",
+        "Estacionamientos disponibles",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Vitrinas panoramicas",
+        "Aires acondicionados individuales",
+        "Sistema contra incendios",
+        "Banos en areas comunes",
+        "Cercania a la Calzada de Amador",
+        "Ambiente cultural y artistico"
+      ],
+      "planos": [
+        "/images/properties/balboa-boutique/planos/plano-nivel-100.webp",
+        "/images/properties/balboa-boutique/planos/plano-nivel-200.webp"
+      ],
+      "title": "Balboa Boutiques - Local A-109",
+      "pricePerMonth": 6360,
+      "area": 318,
+      "image": "/images/properties/balboa-boutique/hero/hero-3.webp",
+      "images": [
+        "/images/properties/balboa-boutique/hero/hero-3.webp",
+        "/images/properties/balboa-boutique/hero/hero-4.webp",
+        "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-1.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-3.webp"
+      ],
+      "description": "Local A-109 en Balboa Boutiques, mezzanine 100. Area cerrada de 318 m2; ideal para restaurante grande, gimnasio boutique o showroom. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
+      "bathrooms": 2,
+      "parkingSpots": 3,
+      "id": 133
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Balboa, Ancon, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Ancon",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion historica en Balboa",
+        "Zona turistica de alto trafico",
+        "Diseno arquitectonico contemporaneo",
+        "Estacionamientos disponibles",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Vitrinas panoramicas",
+        "Aires acondicionados individuales",
+        "Sistema contra incendios",
+        "Banos en areas comunes",
+        "Cercania a la Calzada de Amador",
+        "Ambiente cultural y artistico"
+      ],
+      "planos": [
+        "/images/properties/balboa-boutique/planos/plano-nivel-100.webp",
+        "/images/properties/balboa-boutique/planos/plano-nivel-200.webp"
+      ],
+      "title": "Balboa Boutiques - Local B-102/202",
+      "pricePerMonth": 9000,
+      "area": 339,
+      "image": "/images/properties/balboa-boutique/hero/hero-4.webp",
+      "images": [
+        "/images/properties/balboa-boutique/hero/hero-4.webp",
+        "/images/properties/balboa-boutique/hero/hero-2.webp",
+        "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
+        "/images/properties/balboa-boutique/amenities/terraza-exterior.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-terraza.webp"
+      ],
+      "description": "Local B-102/202 en Balboa Boutiques, mezzanine 100. Area cerrada de 339 m2; perfecto para anchor tenant, gimnasio premium o restaurante insignia. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
+      "bathrooms": 2,
+      "parkingSpots": 4,
+      "id": 134
+    },
+    {
+      "id": 135,
+      "title": "Boulevard Plaza Costa Verde - Ocupacion Completa",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "parkingSpots": 0,
+      "area": 0,
+      "builtYear": 2020,
+      "image": "/images/properties/boulevard-plaza/hero-1.webp",
+      "images": [
+        "/images/properties/boulevard-plaza/hero-1.webp",
+        "/images/properties/boulevard-plaza/hero-2.webp",
+        "/images/properties/boulevard-plaza/hero-3.webp",
+        "/images/properties/boulevard-plaza/hero-4.webp",
+        "/images/properties/boulevard-plaza/hero-5.webp",
+        "/images/properties/boulevard-plaza/hero-6.webp"
+      ],
+      "planos": [],
+      "description": "Boulevard Plaza en Costa Verde (La Chorrera) es un strip mall consolidado con ocupacion completa. Todos los locales estan actualmente alquilados; se muestra para evidenciar gestion y presencia en plazas 100% ocupadas.",
+      "amenities": [
+        "Strip mall consolidado en Costa Verde",
+        "Alto flujo vehicular y peatonal",
+        "Locales 100% alquilados",
+        "Estacionamientos frontales",
+        "Acceso desde via principal",
+        "Visibilidad comercial alta"
+      ],
+      "featured": false,
+      "status": "rented"
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp"
+      ],
+      "title": "Pacific Point - Torre 400 A1-43",
+      "area": 484,
+      "price": 1134415,
+      "id": 21,
+      "slug": "pacific-point-a1-43",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-a.webp"
+      ],
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp"
+      ],
+      "title": "Pacific Point - Torre 400 B1-42",
+      "area": 262.8,
+      "price": 937125,
+      "id": 22,
+      "slug": "pacific-point-b1-42",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b1.webp"
+      ],
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp"
+      ],
+      "title": "Pacific Point - Torre 400 B Tipico 29",
+      "area": 356,
+      "price": 1227775,
+      "id": 23,
+      "slug": "pacific-point-b-tipico-29",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
+      ],
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp"
+      ],
+      "title": "Pacific Point - Torre 400 C1-39",
+      "area": 246.4,
+      "price": 881250,
+      "id": 24,
+      "slug": "pacific-point-c1-39",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
+      ],
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ]
     }
   ]
 }
