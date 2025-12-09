@@ -372,515 +372,6 @@
       "status": "available"
     },
     {
-      "id": 3,
-      "title": "Casa de Lujo en Clayton",
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 750000,
-      "pricePerMonth": null,
-      "location": "Clayton, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Clayton",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "parkingSpots": 3,
-      "area": 380,
-      "builtYear": 2021,
-      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
-      ],
-      "description": "Espectacular casa de dos niveles con jardín, terraza y acabados premium. Ubicada en zona exclusiva y tranquila.",
-      "amenities": [
-        "Jardín amplio",
-        "Terraza",
-        "Cuarto de servicio",
-        "Cocina gourmet",
-        "Oficina",
-        "Piscina privada"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 4,
-      "title": "Apartamento Ejecutivo en Bella Vista",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 1800,
-      "location": "Bella Vista, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Bella Vista",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "parkingSpots": 1,
-      "area": 95,
-      "builtYear": 2019,
-      "image": "https://images.unsplash.com/photo-1502672260066-6bc35f0bc36a?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1502672260066-6bc35f0bc36a?w=800",
-        "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=800"
-      ],
-      "description": "Apartamento completamente amueblado en el corazón de la ciudad. Cerca de centros comerciales y restaurantes.",
-      "amenities": [
-        "Amueblado",
-        "Gimnasio",
-        "Piscina",
-        "Seguridad 24/7",
-        "Parqueo techado"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 5,
-      "title": "Oficina Corporativa en San Francisco",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Venta",
-      "price": 280000,
-      "pricePerMonth": null,
-      "location": "San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 2,
-      "parkingSpots": 3,
-      "area": 150,
-      "builtYear": 2020,
-      "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800",
-        "https://images.unsplash.com/photo-1497366412874-3415097a27e7?w=800"
-      ],
-      "description": "Moderna oficina en edificio corporativo clase A. Ideal para empresas en crecimiento.",
-      "amenities": [
-        "Recepción compartida",
-        "Sala de juntas",
-        "Internet de alta velocidad",
-        "Aire acondicionado central",
-        "Estacionamientos"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 6,
-      "title": "Penthouse Exclusivo en Punta Pacífica",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 800000,
-      "pricePerMonth": null,
-      "location": "Punta Pacífica, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Punta Pacífica",
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "parkingSpots": 3,
-      "area": 320,
-      "builtYear": 2023,
-      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-        "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800"
-      ],
-      "description": "Impresionante penthouse con vistas panorámicas de 360 grados. Acabados de ultra lujo y diseño arquitectónico excepcional.",
-      "amenities": [
-        "Jacuzzi privado",
-        "Terraza amplia",
-        "Smart Home",
-        "Gimnasio privado",
-        "Piscina en terraza",
-        "Bodega de vinos",
-        "Seguridad VIP"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 7,
-      "title": "Local Comercial Esquinero en Bella Vista",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 3200,
-      "location": "Bella Vista, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Bella Vista",
-      "bedrooms": 0,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "area": 180,
-      "builtYear": 2018,
-      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
-        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800"
-      ],
-      "description": "Excelente local comercial en esquina con gran visibilidad. Alto flujo peatonal y vehicular.",
-      "amenities": [
-        "Dos frentes",
-        "Amplio estacionamiento",
-        "Sistema de alarma",
-        "Planta eléctrica"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 8,
-      "title": "Apartamento Familiar en Costa del Este",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 420000,
-      "pricePerMonth": null,
-      "location": "Costa del Este, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Costa del Este",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "area": 145,
-      "builtYear": 2021,
-      "image": "https://images.unsplash.com/photo-1565402170291-8491f14678db?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1565402170291-8491f14678db?w=800",
-        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
-      ],
-      "description": "Hermoso apartamento con balcón y vista al parque. Excelente distribución y luminosidad.",
-      "amenities": [
-        "Balcón amplio",
-        "Walk-in closet",
-        "Piscina",
-        "Cancha deportiva",
-        "Parque infantil",
-        "Seguridad 24/7"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 9,
-      "title": "Casa Moderna en Clayton",
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 3500,
-      "location": "Clayton, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Clayton",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "area": 280,
-      "builtYear": 2020,
-      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800",
-        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800"
-      ],
-      "description": "Casa completamente amueblada en condominio cerrado. Diseño contemporáneo y acabados premium.",
-      "amenities": [
-        "Completamente amueblada",
-        "Jardín privado",
-        "Sistema de seguridad",
-        "Casa club",
-        "Piscina compartida"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 10,
-      "title": "Terreno Comercial en San Francisco",
-      "type": "Terreno",
-      "category": "Comercial",
-      "operation": "Venta",
-      "price": 550000,
-      "pricePerMonth": null,
-      "location": "San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 0,
-      "parkingSpots": 0,
-      "area": 450,
-      "builtYear": 2024,
-      "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800"
-      ],
-      "description": "Excelente terreno comercial en zona de alto desarrollo. Ideal para proyecto comercial o residencial.",
-      "amenities": [
-        "Zonificación comercial",
-        "Acceso a vías principales",
-        "Servicios públicos disponibles",
-        "Alta plusvalía"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 11,
-      "title": "Apartamento Estudio en Bella Vista",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 950,
-      "location": "Bella Vista, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Bella Vista",
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 45,
-      "builtYear": 2019,
-      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-        "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800"
-      ],
-      "description": "Acogedor estudio amueblado perfecto para profesionales jóvenes. Ubicación céntrica.",
-      "amenities": [
-        "Amueblado",
-        "Internet incluido",
-        "Seguridad",
-        "Lavandería"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 12,
-      "title": "Bodega Industrial en Tocumen",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 2800,
-      "location": "Tocumen, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Tocumen",
-      "bedrooms": 0,
-      "bathrooms": 2,
-      "parkingSpots": 10,
-      "area": 400,
-      "builtYear": 2017,
-      "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800"
-      ],
-      "description": "Amplia bodega industrial con alta capacidad de carga. Excelente para logística y almacenamiento.",
-      "amenities": [
-        "Rampa de carga",
-        "Techos altos",
-        "Sistema de seguridad",
-        "Oficinas incluidas",
-        "Amplio parqueo"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 13,
-      "title": "Casa en Condominio en Clayton",
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 480000,
-      "pricePerMonth": null,
-      "location": "Clayton, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Clayton",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "parkingSpots": 2,
-      "area": 210,
-      "builtYear": 2019,
-      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800",
-        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800"
-      ],
-      "description": "Hermosa casa en exclusivo condominio familiar. Excelentes áreas comunes y seguridad.",
-      "amenities": [
-        "Piscina comunitaria",
-        "Casa club",
-        "Parque infantil",
-        "Senderos verdes",
-        "Seguridad 24/7"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 14,
-      "title": "Apartamento Vista al Mar en Punta Pacífica",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 620000,
-      "pricePerMonth": null,
-      "location": "Punta Pacífica, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Punta Pacífica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "area": 185,
-      "builtYear": 2022,
-      "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800"
-      ],
-      "description": "Elegante apartamento con impresionantes vistas al Océano Pacífico. Acabados de primera calidad.",
-      "amenities": [
-        "Vista al mar",
-        "Balcón amplio",
-        "Gimnasio",
-        "Spa",
-        "Salón social",
-        "Seguridad VIP"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 15,
-      "title": "Local Comercial en Albrook Mall",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 3500,
-      "location": "Albrook, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Albrook",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 65,
-      "builtYear": 2021,
-      "image": "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800"
-      ],
-      "description": "Excelente local en el centro comercial más grande de Latinoamérica. Alto flujo de clientes.",
-      "amenities": [
-        "Ubicación premium",
-        "Alto tráfico",
-        "Aire acondicionado",
-        "Seguridad del mall"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 16,
-      "title": "Casa de Playa en Coronado",
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 380000,
-      "pricePerMonth": null,
-      "location": "Coronado, Panamá Oeste",
-      "city": "Panamá Oeste",
-      "district": "Coronado",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "parkingSpots": 2,
-      "area": 170,
-      "builtYear": 2018,
-      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800"
-      ],
-      "description": "Hermosa casa de playa a pocos metros del mar. Ideal para vacaciones o residencia permanente.",
-      "amenities": [
-        "Cerca de la playa",
-        "Piscina privada",
-        "Rancho BBQ",
-        "Acceso a club de playa",
-        "Seguridad"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 17,
-      "title": "Apartamento de Inversión en San Francisco",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 195000,
-      "pricePerMonth": null,
-      "location": "San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "parkingSpots": 1,
-      "area": 75,
-      "builtYear": 2015,
-      "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800"
-      ],
-      "description": "Excelente oportunidad de inversión en zona de alta demanda. Actualmente alquilado.",
-      "amenities": [
-        "ROI del 7% anual",
-        "Inquilino estable",
-        "Gimnasio",
-        "Piscina",
-        "Parqueo"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 18,
-      "title": "Oficina en Edificio Corporativo San Francisco",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 1500,
-      "location": "San Francisco, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 2,
-      "area": 80,
-      "builtYear": 2019,
-      "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800"
-      ],
-      "description": "Moderna oficina lista para ocupar. Excelente ubicación cerca de centros financieros.",
-      "amenities": [
-        "Recepción",
-        "Internet de alta velocidad",
-        "Aire acondicionado",
-        "Estacionamiento"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
       "id": 19,
       "title": "Casa Quinta con Jardín en Clayton",
       "type": "Casa",
@@ -1670,51 +1161,6 @@
       "status": "available"
     },
     {
-      "id": 41,
-      "title": "PH Boulevard Costa Verde - Apartamentos de Playa",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Playa Coronado, Panamá Oeste",
-      "city": "Panamá Oeste",
-      "district": "Chame",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "parkingSpots": 1,
-      "area": 100,
-      "builtYear": 2024,
-      "image": "/images/properties/ph-boulevard-costa-verde/hero.jpg",
-      "images": [
-        "/images/properties/ph-boulevard-costa-verde/hero.jpg"
-      ],
-      "planos": [],
-      "description": "PH Boulevard Costa Verde es un exclusivo desarrollo residencial ubicado en Playa Coronado, la playa más popular y desarrollada de Panamá, a solo 1 hora de Ciudad de Panamá.\n\nVida de Playa Todo el Año:\nDescubra el estilo de vida playero que siempre soñó. Boulevard Costa Verde combina la tranquilidad de la playa con todas las comodidades modernas y amenidades resort que su familia merece.\n\nApartamentos Disponibles:\n• 1 habitación desde 65m² - Precio consultar\n• 2 habitaciones desde 100m² - Precio consultar\n• 3 habitaciones desde 140m² - Precio consultar\n• Penthouses con vista al mar - Precio consultar\n\nCaracterísticas de los Apartamentos:\n• Diseño moderno y funcional\n• Cocinas modulares equipadas\n• Electrodomésticos incluidos\n• Pisos en porcelanato\n• Closets empotrados amplios\n• Balcones espaciosos\n• Aire acondicionado\n• Baños modernos con acabados de calidad\n• Iluminación LED\n• Ventanas de aluminio con vidrio\n\nUbicación Privilegiada - Playa Coronado:\n• 1 hora de Ciudad de Panamá por Carretera Panamericana\n• Acceso directo a la playa\n• Centro comercial Coronado a minutos\n• Supermercados, restaurantes y servicios\n• Escuelas internacionales cercanas\n• Hospital privado en la zona\n• Campo de golf Jack Nicklaus\n• Club de playa y deportes\n\nEstilo de Vida Playero:\nViva permanentemente en la playa o úselo como casa de fin de semana. Boulevard Costa Verde ofrece la flexibilidad que necesita con la seguridad y comodidad que desea.\n\nInversión Inteligente:\nPlaya Coronado es una de las zonas de mayor revalorización en Panamá, con constante demanda de alquiler vacacional y residencial.",
-      "amenities": [
-        "Piscina para adultos y niños",
-        "Área de BBQ y ranchos",
-        "Gimnasio equipado",
-        "Salón de eventos social",
-        "Parque infantil",
-        "Cancha multiuso",
-        "Áreas verdes y jardines",
-        "Seguridad 24/7 con garita",
-        "CCTV circuito cerrado",
-        "Portón eléctrico de acceso",
-        "Estacionamiento asignado",
-        "Estacionamiento de visitantes",
-        "Elevadores",
-        "Lobby con recepción",
-        "Generador eléctrico",
-        "Cisterna de agua",
-        "Recolección de basura",
-        "Acceso cercano a la playa"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
       "type": "Local",
       "category": "Comercial",
       "operation": "Alquiler",
@@ -1955,7 +1401,9 @@
       "bathrooms": 3,
       "parkingSpots": 2,
       "builtYear": 2025,
-      "planos": [],
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-a.webp"
+      ],
       "images": [
         "/images/properties/pacific-point/hero/hero-1.webp",
         "/images/properties/pacific-point/hero/hero-2.webp",
@@ -1982,9 +1430,6 @@
       "featured": true,
       "status": "available",
       "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-a.webp"
-      ],
       "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
@@ -2010,7 +1455,9 @@
       "bathrooms": 3,
       "parkingSpots": 2,
       "builtYear": 2025,
-      "planos": [],
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b1.webp"
+      ],
       "images": [
         "/images/properties/pacific-point/hero/hero-1.webp",
         "/images/properties/pacific-point/hero/hero-2.webp",
@@ -2037,9 +1484,6 @@
       "featured": true,
       "status": "available",
       "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-b1.webp"
-      ],
       "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
@@ -2065,7 +1509,9 @@
       "bathrooms": 3,
       "parkingSpots": 2,
       "builtYear": 2025,
-      "planos": [],
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
+      ],
       "images": [
         "/images/properties/pacific-point/hero/hero-1.webp",
         "/images/properties/pacific-point/hero/hero-2.webp",
@@ -2092,9 +1538,6 @@
       "featured": true,
       "status": "available",
       "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
-      ],
       "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
@@ -2120,7 +1563,9 @@
       "bathrooms": 3,
       "parkingSpots": 2,
       "builtYear": 2025,
-      "planos": [],
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
+      ],
       "images": [
         "/images/properties/pacific-point/hero/hero-1.webp",
         "/images/properties/pacific-point/hero/hero-2.webp",
@@ -2147,9 +1592,6 @@
       "featured": true,
       "status": "available",
       "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
-      ],
       "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
