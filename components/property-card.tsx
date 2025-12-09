@@ -16,6 +16,8 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
   const displayPrice =
     property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
+  const statusLabel = property.status === "sold" ? "Vendido" : property.status === "rented" ? "Alquilado" : null
+  const statusClass = property.status === "sold" ? "bg-[#d92d2d]" : property.status === "rented" ? "bg-[#4b5563]" : ""
 
   return (
     <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card">
@@ -59,6 +61,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               {property.operation.toUpperCase()}
             </span>
           </div>
+          {statusLabel && (
+            <span
+              className={`absolute bottom-3 left-3 z-10 rounded-md px-3 py-1 text-xs font-semibold uppercase text-white shadow-sm ${statusClass}`}
+            >
+              {statusLabel}
+            </span>
+          )}
 
           {/* Favorite Button */}
           <button
