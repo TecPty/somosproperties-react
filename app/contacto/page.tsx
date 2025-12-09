@@ -1,6 +1,6 @@
-import Navbar from "@/components/navbar"
+﻿import ContactForm from "@/components/contact-form"
 import Footer from "@/components/footer"
-import ContactForm from "@/components/contact-form"
+import Navbar from "@/components/navbar"
 
 export const metadata = {
   title: "Contacto - SOMOS Properties",
@@ -51,8 +51,7 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-[#222222] mb-1">Teléfono</h3>
-                      <p className="text-[#999999]">+507 6789-0123</p>
-                      <p className="text-[#999999]">+507 6789-0124</p>
+                      <p className="text-[#999999]">+507 6677-0577</p>
                     </div>
                   </div>
 
@@ -75,8 +74,12 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-[#222222] mb-1">Email</h3>
-                      <p className="text-[#999999]">info@somosproperties.com</p>
-                      <p className="text-[#999999]">ventas@somosproperties.com</p>
+                      <a
+                        href="mailto:ventas@somosproperties.com"
+                        className="text-[#3898EC] hover:underline"
+                      >
+                        ventas@somosproperties.com
+                      </a>
                     </div>
                   </div>
 
@@ -105,13 +108,14 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-[#222222] mb-1">Dirección</h3>
-                      <p className="text-[#999999]">
-                        Calle 50, Edificio Tower Financial Center
-                        <br />
-                        Piso 15, Oficina 1502
-                        <br />
-                        Ciudad de Panamá, Panamá
-                      </p>
+                      <a
+                        href="https://www.google.com/maps/place/Somos+Properties/@8.980677,-79.5244254,21z/data=!4m6!3m5!1s0x8faca9087f0a1529:0xdf82217316d458da!8m2!3d8.9806391!4d-79.5243692!16s%2Fg%2F11pz09nkcx?authuser=0&entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[#3898EC] hover:underline"
+                      >
+                        Somos Properties - Calle 50, Bella Vista, Ciudad de Panamá
+                      </a>
                     </div>
                   </div>
 
@@ -142,27 +146,17 @@ export default function ContactoPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
+              {/* Map */}
               <div className="bg-white p-8 rounded-lg shadow-card">
                 <h3 className="text-xl font-semibold text-[#222222] mb-4">Nuestra Ubicación</h3>
-                <div className="w-full h-64 bg-[#f3f3f3] rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-16 w-16 mx-auto mb-4 text-[#cccccc]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-                      />
-                    </svg>
-                    <p className="text-[#999999]">Mapa de ubicación</p>
-                  </div>
+                <div className="w-full overflow-hidden rounded-lg border border-[#eeeeee]">
+                  <iframe
+                    title="Mapa Somos Properties"
+                    src="https://www.google.com/maps?q=8.9806391,-79.5243692&hl=es&z=18&output=embed"
+                    className="w-full h-64"
+                    loading="lazy"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             </div>

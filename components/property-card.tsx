@@ -16,8 +16,9 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
   const displayPrice =
     property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
-  const statusLabel = property.status === "sold" ? "Vendido" : property.status === "rented" ? "Alquilado" : null
-  const statusClass = property.status === "sold" ? "bg-[#d92d2d]" : property.status === "rented" ? "bg-[#4b5563]" : ""
+  const statusLabel = property.status === "sold" ? "Vendido" : null
+  const statusClass = property.status === "sold" ? "bg-[#d92d2d]" : ""
+  const isRented = property.status === "rented"
 
   return (
     <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card">
@@ -61,6 +62,11 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               {property.operation.toUpperCase()}
             </span>
           </div>
+          {isRented ? (
+            <div className="absolute -bottom-4 -left-6 z-20 w-20 h-20 opacity-85">
+              <Image src="/images/badges/rented-stamp.png" alt="Alquilado" fill className="object-contain" />
+            </div>
+          ) : null}
           {statusLabel && (
             <span
               className={`absolute bottom-3 left-3 z-10 rounded-md px-3 py-1 text-xs font-semibold uppercase text-white shadow-sm ${statusClass}`}

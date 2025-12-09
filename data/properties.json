@@ -47,294 +47,13 @@
         "Estacionamiento para visitantes"
       ],
       "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 140,
-      "title": "Sunset Strip - Local 10",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 2000,
-      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 78,
-      "builtYear": 2024,
-      "image": "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
-      "images": [
-        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp",
-        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
-      ],
-      "planos": [
-        "/images/properties/sunset-strip/nivel-00.webp"
-      ],
-      "description": "Local 10 en Sunset Strip (Planta 00), 78 m2. Canon $2,000/mes + mantenimiento $1.50/m2. Ideal para retail o servicios en Vía Israel, con alto tráfico y visibilidad.",
-      "amenities": [
-        "Acceso directo desde estacionamiento",
-        "Pasillo comercial climatizado",
-        "Escaleras eléctricas y ascensor",
-        "Seguridad 24/7 y CCTV",
-        "Estacionamiento frontal para clientes"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 141,
-      "title": "Sunset Strip - Local 14",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 2300,
-      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 89,
-      "builtYear": 2024,
-      "image": "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
-      "images": [
-        "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
-        "/images/properties/sunset-strip/fachada-costado-estacionamiento.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp",
-        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp"
-      ],
-      "planos": [
-        "/images/properties/sunset-strip/nivel-00.webp"
-      ],
-      "description": "Local 14 en Sunset Strip (Planta 00), 89 m2. Canon $2,300/mes + mantenimiento $1.50/m2. Frente hacia Vía Israel con vitrina amplia, perfecto para restaurante rápido o tienda flagship.",
-      "amenities": [
-        "Fachada con alta visibilidad",
-        "Vitrina de piso a techo",
-        "Pasillo techado",
-        "Seguridad 24/7 y CCTV",
-        "Estacionamiento frontal para clientes"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "id": 142,
-      "title": "Sunset Strip - Local 109",
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 1800,
-      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 162,
-      "builtYear": 2024,
-      "image": "/images/properties/sunset-strip/avenida-bella-vista-skyline.webp",
-      "images": [
-        "/images/properties/sunset-strip/avenida-bella-vista-skyline.webp",
-        "/images/properties/sunset-strip/fachada-torre-bella-vista.webp",
-        "/images/properties/sunset-strip/acceso-principal-estacionamiento.webp",
-        "/images/properties/sunset-strip/terraza-externa-jardin.webp"
-      ],
-      "planos": [
-        "/images/properties/sunset-strip/nivel-100.webp"
-      ],
-      "description": "Local 109 en Sunset Strip (Nivel 100), 84 m2 interiores + 78 m2 de terraza (162 m2 totales). Canon $1,800/mes + mantenimiento $2.00/m2. Local con terraza al aire libre, ideal para restaurante o café.",
-      "amenities": [
-        "Terraza amplia para mesas exteriores",
-        "Acceso por escalera eléctrica y ascensor",
-        "Vista a Vía Israel y área verde",
-        "Seguridad 24/7 y CCTV",
-        "Estacionamiento para clientes"
-      ],
-      "featured": true,
-      "status": "available"
-    },
-    {
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
-      "district": "La Chorrera",
-      "builtYear": 2024,
-      "bedrooms": 0,
       "status": "available",
-      "featured": true,
-      "amenities": [
-        "Ubicacion estrategica en La Chorrera",
-        "Estacionamientos para clientes",
-        "Seguridad 24/7 y CCTV",
-        "Acceso controlado",
-        "Zona de carga y descarga",
-        "Pasillos amplios",
-        "Senalizacion moderna",
-        "Iluminacion LED",
-        "Sistema contra incendios",
-        "Planta electrica de respaldo",
-        "Cisterna e hidroneumatico",
-        "Banos en areas comunes",
-        "Accesibilidad PMR",
-        "Cercania a transporte publico",
-        "Alto potencial de crecimiento"
-      ],
-      "planos": [],
-      "title": "Plaza Los Guayacanes - Local 3",
-      "pricePerMonth": 711.17,
-      "area": 132.93,
-      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
-      "images": [
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
-      ],
-      "description": "Local 3 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 132.93 m2 en una sola planta. Alquiler $711.17/mes, deposito $664.65, mantenimiento $265.86. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
-      "bathrooms": 1,
-      "parkingSpots": 2,
-      "id": 136
-    },
-    {
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
-      "district": "La Chorrera",
-      "builtYear": 2024,
-      "bedrooms": 0,
-      "status": "available",
-      "featured": true,
-      "amenities": [
-        "Ubicacion estrategica en La Chorrera",
-        "Estacionamientos para clientes",
-        "Seguridad 24/7 y CCTV",
-        "Acceso controlado",
-        "Zona de carga y descarga",
-        "Pasillos amplios",
-        "Senalizacion moderna",
-        "Iluminacion LED",
-        "Sistema contra incendios",
-        "Planta electrica de respaldo",
-        "Cisterna e hidroneumatico",
-        "Banos en areas comunes",
-        "Accesibilidad PMR",
-        "Cercania a transporte publico",
-        "Alto potencial de crecimiento"
-      ],
-      "planos": [],
-      "title": "Plaza Los Guayacanes - Local 4",
-      "pricePerMonth": 721.71,
-      "area": 134.9,
-      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
-      "images": [
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
-      ],
-      "description": "Local 4 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 134.9 m2 en una sola planta. Alquiler $721.71/mes, deposito $674.50, mantenimiento $269.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
-      "bathrooms": 1,
-      "parkingSpots": 2,
-      "id": 137
-    },
-    {
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
-      "district": "La Chorrera",
-      "builtYear": 2024,
-      "bedrooms": 0,
-      "status": "available",
-      "featured": true,
-      "amenities": [
-        "Ubicacion estrategica en La Chorrera",
-        "Estacionamientos para clientes",
-        "Seguridad 24/7 y CCTV",
-        "Acceso controlado",
-        "Zona de carga y descarga",
-        "Pasillos amplios",
-        "Senalizacion moderna",
-        "Iluminacion LED",
-        "Sistema contra incendios",
-        "Planta electrica de respaldo",
-        "Cisterna e hidroneumatico",
-        "Banos en areas comunes",
-        "Accesibilidad PMR",
-        "Cercania a transporte publico",
-        "Alto potencial de crecimiento"
-      ],
-      "planos": [],
-      "title": "Plaza Los Guayacanes - Local 9",
-      "pricePerMonth": 1636.56,
-      "area": 305.9,
-      "image": "/images/properties/plaza-guayacanes/hero-3.webp",
-      "images": [
-        "/images/properties/plaza-guayacanes/hero-3.webp",
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-2.webp"
-      ],
-      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m2 en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
-      "bathrooms": 2,
-      "parkingSpots": 4,
-      "id": 138
-    },
-    {
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
-      "district": "La Chorrera",
-      "builtYear": 2024,
-      "bedrooms": 0,
-      "status": "available",
-      "featured": true,
-      "amenities": [
-        "Ubicacion estrategica en La Chorrera",
-        "Estacionamientos para clientes",
-        "Seguridad 24/7 y CCTV",
-        "Acceso controlado",
-        "Zona de carga y descarga",
-        "Pasillos amplios",
-        "Senalizacion moderna",
-        "Iluminacion LED",
-        "Sistema contra incendios",
-        "Planta electrica de respaldo",
-        "Cisterna e hidroneumatico",
-        "Banos en areas comunes",
-        "Accesibilidad PMR",
-        "Cercania a transporte publico",
-        "Alto potencial de crecimiento"
-      ],
-      "planos": [],
-      "title": "Plaza Los Guayacanes - Local 17",
-      "pricePerMonth": 595.77,
-      "area": 111.36,
-      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
-      "images": [
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
-      ],
-      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.80, mantenimiento $222.72. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
-      "bathrooms": 1,
-      "parkingSpots": 2,
-      "id": 139
+      "highlights": [
+        "Master plan Kings Park en Condado del Rey",
+        "Modelos con planos y maquetas 3D",
+        "Amenidades familiares y ?reas verdes",
+        "Acceso r?pido a servicios y comercios"
+      ]
     },
     {
       "id": 2,
@@ -369,70 +88,253 @@
         "Acceso a dos vías principales"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Local comercial en Central Plaza Arraij?n",
+        "Fachada visible con estacionamientos",
+        "Acceso directo desde v?a principal",
+        "Ideal retail o servicios"
+      ]
     },
     {
-      "id": 19,
-      "title": "Casa Quinta con Jardín en Clayton",
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 2200,
-      "location": "Clayton, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Clayton",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "parkingSpots": 2,
-      "area": 195,
-      "builtYear": 2017,
-      "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
-      "images": [
-        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800"
-      ],
-      "description": "Encantadora casa con amplio jardín y ambiente tranquilo. Perfecta para familias con mascotas.",
-      "amenities": [
-        "Jardín amplio",
-        "Pet friendly",
-        "Terraza",
-        "Cuarto de servicio",
-        "Seguridad"
-      ],
-      "featured": false,
-      "status": "available"
-    },
-    {
-      "id": 20,
-      "title": "Loft Moderno en Casco Viejo",
       "type": "Apartamento",
       "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 1600,
-      "location": "Casco Viejo, Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Casco Viejo",
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "area": 68,
-      "builtYear": 2021,
-      "image": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-a.webp"
+      ],
       "images": [
-        "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800",
-        "https://images.unsplash.com/photo-1502672260066-6bc35f0bc36a?w=800"
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp",
+        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
+        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
+        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
+        "/images/properties/pacific-point/amenities/lobby-1.webp",
+        "/images/properties/pacific-point/amenities/reception.webp",
+        "/images/properties/pacific-point/amenities/recamara-1.webp",
+        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
+        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
       ],
-      "description": "Hermoso loft en edificio histórico restaurado. Diseño industrial chic en zona bohemia.",
+      "title": "Pacific Point - Torre 400 A1-43",
+      "area": 484,
+      "price": 1134415,
+      "id": 21,
+      "slug": "pacific-point-a1-43",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
-        "Techos altos",
-        "Diseño único",
-        "Zona turística",
-        "Restaurantes cercanos",
-        "Vida nocturna"
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
       ],
-      "featured": false,
-      "status": "available"
+      "highlights": [
+        "Modelo A1-43: 484 m? frente al mar",
+        "Altura 3 m y acabados de lujo",
+        "Club con infinity pool, gym y canchas",
+        "Seguridad 24/7 en Punta Pac?fica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b1.webp"
+      ],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp",
+        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
+        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
+        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
+        "/images/properties/pacific-point/amenities/lobby-1.webp",
+        "/images/properties/pacific-point/amenities/reception.webp",
+        "/images/properties/pacific-point/amenities/recamara-1.webp",
+        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
+        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
+      ],
+      "title": "Pacific Point - Torre 400 B1-42",
+      "area": 262.8,
+      "price": 937125,
+      "id": 22,
+      "slug": "pacific-point-b1-42",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ],
+      "highlights": [
+        "Modelo B1-42: 262.8 m? vista al mar",
+        "Altura 3 m y acabados premium",
+        "Amenidades full: pool, gym, club y canchas",
+        "Seguridad 24/7 en Punta Pac?fica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
+      ],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp",
+        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
+        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
+        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
+        "/images/properties/pacific-point/amenities/lobby-1.webp",
+        "/images/properties/pacific-point/amenities/reception.webp",
+        "/images/properties/pacific-point/amenities/recamara-1.webp",
+        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
+        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
+      ],
+      "title": "Pacific Point - Torre 400 B Tipico 29",
+      "area": 356,
+      "price": 1227775,
+      "id": 23,
+      "slug": "pacific-point-b-tipico-29",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ],
+      "highlights": [
+        "Modelo B T?pico 29: 356 m?",
+        "Altura 3 m y vista al mar",
+        "Club con infinity pool y canchas",
+        "Seguridad 24/7 en Punta Pac?fica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
+      ],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp",
+        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
+        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
+        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
+        "/images/properties/pacific-point/amenities/lobby-1.webp",
+        "/images/properties/pacific-point/amenities/reception.webp",
+        "/images/properties/pacific-point/amenities/recamara-1.webp",
+        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
+        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
+      ],
+      "title": "Pacific Point - Torre 400 C1-39",
+      "area": 246.4,
+      "price": 881250,
+      "id": 24,
+      "slug": "pacific-point-c1-39",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ],
+      "highlights": [
+        "Modelo C1-39: 246.4 m? frente al mar",
+        "Altura 3 m y acabados premium",
+        "Amenidades full (pool, gym, club, canchas)",
+        "Seguridad 24/7 en Punta Pac?fica"
+      ]
     },
     {
       "id": 25,
@@ -473,7 +375,13 @@
         "Cercanía a servicios"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Proyecto de casas en Praderas de Arraij?n",
+        "Modelos alrededor de 130 m?",
+        "?reas verdes y ambiente familiar",
+        "Acceso r?pido hacia Ciudad de Panam?"
+      ]
     },
     {
       "id": 26,
@@ -514,7 +422,13 @@
         "Mantenimiento incluido"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Oficinas en Calle 50, distrito financiero",
+        "Unidades de 60 m? listas para ocupar",
+        "Inversi?n corporativa en zona prime",
+        "Seguridad y lobby empresarial"
+      ]
     },
     {
       "id": 27,
@@ -555,7 +469,13 @@
         "Zona de restaurantes"
       ],
       "featured": false,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Alquiler de oficinas 60 m? en Calle 50",
+        "Canon desde $1,000/mes",
+        "Ubicaci?n prime en distrito financiero",
+        "Seguridad y lobby empresarial"
+      ]
     },
     {
       "id": 28,
@@ -597,7 +517,13 @@
         "Áreas verdes paisajistas"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Apartamentos New West desde 75 m?",
+        "Ubicaci?n con acceso r?pido a la ciudad",
+        "Amenidades completas y seguridad",
+        "Ideal para primeras viviendas"
+      ]
     },
     {
       "id": 29,
@@ -654,7 +580,13 @@
         "Sistema de seguridad biométrico"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Torre 400 en Punta Pac?fica frente al mar",
+        "Altura libre 3 m y acabados premium",
+        "Amenidades: infinity pool, gym, club y canchas",
+        "Seguridad 24/7 en zona prime"
+      ]
     },
     {
       "id": 30,
@@ -711,7 +643,13 @@
         "Cerca de todo lo importante"
       ],
       "featured": false,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Apartamentos amoblados desde 120 m?",
+        "Punta Pac?fica con vista al oc?ano",
+        "Alquiler desde $2,500/mes con amenities premium",
+        "Incluye acceso a piscina, gym y club"
+      ]
     },
     {
       "id": 31,
@@ -757,7 +695,68 @@
         "Alto potencial de crecimiento"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Strip mall en La Chorrera, V?a Las Mendozas",
+        "42 locales en 2 niveles con alto flujo",
+        "Amplio estacionamiento y CCTV 24/7",
+        "Acceso controlado y zonas de carga"
+      ]
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Balboa, Ancon, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Ancon",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion historica en Balboa",
+        "Zona turistica de alto trafico",
+        "Diseno arquitectonico contemporaneo",
+        "Estacionamientos disponibles",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Vitrinas panoramicas",
+        "Aires acondicionados individuales",
+        "Sistema contra incendios",
+        "Banos en areas comunes",
+        "Cercania a la Calzada de Amador",
+        "Ambiente cultural y artistico"
+      ],
+      "planos": [
+        "/images/properties/balboa-boutique/planos/plano-nivel-100.webp",
+        "/images/properties/balboa-boutique/planos/plano-nivel-200.webp"
+      ],
+      "title": "Balboa Boutiques - Local A-104",
+      "pricePerMonth": 3700,
+      "area": 151,
+      "image": "/images/properties/balboa-boutique/hero/hero-1.webp",
+      "images": [
+        "/images/properties/balboa-boutique/hero/hero-1.webp",
+        "/images/properties/balboa-boutique/hero/hero-2.webp",
+        "/images/properties/balboa-boutique/amenities/terraza-exterior.webp",
+        "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-1.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
+        "/images/properties/balboa-boutique/locales-comerciales/local-interior-terraza.webp"
+      ],
+      "description": "Local A-104 en Balboa Boutiques, mezzanine 100. Area cerrada de 84 m2 mas terraza de 67 m2 (total 151 m2), ideal para restaurante boutique, cafe o retail con outdoor seating. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 32,
+      "highlights": [
+        "Local A-104: 84 m? + 67 m? terraza (151 m?)",
+        "Balboa, zona tur?stica de alto tr?fico",
+        "Canon $3,700/mes + mant. $4.50/m?",
+        "2 meses de gracia, ideal restaurante/caf?"
+      ]
     },
     {
       "id": 33,
@@ -816,7 +815,13 @@
         "Alto poder adquisitivo de zona"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Strip mall en V?a Israel, San Francisco",
+        "Alta visibilidad y estacionamiento frontal",
+        "Locales con pasillo climatizado y vitrina",
+        "Seguridad y mantenimiento constante"
+      ]
     },
     {
       "id": 34,
@@ -872,7 +877,13 @@
         "Salón de juegos"
       ],
       "featured": true,
-      "status": "rented"
+      "status": "rented",
+      "highlights": [
+        "Torre residencial moderna en Ciudad de Panamá",
+        "Unidades 1-3 recámaras con vistas",
+        "Amenidades: piscina rooftop, gym y cowork",
+        "Seguridad 24/7 y acceso biométrico"
+      ]
     },
     {
       "id": 35,
@@ -962,7 +973,13 @@
         "Salón social"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Torre 90 frente al mar, 260 m?",
+        "Vista al oc?ano con acabados de playa",
+        "Amenidades de resort: piscinas y club",
+        "Seguridad y acceso directo a la playa"
+      ]
     },
     {
       "id": 37,
@@ -1007,7 +1024,13 @@
         "Salón de eventos"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Torre 80 estilo caribe?o, 137 m?",
+        "Vista al mar y amenidades de resort",
+        "Piscinas, club y acceso a la playa",
+        "Seguridad 24/7 en complejo cerrado"
+      ]
     },
     {
       "id": 38,
@@ -1052,7 +1075,13 @@
         "Casa club exclusiva"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Villas Arenas Village frente al mar, 280 m?",
+        "Acceso directo a playa y club privado",
+        "Amenidades de resort y seguridad",
+        "Inversi?n premium en Playa Escondida"
+      ]
     },
     {
       "id": 39,
@@ -1105,7 +1134,14 @@
         "Facilidades para personas con discapacidad"
       ],
       "featured": true,
-      "status": "available"
+      "status": "available",
+      "highlights": [
+        "Ubicación premium en Vía España, Bella Vista",
+        "Lobby ejecutivo con seguridad 24/7",
+        "Oficinas listas desde 50 m²",
+        "Estacionamiento rotativo y opción asignado",
+        "Planta eléctrica y A/C central"
+      ]
     },
     {
       "id": 40,
@@ -1158,56 +1194,14 @@
         "Acceso para discapacitados"
       ],
       "featured": true,
-      "status": "available"
-    },
-    {
-      "type": "Local",
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "location": "Balboa, Ancon, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Ancon",
-      "builtYear": 2024,
-      "bedrooms": 0,
       "status": "available",
-      "featured": true,
-      "amenities": [
-        "Ubicacion historica en Balboa",
-        "Zona turistica de alto trafico",
-        "Diseno arquitectonico contemporaneo",
-        "Estacionamientos disponibles",
-        "Seguridad 24/7 y CCTV",
-        "Acceso controlado",
-        "Vitrinas panoramicas",
-        "Aires acondicionados individuales",
-        "Sistema contra incendios",
-        "Banos en areas comunes",
-        "Cercania a la Calzada de Amador",
-        "Ambiente cultural y artistico"
-      ],
-      "planos": [
-        "/images/properties/balboa-boutique/planos/plano-nivel-100.webp",
-        "/images/properties/balboa-boutique/planos/plano-nivel-200.webp"
-      ],
-      "title": "Balboa Boutiques - Local A-104",
-      "pricePerMonth": 3700,
-      "area": 151,
-      "image": "/images/properties/balboa-boutique/hero/hero-1.webp",
-      "images": [
-        "/images/properties/balboa-boutique/hero/hero-1.webp",
-        "/images/properties/balboa-boutique/hero/hero-2.webp",
-        "/images/properties/balboa-boutique/amenities/terraza-exterior.webp",
-        "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
-        "/images/properties/balboa-boutique/locales-comerciales/local-interior.webp",
-        "/images/properties/balboa-boutique/locales-comerciales/local-interior-1.webp",
-        "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
-        "/images/properties/balboa-boutique/locales-comerciales/local-interior-terraza.webp"
-      ],
-      "description": "Local A-104 en Balboa Boutiques, mezzanine 100. Area cerrada de 84 m2 mas terraza de 67 m2 (total 151 m2), ideal para restaurante boutique, cafe o retail con outdoor seating. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
-      "bathrooms": 1,
-      "parkingSpots": 2,
-      "id": 32
+      "highlights": [
+        "Alquiler de oficinas listas desde 50 m²",
+        "Vía España con acceso a metro y servicios",
+        "Incluye mantenimiento y seguridad 24/7",
+        "Estacionamiento rotativo y opción asignado",
+        "Planta eléctrica y A/C central"
+      ]
     },
     {
       "type": "Local",
@@ -1255,7 +1249,13 @@
       "description": "Local A-108 en Balboa Boutiques, mezzanine 100. Area cerrada de 74 m2 mas terraza de 37 m2 (total 111 m2). Ideal para cafe o retail con terraza. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
       "bathrooms": 1,
       "parkingSpots": 2,
-      "id": 132
+      "id": 132,
+      "highlights": [
+        "Local A-108: 74 m? + 37 m? terraza (111 m?)",
+        "Balboa Boutiques mezzanine 100",
+        "Canon $3,200/mes + mant. $4.50/m?",
+        "Vitrinas y terraza para food o retail"
+      ]
     },
     {
       "type": "Local",
@@ -1302,7 +1302,13 @@
       "description": "Local A-109 en Balboa Boutiques, mezzanine 100. Area cerrada de 318 m2; ideal para restaurante grande, gimnasio boutique o showroom. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
       "bathrooms": 2,
       "parkingSpots": 3,
-      "id": 133
+      "id": 133,
+      "highlights": [
+        "Local A-109: 318 m? abiertos",
+        "Balboa Boutiques, mezzanine 100",
+        "Canon $6,360/mes + mant. $4.50/m?",
+        "Ideal anchor, gimnasio o restaurante grande"
+      ]
     },
     {
       "type": "Local",
@@ -1350,7 +1356,13 @@
       "description": "Local B-102/202 en Balboa Boutiques, mezzanine 100. Area cerrada de 339 m2; perfecto para anchor tenant, gimnasio premium o restaurante insignia. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
       "bathrooms": 2,
       "parkingSpots": 4,
-      "id": 134
+      "id": 134,
+      "highlights": [
+        "Local B-102/202: 339 m? en mezzanine",
+        "Fachada y terraza con vistas a la Calzada",
+        "Canon $9,000/mes + mant. $4.50/m?",
+        "Ideal anchor premium/fitness/restaurante"
+      ]
     },
     {
       "id": 135,
@@ -1391,219 +1403,975 @@
       "status": "rented"
     },
     {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-a.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 A1-43",
-      "area": 484,
-      "price": 1134415,
-      "id": 21,
-      "slug": "pacific-point-a1-43",
-      "pricePerMonth": null,
-      "featured": true,
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
       "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "featured": true,
       "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
         "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 3",
+      "pricePerMonth": 711.17,
+      "area": 132.93,
+      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
+      ],
+      "description": "Local 3 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 132.93 m2 en una sola planta. Alquiler $711.17/mes, deposito $664.65, mantenimiento $265.86. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 136,
+      "highlights": [
+        "Local 3 - 132.93 m? en planta baja",
+        "Canon $711.17/mes + mant. $1.50/m?",
+        "2 meses de gracia para acondicionar",
+        "Estacionamientos para clientes"
       ]
     },
     {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-b1.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 B1-42",
-      "area": 262.8,
-      "price": 937125,
-      "id": 22,
-      "slug": "pacific-point-b1-42",
-      "pricePerMonth": null,
-      "featured": true,
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
       "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "featured": true,
       "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
         "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 4",
+      "pricePerMonth": 721.71,
+      "area": 134.9,
+      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
+      ],
+      "description": "Local 4 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 134.9 m2 en una sola planta. Alquiler $721.71/mes, deposito $674.50, mantenimiento $269.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 137,
+      "highlights": [
+        "Local 4 - 134.9 m? en planta baja",
+        "Canon $721.71/mes + mant. $1.50/m?",
+        "Contratos desde 1 a?o con gracia",
+        "Zona de alto crecimiento en La Chorrera"
       ]
     },
     {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 B Tipico 29",
-      "area": 356,
-      "price": 1227775,
-      "id": 23,
-      "slug": "pacific-point-b-tipico-29",
-      "pricePerMonth": null,
-      "featured": true,
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
       "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "featured": true,
       "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
         "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 9",
+      "pricePerMonth": 1636.56,
+      "area": 305.9,
+      "image": "/images/properties/plaza-guayacanes/hero-3.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-3.webp",
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-2.webp"
+      ],
+      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m2 en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 2,
+      "parkingSpots": 4,
+      "id": 138,
+      "highlights": [
+        "Local 9 - 305.9 m? en planta baja",
+        "Canon $1,636.56/mes + mant. $1.50/m?",
+        "Espacio amplio para anchor o gimnasio",
+        "Estacionamiento amplio y acceso controlado"
       ]
     },
     {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 C1-39",
-      "area": 246.4,
-      "price": 881250,
-      "id": 24,
-      "slug": "pacific-point-c1-39",
-      "pricePerMonth": null,
-      "featured": true,
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panama Oeste",
+      "city": "Panama Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
       "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "featured": true,
       "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
         "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 17",
+      "pricePerMonth": 595.77,
+      "area": 111.36,
+      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
+      ],
+      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.80, mantenimiento $222.72. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 139,
+      "highlights": [
+        "Local 17 - 111.36 m? en planta baja",
+        "Canon $595.77/mes + mant. $1.50/m?",
+        "Ideal retail mediano o servicios",
+        "Estacionamiento para clientes y CCTV"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 700,
+      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "id": 140,
+      "title": "Sunset Strip - Local 409",
+      "type": "Local",
+      "area": 38,
+      "image": "/images/properties/sunset-strip/avenida-bella-vista-skyline.webp",
+      "images": [
+        "/images/properties/sunset-strip/avenida-bella-vista-skyline.webp",
+        "/images/properties/sunset-strip/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/pasillo-comercial-interior.webp"
+      ],
+      "planos": [],
+      "description": "Local 409 en Sunset Strip (Nivel 400), 38 m?. Canon $700/mes. Ubicado en la placa superior con visibilidad sobre V?a Israel, ideal para oficinas boutique o servicios profesionales.",
+      "amenities": [
+        "Vista elevada hacia V?a Israel",
+        "Lobby y circulaci?n climatizada",
+        "Ascensor y escaleras de emergencia",
+        "Seguridad y CCTV 24/7"
+      ],
+      "highlights": [
+        "Nivel 400, 38 m? listos para oficinas boutique",
+        "Canon $700/mes",
+        "Acceso por ascensor y lobby climatizado",
+        "Visibilidad hacia V?a Israel"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 2000,
+      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "id": 141,
+      "title": "Sunset Strip - Local 11",
+      "type": "Local",
+      "area": 79,
+      "image": "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+      "images": [
+        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-00.webp"
+      ],
+      "description": "Local 11 en Sunset Strip (Planta 00), 79 m?. Canon $2,000/mes + mantenimiento $2.00/m?. Frente peatonal y acceso directo desde estacionamiento, ideal para retail o servicios de alto tr?fico.",
+      "amenities": [
+        "Planta 00 con acceso directo desde estacionamiento",
+        "Fachada con vitrina de piso a techo",
+        "Pasillo climatizado y escaleras el?ctricas",
+        "Seguridad 24/7 y CCTV"
+      ],
+      "highlights": [
+        "79 m? en planta 00",
+        "Canon $2,000 + mant. $2.00/m?",
+        "Vitrina frontal hacia pasillo y estacionamientos",
+        "Listo para retail o servicios"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 3500,
+      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "id": 142,
+      "title": "Sunset Strip - Local 25",
+      "type": "Local",
+      "area": 114,
+      "image": "/images/properties/sunset-strip/fachada-costado-estacionamiento.webp",
+      "images": [
+        "/images/properties/sunset-strip/fachada-costado-estacionamiento.webp",
+        "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/pasillo-comercial-interior.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-00.webp"
+      ],
+      "description": "Local 25 en Sunset Strip (Planta 00), 114 m?. Canon $3,500/mes + mantenimiento $2.00/m?. Espacio amplio con frente principal y circulaci?n interior, perfecto para restaurante casual, farmacia o tienda ancla.",
+      "amenities": [
+        "Frente hacia pasillo principal y estacionamiento",
+        "Altura generosa para rotulaci?n",
+        "Escaleras el?ctricas y ascensor cercanos",
+        "Estacionamiento frontal para clientes"
+      ],
+      "highlights": [
+        "114 m? en planta 00",
+        "Canon $3,500 + mant. $2.00/m?",
+        "Ideal para restaurante o tienda ancla",
+        "Alta visibilidad en V?a Israel"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 2200,
+      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "id": 143,
+      "title": "Sunset Strip - Local 26",
+      "type": "Local",
+      "area": 98,
+      "image": "/images/properties/sunset-strip/terraza-externa-jardin.webp",
+      "images": [
+        "/images/properties/sunset-strip/terraza-externa-jardin.webp",
+        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-00.webp"
+      ],
+      "description": "Local 26 en Sunset Strip (Planta 00), 69 m? interiores + 29 m? de terraza (98 m? totales). Canon $2,200/mes + mantenimiento $2.00/m?. Terraza frontal para mesas exteriores, ideal para caf? o concepto de comida r?pida.",
+      "amenities": [
+        "Terraza de 29 m? para mesas exteriores",
+        "Acceso peatonal y estacionamientos al frente",
+        "Pasillo climatizado y escaleras el?ctricas",
+        "Seguridad y CCTV 24/7"
+      ],
+      "highlights": [
+        "69 m? interiores + 29 m? de terraza",
+        "Canon $2,200 + mant. $2.00/m?",
+        "Frente con terraza para food & beverage",
+        "Ubicaci?n estrat?gica en V?a Israel"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 940,
+      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "id": 144,
+      "title": "Sunset Strip - Local 134",
+      "type": "Local",
+      "area": 47,
+      "image": "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
+      "images": [
+        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp",
+        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-100.webp"
+      ],
+      "description": "Local 134 en Sunset Strip (Mezanine 100), 47 m?. Canon $940/mes + mantenimiento $1.50/m?. Espacio eficiente con frente acristalado, ideal para consultorio, showroom o oficina de servicios.",
+      "amenities": [
+        "Mezanine 100 con acceso por escaleras el?ctricas y ascensor",
+        "Fachada de vidrio para m?xima visibilidad",
+        "Pasillo climatizado",
+        "Seguridad 24/7"
+      ],
+      "highlights": [
+        "47 m? en mezanine 100",
+        "Canon $940 + mant. $1.50/m?",
+        "Fachada acristalada",
+        "Ideal para consultorio u oficina"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 1200,
+      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "id": 145,
+      "title": "Sunset Strip - Oficina 206",
+      "type": "Oficina",
+      "area": 57,
+      "image": "/images/properties/sunset-strip/acceso-principal-estacionamiento.webp",
+      "images": [
+        "/images/properties/sunset-strip/acceso-principal-estacionamiento.webp",
+        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/pasillo-comercial-interior.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-200.webp"
+      ],
+      "description": "Oficina 206 en Sunset Strip (Nivel 200), 57 m?. Canon $1,200/mes + mantenimiento $1.50/m?. Planta eficiente para equipos peque?os con vistas hacia V?a Israel y circulaci?n interna climatizada.",
+      "amenities": [
+        "Nivel 200 con lobby y pasillos climatizados",
+        "Planta eficiente para oficina boutique",
+        "Acceso por ascensor y escaleras",
+        "Seguridad y control de acceso"
+      ],
+      "highlights": [
+        "57 m? para oficina boutique",
+        "Canon $1,200 + mant. $1.50/m?",
+        "Circulaci?n climatizada",
+        "Ubicaci?n c?ntrica en V?a Israel"
+      ]
+    },
+    {
+      "id": 150,
+      "title": "Evolution Tower - Oficina #1",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 153.25,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/co-working-1.webp",
+      "images": [
+        "/images/properties/evolution-tower/co-working-1.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #1 - 153.25 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 151,
+      "title": "Evolution Tower - Oficina #2",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 100.91,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/co-working-2.webp",
+      "images": [
+        "/images/properties/evolution-tower/co-working-2.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #2 - 100.91 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 152,
+      "title": "Evolution Tower - Oficina #3",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 103.08,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/co-working-3.webp",
+      "images": [
+        "/images/properties/evolution-tower/co-working-3.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #3 - 103.08 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 153,
+      "title": "Evolution Tower - Oficina #4",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 100.82,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/cocina.webp",
+      "images": [
+        "/images/properties/evolution-tower/cocina.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #4 - 100.82 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 154,
+      "title": "Evolution Tower - Oficina #5",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 136.39,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/comedor.webp",
+      "images": [
+        "/images/properties/evolution-tower/comedor.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #5 - 136.39 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 155,
+      "title": "Evolution Tower - Oficina #6",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 181.68,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/escalera.webp",
+      "images": [
+        "/images/properties/evolution-tower/escalera.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #6 - 181.68 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 156,
+      "title": "Evolution Tower - Oficina #7",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 153.17,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/gym.webp",
+      "images": [
+        "/images/properties/evolution-tower/gym.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #7 - 153.17 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 157,
+      "title": "Evolution Tower - Oficina #8",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 99.38,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/oficina.webp",
+      "images": [
+        "/images/properties/evolution-tower/oficina.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #8 - 99.38 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 158,
+      "title": "Evolution Tower - Oficina #9",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 101.64,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/pasillo.webp",
+      "images": [
+        "/images/properties/evolution-tower/pasillo.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #9 - 101.64 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 159,
+      "title": "Evolution Tower - Oficina #10",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 99.42,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/piscina.webp",
+      "images": [
+        "/images/properties/evolution-tower/piscina.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #10 - 99.42 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 160,
+      "title": "Evolution Tower - Oficina #11",
+      "type": "Oficina",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 0,
+      "location": "Calle 50, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Bella Vista",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 151.32,
+      "builtYear": 2024,
+      "image": "/images/properties/evolution-tower/terraza.webp",
+      "images": [
+        "/images/properties/evolution-tower/terraza.webp",
+        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+      ],
+      "planos": [],
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "amenities": [
+        "Vista panor?mica en Calle 50",
+        "Edificio premium con lobby y seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "Planta el?ctrica y A/C central",
+        "Estacionamientos rotativos y asignados"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Oficina #11 - 151.32 m?",
+        "Ubicaci?n estrat?gica en Calle 50",
+        "Edificio clase A con seguridad 24/7",
+        "Planta el?ctrica y A/C central",
+        "Estacionamiento incluido"
+      ]
+    },
+    {
+      "id": 161,
+      "title": "Boulevard Costa Verde - Local L13",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 2576.4,
+      "location": "Boulevard Costa Verde, La Chorrera, Panam? Oeste",
+      "city": "Panam? Oeste",
+      "district": "La Chorrera",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "area": 67.8,
+      "builtYear": 2020,
+      "image": "/images/properties/boulevard-plaza/hero-1.webp",
+      "images": [
+        "/images/properties/boulevard-plaza/hero-1.webp",
+        "/images/properties/boulevard-plaza/hero-2.webp",
+        "/images/properties/boulevard-plaza/hero-3.webp",
+        "/images/properties/boulevard-plaza/hero-4.webp",
+        "/images/properties/boulevard-plaza/hero-5.webp",
+        "/images/properties/boulevard-plaza/hero-6.webp"
+      ],
+      "planos": [],
+      "description": "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gesti?n comercial.",
+      "amenities": [
+        "Strip mall consolidado en Costa Verde",
+        "Alto flujo vehicular y peatonal",
+        "650 estacionamientos disponibles",
+        "Acceso desde v?a principal",
+        "Seguridad y mantenimiento en sitio"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Local Local L13 - 67.8 m?",
+        "Boulevard Costa Verde, La Chorrera",
+        "Proyecto ocupado, lista de espera",
+        "Mantenimiento $2.25/m?",
+        "Seguridad y estacionamientos amplios"
+      ]
+    },
+    {
+      "id": 162,
+      "title": "Boulevard Costa Verde - Local L14",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 2426.3,
+      "location": "Boulevard Costa Verde, La Chorrera, Panam? Oeste",
+      "city": "Panam? Oeste",
+      "district": "La Chorrera",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "area": 63.85,
+      "builtYear": 2020,
+      "image": "/images/properties/boulevard-plaza/hero-1.webp",
+      "images": [
+        "/images/properties/boulevard-plaza/hero-1.webp",
+        "/images/properties/boulevard-plaza/hero-2.webp",
+        "/images/properties/boulevard-plaza/hero-3.webp",
+        "/images/properties/boulevard-plaza/hero-4.webp",
+        "/images/properties/boulevard-plaza/hero-5.webp",
+        "/images/properties/boulevard-plaza/hero-6.webp"
+      ],
+      "planos": [],
+      "description": "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gesti?n comercial.",
+      "amenities": [
+        "Strip mall consolidado en Costa Verde",
+        "Alto flujo vehicular y peatonal",
+        "650 estacionamientos disponibles",
+        "Acceso desde v?a principal",
+        "Seguridad y mantenimiento en sitio"
+      ],
+      "featured": false,
+      "status": "rented",
+      "highlights": [
+        "Local Local L14 - 63.85 m?",
+        "Boulevard Costa Verde, La Chorrera",
+        "Proyecto ocupado, lista de espera",
+        "Mantenimiento $2.25/m?",
+        "Seguridad y estacionamientos amplios"
       ]
     }
   ]

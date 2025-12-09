@@ -36,6 +36,30 @@ export default function PropertyDetailsPage({
   const displayPrice =
     property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
 
+  const computedHighlights = (() => {
+    if (property.highlights && property.highlights.length > 0) {
+      return property.highlights
+    }
+
+    const items: string[] = []
+    if (property.area) items.push(`${formatArea(property.area)} totales`)
+    if (property.bedrooms > 0) items.push(`${property.bedrooms} habitaciones`)
+    if (property.bathrooms > 0) items.push(`${property.bathrooms} baños`)
+    if (property.parkingSpots > 0) items.push(`${property.parkingSpots} estacionamientos`)
+    if (property.operation === "Alquiler" && property.pricePerMonth) items.push(`Alquiler ${displayPrice}`)
+    if (property.operation === "Venta" && property.price) items.push(`Venta ${formatPrice(property.price)}`)
+    items.push(`${property.district}, ${property.city}`)
+
+    if (items.length < 4 && property.amenities?.length) {
+      for (const amenity of property.amenities) {
+        if (items.length >= 5) break
+        items.push(amenity)
+      }
+    }
+
+    return items.slice(0, 5)
+  })()
+
   // Similar properties
   const similarProperties = allProperties
     .filter((p) => p.id !== property.id && p.category === property.category && p.district === property.district)
@@ -227,6 +251,16 @@ export default function PropertyDetailsPage({
                   <span>{property.location}</span>
                 </div>
                 <div className="text-4xl font-bold text-[#3898EC]">{displayPrice}</div>
+                {computedHighlights.length > 0 && (
+                  <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#333333]">
+                    {computedHighlights.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-[#3898EC]" aria-hidden />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
 
               {/* Features */}

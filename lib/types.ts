@@ -17,6 +17,7 @@ export interface Property {
   image: string
   images: string[]
   planos?: string[]
+  highlights?: string[]
   description: string
   amenities: string[]
   featured: boolean
