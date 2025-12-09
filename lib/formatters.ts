@@ -1,13 +1,13 @@
 export function formatPrice(price: number): string {
-  return new Intl.NumberFormat("es-PA", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  })
-    .format(price)
-    .replace("US", "")
-    .trim()
+  const hasCents = Number.isFinite(price) && Math.abs(price % 1) > 0
+  const fractionDigits = hasCents ? 2 : 0
+
+  const formatted = new Intl.NumberFormat("es-PA", {
+    minimumFractionDigits: fractionDigits,
+    maximumFractionDigits: fractionDigits,
+  }).format(price)
+
+  return `$${formatted}`
 }
 
 export function formatArea(area: number): string {

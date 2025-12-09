@@ -87,7 +87,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
 
       {/* Price Range */}
       <div className="mb-6">
-        <label className="block text-sm font-medium text-[#333333] mb-3">Rango de Precio (USD)</label>
+        <label className="block text-sm font-medium text-[#333333] mb-3">Rango de Precio ($)</label>
         <div className="space-y-3">
           <input
             type="number"
