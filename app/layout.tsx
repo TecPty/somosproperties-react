@@ -8,7 +8,12 @@ export const metadata: Metadata = {
   description: "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
     shortcut: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
