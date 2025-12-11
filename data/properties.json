@@ -4,9 +4,9 @@
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
-      "location": "Punta Pac?fica, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
-      "district": "Punta Pac?fica",
+      "location": "Punta Pacífica, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "Punta Pacífica",
       "bedrooms": 3,
       "bathrooms": 3,
       "parkingSpots": 2,
@@ -40,13 +40,13 @@
         "Vista 180 al mar",
         "Altura libre 3m",
         "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool dise?o Joan Roca",
+        "Infinity pool diseño Joan Roca",
         "Gimnasio con sauna y spa",
         "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y sal?n de eventos",
+        "Lobby de lujo y salón de eventos",
         "Casa club con cochera de invitados",
         "Seguridad 24/7 y CCTV",
-        "Ubicaci?n prime en Punta Pac?fica"
+        "Ubicación prime en Punta Pacífica"
       ],
       "id": 23,
       "slug": "pacific-point-b-tipico-10c",
@@ -57,16 +57,16 @@
         "Modelo B Tipico 10-C: 378 m2",
         "Altura 3 m y vista al mar",
         "Club con infinity pool y canchas",
-        "Seguridad 24/7 en Punta Pacifica"
+        "Seguridad 24/7 en Punta Pacífica"
       ]
     },
     {
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
-      "location": "Punta Pac?fica, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
-      "district": "Punta Pac?fica",
+      "location": "Punta Pacífica, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "Punta Pacífica",
       "bedrooms": 3,
       "bathrooms": 3,
       "parkingSpots": 2,
@@ -100,13 +100,13 @@
         "Vista 180 al mar",
         "Altura libre 3m",
         "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool dise?o Joan Roca",
+        "Infinity pool diseño Joan Roca",
         "Gimnasio con sauna y spa",
         "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y sal?n de eventos",
+        "Lobby de lujo y salón de eventos",
         "Casa club con cochera de invitados",
         "Seguridad 24/7 y CCTV",
-        "Ubicaci?n prime en Punta Pac?fica"
+        "Ubicación prime en Punta Pacífica"
       ],
       "id": 236,
       "slug": "pacific-point-b-tipico-24b",
@@ -126,8 +126,8 @@
       "operation": "Venta",
       "price": 320000,
       "pricePerMonth": null,
-      "location": "Condado del Rey, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Condado del Rey, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Condado del Rey",
       "bedrooms": 3,
       "bathrooms": 3,
@@ -161,7 +161,7 @@
         "Amenidades del complejo (piscinas, canchas, club)"
       ],
       "highlights": [
-        "155.70 m? en Torre 500",
+        "155.70 m² en Torre 500",
         "Precio $320,000",
         "Mantenimiento $295.83/mes",
         "2 estacionamientos incluidos"
@@ -250,9 +250,9 @@
       "status": "available",
       "highlights": [
         "Proyecto de casas en Praderas de Arraij?n",
-        "Modelos alrededor de 130 m?",
-        "?reas verdes y ambiente familiar",
-        "Acceso r?pido hacia Ciudad de Panam?"
+        "Modelos alrededor de 130 m²",
+        "Áreas verdes y ambiente familiar",
+        "Acceso rápido hacia Ciudad de Panamá"
       ]
     },
     {
@@ -297,8 +297,8 @@
       "status": "available",
       "highlights": [
         "Oficinas en Calle 50, distrito financiero",
-        "Unidades de 60 m? listas para ocupar",
-        "Inversi?n corporativa en zona prime",
+        "Unidades de 60 m² listas para ocupar",
+        "Inversión corporativa en zona prime",
         "Seguridad y lobby empresarial"
       ]
     },
@@ -343,9 +343,9 @@
       "featured": false,
       "status": "available",
       "highlights": [
-        "Alquiler de oficinas 60 m? en Calle 50",
+        "Alquiler de oficinas 60 m² en Calle 50",
         "Canon desde $1,000/mes",
-        "Ubicaci?n prime en distrito financiero",
+        "Ubicación prime en distrito financiero",
         "Seguridad y lobby empresarial"
       ]
     },
@@ -450,10 +450,10 @@
       "parkingSpots": 2,
       "id": 32,
       "highlights": [
-        "Local A-104: 84 m? + 67 m? terraza (151 m?)",
-        "Balboa, zona tur?stica de alto tr?fico",
-        "Canon $3,700/mes + mant. $4.50/m?",
-        "2 meses de gracia, ideal restaurante/caf?"
+        "Local A-104: 84 m² + 67 m² terraza (151 m²)",
+        "Balboa, zona turística de alto tráfico",
+        "Canon $3,700/mes + mant. $4.50/m²",
+        "2 meses de gracia, ideal restaurante/café"
       ]
     },
     {
@@ -589,8 +589,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 802.5,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -618,10 +618,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "22.00 m? en Rali Business Center",
+        "22.00 m² en Rali Business Center",
         "Canon $ 802.50 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -630,8 +630,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1070.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -662,7 +662,7 @@
         "28.00 m? en Rali Business Center",
         "Canon $ 1,070.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -671,8 +671,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1284.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -700,10 +700,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "38.00 m? en Rali Business Center",
+        "38.00 m² en Rali Business Center",
         "Canon $ 1,284.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -712,8 +712,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1284.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -731,7 +731,7 @@
         "/images/properties/rali/fachada-rali-street-view.webp",
         "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre B Piso 8 - Oficina 802 en Rali Business Center, 52.64 m?. Canon $ 1,284.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre B Piso 8 - Oficina 802 en Rali Business Center, 52.64 m². Canon $ 1,284.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -741,10 +741,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "52.64 m? en Rali Business Center",
+        "52.64 m² en Rali Business Center",
         "Canon $ 1,284.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -5116,9 +5116,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5162,9 +5162,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5174,8 +5174,8 @@
       "category": "Residencial",
       "operation": "Venta",
       "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panam? Oeste",
-      "city": "Panam? Oeste",
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "Costa Verde",
       "parkingSpots": 2,
       "builtYear": 2025,
@@ -5197,17 +5197,17 @@
       ],
       "description": "New West I - Modelo Nevada en Costa Verde. 167 m2 de construcci?n en lotes desde 180 m2, 3 rec?maras, 2 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
       "amenities": [
-        "?rea social independiente",
-        "Piscina para ni?os y adultos",
+        "Área social independiente",
+        "Piscina para niños y adultos",
         "Gimnasio",
         "Juegos infantiles",
         "Jardines y gazebos",
-        "Sal?n de fiestas",
+        "Salón de fiestas",
         "Cancha deportiva",
-        "Opciones de 3 o 4 rec?maras (den convertible)"
+        "Opciones de 3 o 4 recámaras (den convertible)"
       ],
       "highlights": [
-        "167 m2 de construcci?n",
+        "167 m2 de construcción",
         "Lotes desde 180 m2",
         "Precio desde $ 240,000",
         "Entrega inmediata (10% de abono inicial)"
@@ -5218,15 +5218,15 @@
       "category": "Residencial",
       "operation": "Venta",
       "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panam? Oeste",
-      "city": "Panam? Oeste",
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "Costa Verde",
       "parkingSpots": 2,
       "builtYear": 2025,
       "featured": false,
       "status": "available",
       "id": 233,
-      "title": "New West I - Modelo Jazm?n",
+      "title": "New West I - Modelo Jazmín",
       "price": 220000,
       "area": 157,
       "bedrooms": 3,
@@ -5239,19 +5239,19 @@
         "/images/properties/new-west/interiores/comedor-iluminado.png",
         "/images/properties/new-west/interiores/cocina-con-isla.png"
       ],
-      "description": "New West I - Modelo Jazm?n en Costa Verde. 157 m2 de construcci?n en lotes desde 180 m2, 3 rec?maras, 2 piso(s). Estado: A futuro.",
+      "description": "New West I - Modelo Jazmín en Costa Verde. 157 m2 de construcción en lotes desde 180 m2, 3 recámaras, 2 piso(s). Estado: A futuro.",
       "amenities": [
-        "?rea social independiente",
-        "Piscina para ni?os y adultos",
+        "Área social independiente",
+        "Piscina para niños y adultos",
         "Gimnasio",
         "Juegos infantiles",
         "Jardines y gazebos",
-        "Sal?n de fiestas",
+        "Salón de fiestas",
         "Cancha deportiva",
-        "Opciones de 3 o 4 rec?maras (den convertible)"
+        "Opciones de 3 o 4 recámaras (den convertible)"
       ],
       "highlights": [
-        "157 m2 de construcci?n",
+        "157 m2 de construcción",
         "Lotes desde 180 m2",
         "Precio desde $ 220,000",
         "A futuro"
@@ -5266,15 +5266,15 @@
       "category": "Residencial",
       "operation": "Venta",
       "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panam? Oeste",
-      "city": "Panam? Oeste",
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "Costa Verde",
       "parkingSpots": 2,
       "builtYear": 2025,
       "featured": false,
       "status": "available",
       "id": 234,
-      "title": "New West II - Modelo Jazm?n",
+      "title": "New West II - Modelo Jazmín",
       "price": 209000,
       "area": 157,
       "bedrooms": 3,
@@ -5289,17 +5289,17 @@
       ],
       "description": "New West II - Modelo Jazm?n en Costa Verde. 157 m2 de construcci?n en lotes desde 160 m2, 3 rec?maras, 2 piso(s). Estado: A futuro.",
       "amenities": [
-        "?rea social independiente",
-        "Piscina para ni?os y adultos",
+        "Área social independiente",
+        "Piscina para niños y adultos",
         "Gimnasio",
         "Juegos infantiles",
         "Jardines y gazebos",
-        "Sal?n de fiestas",
+        "Salón de fiestas",
         "Cancha deportiva",
-        "Opciones de 3 o 4 rec?maras (den convertible)"
+        "Opciones de 3 o 4 recámaras (den convertible)"
       ],
       "highlights": [
-        "157 m2 de construcci?n",
+        "157 m2 de construcción",
         "Lotes desde 160 m2",
         "Precio desde $ 209,000",
         "A futuro"
@@ -5314,8 +5314,8 @@
       "category": "Residencial",
       "operation": "Venta",
       "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panam? Oeste",
-      "city": "Panam? Oeste",
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "Costa Verde",
       "parkingSpots": 2,
       "builtYear": 2025,
@@ -5337,17 +5337,17 @@
       ],
       "description": "New West II - Modelo Roble en Costa Verde. 122 m2 de construcci?n en lotes desde 209 m2, 3 rec?maras, 1 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
       "amenities": [
-        "?rea social independiente",
-        "Piscina para ni?os y adultos",
+        "Área social independiente",
+        "Piscina para niños y adultos",
         "Gimnasio",
         "Juegos infantiles",
         "Jardines y gazebos",
-        "Sal?n de fiestas",
+        "Salón de fiestas",
         "Cancha deportiva",
-        "Opciones de 3 o 4 rec?maras (den convertible)"
+        "Opciones de 3 o 4 recámaras (den convertible)"
       ],
       "highlights": [
-        "122 m2 de construcci?n",
+        "122 m2 de construcción",
         "Lotes desde 209 m2",
         "Precio desde $ 180,000",
         "Entrega inmediata (10% de abono inicial)"

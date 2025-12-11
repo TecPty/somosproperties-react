@@ -81,7 +81,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-[#fafafa]">
+      <section className="py-20 bg-[#ebecec]">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">¿Por Qué Elegirnos?</h2>
