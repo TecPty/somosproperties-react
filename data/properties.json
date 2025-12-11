@@ -48,6 +48,53 @@
       ]
     },
     {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "price": 300000,
+      "pricePerMonth": null,
+      "location": "Condado del Rey, Ciudad de Panam?",
+      "city": "Ciudad de Panam?",
+      "district": "Condado del Rey",
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "parkingSpots": 2,
+      "area": 155.7,
+      "builtYear": 2024,
+      "image": "/images/properties/kings-park/hero.png",
+      "images": [
+        "/images/properties/kings-park/hero.png",
+        "/images/properties/kings-park/hero-full.png",
+        "/images/properties/kings-park/model.jpeg",
+        "/images/properties/kings-park/plano-1.png",
+        "/images/properties/kings-park/plano-2.png"
+      ],
+      "planos": [
+        "/images/properties/kings-park/plano-modelo-a.png",
+        "/images/properties/kings-park/plano-modelo-b.png"
+      ],
+      "featured": true,
+      "status": "available",
+      "id": 237,
+      "title": "Kings Park - Torre 500, Apto 10-B",
+      "description": "Apartamento 3-B en Torre 500 de Kings Park, 155.70 m?. Precio de venta $320,000 y mantenimiento mensual $295.83. Piso medio con distribuci?n abierta, balcones y 2 estacionamientos en Condado del Rey.",
+      "amenities": [
+        "Balc?n con vista despejada",
+        "Sala/comedor integrados",
+        "Cocina abierta con lavander?a",
+        "Cuarto y ba?o de servicio",
+        "2 estacionamientos",
+        "Seguridad 24/7 y control de acceso",
+        "Amenidades del complejo (piscinas, canchas, club)"
+      ],
+      "highlights": [
+        "155.70 m? en Torre 500",
+        "Precio $300,000",
+        "Mantenimiento $295.83/mes",
+        "2 estacionamientos incluidos"
+      ]
+    },
+    {
       "id": 2,
       "title": "Central Plaza - Arraiján",
       "type": "Local",
@@ -120,8 +167,8 @@
         "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
       ],
       "title": "Pacific Point - Torre 400 B Tipico 10-C",
-      "area": 356,
-      "price": 1101450,
+      "area": 378,
+      "price": 1106000,
       "id": 23,
       "slug": "pacific-point-b-tipico-10c",
       "pricePerMonth": null,
@@ -142,7 +189,7 @@
         "Ubicacion prime en Punta Pacifica"
       ],
       "highlights": [
-        "Modelo B Tipico 10-C: 356 m2",
+        "Modelo B Tipico 10-C: 378 m2",
         "Altura 3 m y vista al mar",
         "Club con infinity pool y canchas",
         "Seguridad 24/7 en Punta Pacifica"
@@ -179,8 +226,8 @@
         "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
         "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
       ],
-      "title": "Pacific Point - Torre 400 B Tipico 24-B",
-      "area": 356,
+      "title": "Pacific Point - Torre 400 B Tipico 24 (modelo B)",
+      "area": 359,
       "price": 1685000,
       "id": 236,
       "slug": "pacific-point-b-tipico-24b",
@@ -202,7 +249,7 @@
         "Ubicacion prime en Punta Pacifica"
       ],
       "highlights": [
-        "Modelo B Tipico 24-B: 356 m2",
+        "Modelo B Tipico 24-B: 359 m2",
         "Altura 3 m y vista al mar",
         "Club con infinity pool y canchas",
         "Seguridad 24/7 en Punta Pacifica"
