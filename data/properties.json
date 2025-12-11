@@ -470,54 +470,6 @@
       ]
     },
     {
-      "id": 28,
-      "title": "New West - Apartamentos Modernos",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Panamá",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "parkingSpots": 1,
-      "area": 75,
-      "builtYear": 2024,
-      "image": "/images/properties/new-west/hero.jpg",
-      "images": [
-        "/images/properties/new-west/hero.jpg"
-      ],
-      "planos": [],
-      "description": "New West es un proyecto residencial contemporáneo que redefine el concepto de vida urbana moderna en Ciudad de Panamá.\n\nApartamentos con diseño arquitectónico vanguardista, acabados de primera calidad y amenidades excepcionales para un estilo de vida activo y sofisticado.\n\nUnidades disponibles:\n• Estudios modernos desde 45m²\n• 1 habitación desde 55m²\n• 2 habitaciones desde 75m²\n• 3 habitaciones desde 95m²\n\nCaracterísticas de los Apartamentos:\n• Cocinas modulares europeas\n• Baños con acabados premium\n• Pisos en porcelanato\n• Closets empotrados\n• Balcones con vista panorámica\n• Pre-instalación A/C\n\nUbicación Urbana:\n• Cerca de principales avenidas\n• Acceso rápido a centros comerciales\n• Colegios y universidades cercanas\n• Hospitales y clínicas a minutos\n\nViva el presente en New West.",
-      "amenities": [
-        "Piscina infinity con vista panorámica",
-        "Gimnasio completamente equipado",
-        "Salón de eventos climatizado",
-        "Co-working space moderno",
-        "Sky lounge en azotea",
-        "BBQ area con parrillas",
-        "Parque infantil techado",
-        "Pet park para mascotas",
-        "Seguridad 24/7 con CCTV",
-        "Lobby de doble altura",
-        "Elevadores inteligentes",
-        "Estacionamientos techados",
-        "Bicicletero seguro",
-        "Generador eléctrico",
-        "Áreas verdes paisajistas"
-      ],
-      "featured": true,
-      "status": "available",
-      "highlights": [
-        "Apartamentos New West desde 75 m?",
-        "Ubicaci?n con acceso r?pido a la ciudad",
-        "Amenidades completas y seguridad",
-        "Ideal para primeras viviendas"
-      ]
-    },
-    {
       "id": 29,
       "title": "Pacific Point T400 - Punta Pacífica",
       "type": "Apartamento",
@@ -894,7 +846,7 @@
       "featured": false,
       "status": "available",
       "id": 39,
-      "title": "Rali Business Center - Torre A Piso 2 - Oficina 228",
+      "title": "Rali Business Center - Oficina 228",
       "area": 22.0,
       "image": "/images/properties/rali/lobby-escaleras-anillo-luz.webp",
       "images": [
@@ -935,7 +887,7 @@
       "featured": false,
       "status": "available",
       "id": 40,
-      "title": "Rali Business Center - Torre A Piso 2 - Oficina 231",
+      "title": "Rali Business Center - Oficina 231",
       "area": 28.0,
       "image": "/images/properties/rali/pasillo-acceso-glass.webp",
       "images": [
@@ -976,7 +928,7 @@
       "featured": false,
       "status": "available",
       "id": 41,
-      "title": "Rali Business Center - Torre A Piso 2 - Oficina 244",
+      "title": "Rali Business Center - Oficina 244",
       "area": 38.0,
       "image": "/images/properties/rali/oficina-shell-38m2.webp",
       "images": [
@@ -1017,7 +969,7 @@
       "featured": false,
       "status": "available",
       "id": 42,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 802",
+      "title": "Rali Business Center - Oficina 802",
       "area": 52.64,
       "image": "/images/properties/rali/lounge-vista-mar.webp",
       "images": [
@@ -1058,7 +1010,7 @@
       "featured": false,
       "status": "available",
       "id": 43,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 806",
+      "title": "Rali Business Center - Oficina 806",
       "area": 71.99,
       "image": "/images/properties/rali/lounge-muro-verde.webp",
       "images": [
@@ -1099,7 +1051,7 @@
       "featured": false,
       "status": "available",
       "id": 44,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 810",
+      "title": "Rali Business Center - Oficina 810",
       "area": 75.77,
       "image": "/images/properties/rali/sala-juntas-ejecutiva.webp",
       "images": [
@@ -1140,7 +1092,7 @@
       "featured": false,
       "status": "available",
       "id": 45,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 826",
+      "title": "Rali Business Center - Oficina 826",
       "area": 79.82,
       "image": "/images/properties/rali/fachada-rali-avenida-balboa.webp",
       "images": [
@@ -5508,6 +5460,194 @@
         "A/C y ventilaci?n natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panam? Oeste",
+      "city": "Panam? Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 232,
+      "title": "New West I - Modelo Nevada",
+      "price": 240000,
+      "area": 167,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/familia-paseo-urbanizacion.png",
+      "images": [
+        "/images/properties/new-west/general/familia-paseo-urbanizacion.png",
+        "/images/properties/new-west/general/townhouses-conjunto.png",
+        "/images/properties/new-west/general/cancha-futbol-cesped.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West I - Modelo Nevada en Costa Verde. 167 m2 de construcci?n en lotes desde 180 m2, 3 rec?maras, 2 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
+      "amenities": [
+        "?rea social independiente",
+        "Piscina para ni?os y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Sal?n de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 rec?maras (den convertible)"
+      ],
+      "highlights": [
+        "167 m2 de construcci?n",
+        "Lotes desde 180 m2",
+        "Precio desde $ 240,000",
+        "Entrega inmediata (10% de abono inicial)"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panam? Oeste",
+      "city": "Panam? Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 233,
+      "title": "New West I - Modelo Jazm?n",
+      "price": 220000,
+      "area": 157,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+      "images": [
+        "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+        "/images/properties/new-west/general/club-amenidades-aerea.png",
+        "/images/properties/new-west/general/piscina-pergolas.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West I - Modelo Jazm?n en Costa Verde. 157 m2 de construcci?n en lotes desde 180 m2, 3 rec?maras, 2 piso(s). Estado: A futuro.",
+      "amenities": [
+        "?rea social independiente",
+        "Piscina para ni?os y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Sal?n de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 rec?maras (den convertible)"
+      ],
+      "highlights": [
+        "157 m2 de construcci?n",
+        "Lotes desde 180 m2",
+        "Precio desde $ 220,000",
+        "A futuro"
+      ],
+      "planos": [
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-baja.png",
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-alta.png"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panam? Oeste",
+      "city": "Panam? Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 234,
+      "title": "New West II - Modelo Jazm?n",
+      "price": 209000,
+      "area": 157,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+      "images": [
+        "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+        "/images/properties/new-west/general/club-amenidades-aerea.png",
+        "/images/properties/new-west/general/piscina-pergolas.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West II - Modelo Jazm?n en Costa Verde. 157 m2 de construcci?n en lotes desde 160 m2, 3 rec?maras, 2 piso(s). Estado: A futuro.",
+      "amenities": [
+        "?rea social independiente",
+        "Piscina para ni?os y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Sal?n de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 rec?maras (den convertible)"
+      ],
+      "highlights": [
+        "157 m2 de construcci?n",
+        "Lotes desde 160 m2",
+        "Precio desde $ 209,000",
+        "A futuro"
+      ],
+      "planos": [
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-baja.png",
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-alta.png"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panam? Oeste",
+      "city": "Panam? Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 235,
+      "title": "New West II - Modelo Roble",
+      "price": 180000,
+      "area": 122,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/fachada-modelo-roble.png",
+      "images": [
+        "/images/properties/new-west/general/fachada-modelo-roble.png",
+        "/images/properties/new-west/general/fachada-modelo-roble (2).png",
+        "/images/properties/new-west/general/piscina-solarium.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West II - Modelo Roble en Costa Verde. 122 m2 de construcci?n en lotes desde 209 m2, 3 rec?maras, 1 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
+      "amenities": [
+        "?rea social independiente",
+        "Piscina para ni?os y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Sal?n de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 rec?maras (den convertible)"
+      ],
+      "highlights": [
+        "122 m2 de construcci?n",
+        "Lotes desde 209 m2",
+        "Precio desde $ 180,000",
+        "Entrega inmediata (10% de abono inicial)"
+      ],
+      "planos": [
+        "/images/properties/new-west/planos/roble/plano-roble-planta-baja.png",
+        "/images/properties/new-west/planos/roble/plano-roble-planta-alta.png"
       ]
     }
   ]

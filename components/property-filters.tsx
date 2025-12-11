@@ -20,7 +20,7 @@ const locations = [
   "Coronado",
 ]
 
-const propertyTypes = ["Apartamento", "Casa", "Villa", "Lote", "Local", "Oficina", "Terreno"]
+const propertyTypes = ["Apartamento", "Casa", "Villa", "Local", "Oficina"]
 
 export default function PropertyFiltersComponent({ filters, onFiltersChange, onClear }: PropertyFiltersProps) {
   const handleTypeToggle = (type: string) => {
