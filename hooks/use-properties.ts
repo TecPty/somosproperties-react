@@ -2,13 +2,13 @@
 
 import { useState, useEffect, useMemo } from "react"
 import type { Property, PropertyFilters } from "@/lib/types"
-import propertiesData from "@/data/properties.json"
+import { properties as allPropertiesData } from "@/lib/properties"
 
 export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
   const [currentPage, setCurrentPage] = useState(1)
   const [sortBy, setSortBy] = useState<"price" | "date" | "featured">("featured")
 
-  const allProperties: Property[] = propertiesData.properties
+  const allProperties: Property[] = allPropertiesData
 
   const filteredProperties = useMemo(() => {
     let filtered = [...allProperties]
