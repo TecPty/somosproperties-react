@@ -239,11 +239,11 @@
         "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
         "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
       ],
-      "title": "Pacific Point - Torre 400 B Tipico 29",
+      "title": "Pacific Point - Torre 400 B Tipico 10-C",
       "area": 356,
-      "price": 1227775,
+      "price": 1101450,
       "id": 23,
-      "slug": "pacific-point-b-tipico-29",
+      "slug": "pacific-point-b-tipico-10c",
       "pricePerMonth": null,
       "featured": true,
       "status": "available",
@@ -262,10 +262,70 @@
         "Ubicacion prime en Punta Pacifica"
       ],
       "highlights": [
-        "Modelo B T?pico 29: 356 m?",
+        "Modelo B Tipico 10-C: 356 m2",
         "Altura 3 m y vista al mar",
         "Club con infinity pool y canchas",
-        "Seguridad 24/7 en Punta Pac?fica"
+        "Seguridad 24/7 en Punta Pacifica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacifica, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Punta Pacifica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
+      ],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp",
+        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
+        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
+        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
+        "/images/properties/pacific-point/amenities/lobby-1.webp",
+        "/images/properties/pacific-point/amenities/reception.webp",
+        "/images/properties/pacific-point/amenities/recamara-1.webp",
+        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
+        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
+      ],
+      "title": "Pacific Point - Torre 400 B Tipico 24-B",
+      "area": 356,
+      "price": 1685000,
+      "id": 236,
+      "slug": "pacific-point-b-tipico-24b",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseno Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salon de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicacion prime en Punta Pacifica"
+      ],
+      "highlights": [
+        "Modelo B Tipico 24-B: 356 m2",
+        "Altura 3 m y vista al mar",
+        "Club con infinity pool y canchas",
+        "Seguridad 24/7 en Punta Pacifica"
       ]
     },
     {
