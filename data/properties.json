@@ -4,10 +4,130 @@
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
+      "location": "Punta Pacífica, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "Punta Pacífica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
+      ],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp",
+        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
+        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
+        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
+        "/images/properties/pacific-point/amenities/lobby-1.webp",
+        "/images/properties/pacific-point/amenities/reception.webp",
+        "/images/properties/pacific-point/amenities/recamara-1.webp",
+        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
+        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
+      ],
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pac?fica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseño Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salón de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicación prime en Punta Pacífica"
+      ],
+      "id": 23,
+      "slug": "pacific-point-b-tipico-10c",
+      "title": "Pacific Point - Torre 400 B Tipico 10-C",
+      "area": 378,
+      "price": 1106000,
+      "highlights": [
+        "Modelo B Tipico 10-C: 378 m2",
+        "Altura 3 m y vista al mar",
+        "Club con infinity pool y canchas",
+        "Seguridad 24/7 en Punta Pacífica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "location": "Punta Pacífica, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "Punta Pacífica",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "planos": [
+        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
+      ],
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp",
+        "/images/properties/pacific-point/hero/hero-2.webp",
+        "/images/properties/pacific-point/hero/hero-3.webp",
+        "/images/properties/pacific-point/hero/hero-4.webp",
+        "/images/properties/pacific-point/hero/hero-5.webp",
+        "/images/properties/pacific-point/hero/hero-6.webp",
+        "/images/properties/pacific-point/hero/hero-7.webp",
+        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
+        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
+        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
+        "/images/properties/pacific-point/amenities/lobby-1.webp",
+        "/images/properties/pacific-point/amenities/reception.webp",
+        "/images/properties/pacific-point/amenities/recamara-1.webp",
+        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
+        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
+      ],
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "pricePerMonth": null,
+      "featured": true,
+      "status": "available",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pac?fica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "amenities": [
+        "Vista 180 al mar",
+        "Altura libre 3m",
+        "Acabados personalizados (marmol, puertas pivot)",
+        "Infinity pool diseño Joan Roca",
+        "Gimnasio con sauna y spa",
+        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
+        "Lobby de lujo y salón de eventos",
+        "Casa club con cochera de invitados",
+        "Seguridad 24/7 y CCTV",
+        "Ubicación prime en Punta Pacífica"
+      ],
+      "id": 236,
+      "slug": "pacific-point-b-tipico-24b",
+      "title": "Pacific Point - Torre 400 B Tipico 24(modelo)B",
+      "area": 359,
+      "price": 1685000,
+      "highlights": [
+        "Modelo B Tipico 24-B: 359 m2",
+        "Altura 3 m y vista al mar",
+        "Club con infinity pool y canchas",
+        "Seguridad 24/7 en Punta Pacifica"
+      ]
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
       "price": 320000,
       "pricePerMonth": null,
-      "location": "Condado del Rey, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Condado del Rey, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Condado del Rey",
       "bedrooms": 3,
       "bathrooms": 3,
@@ -34,14 +154,14 @@
       "amenities": [
         "Balc?n con vista despejada",
         "Sala/comedor integrados",
-        "Cocina abierta con lavander?a",
-        "Cuarto y ba?o de servicio",
+        "Cocina abierta con lavanderia",
+        "Cuarto y baño de servicio",
         "2 estacionamientos",
         "Seguridad 24/7 y control de acceso",
         "Amenidades del complejo (piscinas, canchas, club)"
       ],
       "highlights": [
-        "155.70 m? en Torre 500",
+        "155.70 m² en Torre 500",
         "Precio $320,000",
         "Mantenimiento $295.83/mes",
         "2 estacionamientos incluidos"
@@ -82,250 +202,10 @@
       "featured": true,
       "status": "available",
       "highlights": [
-        "Local comercial en Central Plaza Arraij?n",
+        "Local comercial en Central Plaza Arraijan",
         "Fachada visible con estacionamientos",
-        "Acceso directo desde v?a principal",
+        "Acceso directo desde vía principal",
         "Ideal retail o servicios"
-      ]
-    },
-    {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-a.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 A1-43",
-      "area": 484,
-      "price": 1134415,
-      "id": 21,
-      "slug": "pacific-point-a1-43",
-      "pricePerMonth": null,
-      "featured": true,
-      "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
-      "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
-        "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
-      ],
-      "highlights": [
-        "Modelo A1-43: 484 m? frente al mar",
-        "Altura 3 m y acabados de lujo",
-        "Club con infinity pool, gym y canchas",
-        "Seguridad 24/7 en Punta Pac?fica"
-      ]
-    },
-    {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-b1.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 B1-42",
-      "area": 262.8,
-      "price": 937125,
-      "id": 22,
-      "slug": "pacific-point-b1-42",
-      "pricePerMonth": null,
-      "featured": true,
-      "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
-      "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
-        "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
-      ],
-      "highlights": [
-        "Modelo B1-42: 262.8 m? vista al mar",
-        "Altura 3 m y acabados premium",
-        "Amenidades full: pool, gym, club y canchas",
-        "Seguridad 24/7 en Punta Pac?fica"
-      ]
-    },
-    {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-b.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 B Tipico 29",
-      "area": 356,
-      "price": 1227775,
-      "id": 23,
-      "slug": "pacific-point-b-tipico-29",
-      "pricePerMonth": null,
-      "featured": true,
-      "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
-      "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
-        "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
-      ],
-      "highlights": [
-        "Modelo B T?pico 29: 356 m?",
-        "Altura 3 m y vista al mar",
-        "Club con infinity pool y canchas",
-        "Seguridad 24/7 en Punta Pac?fica"
-      ]
-    },
-    {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Punta Pacifica, Ciudad de Panama",
-      "city": "Ciudad de Panama",
-      "district": "Punta Pacifica",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
-      ],
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/hero/hero-4.webp",
-        "/images/properties/pacific-point/hero/hero-5.webp",
-        "/images/properties/pacific-point/hero/hero-6.webp",
-        "/images/properties/pacific-point/hero/hero-7.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp",
-        "/images/properties/pacific-point/amenities/terraza-amanecer.webp"
-      ],
-      "title": "Pacific Point - Torre 400 C1-39",
-      "area": 246.4,
-      "price": 881250,
-      "id": 24,
-      "slug": "pacific-point-c1-39",
-      "pricePerMonth": null,
-      "featured": true,
-      "status": "available",
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacifica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
-      "amenities": [
-        "Vista 180 al mar",
-        "Altura libre 3m",
-        "Acabados personalizados (marmol, puertas pivot)",
-        "Infinity pool diseno Joan Roca",
-        "Gimnasio con sauna y spa",
-        "Canchas: tenis, squash, raquetball, basket, futbol sintetico",
-        "Lobby de lujo y salon de eventos",
-        "Casa club con cochera de invitados",
-        "Seguridad 24/7 y CCTV",
-        "Ubicacion prime en Punta Pacifica"
-      ],
-      "highlights": [
-        "Modelo C1-39: 246.4 m? frente al mar",
-        "Altura 3 m y acabados premium",
-        "Amenidades full (pool, gym, club, canchas)",
-        "Seguridad 24/7 en Punta Pac?fica"
       ]
     },
     {
@@ -370,9 +250,9 @@
       "status": "available",
       "highlights": [
         "Proyecto de casas en Praderas de Arraij?n",
-        "Modelos alrededor de 130 m?",
-        "?reas verdes y ambiente familiar",
-        "Acceso r?pido hacia Ciudad de Panam?"
+        "Modelos alrededor de 130 m²",
+        "Áreas verdes y ambiente familiar",
+        "Acceso rápido hacia Ciudad de Panamá"
       ]
     },
     {
@@ -417,8 +297,8 @@
       "status": "available",
       "highlights": [
         "Oficinas en Calle 50, distrito financiero",
-        "Unidades de 60 m? listas para ocupar",
-        "Inversi?n corporativa en zona prime",
+        "Unidades de 60 m² listas para ocupar",
+        "Inversión corporativa en zona prime",
         "Seguridad y lobby empresarial"
       ]
     },
@@ -463,184 +343,10 @@
       "featured": false,
       "status": "available",
       "highlights": [
-        "Alquiler de oficinas 60 m? en Calle 50",
+        "Alquiler de oficinas 60 m² en Calle 50",
         "Canon desde $1,000/mes",
-        "Ubicaci?n prime en distrito financiero",
+        "Ubicación prime en distrito financiero",
         "Seguridad y lobby empresarial"
-      ]
-    },
-    {
-      "id": 28,
-      "title": "New West - Apartamentos Modernos",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Panamá",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "parkingSpots": 1,
-      "area": 75,
-      "builtYear": 2024,
-      "image": "/images/properties/new-west/hero.jpg",
-      "images": [
-        "/images/properties/new-west/hero.jpg"
-      ],
-      "planos": [],
-      "description": "New West es un proyecto residencial contemporáneo que redefine el concepto de vida urbana moderna en Ciudad de Panamá.\n\nApartamentos con diseño arquitectónico vanguardista, acabados de primera calidad y amenidades excepcionales para un estilo de vida activo y sofisticado.\n\nUnidades disponibles:\n• Estudios modernos desde 45m²\n• 1 habitación desde 55m²\n• 2 habitaciones desde 75m²\n• 3 habitaciones desde 95m²\n\nCaracterísticas de los Apartamentos:\n• Cocinas modulares europeas\n• Baños con acabados premium\n• Pisos en porcelanato\n• Closets empotrados\n• Balcones con vista panorámica\n• Pre-instalación A/C\n\nUbicación Urbana:\n• Cerca de principales avenidas\n• Acceso rápido a centros comerciales\n• Colegios y universidades cercanas\n• Hospitales y clínicas a minutos\n\nViva el presente en New West.",
-      "amenities": [
-        "Piscina infinity con vista panorámica",
-        "Gimnasio completamente equipado",
-        "Salón de eventos climatizado",
-        "Co-working space moderno",
-        "Sky lounge en azotea",
-        "BBQ area con parrillas",
-        "Parque infantil techado",
-        "Pet park para mascotas",
-        "Seguridad 24/7 con CCTV",
-        "Lobby de doble altura",
-        "Elevadores inteligentes",
-        "Estacionamientos techados",
-        "Bicicletero seguro",
-        "Generador eléctrico",
-        "Áreas verdes paisajistas"
-      ],
-      "featured": true,
-      "status": "available",
-      "highlights": [
-        "Apartamentos New West desde 75 m?",
-        "Ubicaci?n con acceso r?pido a la ciudad",
-        "Amenidades completas y seguridad",
-        "Ideal para primeras viviendas"
-      ]
-    },
-    {
-      "id": 29,
-      "title": "Pacific Point T400 - Punta Pacífica",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Punta Pacífica, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Punta Pacífica",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "parkingSpots": 2,
-      "area": 120,
-      "builtYear": 2024,
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp"
-      ],
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-a.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-b.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-b1.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-c.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
-      ],
-      "description": "Pacific Point Torre 400 en Punta Pacífica representa el pináculo del lujo residencial en Panamá, con vistas espectaculares al Océano Pacífico y la ciudad.\n\nApartamentos de ultra lujo con acabados europeos, diseño arquitectónico excepcional y amenidades de clase mundial en la zona más exclusiva de la capital.\n\nUnidades Exclusivas:\n• 2 habitaciones desde 120m²\n• 3 habitaciones desde 180m²\n• Penthouses desde 300m²\n\nCaracterísticas Premium:\n• Cocinas italianas Molteni\n• Electrodomésticos Miele\n• Pisos en mármol italiano\n• Baños con Hansgrohe\n• Domótica avanzada\n• Terrazas amplias con vista al mar\n\nPunta Pacífica - Lo Mejor de Panamá:\n• Hospital Punta Pacífica (Johns Hopkins)\n• Multiplaza Pacific Mall\n• Restaurantes gourmet\n• Bancos internacionales\n• Marina y yacht club\n\nViva en el edificio más prestigioso de Centroamérica.",
-      "amenities": [
-        "Lobby de mármol con concierge",
-        "Piscina infinity vista al mar",
-        "Gimnasio con equipos Technogym",
-        "Spa y sauna privados",
-        "Salón de cine privado",
-        "Business center ejecutivo",
-        "Salones de eventos múltiples",
-        "Cancha de tenis iluminada",
-        "Putting green de golf",
-        "BBQ lounges exclusivos",
-        "Seguridad VIP 24/7",
-        "Estacionamientos robotizados",
-        "Elevadores Schindler de alta velocidad",
-        "Generadores de emergencia",
-        "Sistema de seguridad biométrico"
-      ],
-      "featured": true,
-      "status": "available",
-      "highlights": [
-        "Torre 400 en Punta Pac?fica frente al mar",
-        "Altura libre 3 m y acabados premium",
-        "Amenidades: infinity pool, gym, club y canchas",
-        "Seguridad 24/7 en zona prime"
-      ]
-    },
-    {
-      "id": 30,
-      "title": "Pacific Point T400 - Apartamentos en Alquiler",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 2500,
-      "location": "Punta Pacífica, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "Punta Pacífica",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "parkingSpots": 2,
-      "area": 120,
-      "builtYear": 2024,
-      "image": "/images/properties/pacific-point/hero/hero-1.webp",
-      "images": [
-        "/images/properties/pacific-point/hero/hero-1.webp",
-        "/images/properties/pacific-point/hero/hero-2.webp",
-        "/images/properties/pacific-point/hero/hero-3.webp",
-        "/images/properties/pacific-point/amenities/piscina-aerea.webp",
-        "/images/properties/pacific-point/amenities/infinity-pool-noche.webp",
-        "/images/properties/pacific-point/amenities/gym-vista-mar-1.webp",
-        "/images/properties/pacific-point/amenities/lobby-1.webp",
-        "/images/properties/pacific-point/amenities/reception.webp",
-        "/images/properties/pacific-point/amenities/recamara-1.webp",
-        "/images/properties/pacific-point/amenities/skyline-pacific-point.webp"
-      ],
-      "planos": [
-        "/images/properties/pacific-point/planos/plano-modelo-a.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-b.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-b1.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-c.webp",
-        "/images/properties/pacific-point/planos/plano-modelo-c1.webp"
-      ],
-      "description": "Arriende un apartamento de lujo en Pacific Point Torre 400, el edificio más exclusivo de Punta Pacífica, con vistas incomparables y servicios de primer nivel.\n\nApartamentos completamente amueblados y equipados con todo lo necesario para un estilo de vida sofisticado y confortable.\n\nOpciones de Alquiler:\n• 2 habitaciones amuebladas - $2,500/mes\n• 3 habitaciones amuebladas - $3,800/mes\n• Penthouses con servicios - Desde $6,000/mes\n\nIncluye:\n• Muebles de diseñador\n• Electrodomésticos premium\n• Ropa de cama y toallas\n• Vajilla completa\n• Smart TV y internet\n• Servicio de limpieza semanal\n\nPerfecto para:\n• Ejecutivos expatriados\n• Familias en transición\n• Profesionales médicos del Hospital Punta Pacífica\n• Diplomáticos\n\nDisfrute del mejor alquiler en Panamá.",
-      "amenities": [
-        "Concierge 24/7 bilingüe",
-        "Servicio de valet parking",
-        "Limpieza de apartamento incluida",
-        "Mantenimiento prioritario",
-        "Acceso a todas las amenidades",
-        "Piscina y gimnasio premium",
-        "Spa y áreas sociales",
-        "Seguridad de máximo nivel",
-        "Estacionamientos asignados",
-        "Internet de alta velocidad",
-        "Cable premium incluido",
-        "Servicio de paquetería",
-        "Generador eléctrico",
-        "Vista panorámica al mar",
-        "Cerca de todo lo importante"
-      ],
-      "featured": false,
-      "status": "available",
-      "highlights": [
-        "Apartamentos amoblados desde 120 m?",
-        "Punta Pac?fica con vista al oc?ano",
-        "Alquiler desde $2,500/mes con amenities premium",
-        "Incluye acceso a piscina, gym y club"
       ]
     },
     {
@@ -744,10 +450,10 @@
       "parkingSpots": 2,
       "id": 32,
       "highlights": [
-        "Local A-104: 84 m? + 67 m? terraza (151 m?)",
-        "Balboa, zona tur?stica de alto tr?fico",
-        "Canon $3,700/mes + mant. $4.50/m?",
-        "2 meses de gracia, ideal restaurante/caf?"
+        "Local A-104: 84 m² + 67 m² terraza (151 m²)",
+        "Balboa, zona turística de alto tráfico",
+        "Canon $3,700/mes + mant. $4.50/m²",
+        "2 meses de gracia, ideal restaurante/café"
       ]
     },
     {
@@ -883,8 +589,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 802.5,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -894,7 +600,7 @@
       "featured": false,
       "status": "available",
       "id": 39,
-      "title": "Rali Business Center - Torre A Piso 2 - Oficina 228",
+      "title": "Rali Business Center - Oficina 228",
       "area": 22.0,
       "image": "/images/properties/rali/lobby-escaleras-anillo-luz.webp",
       "images": [
@@ -912,10 +618,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "22.00 m? en Rali Business Center",
+        "22.00 m² en Rali Business Center",
         "Canon $ 802.50 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -924,8 +630,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1070.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -935,7 +641,7 @@
       "featured": false,
       "status": "available",
       "id": 40,
-      "title": "Rali Business Center - Torre A Piso 2 - Oficina 231",
+      "title": "Rali Business Center - Oficina 231",
       "area": 28.0,
       "image": "/images/properties/rali/pasillo-acceso-glass.webp",
       "images": [
@@ -956,7 +662,7 @@
         "28.00 m? en Rali Business Center",
         "Canon $ 1,070.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -965,8 +671,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1284.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -976,7 +682,7 @@
       "featured": false,
       "status": "available",
       "id": 41,
-      "title": "Rali Business Center - Torre A Piso 2 - Oficina 244",
+      "title": "Rali Business Center - Oficina 244",
       "area": 38.0,
       "image": "/images/properties/rali/oficina-shell-38m2.webp",
       "images": [
@@ -994,10 +700,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "38.00 m? en Rali Business Center",
+        "38.00 m² en Rali Business Center",
         "Canon $ 1,284.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -1006,8 +712,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1284.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1017,7 +723,7 @@
       "featured": false,
       "status": "available",
       "id": 42,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 802",
+      "title": "Rali Business Center - Oficina 802",
       "area": 52.64,
       "image": "/images/properties/rali/lounge-vista-mar.webp",
       "images": [
@@ -1025,7 +731,7 @@
         "/images/properties/rali/fachada-rali-street-view.webp",
         "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre B Piso 8 - Oficina 802 en Rali Business Center, 52.64 m?. Canon $ 1,284.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre B Piso 8 - Oficina 802 en Rali Business Center, 52.64 m². Canon $ 1,284.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1035,10 +741,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "52.64 m? en Rali Business Center",
+        "52.64 m² en Rali Business Center",
         "Canon $ 1,284.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -1047,8 +753,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1551.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1058,7 +764,7 @@
       "featured": false,
       "status": "available",
       "id": 43,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 806",
+      "title": "Rali Business Center - Oficina 806",
       "area": 71.99,
       "image": "/images/properties/rali/lounge-muro-verde.webp",
       "images": [
@@ -1079,7 +785,7 @@
         "71.99 m? en Rali Business Center",
         "Canon $ 1,551.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -1088,8 +794,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1605.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1099,7 +805,7 @@
       "featured": false,
       "status": "available",
       "id": 44,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 810",
+      "title": "Rali Business Center - Oficina 810",
       "area": 75.77,
       "image": "/images/properties/rali/sala-juntas-ejecutiva.webp",
       "images": [
@@ -1117,10 +823,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "75.77 m? en Rali Business Center",
+        "75.77 m² en Rali Business Center",
         "Canon $ 1,605.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -1129,8 +835,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1712.0,
-      "location": "Avenida Balboa, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Avenida Balboa, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1140,7 +846,7 @@
       "featured": false,
       "status": "available",
       "id": 45,
-      "title": "Rali Business Center - Torre B Piso 8 - Oficina 826",
+      "title": "Rali Business Center - Oficina 826",
       "area": 79.82,
       "image": "/images/properties/rali/fachada-rali-avenida-balboa.webp",
       "images": [
@@ -1148,7 +854,7 @@
         "/images/properties/rali/fachada-rali-street-view.webp",
         "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre B Piso 8 - Oficina 826 en Rali Business Center, 79.82 m?. Canon $ 1,712.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre B Piso 8 - Oficina 826 en Rali Business Center, 79.82 m². Canon $ 1,712.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1158,10 +864,10 @@
         "Estacionamientos para inquilinos y visitas"
       ],
       "highlights": [
-        "79.82 m? en Rali Business Center",
+        "79.82 m² en Rali Business Center",
         "Canon $ 1,712.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
-        "Ubicaci?n premium en Avenida Balboa"
+        "Ubicación premium en Avenida Balboa"
       ]
     },
     {
@@ -1169,8 +875,8 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "location": "Balboa, Ancon, Ciudad de Panama",
-      "city": "Ciudad de Panama",
+      "location": "Balboa, Ancon, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Ancon",
       "builtYear": 2024,
       "bedrooms": 0,
@@ -1212,9 +918,9 @@
       "parkingSpots": 2,
       "id": 132,
       "highlights": [
-        "Local A-108: 74 m? + 37 m? terraza (111 m?)",
+        "Local A-108: 74 m² + 37 m² terraza (111 m²)",
         "Balboa Boutiques mezzanine 100",
-        "Canon $3,200/mes + mant. $4.50/m?",
+        "Canon $3,200/mes + mant. $4.50/m²",
         "Vitrinas y terraza para food o retail"
       ]
     },
@@ -1223,8 +929,8 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "location": "Balboa, Ancon, Ciudad de Panama",
-      "city": "Ciudad de Panama",
+      "location": "Balboa, Ancon, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Ancon",
       "builtYear": 2024,
       "bedrooms": 0,
@@ -1260,14 +966,14 @@
         "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
         "/images/properties/balboa-boutique/locales-comerciales/local-interior-3.webp"
       ],
-      "description": "Local A-109 en Balboa Boutiques, mezzanine 100. Area cerrada de 318 m2; ideal para restaurante grande, gimnasio boutique o showroom. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
+      "description": "Local A-109 en Balboa Boutiques, mezzanine 100. Area cerrada de 318 m²; ideal para restaurante grande, gimnasio boutique o showroom. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m² y valet opcional $100/mes.",
       "bathrooms": 2,
       "parkingSpots": 3,
       "id": 133,
       "highlights": [
-        "Local A-109: 318 m? abiertos",
+        "Local A-109: 318 m² abiertos",
         "Balboa Boutiques, mezzanine 100",
-        "Canon $6,360/mes + mant. $4.50/m?",
+        "Canon $6,360/mes + mant. $4.50/m²",
         "Ideal anchor, gimnasio o restaurante grande"
       ]
     },
@@ -1276,8 +982,8 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "location": "Balboa, Ancon, Ciudad de Panama",
-      "city": "Ciudad de Panama",
+      "location": "Balboa, Ancon, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Ancon",
       "builtYear": 2024,
       "bedrooms": 0,
@@ -1314,27 +1020,27 @@
         "/images/properties/balboa-boutique/locales-comerciales/local-interior-2.webp",
         "/images/properties/balboa-boutique/locales-comerciales/local-interior-terraza.webp"
       ],
-      "description": "Local B-102/202 en Balboa Boutiques, mezzanine 100. Area cerrada de 339 m2; perfecto para anchor tenant, gimnasio premium o restaurante insignia. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m2 y valet opcional $100/mes.",
+      "description": "Local B-102/202 en Balboa Boutiques, mezzanine 100. Area cerrada de 339 m²; perfecto para anchor tenant, gimnasio premium o restaurante insignia. Contrato 3 anos negociable, deposito + primer mes; 2 meses de gracia. Mantenimiento $4.50/m² y valet opcional $100/mes.",
       "bathrooms": 2,
       "parkingSpots": 4,
       "id": 134,
       "highlights": [
-        "Local B-102/202: 339 m? en mezzanine",
+        "Local B-102/202: 339 m² en mezzanine",
         "Fachada y terraza con vistas a la Calzada",
-        "Canon $9,000/mes + mant. $4.50/m?",
+        "Canon $9,000/mes + mant. $4.50/m²",
         "Ideal anchor premium/fitness/restaurante"
       ]
     },
     {
       "id": 135,
-      "title": "Boulevard Plaza Costa Verde - Ocupacion Completa",
+      "title": "Boulevard Plaza Costa Verde - Ocupación Completa",
       "type": "Local",
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "La Chorrera",
       "bedrooms": 0,
       "bathrooms": 0,
@@ -1351,7 +1057,7 @@
         "/images/properties/boulevard-plaza/hero-6.webp"
       ],
       "planos": [],
-      "description": "Boulevard Plaza en Costa Verde (La Chorrera) es un strip mall consolidado con ocupacion completa. Todos los locales estan actualmente alquilados; se muestra para evidenciar gestion y presencia en plazas 100% ocupadas.",
+      "description": "Boulevard Plaza en Costa Verde (La Chorrera) es un strip mall consolidado con ocupación completa. Todos los locales están actualmente alquilados; se muestra para evidenciar gestión y presencia en plazas 100% ocupadas.",
       "amenities": [
         "Strip mall consolidado en Costa Verde",
         "Alto flujo vehicular y peatonal",
@@ -1368,8 +1074,8 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "La Chorrera",
       "builtYear": 2024,
       "bedrooms": 0,
@@ -1407,8 +1113,8 @@
       "parkingSpots": 2,
       "id": 136,
       "highlights": [
-        "Local 3 - 132.93 m? en planta baja",
-        "Canon $711.17/mes + mant. $1.50/m?",
+        "Local 3 - 132.93 m² en planta baja",
+        "Canon $711.17/mes + mant. $1.50/m²",
         "2 meses de gracia para acondicionar",
         "Estacionamientos para clientes"
       ]
@@ -1418,8 +1124,8 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "La Chorrera",
       "builtYear": 2024,
       "bedrooms": 0,
@@ -1452,14 +1158,14 @@
         "/images/properties/plaza-guayacanes/hero-1.webp",
         "/images/properties/plaza-guayacanes/hero-3.webp"
       ],
-      "description": "Local 4 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 134.9 m2 en una sola planta. Alquiler $721.71/mes, deposito $674.50, mantenimiento $269.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 4 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 134.9 m² en una sola planta. Alquiler $721.71/mes, deposito $674.50, mantenimiento $269.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 137,
       "highlights": [
-        "Local 4 - 134.9 m? en planta baja",
-        "Canon $721.71/mes + mant. $1.50/m?",
-        "Contratos desde 1 a?o con gracia",
+        "Local 4 - 134.9 m² en planta baja",
+        "Canon $721.71/mes + mant. $1.50/m²",
+        "Contratos desde 1 año con gracia",
         "Zona de alto crecimiento en La Chorrera"
       ]
     },
@@ -1468,15 +1174,15 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "La Chorrera",
       "builtYear": 2024,
       "bedrooms": 0,
       "status": "available",
       "featured": true,
       "amenities": [
-        "Ubicacion estrategica en La Chorrera",
+        "Ubicación estratégica en La Chorrera",
         "Estacionamientos para clientes",
         "Seguridad 24/7 y CCTV",
         "Acceso controlado",
@@ -1502,13 +1208,13 @@
         "/images/properties/plaza-guayacanes/hero-1.webp",
         "/images/properties/plaza-guayacanes/hero-2.webp"
       ],
-      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m2 en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m² en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.80. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 2,
       "parkingSpots": 4,
       "id": 138,
       "highlights": [
-        "Local 9 - 305.9 m? en planta baja",
-        "Canon $1,636.56/mes + mant. $1.50/m?",
+        "Local 9 - 305.9 m² en planta baja",
+        "Canon $1,636.56/mes + mant. $1.50/m²",
         "Espacio amplio para anchor o gimnasio",
         "Estacionamiento amplio y acceso controlado"
       ]
@@ -1518,8 +1224,8 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "location": "La Chorrera, Panama Oeste",
-      "city": "Panama Oeste",
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "La Chorrera",
       "builtYear": 2024,
       "bedrooms": 0,
@@ -1552,13 +1258,13 @@
         "/images/properties/plaza-guayacanes/hero-1.webp",
         "/images/properties/plaza-guayacanes/hero-3.webp"
       ],
-      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.80, mantenimiento $222.72. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m² en una sola planta. Alquiler $595.77/mes, deposito $556.80, mantenimiento $222.72. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 139,
       "highlights": [
-        "Local 17 - 111.36 m? en planta baja",
-        "Canon $595.77/mes + mant. $1.50/m?",
+        "Local 17 - 111.36 m² en planta baja",
+        "Canon $595.77/mes + mant. $1.50/m²",
         "Ideal retail mediano o servicios",
         "Estacionamiento para clientes y CCTV"
       ]
@@ -1568,8 +1274,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 700,
-      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "San Francisco",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1588,18 +1294,18 @@
         "/images/properties/sunset-strip/pasillo-comercial-interior.webp"
       ],
       "planos": [],
-      "description": "Local 409 en Sunset Strip (Nivel 400), 38 m?. Canon $700/mes. Ubicado en la placa superior con visibilidad sobre V?a Israel, ideal para oficinas boutique o servicios profesionales.",
+      "description": "Local 409 en Sunset Strip (Nivel 400), 38 m². Canon $700/mes. Ubicado en la placa superior con visibilidad sobre Vía Israel, ideal para oficinas boutique o servicios profesionales.",
       "amenities": [
-        "Vista elevada hacia V?a Israel",
-        "Lobby y circulaci?n climatizada",
+        "Vista elevada hacia Vía Israel",
+        "Lobby y circulación climatizada",
         "Ascensor y escaleras de emergencia",
         "Seguridad y CCTV 24/7"
       ],
       "highlights": [
-        "Nivel 400, 38 m? listos para oficinas boutique",
+        "Nivel 400, 38 m² listos para oficinas boutique",
         "Canon $700/mes",
         "Acceso por ascensor y lobby climatizado",
-        "Visibilidad hacia V?a Israel"
+        "Visibilidad hacia Vía Israel"
       ]
     },
     {
@@ -1629,16 +1335,16 @@
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
       ],
-      "description": "Local 11 en Sunset Strip (Planta 00), 79 m?. Canon $2,000/mes + mantenimiento $2.00/m?. Frente peatonal y acceso directo desde estacionamiento, ideal para retail o servicios de alto tr?fico.",
+      "description": "Local 11 en Sunset Strip (Planta 00), 79 m². Canon $2,000/mes + mantenimiento $2.00/m². Frente peatonal y acceso directo desde estacionamiento, ideal para retail o servicios de alto tráfico.",
       "amenities": [
         "Planta 00 con acceso directo desde estacionamiento",
         "Fachada con vitrina de piso a techo",
-        "Pasillo climatizado y escaleras el?ctricas",
+        "Pasillo climatizado y escaleras eléctricas",
         "Seguridad 24/7 y CCTV"
       ],
       "highlights": [
-        "79 m? en planta 00",
-        "Canon $2,000 + mant. $2.00/m?",
+        "79 m² en planta 00",
+        "Canon $2,000 + mant. $2.00/m²",
         "Vitrina frontal hacia pasillo y estacionamientos",
         "Listo para retail o servicios"
       ]
@@ -1648,8 +1354,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 3500,
-      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "San Francisco",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1670,18 +1376,18 @@
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
       ],
-      "description": "Local 25 en Sunset Strip (Planta 00), 114 m?. Canon $3,500/mes + mantenimiento $2.00/m?. Espacio amplio con frente principal y circulaci?n interior, perfecto para restaurante casual, farmacia o tienda ancla.",
+      "description": "Local 25 en Sunset Strip (Planta 00), 114 m². Canon $3,500/mes + mantenimiento $2.00/m². Espacio amplio con frente principal y circulación interior, perfecto para restaurante casual, farmacia o tienda ancla.",
       "amenities": [
         "Frente hacia pasillo principal y estacionamiento",
-        "Altura generosa para rotulaci?n",
-        "Escaleras el?ctricas y ascensor cercanos",
+        "Altura generosa para rotulación",
+        "Escaleras eléctricas y ascensor cercanos",
         "Estacionamiento frontal para clientes"
       ],
       "highlights": [
-        "114 m? en planta 00",
-        "Canon $3,500 + mant. $2.00/m?",
+        "114 m² en planta 00",
+        "Canon $3,500 + mant. $2.00/m²",
         "Ideal para restaurante o tienda ancla",
-        "Alta visibilidad en V?a Israel"
+        "Alta visibilidad en Vía Israel"
       ]
     },
     {
@@ -1689,8 +1395,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 2200,
-      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "San Francisco",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1711,18 +1417,18 @@
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
       ],
-      "description": "Local 26 en Sunset Strip (Planta 00), 69 m? interiores + 29 m? de terraza (98 m? totales). Canon $2,200/mes + mantenimiento $2.00/m?. Terraza frontal para mesas exteriores, ideal para caf? o concepto de comida r?pida.",
+      "description": "Local 26 en Sunset Strip (Planta 00), 69 m² interiores + 29 m² de terraza (98 m² totales). Canon $2,200/mes + mantenimiento $2.00/m². Terraza frontal para mesas exteriores, ideal para café o concepto de comida rápida.",
       "amenities": [
-        "Terraza de 29 m? para mesas exteriores",
+        "Terraza de 29 m² para mesas exteriores",
         "Acceso peatonal y estacionamientos al frente",
-        "Pasillo climatizado y escaleras el?ctricas",
+        "Pasillo climatizado y escaleras eléctricas",
         "Seguridad y CCTV 24/7"
       ],
       "highlights": [
-        "69 m? interiores + 29 m? de terraza",
-        "Canon $2,200 + mant. $2.00/m?",
+        "69 m² interiores + 29 m² de terraza",
+        "Canon $2,200 + mant. $2.00/m²",
         "Frente con terraza para food & beverage",
-        "Ubicaci?n estrat?gica en V?a Israel"
+        "Ubicación estratégica en Vía Israel"
       ]
     },
     {
@@ -1730,8 +1436,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 940,
-      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "San Francisco",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1752,16 +1458,16 @@
       "planos": [
         "/images/properties/sunset-strip/nivel-100.webp"
       ],
-      "description": "Local 134 en Sunset Strip (Mezanine 100), 47 m?. Canon $940/mes + mantenimiento $1.50/m?. Espacio eficiente con frente acristalado, ideal para consultorio, showroom o oficina de servicios.",
+      "description": "Local 134 en Sunset Strip (Mezanine 100), 47 m². Canon $940/mes + mantenimiento $1.50/m². Espacio eficiente con frente acristalado, ideal para consultorio, showroom o oficina de servicios.",
       "amenities": [
-        "Mezanine 100 con acceso por escaleras el?ctricas y ascensor",
-        "Fachada de vidrio para m?xima visibilidad",
+        "Mezanine 100 con acceso por escaleras eléctricas y ascensor",
+        "Fachada de vidrio para máxima visibilidad",
         "Pasillo climatizado",
         "Seguridad 24/7"
       ],
       "highlights": [
-        "47 m? en mezanine 100",
-        "Canon $940 + mant. $1.50/m?",
+        "47 m² en mezanine 100",
+        "Canon $940 + mant. $1.50/m²",
         "Fachada acristalada",
         "Ideal para consultorio u oficina"
       ]
@@ -1771,8 +1477,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 1200,
-      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "San Francisco",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1793,7 +1499,7 @@
       "planos": [
         "/images/properties/sunset-strip/nivel-200.webp"
       ],
-      "description": "Oficina 206 en Sunset Strip (Nivel 200), 57 m?. Canon $1,200/mes + mantenimiento $1.50/m?. Planta eficiente para equipos peque?os con vistas hacia V?a Israel y circulaci?n interna climatizada.",
+      "description": "Oficina 206 en Sunset Strip (Nivel 200), 57 m². Canon $1,200/mes + mantenimiento $1.50/m². Planta eficiente para equipos pequeños con vistas hacia Vía Israel y circulación interna climatizada.",
       "amenities": [
         "Nivel 200 con lobby y pasillos climatizados",
         "Planta eficiente para oficina boutique",
@@ -1801,10 +1507,10 @@
         "Seguridad y control de acceso"
       ],
       "highlights": [
-        "57 m? para oficina boutique",
-        "Canon $1,200 + mant. $1.50/m?",
-        "Circulaci?n climatizada",
-        "Ubicaci?n c?ntrica en V?a Israel"
+        "57 m² para oficina boutique",
+        "Canon $1,200 + mant. $1.50/m²",
+        "Circulación climatizada",
+        "Ubicación céntrica en Vía Israel"
       ]
     },
     {
@@ -1815,8 +1521,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1829,21 +1535,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #1 - 153.25 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #1 - 153.25 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -1855,8 +1561,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1869,21 +1575,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #2 - 100.91 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #2 - 100.91 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -1895,8 +1601,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1909,21 +1615,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #3 - 103.08 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #3 - 103.08 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -1935,8 +1641,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1949,21 +1655,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #4 - 100.82 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #4 - 100.82 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -1975,8 +1681,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -1989,21 +1695,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #5 - 136.39 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #5 - 136.39 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -2015,8 +1721,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2029,21 +1735,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #6 - 181.68 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #6 - 181.68 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -2055,8 +1761,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2074,16 +1780,16 @@
         "Vista panor?mica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #7 - 153.17 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #7 - 153.17 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -2095,8 +1801,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2109,21 +1815,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #8 - 99.38 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #8 - 99.38 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -2135,8 +1841,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2149,21 +1855,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #9 - 101.64 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #9 - 101.64 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -2175,8 +1881,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2189,21 +1895,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #10 - 99.42 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #10 - 99.42 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -2215,8 +1921,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 0,
-      "location": "Calle 50, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "Bella Vista",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2229,21 +1935,21 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamientos rotativos y asignados"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Oficina #11 - 151.32 m?",
-        "Ubicaci?n estrat?gica en Calle 50",
+        "Oficina #11 - 151.32 m²",
+        "Ubicación estratégica en Calle 50",
         "Edificio clase A con seguridad 24/7",
-        "Planta el?ctrica y A/C central",
+        "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
       ]
     },
@@ -2255,8 +1961,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 2576.4,
-      "location": "Boulevard Costa Verde, La Chorrera, Panam? Oeste",
-      "city": "Panam? Oeste",
+      "location": "Boulevard Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "La Chorrera",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2273,21 +1979,21 @@
         "/images/properties/boulevard-plaza/hero-6.webp"
       ],
       "planos": [],
-      "description": "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gesti?n comercial.",
+      "description": "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gestión comercial.",
       "amenities": [
         "Strip mall consolidado en Costa Verde",
         "Alto flujo vehicular y peatonal",
         "650 estacionamientos disponibles",
-        "Acceso desde v?a principal",
+        "Acceso desde vía principal",
         "Seguridad y mantenimiento en sitio"
       ],
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Local Local L13 - 67.8 m?",
+        "Local Local L13 - 67.8 m²",
         "Boulevard Costa Verde, La Chorrera",
         "Proyecto ocupado, lista de espera",
-        "Mantenimiento $2.25/m?",
+        "Mantenimiento $2.25/m²",
         "Seguridad y estacionamientos amplios"
       ]
     },
@@ -2299,8 +2005,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 2426.3,
-      "location": "Boulevard Costa Verde, La Chorrera, Panam? Oeste",
-      "city": "Panam? Oeste",
+      "location": "Boulevard Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
       "district": "La Chorrera",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2328,58 +2034,11 @@
       "featured": false,
       "status": "rented",
       "highlights": [
-        "Local Local L14 - 63.85 m?",
+        "Local Local L14 - 63.85 m²",
         "Boulevard Costa Verde, La Chorrera",
         "Proyecto ocupado, lista de espera",
-        "Mantenimiento $2.25/m?",
+        "Mantenimiento $2.25/m²",
         "Seguridad y estacionamientos amplios"
-      ]
-    },
-    {
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 320000,
-      "pricePerMonth": null,
-      "location": "Condado del Rey, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
-      "district": "Condado del Rey",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "parkingSpots": 2,
-      "area": 155.7,
-      "builtYear": 2024,
-      "image": "/images/properties/kings-park/hero.png",
-      "images": [
-        "/images/properties/kings-park/hero.png",
-        "/images/properties/kings-park/hero-full.png",
-        "/images/properties/kings-park/model.jpeg",
-        "/images/properties/kings-park/plano-1.png",
-        "/images/properties/kings-park/plano-2.png"
-      ],
-      "planos": [
-        "/images/properties/kings-park/plano-modelo-a.png",
-        "/images/properties/kings-park/plano-modelo-b.png"
-      ],
-      "featured": true,
-      "status": "available",
-      "id": 163,
-      "title": "Kings Park - Torre 500, Apto 10-B",
-      "description": "Apartamento 10-B en Torre 500 de Kings Park, 155.70 m?. Precio de venta $320,000 y mantenimiento mensual $295.83. Piso alto con vistas amplias, balcones y 2 estacionamientos en Condado del Rey.",
-      "amenities": [
-        "Balc?n con vista panor?mica",
-        "Sala/comedor integrados",
-        "Cocina abierta con lavander?a",
-        "Cuarto y ba?o de servicio",
-        "2 estacionamientos",
-        "Seguridad 24/7 y control de acceso",
-        "Amenidades del complejo (piscinas, canchas, club)"
-      ],
-      "highlights": [
-        "155.70 m? en Torre 500",
-        "Precio $320,000",
-        "Mantenimiento $295.83/mes",
-        "Piso alto con vista abierta"
       ]
     },
     {
@@ -2412,18 +2071,18 @@
       "bedrooms": 4,
       "bathrooms": 4,
       "view": "Lake & Ocean View",
-      "description": "Unidad 1201 en Torre 100 de Playa Escondida. 263.36 m2, Lake & Ocean View. Tipologia 4C + S. Precio de venta $ 912,542.",
+      "description": "Unidad 1201 en Torre 100 de Playa Escondida. 263.36 m², Lake & Ocean View. Tipologia 4C + S. Precio de venta $ 912,542.",
       "highlights": [
-        "263.36 m2, tipologia 4C + S",
+        "263.36 m², tipologia 4C + S",
         "Vista: Lake & Ocean View",
         "Precio $ 912,542",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2458,18 +2117,18 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Ocean View",
-      "description": "Unidad 1202 en Torre 100 de Playa Escondida. 148.75 m2, Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 624,750.",
+      "description": "Unidad 1202 en Torre 100 de Playa Escondida. 148.75 m², Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 624,750.",
       "highlights": [
-        "148.75 m2, tipologia 2C + DEN + S",
+        "148.75 m², tipologia 2C + DEN + S",
         "Vista: Ocean View",
         "Precio $ 624,750",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2504,18 +2163,18 @@
       "bedrooms": 4,
       "bathrooms": 4,
       "view": "Lake & Ocean View",
-      "description": "Unidad 1203 en Torre 100 de Playa Escondida. 260.83 m2, Lake & Ocean View. Tipologia 4C + S. Precio de venta $ 903,776.",
+      "description": "Unidad 1203 en Torre 100 de Playa Escondida. 260.83 m², Lake & Ocean View. Tipologia 4C + S. Precio de venta $ 903,776.",
       "highlights": [
-        "260.83 m2, tipologia 4C + S",
+        "260.83 m², tipologia 4C + S",
         "Vista: Lake & Ocean View",
         "Precio $ 903,776",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2550,18 +2209,18 @@
       "bedrooms": 4,
       "bathrooms": 4,
       "view": "Lake & Ocean View",
-      "description": "Unidad 1101 en Torre 100 de Playa Escondida. 263.36 m2, Lake & Ocean View. Tipologia 4C + S. Precio de venta $ 912,542.",
+      "description": "Unidad 1101 en Torre 100 de Playa Escondida. 263.36 m², Lake & Ocean View. Tipologia 4C + S. Precio de venta $ 912,542.",
       "highlights": [
-        "263.36 m2, tipologia 4C + S",
+        "263.36 m², tipologia 4C + S",
         "Vista: Lake & Ocean View",
         "Precio $ 912,542",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2605,9 +2264,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2642,18 +2301,18 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Lake View",
-      "description": "Unidad 1005 en Torre 100 de Playa Escondida. 127.88 m2, Lake View. Tipologia 2C. Precio de venta $ 402,570.",
+      "description": "Unidad 1005 en Torre 100 de Playa Escondida. 127.88 m², Lake View. Tipologia 2C. Precio de venta $ 402,570.",
       "highlights": [
-        "127.88 m2, tipologia 2C",
+        "127.88 m², tipologia 2C",
         "Vista: Lake View",
         "Precio $ 402,570",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2688,18 +2347,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Ocean View",
-      "description": "Unidad 1002 en Torre 100 de Playa Escondida. 199.70 m2, Ocean View. Tipologia 3C + S. Precio de venta $ 670,992.",
+      "description": "Unidad 1002 en Torre 100 de Playa Escondida. 199.70 m², Ocean View. Tipologia 3C + S. Precio de venta $ 670,992.",
       "highlights": [
-        "199.70 m2, tipologia 3C + S",
+        "199.70 m², tipologia 3C + S",
         "Vista: Ocean View",
         "Precio $ 670,992",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2734,18 +2393,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Lake & Ocean View",
-      "description": "Unidad 1004 en Torre 100 de Playa Escondida. 199.91 m2, Lake & Ocean View. Tipologia 3C + S. Precio de venta $ 671,698.",
+      "description": "Unidad 1004 en Torre 100 de Playa Escondida. 199.91 m², Lake & Ocean View. Tipologia 3C + S. Precio de venta $ 671,698.",
       "highlights": [
-        "199.91 m2, tipologia 3C + S",
+        "199.91 m², tipologia 3C + S",
         "Vista: Lake & Ocean View",
         "Precio $ 671,698",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2780,18 +2439,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Ocean View",
-      "description": "Unidad 905 en Torre 100 de Playa Escondida. 214.71 m2, Ocean View. Tipologia 3C + DEN + S. Precio de venta $ 721,426.",
+      "description": "Unidad 905 en Torre 100 de Playa Escondida. 214.71 m², Ocean View. Tipologia 3C + DEN + S. Precio de venta $ 721,426.",
       "highlights": [
-        "214.71 m2, tipologia 3C + DEN + S",
+        "214.71 m², tipologia 3C + DEN + S",
         "Vista: Ocean View",
         "Precio $ 721,426",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2835,9 +2494,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2872,24 +2531,23 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Lake View",
-      "description": "Unidad 606 en Torre 100 de Playa Escondida. 126.48 m2, Lake View. Tipologia 2C. Precio de venta $ 398,412.",
+      "description": "Unidad 606 en Torre 100 de Playa Escondida. 126.48 m², Lake View. Tipologia 2C. Precio de venta $ 398,412.",
       "highlights": [
-        "126.48 m2, tipologia 2C",
+        "126.48 m², tipologia 2C",
         "Vista: Lake View",
         "Precio $ 398,412",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
     },
     {
-      "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
       "pricePerMonth": null,
@@ -2918,18 +2576,18 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Ocean View",
-      "description": "Unidad 603 en Torre 100 de Playa Escondida. 143.78 m2, Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
+      "description": "Unidad 603 en Torre 100 de Playa Escondida. 143.78 m², Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
       "highlights": [
-        "143.78 m2, tipologia 2C + DEN + S",
+        "143.78 m², tipologia 2C + DEN + S",
         "Vista: Ocean View",
         "Precio $ 543,488",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -2964,18 +2622,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Lake View",
-      "description": "Unidad 501 en Torre 100 de Playa Escondida. 152.58 m2, Lake View. Tipologia 3C + S. Precio de venta $ 480,627.",
+      "description": "Unidad 501 en Torre 100 de Playa Escondida. 152.58 m², Lake View. Tipologia 3C + S. Precio de venta $ 480,627.",
       "highlights": [
-        "152.58 m2, tipologia 3C + S",
+        "152.58 m², tipologia 3C + S",
         "Vista: Lake View",
         "Precio $ 480,627",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3019,9 +2677,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3056,18 +2714,18 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Ocean View",
-      "description": "Unidad 504 en Torre 100 de Playa Escondida. 143.78 m2, Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
+      "description": "Unidad 504 en Torre 100 de Playa Escondida. 143.78 m², Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
       "highlights": [
-        "143.78 m2, tipologia 2C + DEN + S",
+        "143.78 m², tipologia 2C + DEN + S",
         "Vista: Ocean View",
         "Precio $ 543,488",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3102,18 +2760,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Lake & Ocean View",
-      "description": "Unidad 505 en Torre 100 de Playa Escondida. 178.80 m2, Lake & Ocean View. Tipologia 3C + S. Precio de venta $ 600,768.",
+      "description": "Unidad 505 en Torre 100 de Playa Escondida. 178.80 m², Lake & Ocean View. Tipologia 3C + S. Precio de venta $ 600,768.",
       "highlights": [
-        "178.80 m2, tipologia 3C + S",
+        "178.80 m², tipologia 3C + S",
         "Vista: Lake & Ocean View",
         "Precio $ 600,768",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3148,18 +2806,18 @@
       "bedrooms": 4,
       "bathrooms": 4,
       "view": "Lake View",
-      "description": "Unidad 401 en Torre 100 de Playa Escondida. 152.58 m2, Lake View. Tipologia 4C. Precio de venta $ 480,627.",
+      "description": "Unidad 401 en Torre 100 de Playa Escondida. 152.58 m², Lake View. Tipologia 4C. Precio de venta $ 480,627.",
       "highlights": [
-        "152.58 m2, tipologia 4C",
+        "152.58 m², tipologia 4C",
         "Vista: Lake View",
         "Precio $ 480,627",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3194,18 +2852,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Lake View",
-      "description": "Unidad 406 en Torre 100 de Playa Escondida. 137.03 m2, Lake View. Tipologia 3C. Precio de venta $ 431,645.",
+      "description": "Unidad 406 en Torre 100 de Playa Escondida. 137.03 m², Lake View. Tipologia 3C. Precio de venta $ 431,645.",
       "highlights": [
-        "137.03 m2, tipologia 3C",
+        "137.03 m², tipologia 3C",
         "Vista: Lake View",
         "Precio $ 431,645",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3240,9 +2898,9 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Ocean View",
-      "description": "Unidad 402 en Torre 100 de Playa Escondida. 183.76 m2, Ocean View. Tipologia 3C + S. Precio de venta $ 617,434.",
+      "description": "Unidad 402 en Torre 100 de Playa Escondida. 183.76 m², Ocean View. Tipologia 3C + S. Precio de venta $ 617,434.",
       "highlights": [
-        "183.76 m2, tipologia 3C + S",
+        "183.76 m², tipologia 3C + S",
         "Vista: Ocean View",
         "Precio $ 617,434",
         "Acceso a amenidades de resort en Playa Escondida"
@@ -3250,8 +2908,8 @@
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
         "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3286,18 +2944,18 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Ocean View",
-      "description": "Unidad 403 en Torre 100 de Playa Escondida. 143.78 m2, Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
+      "description": "Unidad 403 en Torre 100 de Playa Escondida. 143.78 m², Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
       "highlights": [
-        "143.78 m2, tipologia 2C + DEN + S",
+        "143.78 m², tipologia 2C + DEN + S",
         "Vista: Ocean View",
         "Precio $ 543,488",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3332,18 +2990,18 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Ocean View",
-      "description": "Unidad 404 en Torre 100 de Playa Escondida. 143.78 m2, Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
+      "description": "Unidad 404 en Torre 100 de Playa Escondida. 143.78 m², Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,488.",
       "highlights": [
-        "143.78 m2, tipologia 2C + DEN + S",
+        "143.78 m², tipologia 2C + DEN + S",
         "Vista: Ocean View",
         "Precio $ 543,488",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3378,18 +3036,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Lake View",
-      "description": "Unidad 301 en Torre 100 de Playa Escondida. 152.58 m2, Lake View. Tipologia 3C + S. Precio de venta $ 480,627.",
+      "description": "Unidad 301 en Torre 100 de Playa Escondida. 152.58 m², Lake View. Tipologia 3C + S. Precio de venta $ 480,627.",
       "highlights": [
-        "152.58 m2, tipologia 3C + S",
+        "152.58 m², tipologia 3C + S",
         "Vista: Lake View",
         "Precio $ 480,627",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3424,18 +3082,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Lake View",
-      "description": "Unidad 306 en Torre 100 de Playa Escondida. 137.03 m2, Lake View. Tipologia 3C. Precio de venta $ 431,645.",
+      "description": "Unidad 306 en Torre 100 de Playa Escondida. 137.03 m², Lake View. Tipologia 3C. Precio de venta $ 431,645.",
       "highlights": [
-        "137.03 m2, tipologia 3C",
+        "137.03 m², tipologia 3C",
         "Vista: Lake View",
         "Precio $ 431,645",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3470,18 +3128,18 @@
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Ocean View",
-      "description": "Unidad 302 en Torre 100 de Playa Escondida. 183.76 m2, Ocean View. Tipologia 3C + S. Precio de venta $ 617,434.",
+      "description": "Unidad 302 en Torre 100 de Playa Escondida. 183.76 m², Ocean View. Tipologia 3C + S. Precio de venta $ 617,434.",
       "highlights": [
-        "183.76 m2, tipologia 3C + S",
+        "183.76 m², tipologia 3C + S",
         "Vista: Ocean View",
         "Precio $ 617,434",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -3516,18 +3174,18 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "view": "Ocean View",
-      "description": "Unidad 303 en Torre 100 de Playa Escondida. 143.73 m2, Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,299.",
+      "description": "Unidad 303 en Torre 100 de Playa Escondida. 143.73 m², Ocean View. Tipologia 2C + DEN + S. Precio de venta $ 543,299.",
       "highlights": [
-        "143.73 m2, tipologia 2C + DEN + S",
+        "143.73 m², tipologia 2C + DEN + S",
         "Vista: Ocean View",
         "Precio $ 543,299",
         "Acceso a amenidades de resort en Playa Escondida"
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5457,9 +5115,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5503,11 +5161,199 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 232,
+      "title": "New West I - Modelo Nevada",
+      "price": 240000,
+      "area": 167,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/familia-paseo-urbanizacion.png",
+      "images": [
+        "/images/properties/new-west/general/familia-paseo-urbanizacion.png",
+        "/images/properties/new-west/general/townhouses-conjunto.png",
+        "/images/properties/new-west/general/cancha-futbol-cesped.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West I - Modelo Nevada en Costa Verde. 167 m2 de construcci?n en lotes desde 180 m2, 3 rec?maras, 2 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
+      "amenities": [
+        "Área social independiente",
+        "Piscina para niños y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Salón de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 recámaras (den convertible)"
+      ],
+      "highlights": [
+        "167 m2 de construcción",
+        "Lotes desde 180 m2",
+        "Precio desde $ 240,000",
+        "Entrega inmediata (10% de abono inicial)"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 233,
+      "title": "New West I - Modelo Jazmín",
+      "price": 220000,
+      "area": 157,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+      "images": [
+        "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+        "/images/properties/new-west/general/club-amenidades-aerea.png",
+        "/images/properties/new-west/general/piscina-pergolas.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West I - Modelo Jazmín en Costa Verde. 157 m2 de construcción en lotes desde 180 m2, 3 recámaras, 2 piso(s). Estado: A futuro.",
+      "amenities": [
+        "Área social independiente",
+        "Piscina para niños y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Salón de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 recámaras (den convertible)"
+      ],
+      "highlights": [
+        "157 m2 de construcción",
+        "Lotes desde 180 m2",
+        "Precio desde $ 220,000",
+        "A futuro"
+      ],
+      "planos": [
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-baja.png",
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-alta.png"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 234,
+      "title": "New West II - Modelo Jazmín",
+      "price": 209000,
+      "area": 157,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+      "images": [
+        "/images/properties/new-west/general/fachada-modelo-jazmin.png",
+        "/images/properties/new-west/general/club-amenidades-aerea.png",
+        "/images/properties/new-west/general/piscina-pergolas.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West II - Modelo Jazm?n en Costa Verde. 157 m2 de construcci?n en lotes desde 160 m2, 3 rec?maras, 2 piso(s). Estado: A futuro.",
+      "amenities": [
+        "Área social independiente",
+        "Piscina para niños y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Salón de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 recámaras (den convertible)"
+      ],
+      "highlights": [
+        "157 m2 de construcción",
+        "Lotes desde 160 m2",
+        "Precio desde $ 209,000",
+        "A futuro"
+      ],
+      "planos": [
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-baja.png",
+        "/images/properties/new-west/planos/jazmin/plano-jazmin-planta-alta.png"
+      ]
+    },
+    {
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Costa Verde, La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "Costa Verde",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "featured": false,
+      "status": "available",
+      "id": 235,
+      "title": "New West II - Modelo Roble",
+      "price": 180000,
+      "area": 122,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "/images/properties/new-west/general/fachada-modelo-roble.png",
+      "images": [
+        "/images/properties/new-west/general/fachada-modelo-roble.png",
+        "/images/properties/new-west/general/fachada-modelo-roble (2).png",
+        "/images/properties/new-west/general/piscina-solarium.png",
+        "/images/properties/new-west/interiores/comedor-iluminado.png",
+        "/images/properties/new-west/interiores/cocina-con-isla.png"
+      ],
+      "description": "New West II - Modelo Roble en Costa Verde. 122 m2 de construcci?n en lotes desde 209 m2, 3 rec?maras, 1 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
+      "amenities": [
+        "Área social independiente",
+        "Piscina para niños y adultos",
+        "Gimnasio",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Salón de fiestas",
+        "Cancha deportiva",
+        "Opciones de 3 o 4 recámaras (den convertible)"
+      ],
+      "highlights": [
+        "122 m2 de construcción",
+        "Lotes desde 209 m2",
+        "Precio desde $ 180,000",
+        "Entrega inmediata (10% de abono inicial)"
+      ],
+      "planos": [
+        "/images/properties/new-west/planos/roble/plano-roble-planta-baja.png",
+        "/images/properties/new-west/planos/roble/plano-roble-planta-alta.png"
       ]
     }
   ]

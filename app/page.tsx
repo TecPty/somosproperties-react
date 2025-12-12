@@ -5,8 +5,8 @@ import Footer from "@/components/footer"
 import SearchBar from "@/components/search-bar"
 import PropertyGrid from "@/components/property-grid"
 import ContactForm from "@/components/contact-form"
-import propertiesData from "@/data/properties.json"
 import type { Property } from "@/lib/types"
+import { properties as allPropertiesData } from "@/lib/properties"
 
 export const metadata = {
   title: "SOMOS Properties - Propiedades en Panamá | Venta y Alquiler",
@@ -15,7 +15,7 @@ export const metadata = {
 }
 
 export default function HomePage() {
-  const allProperties: Property[] = propertiesData.properties
+  const allProperties: Property[] = allPropertiesData
   const featuredProperties = allProperties.filter((p) => p.featured).slice(0, 6)
 
   return (
@@ -81,7 +81,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-[#fafafa]">
+      <section className="py-20 bg-[#ebecec]">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">¿Por Qué Elegirnos?</h2>
@@ -90,13 +90,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="text-center">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <Image
-                  src="/images/icons/icon-security-3d.webp"
-                  alt="Confianza y Seguridad"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-contain"
-                />
+                <Image src="/images/icons/icon-security-3d.png" alt="Confianza y Seguridad" width={128} height={128} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-2xl font-semibold text-[#333333] mb-3">Confianza y Seguridad</h3>
               <p className="text-[#999999] leading-relaxed">
@@ -106,13 +100,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <Image
-                  src="/images/icons/icon-price-3d.webp"
-                  alt="Mejores Precios"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-contain"
-                />
+                <Image src="/images/icons/icon-price-3d.png" alt="Mejores Precios" width={128} height={128} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-2xl font-semibold text-[#333333] mb-3">Mejores Precios</h3>
               <p className="text-[#999999] leading-relaxed">
@@ -122,13 +110,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <Image
-                  src="/images/icons/icon-support-3d.webp"
-                  alt="Asesoría Personalizada"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-contain"
-                />
+                <Image src="/images/icons/icon-support-3d.png" alt="Asesoría Personalizada" width={128} height={128} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-2xl font-semibold text-[#333333] mb-3">Asesoría Personalizada</h3>
               <p className="text-[#999999] leading-relaxed">
