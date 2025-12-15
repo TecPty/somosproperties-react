@@ -71,6 +71,14 @@
   --overlay-dark: rgba(0, 0, 0, 0.9);
   --overlay-medium: rgba(0, 0, 0, 0.4);
   --overlay-light: rgba(255, 255, 255, 0.4);
+
+  /* Premium Tier Colors */
+  --premium-gold: #d4af37;
+  --premium-dark-gold: #b8942f;
+  --premium-light-gold: #f4e4b8;
+  --premium-bg-dark: #1a1a1a;
+  --premium-text: #2c2c2c;
+  --premium-accent: #8b7355;
 }
 
 .dark {
