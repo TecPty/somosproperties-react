@@ -87,7 +87,7 @@ export default function ChristmasModal() {
           {/* Mensaje superior */}
           <div className="mb-6">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3 tracking-wide">
-              Feliz Navidad
+              Feliz Navidad y Próspero Año Nuevo
             </h1>
             
             <p className="text-lg md:text-xl text-white/80 uppercase tracking-widest text-sm font-light">
@@ -229,8 +229,9 @@ export default function ChristmasModal() {
 
           {/* Mensaje inferior */}
           <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed px-4">
-            En esta época especial, agradecemos tu confianza. Que esta Navidad traiga paz, 
-            alegría y prosperidad a tu hogar.
+            Agradecemos tu confianza en este año que termina. 
+            Que esta Navidad brinde paz y prosperidad, y que el 2026 nos encuentre 
+            compartiendo nuevos logros juntos.
           </p>
 
           {/* Botones */}
