@@ -1,53 +1,26 @@
-"use client"
-
+import type { Metadata } from "next"
 import { Suspense } from "react"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import PropertyGrid from "@/components/property-grid"
-import PropertyFiltersComponent from "@/components/property-filters"
-import Pagination from "@/components/pagination"
-import { useProperties } from "@/hooks/use-properties"
-import { useFilters } from "@/hooks/use-filters"
+import PropiedadesContent from "./propiedades-content"
 
-function PropertiesContent() {
-  const { filters, updateFilters, clearFilters } = useFilters()
-  const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
-
-  return (
-    <>
-      <Navbar />
-
-      <main className="py-12 bg-[#fafafa] min-h-screen">
-        <div className="container-custom">
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold text-[#222222] mb-2">Todas las Propiedades</h1>
-            <p className="text-lg text-[#999999]">{totalProperties} propiedades encontradas</p>
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Sidebar Filters */}
-            <div className="lg:w-[280px] flex-shrink-0">
-              <PropertyFiltersComponent filters={filters} onFiltersChange={updateFilters} onClear={clearFilters} />
-            </div>
-
-            {/* Properties Grid */}
-            <div className="flex-1">
-              <PropertyGrid properties={properties} />
-              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  )
+export const metadata: Metadata = {
+  title: "Todas las Propiedades | SOMOS Properties",
+  description: "Explora miles de propiedades en venta y alquiler en Panamá. Residenciales, comerciales y locales.",
+  alternates: {
+    canonical: "https://somosproperties.com/propiedades",
+  },
+  openGraph: {
+    title: "Todas las Propiedades",
+    description: "Explora miles de propiedades en Panamá.",
+    type: "website",
+    url: "https://somosproperties.com/propiedades",
+    siteName: "SOMOS Properties",
+  },
 }
 
-export default function PropertiesPage() {
+export default function PropiedadesPage() {
   return (
-    <Suspense fallback={<div>Cargando...</div>}>
-      <PropertiesContent />
+    <Suspense fallback={<div className="py-12 text-center">Cargando...</div>}>
+      <PropiedadesContent />
     </Suspense>
   )
 }
