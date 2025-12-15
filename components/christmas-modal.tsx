@@ -83,17 +83,17 @@ export default function ChristmasModal() {
           </svg>
         </button>
 
-        <div className="max-w-2xl w-full pointer-events-auto text-center">
+        <div className="max-w-sm sm:max-w-md pointer-events-auto text-center">
           {/* Mensaje superior */}
           <div className="mb-2">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-2 tracking-wide">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-white mb-2 tracking-wide">
               Feliz Navidad y Próspero Año Nuevo
             </h1>
           </div>
 
           {/* Árbol de Navidad animado con logo como tronco */}
           <div className="relative mb-6 flex justify-center">
-            <div className="christmas-tree relative w-[200px] sm:w-[240px] h-[260px] sm:h-[320px]">
+            <div className="christmas-tree relative w-[160px] sm:w-[200px] h-[220px] sm:h-[280px]">
               {/* Estrella en la punta */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
                 <div className="star-glow w-8 h-8 text-cyan-300 animate-pulse">
@@ -221,7 +221,7 @@ export default function ChristmasModal() {
           </div>
 
           {/* Texto debajo del árbol */}
-          <p className="text-xs sm:text-sm md:text-base text-white/80 uppercase tracking-widest font-light mb-4">
+          <p className="text-xs sm:text-sm text-white/80 uppercase tracking-wider font-light mb-3">
             Les desea SOMOS Properties
           </p>
 
@@ -229,30 +229,30 @@ export default function ChristmasModal() {
           <div className="w-32 h-px bg-gradient-to-r from-transparent via-cyan-300 to-transparent mx-auto mb-4"></div>
 
           {/* Mensaje inferior */}
-          <p className="text-xs sm:text-sm md:text-base text-white/90 mb-6 sm:mb-8 max-w-xl mx-auto leading-relaxed px-2 sm:px-4">
+          <p className="text-xs sm:text-sm text-white/90 mb-4 sm:mb-6 max-w-sm mx-auto leading-snug px-2 sm:px-3">
             Agradecemos tu confianza en este año que termina. 
             Que esta Navidad brinde paz y prosperidad, y que el 2026 nos encuentre 
             compartiendo nuevos logros juntos.
           </p>
 
           {/* Botones */}
-          <div className="flex flex-col w-full sm:flex-row gap-3 sm:gap-4 justify-center px-2 sm:px-4 max-w-md mx-auto">
+          <div className="flex flex-col w-full sm:flex-row gap-2 sm:gap-3 justify-center px-2 max-w-xs mx-auto">
             <Link
               href="/propiedades"
-              className="inline-block bg-white/90 hover:bg-white text-[#1B2735] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl backdrop-blur-sm text-sm sm:text-base flex-1 sm:flex-none"
+              className="inline-block bg-white/90 hover:bg-white text-[#1B2735] px-5 sm:px-6 py-2 sm:py-2.5 rounded-md font-semibold transition-all shadow-lg hover:shadow-xl backdrop-blur-sm text-xs sm:text-sm flex-1 sm:flex-none"
               onClick={handleClose}
             >
               Ver Propiedades
             </Link>
             <button
               onClick={handleClose}
-              className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold transition-all backdrop-blur-sm text-sm sm:text-base flex-1 sm:flex-none"
+              className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-md font-semibold transition-all backdrop-blur-sm text-xs sm:text-sm flex-1 sm:flex-none"
             >
               Continuar
             </button>
           </div>
 
-          <p className="text-white/50 text-xs sm:text-sm mt-6 sm:mt-8 px-2">
+          <p className="text-white/50 text-xs mt-4 sm:mt-6 px-2">
             Felices Fiestas del equipo de SOMOS Properties
           </p>
         </div>
