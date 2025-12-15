@@ -17,7 +17,6 @@ export const metadata = {
 
 export default function HomePage() {
   const allProperties: Property[] = allPropertiesData
-  const featuredProperties = allProperties.filter((p) => p.featured).slice(0, 6)
   
   // Propiedades premium (precio >= $250,000)
   const premiumProperties = allProperties
@@ -26,6 +25,12 @@ export default function HomePage() {
       return isPremium && p.status === "available"
     })
     .slice(0, 3)
+
+  // Propiedades destacadas (excluir premium)
+  const premiumIds = new Set(premiumProperties.map((p) => p.id))
+  const featuredProperties = allProperties
+    .filter((p) => p.featured && !premiumIds.has(p.id))
+    .slice(0, 6)
 
   return (
     <>
