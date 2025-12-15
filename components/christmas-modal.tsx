@@ -85,19 +85,15 @@ export default function ChristmasModal() {
 
         <div className="max-w-4xl w-full pointer-events-auto text-center">
           {/* Mensaje superior */}
-          <div className="mb-6">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3 tracking-wide">
+          <div className="mb-4">
+            <h1 className="text-3xl md:text-4xl font-serif font-bold text-white mb-2 tracking-wide">
               Feliz Navidad y Próspero Año Nuevo
             </h1>
-            
-            <p className="text-lg md:text-xl text-white/80 uppercase tracking-widest text-sm font-light">
-              Les desea SOMOS Properties
-            </p>
           </div>
 
           {/* Árbol de Navidad animado con logo como tronco */}
-          <div className="relative mb-6 flex justify-center">
-            <div className="christmas-tree relative w-[280px] h-[380px]">
+          <div className="relative mb-4 flex justify-center">
+            <div className="christmas-tree relative w-[240px] h-[320px]">
               {/* Estrella en la punta */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
                 <div className="star-glow w-8 h-8 text-cyan-300 animate-pulse">
@@ -224,11 +220,16 @@ export default function ChristmasModal() {
             </div>
           </div>
 
+          {/* Texto debajo del árbol */}
+          <p className="text-sm md:text-base text-white/80 uppercase tracking-widest font-light mb-4">
+            Les desea SOMOS Properties
+          </p>
+
           {/* Línea decorativa */}
-          <div className="w-32 h-px bg-gradient-to-r from-transparent via-cyan-300 to-transparent mx-auto mb-6"></div>
+          <div className="w-32 h-px bg-gradient-to-r from-transparent via-cyan-300 to-transparent mx-auto mb-4"></div>
 
           {/* Mensaje inferior */}
-          <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="text-sm md:text-base text-white/90 mb-8 max-w-xl mx-auto leading-relaxed px-4">
             Agradecemos tu confianza en este año que termina. 
             Que esta Navidad brinde paz y prosperidad, y que el 2026 nos encuentre 
             compartiendo nuevos logros juntos.
