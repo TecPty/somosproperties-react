@@ -19,6 +19,9 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   const statusLabel = property.status === "sold" ? "Vendido" : null
   const statusClass = property.status === "sold" ? "bg-[#d92d2d]" : ""
   const isRented = property.status === "rented"
+  
+  // Detectar si es premium por precio (>= $250,000)
+  const isPremium = property.tier === "premium" || property.price >= 250000
 
   return (
     <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card">
@@ -52,7 +55,16 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             </div>
           )}
 
-          {/* Badge */}
+          {/* Badge Premium */}
+          {isPremium && (
+            <div className="absolute top-3 right-3 z-10">
+              <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                PREMIUM
+              </span>
+            </div>
+          )}
+
+          {/* Badge Operación */}
           <div className="absolute top-3 left-3 z-10">
             <span
               className={`px-3 py-1 rounded text-xs font-semibold text-white ${

@@ -27,6 +27,11 @@ export default function Footer() {
             <h4 className="text-white text-lg font-semibold mb-4">Propiedades</h4>
             <ul className="space-y-2">
               <li>
+                <Link href="/premium" className="hover:text-[#d4af37] transition-colors text-sm font-semibold">
+                  Premium
+                </Link>
+              </li>
+              <li>
                 <Link href="/residenciales" className="hover:text-[#3898EC] transition-colors text-sm">
                   Residenciales
                 </Link>

@@ -22,6 +22,7 @@ export interface Property {
   amenities: string[]
   featured: boolean
   status: "available" | "sold" | "rented"
+  tier?: "premium" | "standard"
 }
 
 export interface PropertyFilters {
@@ -33,6 +34,7 @@ export interface PropertyFilters {
   location?: string
   category?: "Residencial" | "Comercial"
   search?: string
+  tier?: "premium" | "standard"
 }
 
 export interface ContactFormData {

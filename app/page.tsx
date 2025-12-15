@@ -7,6 +7,7 @@ import PropertyGrid from "@/components/property-grid"
 import ContactForm from "@/components/contact-form"
 import propertiesData from "@/data/properties.json"
 import type { Property } from "@/lib/types"
+import { formatPrice } from "@/lib/formatters"
 
 export const metadata = {
   title: "SOMOS Properties - Propiedades en Panamá | Venta y Alquiler",
@@ -17,6 +18,14 @@ export const metadata = {
 export default function HomePage() {
   const allProperties: Property[] = propertiesData.properties
   const featuredProperties = allProperties.filter((p) => p.featured).slice(0, 6)
+  
+  // Propiedades premium (precio >= $250,000)
+  const premiumProperties = allProperties
+    .filter((p) => {
+      const isPremium = p.price >= 250000
+      return isPremium && p.status === "available"
+    })
+    .slice(0, 3)
 
   return (
     <>
@@ -60,6 +69,71 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Premium Properties Section */}
+      {premiumProperties.length > 0 && (
+        <section className="py-20 bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#1a1a1a] text-white relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#d4af37] rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#b8942f] rounded-full blur-3xl"></div>
+          </div>
+          
+          <div className="container-custom relative z-10">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-4 py-2 rounded-full text-sm font-bold mb-4">
+                <span>PROPIEDADES PREMIUM</span>
+              </div>
+              <h2 className="text-4xl font-bold text-white mb-4">Vive la Excelencia</h2>
+              <p className="text-lg text-white/80">Propiedades exclusivas con ubicaciones privilegiadas y acabados de lujo</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              {premiumProperties.map((property) => (
+                <Link
+                  key={property.id}
+                  href={`/propiedad/${property.id}`}
+                  className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 hover:border-[#d4af37] transition-all"
+                >
+                  <div className="relative h-48">
+                    <Image
+                      src={property.image || "/placeholder.svg"}
+                      alt={property.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-3 right-3">
+                      <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-3 py-1 rounded-full text-xs font-bold">
+                        PREMIUM
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-white mb-2 line-clamp-1">{property.title}</h3>
+                    <p className="text-white/60 text-sm mb-3">{property.district}, {property.city}</p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl font-bold text-[#d4af37]">
+                        {property.operation === "Venta" 
+                          ? formatPrice(property.price)
+                          : `${formatPrice(property.pricePerMonth || 0)}/mes`
+                        }
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            
+            <div className="text-center">
+              <Link
+                href="/premium"
+                className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all"
+              >
+                Ver Todas las Propiedades Premium
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Featured Properties */}
       <section className="py-20 bg-white">

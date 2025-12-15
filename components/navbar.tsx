@@ -25,6 +25,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Inicio" },
+    { href: "/premium", label: "Premium" },
     { href: "/residenciales", label: "Residenciales" },
     { href: "/comerciales", label: "Comerciales" },
     { href: "/nosotros", label: "Nosotros" },
@@ -43,16 +44,16 @@ export default function Navbar() {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/Logo-SP.png"
               alt="SOMOS Properties"
-              width={230}
-              height={76}
+              width={345}
+              height={114}
               priority
-              className="h-16 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
 
@@ -64,7 +65,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 ${
                   isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
-                }`}
+                } ${link.href === "/premium" ? "font-bold" : ""}`}
               >
                 {link.label}
               </Link>
@@ -98,7 +99,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`block py-3 px-4 text-[#222222] hover:bg-[#f3f3f3] hover:text-[#3898EC] transition-colors ${
                   isActive(link.href) ? "text-[#0082f3] bg-[#f3f3f3]" : ""
-                }`}
+                } ${link.href === "/premium" ? "font-bold" : ""}`}
               >
                 {link.label}
               </Link>
