@@ -71,7 +71,7 @@ export default function ChristmasModal() {
       </div>
 
       {/* Contenido del Modal */}
-      <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center p-4 pointer-events-none overflow-y-auto">
+      <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center p-4 py-12 pointer-events-none overflow-y-auto">
         {/* Botón cerrar */}
         <button
           onClick={handleClose}
@@ -85,14 +85,14 @@ export default function ChristmasModal() {
 
         <div className="max-w-4xl w-full pointer-events-auto text-center">
           {/* Mensaje superior */}
-          <div className="mb-4">
+          <div className="mb-2">
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-white mb-2 tracking-wide">
               Feliz Navidad y Próspero Año Nuevo
             </h1>
           </div>
 
           {/* Árbol de Navidad animado con logo como tronco */}
-          <div className="relative mb-4 flex justify-center">
+          <div className="relative mb-6 flex justify-center">
             <div className="christmas-tree relative w-[240px] h-[320px]">
               {/* Estrella en la punta */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
