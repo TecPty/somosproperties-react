@@ -187,7 +187,7 @@ export default function ChristmasModal() {
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10" style={{ transform: 'translateY(-10%)' }}>
                   {/* Tronco del árbol */}
                   <div 
-                    className="relative bg-amber-900 shadow-lg flex items-center justify-center"
+                    className="relative bg-amber-900 shadow-lg flex items-center justify-center overflow-hidden"
                     style={{ 
                       width: '85px',
                       height: '60px',
@@ -198,9 +198,14 @@ export default function ChristmasModal() {
                     <Image 
                       src="/images/Logo-SP.png" 
                       alt="SOMOS" 
-                      width={60} 
-                      height={20} 
-                      className="h-4 sm:h-5 w-auto" 
+                      width={90} 
+                      height={30} 
+                      className="h-6 sm:h-7 w-auto" 
+                      style={{
+                        filter: 'brightness(0.7) contrast(1.2)',
+                        opacity: 0.85,
+                        mixBlendMode: 'multiply'
+                      }}
                     />
                   </div>
                 </div>
