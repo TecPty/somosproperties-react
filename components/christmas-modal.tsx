@@ -53,7 +53,7 @@ export default function ChristmasModal() {
         {/* Nieve */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(100)].map((_, i) => {
-            const size = Math.random() * 7.26 + 3.63
+            const size = Math.random() * 9.075 + 4.54
             return (
             <svg
               key={`snow-${i}`}
@@ -149,7 +149,7 @@ export default function ChristmasModal() {
             <div className="flex-shrink-0 flex justify-center">
               <div className="relative w-[220px] sm:w-[280px] h-[320px] sm:h-[420px]" style={{ transform: 'translateY(10%)' }}>
                 {/* Estrella en la punta */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 w-10 h-10 text-yellow-400 animate-stellarPulse" style={{ transform: 'translateY(-60%)', filter: 'drop-shadow(0 0 25px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 15px rgba(250, 204, 21, 0.9))' }}>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 w-10 h-10 text-yellow-400 animate-stellarPulse" style={{ transform: 'translateY(-80%)', filter: 'drop-shadow(0 0 25px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 15px rgba(250, 204, 21, 0.9))', animation: 'floatingStar 3s ease-in-out infinite' }}>
                   <svg fill="currentColor" viewBox="0 0 20 20" style={{ filter: 'drop-shadow(0 0 20px rgba(250, 204, 21, 0.9))' }}>
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
@@ -184,7 +184,7 @@ export default function ChristmasModal() {
                   )
                 })}
 
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10" style={{ transform: 'translateY(50%)' }}>
                   {/* Tronco del árbol */}
                   <div 
                     className="relative bg-amber-900 shadow-lg flex items-center justify-center"
@@ -235,6 +235,11 @@ export default function ChristmasModal() {
         @keyframes twinkle {
           0%, 100% { opacity: 0.3; }
           50% { opacity: 1; }
+        }
+        
+        @keyframes floatingStar {
+          0%, 100% { transform: translateY(-80%) translateY(0px); }
+          50% { transform: translateY(-80%) translateY(-10px); }
         }
         
         @keyframes snowfall {
