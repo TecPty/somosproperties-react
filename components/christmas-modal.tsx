@@ -148,6 +148,18 @@ export default function ChristmasModal() {
             {/* Árbol Centro */}
             <div className="flex-shrink-0 flex justify-center">
               <div className="relative w-[220px] sm:w-[280px] h-[320px] sm:h-[420px]" style={{ transform: 'translateY(10%)' }}>
+                {/* Forma del árbol en verde */}
+                <div className="absolute inset-0 flex items-center justify-center z-0">
+                  <svg width="100%" height="100%" viewBox="0 0 200 350" style={{ filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.3))' }}>
+                    {/* Triángulo superior */}
+                    <polygon points="100,20 40,120 160,120" fill="#15803d" opacity="0.6" />
+                    {/* Triángulo medio */}
+                    <polygon points="100,90 30,180 170,180" fill="#16a34a" opacity="0.6" />
+                    {/* Triángulo inferior */}
+                    <polygon points="100,160 20,280 180,280" fill="#15803d" opacity="0.6" />
+                  </svg>
+                </div>
+
                 {/* Estrella en la punta */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 w-10 h-10 text-yellow-400 animate-stellarPulse" style={{ transform: 'translateY(-80%)', filter: 'drop-shadow(0 0 25px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 15px rgba(250, 204, 21, 0.9))', animation: 'floatingStar 3s ease-in-out infinite' }}>
                   <svg fill="currentColor" viewBox="0 0 20 20" style={{ filter: 'drop-shadow(0 0 20px rgba(250, 204, 21, 0.9))' }}>
@@ -161,7 +173,7 @@ export default function ChristmasModal() {
                   const radius = 6 + progress * 85
                   const centerX = 50 // Centro horizontal al 50% del contenedor
                   const offsetX = Math.cos(angle) * radius * (1 - progress * 0.2)
-                  const y = progress * 310
+                  const y = progress * 330
                   const colors = ['#67e8f9', '#22d3ee', '#06b6d4', '#0891b2', '#93c5fd']
                   const size = 2.5 + Math.random() * 3.5
                   
