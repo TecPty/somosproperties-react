@@ -53,23 +53,37 @@ export default function ChristmasModal() {
         {/* Nieve */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(100)].map((_, i) => {
-            const size = Math.random() * 4 + 3
+            const size = Math.random() * 3 + 4
             return (
-            <div
+            <svg
               key={`snow-${i}`}
               className="absolute animate-snowfall"
+              width={size}
+              height={size}
+              viewBox="0 0 100 100"
               style={{
-                width: `${size}px`,
-                height: `${size}px`,
                 left: `${Math.random() * 100}%`,
                 opacity: Math.random() * 0.6 + 0.4,
                 animationDuration: `${Math.random() * 10 + 10}s`,
                 animationDelay: `${Math.random() * 5}s`,
-                background: `radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,255,255,0.3))`,
-                clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)',
-                filter: 'drop-shadow(0 0 2px rgba(255,255,255,0.6))',
               }}
-            />
+            >
+              <g fill="white" opacity="0.8">
+                <circle cx="50" cy="50" r="8" />
+                <circle cx="50" cy="20" r="5" />
+                <circle cx="50" cy="80" r="5" />
+                <circle cx="20" cy="50" r="5" />
+                <circle cx="80" cy="50" r="5" />
+                <circle cx="32" cy="32" r="4" />
+                <circle cx="68" cy="68" r="4" />
+                <circle cx="68" cy="32" r="4" />
+                <circle cx="32" cy="68" r="4" />
+                <line x1="50" y1="35" x2="50" y2="15" stroke="white" strokeWidth="2" />
+                <line x1="50" y1="65" x2="50" y2="85" stroke="white" strokeWidth="2" />
+                <line x1="35" y1="50" x2="15" y2="50" stroke="white" strokeWidth="2" />
+                <line x1="65" y1="50" x2="85" y2="50" stroke="white" strokeWidth="2" />
+              </g>
+            </svg>
             )
           })}
         </div>
@@ -143,23 +157,16 @@ export default function ChristmasModal() {
                 })}
 
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
-                  {/* Logo como tronco del árbol */}
-                  <div className="relative" style={{ 
-                    width: '100px',
-                    clipPath: 'polygon(25% 0%, 75% 0%, 95% 100%, 5% 100%)',
-                  }}>
-                    <div className="bg-amber-800/50 backdrop-blur-md p-2 sm:p-2.5 shadow-xl" style={{ 
-                      boxShadow: '0 0 25px rgba(103, 232, 249, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.4)',
-                    }}>
-                      <Image 
-                        src="/images/Logo-SP.png" 
-                        alt="SOMOS" 
-                        width={130} 
-                        height={43} 
-                        className="h-9 sm:h-10 w-auto mx-auto opacity-80" 
-                      />
-                    </div>
-                  </div>
+                  {/* Tronco del árbol */}
+                  <div 
+                    className="relative bg-amber-900 shadow-lg"
+                    style={{ 
+                      width: '85px',
+                      height: '60px',
+                      clipPath: 'polygon(25% 0%, 75% 0%, 95% 100%, 5% 100%)',
+                      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                    }}
+                  />
                 </div>
               </div>
             </div>
