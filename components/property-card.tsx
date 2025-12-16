@@ -23,7 +23,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   const isPremium = property.tier === "premium" || property.price >= 250000
 
   return (
-    <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card">
+    <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full">
       <Link href={`/propiedad/${property.id}`} className="block relative group">
         <div className="relative h-60 overflow-hidden bg-[#f3f3f3]">
           {!imageError ? (
@@ -88,9 +88,9 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         </div>
       </Link>
 
-      <div className="p-5">
+      <div className="p-5 flex flex-col flex-grow">
         <Link href={`/propiedad/${property.id}`}>
-          <h3 className="text-xl font-semibold text-[#333333] mb-1 line-clamp-2 hover:text-[#3898EC] transition-colors">
+          <h3 className="text-xl font-semibold text-[#333333] mb-1 line-clamp-2 hover:text-[#3898EC] transition-colors min-h-[3.5rem]">
             {property.title}
           </h3>
         </Link>
@@ -183,12 +183,14 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           )}
         </div>
 
-        <Link
-          href={`/propiedad/${property.id}`}
-          className="block w-full bg-[#3898EC] text-white text-center py-3 rounded-lg font-medium hover:bg-[#0082f3] transition-colors"
-        >
-          Ver Detalles
-        </Link>
+        <div className="mt-auto pt-4">
+          <Link
+            href={`/propiedad/${property.id}`}
+            className="block w-full bg-[#3898EC] text-white text-center py-3 rounded-lg font-medium hover:bg-[#0082f3] transition-colors"
+          >
+            Ver Detalles
+          </Link>
+        </div>
       </div>
     </article>
   )
