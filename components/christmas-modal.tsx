@@ -184,7 +184,7 @@ export default function ChristmasModal() {
                   )
                 })}
 
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10" style={{ transform: 'translateY(50%)' }}>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10" style={{ transform: 'translateY(-10%)' }}>
                   {/* Tronco del árbol */}
                   <div 
                     className="relative bg-amber-900 shadow-lg flex items-center justify-center"
