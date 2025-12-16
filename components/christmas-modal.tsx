@@ -53,7 +53,7 @@ export default function ChristmasModal() {
         {/* Nieve */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(100)].map((_, i) => {
-            const size = Math.random() * 9.075 + 4.54
+            const size = Math.random() * 12 + 6.4
             return (
             <svg
               key={`snow-${i}`}
@@ -63,7 +63,7 @@ export default function ChristmasModal() {
               viewBox="0 0 100 100"
               style={{
                 left: `${Math.random() * 100}%`,
-                opacity: Math.random() * 0.6 + 0.4,
+                opacity: Math.random() * 0.5 + 0.5,
                 animationDuration: `${Math.random() * 10 + 10}s`,
                 animationDelay: `${Math.random() * 5}s`,
               }}
@@ -161,7 +161,7 @@ export default function ChristmasModal() {
                   const radius = 6 + progress * 85
                   const centerX = 50 // Centro horizontal al 50% del contenedor
                   const offsetX = Math.cos(angle) * radius * (1 - progress * 0.2)
-                  const y = progress * 290
+                  const y = progress * 310
                   const colors = ['#67e8f9', '#22d3ee', '#06b6d4', '#0891b2', '#93c5fd']
                   const size = 2.5 + Math.random() * 3.5
                   
