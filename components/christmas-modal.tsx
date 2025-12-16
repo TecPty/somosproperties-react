@@ -208,7 +208,7 @@ export default function ChristmasModal() {
             </div>
 
             {/* Texto Derecho */}
-            <div className="text-center lg:text-left flex-1 px-2 lg:px-0">
+            <div className="text-center flex-1 px-2">
               {/* Mobile - Mostrar título */}
               <div className="lg:hidden mb-2">
                 <h1 className="text-xl sm:text-2xl font-serif font-bold text-white mb-1 tracking-wide">
@@ -220,11 +220,9 @@ export default function ChristmasModal() {
               </div>
 
               {/* Mensaje principal */}
-              <p className="text-sm sm:text-base text-white/90 leading-snug max-w-sm lg:max-w-md">
+              <p className="text-sm sm:text-base text-white/90 leading-snug">
                 Agradecemos tu confianza en este año que termina. Que esta Navidad brinde paz y prosperidad, y que el 2026 nos encuentre compartiendo nuevos logros juntos.
               </p>
-
-              <p className="text-white/50 text-sm mt-3">Felices Fiestas del equipo de SOMOS Properties</p>
             </div>
 
           </div>
