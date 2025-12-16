@@ -161,7 +161,7 @@ export default function ChristmasModal() {
                   const radius = 6 + progress * 85
                   const centerX = 50 // Centro horizontal al 50% del contenedor
                   const offsetX = Math.cos(angle) * radius * (1 - progress * 0.2)
-                  const y = progress * 330
+                  const y = progress * 280.5
                   const colors = ['#67e8f9', '#22d3ee', '#06b6d4', '#0891b2', '#93c5fd', '#ef4444', '#fbbf24', '#22c55e']
                   const size = 2.5 + Math.random() * 3.5
                   
