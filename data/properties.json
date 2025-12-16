@@ -124,7 +124,7 @@
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
-      "price": 320000,
+      "price": 300000,
       "pricePerMonth": null,
       "location": "Condado del Rey, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
@@ -150,7 +150,7 @@
       "status": "available",
       "id": 1,
       "title": "Kings Park - Torre 500, Apto 3-B",
-      "description": "Apartamento 3-B en Torre 500 de Kings Park, 155.70 m?. Precio de venta $320,000 y mantenimiento mensual $295.83. Piso medio con distribuci?n abierta, balcones y 2 estacionamientos en Condado del Rey.",
+      "description": "Apartamento 3-B en Torre 500 de Kings Park, 155.70 m?. Precio de venta $300,000 y mantenimiento mensual $295.83. Piso medio con distribuci?n abierta, balcones y 2 estacionamientos en Condado del Rey.",
       "amenities": [
         "Balc?n con vista despejada",
         "Sala/comedor integrados",
@@ -162,7 +162,7 @@
       ],
       "highlights": [
         "155.70 m² en Torre 500",
-        "Precio $320,000",
+        "Precio $300,000",
         "Mantenimiento $295.83/mes",
         "2 estacionamientos incluidos"
       ]
