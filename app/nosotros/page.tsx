@@ -2,11 +2,13 @@
 import Footer from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
+import { createMetadata } from "@/lib/seo"
 
-export const metadata = {
+export const metadata = createMetadata({
   title: "Nosotros - SOMOS Properties",
   description: "Somos un equipo de profesionales apasionados en bienes raíces, con 15 años en la industria.",
-}
+  path: "/nosotros",
+})
 
 const featureCards = [
   {

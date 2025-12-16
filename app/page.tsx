@@ -8,12 +8,15 @@ import ContactForm from "@/components/contact-form"
 import type { Property } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { formatPrice } from "@/lib/formatters"
+import { createMetadata } from "@/lib/seo"
+import { isPremium } from "@/lib/utils-premium"
 
-export const metadata = {
+export const metadata = createMetadata({
   title: "SOMOS Properties - Propiedades en Panamá | Venta y Alquiler",
   description:
     "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler en las mejores ubicaciones.",
-}
+  path: "/",
+})
 
 export default function HomePage() {
   const allProperties: Property[] = allPropertiesData
@@ -25,9 +28,9 @@ export default function HomePage() {
     return hasPrice && p.status === "available"
   })
   
-  // Propiedades premium (precio >= $250,000)
+  // Propiedades premium usando función consolidada
   const premiumProperties = propertiesWithPrice
-    .filter((p) => p.price >= 250000)
+    .filter((p) => isPremium(p))
     .slice(0, 3)
 
   // Propiedades destacadas (excluir premium)

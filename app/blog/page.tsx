@@ -1,10 +1,12 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import { createMetadata } from "@/lib/seo"
 
-export const metadata = {
+export const metadata = createMetadata({
   title: "Blog - SOMOS Properties",
   description: "Consejos, noticias y tendencias del mercado inmobiliario en Panamá.",
-}
+  path: "/blog",
+})
 
 export default function BlogPage() {
   return (

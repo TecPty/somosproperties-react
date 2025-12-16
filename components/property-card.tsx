@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useState } from "react"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
+import { isPremium } from "@/lib/utils-premium"
 
 interface PropertyCardProps {
   property: Property
@@ -19,8 +20,8 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   const statusClass = property.status === "sold" ? "bg-[#d92d2d]" : ""
   const isRented = property.status === "rented"
   
-  // Detectar si es premium por precio (>= $250,000)
-  const isPremium = property.tier === "premium" || property.price >= 250000
+  // Usar función consolidada para detectar premium
+  const isPremiumProperty = isPremium(property)
 
   return (
     <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full">
@@ -55,7 +56,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           )}
 
           {/* Badge Premium */}
-          {isPremium && (
+          {isPremiumProperty && (
             <div className="absolute top-3 right-3 z-10">
               <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
                 PREMIUM

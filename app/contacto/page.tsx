@@ -1,11 +1,13 @@
 ﻿import ContactForm from "@/components/contact-form"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
+import { createMetadata } from "@/lib/seo"
 
-export const metadata = {
+export const metadata = createMetadata({
   title: "Contacto - SOMOS Properties",
   description: "Contáctanos para más información sobre nuestras propiedades en Panamá.",
-}
+  path: "/contacto",
+})
 
 export default function ContactoPage() {
   return (
