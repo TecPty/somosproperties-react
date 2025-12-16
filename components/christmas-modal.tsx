@@ -54,7 +54,6 @@ export default function ChristmasModal() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(100)].map((_, i) => {
             const size = Math.random() * 7.26 + 3.63
-            const scale = size / 10
             return (
             <svg
               key={`snow-${i}`}
@@ -69,20 +68,48 @@ export default function ChristmasModal() {
                 animationDelay: `${Math.random() * 5}s`,
               }}
             >
-              <g fill="white" opacity="0.8">
-                <circle cx="50" cy="50" r={8 * scale} />
-                <circle cx="50" cy="20" r={5 * scale} />
-                <circle cx="50" cy="80" r={5 * scale} />
-                <circle cx="20" cy="50" r={5 * scale} />
-                <circle cx="80" cy="50" r={5 * scale} />
-                <circle cx="32" cy="32" r={4 * scale} />
-                <circle cx="68" cy="68" r={4 * scale} />
-                <circle cx="68" cy="32" r={4 * scale} />
-                <circle cx="32" cy="68" r={4 * scale} />
-                <line x1="50" y1="35" x2="50" y2="15" stroke="white" strokeWidth={2 * scale} />
-                <line x1="50" y1="65" x2="50" y2="85" stroke="white" strokeWidth={2 * scale} />
-                <line x1="35" y1="50" x2="15" y2="50" stroke="white" strokeWidth={2 * scale} />
-                <line x1="65" y1="50" x2="85" y2="50" stroke="white" strokeWidth={2 * scale} />
+              <g fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round">
+                {/* Rama superior */}
+                <line x1="50" y1="50" x2="50" y2="10" />
+                <line x1="50" y1="25" x2="35" y2="15" />
+                <line x1="50" y1="25" x2="65" y2="15" />
+                <line x1="35" y1="15" x2="30" y2="5" />
+                <line x1="65" y1="15" x2="70" y2="5" />
+                
+                {/* Rama superior-derecha */}
+                <line x1="50" y1="50" x2="75" y2="30" />
+                <line x1="63" y1="40" x2="75" y2="30" />
+                <line x1="63" y1="40" x2="72" y2="35" />
+                <line x1="75" y1="30" x2="85" y2="25" />
+                <line x1="72" y1="35" x2="82" y2="30" />
+                
+                {/* Rama inferior-derecha */}
+                <line x1="50" y1="50" x2="75" y2="70" />
+                <line x1="63" y1="60" x2="75" y2="70" />
+                <line x1="63" y1="60" x2="72" y2="65" />
+                <line x1="75" y1="70" x2="85" y2="75" />
+                <line x1="72" y1="65" x2="82" y2="70" />
+                
+                {/* Rama inferior */}
+                <line x1="50" y1="50" x2="50" y2="90" />
+                <line x1="50" y1="75" x2="35" y2="85" />
+                <line x1="50" y1="75" x2="65" y2="85" />
+                <line x1="35" y1="85" x2="30" y2="95" />
+                <line x1="65" y1="85" x2="70" y2="95" />
+                
+                {/* Rama inferior-izquierda */}
+                <line x1="50" y1="50" x2="25" y2="70" />
+                <line x1="37" y1="60" x2="25" y2="70" />
+                <line x1="37" y1="60" x2="28" y2="65" />
+                <line x1="25" y1="70" x2="15" y2="75" />
+                <line x1="28" y1="65" x2="18" y2="70" />
+                
+                {/* Rama superior-izquierda */}
+                <line x1="50" y1="50" x2="25" y2="30" />
+                <line x1="37" y1="40" x2="25" y2="30" />
+                <line x1="37" y1="40" x2="28" y2="35" />
+                <line x1="25" y1="30" x2="15" y2="25" />
+                <line x1="28" y1="35" x2="18" y2="30" />
               </g>
             </svg>
             )
