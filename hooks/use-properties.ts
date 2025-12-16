@@ -53,8 +53,8 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
     if (filters.location) {
       filtered = filtered.filter(
         (p) =>
-          p.district.toLowerCase().includes(filters.location!.toLowerCase()) ||
-          p.location.toLowerCase().includes(filters.location!.toLowerCase()),
+          (p.district?.toLowerCase() || '').includes(filters.location!.toLowerCase()) ||
+          (p.location?.toLowerCase() || '').includes(filters.location!.toLowerCase()),
       )
     }
 
@@ -63,10 +63,10 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
       const searchLower = filters.search.toLowerCase()
       filtered = filtered.filter(
         (p) =>
-          p.title.toLowerCase().includes(searchLower) ||
-          p.location.toLowerCase().includes(searchLower) ||
-          p.description.toLowerCase().includes(searchLower) ||
-          p.type.toLowerCase().includes(searchLower),
+          (p.title?.toLowerCase() || '').includes(searchLower) ||
+          (p.location?.toLowerCase() || '').includes(searchLower) ||
+          (p.description?.toLowerCase() || '').includes(searchLower) ||
+          (p.type?.toLowerCase() || '').includes(searchLower),
       )
     }
 
