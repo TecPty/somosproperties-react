@@ -81,40 +81,55 @@ export default function ChristmasModal() {
           </svg>
         </button>
 
-        <div className="max-w-3xl w-full pointer-events-auto">
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+        <div className="max-w-5xl w-full pointer-events-auto">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-12">
             
-            {/* Árbol */}
-            <div className="flex-shrink-0">
-              <div className="relative w-[140px] sm:w-[180px] h-[200px] sm:h-[260px]">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 w-6 h-6 text-yellow-400">
-                  <svg fill="currentColor" viewBox="0 0 20 20" style={{ filter: 'drop-shadow(0 0 15px rgba(250, 204, 21, 0.8))' }}>
+            {/* Texto Izquierdo */}
+            <div className="text-center lg:text-left flex-1 px-2 lg:px-0 hidden lg:block">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-white mb-2 tracking-wide">
+                Feliz Navidad y
+              </h1>
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-white mb-3 tracking-wide">
+                Próspero Año Nuevo
+              </h1>
+              <p className="text-base text-white/80 font-light leading-relaxed">
+                Les desea el equipo de SOMOS Properties
+              </p>
+            </div>
+
+            {/* Árbol Centro */}
+            <div className="flex-shrink-0 flex justify-center">
+              <div className="relative w-[220px] sm:w-[280px] h-[320px] sm:h-[420px]">
+                {/* Estrella en la punta */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[55%] z-20 w-10 h-10 text-yellow-400 animate-stellarPulse" style={{ filter: 'drop-shadow(0 0 25px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 15px rgba(250, 204, 21, 0.9))' }}>
+                  <svg fill="currentColor" viewBox="0 0 20 20" style={{ filter: 'drop-shadow(0 0 20px rgba(250, 204, 21, 0.9))' }}>
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 </div>
 
-                {Array.from({ length: 50 }).map((_, i) => {
-                  const progress = i / 50
-                  const angle = progress * 6 * Math.PI * 2
-                  const radius = 5 + progress * 65
-                  const x = 70 + Math.cos(angle) * radius
-                  const y = 15 + progress * 220
-                  const colors = ['#67e8f9', '#22d3ee', '#06b6d4', '#0891b2']
-                  const size = 2 + Math.random() * 3
+                {Array.from({ length: 60 }).map((_, i) => {
+                  const progress = i / 60
+                  const angle = progress * 6.5 * Math.PI * 2
+                  const radius = 6 + progress * 85
+                  const centerX = 50 // Centro horizontal al 50% del contenedor
+                  const offsetX = Math.cos(angle) * radius * (1 - progress * 0.2)
+                  const y = progress * 290
+                  const colors = ['#67e8f9', '#22d3ee', '#06b6d4', '#0891b2', '#93c5fd']
+                  const size = 2.5 + Math.random() * 3.5
                   
                   return (
                     <div
                       key={`light-${i}`}
-                      className="absolute rounded-full"
+                      className="absolute rounded-full animate-glowPulse"
                       style={{
-                        left: `${x}px`,
+                        left: `calc(${centerX}% + ${offsetX}px)`,
                         top: `${y}px`,
                         width: `${size}px`,
                         height: `${size}px`,
                         backgroundColor: colors[i % colors.length],
-                        boxShadow: `0 0 8px ${colors[i % colors.length]}`,
-                        animation: `pulse 2s ease-in-out infinite`,
-                        animationDelay: `${progress * 1.5}s`,
+                        boxShadow: `0 0 10px ${colors[i % colors.length]}, 0 0 20px ${colors[i % colors.length]}`,
+                        animation: `glowPulse 2s ease-in-out infinite`,
+                        animationDelay: `${progress * 2}s`,
                         transform: 'translate(-50%, -50%)',
                       }}
                     />
@@ -122,49 +137,45 @@ export default function ChristmasModal() {
                 })}
 
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-t-sm p-1.5 sm:p-2" style={{ boxShadow: '0 0 15px rgba(103, 232, 249, 0.3)' }}>
-                    <Image src="/images/Logo-SP.png" alt="SOMOS" width={110} height={36} className="h-6 sm:h-7 w-auto" />
+                  {/* Logo como tronco del árbol */}
+                  <div className="relative" style={{ 
+                    width: '140px',
+                    clipPath: 'polygon(35% 0%, 65% 0%, 90% 100%, 10% 100%)',
+                  }}>
+                    <div className="bg-amber-800/50 backdrop-blur-md p-2 sm:p-2.5 shadow-xl" style={{ 
+                      boxShadow: '0 0 25px rgba(103, 232, 249, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.4)',
+                    }}>
+                      <Image 
+                        src="/images/Logo-SP.png" 
+                        alt="SOMOS" 
+                        width={130} 
+                        height={43} 
+                        className="h-9 sm:h-10 w-auto mx-auto opacity-80" 
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Texto */}
-            <div className="text-center md:text-left flex-1 px-2">
-              <h1 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-white mb-1 tracking-wide">
-                Feliz Navidad y
-              </h1>
-              <h1 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-white mb-2 md:mb-3 tracking-wide">
-                Próspero Año Nuevo
-              </h1>
+            {/* Texto Derecho */}
+            <div className="text-center lg:text-left flex-1 px-2 lg:px-0">
+              {/* Mobile - Mostrar título */}
+              <div className="lg:hidden mb-2">
+                <h1 className="text-xl sm:text-2xl font-serif font-bold text-white mb-1 tracking-wide">
+                  Feliz Navidad y Próspero Año Nuevo
+                </h1>
+                <p className="text-sm text-white/80 font-light mb-3">
+                  Les desea SOMOS Properties
+                </p>
+              </div>
 
-              <p className="text-xs text-white/80 uppercase tracking-wider font-light mb-2">
-                Les desea SOMOS Properties
-              </p>
-
-              <div className="h-px bg-gradient-to-r from-transparent via-cyan-300 to-transparent mb-2 md:mb-3"></div>
-
-              <p className="text-xs text-white/90 mb-3 md:mb-4 leading-snug max-w-sm">
+              {/* Mensaje principal */}
+              <p className="text-sm sm:text-base text-white/90 leading-snug max-w-sm lg:max-w-md">
                 Agradecemos tu confianza en este año que termina. Que esta Navidad brinde paz y prosperidad, y que el 2026 nos encuentre compartiendo nuevos logros juntos.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-2 md:gap-3 md:justify-start mb-2 md:mb-3">
-                <Link
-                  href="/propiedades"
-                  className="bg-white/90 hover:bg-white text-[#1B2735] px-4 py-1.5 rounded-md font-semibold transition-all shadow-lg hover:shadow-xl backdrop-blur-sm text-xs"
-                  onClick={handleClose}
-                >
-                  Ver Propiedades
-                </Link>
-                <button
-                  onClick={handleClose}
-                  className="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-4 py-1.5 rounded-md font-semibold transition-all backdrop-blur-sm text-xs"
-                >
-                  Continuar
-                </button>
-              </div>
-
-              <p className="text-white/50 text-xs">Felices Fiestas del equipo de SOMOS Properties</p>
+              <p className="text-white/50 text-sm mt-3">Felices Fiestas del equipo de SOMOS Properties</p>
             </div>
 
           </div>
@@ -194,6 +205,28 @@ export default function ChristmasModal() {
           0%, 100% { opacity: 0.6; }
           50% { opacity: 1; }
         }
+
+        @keyframes glowPulse {
+          0%, 100% { 
+            opacity: 0.6;
+            transform: translate(-50%, -50%) scale(1);
+          }
+          50% { 
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.2);
+          }
+        }
+
+        @keyframes stellarPulse {
+          0%, 100% {
+            opacity: 0.8;
+            transform: scale(1) drop-shadow(0 0 20px rgba(250, 204, 21, 0.6));
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.15) drop-shadow(0 0 30px rgba(250, 204, 21, 1));
+          }
+        }
         
         .animate-twinkle {
           animation: twinkle linear infinite;
@@ -201,6 +234,14 @@ export default function ChristmasModal() {
         
         .animate-snowfall {
           animation: snowfall linear infinite;
+        }
+
+        .animate-glowPulse {
+          animation: glowPulse 2s ease-in-out infinite;
+        }
+
+        .animate-stellarPulse {
+          animation: stellarPulse 2s ease-in-out infinite;
         }
       `}</style>
     </>
