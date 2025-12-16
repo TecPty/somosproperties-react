@@ -18,17 +18,21 @@ export const metadata = {
 export default function HomePage() {
   const allProperties: Property[] = allPropertiesData
   
+  // Filtrar propiedades con precio definido
+  const propertiesWithPrice = allProperties.filter((p) => {
+    const hasPrice = (p.operation === "Venta" && p.price > 0) || 
+                     (p.operation === "Alquiler" && (p.pricePerMonth || 0) > 0)
+    return hasPrice && p.status === "available"
+  })
+  
   // Propiedades premium (precio >= $250,000)
-  const premiumProperties = allProperties
-    .filter((p) => {
-      const isPremium = p.price >= 250000
-      return isPremium && p.status === "available"
-    })
+  const premiumProperties = propertiesWithPrice
+    .filter((p) => p.price >= 250000)
     .slice(0, 3)
 
   // Propiedades destacadas (excluir premium)
   const premiumIds = new Set(premiumProperties.map((p) => p.id))
-  const featuredProperties = allProperties
+  const featuredProperties = propertiesWithPrice
     .filter((p) => p.featured && !premiumIds.has(p.id))
     .slice(0, 6)
 
