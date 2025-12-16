@@ -133,11 +133,11 @@ export default function ChristmasModal() {
           <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-12">
             
             {/* Texto Izquierdo */}
-            <div className="text-center lg:text-left flex-1 px-2 lg:px-0 hidden lg:block">
-              <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-white mb-2 tracking-wide">
+            <div className="text-center flex-1 px-2 hidden lg:block">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-2 tracking-wide">
                 Feliz Navidad y
               </h1>
-              <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-white mb-3 tracking-wide">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-3 tracking-wide">
                 Próspero Año Nuevo
               </h1>
               <p className="text-base text-white/80 font-light leading-relaxed">
@@ -211,7 +211,7 @@ export default function ChristmasModal() {
             <div className="text-center flex-1 px-2">
               {/* Mobile - Mostrar título */}
               <div className="lg:hidden mb-2">
-                <h1 className="text-xl sm:text-2xl font-serif font-bold text-white mb-1 tracking-wide">
+                <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-1 tracking-wide">
                   Feliz Navidad y Próspero Año Nuevo
                 </h1>
                 <p className="text-sm text-white/80 font-light mb-3">
