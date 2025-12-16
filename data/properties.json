@@ -1129,8 +1129,8 @@
       "district": "La Chorrera",
       "builtYear": 2024,
       "bedrooms": 0,
-      "status": "available",
-      "featured": true,
+      "status": "rented",
+      "featured": false,
       "amenities": [
         "Ubicacion estrategica en La Chorrera",
         "Estacionamientos para clientes",
@@ -1217,6 +1217,56 @@
         "Canon $1,636.56/mes + mant. $1.50/m²",
         "Espacio amplio para anchor o gimnasio",
         "Estacionamiento amplio y acceso controlado"
+      ]
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": true,
+      "amenities": [
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 16",
+      "pricePerMonth": 560.4,
+      "area": 104.75,
+      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero-3.webp"
+      ],
+      "description": "Local 16 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 104.75 m² en una sola planta. Alquiler $560.40/mes, deposito $523.75, mantenimiento $209.50. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "id": 140,
+      "highlights": [
+        "Local 16 - 104.75 m² en planta baja",
+        "Canon $560.40/mes + mant. $1.50/m²",
+        "2 meses de gracia para acondicionar",
+        "Ubicación estratégica en La Chorrera"
       ]
     },
     {
