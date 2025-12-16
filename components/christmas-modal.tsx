@@ -51,21 +51,23 @@ export default function ChristmasModal() {
           ))}
         </div>
 
-        {/* Nieve cayendo */}
+        {/* Copos de nieve cayendo */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(100)].map((_, i) => (
+          {[...Array(50)].map((_, i) => (
             <div
               key={`snow-${i}`}
-              className="absolute rounded-full bg-white animate-snowfall"
+              className="absolute text-white animate-snowfall"
               style={{
-                width: `${Math.random() * 4 + 2}px`,
-                height: `${Math.random() * 4 + 2}px`,
+                fontSize: `${Math.random() * 12 + 8}px`,
                 left: `${Math.random() * 100}%`,
-                opacity: Math.random() * 0.6 + 0.4,
-                animationDuration: `${Math.random() * 10 + 10}s`,
+                top: `-20px`,
+                opacity: Math.random() * 0.7 + 0.3,
+                animationDuration: `${Math.random() * 8 + 8}s`,
                 animationDelay: `${Math.random() * 5}s`,
               }}
-            />
+            >
+              ❄
+            </div>
           ))}
         </div>
       </div>
@@ -93,11 +95,24 @@ export default function ChristmasModal() {
 
           {/* Árbol de Navidad animado con logo como tronco */}
           <div className="relative mb-6 flex justify-center">
-            <div className="christmas-tree relative w-[160px] sm:w-[200px] h-[220px] sm:h-[280px]">
+            <div className="christmas-tree relative w-[200px] sm:w-[280px] h-[280px] sm:h-[380px]">
               {/* Estrella en la punta */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
-                <div className="star-glow w-8 h-8 text-cyan-300 animate-pulse">
-                  <svg fill="currentColor" viewBox="0 0 20 20" style={{ filter: 'drop-shadow(0 0 20px rgba(103, 232, 249, 0.9))' }}>
+                {/* Brillo blanco estelar detrás */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-white/40 blur-xl animate-pulse" style={{
+                    animation: 'stellarPulse 2s ease-in-out infinite'
+                  }}></div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-white/60 blur-lg animate-pulse" style={{
+                    animation: 'stellarPulse 1.5s ease-in-out infinite',
+                    animationDelay: '0.3s'
+                  }}></div>
+                </div>
+                {/* Estrella amarilla */}
+                <div className="star-glow relative w-8 h-8 text-yellow-400 animate-pulse">
+                  <svg fill="currentColor" viewBox="0 0 20 20" style={{ filter: 'drop-shadow(0 0 20px rgba(250, 204, 21, 1)) drop-shadow(0 0 30px rgba(251, 191, 36, 0.8))' }}>
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 </div>
@@ -108,8 +123,10 @@ export default function ChristmasModal() {
                 const progress = i / 65
                 const spiralTurns = 6.5
                 const angle = progress * spiralTurns * Math.PI * 2
-                const radius = 8 + progress * 100
-                const x = 140 + Math.cos(angle) * radius * (1 - progress * 0.3)
+                // Radio crece progresivamente para formar cono (más ancho abajo)
+                const radius = 6 + progress * 90
+                const centerX = 50 // Porcentaje
+                const offsetX = Math.cos(angle) * radius
                 const y = 25 + progress * 270
                 
                 const colors = ['#67e8f9', '#22d3ee', '#06b6d4', '#0891b2', '#93c5fd', '#60a5fa']
@@ -122,7 +139,7 @@ export default function ChristmasModal() {
                     key={`spiral-${i}`}
                     className="absolute rounded-full"
                     style={{
-                      left: `${x}px`,
+                      left: `${centerX}%`,
                       top: `${y}px`,
                       width: `${size}px`,
                       height: `${size}px`,
@@ -134,7 +151,7 @@ export default function ChristmasModal() {
                       `,
                       animation: `glowPulse ${1 + Math.random()}s ease-in-out infinite`,
                       animationDelay: `${progress * 2}s`,
-                      transform: 'translate(-50%, -50%)',
+                      transform: `translate(calc(-50% + ${offsetX}px), -50%)`,
                     }}
                   />
                 )
@@ -145,8 +162,9 @@ export default function ChristmasModal() {
                 const progress = i / 30
                 const spiralTurns = 6.5
                 const angle = progress * spiralTurns * Math.PI * 2 + Math.PI / 4
-                const radius = 12 + progress * 95
-                const x = 140 + Math.cos(angle) * radius * (1 - progress * 0.3)
+                const radius = 10 + progress * 85
+                const centerX = 50
+                const offsetX = Math.cos(angle) * radius
                 const y = 28 + progress * 265
                 
                 const size = Math.random() * 3 + 1.5
@@ -157,7 +175,7 @@ export default function ChristmasModal() {
                     key={`glow-${i}`}
                     className="absolute rounded-full"
                     style={{
-                      left: `${x}px`,
+                      left: `${centerX}%`,
                       top: `${y}px`,
                       width: `${size}px`,
                       height: `${size}px`,
@@ -166,7 +184,7 @@ export default function ChristmasModal() {
                       opacity: 0.6,
                       animation: `glowPulse ${0.8 + Math.random() * 0.4}s ease-in-out infinite`,
                       animationDelay: `${progress * 2.5}s`,
-                      transform: 'translate(-50%, -50%)',
+                      transform: `translate(calc(-50% + ${offsetX}px), -50%)`,
                     }}
                   />
                 )
@@ -177,8 +195,9 @@ export default function ChristmasModal() {
                 const progress = i / 45
                 const spiralTurns = 6.5
                 const angle = progress * spiralTurns * Math.PI * 2
-                const radius = 10 + progress * 98
-                const x = 140 + Math.cos(angle) * radius * (1 - progress * 0.3)
+                const radius = 8 + progress * 88
+                const centerX = 50
+                const offsetX = Math.cos(angle) * radius
                 const y = 26 + progress * 268
                 
                 return (
@@ -186,14 +205,14 @@ export default function ChristmasModal() {
                     key={`trail-${i}`}
                     className="absolute rounded-full"
                     style={{
-                      left: `${x}px`,
+                      left: `${centerX}%`,
                       top: `${y}px`,
                       width: '16px',
                       height: '16px',
                       background: 'radial-gradient(circle, rgba(103, 232, 249, 0.25) 0%, rgba(103, 232, 249, 0) 70%)',
                       animation: `glowPulse ${1.5}s ease-in-out infinite`,
                       animationDelay: `${progress * 2}s`,
-                      transform: 'translate(-50%, -50%)',
+                      transform: `translate(calc(-50% + ${offsetX}px), -50%)`,
                       pointerEvents: 'none',
                     }}
                   />
@@ -202,18 +221,16 @@ export default function ChristmasModal() {
 
               {/* Logo como tronco del árbol */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
-                <div className="bg-white/30 backdrop-blur-sm rounded-t-sm rounded-b-md p-4 shadow-2xl" style={{
+                <div className="bg-white/30 backdrop-blur-sm rounded-t-sm rounded-b-md px-3 sm:px-4 py-2 sm:py-3 shadow-2xl" style={{
                   boxShadow: '0 0 25px rgba(103, 232, 249, 0.4), 0 15px 35px rgba(0, 0, 0, 0.3)',
-                  clipPath: 'polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%)',
-                  paddingTop: '12px',
-                  paddingBottom: '14px'
+                  clipPath: 'polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)'
                 }}>
                   <Image
                     src="/images/Logo-SP.png"
                     alt="SOMOS Properties"
-                    width={160}
-                    height={53}
-                    className="h-12 w-auto"
+                    width={140}
+                    height={46}
+                    className="h-8 sm:h-10 w-auto"
                   />
                 </div>
               </div>
@@ -280,12 +297,21 @@ export default function ChristmasModal() {
         
         @keyframes glowPulse {
           0%, 100% { 
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.6;
           }
           50% { 
+            opacity: 1;
+          }
+        }
+        
+        @keyframes stellarPulse {
+          0%, 100% { 
             opacity: 0.4;
-            transform: translate(-50%, -50%) scale(1.2);
+            transform: scale(1);
+          }
+          50% { 
+            opacity: 0.8;
+            transform: scale(1.3);
           }
         }
         
