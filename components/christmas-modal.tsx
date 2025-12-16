@@ -53,7 +53,7 @@ export default function ChristmasModal() {
         {/* Nieve */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(100)].map((_, i) => {
-            const size = Math.random() * 6 + 3
+            const size = Math.random() * 7.26 + 3.63
             const scale = size / 10
             return (
             <svg
