@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/residenciales`,
-      lastModified: new Date(),
+      lastModified: new Date(), 
       changeFrequency: 'weekly',
       priority: 0.9,
     },
