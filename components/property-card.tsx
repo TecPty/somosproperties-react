@@ -32,6 +32,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               src={property.image || "/placeholder.svg"}
               alt={property.title}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform duration-300 group-hover:scale-105"
               loading="lazy"
               onError={() => setImageError(true)}
@@ -76,7 +77,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           </div>
           {isRented ? (
             <div className="absolute -bottom-4 -left-6 z-20 w-20 h-20 opacity-85">
-              <Image src="/images/badges/rented-stamp.png" alt="Alquilado" fill className="object-contain" />
+              <Image src="/images/badges/rented-stamp.png" alt="Alquilado" fill sizes="80px" className="object-contain" />
             </div>
           ) : null}
           {statusLabel && (

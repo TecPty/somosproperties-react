@@ -97,6 +97,7 @@ export default function PropertyDetails({ property, similarProperties }: Propert
                   src={property.images[selectedImage] || "/placeholder.svg"}
                   alt={`${property.title} - Imagen ${selectedImage + 1}`}
                   fill
+                  sizes="(max-width: 768px) 100vw, 1200px"
                   className="object-cover"
                   priority
                   onError={() => setImageError(true)}
@@ -485,6 +486,67 @@ export default function PropertyDetails({ property, similarProperties }: Propert
             </div>
           </div>
 
+          {/* Virtual Tour */}
+          {property.virtualTour && (
+            <div className="mb-16">
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">Visita Virtual 3D</h2>
+              <div className="bg-gradient-to-r from-[#3898EC] to-[#2e8adb] p-6 rounded-lg shadow-lg">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-white/20 p-3 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-8 w-8 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="text-white">
+                      <h3 className="text-lg font-semibold">Recorre esta propiedad desde tu casa</h3>
+                      <p className="text-sm text-white/90">Tour virtual 360° en Matterport</p>
+                    </div>
+                  </div>
+                  <a
+                    href={property.virtualTour}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-[#3898EC] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    Iniciar Tour Virtual
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Map */}
           <div className="mb-16">
             <h2 className="text-2xl font-semibold text-[#222222] mb-4">Ubicación</h2>
@@ -502,8 +564,22 @@ export default function PropertyDetails({ property, similarProperties }: Propert
                 />
               </div>
             ) : (
-              <div className="w-full h-[200px] rounded-lg border border-dashed border-[#cccccc] bg-[#fafafa] flex items-center justify-center text-[#999999] text-sm">
-                Configura NEXT_PUBLIC_GOOGLE_MAPS_KEY para mostrar el mapa.
+              <div className="w-full h-[200px] rounded-lg border border-dashed border-[#cccccc] bg-[#fafafa] flex flex-col items-center justify-center text-[#999999] text-sm gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-12 w-12 text-[#cccccc]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  />
+                </svg>
+                <p>Mapa de ubicación disponible próximamente</p>
               </div>
             )}
             <div className="mt-4 flex items-start gap-3 p-4 bg-[#fafafa] rounded-lg">

@@ -72,6 +72,7 @@ export default function NosotrosPage() {
               src="/images/nosotros/hero-0.webp"
               alt="Equipo Somos Properties"
               fill
+              sizes="100vw"
               className="object-contain"
               priority
               style={{ objectPosition: "50% 45%" }}
