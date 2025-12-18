@@ -101,7 +101,6 @@ export default function PropertyDetails({ property, similarProperties }: Propert
                   className="object-cover"
                   priority
                   onError={() => setImageError(true)}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center">
