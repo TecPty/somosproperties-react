@@ -1401,8 +1401,8 @@
     {
       "type": "Local",
       "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
+      "operation": "Venta/Alquiler",
+      "price": 212688,
       "location": "La Chorrera, Panamá Oeste",
       "city": "Panamá Oeste",
       "district": "La Chorrera",
@@ -1437,13 +1437,13 @@
         "/images/properties/plaza-guayacanes/hero-2.webp",
         "/images/properties/plaza-guayacanes/hero-3.webp"
       ],
-      "description": "Local 3 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 132.93 m2 en una sola planta. Alquiler $711.17/mes, deposito $664.65, mantenimiento $265.86. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 3 en Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 132.93 m² en una sola planta. Alquiler $711.17/mes, depósito $664.65, mantenimiento $265.86/mes. Venta: $212,688. Mínimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 136,
       "highlights": [
         "Local 3 - 132.93 m² en planta baja",
-        "Canon $711.17/mes + mant. $1.50/m²",
+        "Venta: $212,688 | Alquiler: $711.17/mes",
         "2 meses de gracia para acondicionar",
         "Estacionamientos para clientes"
       ]
@@ -1501,8 +1501,8 @@
     {
       "type": "Local",
       "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
+      "operation": "Venta/Alquiler",
+      "price": 489440,
       "location": "La Chorrera, Panamá Oeste",
       "city": "Panamá Oeste",
       "district": "La Chorrera",
@@ -1537,13 +1537,13 @@
         "/images/properties/plaza-guayacanes/hero-1.webp",
         "/images/properties/plaza-guayacanes/hero-2.webp"
       ],
-      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m² en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.80. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 9 en Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 305.9 m² en una sola planta. Alquiler $1,636.56/mes, depósito $1,529.50, mantenimiento $611.80/mes. Venta: $489,440. Mínimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 2,
       "parkingSpots": 4,
       "id": 138,
       "highlights": [
         "Local 9 - 305.9 m² en planta baja",
-        "Canon $1,636.56/mes + mant. $1.50/m²",
+        "Venta: $489,440 | Alquiler: $1,636.56/mes",
         "Espacio amplio para anchor o gimnasio",
         "Estacionamiento amplio y acceso controlado"
       ]
@@ -1601,8 +1601,8 @@
     {
       "type": "Local",
       "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
+      "operation": "Venta/Alquiler",
+      "price": 200448,
       "location": "La Chorrera, Panamá Oeste",
       "city": "Panamá Oeste",
       "district": "La Chorrera",
@@ -1637,13 +1637,13 @@
         "/images/properties/plaza-guayacanes/hero-1.webp",
         "/images/properties/plaza-guayacanes/hero-3.webp"
       ],
-      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m² en una sola planta. Alquiler $595.77/mes, deposito $556.80, mantenimiento $222.72. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 17 en Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 111.36 m² en una sola planta. Alquiler $595.77/mes, depósito $556.80, mantenimiento $222.72/mes. Venta: $200,448. Mínimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 139,
       "highlights": [
         "Local 17 - 111.36 m² en planta baja",
-        "Canon $595.77/mes + mant. $1.50/m²",
+        "Venta: $200,448 | Alquiler: $595.77/mes",
         "Ideal retail mediano o servicios",
         "Estacionamiento para clientes y CCTV"
       ]
