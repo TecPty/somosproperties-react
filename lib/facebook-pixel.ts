@@ -1,27 +1,35 @@
 import { useEffect } from "react"
-import ReactPixel from "react-facebook-pixel"
 
 const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || ""
 
 export const initFacebookPixel = () => {
-  if (PIXEL_ID && typeof window !== "undefined") {
+  if (typeof window === "undefined" || !PIXEL_ID) return
+  
+  import("react-facebook-pixel").then((module) => {
+    const ReactPixel = module.default
     ReactPixel.init(PIXEL_ID, undefined, {
       autoConfig: true,
       debug: false,
     })
-  }
+  })
 }
 
 export const trackPageView = () => {
-  if (PIXEL_ID) {
+  if (typeof window === "undefined" || !PIXEL_ID) return
+  
+  import("react-facebook-pixel").then((module) => {
+    const ReactPixel = module.default
     ReactPixel.pageView()
-  }
+  })
 }
 
 export const trackEvent = (eventName: string, data?: Record<string, unknown>) => {
-  if (PIXEL_ID) {
+  if (typeof window === "undefined" || !PIXEL_ID) return
+  
+  import("react-facebook-pixel").then((module) => {
+    const ReactPixel = module.default
     ReactPixel.track(eventName, data)
-  }
+  })
 }
 
 // Eventos personalizados para inmobiliaria
