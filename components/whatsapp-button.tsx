@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { trackContact } from "@/lib/facebook-pixel"
+import { trackTikTokEvent } from "@/lib/tiktok-pixel"
+import { trackGoogleAdsEvent } from "@/lib/google-ads"
+import { trackLinkedInEvent } from "@/lib/linkedin-pixel"
 
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false)
@@ -20,8 +23,11 @@ export default function WhatsAppButton() {
   }, [])
 
   const handleWhatsAppClick = () => {
-    // Rastrear evento en Facebook Pixel
+    // Rastrear evento en todos los píxeles
     trackContact("whatsapp")
+    trackTikTokEvent("Contact", { content_type: "whatsapp" })
+    trackGoogleAdsEvent("contact", { method: "whatsapp" })
+    trackLinkedInEvent("contact_whatsapp")
     
     const phoneNumber = "50766770577"
     const message = "Hola, me interesa obtener más información sobre sus propiedades."
