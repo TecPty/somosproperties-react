@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import ChristmasModal from "@/components/christmas-modal"
 import WhatsAppButton from "@/components/whatsapp-button"
 import "./globals.css"
@@ -26,13 +26,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID
+
   return (
     <html lang="es" suppressHydrationWarning>
       <body className="font-sans antialiased">
         <ChristmasModal />
         {children}
         <WhatsAppButton />
-        <Analytics />
+        {gaId && gaId !== "G-XXXXXXXXXX" && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
   )
