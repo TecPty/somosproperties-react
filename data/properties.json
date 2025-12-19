@@ -373,54 +373,207 @@
     },
     {
       "id": 26,
-      "title": "The Tower Business Calle 50 - Oficinas en Venta",
-      "type": "Oficina",
+      "title": "The Towers Business Plaza - Local 1-A Nivel 1",
+      "type": "Local",
       "category": "Comercial",
-      "operation": "Venta",
-      "price": 0,
-      "pricePerMonth": null,
-      "location": "Calle 50, Ciudad de Panamá",
+      "operation": "Venta/Alquiler",
+      "price": 1105000,
+      "pricePerMonth": 7276,
+      "location": "San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
-      "district": "Bella Vista",
+      "district": "San Francisco",
       "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 1,
-      "area": 60,
+      "bathrooms": 2,
+      "parkingSpots": 2,
+      "area": 425.78,
       "builtYear": 2024,
       "image": "/images/properties/the-towers-business-plaza/hero.jpg",
       "images": [
         "/images/properties/the-towers-business-plaza/hero.jpg"
       ],
       "planos": [],
-      "description": "The Tower Business en Calle 50 representa la excelencia en espacios corporativos, ubicado en el corazón del distrito financiero y comercial de Ciudad de Panamá.\n\nOficinas ejecutivas diseñadas para profesionales y empresas que buscan prestigio, funcionalidad y ubicación estratégica.\n\nEspacios disponibles desde 60m² con diseño flexible y moderno.\n\nPerfecto para:\n• Corporativos multinacionales\n• Firmas de abogados\n• Consultorios médicos especializados\n• Empresas de consultoría\n• Oficinas administrativas\n• Empresas de tecnología\n\nVentajas de Calle 50:\n• Zona bancaria y financiera\n• Acceso a Vía España y Vía Brasil\n• Restaurantes ejecutivos cercanos\n• Centros comerciales a minutos\n• Excelente conectividad urbana\n\nInvierta en el edificio más emblemático de Calle 50.",
+      "description": "Local 1-A en Nivel 1 de The Towers Business Plaza, San Francisco. 425.78 m². Venta: $1,105,000 | Alquiler: $7,276/mes + depósito $6,800. Mantenimiento $958/mes ($2.25/m²). Edificio de 6 niveles con aire central, 4 niveles de estacionamientos ($0.05/min, 1 hora gratis). Contrato mínimo 2 años, 2 meses de gracia para acondicionar.",
       "amenities": [
-        "Ubicación premium Calle 50",
-        "Lobby corporativo de lujo",
-        "Recepción ejecutiva 24/7",
+        "Sistema de aire por ducto central",
+        "4 niveles de estacionamientos",
+        "1 hora gratis de estacionamiento",
+        "6 niveles de oficinas",
+        "Locales comerciales en planta baja",
+        "Seguridad 24/7",
         "Elevadores de alta velocidad",
-        "Aire acondicionado central",
-        "Pisos técnicos para cableado",
-        "Planta eléctrica completa",
-        "Cisternas y sistema hidroneumático",
-        "Estacionamientos asignados",
-        "Seguridad con CCTV",
-        "Control de acceso biométrico",
-        "Salones de conferencias",
-        "Cafetería en edificio",
-        "Mantenimiento incluido"
+        "2 meses de gracia para acondicionar"
       ],
-      "featured": false,
+      "featured": true,
       "status": "available",
       "highlights": [
-        "Oficinas en Calle 50, distrito financiero",
-        "Unidades de 60 m² listas para ocupar",
-        "Inversión corporativa en zona prime",
-        "Seguridad y lobby empresarial"
+        "425.78 m² en Nivel 1",
+        "Venta: $1,105,000 | Alquiler: $7,276/mes",
+        "Mantenimiento: $958/mes",
+        "Opción sin piso: $1,070,505"
+      ]
+    },
+    {
+      "id": 26.1,
+      "title": "The Towers Business Plaza - Local 2-A Nivel 2",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Venta/Alquiler",
+      "price": 1105000,
+      "pricePerMonth": 7276,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 2,
+      "parkingSpots": 2,
+      "area": 425.78,
+      "builtYear": 2024,
+      "image": "/images/properties/the-towers-business-plaza/hero.jpg",
+      "images": [
+        "/images/properties/the-towers-business-plaza/hero.jpg"
+      ],
+      "planos": [],
+      "description": "Local 2-A en Nivel 2 de The Towers Business Plaza, San Francisco. 425.78 m². Venta: $1,105,000 | Alquiler: $7,276/mes + depósito $6,800. Mantenimiento $958/mes ($2.25/m²). Edificio corporativo con aire central y 4 niveles de estacionamientos. Contrato mínimo 2 años con 2 meses de gracia.",
+      "amenities": [
+        "Sistema de aire por ducto central",
+        "4 niveles de estacionamientos",
+        "1 hora gratis de estacionamiento",
+        "6 niveles de oficinas",
+        "Seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "2 meses de gracia para acondicionar"
+      ],
+      "featured": true,
+      "status": "available",
+      "highlights": [
+        "425.78 m² en Nivel 2",
+        "Venta: $1,105,000 | Alquiler: $7,276/mes",
+        "Mantenimiento: $958/mes",
+        "Opción sin piso: $1,070,505"
+      ]
+    },
+    {
+      "id": 26.2,
+      "title": "The Towers Business Plaza - Local 2-E Nivel 2",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Venta/Alquiler",
+      "price": 244400,
+      "pricePerMonth": 1605,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 94.41,
+      "builtYear": 2024,
+      "image": "/images/properties/the-towers-business-plaza/hero.jpg",
+      "images": [
+        "/images/properties/the-towers-business-plaza/hero.jpg"
+      ],
+      "planos": [],
+      "description": "Local 2-E en Nivel 2 de The Towers Business Plaza, San Francisco. 94.41 m². Venta: $244,400 | Alquiler: $1,605/mes + depósito $1,500. Mantenimiento $212/mes ($2.25/m²). Edificio de 6 niveles con estacionamientos y aire central. Contrato mínimo 2 años, 2 meses de gracia.",
+      "amenities": [
+        "Sistema de aire por ducto central",
+        "4 niveles de estacionamientos",
+        "1 hora gratis de estacionamiento",
+        "Seguridad 24/7",
+        "Elevadores",
+        "2 meses de gracia para acondicionar"
+      ],
+      "featured": true,
+      "status": "available",
+      "highlights": [
+        "94.41 m² en Nivel 2",
+        "Venta: $244,400 | Alquiler: $1,605/mes",
+        "Mantenimiento: $212/mes",
+        "Ideal para oficina o consultorio"
+      ]
+    },
+    {
+      "id": 26.3,
+      "title": "The Towers Business Plaza - Local 4-A Nivel 4",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Venta/Alquiler",
+      "price": 1105000,
+      "pricePerMonth": 7276,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 2,
+      "parkingSpots": 2,
+      "area": 425.78,
+      "builtYear": 2024,
+      "image": "/images/properties/the-towers-business-plaza/hero.jpg",
+      "images": [
+        "/images/properties/the-towers-business-plaza/hero.jpg"
+      ],
+      "planos": [],
+      "description": "Local 4-A en Nivel 4 de The Towers Business Plaza, San Francisco. 425.78 m². Venta: $1,105,000 | Alquiler: $7,276/mes + depósito $6,800. Mantenimiento $958/mes ($2.25/m²). Edificio corporativo de 6 niveles con 4 niveles de estacionamientos. Contrato mínimo 2 años con 2 meses de gracia.",
+      "amenities": [
+        "Sistema de aire por ducto central",
+        "4 niveles de estacionamientos",
+        "1 hora gratis de estacionamiento",
+        "6 niveles de oficinas",
+        "Seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "2 meses de gracia para acondicionar"
+      ],
+      "featured": true,
+      "status": "available",
+      "highlights": [
+        "425.78 m² en Nivel 4",
+        "Venta: $1,105,000 | Alquiler: $7,276/mes",
+        "Mantenimiento: $958/mes",
+        "Opción sin piso: $1,070,505"
+      ]
+    },
+    {
+      "id": 26.4,
+      "title": "The Towers Business Plaza - Local Planta Baja Frente a Calle",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Venta/Alquiler",
+      "price": 707460,
+      "pricePerMonth": 4280,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 1,
+      "area": 235.82,
+      "builtYear": 2024,
+      "image": "/images/properties/the-towers-business-plaza/hero.jpg",
+      "images": [
+        "/images/properties/the-towers-business-plaza/hero.jpg"
+      ],
+      "planos": [],
+      "description": "Local en Planta Baja frente a calle de The Towers Business Plaza, San Francisco. Total 235.82 m² (PB: 118.26 m², Mezzanine: 87.39 m², Terraza: 30.17 m²). Venta: $707,460 | Alquiler: $4,280/mes + depósito $4,000. Mantenimiento $531/mes ($2.25/m²). Ubicación premium con fachada a calle principal. Contrato mínimo 2 años, 2 meses de gracia.",
+      "amenities": [
+        "Fachada frente a calle principal",
+        "Mezzanine y terraza incluidos",
+        "Sistema de aire por ducto central",
+        "4 niveles de estacionamientos",
+        "1 hora gratis de estacionamiento",
+        "Seguridad 24/7",
+        "2 meses de gracia para acondicionar"
+      ],
+      "featured": true,
+      "status": "available",
+      "highlights": [
+        "235.82 m² (PB + Mezzanine + Terraza)",
+        "Venta: $707,460 | Alquiler: $4,280/mes",
+        "Frente a calle con alta visibilidad",
+        "Mantenimiento: $531/mes"
       ]
     },
     {
       "id": 27,
-      "title": "The Tower Business Calle 50 - Oficinas en Alquiler",
+      "title": "The Tower Business Calle 50 - Oficinas Ocupadas",
       "type": "Oficina",
       "category": "Comercial",
       "operation": "Alquiler",
@@ -439,7 +592,7 @@
         "/images/properties/the-towers-business-plaza/hero.jpg"
       ],
       "planos": [],
-      "description": "Alquile su oficina ejecutiva en The Tower Business Calle 50 y establezca su empresa en la dirección más prestigiosa de Panamá.\n\nOficinas corporativas listas para ocupar desde 60m², con servicios premium incluidos y ambiente profesional de primer nivel.\n\nIdeal para:\n• Empresas en expansión\n• Profesionales independientes\n• Startups corporativas\n• Oficinas de representación\n• Sedes administrativas\n• Despachos ejecutivos\n\nBeneficios de Alquiler:\n• Contratos flexibles\n• Mantenimiento incluido\n• Servicios básicos cubiertos\n• Seguridad 24/7\n• Recepción corporativa\n• Espacios compartidos disponibles\n\nEstablezca su negocio en el corazón financiero de Panamá.",
+      "description": "Oficinas en The Tower Business Calle 50. Actualmente con ocupación completa. Mostrado para referencia de portafolio.",
       "amenities": [
         "Dirección corporativa de prestigio",
         "Lobby ejecutivo impecable",
@@ -457,10 +610,10 @@
         "Zona de restaurantes"
       ],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "highlights": [
-        "Alquiler de oficinas 60 m² en Calle 50",
-        "Canon desde $1,000/mes",
+        "Oficinas en Calle 50 ocupadas",
+        "Disponible para lista de espera",
         "Ubicación prime en distrito financiero",
         "Seguridad y lobby empresarial"
       ]
