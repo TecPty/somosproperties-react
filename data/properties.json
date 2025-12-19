@@ -1661,7 +1661,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 140,
       "title": "Sunset Strip - Local 409",
       "type": "Local",
@@ -1700,7 +1700,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 141,
       "title": "Sunset Strip - Local 11",
       "type": "Local",
@@ -1732,6 +1732,132 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
+      "pricePerMonth": 2000,
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": true,
+      "status": "available",
+      "id": 146,
+      "title": "Sunset Strip - Local 10",
+      "type": "Local",
+      "area": 78,
+      "image": "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+      "images": [
+        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-00.webp"
+      ],
+      "description": "Local 10 en Sunset Strip (Planta 00), 78 m². Canon $2,000/mes + mantenimiento $1.50/m² ($117/mes). Estacionamientos aire libre y bajo techo (1 hora gratis). 5 niveles para locales y oficinas, seguridad 24 horas. ITBMS no incluido.",
+      "amenities": [
+        "Planta 00 con fácil acceso",
+        "Estacionamientos aire libre y bajo techo",
+        "4 elevadores y escaleras eléctricas",
+        "Seguridad 24/7 y CCTV",
+        "1 hora gratis de estacionamiento"
+      ],
+      "highlights": [
+        "78 m² en planta 00",
+        "Canon $2,000 + mant. $117/mes",
+        "Estacionamiento 1 hora gratis",
+        "Listo para retail o servicios"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 2300,
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": true,
+      "status": "available",
+      "id": 147,
+      "title": "Sunset Strip - Local 14",
+      "type": "Local",
+      "area": 89,
+      "image": "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
+      "images": [
+        "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-00.webp"
+      ],
+      "description": "Local 14 en Sunset Strip (Planta 00), 89 m². Canon $2,300/mes + mantenimiento $1.50/m² ($133.50/mes). Estacionamientos aire libre y bajo techo (1 hora gratis). 5 niveles para locales y oficinas, seguridad 24 horas. ITBMS no incluido.",
+      "amenities": [
+        "Planta 00 con alto tráfico peatonal",
+        "Estacionamientos aire libre y bajo techo",
+        "4 elevadores y escaleras eléctricas",
+        "Seguridad 24/7 y CCTV",
+        "1 hora gratis de estacionamiento"
+      ],
+      "highlights": [
+        "89 m² en planta 00",
+        "Canon $2,300 + mant. $133.50/mes",
+        "Alto flujo peatonal",
+        "Ideal para retail o restaurante"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 1800,
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": true,
+      "status": "available",
+      "id": 148,
+      "title": "Sunset Strip - Local 109",
+      "type": "Local",
+      "area": 162,
+      "image": "/images/properties/sunset-strip/lobby-recepcion-cowork.webp",
+      "images": [
+        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp",
+        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/nivel-100.webp"
+      ],
+      "description": "Local 109 en Sunset Strip (Nivel 100), 162 m² (84 m² + 78 m²). Canon $1,800/mes + mantenimiento $2.00/m² ($324/mes). Estacionamientos aire libre y bajo techo (1 hora gratis). Espacio amplio ideal para gimnasio, showroom o restaurante. ITBMS no incluido.",
+      "amenities": [
+        "Nivel 100 con acceso por escaleras eléctricas",
+        "162 m² de espacio amplio (84+78)",
+        "Estacionamientos aire libre y bajo techo",
+        "4 elevadores y seguridad 24/7",
+        "1 hora gratis de estacionamiento"
+      ],
+      "highlights": [
+        "162 m² en nivel 100 (84+78)",
+        "Canon $1,800 + mant. $324/mes",
+        "Espacio amplio para gimnasio o showroom",
+        "Excelente relación precio/m²"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
       "pricePerMonth": 3500,
       "location": "Vía Israel, San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
@@ -1741,7 +1867,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 142,
       "title": "Sunset Strip - Local 25",
       "type": "Local",
@@ -1782,7 +1908,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 143,
       "title": "Sunset Strip - Local 26",
       "type": "Local",
@@ -1823,7 +1949,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 144,
       "title": "Sunset Strip - Local 134",
       "type": "Local",
@@ -1864,7 +1990,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 145,
       "title": "Sunset Strip - Oficina 206",
       "type": "Oficina",
