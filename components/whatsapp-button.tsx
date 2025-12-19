@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { trackContact } from "@/lib/facebook-pixel"
 
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false)
@@ -19,6 +20,9 @@ export default function WhatsAppButton() {
   }, [])
 
   const handleWhatsAppClick = () => {
+    // Rastrear evento en Facebook Pixel
+    trackContact("whatsapp")
+    
     const phoneNumber = "50766770577"
     const message = "Hola, me interesa obtener más información sobre sus propiedades."
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`

@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import ChristmasModal from "@/components/christmas-modal"
 import WhatsAppButton from "@/components/whatsapp-button"
+import FacebookPixelProvider from "@/components/facebook-pixel-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className="font-sans antialiased">
+        <FacebookPixelProvider />
         <ChristmasModal />
         {children}
         <WhatsAppButton />
