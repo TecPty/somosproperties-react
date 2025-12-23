@@ -383,7 +383,7 @@
       ]
     },
     {
-      "id": 25.1,
+      "id": 239,
       "title": "Praderas de Arraiján - Casa Unifamiliar 2 Recámaras",
       "type": "Casa",
       "category": "Residencial",
@@ -437,7 +437,7 @@
       ]
     },
     {
-      "id": 25.2,
+      "id": 240,
       "title": "Praderas de Arraiján - Dúplex 3 Recámaras (Modelo Almendro)",
       "type": "Casa",
       "category": "Residencial",
@@ -532,7 +532,7 @@
       ]
     },
     {
-      "id": 26.1,
+      "id": 241,
       "title": "The Towers Business Plaza - Local 2-A Nivel 2",
       "type": "Local",
       "category": "Comercial",
@@ -572,7 +572,7 @@
       ]
     },
     {
-      "id": 26.2,
+      "id": 242,
       "title": "The Towers Business Plaza - Local 2-E Nivel 2",
       "type": "Local",
       "category": "Comercial",
@@ -611,7 +611,7 @@
       ]
     },
     {
-      "id": 26.3,
+      "id": 243,
       "title": "The Towers Business Plaza - Local 4-A Nivel 4",
       "type": "Local",
       "category": "Comercial",
@@ -651,7 +651,7 @@
       ]
     },
     {
-      "id": 26.4,
+      "id": 244,
       "title": "The Towers Business Plaza - Local Planta Baja Frente a Calle",
       "type": "Local",
       "category": "Comercial",
@@ -899,7 +899,7 @@
       ]
     },
     {
-      "id": 30.1,
+      "id": 245,
       "title": "The Towers Residences - Apto. 31 B Torre 100",
       "type": "Apartamento",
       "category": "Residencial",
@@ -1934,7 +1934,7 @@
       "builtYear": 2024,
       "featured": false,
       "status": "rented",
-      "id": 140,
+      "id": 246,
       "title": "Sunset Strip - Local 409",
       "type": "Local",
       "area": 38,
