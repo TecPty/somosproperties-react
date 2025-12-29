@@ -737,12 +737,12 @@
       ]
     },
     {
-      "id": 28,
-      "title": "The Towers Residences - Apto. 23 C Torre 100",
+      "id": 245,
+      "title": "The Towers Residences - Apto. 31 B Torre 100",
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
-      "price": 430000,
+      "price": 500000,
       "pricePerMonth": null,
       "location": "San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
@@ -750,21 +750,19 @@
       "bedrooms": 3,
       "bathrooms": 4,
       "parkingSpots": 2,
-      "area": 188,
+      "area": 273,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/interiores/sala-comedor-lujo.jpg",
+      "image": "/images/properties/the-towers-residences/interiores/dormitorio-principal-1.jpg",
       "images": [
-        "/images/properties/the-towers-residences/interiores/sala-comedor-lujo.jpg",
-        "/images/properties/the-towers-residences/interiores/sala-comedor-elegante.jpg",
         "/images/properties/the-towers-residences/interiores/dormitorio-principal-1.jpg",
-        "/images/properties/the-towers-residences/interiores/dormitorio-principal-2.jpg",
+        "/images/properties/the-towers-residences/interiores/dormitorio-secundario-3.jpg",
         "/images/properties/the-towers-residences/interiores/cocina-moderna.jpg",
+        "/images/properties/the-towers-residences/interiores/sala-comedor-elegante.jpg",
         "/images/properties/the-towers-residences/interiores/bano-principal.jpg",
-        "/images/properties/the-towers-residences/exteriores/balcon-vista-panoramica.jpg",
-        "/images/properties/the-towers-residences/vistas/vista-ciudad-1.jpg"
+        "/images/properties/the-towers-residences/exteriores/balcon-vista-panoramica.jpg"
       ],
       "planos": [],
-      "description": "The Towers Residences en San Francisco es un exclusivo y lujoso proyecto de apartamentos ubicado entre Calle 67 Este y C. 50, Panamá.\n\nApartamento 23 C en Torre 100 con 188.26 m² de espacios amplios y acabados de lujo.\n\nCaracterísticas del Apartamento:\n• 3 recámaras espaciosas\n• 4 baños completos con acabados premium\n• Sala-comedor integrado con vista panorámica\n• Cocina moderna con linea blanca\n• Balcón privado con vista a la calle 50\n• 2 estacionamientos asignados\n• Área de lavandería\n\nProyecto Premium:\nDos edificios de apartamentos conectados por una atractiva área social, diseñados con materiales de alta calidad y estilo moderno contemporáneo.\n\nUbicación San Francisco:\n• Zona residencial premium\n• Cerca de centros comerciales\n• Acceso rápido a vías principales\n• Restaurantes y servicios cercanos\n\nPrecio: $430,000\nMantenimiento: $376.52/mes",
+      "description": "The Towers Residences - Apartamento 31 B en Torre 100, el penúltimo piso con 272.50 m² de lujo absoluto.\n\n Características Premium:\n• 3 recámaras tipo suite\n• 4 baños de diseño italiano\n• Sala-comedor con vista 360°\n• Cocina europea integrada\n• Walk-in closet en recámara principal\n• Área de TV/Estudio\n• Terraza techada\n• 2 estacionamientos VIP\n• Bodega privada\n\n Proyecto The Towers Residences:\nDos edificios conectados por un área social única, con gimnasio, piscina infinita, canchas deportivas y salón de eventos.\n\nDiseñado con materiales de primera calidad y estilo contemporáneo para familias que buscan exclusividad.\n\n San Francisco - La Mejor Ubicación:\n• Piso 31 con vistas impresionantes\n• Cerca de todo lo que necesitas\n• Zona de alta valorización\n• Seguridad y privacidad\n\n Precio: $500,000 (negociable)\n Mantenimiento: $4,981/mes",
       "amenities": [
         "Cancha de tenis profesional",
         "Cancha de fútbol",
@@ -784,10 +782,11 @@
       "status": "available",
       "tier": "premium",
       "highlights": [
-        "188 m² en Torre 100",
-        "3 recámaras + 4 baños",
-        "Vista a la Calle 50",
-        "San Francisco premium"
+        "Precio $500,000 (negociable)",
+        "Piso 31 Torre 100",
+        "272 m² de lujo",
+        "Vista 360° ciudad",
+        "Acabados europeos"
       ]
     },
     {
@@ -895,58 +894,6 @@
         "Piso alto vista panorámica",
         "Acabados importados",
         "Proyecto exclusivo"
-      ]
-    },
-    {
-      "id": 245,
-      "title": "The Towers Residences - Apto. 31 B Torre 100",
-      "type": "Apartamento",
-      "category": "Residencial",
-      "operation": "Venta",
-      "price": 613000,
-      "pricePerMonth": null,
-      "location": "San Francisco, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 3,
-      "bathrooms": 4,
-      "parkingSpots": 2,
-      "area": 273,
-      "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/interiores/dormitorio-principal-1.jpg",
-      "images": [
-        "/images/properties/the-towers-residences/interiores/dormitorio-principal-1.jpg",
-        "/images/properties/the-towers-residences/interiores/dormitorio-secundario-3.jpg",
-        "/images/properties/the-towers-residences/interiores/cocina-moderna.jpg",
-        "/images/properties/the-towers-residences/interiores/sala-comedor-elegante.jpg",
-        "/images/properties/the-towers-residences/interiores/bano-principal.jpg",
-        "/images/properties/the-towers-residences/exteriores/balcon-vista-panoramica.jpg"
-      ],
-      "planos": [],
-      "description": "The Towers Residences - Apartamento 31 B en Torre 100, el penúltimo piso con 272.50 m² de lujo absoluto.\n\n Características Premium:\n• 3 recámaras tipo suite\n• 4 baños de diseño italiano\n• Sala-comedor con vista 360°\n• Cocina europea integrada\n• Walk-in closet en recámara principal\n• Área de TV/Estudio\n• Terraza techada\n• 2 estacionamientos VIP\n• Bodega privada\n\n Proyecto The Towers Residences:\nDos edificios conectados por un área social única, con gimnasio, piscina infinita, canchas deportivas y salón de eventos.\n\nDiseñado con materiales de primera calidad y estilo contemporáneo para familias que buscan exclusividad.\n\n San Francisco - La Mejor Ubicación:\n• Piso 31 con vistas impresionantes\n• Cerca de todo lo que necesitas\n• Zona de alta valorización\n• Seguridad y privacidad\n\n Precio: $613,000\n Mantenimiento: $4,981/mes",
-      "amenities": [
-        "Cancha de tenis profesional",
-        "Cancha de fútbol",
-        "Cancha de squash",
-        "Cancha de ráquetbol",
-        "Piscina moderna efecto infinito",
-        "Gimnasio equipado moderno",
-        "Parque de juegos infantiles",
-        "Salón de fiestas",
-        "Seguridad 24/7",
-        "Lobby de lujo",
-        "Ascensores de alta velocidad",
-        "Área social conectada",
-        "Estacionamiento techado"
-      ],
-      "featured": true,
-      "status": "available",
-      "tier": "premium",
-      "highlights": [
-        "Piso 31 Torre 100",
-        "272 m² de lujo",
-        "Vista 360° ciudad",
-        "Acabados europeos"
       ]
     },
     {
