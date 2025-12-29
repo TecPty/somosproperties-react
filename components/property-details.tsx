@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -8,6 +8,8 @@ import ContactForm from "@/components/contact-form"
 import PropertyGrid from "@/components/property-grid"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
+import { trackGoogleAdsConversion, trackGoogleAdsEvent } from "@/lib/google-ads"
+import { trackGaEvent } from "@/lib/google-analytics"
 
 type PropertyDetailsProps = {
   property: Property
@@ -20,6 +22,7 @@ export default function PropertyDetails({ property, similarProperties }: Propert
   const [activeTab, setActiveTab] = useState<"description" | "amenities" | "plans">("description")
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImage, setLightboxImage] = useState("")
+  const hasTrackedView = useRef(false)
 
   const displayPrice =
     property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
@@ -55,6 +58,27 @@ export default function PropertyDetails({ property, similarProperties }: Propert
   const mapSrc = googleMapsKey
     ? `https://www.google.com/maps/embed/v1/place?key=${googleMapsKey}&q=${encodeURIComponent(property.location)}&zoom=15`
     : null
+
+  useEffect(() => {
+    if (hasTrackedView.current) return
+    hasTrackedView.current = true
+
+    const conversionLabel = "6XybCKvqrtkbEKua17RC"
+    const eventParams = {
+      property_id: property.id,
+      property_title: property.title,
+      property_type: property.type,
+      property_category: property.category,
+      operation: property.operation,
+      price: property.price || property.pricePerMonth || 0,
+      city: property.city,
+      district: property.district,
+    }
+
+    trackGaEvent("property_view", eventParams)
+    trackGoogleAdsEvent("property_view", eventParams)
+    trackGoogleAdsConversion(conversionLabel, 1)
+  }, [property])
 
   return (
     <>

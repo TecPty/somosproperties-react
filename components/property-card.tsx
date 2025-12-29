@@ -6,6 +6,8 @@ import { useState } from "react"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { isPremium } from "@/lib/utils-premium"
+import { trackGoogleAdsEvent } from "@/lib/google-ads"
+import { trackGaEvent } from "@/lib/google-analytics"
 
 interface PropertyCardProps {
   property: Property
@@ -22,10 +24,25 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   
   // Usar función consolidada para detectar premium
   const isPremiumProperty = isPremium(property)
+  const handlePropertyClick = () => {
+    const eventParams = {
+      property_id: property.id,
+      property_title: property.title,
+      property_type: property.type,
+      property_category: property.category,
+      operation: property.operation,
+      price: property.price || property.pricePerMonth || 0,
+      city: property.city,
+      district: property.district,
+    }
+
+    trackGaEvent("property_click", eventParams)
+    trackGoogleAdsEvent("property_click", eventParams)
+  }
 
   return (
     <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full">
-      <Link href={`/propiedad/${property.id}`} className="block relative group">
+      <Link href={`/propiedad/${property.id}`} className="block relative group" onClick={handlePropertyClick}>
         <div className="relative h-60 overflow-hidden bg-[#f3f3f3]">
           {!imageError ? (
             <Image
@@ -91,7 +108,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       </Link>
 
       <div className="p-5 flex flex-col flex-grow">
-        <Link href={`/propiedad/${property.id}`}>
+        <Link href={`/propiedad/${property.id}`} onClick={handlePropertyClick}>
           <h3 className="text-xl font-semibold text-[#333333] mb-1 line-clamp-2 hover:text-[#3898EC] transition-colors min-h-[3.5rem]">
             {property.title}
           </h3>
@@ -189,6 +206,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           <Link
             href={`/propiedad/${property.id}`}
             className="block w-full bg-[#3898EC] text-white text-center py-3 rounded-lg font-medium hover:bg-[#0082f3] transition-colors"
+            onClick={handlePropertyClick}
           >
             Ver Detalles
           </Link>
