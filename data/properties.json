@@ -187,10 +187,10 @@
       "city": "Ciudad de Panamá",
       "district": "Condado del Rey",
       "bedrooms": 4,
-      "bathrooms": 5.5,
+      "bathrooms": 4.5,
       "parkingSpots": 2,
       "area": 155.7,
-      "builtYear": 2024,
+      "builtYear": 2021,
         "image": "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-sala-03-empty.png",
         "images": [
           "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-sala-01-empty.png",
@@ -198,7 +198,6 @@
           "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-01-empty.png",
           "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-02-empty.png",
           "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-03-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-cocina-02-empty.png",
           "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-cocina-03-empty.png",
           "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-closet-01-empty.png",
           "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-closet-03-empty.png",
@@ -212,7 +211,7 @@
       "status": "available",
       "id": 1,
       "title": "Kings Park - Torre 500, Apto 3-B",
-      "description": "Apartamento 3-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 5 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas), Sistema Smart Home y 2 estacionamientos.",
+      "description": "Apartamento 3-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 4 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas), Sistema Smart Home y 2 estacionamientos.",
       "amenities": [
         "Sistema Smart Home integrado",
         "Línea blanca completa incluida",
@@ -228,7 +227,7 @@
         "Salón de ping pong y salón billar"
       ],
       "highlights": [
-        "155.70 m² - 4 recámaras, 5 1/2 baños",
+        "155.70 m² - 4 recámaras, 4 1/2 baños",
         "Precio $280,000",
         "Mantenimiento $295.83/mes",
         "Sistema Smart Home y línea blanca incluida"
