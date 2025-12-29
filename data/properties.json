@@ -191,18 +191,18 @@
       "parkingSpots": 2,
       "area": 155.7,
       "builtYear": 2021,
-        "image": "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-sala-03-empty.png",
-        "images": [
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-sala-01-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-sala-03-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-01-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-02-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-03-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-cocina-03-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-closet-01-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-closet-03-empty.png",
-          "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-pasillo-01-empty.png"
-        ],
+      "image": "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-02-empty.png",
+      "images": [
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-02-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-sala-01-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-sala-03-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-01-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-recamara-03-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-cocina-03-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-closet-01-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-closet-03-empty.png",
+        "/images/properties/kings-park/torre-500/apto-3b/kings-park-apt-pasillo-01-empty.png"
+      ],
       "planos": [
         "/images/properties/kings-park/plano-modelo-a.png",
         "/images/properties/kings-park/plano-modelo-b.png"
@@ -243,10 +243,10 @@
       "city": "Ciudad de Panamá",
       "district": "Condado del Rey",
       "bedrooms": 4,
-      "bathrooms": 5.5,
+      "bathrooms": 4.5,
       "parkingSpots": 2,
       "area": 155.7,
-      "builtYear": 2024,
+      "builtYear": 2021,
       "image": "/images/properties/kings-park/torre-500/apto-10b/kings-park-10b-sala-comedor-01.jpeg",
       "images": [
         "/images/properties/kings-park/torre-500/apto-10b/kings-park-10b-sala-comedor-01.jpeg",
