@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { GoogleAnalytics } from "@next/third-parties/google"
-import ChristmasModal from "@/components/christmas-modal"
+import SeasonalModal from "@/components/seasonal-modal"
 import WhatsAppButton from "@/components/whatsapp-button"
 import AnalyticsProvider from "@/components/analytics-provider"
 import "./globals.css"
@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <body className="font-sans antialiased">
         <AnalyticsProvider />
-        <ChristmasModal />
+        <SeasonalModal />
         {children}
         <WhatsAppButton />
         {gaId && gaId !== "G-XXXXXXXXXX" && <GoogleAnalytics gaId={gaId} />}
