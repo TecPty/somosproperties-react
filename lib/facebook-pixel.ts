@@ -9,7 +9,7 @@ export const initFacebookPixel = () => {
     const ReactPixel = module.default
     ReactPixel.init(PIXEL_ID, undefined, {
       autoConfig: true,
-      debug: false,
+      debug: true,
     })
   })
 }
