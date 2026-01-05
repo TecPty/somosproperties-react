@@ -41,9 +41,6 @@ const ensurePixel = () => {
 }
 
 export const initFacebookPixel = () => {
-  if (typeof window === "undefined") return
-  // Temp debug to validate PIXEL_ID in production.
-  console.log("[FB Pixel] init", { hasPixelId: !!PIXEL_ID, pixelId: PIXEL_ID || "missing" })
   ensurePixel()
 }
 
