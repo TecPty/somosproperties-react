@@ -1,9 +1,16 @@
 import { useEffect } from "react"
 
+type FbqFunction = ((...args: unknown[]) => void) & {
+  callMethod?: (...args: unknown[]) => void
+  queue: unknown[]
+  loaded?: boolean
+  version?: string
+}
+
 declare global {
   interface Window {
-    fbq?: (...args: unknown[]) => void
-    _fbq?: unknown
+    fbq?: FbqFunction
+    _fbq?: FbqFunction
   }
 }
 
@@ -13,13 +20,8 @@ const ensurePixel = () => {
   if (typeof window === "undefined" || !PIXEL_ID) return false
   if (window.fbq) return true
 
-  const fbq = function (...args: unknown[]) {
+  const fbq: FbqFunction = function (...args: unknown[]) {
     fbq.callMethod ? fbq.callMethod(...args) : fbq.queue.push(args)
-  } as typeof window.fbq & {
-    callMethod?: (...args: unknown[]) => void
-    queue: unknown[]
-    loaded?: boolean
-    version?: string
   }
 
   fbq.queue = []
