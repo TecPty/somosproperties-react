@@ -28,11 +28,16 @@ export default function HomePage() {
     return hasPrice && p.status === "available"
   })
   
-  // Propiedades premium usando función consolidada
-  const premiumProperties = propertiesWithPrice
-    .filter((p) => isPremium(p))
-    .slice(0, 3)
-
+  // Propiedades premium usando funci?n consolidada
+  const premiumDefaults = propertiesWithPrice.filter((p) => isPremium(p))
+  const premiumOverrideIds = [23, 167, 1]
+  const premiumOverrides = premiumOverrideIds
+    .map((id) => propertiesWithPrice.find((p) => p.id === id))
+    .filter(Boolean) as Property[]
+  const premiumProperties = [
+    ...premiumOverrides,
+    ...premiumDefaults.filter((p) => !premiumOverrideIds.includes(p.id)),
+  ].slice(0, 3)
   // Propiedades destacadas (excluir premium)
   const premiumIds = new Set(premiumProperties.map((p) => p.id))
   const featuredProperties = propertiesWithPrice
