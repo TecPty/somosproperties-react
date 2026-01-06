@@ -25,12 +25,12 @@ export default function HomePage() {
   const propertiesWithPrice = allProperties.filter((p) => {
     const hasPrice = (p.operation === "Venta" && p.price > 0) || 
                      (p.operation === "Alquiler" && (p.pricePerMonth || 0) > 0)
-    return hasPrice && p.status === "available"
+    return hasPrice && p.status === "available" && !p.hidden
   })
   
   // Propiedades premium usando funci?n consolidada
   const premiumDefaults = propertiesWithPrice.filter((p) => isPremium(p))
-  const premiumOverrideIds = [23, 167, 1]
+  const premiumOverrideIds = [245, 167, 1]
   const premiumOverrides = premiumOverrideIds
     .map((id) => propertiesWithPrice.find((p) => p.id === id))
     .filter(Boolean) as Property[]

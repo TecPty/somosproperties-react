@@ -11,7 +11,7 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
   const allProperties: Property[] = allPropertiesData
 
   const filteredProperties = useMemo(() => {
-    let filtered = [...allProperties]
+    let filtered = allProperties.filter((p) => !p.hidden)
 
     if (!filters) return filtered
 

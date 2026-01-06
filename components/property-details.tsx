@@ -5,6 +5,7 @@ import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ContactForm from "@/components/contact-form"
+import LeadQualifier from "@/components/lead-qualifier"
 import PropertyGrid from "@/components/property-grid"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
@@ -53,6 +54,9 @@ export default function PropertyDetails({ property, similarProperties }: Propert
 
   const hasAmenities = Array.isArray(property.amenities) && property.amenities.length > 0
   const hasPlanos = Array.isArray(property.planos) && property.planos.length > 0
+  const hasRequirements = Array.isArray(property.requirements) && property.requirements.length > 0
+  const hasIncentives = Array.isArray(property.incentives) && property.incentives.length > 0
+  const hasEligibility = typeof property.minIncome === "number" && Number.isFinite(property.minIncome)
 
   const googleMapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY
   const mapSrc = googleMapsKey
@@ -502,12 +506,55 @@ export default function PropertyDetails({ property, similarProperties }: Propert
 
             {/* Right Column - Contact Form */}
             <div className="lg:col-span-1">
+              <LeadQualifier
+                propertyId={property.id}
+                propertyTitle={property.title}
+                minIncome={property.minIncome}
+              />
               <div className="sticky top-20 bg-[#fafafa] p-6 rounded-lg border border-[#eeeeee]">
-                <h3 className="text-xl font-semibold text-[#222222] mb-4">Solicita Información</h3>
+                <h3 className="text-xl font-semibold text-[#222222] mb-4">Solicita Informaci?n</h3>
                 <ContactForm compact propertyTitle={property.title} />
               </div>
             </div>
           </div>
+
+          {(hasEligibility || hasRequirements || hasIncentives) && (
+            <div className="mb-16 rounded-lg border border-[#eeeeee] bg-[#fafafa] p-6">
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">Requisitos y condiciones</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-[#333333]">
+                <div className="space-y-4">
+                  {hasEligibility && (
+                    <div>
+                      <h3 className="font-semibold text-[#222222] mb-2">Ingreso familiar</h3>
+                      <p className="text-[#555555]">
+                        Ingreso familiar mÇ­nimo: {formatPrice(property.minIncome || 0)}
+                      </p>
+                    </div>
+                  )}
+                  {hasIncentives && (
+                    <div>
+                      <h3 className="font-semibold text-[#222222] mb-2">Beneficios</h3>
+                      <ul className="list-disc list-inside space-y-1 text-[#555555]">
+                        {property.incentives?.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+                {hasRequirements && (
+                  <div>
+                    <h3 className="font-semibold text-[#222222] mb-2">Requisitos</h3>
+                    <ul className="list-disc list-inside space-y-1 text-[#555555]">
+                      {property.requirements?.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
 
           {/* Virtual Tour */}
           {property.virtualTour && (
@@ -649,3 +696,5 @@ export default function PropertyDetails({ property, similarProperties }: Propert
     </>
   )
 }
+
+

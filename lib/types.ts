@@ -21,6 +21,10 @@ export interface Property {
   virtualTour?: string
   description: string
   amenities: string[]
+  minIncome?: number
+  requirements?: string[]
+  incentives?: string[]
+  hidden?: boolean
   featured: boolean
   status: "available" | "sold" | "rented"
   tier?: "premium" | "standard"
