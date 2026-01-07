@@ -764,7 +764,8 @@
         "Disponible para lista de espera",
         "Ubicaci\u00f3n prime en distrito financiero",
         "Seguridad y lobby empresarial"
-      ]
+      ],
+      "hidden": true
     },
     {
       "id": 245,
