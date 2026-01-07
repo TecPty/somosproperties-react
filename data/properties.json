@@ -5955,10 +5955,10 @@
       "area": 167,
       "bedrooms": 3,
       "bathrooms": 3,
-      "image": "/images/properties/new-west/general/familia-paseo-urbanizacion.png",
-      "images": [
-        "/images/properties/new-west/general/familia-paseo-urbanizacion.png",
-        "/images/properties/new-west/general/townhouses-conjunto.png",
+        "image": "/images/properties/new-west/general/townhouses-conjunto.png",
+        "images": [
+          "/images/properties/new-west/general/townhouses-conjunto.png",
+          "/images/properties/new-west/general/familia-paseo-urbanizacion.png",
         "/images/properties/new-west/general/cancha-futbol-cesped.png",
         "/images/properties/new-west/interiores/comedor-iluminado.png",
         "/images/properties/new-west/interiores/cocina-con-isla.png"

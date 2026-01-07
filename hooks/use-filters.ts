@@ -9,7 +9,7 @@ export function useFilters(initialFilters?: PropertyFilters) {
   const router = useRouter()
   const pathname = usePathname()
 
-  const [filters, setFilters] = useState<PropertyFilters>(() => {
+  const buildFiltersFromParams = useCallback((): PropertyFilters => {
     // Initialize from URL params or initial filters
     const urlFilters: PropertyFilters = {}
 
@@ -50,7 +50,9 @@ export function useFilters(initialFilters?: PropertyFilters) {
     if (search) urlFilters.search = search
 
     return Object.keys(urlFilters).length > 0 ? urlFilters : initialFilters || {}
-  })
+  }, [initialFilters, searchParams])
+
+  const [filters, setFilters] = useState<PropertyFilters>(() => buildFiltersFromParams())
 
   const syncUrl = useCallback(
     (payload: PropertyFilters) => {
@@ -85,6 +87,17 @@ export function useFilters(initialFilters?: PropertyFilters) {
   useEffect(() => {
     syncUrl(filters)
   }, [filters, syncUrl])
+
+  // Sync state when URL params change (e.g., navbar dropdown links).
+  useEffect(() => {
+    const nextFilters = buildFiltersFromParams()
+    setFilters((prev) => {
+      if (JSON.stringify(prev) === JSON.stringify(nextFilters)) {
+        return prev
+      }
+      return nextFilters
+    })
+  }, [buildFiltersFromParams])
 
   return {
     filters,
