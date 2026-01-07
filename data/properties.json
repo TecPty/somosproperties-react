@@ -141,8 +141,9 @@
       "parkingSpots": 0,
       "area": 305,
       "builtYear": 2024,
-      "image": "/images/properties/pacific-point/units/237/bathroom.png",
+      "image": "/images/properties/pacific-point/units/237/sala1.jpeg",
       "images": [
+        "/images/properties/pacific-point/units/237/sala1.jpeg",
         "/images/properties/pacific-point/units/237/bathroom.png",
         "/images/properties/pacific-point/units/237/closet.png",
         "/images/properties/pacific-point/units/237/entrada.jpeg",
@@ -155,7 +156,6 @@
         "/images/properties/pacific-point/units/237/sala-3.jpeg",
         "/images/properties/pacific-point/units/237/sala-4.jpg",
         "/images/properties/pacific-point/units/237/sala.jpeg",
-        "/images/properties/pacific-point/units/237/sala1.jpeg",
         "/images/properties/pacific-point/units/237/terraza-1.jpeg",
         "/images/properties/pacific-point/units/237/terraza-2.jpeg",
         "/images/properties/pacific-point/units/237/terraza.png"
@@ -782,15 +782,15 @@
       "parkingSpots": 2,
       "area": 273,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/units/245/bathroom.png",
+      "image": "/images/properties/the-towers-residences/units/245/sala.png",
       "images": [
+        "/images/properties/the-towers-residences/units/245/sala.png",
         "/images/properties/the-towers-residences/units/245/bathroom.png",
         "/images/properties/the-towers-residences/units/245/closet.png",
         "/images/properties/the-towers-residences/units/245/kitchen.png",
         "/images/properties/the-towers-residences/units/245/laundry.png",
         "/images/properties/the-towers-residences/units/245/room.png",
         "/images/properties/the-towers-residences/units/245/sala-1.png",
-        "/images/properties/the-towers-residences/units/245/sala.png",
         "/images/properties/the-towers-residences/units/245/terraza.png"
       ],
       "planos": [],
@@ -882,14 +882,14 @@
       "parkingSpots": 2,
       "area": 273,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/units/30/bathroom.png",
+      "image": "/images/properties/the-towers-residences/units/30/sala-1.png",
       "images": [
+        "/images/properties/the-towers-residences/units/30/sala-1.png",
         "/images/properties/the-towers-residences/units/30/bathroom.png",
         "/images/properties/the-towers-residences/units/30/closet.png",
         "/images/properties/the-towers-residences/units/30/kitchen.png",
         "/images/properties/the-towers-residences/units/30/laundry.png",
         "/images/properties/the-towers-residences/units/30/room.png",
-        "/images/properties/the-towers-residences/units/30/sala-1.png",
         "/images/properties/the-towers-residences/units/30/sala.png",
         "/images/properties/the-towers-residences/units/30/terraza.png"
       ],
