@@ -838,8 +838,15 @@
       "parkingSpots": 2,
       "area": 273,
       "builtYear": 2024,
-      "image": "",
-      "images": [],
+        "image": "/images/properties/the-towers-residences/units/29/sala.jpg",
+        "images": [
+          "/images/properties/the-towers-residences/units/29/sala.jpg",
+          "/images/properties/the-towers-residences/units/29/sala-1.jpg",
+          "/images/properties/the-towers-residences/units/29/kitchen.jpg",
+          "/images/properties/the-towers-residences/units/29/room.jpg",
+          "/images/properties/the-towers-residences/units/29/room-1.jpg",
+          "/images/properties/the-towers-residences/units/29/room-2.jpg"
+        ],
       "planos": [],
       "description": "The Towers Residences - Apartamento 28 B en Torre 100, un espacio de 272.50 m\u00b2 dise\u00f1ado para el m\u00e1ximo confort y elegancia.\n\n Caracter\u00edsticas del Apartamento:\n\u2022 3 amplias rec\u00e1maras con closets walk-in\n\u2022 4 ba\u00f1os de lujo con acabados importados\n\u2022 Sala-comedor de concepto abierto\n\u2022 Cocina gourmet con barra americana\n\u2022 \u00c1rea de estar familiar\n\u2022 Balc\u00f3n con vista espectacular\n\u2022 2 estacionamientos\n\u2022 Cuarto de servicio con ba\u00f1o\n\n Exclusividad y Dise\u00f1o:\nProyecto de dos edificios conectados por \u00e1reas sociales de primer nivel, con materiales de alta calidad y estilo moderno contempor\u00e1neo.\n\n San Francisco Premium:\n\u2022 Mejor zona residencial de la ciudad\n\u2022 Walking distance a Multiplaza Pacific\n\u2022 Cerca de colegios internacionales\n\u2022 F\u00e1cil acceso a Cinta Costera\n\n Precio: $500,000\n Mantenimiento: $4,981/mes",
       "amenities": [
