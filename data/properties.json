@@ -76,6 +76,7 @@
         "/images/properties/pacific-point/planos/plano-modelo-b.webp"
       ],
       "images": [
+        "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-bano-principal-01.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-bano-principal-02.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-bano-secundario-01.jpeg",
@@ -89,7 +90,6 @@
         "/images/properties/pacific-point/units/236/pacific-point-236-rec-principal-02.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-rec-secundaria-01.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-rec-secundaria-02.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-sala-03.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-sala-04.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-sala-05.jpeg",
@@ -97,7 +97,7 @@
         "/images/properties/pacific-point/units/236/pacific-point-236-sala-comedor-02.jpeg",
         "/images/properties/pacific-point/units/236/pacific-point-236-walkin-closet-01.jpeg"
       ],
-      "image": "/images/properties/pacific-point/units/236/pacific-point-236-bano-principal-01.jpeg",
+      "image": "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.jpeg",
       "pricePerMonth": null,
       "featured": true,
       "status": "available",
