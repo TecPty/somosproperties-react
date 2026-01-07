@@ -11,6 +11,9 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
   const allProperties: Property[] = allPropertiesData
 
   const filteredProperties = useMemo(() => {
+    const normalizeValue = (value?: string | null) =>
+      (value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+
     let filtered = allProperties.filter((p) => !p.hidden)
 
     if (!filters) return filtered
@@ -51,22 +54,23 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
 
     // Filter by location
     if (filters.location) {
+      const locationNeedle = normalizeValue(filters.location)
       filtered = filtered.filter(
         (p) =>
-          (p.district?.toLowerCase() || '').includes(filters.location!.toLowerCase()) ||
-          (p.location?.toLowerCase() || '').includes(filters.location!.toLowerCase()),
+          normalizeValue(p.district).includes(locationNeedle) ||
+          normalizeValue(p.location).includes(locationNeedle),
       )
     }
 
     // Filter by search
     if (filters.search) {
-      const searchLower = filters.search.toLowerCase()
+      const searchLower = normalizeValue(filters.search)
       filtered = filtered.filter(
         (p) =>
-          (p.title?.toLowerCase() || '').includes(searchLower) ||
-          (p.location?.toLowerCase() || '').includes(searchLower) ||
-          (p.description?.toLowerCase() || '').includes(searchLower) ||
-          (p.type?.toLowerCase() || '').includes(searchLower),
+          normalizeValue(p.title).includes(searchLower) ||
+          normalizeValue(p.location).includes(searchLower) ||
+          normalizeValue(p.description).includes(searchLower) ||
+          normalizeValue(p.type).includes(searchLower),
       )
     }
 
