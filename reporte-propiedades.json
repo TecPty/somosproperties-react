@@ -1,0 +1,263 @@
+{
+  "fecha": "2026-01-27",
+  "totalPropiedades": 139,
+  "completitud": 67,
+  "propiedadesCompletas": 93,
+  "propiedadesIncompletas": 46,
+  "detalles": {
+    "sinImagenes": [],
+    "pocasImagenes": [
+      {
+        "id": 241,
+        "title": "The Towers Business Plaza - Local 2-A Nivel 2",
+        "cantidad": 1
+      },
+      {
+        "id": 242,
+        "title": "The Towers Business Plaza - Local 2-E Nivel 2",
+        "cantidad": 1
+      },
+      {
+        "id": 243,
+        "title": "The Towers Business Plaza - Local 4-A Nivel 4",
+        "cantidad": 1
+      },
+      {
+        "id": 244,
+        "title": "The Towers Business Plaza - Local Planta Baja Frente a Calle",
+        "cantidad": 1
+      },
+      {
+        "id": 27,
+        "title": "The Tower Business Calle 50 - Oficinas Ocupadas",
+        "cantidad": 1
+      },
+      {
+        "id": 150,
+        "title": "Evolution Tower - Oficina #1",
+        "cantidad": 2
+      },
+      {
+        "id": 151,
+        "title": "Evolution Tower - Oficina #2",
+        "cantidad": 2
+      },
+      {
+        "id": 152,
+        "title": "Evolution Tower - Oficina #3",
+        "cantidad": 2
+      },
+      {
+        "id": 153,
+        "title": "Evolution Tower - Oficina #4",
+        "cantidad": 2
+      },
+      {
+        "id": 154,
+        "title": "Evolution Tower - Oficina #5",
+        "cantidad": 2
+      },
+      {
+        "id": 155,
+        "title": "Evolution Tower - Oficina #6",
+        "cantidad": 2
+      },
+      {
+        "id": 156,
+        "title": "Evolution Tower - Oficina #7",
+        "cantidad": 2
+      },
+      {
+        "id": 157,
+        "title": "Evolution Tower - Oficina #8",
+        "cantidad": 2
+      },
+      {
+        "id": 158,
+        "title": "Evolution Tower - Oficina #9",
+        "cantidad": 2
+      },
+      {
+        "id": 159,
+        "title": "Evolution Tower - Oficina #10",
+        "cantidad": 2
+      },
+      {
+        "id": 160,
+        "title": "Evolution Tower - Oficina #11",
+        "cantidad": 2
+      }
+    ],
+    "sinPrecio": [
+      {
+        "id": 237,
+        "title": "Pacific Point T.400 - LB y AA"
+      },
+      {
+        "id": 2,
+        "title": "Central Plaza - Arraiján"
+      },
+      {
+        "id": 27,
+        "title": "The Tower Business Calle 50 - Oficinas Ocupadas"
+      },
+      {
+        "id": 31,
+        "title": "Plaza Los Guayacanes - La Chorrera"
+      },
+      {
+        "id": 32,
+        "title": "Balboa Boutiques - Local A-104"
+      },
+      {
+        "id": 33,
+        "title": "Sunset Strip - Vía Israel"
+      },
+      {
+        "id": 34,
+        "title": "Evolution Tower - Apartamentos Modernos"
+      },
+      {
+        "id": 39,
+        "title": "Rali Business Center - Oficina 228"
+      },
+      {
+        "id": 40,
+        "title": "Rali Business Center - Oficina 231"
+      },
+      {
+        "id": 41,
+        "title": "Rali Business Center - Oficina 244"
+      },
+      {
+        "id": 42,
+        "title": "Rali Business Center - Oficina 802"
+      },
+      {
+        "id": 43,
+        "title": "Rali Business Center - Oficina 806"
+      },
+      {
+        "id": 44,
+        "title": "Rali Business Center - Oficina 810"
+      },
+      {
+        "id": 45,
+        "title": "Rali Business Center - Oficina 826"
+      },
+      {
+        "id": 132,
+        "title": "Balboa Boutiques - Local A-108"
+      },
+      {
+        "id": 133,
+        "title": "Balboa Boutiques - Local A-109"
+      },
+      {
+        "id": 134,
+        "title": "Balboa Boutiques - Local B-102/202"
+      },
+      {
+        "id": 135,
+        "title": "Boulevard Plaza Costa Verde - Ocupación Completa"
+      },
+      {
+        "id": 137,
+        "title": "Plaza Los Guayacanes - Local 4"
+      },
+      {
+        "id": 140,
+        "title": "Plaza Los Guayacanes - Local 16"
+      },
+      {
+        "id": 246,
+        "title": "Sunset Strip - Local 409"
+      },
+      {
+        "id": 141,
+        "title": "Sunset Strip - Local 11"
+      },
+      {
+        "id": 146,
+        "title": "Sunset Strip - Local 10"
+      },
+      {
+        "id": 147,
+        "title": "Sunset Strip - Local 14"
+      },
+      {
+        "id": 148,
+        "title": "Sunset Strip - Local 109"
+      },
+      {
+        "id": 142,
+        "title": "Sunset Strip - Local 25"
+      },
+      {
+        "id": 143,
+        "title": "Sunset Strip - Local 26"
+      },
+      {
+        "id": 144,
+        "title": "Sunset Strip - Local 134"
+      },
+      {
+        "id": 145,
+        "title": "Sunset Strip - Oficina 206"
+      },
+      {
+        "id": 150,
+        "title": "Evolution Tower - Oficina #1"
+      },
+      {
+        "id": 151,
+        "title": "Evolution Tower - Oficina #2"
+      },
+      {
+        "id": 152,
+        "title": "Evolution Tower - Oficina #3"
+      },
+      {
+        "id": 153,
+        "title": "Evolution Tower - Oficina #4"
+      },
+      {
+        "id": 154,
+        "title": "Evolution Tower - Oficina #5"
+      },
+      {
+        "id": 155,
+        "title": "Evolution Tower - Oficina #6"
+      },
+      {
+        "id": 156,
+        "title": "Evolution Tower - Oficina #7"
+      },
+      {
+        "id": 157,
+        "title": "Evolution Tower - Oficina #8"
+      },
+      {
+        "id": 158,
+        "title": "Evolution Tower - Oficina #9"
+      },
+      {
+        "id": 159,
+        "title": "Evolution Tower - Oficina #10"
+      },
+      {
+        "id": 160,
+        "title": "Evolution Tower - Oficina #11"
+      },
+      {
+        "id": 161,
+        "title": "Boulevard Costa Verde - Local L13"
+      },
+      {
+        "id": 162,
+        "title": "Boulevard Costa Verde - Local L14"
+      }
+    ],
+    "sinDescripcion": []
+  }
+}
