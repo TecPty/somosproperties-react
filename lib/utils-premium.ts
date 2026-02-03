@@ -5,19 +5,19 @@ import type { Property } from "./types"
  * Criterio: precio >= $250,000
  */
 export function isPremium(property: Property): boolean {
-  return property.price >= 250000 || property.tier === "premium"
+  return Number.isFinite(property.price) && property.price >= 250000
 }
 
 /**
  * Filtra propiedades premium disponibles
  */
 export function getPremiumProperties(properties: Property[]): Property[] {
-  return properties.filter((p) => isPremium(p) && p.status === "available")
+  return properties.filter((p) => !p.hidden && isPremium(p) && p.status === "available")
 }
 
 /**
  * Filtra propiedades estándar (no premium) disponibles
  */
 export function getStandardProperties(properties: Property[]): Property[] {
-  return properties.filter((p) => !isPremium(p) && p.status === "available")
+  return properties.filter((p) => !p.hidden && !isPremium(p) && p.status === "available")
 }

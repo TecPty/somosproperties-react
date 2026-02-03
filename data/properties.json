@@ -340,6 +340,7 @@
       ],
       "featured": true,
       "status": "available",
+      "hidden": true,
       "highlights": [
         "Local comercial en Central Plaza Arraijan",
         "Fachada visible con estacionamientos",

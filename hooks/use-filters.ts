@@ -14,7 +14,7 @@ export function useFilters(initialFilters?: PropertyFilters) {
     const urlFilters: PropertyFilters = {}
 
     const operation = searchParams.get("operation")
-    if (operation && (operation === "Venta" || operation === "Alquiler")) {
+    if (operation && (operation === "Venta" || operation === "Alquiler" || operation === "Venta/Alquiler")) {
       urlFilters.operation = operation
     } else if (initialFilters?.operation) {
       urlFilters.operation = initialFilters.operation

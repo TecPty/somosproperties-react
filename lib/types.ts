@@ -3,7 +3,7 @@ export interface Property {
   title: string
   type: "Apartamento" | "Casa" | "Local" | "Terreno"
   category: "Residencial" | "Comercial"
-  operation: "Venta" | "Alquiler"
+  operation: "Venta" | "Alquiler" | "Venta/Alquiler"
   price: number
   pricePerMonth: number | null
   location: string
@@ -31,7 +31,7 @@ export interface Property {
 }
 
 export interface PropertyFilters {
-  operation?: "Venta" | "Alquiler"
+  operation?: "Venta" | "Alquiler" | "Venta/Alquiler"
   types?: string[]
   priceMin?: number
   priceMax?: number

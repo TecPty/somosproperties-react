@@ -22,7 +22,7 @@ export async function generateMetadata({
   }
 
   const allProperties: Property[] = allPropertiesData
-  const property = allProperties.find((p) => p.id === propertyId)
+  const property = allProperties.find((p) => p.id === propertyId && !p.hidden)
 
   if (!property) {
     return {
@@ -83,14 +83,20 @@ export default async function PropertyDetailsPage({ params }: { params: Promise<
   }
 
   const allProperties: Property[] = allPropertiesData
-  const property = allProperties.find((p) => p.id === propertyId)
+  const property = allProperties.find((p) => p.id === propertyId && !p.hidden)
 
   if (!property) {
     notFound()
   }
 
   const similarProperties = allProperties
-    .filter((p) => p.id !== property.id && p.category === property.category && p.district === property.district)
+    .filter(
+      (p) =>
+        !p.hidden &&
+        p.id !== property.id &&
+        p.category === property.category &&
+        p.district === property.district,
+    )
     .slice(0, 3)
 
   return <PropertyDetails property={property} similarProperties={similarProperties} />

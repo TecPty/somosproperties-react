@@ -50,12 +50,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Rutas dinámicas para propiedades
-  const propertyRoutes: MetadataRoute.Sitemap = allPropertiesData.map((property) => ({
-    url: `${baseUrl}/propiedad/${property.id}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: 0.8,
-  }))
+  const propertyRoutes: MetadataRoute.Sitemap = allPropertiesData
+    .filter((property) => !property.hidden)
+    .map((property) => ({
+      url: `${baseUrl}/propiedad/${property.id}`,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 0.8,
+    }))
 
   return [...staticRoutes, ...propertyRoutes]
 }

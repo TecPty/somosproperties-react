@@ -14,13 +14,29 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
     const normalizeValue = (value?: string | null) =>
       (value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 
+    const resolveComparablePrice = (p: Property, operationFilter?: PropertyFilters["operation"]) => {
+      if (operationFilter === "Venta") return p.price || 0
+      if (operationFilter === "Alquiler") return p.pricePerMonth || 0
+      if (operationFilter === "Venta/Alquiler") return p.pricePerMonth || p.price || 0
+
+      if (p.operation === "Venta") return p.price || 0
+      if (p.operation === "Alquiler") return p.pricePerMonth || 0
+      return p.pricePerMonth || p.price || 0
+    }
+
     let filtered = allProperties.filter((p) => !p.hidden)
 
     if (!filters) return filtered
 
     // Filter by operation
     if (filters.operation) {
-      filtered = filtered.filter((p) => p.operation === filters.operation)
+      if (filters.operation === "Venta") {
+        filtered = filtered.filter((p) => p.operation === "Venta" || p.operation === "Venta/Alquiler")
+      } else if (filters.operation === "Alquiler") {
+        filtered = filtered.filter((p) => p.operation === "Alquiler" || p.operation === "Venta/Alquiler")
+      } else {
+        filtered = filtered.filter((p) => p.operation === "Venta/Alquiler")
+      }
     }
 
     // Filter by category
@@ -35,16 +51,10 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
 
     // Filter by price
     if (filters.priceMin !== undefined) {
-      filtered = filtered.filter((p) => {
-        const price = p.operation === "Venta" ? p.price : p.pricePerMonth || 0
-        return price >= filters.priceMin!
-      })
+      filtered = filtered.filter((p) => resolveComparablePrice(p, filters.operation) >= filters.priceMin!)
     }
     if (filters.priceMax !== undefined) {
-      filtered = filtered.filter((p) => {
-        const price = p.operation === "Venta" ? p.price : p.pricePerMonth || 0
-        return price <= filters.priceMax!
-      })
+      filtered = filtered.filter((p) => resolveComparablePrice(p, filters.operation) <= filters.priceMax!)
     }
 
     // Filter by bedrooms
@@ -64,27 +74,39 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
 
     // Filter by search
     if (filters.search) {
-      const searchLower = normalizeValue(filters.search)
-      filtered = filtered.filter(
-        (p) =>
-          normalizeValue(p.title).includes(searchLower) ||
-          normalizeValue(p.location).includes(searchLower) ||
-          normalizeValue(p.description).includes(searchLower) ||
-          normalizeValue(p.type).includes(searchLower),
-      )
+      const searchLower = normalizeValue(filters.search).trim()
+      const tokens = searchLower.split(/\s+/).filter((token) => token.length >= 2)
+      if (tokens.length > 0) {
+        filtered = filtered.filter((p) => {
+          const haystack = normalizeValue(
+            `${p.title} ${p.location} ${p.description} ${p.type} ${p.district} ${p.city}`,
+          )
+          return tokens.every((token) => haystack.includes(token))
+        })
+      }
     }
 
     return filtered
   }, [allProperties, filters])
 
   const sortedProperties = useMemo(() => {
+    const resolveComparablePrice = (p: Property, operationFilter?: PropertyFilters["operation"]) => {
+      if (operationFilter === "Venta") return p.price || 0
+      if (operationFilter === "Alquiler") return p.pricePerMonth || 0
+      if (operationFilter === "Venta/Alquiler") return p.pricePerMonth || p.price || 0
+
+      if (p.operation === "Venta") return p.price || 0
+      if (p.operation === "Alquiler") return p.pricePerMonth || 0
+      return p.pricePerMonth || p.price || 0
+    }
+
     const sorted = [...filteredProperties]
 
     switch (sortBy) {
       case "price":
         sorted.sort((a, b) => {
-          const priceA = a.operation === "Venta" ? a.price : a.pricePerMonth || 0
-          const priceB = b.operation === "Venta" ? b.price : b.pricePerMonth || 0
+          const priceA = resolveComparablePrice(a, filters?.operation)
+          const priceB = resolveComparablePrice(b, filters?.operation)
           return priceA - priceB
         })
         break
@@ -101,7 +123,7 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
     }
 
     return sorted
-  }, [filteredProperties, sortBy])
+  }, [filteredProperties, sortBy, filters?.operation])
 
   const totalPages = Math.ceil(sortedProperties.length / itemsPerPage)
   const paginatedProperties = useMemo(() => {
