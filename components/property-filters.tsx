@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useMemo, useState } from "react"
-import type { PropertyFilters } from "@/lib/types"
+import type { Property, PropertyFilters } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 
 interface PropertyFiltersProps {
@@ -37,7 +37,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
   }, [])
 
   const propertyTypes = useMemo(() => {
-    const preferredOrder = ["Apartamento", "Casa", "Villa", "Local", "Oficina"]
+    const preferredOrder: Property["type"][] = ["Apartamento", "Casa", "Villa", "Local", "Oficina"]
     const set = new Set(
       allPropertiesData.map((property) => property.type).filter((type) => type && type !== "Terreno"),
     )
