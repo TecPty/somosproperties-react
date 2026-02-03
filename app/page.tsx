@@ -30,10 +30,10 @@ export default function HomePage() {
   
   // Propiedades premium usando funci?n consolidada
   const premiumDefaults = propertiesWithPrice.filter((p) => isPremium(p))
-  const premiumOverrideIds = [245, 167, 1]
+  const premiumOverrideIds = [167, 1]
   const premiumOverrides = premiumOverrideIds
     .map((id) => propertiesWithPrice.find((p) => p.id === id))
-    .filter(Boolean) as Property[]
+    .filter((property): property is Property => Boolean(property && isPremium(property)))
   const premiumProperties = [
     ...premiumOverrides,
     ...premiumDefaults.filter((p) => !premiumOverrideIds.includes(p.id)),
