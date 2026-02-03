@@ -12,6 +12,9 @@ interface PropertyFiltersProps {
 
 const stripAccents = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 const normalizeValue = (value: string) => stripAccents(value).toLowerCase()
+const filterableTypes = ["Apartamento", "Casa", "Villa", "Local", "Oficina"] as const
+type FilterableType = (typeof filterableTypes)[number]
+const isFilterableType = (type: Property["type"]): type is FilterableType => type !== "Terreno"
 
 export default function PropertyFiltersComponent({ filters, onFiltersChange, onClear }: PropertyFiltersProps) {
   const locations = useMemo(() => {
@@ -37,14 +40,13 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
   }, [])
 
   const propertyTypes = useMemo(() => {
-    const preferredOrder: Property["type"][] = ["Apartamento", "Casa", "Villa", "Local", "Oficina"]
-    const set = new Set(
-      allPropertiesData.map((property) => property.type).filter((type) => type && type !== "Terreno"),
+    const set = new Set<FilterableType>(
+      allPropertiesData.map((property) => property.type).filter(isFilterableType),
     )
 
-    const ordered = preferredOrder.filter((type) => set.has(type))
+    const ordered = filterableTypes.filter((type) => set.has(type))
     const remaining = Array.from(set)
-      .filter((type) => !preferredOrder.includes(type))
+      .filter((type) => !filterableTypes.includes(type))
       .sort((a, b) => a.localeCompare(b, "es"))
 
     return [...ordered, ...remaining]
