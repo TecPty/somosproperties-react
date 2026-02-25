@@ -48,3 +48,19 @@ Thumbs.db
 # Misc
 .cache/
 .turbo/
+
+# One-time analysis scripts and their output reports
+analyze-*.js
+analyze-*.ps1
+cleanup-*.js
+image-formats.ps1
+estructura.txt
+image-cleanup-report.json
+image-optimization-report.json
+reporte-*.json
+PROPERTY_INVENTORY_REPORT.json
+PROPERTY_INVENTORY_REPORT.md
+
+# Stale artifacts
+16.0.10
+tsconfig.tsbuildinfo
