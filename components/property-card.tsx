@@ -2,12 +2,22 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useCallback } from "react"
+import { MapPin, Bed, Bath, Maximize2, Heart, Images, MessageCircle } from "lucide-react"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { isPremium } from "@/lib/utils-premium"
 import { trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
+
+/** Returns a WhatsApp deep-link pre-filled with a property inquiry */
+function buildWhatsAppLink(property: Property): string {
+  const phone = "50769991234" // ← replace with real WhatsApp business number
+  const text = encodeURIComponent(
+    `Hola, me interesa la propiedad: ${property.title} (ID ${property.id}). ¿Está disponible?`
+  )
+  return `https://wa.me/${phone}?text=${text}`
+}
 
 interface PropertyCardProps {
   property: Property
@@ -15,16 +25,25 @@ interface PropertyCardProps {
 
 export default function PropertyCard({ property }: PropertyCardProps) {
   const [imageError, setImageError] = useState(false)
+  const [isFavorite, setIsFavorite] = useState(() => {
+    if (typeof window === "undefined") return false
+    try {
+      const saved = JSON.parse(localStorage.getItem("sp_favorites") || "[]") as number[]
+      return saved.includes(property.id)
+    } catch {
+      return false
+    }
+  })
+  const [heartAnimating, setHeartAnimating] = useState(false)
 
   const displayPrice =
     property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
   const statusLabel = property.status === "sold" ? "Vendido" : null
-  const statusClass = property.status === "sold" ? "bg-[#d92d2d]" : ""
   const isRented = property.status === "rented"
-  
-  // Usar función consolidada para detectar premium
   const isPremiumProperty = isPremium(property)
-  const handlePropertyClick = () => {
+  const imageCount = property.images?.length ?? 1
+
+  const handlePropertyClick = useCallback(() => {
     const eventParams = {
       property_id: property.id,
       property_title: property.title,
@@ -38,178 +57,183 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
     trackGaEvent("property_click", eventParams)
     trackGoogleAdsEvent("property_click", eventParams)
-  }
+  }, [property])
+
+  const handleFavoriteToggle = useCallback((e: React.MouseEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setHeartAnimating(true)
+    setTimeout(() => setHeartAnimating(false), 400)
+    setIsFavorite((prev) => {
+      const next = !prev
+      try {
+        const saved = JSON.parse(localStorage.getItem("sp_favorites") || "[]") as number[]
+        const updated = next ? [...saved, property.id] : saved.filter((id) => id !== property.id)
+        localStorage.setItem("sp_favorites", JSON.stringify(updated))
+      } catch { /* ignore */ }
+      return next
+    })
+  }, [property.id])
+
+  const handleWhatsApp = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation()
+    trackGaEvent("whatsapp_contact", { property_id: property.id, property_title: property.title })
+  }, [property])
 
   return (
-    <article className="bg-white rounded-lg border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full">
-      <Link href={`/propiedad/${property.id}`} className="block relative group" onClick={handlePropertyClick}>
-        <div className="relative h-60 overflow-hidden bg-[#f3f3f3]">
+    <article className="relative bg-white rounded-xl border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full group">
+      {/* ── Favorite Button ── */}
+      <button
+        onClick={handleFavoriteToggle}
+        aria-label={isFavorite ? "Quitar de favoritos" : "Guardar en favoritos"}
+        aria-pressed={isFavorite}
+        className={`absolute top-3 right-3 z-20 flex items-center justify-center w-10 h-10 rounded-full shadow-md transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2 ${
+          isFavorite ? "bg-white text-[#ea384c]" : "bg-white/80 text-[#aaaaaa] hover:text-[#ea384c]"
+        }`}
+      >
+        <Heart
+          className={`h-5 w-5 transition-all ${isFavorite ? "fill-[#ea384c]" : "fill-none"} ${heartAnimating ? "animate-heart-pop" : ""}`}
+          aria-hidden="true"
+        />
+      </button>
+
+      <Link href={`/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={`Ver detalles: ${property.title}`}>
+        <div className="relative h-56 overflow-hidden bg-[#f3f3f3]">    
           {!imageError ? (
             <Image
               src={property.image || "/placeholder.svg"}
               alt={property.title}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               onError={() => setImageError(true)}
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center bg-[#f3f3f3]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-16 w-16 text-[#cccccc]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                />
+            <div className="w-full h-full flex flex-col items-center justify-center bg-[#f3f3f3] gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-[#cccccc]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
+              <span className="text-xs text-[#bbbbbb]">Sin imagen</span>
             </div>
           )}
 
-          {/* Badge Premium */}
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
+
+          {/* Premium badge */}
           {isPremiumProperty && (
-            <div className="absolute top-3 right-3 z-10">
-              <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
-                PREMIUM
+            <div className="absolute top-3 left-3 z-10">
+              <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-3 py-1.5 rounded-full text-xs font-bold shadow-lg tracking-wide">
+                ★ PREMIUM
               </span>
             </div>
           )}
 
-          {/* Badge Operación */}
-          <div className="absolute top-3 left-3 z-10">
-            <span
-              className={`px-3 py-1 rounded text-xs font-semibold text-white ${
-                property.operation === "Venta" ? "bg-[#28a745]" : "bg-[#3898EC]"
-              }`}
-            >
+          {/* Operation badge */}
+          <div className={`absolute z-10 ${isPremiumProperty ? "top-11 left-3" : "top-3 left-3"}`}>
+            <span className={`px-2.5 py-1 rounded-md text-xs font-bold text-white shadow-sm tracking-wide ${
+              property.operation === "Venta" ? "bg-[#28a745]" : "bg-[#3898EC]"
+            }`}>
               {property.operation.toUpperCase()}
             </span>
           </div>
-          {isRented ? (
-            <div className="absolute -bottom-4 -left-6 z-20 w-20 h-20 opacity-85">
-              <Image src="/images/badges/rented-stamp.png" alt="Alquilado" fill sizes="80px" className="object-contain" />
+
+          {/* Photo count */}
+          {imageCount > 1 && (
+            <div className="absolute bottom-3 left-3 z-10 flex items-center gap-1 bg-black/50 text-white text-xs px-2 py-0.5 rounded-full backdrop-blur-sm">
+              <Images className="h-3 w-3" aria-hidden="true" />
+              <span>{imageCount}</span>
             </div>
-          ) : null}
+          )}
+
+          {/* Sold / Rented */}
+          {isRented && (
+            <div className="absolute inset-0 z-20 flex items-center justify-center">
+              <span className="rotate-[-15deg] border-[3px] border-[#ea384c] text-[#ea384c] text-xl font-black px-4 py-1 rounded opacity-75 select-none">
+                ALQUILADO
+              </span>
+            </div>
+          )}
           {statusLabel && (
-            <span
-              className={`absolute bottom-3 left-3 z-10 rounded-md px-3 py-1 text-xs font-semibold uppercase text-white shadow-sm ${statusClass}`}
-            >
+            <span className="absolute bottom-3 right-3 z-10 rounded-md px-3 py-1 text-xs font-semibold uppercase text-white shadow-sm bg-[#d92d2d]">
               {statusLabel}
             </span>
           )}
         </div>
       </Link>
 
-      <div className="p-5 flex flex-col flex-grow">
-        <Link href={`/propiedad/${property.id}`} onClick={handlePropertyClick}>
-          <h3 className="text-xl font-semibold text-[#333333] mb-1 line-clamp-2 hover:text-[#3898EC] transition-colors min-h-[3.5rem]">
+      <div className="p-4 flex flex-col flex-grow">
+        {/* Price — visual anchor */}
+        <div className="flex items-baseline justify-between mb-2">
+          <p className={`text-xl font-bold leading-tight ${
+            property.operation === "Venta" ? "text-[#1f8f45]" : "text-[#0c6fdc]"
+          }`}>
+            {displayPrice}
+          </p>
+          {property.area > 0 && (
+            <span className="flex items-center gap-1 text-xs text-[#888888]">
+              <Maximize2 className="h-3.5 w-3.5" aria-hidden="true" />
+              {formatArea(property.area)}
+            </span>
+          )}
+        </div>
+
+        <Link href={`/propiedad/${property.id}`} onClick={handlePropertyClick} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded">
+          <h3 className="text-base font-semibold text-[#333333] mb-1.5 line-clamp-2 hover:text-[#3898EC] transition-colors leading-snug min-h-[2.6rem]">
             {property.title}
           </h3>
         </Link>
 
-        <div className="flex items-start gap-1 mb-3 text-[#999999] text-sm">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-[#ea384c] flex-shrink-0"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
+        <div className="flex items-start gap-1 mb-3 text-[#888888] text-sm">
+          <MapPin className="h-4 w-4 text-[#ea384c] flex-shrink-0 mt-0.5" aria-hidden="true" />
           <span className="line-clamp-1">{property.location}</span>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2 mb-4">
-          <span
-            className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm font-semibold ${
-              property.operation === "Venta" ? "bg-[#e8f7ee] text-[#1f8f45]" : "bg-[#e7f3ff] text-[#0c6fdc]"
-            }`}
-          >
-            {displayPrice}
-          </span>
-          <span className="inline-flex items-center gap-1 rounded-full bg-[#f4f6f9] px-3 py-1 text-sm font-medium text-[#555]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
-              />
-            </svg>
-            {formatArea(property.area)}
-          </span>
-        </div>
+        {/* Beds / Baths */}
+        {(property.bedrooms > 0 || property.bathrooms > 0) && (
+          <div className="flex items-center gap-4 mb-4 text-[#758696] text-sm">
+            {property.bedrooms > 0 && (
+              <span className="flex items-center gap-1.5">
+                <Bed className="h-4 w-4" aria-hidden="true" />
+                <span>
+                  {property.bedrooms}{" "}
+                  <span className="hidden sm:inline">{property.bedrooms === 1 ? "hab." : "habs."}</span>
+                </span>
+              </span>
+            )}
+            {property.bathrooms > 0 && (
+              <span className="flex items-center gap-1.5">
+                <Bath className="h-4 w-4" aria-hidden="true" />
+                <span>
+                  {property.bathrooms}{" "}
+                  <span className="hidden sm:inline">{property.bathrooms === 1 ? "baño" : "baños"}</span>
+                </span>
+              </span>
+            )}
+          </div>
+        )}
 
-        {/* Features */}
-        <div className="flex items-center gap-4 mb-5 text-[#758696] text-sm">
-          {property.bedrooms > 0 && (
-            <div className="flex items-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                />
-              </svg>
-              <span>{property.bedrooms}</span>
-            </div>
-          )}
-          {property.bathrooms > 0 && (
-            <div className="flex items-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                />
-              </svg>
-              <span>{property.bathrooms}</span>
-            </div>
-          )}
-        </div>
-
-        <div className="mt-auto pt-4">
+        {/* CTAs */}
+        <div className="mt-auto flex flex-col gap-2 pt-3 border-t border-[#f0f0f0]">
           <Link
             href={`/propiedad/${property.id}`}
-            className="block w-full bg-[#3898EC] text-white text-center py-3 rounded-lg font-medium hover:bg-[#0082f3] transition-colors"
+            className="flex items-center justify-center w-full min-h-[44px] bg-[#3898EC] text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
             onClick={handlePropertyClick}
           >
             Ver Detalles
           </Link>
+          <a
+            href={buildWhatsAppLink(property)}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleWhatsApp}
+            aria-label={`Contactar por WhatsApp sobre ${property.title}`}
+            className="flex items-center justify-center gap-2 w-full min-h-[44px] border border-[#25D366] text-[#128C7E] py-2.5 rounded-lg text-sm font-semibold hover:bg-[#f0fdf4] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2"
+          >
+            <MessageCircle className="h-4 w-4 fill-[#25D366] text-[#25D366]" aria-hidden="true" />
+            WhatsApp
+          </a>
         </div>
       </div>
     </article>

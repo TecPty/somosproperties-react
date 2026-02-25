@@ -11,19 +11,21 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  /* Brand blue: #3898EC → oklch(0.62 0.17 240) */
+  --primary: oklch(0.62 0.17 240);
+  --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent: oklch(0.94 0.04 240);
+  --accent-foreground: oklch(0.35 0.12 240);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  /* Brand blue ring for focus states */
+  --ring: oklch(0.62 0.17 240);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -177,6 +179,63 @@
   }
   
   .shadow-card-hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(56, 152, 236, 0.15), 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Focus ring accesible — WCAG 2.1 AA */
+  .focus-brand {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2;
+  }
+
+  /* Touch target mínimo WCAG 2.5.5 (44×44 px) */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Micro-interacción: scale on press */
+  .active-scale {
+    @apply transition-transform duration-100 active:scale-95;
+  }
+
+  /* Gradiente de texto brand */
+  .text-gradient-brand {
+    background: linear-gradient(135deg, #3898EC 0%, #0082f3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Skeleton shimmer */
+  .skeleton-shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Heart favorite animation */
+  @keyframes heart-pop {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.35); }
+    70%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-heart-pop {
+    animation: heart-pop 0.35s ease-out forwards;
+  }
+
+  /* Slide-in filter panel */
+  @keyframes slide-up {
+    from { transform: translateY(100%); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.28s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
   }
 }
