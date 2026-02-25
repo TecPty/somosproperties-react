@@ -142,7 +142,7 @@ export default function NosotrosPage() {
         {/* Why choose us */}
         <section className="pb-16">
           <div className="container-custom">
-            <h2 className="text-3xl font-bold text-[#222222] mb-6">¿Por Quí© Elegirnos?</h2>
+            <h2 className="text-3xl font-bold text-[#222222] mb-6">¿Por Qué Elegirnos?</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {featureCards.map((item) => (
                 <div
