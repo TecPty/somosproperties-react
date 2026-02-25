@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
@@ -512,7 +512,7 @@ export default function PropertyDetails({ property, similarProperties }: Propert
                 minIncome={property.minIncome}
               />
               <div className="sticky top-20 bg-[#fafafa] p-6 rounded-lg border border-[#eeeeee]">
-                <h3 className="text-xl font-semibold text-[#222222] mb-4">Solicita Informaci?n</h3>
+                <h3 className="text-xl font-semibold text-[#222222] mb-4">Solicita Información</h3>
                 <ContactForm compact propertyTitle={property.title} />
               </div>
             </div>
@@ -527,7 +527,7 @@ export default function PropertyDetails({ property, similarProperties }: Propert
                     <div>
                       <h3 className="font-semibold text-[#222222] mb-2">Ingreso familiar</h3>
                       <p className="text-[#555555]">
-                        Ingreso familiar mÇ­nimo: {formatPrice(property.minIncome || 0)}
+                        Ingreso familiar mínimo: {formatPrice(property.minIncome || 0)}
                       </p>
                     </div>
                   )}

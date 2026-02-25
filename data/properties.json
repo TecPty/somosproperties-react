@@ -1,4 +1,4 @@
-{
+﻿{
   "properties": [
     {
       "type": "Apartamento",
@@ -35,7 +35,7 @@
       "pricePerMonth": null,
       "featured": false,
       "status": "available",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pac?fica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacífica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
         "Altura libre 3m",
@@ -101,7 +101,7 @@
       "pricePerMonth": null,
       "featured": true,
       "status": "available",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pac?fica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacífica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
         "Altura libre 3m",
@@ -1300,7 +1300,7 @@
       "featured": true,
       "status": "available",
       "highlights": [
-        "Strip mall en La Chorrera, V?a Las Mendozas",
+        "Strip mall en La Chorrera, Vía Las Mendozas",
         "42 locales en 2 niveles con alto flujo",
         "Amplio estacionamiento y CCTV 24/7",
         "Acceso controlado y zonas de carga"
@@ -1419,7 +1419,7 @@
       "featured": true,
       "status": "available",
       "highlights": [
-        "Strip mall en V?a Israel, San Francisco",
+        "Strip mall en Vía Israel, San Francisco",
         "Alta visibilidad y estacionamiento frontal",
         "Locales con pasillo climatizado y vitrina",
         "Seguridad y mantenimiento constante"
@@ -2286,8 +2286,8 @@
       "operation": "Alquiler",
       "price": 0,
       "pricePerMonth": 2000,
-      "location": "V?a Israel, San Francisco, Ciudad de Panam?",
-      "city": "Ciudad de Panam?",
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
       "district": "San Francisco",
       "bedrooms": 0,
       "bathrooms": 1,
@@ -2874,9 +2874,9 @@
         "/images/properties/evolution-tower/evolution-tower-frontal.webp"
       ],
       "planos": [],
-      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupaci?n completa; se muestra para evidenciar portafolio y lista de espera.",
+      "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
       "amenities": [
-        "Vista panor?mica en Calle 50",
+        "Vista panorámica en Calle 50",
         "Edificio premium con lobby y seguridad 24/7",
         "Elevadores de alta velocidad",
         "Planta eléctrica y A/C central",
@@ -3122,12 +3122,12 @@
         "/images/properties/boulevard-plaza/hero-6.webp"
       ],
       "planos": [],
-      "description": "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gesti?n comercial.",
+      "description": "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gestión comercial.",
       "amenities": [
         "Strip mall consolidado en Costa Verde",
         "Alto flujo vehicular y peatonal",
         "650 estacionamientos disponibles",
-        "Acceso desde v?a principal",
+        "Acceso desde Vía principal",
         "Seguridad y mantenimiento en sitio"
       ],
       "featured": false,
@@ -4006,7 +4006,7 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
+        "Balcón amplio",
         "Cocina y lavandería",
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
@@ -4328,9 +4328,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4374,9 +4374,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4420,9 +4420,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4466,9 +4466,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4512,9 +4512,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4558,9 +4558,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4604,9 +4604,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4650,9 +4650,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4696,9 +4696,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4742,9 +4742,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4788,9 +4788,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4834,9 +4834,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4880,9 +4880,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4926,9 +4926,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -4972,9 +4972,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5018,9 +5018,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5064,9 +5064,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5110,9 +5110,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5156,9 +5156,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5202,9 +5202,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5248,9 +5248,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5294,9 +5294,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5340,9 +5340,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5386,9 +5386,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5432,9 +5432,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5478,9 +5478,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5524,9 +5524,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5570,9 +5570,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5616,9 +5616,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5662,9 +5662,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5708,9 +5708,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5754,9 +5754,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5800,9 +5800,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5846,9 +5846,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5892,9 +5892,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5938,9 +5938,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -5984,9 +5984,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -6030,9 +6030,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -6076,9 +6076,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -6122,9 +6122,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe",
-        "Terraza amplia y ?reas sociales",
-        "Cocina gourmet y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Terraza amplia y áreas sociales",
+        "Cocina gourmet y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -6168,9 +6168,9 @@
       ],
       "amenities": [
         "Vistas al mar Caribe y lagos interiores",
-        "Balc?n amplio",
-        "Cocina y lavander?a",
-        "A/C y ventilaci?n natural",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ]
@@ -6293,7 +6293,7 @@
         "/images/properties/new-west/interiores/comedor-iluminado.png",
         "/images/properties/new-west/interiores/cocina-con-isla.png"
       ],
-      "description": "New West I - Modelo Nevada en Costa Verde. 167 m2 de construcci?n en lotes desde 180 m2, 3 rec?maras, 2 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
+      "description": "New West I - Modelo Nevada en Costa Verde. 167 m2 de construcción en lotes desde 180 m2, 3 recámaras, 2 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
       "amenities": [
         "Área social independiente",
         "Piscina para niños y adultos",
@@ -6387,7 +6387,7 @@
         "/images/properties/new-west/interiores/comedor-iluminado.png",
         "/images/properties/new-west/interiores/cocina-con-isla.png"
       ],
-      "description": "New West II - Modelo Jazm?n en Costa Verde. 157 m2 de construcci?n en lotes desde 160 m2, 3 rec?maras, 2 piso(s). Estado: A futuro.",
+      "description": "New West II - Modelo Jazmín en Costa Verde. 157 m2 de construcción en lotes desde 160 m2, 3 recámaras, 2 piso(s). Estado: A futuro.",
       "amenities": [
         "Área social independiente",
         "Piscina para niños y adultos",
@@ -6436,7 +6436,7 @@
         "/images/properties/new-west/interiores/comedor-iluminado.png",
         "/images/properties/new-west/interiores/cocina-con-isla.png"
       ],
-      "description": "New West II - Modelo Roble en Costa Verde. 122 m2 de construcci?n en lotes desde 209 m2, 3 rec?maras, 1 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
+      "description": "New West II - Modelo Roble en Costa Verde. 122 m2 de construcción en lotes desde 209 m2, 3 recámaras, 1 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
       "amenities": [
         "Área social independiente",
         "Piscina para niños y adultos",

@@ -28,7 +28,7 @@ export default function HomePage() {
     return hasPrice && p.status === "available" && !p.hidden
   })
   
-  // Propiedades premium usando funci?n consolidada
+  // Propiedades premium usando función consolidada
   const premiumDefaults = propertiesWithPrice.filter((p) => isPremium(p))
   const premiumOverrideIds = [167, 1]
   const premiumOverrides = premiumOverrideIds
