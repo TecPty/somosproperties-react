@@ -3,21 +3,12 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useCallback } from "react"
-import { MapPin, Bed, Bath, Maximize2, Heart, Images, MessageCircle } from "lucide-react"
+import { MapPin, Bed, Bath, Maximize2, Heart, Images } from "lucide-react"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { isPremium } from "@/lib/utils-premium"
 import { trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
-
-/** Returns a WhatsApp deep-link pre-filled with a property inquiry */
-function buildWhatsAppLink(property: Property): string {
-  const phone = "50769991234" // ← replace with real WhatsApp business number
-  const text = encodeURIComponent(
-    `Hola, me interesa la propiedad: ${property.title} (ID ${property.id}). ¿Está disponible?`
-  )
-  return `https://wa.me/${phone}?text=${text}`
-}
 
 interface PropertyCardProps {
   property: Property
@@ -74,11 +65,6 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       return next
     })
   }, [property.id])
-
-  const handleWhatsApp = useCallback((e: React.MouseEvent) => {
-    e.stopPropagation()
-    trackGaEvent("whatsapp_contact", { property_id: property.id, property_title: property.title })
-  }, [property])
 
   return (
     <article className="relative bg-white rounded-xl border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full group">
@@ -223,17 +209,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           >
             Ver Detalles
           </Link>
-          <a
-            href={buildWhatsAppLink(property)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleWhatsApp}
-            aria-label={`Contactar por WhatsApp sobre ${property.title}`}
-            className="flex items-center justify-center gap-2 w-full min-h-[44px] border border-[#25D366] text-[#128C7E] py-2.5 rounded-lg text-sm font-semibold hover:bg-[#f0fdf4] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2"
-          >
-            <MessageCircle className="h-4 w-4 fill-[#25D366] text-[#25D366]" aria-hidden="true" />
-            WhatsApp
-          </a>
+
         </div>
       </div>
     </article>

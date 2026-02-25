@@ -1,6 +1,6 @@
-"use client"
+﻿"use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useMemo } from "react"
 import { SlidersHorizontal, X } from "lucide-react"
 import type { Property, PropertyFilters } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
@@ -13,16 +13,17 @@ interface PropertyFiltersProps {
 
 const stripAccents = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 const normalizeValue = (value: string) => stripAccents(value).toLowerCase()
+
 const filterableTypes = ["Apartamento", "Casa", "Villa", "Local", "Oficina"] as const
 type FilterableType = (typeof filterableTypes)[number]
 const isFilterableType = (type: Property["type"]): type is FilterableType => type !== "Terreno"
 
 /** Preset price-range buckets */
 const PRICE_PRESETS_VENTA = [
-  { label: "< $100k",   min: undefined,  max: 100_000  },
-  { label: "$100–250k", min: 100_000,    max: 250_000  },
-  { label: "$250–500k", min: 250_000,    max: 500_000  },
-  { label: "> $500k",   min: 500_000,    max: undefined },
+  { label: "< $100k",    min: undefined, max: 100_000  },
+  { label: "$100–250k",  min: 100_000,   max: 250_000  },
+  { label: "$250–500k",  min: 250_000,   max: 500_000  },
+  { label: "> $500k",    min: 500_000,   max: undefined },
 ]
 const PRICE_PRESETS_ALQUILER = [
   { label: "< $800",     min: undefined, max: 800   },
@@ -33,11 +34,11 @@ const PRICE_PRESETS_ALQUILER = [
 
 function countActiveFilters(f: PropertyFilters): number {
   let n = 0
-  if (f.operation)               n++
-  if (f.types?.length)           n += f.types.length
-  if (f.priceMin || f.priceMax)  n++
-  if (f.bedrooms)                n++
-  if (f.location)                n++
+  if (f.operation)              n++
+  if (f.types?.length)          n += f.types.length
+  if (f.priceMin || f.priceMax) n++
+  if (f.bedrooms)               n++
+  if (f.location)               n++
   return n
 }
 
@@ -65,56 +66,30 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
     return [...ordered, ...remaining]
   }, [])
 
-  const [draft, setDraft] = useState<PropertyFilters>(filters)
-
-  useEffect(() => { setDraft(filters) }, [filters])
-
-  const isDirty = useMemo(() => JSON.stringify(draft) !== JSON.stringify(filters), [draft, filters])
   const activeCount = countActiveFilters(filters)
 
   const handleTypeToggle = (type: string) => {
-    const current = draft.types || []
-    setDraft((prev) => ({
-      ...prev,
-      types: current.includes(type) ? current.filter((t) => t !== type) : [...current, type],
-    }))
-  }
-
-  const handlePricePreset = (min: number | undefined, max: number | undefined) => {
-    const alreadySet = draft.priceMin === min && draft.priceMax === max
-    setDraft((prev) => ({
-      ...prev,
-      priceMin: alreadySet ? undefined : min,
-      priceMax: alreadySet ? undefined : max,
-    }))
-  }
-
-  const isPricePresetActive = (min: number | undefined, max: number | undefined) =>
-    draft.priceMin === min && draft.priceMax === max
-
-  const handleApply = () => {
+    const current = filters.types || []
     onFiltersChange({
-      operation: draft.operation,
-      types: draft.types,
-      priceMin: draft.priceMin,
-      priceMax: draft.priceMax,
-      bedrooms: draft.bedrooms,
-      location: draft.location,
-      category: draft.category,
-      search: draft.search,
-      tier: draft.tier,
+      types: current.includes(type) ? current.filter((t) => t !== type) : [...current, type],
     })
   }
 
-  const pricePresets = draft.operation === "Alquiler" ? PRICE_PRESETS_ALQUILER : PRICE_PRESETS_VENTA
+  const handlePricePreset = (min: number | undefined, max: number | undefined) => {
+    const alreadySet = filters.priceMin === min && filters.priceMax === max
+    onFiltersChange({
+      priceMin: alreadySet ? undefined : min,
+      priceMax: alreadySet ? undefined : max,
+    })
+  }
 
-  /** Pill button shared classes */
+  const isPricePresetActive = (min: number | undefined, max: number | undefined) =>
+    filters.priceMin === min && filters.priceMax === max
+
+  const pricePresets = filters.operation === "Alquiler" ? PRICE_PRESETS_ALQUILER : PRICE_PRESETS_VENTA
+
   const pill = (active: boolean) =>
-    `inline-flex items-center justify-center px-3 py-2 rounded-lg text-sm font-medium transition-all min-h-[40px] cursor-pointer select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1 ${
-      active
-        ? "bg-[#3898EC] text-white shadow-sm"
-        : "bg-white border border-[#dddddd] text-[#444444] hover:border-[#3898EC] hover:text-[#3898EC]"
-    }`
+    `inline-flex items-center justify-center px-3 py-2 rounded-lg text-sm font-medium transition-all min-h-[40px] cursor-pointer select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1 ${ active ? "bg-[#3898EC] text-white shadow-sm" : "bg-white border border-[#dddddd] text-[#444444] hover:border-[#3898EC] hover:text-[#3898EC]" }`
 
   return (
     <aside
@@ -152,9 +127,9 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
             <button
               key={op}
               type="button"
-              onClick={() => setDraft((prev) => ({ ...prev, operation: prev.operation === op ? undefined : op }))}
-              className={pill(draft.operation === op)}
-              aria-pressed={draft.operation === op}
+              onClick={() => onFiltersChange({ operation: filters.operation === op ? undefined : op })}
+              className={pill(filters.operation === op)}
+              aria-pressed={filters.operation === op}
             >
               {op}
             </button>
@@ -167,7 +142,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
         <legend className="text-sm font-semibold text-[#333333] mb-2.5">Tipo de Propiedad</legend>
         <div className="flex flex-wrap gap-2">
           {propertyTypes.map((type) => {
-            const active = (draft.types || []).includes(type)
+            const active = (filters.types || []).includes(type)
             return (
               <button
                 key={type}
@@ -183,10 +158,10 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
         </div>
       </fieldset>
 
-      {/* Price Range — presets */}
+      {/* Price Range */}
       <fieldset className="mb-5">
         <legend className="text-sm font-semibold text-[#333333] mb-2.5">
-          Precio {draft.operation === "Alquiler" ? "(mensual)" : ""}
+          Precio {filters.operation === "Alquiler" ? "(mensual)" : ""}
         </legend>
         <div className="grid grid-cols-2 gap-2">
           {pricePresets.map(({ label, min, max }) => (
@@ -201,7 +176,6 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
             </button>
           ))}
         </div>
-        {/* Custom range — shown as a subtle expand */}
         <details className="mt-2 group">
           <summary className="text-xs text-[#3898EC] cursor-pointer hover:underline list-none focus-visible:outline-none">
             Rango personalizado
@@ -210,9 +184,9 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
             <input
               type="number"
               placeholder="Mín"
-              value={draft.priceMin ?? ""}
+              value={filters.priceMin ?? ""}
               onChange={(e) =>
-                setDraft((prev) => ({ ...prev, priceMin: e.target.value ? Number(e.target.value) : undefined }))
+                onFiltersChange({ priceMin: e.target.value ? Number(e.target.value) : undefined })
               }
               className="w-1/2 px-3 py-2 text-sm border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-none focus:ring-2 focus:ring-[#3898EC]/20 transition-colors placeholder:text-[#aaaaaa]"
               aria-label="Precio mínimo"
@@ -220,9 +194,9 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
             <input
               type="number"
               placeholder="Máx"
-              value={draft.priceMax ?? ""}
+              value={filters.priceMax ?? ""}
               onChange={(e) =>
-                setDraft((prev) => ({ ...prev, priceMax: e.target.value ? Number(e.target.value) : undefined }))
+                onFiltersChange({ priceMax: e.target.value ? Number(e.target.value) : undefined })
               }
               className="w-1/2 px-3 py-2 text-sm border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-none focus:ring-2 focus:ring-[#3898EC]/20 transition-colors placeholder:text-[#aaaaaa]"
               aria-label="Precio máximo"
@@ -239,9 +213,9 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
             <button
               key={num}
               type="button"
-              onClick={() => setDraft((prev) => ({ ...prev, bedrooms: prev.bedrooms === num ? undefined : num }))}
-              className={`flex-1 ${pill(draft.bedrooms === num)}`}
-              aria-pressed={draft.bedrooms === num}
+              onClick={() => onFiltersChange({ bedrooms: filters.bedrooms === num ? undefined : num })}
+              className={`flex-1 ${pill(filters.bedrooms === num)}`}
+              aria-pressed={filters.bedrooms === num}
               aria-label={`${num}${num === 4 ? " o más" : ""} habitaciones`}
             >
               {num === 4 ? "4+" : num}
@@ -251,14 +225,14 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
       </fieldset>
 
       {/* Location */}
-      <div className="mb-5">
+      <div className="mb-2">
         <label htmlFor="filter-location" className="block text-sm font-semibold text-[#333333] mb-2.5">
           Ubicación
         </label>
         <select
           id="filter-location"
-          value={draft.location || ""}
-          onChange={(e) => setDraft((prev) => ({ ...prev, location: e.target.value || undefined }))}
+          value={filters.location || ""}
+          onChange={(e) => onFiltersChange({ location: e.target.value || undefined })}
           className="w-full px-3 py-2.5 text-sm border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-none focus:ring-2 focus:ring-[#3898EC]/20 transition-colors bg-white text-[#333333]"
         >
           <option value="">Todas las ubicaciones</option>
@@ -267,15 +241,6 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
           ))}
         </select>
       </div>
-
-      {/* Apply */}
-      <button
-        onClick={handleApply}
-        disabled={!isDirty}
-        className="w-full min-h-[44px] bg-[#3898EC] text-white py-3 rounded-xl font-semibold text-sm hover:bg-[#0082f3] active:scale-95 transition-all disabled:bg-[#eeeeee] disabled:text-[#aaaaaa] disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
-      >
-        {isDirty ? "Aplicar Filtros" : "Filtros al día"}
-      </button>
     </aside>
   )
 }
