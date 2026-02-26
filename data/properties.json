@@ -2138,8 +2138,8 @@
     {
       "type": "Local",
       "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
+      "operation": "Venta/Alquiler",
+      "price": 122784,
       "location": "La Chorrera, Panamá Oeste",
       "city": "Panamá Oeste",
       "district": "La Chorrera",
@@ -2166,21 +2166,21 @@
       ],
       "planos": [],
       "title": "Plaza Los Guayacanes - Local 16",
-      "pricePerMonth": 560.4,
-      "area": 104.75,
+      "pricePerMonth": 410.55,
+      "area": 76.74,
       "image": "/images/properties/plaza-guayacanes/hero-1.webp",
       "images": [
         "/images/properties/plaza-guayacanes/hero-1.webp",
         "/images/properties/plaza-guayacanes/hero-2.webp",
         "/images/properties/plaza-guayacanes/hero-3.webp"
       ],
-      "description": "Local 16 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 104.75 m² en una sola planta. Alquiler $560.40/mes, deposito $523.75, mantenimiento $209.50. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 16 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 76.74 m² en una sola planta. Alquiler $410.55/mes, deposito $383.70, mantenimiento $153.48/mes. Venta: $122,784.00. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz y gas. Promocion: cielo raso basico y camara de seguridad incluidos.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 140,
       "highlights": [
-        "Local 16 - 104.75 m² en planta baja",
-        "Canon $560.40/mes + mant. $1.50/m²",
+        "Local 16 - 76.74 m² en planta baja",
+        "Venta: $122,784 | Alquiler: $410.55/mes",
         "2 meses de gracia para acondicionar",
         "Ubicación estratégica en La Chorrera"
       ],
@@ -2190,7 +2190,7 @@
       "type": "Local",
       "category": "Comercial",
       "operation": "Venta/Alquiler",
-      "price": 200448,
+      "price": 186176,
       "location": "La Chorrera, Panamá Oeste",
       "city": "Panamá Oeste",
       "district": "La Chorrera",
@@ -2225,13 +2225,13 @@
         "/images/properties/plaza-guayacanes/hero-1.webp",
         "/images/properties/plaza-guayacanes/hero-3.webp"
       ],
-      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.8, mantenimiento $222.72/mes. Venta: $200,448.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.8, mantenimiento $222.72/mes. Venta: $186,176.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 139,
       "highlights": [
         "Local 17 - 111.36 m² en planta baja",
-        "Venta: $200,448 | Alquiler: $595.77/mes",
+        "Venta: $186,176 | Alquiler: $595.77/mes",
         "Ideal retail mediano o servicios",
         "Estacionamiento para clientes y CCTV"
       ],
