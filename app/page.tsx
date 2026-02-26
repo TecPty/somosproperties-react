@@ -5,6 +5,7 @@ import Footer from "@/components/footer"
 import SearchBar from "@/components/search-bar"
 import PropertyGrid from "@/components/property-grid"
 import ContactForm from "@/components/contact-form"
+import EmploymentForm from "@/components/employment-form"
 import type { Property } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { formatPrice } from "@/lib/formatters"
@@ -207,7 +208,6 @@ export default function HomePage() {
                   alt="Asesoría Personalizada"
                   width={160}
                   height={160}
-                  quality={100}
                   unoptimized
                   className="w-full h-full object-contain"
                 />
@@ -239,78 +239,7 @@ export default function HomePage() {
             {/* Formulario de Empleo */}
             <div className="bg-white p-8 rounded-lg shadow-card">
               <h3 className="text-2xl font-semibold text-[#222222] mb-6">Únete a Nuestro Equipo</h3>
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="emp-name" className="block text-sm font-medium text-[#333333] mb-2">
-                    Nombre completo *
-                  </label>
-                  <input
-                    type="text"
-                    id="emp-name"
-                    className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-2 focus:outline-[#2895f7] bg-white"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="emp-email" className="block text-sm font-medium text-[#333333] mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="emp-email"
-                    className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-2 focus:outline-[#2895f7] bg-white"
-                    placeholder="tu@email.com"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="emp-phone" className="block text-sm font-medium text-[#333333] mb-2">
-                    Teléfono *
-                  </label>
-                  <input
-                    type="tel"
-                    id="emp-phone"
-                    className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-2 focus:outline-[#2895f7] bg-white"
-                    placeholder="+507 6789-0123"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="emp-education" className="block text-sm font-medium text-[#333333] mb-2">
-                    Nivel de educación *
-                  </label>
-                  <select
-                    id="emp-education"
-                    className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-2 focus:outline-[#2895f7] bg-white text-[#333333]"
-                  >
-                    <option value="">Selecciona una opción</option>
-                    <option value="secundaria">Secundaria</option>
-                    <option value="tecnico">Técnico</option>
-                    <option value="universitario">Universitario</option>
-                    <option value="postgrado">Postgrado</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="emp-cv" className="block text-sm font-medium text-[#333333] mb-2">
-                    Adjuntar CV *
-                  </label>
-                  <input
-                    type="file"
-                    id="emp-cv"
-                    accept=".pdf,.doc,.docx"
-                    className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] bg-white text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#3898EC] file:text-white hover:file:bg-[#0082f3]"
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-[#3898EC] text-white py-3 rounded-lg font-medium hover:bg-[#0082f3] transition-colors"
-                >
-                  Enviar Solicitud
-                </button>
-              </form>
+              <EmploymentForm />
             </div>
           </div>
         </div>
