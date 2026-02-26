@@ -202,7 +202,15 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <Image src="/images/icons/icon-support-3d.png" alt="Asesoría Personalizada" width={128} height={128} className="w-full h-full object-contain" />
+                <Image
+                  src="/images/icons/icon-support-3d.png"
+                  alt="Asesoría Personalizada"
+                  width={160}
+                  height={160}
+                  quality={100}
+                  unoptimized
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-2xl font-semibold text-[#333333] mb-3">Asesoría Personalizada</h3>
               <p className="text-[#999999] leading-relaxed">
