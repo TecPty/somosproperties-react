@@ -8,8 +8,8 @@ import Image from 'next/image';
 const CONTACT_DATA = {
   name: 'Mark Harari',
   title: 'Creative Director',
-  phone: '+507 6908-0299',
-  phoneRaw: '+5076908299',
+  phone: '+507 6677-0577',
+  phoneRaw: '+50766770577',
   email: 'markh@provivirpanama.com',
   address: 'Vía España - Avenida Aquilino de la Guardia, PH Beta 120 al lado del Porfuturo, Estación del Metro Iglesia del Carmen',
   website: 'www.provivirpanama.com',

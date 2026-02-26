@@ -6,7 +6,7 @@ import { MessageCircle, Mail, CheckCircle, Loader2, ChevronDown } from "lucide-r
 import type { ContactFormData } from "@/lib/types"
 import { trackGaEvent } from "@/lib/google-analytics"
 
-const WA_PHONE = "50769991234" // ← replace with real WhatsApp business number
+const WA_PHONE = "50766770577"
 
 interface ContactFormProps {
   compact?: boolean
@@ -34,6 +34,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormData, string>>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const handleWhatsApp = () => {
     trackGaEvent("whatsapp_contact", { source: "contact_form", property: propertyTitle })
@@ -57,15 +58,44 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
     e.preventDefault()
     if (!validateForm()) return
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setSubmitted(true)
-    trackGaEvent("lead_form_submit", { property: propertyTitle })
-    setTimeout(() => {
-      setFormData({ name: "", email: "", phone: "", consultationType: "", message: "", terms: true })
-      setSubmitted(false)
-      setShowForm(false)
-    }, 4000)
+    setSubmitError(null)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          consultationType: formData.consultationType,
+          message: formData.message,
+          propertyTitle,
+          source: compact ? "compact_form" : "contact_form",
+        }),
+      })
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => null)
+        if (data?.errors) {
+          setErrors((prev) => ({ ...prev, ...data.errors }))
+        }
+        setSubmitError("No se pudo enviar el formulario. Intenta nuevamente.")
+        return
+      }
+
+      setSubmitted(true)
+      trackGaEvent("lead_form_submit", { property: propertyTitle })
+      setTimeout(() => {
+        setFormData({ name: "", email: "", phone: "", consultationType: "", message: "", terms: true })
+        setSubmitted(false)
+        setShowForm(false)
+      }, 4000)
+    } catch {
+      setSubmitError("No se pudo enviar el formulario. Verifica tu conexión.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -215,6 +245,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
                   "Enviar Mensaje"
                 )}
               </button>
+              {submitError && <p className="text-xs text-[#b00020]">{submitError}</p>}
             </form>
           )}
         </>
@@ -267,6 +298,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
             {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : null}
             {isSubmitting ? "Enviando..." : "Enviar"}
           </button>
+          {submitError && <p className="text-xs text-[#b00020]">{submitError}</p>}
         </form>
       )}
     </div>
