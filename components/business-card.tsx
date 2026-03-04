@@ -1,51 +1,113 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { QRCodeCanvas } from 'qrcode.react';
 import { Mail, MessageCircle, Share2, ArrowLeft, Phone, MapPin, Globe } from 'lucide-react';
 import Image from 'next/image';
 
-const CONTACT_DATA = {
+type BusinessCardPhone = {
+  label: string;
+  display: string;
+  raw: string;
+  whatsapp?: boolean;
+};
+
+export type BusinessCardData = {
+  name: string;
+  title: string;
+  phones: BusinessCardPhone[];
+  email: string;
+  address?: string;
+  website: string;
+  company: string;
+  cardUrl: string;
+  logoSrc: string;
+  profileImageSrc?: string;
+  backgroundImageSrc?: string;
+};
+
+const DEFAULT_CONTACT_DATA: BusinessCardData = {
   name: 'Mark Harari',
   title: 'Creative Director',
-  phone: '+507 6677-0577',
-  phoneRaw: '+50766770577',
+  phones: [
+    {
+      label: 'Phone',
+      display: '+507 6677-0577',
+      raw: '+50766770577',
+      whatsapp: true,
+    },
+  ],
   email: 'markh@provivirpanama.com',
-  address: 'Vía España - Avenida Aquilino de la Guardia, PH Beta 120 al lado del Porfuturo, Estación del Metro Iglesia del Carmen',
+  address:
+    'Via Espana - Avenida Aquilino de la Guardia, PH Beta 120 al lado del Porfuturo, Estacion del Metro Iglesia del Carmen',
   website: 'www.provivirpanama.com',
   company: 'PROVIVIR',
   cardUrl: 'https://www.somosproperties.com/card',
+  logoSrc: '/images/logo-provivir.png',
+  profileImageSrc: '/images/profile-card.png',
 };
 
-export function BusinessCard() {
-  const [copied, setCopied] = useState(false);
-  const qrRef = React.useRef<any>(null);
+function buildVCard(contactData: BusinessCardData) {
+  const phoneLines = contactData.phones
+    .map((phone) => `TEL;TYPE=${phone.label.toUpperCase()}:${phone.raw}`)
+    .join('\n');
+
+  const addressLine = contactData.address ? `LABEL:${contactData.address}\n` : '';
+
+  return `BEGIN:VCARD
+VERSION:3.0
+FN:${contactData.name}
+TITLE:${contactData.title}
+${phoneLines}
+EMAIL:${contactData.email}
+ORG:${contactData.company}
+URL:${contactData.website}
+${addressLine}NOTE:Tarjeta Digital
+END:VCARD`;
+}
+
+function getInitials(name: string) {
+  return name
+    .split(' ')
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? '')
+    .join('');
+}
+
+type BusinessCardProps = {
+  contactData?: BusinessCardData;
+  showQr?: boolean;
+};
+
+export function BusinessCard({ contactData = DEFAULT_CONTACT_DATA, showQr = true }: BusinessCardProps) {
+  const qrRef = React.useRef<HTMLDivElement | null>(null);
+  const whatsappPhone = contactData.phones.find((phone) => phone.whatsapp) ?? contactData.phones[0];
+  const backgroundStyle = contactData.backgroundImageSrc
+    ? {
+        backgroundImage: `linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)), url('${contactData.backgroundImageSrc}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }
+    : undefined;
 
   const handleWhatsApp = () => {
-    const message = `Hola Mark, vi tu tarjeta digital y me gustaría contactarte.`;
-    window.open(`https://wa.me/${CONTACT_DATA.phoneRaw}?text=${encodeURIComponent(message)}`, '_blank');
+    if (!whatsappPhone) return;
+    const phoneRaw = whatsappPhone.raw.replace(/[^\d]/g, '');
+    const message = `Hola ${contactData.name}, vi tu tarjeta digital y me gustaria contactarte.`;
+    window.open(`https://wa.me/${phoneRaw}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleEmail = () => {
-    window.location.href = `mailto:${CONTACT_DATA.email}?subject=Contacto desde tarjeta digital`;
+    window.location.href = `mailto:${contactData.email}?subject=Contacto desde tarjeta digital`;
   };
 
   const downloadVCard = () => {
-    const vcard = `BEGIN:VCARD
-VERSION:3.0
-FN:${CONTACT_DATA.name}
-TITLE:${CONTACT_DATA.title}
-TEL:${CONTACT_DATA.phone}
-EMAIL:${CONTACT_DATA.email}
-ORG:${CONTACT_DATA.company}
-URL:${CONTACT_DATA.website}
-LABEL:${CONTACT_DATA.address}
-NOTE:Tarjeta Digital
-END:VCARD`;
+    const vcard = buildVCard(contactData);
 
     const element = document.createElement('a');
-    element.setAttribute('href', 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcard));
-    element.setAttribute('download', `${CONTACT_DATA.name}.vcf`);
+    element.setAttribute('href', `data:text/vcard;charset=utf-8,${encodeURIComponent(vcard)}`);
+    element.setAttribute('download', `${contactData.name}.vcf`);
     element.style.display = 'none';
     document.body.appendChild(element);
     element.click();
@@ -53,98 +115,125 @@ END:VCARD`;
   };
 
   const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: `Tarjeta de ${CONTACT_DATA.name}`,
-          text: `Contacta a ${CONTACT_DATA.name} - ${CONTACT_DATA.title} en ${CONTACT_DATA.company}`,
-          url: CONTACT_DATA.cardUrl,
-        });
-      } catch (err) {
-        console.log('Error al compartir:', err);
-      }
+    if (!navigator.share) return;
+
+    try {
+      await navigator.share({
+        title: `Tarjeta de ${contactData.name}`,
+        text: `Contacta a ${contactData.name} - ${contactData.title} en ${contactData.company}`,
+        url: contactData.cardUrl,
+      });
+    } catch (err) {
+      console.log('Error al compartir:', err);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex items-center justify-center p-4">
-      {/* Contenedor Mobile - Reducido */}
+    <div
+      className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex items-center justify-center p-4"
+      style={backgroundStyle}
+    >
       <div className="w-full max-w-xs bg-white rounded-3xl overflow-hidden shadow-2xl">
-        
-        {/* Header con Logo */}
         <div className="relative h-32 bg-blue-700 overflow-hidden flex items-start justify-center pt-2">
           <div className="relative w-64 h-24">
             <Image
-              src="/images/logo-provivir.png"
-              alt="PROVIVIR Logo"
+              src={contactData.logoSrc}
+              alt={`${contactData.company} Logo`}
               fill
               className="object-contain object-center"
               priority
             />
           </div>
-          <div className="absolute top-3 left-3 w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-30">
+          <button
+            type="button"
+            onClick={() => window.history.back()}
+            className="absolute top-3 left-3 w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30"
+          >
             <ArrowLeft className="w-4 h-4 text-white" />
-          </div>
-          <div className="absolute top-3 right-3 w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-30"
-               onClick={handleShare}>
+          </button>
+          <button
+            type="button"
+            className="absolute top-3 right-3 w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30"
+            onClick={handleShare}
+          >
             <Share2 className="w-4 h-4 text-white" />
-          </div>
+          </button>
         </div>
 
-        {/* Contenido Principal */}
         <div className="px-4 pb-6 relative z-10">
-          
-          {/* Foto Circular */}
           <div className="flex justify-center mb-4 -mt-10">
             <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gray-200 relative">
-              <Image
-                src="/images/profile-card.png"
-                alt={CONTACT_DATA.name}
-                fill
-                className="object-cover object-[50%_20%]"
-                priority
-              />
+              {contactData.profileImageSrc ? (
+                <Image
+                  src={contactData.profileImageSrc}
+                  alt={contactData.name}
+                  fill
+                  className="object-cover object-[50%_20%]"
+                  priority
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-blue-700 text-3xl font-black text-white">
+                  {getInitials(contactData.name)}
+                </div>
+              )}
             </div>
           </div>
 
-          {/* Nombre */}
-          <h1 className="text-2xl font-black text-center text-gray-900 mb-1">
-            {CONTACT_DATA.name}
-          </h1>
+          <h1 className="text-2xl font-black text-center text-gray-900 mb-1">{contactData.name}</h1>
 
-          {/* Cargo */}
-          <p className="text-center text-gray-600 font-semibold text-xs mb-4">
-            {CONTACT_DATA.title}
-          </p>
+          <p className="text-center text-gray-600 font-semibold text-xs mb-4">{contactData.title}</p>
 
-          {/* Datos de Contacto con Iconos */}
           <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-3">
-            {/* Teléfono */}
-            <a href={`tel:${CONTACT_DATA.phoneRaw}`} className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition">
-              <Phone className="w-4 h-4 text-blue-600 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-800">{CONTACT_DATA.phone}</span>
-            </a>
+            {contactData.phones.map((phone) => (
+              <a
+                key={`${phone.label}-${phone.raw}`}
+                href={`tel:${phone.raw}`}
+                className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition"
+              >
+                <Phone className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                <span className="text-xs font-medium text-gray-800">
+                  {phone.label}: {phone.display}
+                </span>
+              </a>
+            ))}
 
-            {/* Email */}
-            <a href={`mailto:${CONTACT_DATA.email}`} className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition">
+            <a
+              href={`mailto:${contactData.email}`}
+              className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition"
+            >
               <Mail className="w-4 h-4 text-blue-600 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-800 break-all">{CONTACT_DATA.email}</span>
+              <span className="text-xs font-medium text-gray-800 break-all">{contactData.email}</span>
             </a>
 
-            {/* Ubicación Completa */}
-            <div className="flex items-start gap-2 hover:bg-gray-100 p-1.5 rounded transition">
-              <MapPin className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
-              <span className="text-xs font-medium text-gray-800 leading-snug">{CONTACT_DATA.address}</span>
-            </div>
+            {contactData.address ? (
+              <div className="flex items-start gap-2 hover:bg-gray-100 p-1.5 rounded transition">
+                <MapPin className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span className="text-xs font-medium text-gray-800 leading-snug">{contactData.address}</span>
+              </div>
+            ) : null}
 
-            {/* Website */}
-            <a href={`https://${CONTACT_DATA.website}`} target="_blank" className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition">
+            <a
+              href={`https://${contactData.website}`}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition"
+            >
               <Globe className="w-4 h-4 text-blue-600 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-800">{CONTACT_DATA.website}</span>
+              <span className="text-xs font-medium text-gray-800">{contactData.website}</span>
             </a>
           </div>
 
-          {/* Botón Save Contact - Principal */}
+          {showQr ? (
+            <div className="mb-4 flex flex-col items-center rounded-2xl border border-gray-200 bg-white p-3 shadow-sm">
+              <div ref={qrRef} className="rounded-xl bg-white p-2">
+                <QRCodeCanvas value={buildVCard(contactData)} size={112} level="M" includeMargin />
+              </div>
+              <p className="mt-2 text-center text-[11px] font-medium text-gray-500">
+                Escanea para guardar el contacto
+              </p>
+            </div>
+          ) : null}
+
           <button
             onClick={downloadVCard}
             className="w-full bg-blue-500/20 hover:bg-blue-500/40 backdrop-blur-md border border-blue-400/40 text-blue-700 font-bold py-2.5 px-4 rounded-full mb-3 flex items-center justify-center gap-2 transition-all shadow-md text-sm"
@@ -152,11 +241,11 @@ END:VCARD`;
             Save Contact Card
           </button>
 
-          {/* Botones Secundarios */}
           <div className="grid grid-cols-2 gap-3">
             <button
               onClick={handleWhatsApp}
-              className="bg-teal-500/20 hover:bg-teal-500/40 backdrop-blur-md border border-teal-400/40 text-teal-700 font-bold py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all shadow-md text-xs"
+              disabled={!whatsappPhone}
+              className="bg-teal-500/20 hover:bg-teal-500/40 disabled:opacity-40 backdrop-blur-md border border-teal-400/40 text-teal-700 font-bold py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all shadow-md text-xs"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
@@ -170,9 +259,7 @@ END:VCARD`;
               <span>Email</span>
             </button>
           </div>
-
         </div>
-
       </div>
     </div>
   );
