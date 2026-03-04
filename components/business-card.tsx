@@ -42,7 +42,7 @@ const DEFAULT_CONTACT_DATA: BusinessCardData = {
     'Via Espana - Avenida Aquilino de la Guardia, PH Beta 120 al lado del Porfuturo, Estacion del Metro Iglesia del Carmen',
   website: 'www.provivirpanama.com',
   company: 'PROVIVIR',
-  cardUrl: 'https://www.somosproperties.com/card',
+  cardUrl: 'https://www.somosproperties.com/card/provivir',
   logoSrc: '/images/logo-provivir.png',
   profileImageSrc: '/images/profile-card.png',
 };
