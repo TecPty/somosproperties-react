@@ -45,7 +45,7 @@ export default function MarkCardPage() {
           display: none !important;
         }
       `}</style>
-      <BusinessCard contactData={MARK_CONTACT_DATA} showQr={false} />
+      <BusinessCard contactData={MARK_CONTACT_DATA} showQr={false} scale={0.9} />
     </div>
   );
 }

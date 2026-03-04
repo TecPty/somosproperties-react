@@ -78,14 +78,26 @@ function getInitials(name: string) {
 type BusinessCardProps = {
   contactData?: BusinessCardData;
   showQr?: boolean;
+  scale?: number;
 };
 
-export function BusinessCard({ contactData = DEFAULT_CONTACT_DATA, showQr = true }: BusinessCardProps) {
+export function BusinessCard({
+  contactData = DEFAULT_CONTACT_DATA,
+  showQr = true,
+  scale = 1,
+}: BusinessCardProps) {
   const qrRef = React.useRef<HTMLDivElement | null>(null);
   const whatsappPhone = contactData.phones.find((phone) => phone.whatsapp) ?? contactData.phones[0];
   const backgroundStyle = contactData.backgroundImageSrc
     ? {
         backgroundImage: `linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)), url('${contactData.backgroundImageSrc}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }
+    : undefined;
+  const headerStyle = contactData.backgroundImageSrc
+    ? {
+        backgroundImage: `url('${contactData.backgroundImageSrc}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }
@@ -133,8 +145,16 @@ export function BusinessCard({ contactData = DEFAULT_CONTACT_DATA, showQr = true
       className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex items-center justify-center p-4"
       style={backgroundStyle}
     >
-      <div className="w-full max-w-xs bg-white rounded-3xl overflow-hidden shadow-2xl">
-        <div className="relative h-32 bg-blue-700 overflow-hidden flex items-start justify-center pt-2">
+      <div
+        className="w-full max-w-xs bg-white rounded-3xl overflow-hidden shadow-2xl"
+        style={{ transform: `scale(${scale})`, transformOrigin: 'center' }}
+      >
+        <div
+          className={`relative h-32 overflow-hidden flex items-start justify-center pt-2 ${
+            contactData.backgroundImageSrc ? '' : 'bg-blue-700'
+          }`}
+          style={headerStyle}
+        >
           <div className="relative w-64 h-24">
             <Image
               src={contactData.logoSrc}
