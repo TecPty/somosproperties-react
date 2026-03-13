@@ -3,7 +3,7 @@
 import React from 'react';
 import { QRCodeCanvas } from 'qrcode.react';
 import { Mail, MessageCircle, Share2, ArrowLeft, Phone, MapPin, Globe } from 'lucide-react';
-import Image from 'next/image';
+import OptimizedImage from '@/components/optimized-image';
 
 type BusinessCardPhone = {
   label: string;
@@ -24,6 +24,13 @@ export type BusinessCardData = {
   logoSrc: string;
   profileImageSrc?: string;
   backgroundImageSrc?: string;
+  headerBackgroundImageSrc?: string;
+  theme?: {
+    iconClassName?: string;
+    primaryButtonClassName?: string;
+    whatsappButtonClassName?: string;
+    emailButtonClassName?: string;
+  };
 };
 
 const DEFAULT_CONTACT_DATA: BusinessCardData = {
@@ -95,13 +102,23 @@ export function BusinessCard({
         backgroundPosition: 'center',
       }
     : undefined;
-  const headerStyle = contactData.backgroundImageSrc
+  const headerStyle = contactData.headerBackgroundImageSrc
     ? {
-        backgroundImage: `url('${contactData.backgroundImageSrc}')`,
+        backgroundImage: `url('${contactData.headerBackgroundImageSrc}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }
     : undefined;
+  const iconClassName = contactData.theme?.iconClassName ?? 'text-blue-600';
+  const primaryButtonClassName =
+    contactData.theme?.primaryButtonClassName ??
+    'bg-blue-500/20 hover:bg-blue-500/40 border border-blue-400/40 text-blue-700';
+  const whatsappButtonClassName =
+    contactData.theme?.whatsappButtonClassName ??
+    'bg-teal-500/20 hover:bg-teal-500/40 border border-teal-400/40 text-teal-700';
+  const emailButtonClassName =
+    contactData.theme?.emailButtonClassName ??
+    'bg-blue-500/20 hover:bg-blue-500/40 border border-blue-400/40 text-blue-700';
 
   const handleWhatsApp = () => {
     if (!whatsappPhone) return;
@@ -151,28 +168,36 @@ export function BusinessCard({
       >
         <div
           className={`relative h-32 overflow-hidden flex items-start justify-center pt-2 ${
-            contactData.backgroundImageSrc ? '' : 'bg-blue-700'
+            contactData.headerBackgroundImageSrc ? '' : 'bg-blue-700'
           }`}
           style={headerStyle}
         >
-          <div className="relative w-64 h-24">
-            <Image
-              src={contactData.logoSrc}
-              alt={`${contactData.company} Logo`}
-              fill
-              className="object-contain object-center"
-              priority
-            />
-          </div>
+          {!contactData.headerBackgroundImageSrc ? (
+            <div className="relative w-64 h-24">
+              <OptimizedImage
+                src={contactData.logoSrc}
+                alt={`${contactData.company} Logo`}
+                type="small"
+                fill
+                priority
+                blur={false}
+                className="object-contain object-center"
+              />
+            </div>
+          ) : null}
           <button
             type="button"
             onClick={() => window.history.back()}
+            aria-label="Volver"
+            title="Volver"
             className="absolute top-3 left-3 w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30"
           >
             <ArrowLeft className="w-4 h-4 text-white" />
           </button>
           <button
             type="button"
+            aria-label="Compartir tarjeta"
+            title="Compartir tarjeta"
             className="absolute top-3 right-3 w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30"
             onClick={handleShare}
           >
@@ -184,12 +209,14 @@ export function BusinessCard({
           <div className="flex justify-center mb-4 -mt-10">
             <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gray-200 relative">
               {contactData.profileImageSrc ? (
-                <Image
+                <OptimizedImage
                   src={contactData.profileImageSrc}
                   alt={contactData.name}
+                  type="small"
                   fill
-                  className="object-cover object-[50%_20%]"
                   priority
+                  blur={false}
+                  className="object-cover object-[50%_20%]"
                 />
               ) : (
                 <div className="flex h-full w-full items-center justify-center bg-blue-700 text-3xl font-black text-white">
@@ -210,7 +237,7 @@ export function BusinessCard({
                 href={`tel:${phone.raw}`}
                 className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition"
               >
-                <Phone className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                <Phone className={`w-4 h-4 ${iconClassName} flex-shrink-0`} />
                 <span className="text-xs font-medium text-gray-800">
                   {phone.label}: {phone.display}
                 </span>
@@ -221,13 +248,13 @@ export function BusinessCard({
               href={`mailto:${contactData.email}`}
               className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition"
             >
-              <Mail className="w-4 h-4 text-blue-600 flex-shrink-0" />
+              <Mail className={`w-4 h-4 ${iconClassName} flex-shrink-0`} />
               <span className="text-xs font-medium text-gray-800 break-all">{contactData.email}</span>
             </a>
 
             {contactData.address ? (
               <div className="flex items-start gap-2 hover:bg-gray-100 p-1.5 rounded transition">
-                <MapPin className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                <MapPin className={`w-4 h-4 ${iconClassName} flex-shrink-0 mt-0.5`} />
                 <span className="text-xs font-medium text-gray-800 leading-snug">{contactData.address}</span>
               </div>
             ) : null}
@@ -238,7 +265,7 @@ export function BusinessCard({
               rel="noreferrer"
               className="flex items-center gap-2 hover:bg-gray-100 p-1.5 rounded transition"
             >
-              <Globe className="w-4 h-4 text-blue-600 flex-shrink-0" />
+              <Globe className={`w-4 h-4 ${iconClassName} flex-shrink-0`} />
               <span className="text-xs font-medium text-gray-800">{contactData.website}</span>
             </a>
           </div>
@@ -256,7 +283,7 @@ export function BusinessCard({
 
           <button
             onClick={downloadVCard}
-            className="w-full bg-blue-500/20 hover:bg-blue-500/40 backdrop-blur-md border border-blue-400/40 text-blue-700 font-bold py-2.5 px-4 rounded-full mb-3 flex items-center justify-center gap-2 transition-all shadow-md text-sm"
+            className={`w-full ${primaryButtonClassName} backdrop-blur-md font-bold py-2.5 px-4 rounded-full mb-3 flex items-center justify-center gap-2 transition-all shadow-md text-sm`}
           >
             Save Contact Card
           </button>
@@ -265,7 +292,7 @@ export function BusinessCard({
             <button
               onClick={handleWhatsApp}
               disabled={!whatsappPhone}
-              className="bg-teal-500/20 hover:bg-teal-500/40 disabled:opacity-40 backdrop-blur-md border border-teal-400/40 text-teal-700 font-bold py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all shadow-md text-xs"
+              className={`${whatsappButtonClassName} disabled:opacity-40 backdrop-blur-md font-bold py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all shadow-md text-xs`}
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
@@ -273,7 +300,7 @@ export function BusinessCard({
 
             <button
               onClick={handleEmail}
-              className="bg-blue-500/20 hover:bg-blue-500/40 backdrop-blur-md border border-blue-400/40 text-blue-700 font-bold py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all shadow-md text-xs"
+              className={`${emailButtonClassName} backdrop-blur-md font-bold py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all shadow-md text-xs`}
             >
               <Mail className="w-4 h-4" />
               <span>Email</span>

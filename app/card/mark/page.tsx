@@ -13,7 +13,7 @@ const MARK_CONTACT_DATA: BusinessCardData = {
     },
     {
       label: 'Mobile',
-      display: '(507) 690-80299',
+      display: '(507) 6908-0299',
       raw: '+50769080299',
       whatsapp: true,
     },
@@ -32,9 +32,19 @@ const MARK_CONTACT_DATA: BusinessCardData = {
   website: 'www.somosproperties.com',
   company: 'H Group Capital',
   cardUrl: 'https://www.somosproperties.com/card/mark',
-  logoSrc: '/images/logo-group-capital.png',
-  profileImageSrc: '/images/profile-card.png',
-  backgroundImageSrc: '/images/background-card.png',
+  logoSrc: '/images/logo-hgroupcapital.png',
+  profileImageSrc: '/images/profile-card-boss.png',
+  backgroundImageSrc: '/images/mark/background-hgroup.png',
+  headerBackgroundImageSrc: '/images/mark/header-background-hgroup.png',
+  theme: {
+    iconClassName: 'text-[#0f4c81]',
+    primaryButtonClassName:
+      'bg-[#0f4c81]/20 hover:bg-[#0f4c81]/35 border border-[#0f4c81]/45 text-[#0b2f4f]',
+    whatsappButtonClassName:
+      'bg-[#22c55e]/20 hover:bg-[#22c55e]/35 border border-[#22c55e]/45 text-[#14532d]',
+    emailButtonClassName:
+      'bg-[#0f4c81]/20 hover:bg-[#0f4c81]/35 border border-[#0f4c81]/45 text-[#0b2f4f]',
+  },
 };
 
 export default function MarkCardPage() {
