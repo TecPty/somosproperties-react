@@ -5,8 +5,7 @@ import { useState } from "react"
 import { MessageCircle, Mail, CheckCircle, Loader2, ChevronDown } from "lucide-react"
 import type { ContactFormData } from "@/lib/types"
 import { trackGaEvent } from "@/lib/google-analytics"
-
-const WA_PHONE = "50766770577"
+import { CONTACT } from "@/lib/config"
 
 interface ContactFormProps {
   compact?: boolean
@@ -17,7 +16,7 @@ function buildWhatsAppUrl(propertyTitle?: string): string {
   const body = propertyTitle
     ? `Hola, me interesa la propiedad: *${propertyTitle}*. ¿Está disponible? Me gustaría recibir más información.`
     : `Hola, me gustaría recibir información sobre propiedades disponibles.`
-  return `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(body)}`
+  return `https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent(body)}`
 }
 
 export default function ContactForm({ compact = false, propertyTitle }: ContactFormProps) {

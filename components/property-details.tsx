@@ -1,16 +1,20 @@
 ﻿"use client"
 
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ContactForm from "@/components/contact-form"
 import LeadQualifier from "@/components/lead-qualifier"
 import PropertyGrid from "@/components/property-grid"
+import OptimizedImage from "@/components/optimized-image"
+import { LazyMap } from "@/components/lazy-map"
+import { VirtualGallery } from "@/components/virtual-gallery"
+import { SchemaMarkupMultiple } from "@/components/schema-markup"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { trackGoogleAdsConversion, trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
+import { getPropertyListingSchema, getOrganizationSchema } from "@/lib/schema"
 
 type PropertyDetailsProps = {
   property: Property
@@ -86,6 +90,14 @@ export default function PropertyDetails({ property, similarProperties }: Propert
 
   return (
     <>
+      {/* Schema Markup for SEO */}
+      <SchemaMarkupMultiple
+        schemas={[
+          getPropertyListingSchema(property, property.images?.[0]),
+          getOrganizationSchema(),
+        ]}
+      />
+
       <Navbar />
 
       {/* Lightbox Modal */}
@@ -109,8 +121,16 @@ export default function PropertyDetails({ property, similarProperties }: Propert
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <div className="relative max-w-7xl max-h-[90vh] w-full h-full" onClick={(e) => e.stopPropagation()}>
-            <Image src={lightboxImage} alt="Vista ampliada" fill sizes="100vw" className="object-contain" />
+          <div className="relative w-full h-[90vh] max-w-7xl mx-auto flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+            <OptimizedImage
+              src={lightboxImage}
+              alt="Vista ampliada"
+              type="hero"
+              fill
+              priority
+              blur={false}
+              objectFit="contain"
+            />
           </div>
         </div>
       )}
@@ -121,14 +141,15 @@ export default function PropertyDetails({ property, similarProperties }: Propert
           <div className="mb-12">
             <div className="mb-4 relative h-[500px] md:h-[600px] rounded-lg overflow-hidden bg-[#f3f3f3] shadow-lg">
               {!imageError ? (
-                <Image
+                <OptimizedImage
                   src={property.images[selectedImage] || "/placeholder.svg"}
                   alt={`${property.title} - Imagen ${selectedImage + 1}`}
+                  type="hero"
                   fill
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                  className="object-cover"
                   priority
+                  blur
                   onError={() => setImageError(true)}
+                  objectFit="cover"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center">
@@ -197,31 +218,16 @@ export default function PropertyDetails({ property, similarProperties }: Propert
               )}
             </div>
 
-            {/* Thumbnails */}
-            <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4">
-              {property.images.map((img, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    setSelectedImage(index)
-                    setImageError(false)
-                  }}
-                  className={`relative h-24 rounded-lg overflow-hidden border-2 transition-all ${
-                    selectedImage === index
-                      ? "border-[#3898EC] scale-105 shadow-lg"
-                      : "border-transparent hover:border-[#cccccc] hover:scale-102"
-                  }`}
-                >
-                  <Image
-                    src={img || "/placeholder.svg"}
-                    alt={`${property.title} - Miniatura ${index + 1}`}
-                    fill
-                    className="object-cover"
-                    sizes="120px"
-                  />
-                </button>
-              ))}
-            </div>
+            {/* Thumbnails - Virtualized Gallery */}
+            <VirtualGallery
+              images={property.images}
+              selectedImage={selectedImage}
+              onSelectImage={(index) => {
+                setSelectedImage(index)
+                setImageError(false)
+              }}
+              propertyTitle={property.title}
+            />
           </div>
 
           {/* Property Info & Contact Form */}
@@ -443,12 +449,14 @@ export default function PropertyDetails({ property, similarProperties }: Propert
                           className="bg-[#fafafa] rounded-lg overflow-hidden border border-[#eeeeee] hover:border-[#3898EC] transition-all hover:shadow-lg cursor-pointer"
                         >
                           <div className="relative h-[400px]">
-                            <Image
+                            <OptimizedImage
                               src={plano}
                               alt={`Plano ${index + 1} - ${property.title}`}
+                              type="hero"
                               fill
-                              className="object-contain p-4"
-                              sizes="(max-width: 768px) 100vw, 600px"
+                              priority={false}
+                              blur
+                              objectFit="contain"
                             />
                           </div>
                           <div className="p-4 bg-white border-t border-[#eeeeee]">
@@ -620,38 +628,7 @@ export default function PropertyDetails({ property, similarProperties }: Propert
           {/* Map */}
           <div className="mb-16">
             <h2 className="text-2xl font-semibold text-[#222222] mb-4">Ubicación</h2>
-            {mapSrc ? (
-              <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-[#eeeeee]">
-                <iframe
-                  src={mapSrc}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={`Mapa de ${property.location}`}
-                />
-              </div>
-            ) : (
-              <div className="w-full h-[200px] rounded-lg border border-dashed border-[#cccccc] bg-[#fafafa] flex flex-col items-center justify-center text-[#999999] text-sm gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12 text-[#cccccc]"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-                  />
-                </svg>
-                <p>Mapa de ubicación disponible próximamente</p>
-              </div>
-            )}
+            <LazyMap mapSrc={mapSrc} propertyLocation={property.location} />
             <div className="mt-4 flex items-start gap-3 p-4 bg-[#fafafa] rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

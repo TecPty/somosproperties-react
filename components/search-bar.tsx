@@ -137,26 +137,27 @@ export default function SearchBar({ initialValue = "", className = "" }: SearchB
             className="absolute z-50 top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-[#eeeeee] overflow-hidden animate-slide-up"
           >
             {search.trim().length === 0 && (
-              <li className="flex items-center gap-2 px-4 py-2.5 text-xs text-[#aaaaaa] font-medium border-b border-[#f3f3f3]">
+              <div className="flex items-center gap-2 px-4 py-2.5 text-xs text-[#aaaaaa] font-medium border-b border-[#f3f3f3]" role="presentation">
                 <TrendingUp className="h-3.5 w-3.5" aria-hidden="true" />
                 Búsquedas populares
-              </li>
+              </div>
             )}
             {suggestions.map((s, i) => (
-              <li
-                key={s}
-                id={`${listboxId}-option-${i}`}
-                role="option"
-                aria-selected={i === activeIndex}
-                onMouseDown={(e) => { e.preventDefault(); commit(s) }}
-                onMouseEnter={() => setActiveIndex(i)}
-                className={`flex items-center gap-3 px-4 py-3 cursor-pointer text-sm transition-colors ${
-                  i === activeIndex ? "bg-[#f0f7ff] text-[#3898EC]" : "text-[#333333] hover:bg-[#f7f7f7]"
-                }`}
-              >
-                <Search className="h-4 w-4 text-[#cccccc] flex-shrink-0" aria-hidden="true" />
-                <span>
-                  {search.trim().length > 0 ? (
+              <>
+                <li
+                  key={s}
+                  id={`${listboxId}-option-${i}`}
+                  role="option"
+                  aria-selected={i === activeIndex}
+                  onMouseDown={(e) => { e.preventDefault(); commit(s) }}
+                  onMouseEnter={() => setActiveIndex(i)}
+                  className={`flex items-center gap-3 px-4 py-3 cursor-pointer text-sm transition-colors ${
+                    i === activeIndex ? "bg-[#f0f7ff] text-[#3898EC]" : "text-[#333333] hover:bg-[#f7f7f7]"
+                  }`}
+                >
+                  <Search className="h-4 w-4 text-[#cccccc] flex-shrink-0" aria-hidden="true" />
+                  <span>
+                    {search.trim().length > 0 ? (
                     // Bold-highlight matching part
                     s.split(new RegExp(`(${search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi")).map((part, pi) =>
                       part.toLowerCase() === search.toLowerCase()
@@ -166,6 +167,7 @@ export default function SearchBar({ initialValue = "", className = "" }: SearchB
                   ) : s}
                 </span>
               </li>
+              </>
             ))}
           </ul>
         )}

@@ -148,8 +148,8 @@ export default function OptimizedImage({
           onLoadingComplete={handleLoadingComplete}
           onError={handleError}
           style={{
-            objectFit,
-            objectPosition,
+            objectFit: objectFit as React.CSSProperties['objectFit'],
+            objectPosition: objectPosition as React.CSSProperties['objectPosition'],
           }}
           className={`transition-opacity duration-300 ${isLoading ? "opacity-0" : "opacity-100"} ${className}`}
         />

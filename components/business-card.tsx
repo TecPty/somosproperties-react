@@ -96,18 +96,18 @@ export function BusinessCard({
   const qrRef = React.useRef<HTMLDivElement | null>(null);
   const whatsappPhone = contactData.phones.find((phone) => phone.whatsapp) ?? contactData.phones[0];
   const backgroundStyle = contactData.backgroundImageSrc
-    ? {
+    ? ({
         backgroundImage: `linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)), url('${contactData.backgroundImageSrc}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-      }
+      } as React.CSSProperties)
     : undefined;
   const headerStyle = contactData.headerBackgroundImageSrc
-    ? {
+    ? ({
         backgroundImage: `url('${contactData.headerBackgroundImageSrc}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-      }
+      } as React.CSSProperties)
     : undefined;
   const iconClassName = contactData.theme?.iconClassName ?? 'text-blue-600';
   const primaryButtonClassName =
@@ -137,7 +137,8 @@ export function BusinessCard({
     const element = document.createElement('a');
     element.setAttribute('href', `data:text/vcard;charset=utf-8,${encodeURIComponent(vcard)}`);
     element.setAttribute('download', `${contactData.name}.vcf`);
-    element.style.display = 'none';
+    element.setAttribute('aria-hidden', 'true');
+    element.classList.add('sr-only');
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);

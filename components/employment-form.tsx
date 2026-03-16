@@ -173,7 +173,17 @@ export default function EmploymentForm() {
           id="emp-cv"
           name="cv"
           accept=".pdf,.doc,.docx"
-          onChange={(event) => setCv(event.target.files?.[0] ?? null)}
+          onChange={(event) => {
+            const file = event.target.files?.[0] ?? null
+            if (file && file.size > 3.5 * 1024 * 1024) {
+              setErrors((prev) => ({ ...prev, cv: "El archivo supera 3.5 MB. Comprime o reduce el PDF antes de adjuntarlo." }))
+              event.target.value = ""
+              setCv(null)
+              return
+            }
+            setErrors((prev) => ({ ...prev, cv: undefined }))
+            setCv(file)
+          }}
           className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] bg-white text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#3898EC] file:text-white hover:file:bg-[#0082f3]"
         />
         {errors.cv && <p className="mt-1 text-xs text-[#ea384c]">{errors.cv}</p>}

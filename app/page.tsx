@@ -1,16 +1,18 @@
 import Link from "next/link"
-import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import SearchBar from "@/components/search-bar"
 import PropertyGrid from "@/components/property-grid"
 import ContactForm from "@/components/contact-form"
 import EmploymentForm from "@/components/employment-form"
+import OptimizedImage from "@/components/optimized-image"
+import { SchemaMarkupMultiple } from "@/components/schema-markup"
 import type { Property } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { formatPrice } from "@/lib/formatters"
 import { createMetadata } from "@/lib/seo"
 import { isPremium } from "@/lib/utils-premium"
+import { getOrganizationSchema, getCollectionSchema } from "@/lib/schema"
 
 export const metadata = createMetadata({
   title: "SOMOS Properties - Propiedades en Panamá | Venta y Alquiler",
@@ -47,6 +49,18 @@ export default function HomePage() {
 
   return (
     <>
+      {/* Schema Markup for SEO */}
+      <SchemaMarkupMultiple
+        schemas={[
+          getOrganizationSchema(),
+          getCollectionSchema(
+            propertiesWithPrice,
+            "Todas las Propiedades",
+            "/propiedades"
+          ),
+        ].filter(Boolean)}
+      />
+
       <Navbar />
 
       {/* Hero Section */}
@@ -113,11 +127,13 @@ export default function HomePage() {
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 hover:border-[#d4af37] transition-all"
                 >
                   <div className="relative h-48">
-                    <Image
+                    <OptimizedImage
                       src={property.image || "/placeholder.svg"}
                       alt={property.title}
+                      type="propertyCard"
                       fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
+                      priority={false}
+                      blur
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-3 right-3">
@@ -183,7 +199,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="text-center">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <Image src="/images/icons/icon-security-3d.png" alt="Confianza y Seguridad" width={128} height={128} className="w-full h-full object-contain" />
+                <OptimizedImage
+                  src="/images/icons/icon-security-3d.png"
+                  alt="Confianza y Seguridad"
+                  width={128}
+                  height={128}
+                  type="small"
+                  className="object-contain"
+                />
               </div>
               <h3 className="text-2xl font-semibold text-[#333333] mb-3">Confianza y Seguridad</h3>
               <p className="text-[#999999] leading-relaxed">
@@ -193,7 +216,14 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <Image src="/images/icons/icon-price-3d.png" alt="Mejores Precios" width={128} height={128} className="w-full h-full object-contain" />
+                <OptimizedImage
+                  src="/images/icons/icon-price-3d.png"
+                  alt="Mejores Precios"
+                  width={128}
+                  height={128}
+                  type="small"
+                  className="object-contain"
+                />
               </div>
               <h3 className="text-2xl font-semibold text-[#333333] mb-3">Mejores Precios</h3>
               <p className="text-[#999999] leading-relaxed">
@@ -203,13 +233,13 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <Image
+                <OptimizedImage
                   src="/images/icons/icon-support-3d.png"
                   alt="Asesoría Personalizada"
                   width={160}
                   height={160}
-                  unoptimized
-                  className="w-full h-full object-contain"
+                  type="small"
+                  className="object-contain"
                 />
               </div>
               <h3 className="text-2xl font-semibold text-[#333333] mb-3">Asesoría Personalizada</h3>

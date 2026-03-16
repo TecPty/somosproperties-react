@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { useState, useCallback } from "react"
 import { MapPin, Bed, Bath, Maximize2, Heart, Images } from "lucide-react"
 import type { Property } from "@/lib/types"
@@ -9,6 +8,7 @@ import { formatPrice, formatArea } from "@/lib/formatters"
 import { isPremium } from "@/lib/utils-premium"
 import { trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
+import OptimizedImage from "@/components/optimized-image"
 
 interface PropertyCardProps {
   property: Property
@@ -86,14 +86,15 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       <Link href={`/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={`Ver detalles: ${property.title}`}>
         <div className="relative h-56 overflow-hidden bg-[#f3f3f3]">    
           {!imageError ? (
-            <Image
+            <OptimizedImage
               src={property.image || "/placeholder.svg"}
               alt={property.title}
+              type="propertyCard"
               fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
+              priority={false}
+              blur
               onError={() => setImageError(true)}
+              className="group-hover:scale-105 transition-transform duration-500"
             />
           ) : (
             <div className="w-full h-full flex flex-col items-center justify-center bg-[#f3f3f3] gap-2">

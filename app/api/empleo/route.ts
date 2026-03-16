@@ -1,7 +1,9 @@
-﻿import { NextResponse } from "next/server"
+﻿import { NextResponse, type NextRequest } from "next/server"
+import { Resend } from "resend"
+import { employmentEmailHTML } from "@/lib/email-templates/employment"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const MAX_FILE_BYTES = 10 * 1024 * 1024
+const MAX_FILE_BYTES = 3.5 * 1024 * 1024
 const ALLOWED_EXTENSIONS = new Set([".pdf", ".doc", ".docx"])
 
 function getExtension(filename: string) {
@@ -9,7 +11,7 @@ function getExtension(filename: string) {
   return idx === -1 ? "" : filename.slice(idx).toLowerCase()
 }
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   let formData: FormData
 
   try {
@@ -43,7 +45,7 @@ export async function POST(request: Request) {
       errors.cv = "Formato de CV inválido"
     }
     if (cv.size > MAX_FILE_BYTES) {
-      errors.cv = "El archivo supera 10MB"
+      errors.cv = "El archivo supera 3.5MB"
     }
   }
 
@@ -57,57 +59,49 @@ export async function POST(request: Request) {
 
   if (!apiKey || !emailFrom || !emailToRaw) {
     return NextResponse.json(
-      {
-        ok: false,
-        error: "Email not configured",
-      },
-      { status: 500 },
+      { ok: false, error: "Email not configured" },
+      { status: 500 }
     )
   }
 
+  const resend = new Resend(apiKey)
   const emailTo = emailToRaw
     .split(",")
     .map((value) => value.trim())
     .filter(Boolean)
 
   const subject = `Nueva solicitud de empleo: ${name}`
-  const text = [
-    `Nombre: ${name}`,
-    `Email: ${email}`,
-    `Teléfono: ${phone}`,
-    `Educación: ${education}`,
-    cv instanceof File ? `CV: ${cv.name} (${Math.round(cv.size / 1024)} KB)` : "CV: no adjunto",
-  ].join("\n")
-
-  const html = `
-    <h2>Nueva solicitud de empleo</h2>
-    <p><strong>Nombre:</strong> ${name}</p>
-    <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Teléfono:</strong> ${phone}</p>
-    <p><strong>Educación:</strong> ${education}</p>
-    <p><strong>CV:</strong> ${cv instanceof File ? `${cv.name} (${Math.round(cv.size / 1024)} KB)` : "No adjunto"}</p>
-  `
+  const html = employmentEmailHTML({
+    name,
+    email,
+    phone,
+    education,
+    cvName: cv instanceof File ? cv.name : undefined,
+    cvSize: cv instanceof File ? cv.size : undefined,
+  })
 
   try {
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: emailFrom,
-        to: emailTo,
-        subject,
-        text,
-        html,
-        reply_to: email,
-      }),
+    const cvBuffer = cv instanceof File ? Buffer.from(await cv.arrayBuffer()) : null
+    const attachments = cvBuffer
+      ? [
+          {
+            filename: cv instanceof File ? cv.name : "",
+            content: cvBuffer.toString("base64"),
+          },
+        ]
+      : undefined
+
+    const response = await resend.emails.send({
+      from: emailFrom,
+      to: emailTo,
+      replyTo: email,
+      subject,
+      html,
+      attachments,
     })
 
-    if (!response.ok) {
-      const errorBody = await response.text()
-      console.error("RESEND_ERROR", errorBody)
+    if (response.error) {
+      console.error("RESEND_ERROR", response.error)
       return NextResponse.json({ ok: false, error: "Email send failed" }, { status: 502 })
     }
   } catch (error) {

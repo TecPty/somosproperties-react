@@ -1,5 +1,6 @@
-﻿import Image from "next/image"
-import Link from "next/link"
+﻿import Link from "next/link"
+import OptimizedImage from "@/components/optimized-image"
+import { CONTACT, SOCIAL, COMPANY } from "@/lib/config"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,15 +11,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Description */}
           <div>
-            <Image
+            <OptimizedImage
               src="/images/Logo-SP.png"
-              alt="SOMOS Properties"
+              alt={COMPANY.name}
+              type="small"
               width={180}
               height={60}
+              priority
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-sm leading-relaxed">
-              Tu socio de confianza en bienes raíces en Panamá. Más de 15 años ayudando a encontrar la propiedad perfecta.
+              {COMPANY.description}
             </p>
           </div>
 
@@ -61,6 +64,33 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Legal */}
+          <div>
+            <h4 className="text-white text-lg font-semibold mb-4">Legal</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/privacidad" className="hover:text-[#3898EC] transition-colors text-sm">
+                  Privacidad
+                </Link>
+              </li>
+              <li>
+                <Link href="/terminos" className="hover:text-[#3898EC] transition-colors text-sm">
+                  Términos
+                </Link>
+              </li>
+              <li>
+                <Link href="/politica-cookies" className="hover:text-[#3898EC] transition-colors text-sm">
+                  Política de Cookies
+                </Link>
+              </li>
+              <li>
+                <Link href="/preferencias-cookies" className="hover:text-[#3898EC] transition-colors text-sm">
+                  Preferencias de Cookies
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Contacto */}
           <div>
             <h4 className="text-white text-lg font-semibold mb-4">Contacto</h4>
@@ -80,7 +110,7 @@ export default function Footer() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span>+507 6677-0577</span>
+                <span>{CONTACT.phone}</span>
               </li>
               <li className="flex items-start gap-2 text-sm">
                 <svg
@@ -97,8 +127,8 @@ export default function Footer() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <Link href="mailto:ventas@somosproperties.com" className="hover:text-[#3898EC] transition-colors">
-                  ventas@somosproperties.com
+                <Link href={`mailto:${CONTACT.email}`} className="hover:text-[#3898EC] transition-colors">
+                  {CONTACT.email}
                 </Link>
               </li>
               <li className="flex items-start gap-2 text-sm">

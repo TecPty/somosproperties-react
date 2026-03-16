@@ -11,6 +11,28 @@ export const siteConfig = {
     "locales comerciales",
     "alquiler Panamá",
     "real estate Panama",
+    "homes for sale Panama",
+    "apartments Panama City",
+  ],
+}
+
+// Optimized keywords by category for better targeting
+export const categoryKeywords = {
+  Residencial: [
+    "apartamentos en Panamá",
+    "casas en venta Panamá",
+    "viviendas en alquiler",
+    "pisos Panamá",
+    "viviendas residenciales",
+    "departamentos Panamá",
+  ],
+  Comercial: [
+    "locales comerciales Panamá",
+    "oficinas en Panamá",
+    "espacios comerciales",
+    "alquiler comercial",
+    "locales para negocios",
+    "propiedades comerciales",
   ],
 }
 
@@ -22,21 +44,24 @@ export function createMetadata({
   path = "",
   image,
   noIndex = false,
+  keywords,
 }: {
   title: string
   description?: string
   path?: string
   image?: string
   noIndex?: boolean
+  keywords?: string[]
 }) {
   const url = `${siteConfig.url}${path}`
   const ogImage = image || siteConfig.ogImage
+  const metaKeywords = keywords || siteConfig.keywords
 
   return {
     metadataBase,
     title,
     description: description || siteConfig.description,
-    keywords: siteConfig.keywords,
+    keywords: metaKeywords,
     ...(noIndex && { robots: { index: false, follow: false } }),
     alternates: {
       canonical: url,

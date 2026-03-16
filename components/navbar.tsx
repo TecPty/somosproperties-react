@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+import OptimizedImage from "@/components/optimized-image"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 
@@ -74,13 +74,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
+            <OptimizedImage
               src="/images/logo-somosproperties-250x250px-transparente.png"
               alt="SOMOS Properties"
+              type="small"
               width={110}
               height={110}
-              className="h-auto w-[88px] md:w-[100px]"
               priority
+              className="h-auto w-[88px] md:w-[100px]"
             />
           </Link>
 

@@ -6,10 +6,13 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "ANALYZE=true next build",
+    "analyze:bundle": "ANALYZE=true npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
+    "@next/bundle-analyzer": "^16.1.6",
     "@next/third-parties": "^16.1.0",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-alert-dialog": "1.1.4",
@@ -42,7 +45,6 @@
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "cmdk": "1.0.4",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
     "html2canvas": "^1.4.1",
@@ -58,13 +60,12 @@
     "react-facebook-pixel": "^1.0.4",
     "react-gtm-module": "^2.0.11",
     "react-hook-form": "^7.60.0",
-    "react-resizable-panels": "^2.1.7",
-    "recharts": "2.15.4",
+    "resend": "^6.9.3",
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
-    "vaul": "^1.1.2",
     "vcard-creator": "^0.7.2",
+    "web-vitals": "^5.1.0",
     "zod": "3.25.76"
   },
   "devDependencies": {

@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import WhatsAppButton from "@/components/whatsapp-button"
 import AnalyticsProvider from "@/components/analytics-provider"
+import ConsentBanner from "@/components/consent-banner"
+import RootLayoutClient from "@/components/root-layout-client"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -31,10 +33,9 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <AnalyticsProvider />
-        {children}
-        <WhatsAppButton />
-        {gaId && gaId !== "G-XXXXXXXXXX" && <GoogleAnalytics gaId={gaId} />}
+        <RootLayoutClient gaId={gaId}>
+          {children}
+        </RootLayoutClient>
       </body>
     </html>
   )

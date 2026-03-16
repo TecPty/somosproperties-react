@@ -28,6 +28,20 @@ export interface Property {
   featured: boolean
   status: "available" | "sold" | "rented"
   tier?: "premium" | "standard"
+  promo?: PromotionalFlyer
+}
+
+export interface PromotionalFlyer {
+  desktop: string  // Path to desktop flyer image
+  mobile: string   // Path to mobile flyer image
+  headline?: string
+  badge?: string
+  cta?: {
+    text: string
+    action: "contact" | "whatsapp" | "close"
+  }
+  showDelay?: number  // Milliseconds before showing (default: 2000)
+  showOnce?: boolean  // Show only once per session (default: true)
 }
 
 export interface PropertyFilters {

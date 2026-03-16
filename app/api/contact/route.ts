@@ -1,6 +1,9 @@
 ﻿import { NextResponse } from "next/server"
+import { Resend } from "resend"
+import { contactEmailHTML } from "@/lib/email-templates/contact"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
   let payload: {
@@ -34,71 +37,54 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, errors }, { status: 400 })
   }
 
-  const apiKey = process.env.RESEND_API_KEY
-  const emailFrom = process.env.CONTACT_EMAIL_FROM
-  const emailTo = process.env.CONTACT_EMAIL_TO
+  const emailFrom = process.env.CONTACT_EMAIL_FROM || "onboarding@resend.dev"
+  const emailTo = process.env.CONTACT_EMAIL_TO || "ventas@somosproperties.com"
 
-  if (!apiKey || !emailFrom || !emailTo) {
+  if (!process.env.RESEND_API_KEY) {
+    console.error("RESEND_API_KEY not configured")
     return NextResponse.json(
       {
         ok: false,
-        error: "Email not configured",
+        error: "Email service not configured",
       },
       { status: 500 },
     )
   }
 
   const subject = `Nuevo contacto${payload.propertyTitle ? `: ${payload.propertyTitle}` : ""}`
-  const text = [
-    `Nombre: ${payload.name}`,
-    `Email: ${payload.email}`,
-    `Teléfono: ${payload.phone}`,
-    payload.consultationType ? `Tipo: ${payload.consultationType}` : null,
-    payload.propertyTitle ? `Propiedad: ${payload.propertyTitle}` : null,
-    payload.source ? `Fuente: ${payload.source}` : null,
-    "",
-    payload.message ?? "",
-  ]
-    .filter(Boolean)
-    .join("\n")
-
-  const html = `
-    <h2>Nuevo contacto</h2>
-    <p><strong>Nombre:</strong> ${payload.name}</p>
-    <p><strong>Email:</strong> ${payload.email}</p>
-    <p><strong>Teléfono:</strong> ${payload.phone}</p>
-    ${payload.consultationType ? `<p><strong>Tipo:</strong> ${payload.consultationType}</p>` : ""}
-    ${payload.propertyTitle ? `<p><strong>Propiedad:</strong> ${payload.propertyTitle}</p>` : ""}
-    ${payload.source ? `<p><strong>Fuente:</strong> ${payload.source}</p>` : ""}
-    <p><strong>Mensaje:</strong></p>
-    <p>${(payload.message || "").replace(/\n/g, "<br />")}</p>
-  `
 
   try {
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: emailFrom,
-        to: [emailTo],
-        subject,
-        text,
-        html,
-        reply_to: payload.email,
-      }),
+    const html = contactEmailHTML({
+      name: payload.name!,
+      email: payload.email!,
+      phone: payload.phone!,
+      consultationType: payload.consultationType,
+      message: payload.message!,
+      propertyTitle: payload.propertyTitle,
+      source: payload.source,
     })
 
-    if (!response.ok) {
-      const errorBody = await response.text()
-      console.error("RESEND_ERROR", errorBody)
-      return NextResponse.json({ ok: false, error: "Email send failed" }, { status: 502 })
+    const response = await resend.emails.send({
+      from: emailFrom,
+      to: emailTo,
+      replyTo: payload.email,
+      subject,
+      html,
+    })
+
+    if (response.error) {
+      console.error("RESEND_ERROR", response.error)
+      return NextResponse.json(
+        { ok: false, error: "Failed to send email" },
+        { status: 502 },
+      )
     }
   } catch (error) {
     console.error("RESEND_ERROR", error)
-    return NextResponse.json({ ok: false, error: "Email send failed" }, { status: 502 })
+    return NextResponse.json(
+      { ok: false, error: "Failed to send email" },
+      { status: 502 },
+    )
   }
 
   const webhookUrl = process.env.CONTACT_WEBHOOK_URL

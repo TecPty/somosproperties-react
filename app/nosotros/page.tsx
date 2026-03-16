@@ -1,6 +1,6 @@
 ﻿import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import Image from "next/image"
+import OptimizedImage from "@/components/optimized-image"
 import Link from "next/link"
 import { createMetadata } from "@/lib/seo"
 
@@ -68,14 +68,14 @@ export default function NosotrosPage() {
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-white">
           <div className="absolute inset-0">
-            <Image
+            <OptimizedImage
               src="/images/nosotros/hero-0.webp"
               alt="Equipo Somos Properties"
+              type="hero"
               fill
-              sizes="100vw"
-              className="object-contain"
               priority
-              style={{ objectPosition: "50% 45%" }}
+              blur={false}
+              objectPosition="50% 45%"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-white/65 via-white/25 to-transparent" />
           </div>
@@ -104,13 +104,15 @@ export default function NosotrosPage() {
               </div>
               <div className="flex justify-center lg:justify-end items-end">
                 <div className="relative w-full max-w-[320px] lg:max-w-[360px] flex justify-center pb-2">
-                  <Image
+                  <OptimizedImage
                     src="/images/logo-somosproperties-250x250px-transparente.png"
                     alt="Logo SOMOS Properties"
+                    type="small"
                     width={360}
                     height={360}
-                    className="h-auto w-full object-contain"
                     priority
+                    blur={false}
+                    className="h-auto w-full object-contain"
                   />
                 </div>
               </div>
@@ -196,13 +198,15 @@ export default function NosotrosPage() {
               <div className="flex justify-center lg:justify-end">
                 <div className="relative w-full max-w-[720px] bg-transparent p-6 self-end lg:-translate-y-10">
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#e5f2ff] to-[#f5f9ff] blur-2xl" />
-                  <Image
+                  <OptimizedImage
                     src="/images/nosotros/nosotros-equipo.webp"
                     alt="Equipo SOMOS Properties"
+                    type="hero"
                     width={720}
                     height={720}
-                    className="relative z-10 h-auto w-full object-contain"
                     priority
+                    blur={false}
+                    className="relative z-10 h-auto w-full object-contain"
                   />
                 </div>
               </div>

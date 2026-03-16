@@ -113,7 +113,7 @@ export default function ContactoPage() {
                       <a
                         href="https://www.google.com/maps/place/Somos+Properties/@8.980677,-79.5244254,21z/data=!4m6!3m5!1s0x8faca9087f0a1529:0xdf82217316d458da!8m2!3d8.9806391!4d-79.5243692!16s%2Fg%2F11pz09nkcx?authuser=0&entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="text-[#3898EC] hover:underline"
                       >
                         Somos Properties - Calle 50, Bella Vista, Ciudad de Panamá

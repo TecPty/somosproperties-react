@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { canTrack } from "@/lib/consent-utils"
 
 type FbqFunction = ((...args: unknown[]) => void) & {
   callMethod?: (...args: unknown[]) => void
@@ -45,11 +46,13 @@ export const initFacebookPixel = () => {
 }
 
 export const trackPageView = () => {
+  if (!canTrack("marketing")) return
   if (!ensurePixel() || !window.fbq) return
   window.fbq("track", "PageView")
 }
 
 export const trackEvent = (eventName: string, data?: Record<string, unknown>) => {
+  if (!canTrack("marketing")) return
   if (!ensurePixel() || !window.fbq) return
   window.fbq("track", eventName, data || {})
 }
