@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import type { Property } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 import PropertyDetails from "@/components/property-details"
+import { getPromotionsForProperty } from "@/lib/promotions"
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://somosproperties.com"
 
@@ -99,5 +100,14 @@ export default async function PropertyDetailsPage({ params }: { params: Promise<
     )
     .slice(0, 3)
 
-  return <PropertyDetails property={property} similarProperties={similarProperties} />
+  // Obtener promociones para esta propiedad
+  const promotions = await getPromotionsForProperty(propertyId)
+
+  return (
+    <PropertyDetails 
+      property={property} 
+      similarProperties={similarProperties} 
+      promotions={promotions}
+    />
+  )
 }

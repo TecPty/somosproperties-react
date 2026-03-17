@@ -10,7 +10,9 @@ import OptimizedImage from "@/components/optimized-image"
 import { LazyMap } from "@/components/lazy-map"
 import { VirtualGallery } from "@/components/virtual-gallery"
 import { SchemaMarkupMultiple } from "@/components/schema-markup"
+import { PropertyPromotionsGrid } from "@/components/property-promotions-grid"
 import type { Property } from "@/lib/types"
+import type { Promotion } from "@/types/promotions"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { trackGoogleAdsConversion, trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
@@ -19,9 +21,10 @@ import { getPropertyListingSchema, getOrganizationSchema } from "@/lib/schema"
 type PropertyDetailsProps = {
   property: Property
   similarProperties: Property[]
+  promotions?: Promotion[]
 }
 
-export default function PropertyDetails({ property, similarProperties }: PropertyDetailsProps) {
+export default function PropertyDetails({ property, similarProperties, promotions = [] }: PropertyDetailsProps) {
   const [selectedImage, setSelectedImage] = useState(0)
   const [imageError, setImageError] = useState(false)
   const [activeTab, setActiveTab] = useState<"description" | "amenities" | "plans">("description")
@@ -658,6 +661,14 @@ export default function PropertyDetails({ property, similarProperties }: Propert
               </div>
             </div>
           </div>
+
+          {/* Promociones Especiales */}
+          {promotions && promotions.length > 0 && (
+            <PropertyPromotionsGrid 
+              promotions={promotions} 
+              propertyTitle={property.title}
+            />
+          )}
 
           {/* Similar Properties */}
           {similarProperties.length > 0 && (

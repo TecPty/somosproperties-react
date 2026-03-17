@@ -1,0 +1,24 @@
+# Carpeta para Promociones Compartidas
+
+Esta carpeta contiene imágenes de promociones que se comparten entre múltiples propiedades.
+
+## Estructura recomendada:
+
+```
+/shared/
+├── {promo-id}/
+│   ├── desktop.png   (aprox. 1200x800px)
+│   ├── mobile.png    (aprox. 600x1000px, vertical)
+```
+
+## Ejemplo:
+
+```
+/shared/
+├── financiamiento-30-anos/
+│   ├── desktop.png
+│   ├── mobile.png
+├── areas-sociales-premium/
+│   ├── desktop.png
+│   ├── mobile.png
+```

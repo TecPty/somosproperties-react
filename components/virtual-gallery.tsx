@@ -52,6 +52,8 @@ export function VirtualGallery({ images, selectedImage, onSelectImage, propertyT
                 src={img || "/placeholder.svg"}
                 alt={`${propertyTitle} - Miniatura ${index + 1}`}
                 type="thumbnail"
+                width={200}
+                height={150}
                 sizes="96px"
                 priority={index === selectedImage}
               />
