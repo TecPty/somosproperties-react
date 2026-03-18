@@ -1,0 +1,158 @@
+/* Miniatura de promoción (thumbnail) en el grid/modal */
+.promotion-thumbnail {
+  width: 100%;
+  max-width: 270px; /* 180px * 1.5 = 270px */
+  aspect-ratio: 16/9;
+  background: #fff;
+  /* border-radius eliminado */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid #e5e7eb;
+}
+.promotion-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+  background: #fff;
+}
+:root {
+  --color-bg: #fff;
+  --color-border: #e5e7eb;
+  --color-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --color-title: #222;
+  --color-title-contrast: #0066cc;
+  --color-subtext: #888;
+  --color-focus: #0066cc;
+  --color-btn: #28a745;
+  --color-btn-hover: #218838;
+  --radius-container: 12px;
+  --radius-input: 8px;
+  --padding-container: 24px;
+  --gap-vertical: 20px;
+  --input-height: 48px;
+  --btn-height: 48px;
+}
+
+/* Sidebar sticky y responsive */
+.sidebar-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--gap-vertical);
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+}
+
+.miniatura-apartamento {
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: var(--radius-container);
+  overflow: hidden;
+  box-shadow: var(--color-shadow);
+  background: #f3f3f3;
+  margin-bottom: 16px;
+}
+
+.formulario-califica {
+  margin-top: 0 !important;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-container);
+  box-shadow: var(--color-shadow);
+  padding: var(--padding-container);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario-titulo {
+  color: var(--color-title-contrast);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+}
+
+.formulario-subtexto {
+  color: var(--color-subtext);
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.formulario-califica input,
+.formulario-califica select {
+  height: var(--input-height);
+  border-radius: var(--radius-input);
+  border: 1px solid var(--color-border);
+  padding: 0 14px;
+  font-size: 16px;
+  background: #fafbfc;
+  color: #222;
+  transition: border-color 0.2s;
+}
+
+.formulario-califica input:focus,
+.formulario-califica select:focus {
+  border-color: var(--color-focus);
+  outline: none;
+}
+
+.formulario-califica input::placeholder,
+.formulario-califica select:invalid {
+  color: #bbb;
+  opacity: 1;
+}
+
+.formulario-califica button[type="submit"] {
+  background: var(--color-btn);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-input);
+  height: var(--btn-height);
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.formulario-califica button[type="submit"]:hover {
+  background: var(--color-btn-hover);
+}
+
+@media (max-width: 1023px) {
+  .sidebar-formulario {
+    position: static;
+    top: unset;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-formulario {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .formulario-califica {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 16px 8px;
+  }
+  .miniatura-apartamento {
+    border-radius: 0;
+  }
+}

@@ -145,7 +145,7 @@ export default function OptimizedImage({
           quality={80}
           placeholder={blur ? "blur" : "empty"}
           blurDataURL={blur ? BLUR_DATA_URL : undefined}
-          onLoadingComplete={handleLoadingComplete}
+          onLoad={handleLoadingComplete}
           onError={handleError}
           style={{
             objectFit: objectFit as React.CSSProperties['objectFit'],
@@ -206,7 +206,7 @@ export default function OptimizedImage({
         quality={80}
         placeholder={blur ? "blur" : "empty"}
         blurDataURL={blur ? BLUR_DATA_URL : undefined}
-        onLoadingComplete={handleLoadingComplete}
+        onLoad={handleLoadingComplete}
         onError={handleError}
         style={{
           width: "100%",

@@ -1,6 +1,11 @@
 ﻿"use client"
 
 import { useEffect, useRef, useState } from "react"
+import { PromotionModal } from "@/components/promotion-modal"
+import { usePromotionModal } from "@/hooks/use-promotion-modal"
+import { useIntersectionTrigger } from "@/hooks/use-intersection-trigger"
+import { useSessionStorage } from "@/hooks/use-session-storage"
+import { getAutoOpenPromotion } from "@/lib/promotions"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ContactForm from "@/components/contact-form"
@@ -12,7 +17,7 @@ import { VirtualGallery } from "@/components/virtual-gallery"
 import { SchemaMarkupMultiple } from "@/components/schema-markup"
 import { PropertyPromotionsGrid } from "@/components/property-promotions-grid"
 import type { Property } from "@/lib/types"
-import type { Promotion } from "@/types/promotions"
+import type { Promotion } from "@/types/promotion"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { trackGoogleAdsConversion, trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
@@ -31,6 +36,27 @@ export default function PropertyDetails({ property, similarProperties, promotion
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImage, setLightboxImage] = useState("")
   const hasTrackedView = useRef(false)
+
+  // --- PROMOCIONES Y MODAL INTELIGENTE ---
+  const { isOpen, promotion, openModal, closeModal } = usePromotionModal();
+  const { ref: heroRef, isVisible } = useIntersectionTrigger(0.5);
+  const sessionKey = `promo-${property.id}-seen`;
+  const { get: getSession, set: setSession } = useSessionStorage(sessionKey);
+  const autoPromo = getAutoOpenPromotion(promotions || []);
+
+  // Lógica de apertura automática del modal promocional
+  useEffect(() => {
+    if (!autoPromo) return;
+    if (!isVisible) return;
+    // Solo abrir si hay promo autoOpen
+    const delay = autoPromo.config?.showDelayMs ?? 2500;
+    const timer = setTimeout(() => {
+      openModal(autoPromo);
+      setSession && setSession("true"); // opcional: puedes eliminar esta línea si no quieres guardar nada
+    }, delay);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line
+  }, [autoPromo, isVisible]);
 
   const displayPrice =
     property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
@@ -93,6 +119,8 @@ export default function PropertyDetails({ property, similarProperties, promotion
 
   return (
     <>
+      {/* Modal Promocional Inteligente */}
+      <PromotionModal isOpen={isOpen} promotion={promotion} onClose={closeModal} />
       {/* Schema Markup for SEO */}
       <SchemaMarkupMultiple
         schemas={[
@@ -139,10 +167,10 @@ export default function PropertyDetails({ property, similarProperties, promotion
       )}
 
       <main className="py-12 bg-white">
-        <div className="container-custom">
+        <div className="container-custom max-w-screen-2xl mx-auto px-4">
           {/* Gallery */}
           <div className="mb-12">
-            <div className="mb-4 relative h-[500px] md:h-[600px] rounded-lg overflow-hidden bg-[#f3f3f3] shadow-lg">
+            <div ref={heroRef as React.RefObject<HTMLDivElement>} className="mb-4 relative h-[500px] md:h-[600px] rounded-lg overflow-hidden bg-[#f3f3f3] shadow-lg">
               {!imageError ? (
                 <OptimizedImage
                   src={property.images[selectedImage] || "/placeholder.svg"}
@@ -233,10 +261,10 @@ export default function PropertyDetails({ property, similarProperties, promotion
             />
           </div>
 
-          {/* Property Info & Contact Form */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
-            {/* Left Column - Property Info */}
-            <div className="lg:col-span-2">
+          {/* Main Content Grid: Info (left), Sidebar (right) */}
+          <div className="grid-60-40 mb-16">
+            {/* Columna principal (60%) */}
+            <div>
               {/* Header */}
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-3">
@@ -342,7 +370,7 @@ export default function PropertyDetails({ property, similarProperties, promotion
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+                      d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5m11 5l-5-5m5 5v-4m0 4h-4"
                     />
                   </svg>
                   <div className="text-2xl font-bold text-[#222222]">{formatArea(property.area)}</div>
@@ -515,18 +543,38 @@ export default function PropertyDetails({ property, similarProperties, promotion
               </div>
             </div>
 
-            {/* Right Column - Contact Form */}
-            <div className="lg:col-span-1">
-              <LeadQualifier
-                propertyId={property.id}
-                propertyTitle={property.title}
-                minIncome={property.minIncome}
-              />
-              <div className="sticky top-20 bg-[#fafafa] p-6 rounded-lg border border-[#eeeeee]">
-                <h3 className="text-xl font-semibold text-[#222222] mb-4">Solicita Información</h3>
+            {/* Columna derecha optimizada: sticky, espaciado, responsive y jerarquía visual */}
+            {/* Sidebar/Formulario (40%) */}
+            <aside className="sidebar-formulario">
+              {/* Imagen miniatura */}
+
+              {/* Promociones (si existen) */}
+              {promotions && promotions.length > 0 && (
+                <PropertyPromotionsGrid 
+                  promotions={promotions} 
+                  onSelect={openModal}
+                />
+              )}
+
+              {/* Formulario Califica en 30 segundos */}
+              <section className="formulario-califica">
+                <h3 className="formulario-titulo">Califica en 30 segundos</h3>
+                <p className="formulario-subtexto">
+                  Descubre si calificas para esta propiedad completando este breve formulario.
+                </p>
+                <LeadQualifier
+                  propertyId={property.id}
+                  propertyTitle={property.title}
+                  minIncome={property.minIncome}
+                />
+              </section>
+
+              {/* Formulario de contacto clásico */}
+              <section className="formulario-contacto">
+                <h3 className="formulario-titulo">Solicita Información</h3>
                 <ContactForm compact propertyTitle={property.title} />
-              </div>
-            </div>
+              </section>
+            </aside>
           </div>
 
           {(hasEligibility || hasRequirements || hasIncentives) && (
@@ -661,14 +709,6 @@ export default function PropertyDetails({ property, similarProperties, promotion
               </div>
             </div>
           </div>
-
-          {/* Promociones Especiales */}
-          {promotions && promotions.length > 0 && (
-            <PropertyPromotionsGrid 
-              promotions={promotions} 
-              propertyTitle={property.title}
-            />
-          )}
 
           {/* Similar Properties */}
           {similarProperties.length > 0 && (

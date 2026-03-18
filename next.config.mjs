@@ -14,6 +14,7 @@ const nextConfig = {
     unoptimized: false,
     // Minimize image quality for smaller bundles
     formats: ["image/avif", "image/webp"],
+    qualities: [75, 80],
   },
   // Compress responses
   compress: true,
