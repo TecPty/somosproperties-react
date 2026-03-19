@@ -101,7 +101,7 @@ export default async function PropertyDetailsPage({ params }: { params: Promise<
     .slice(0, 3)
 
   // Obtener promociones para esta propiedad
-  const promotions = getPropertyPromotions(property.slug || propertyId)
+  const promotions = getPropertyPromotions(property.id)
 
   return (
     <PropertyDetails 
