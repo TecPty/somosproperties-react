@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, errors }, { status: 400 })
   }
 
-  const emailFrom = process.env.CONTACT_EMAIL_FROM || "onboarding@resend.dev"
+  const emailFrom = process.env.CONTACT_EMAIL_FROM || "info@somosproperties.com"
   const emailTo = process.env.CONTACT_EMAIL_TO || "ventas@somosproperties.com"
 
   if (!process.env.RESEND_API_KEY) {

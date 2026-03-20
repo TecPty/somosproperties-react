@@ -127,11 +127,11 @@ const visibleRange = {
 ```env
 # Resend Email Configuration
 RESEND_API_KEY=re_xxxx_get_your_key_from_resend_com
-CONTACT_EMAIL_FROM=onboarding@resend.dev  # Update when domain verified
+CONTACT_EMAIL_FROM=info@somosproperties.com  # Update when domain verified
 CONTACT_EMAIL_TO=ventas@somosproperties.com
 
 # Employment Backend
-EMPLOYMENT_EMAIL_FROM=onboarding@resend.dev
+EMPLOYMENT_EMAIL_FROM=info@somosproperties.com
 EMPLOYMENT_EMAIL_TO=rh@somosproperties.com
 ```
 

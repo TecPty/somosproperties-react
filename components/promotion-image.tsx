@@ -8,22 +8,37 @@ interface Props {
 
 export function PromotionImage({ images, alt }: Props) {
   const [isMobile, setIsMobile] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
+    const media = window.matchMedia('(max-width: 767px)');
+    const update = () => setIsMobile(media.matches);
+
+    update();
+    media.addEventListener('change', update);
+
+    return () => media.removeEventListener('change', update);
   }, []);
+
+  if (hasError) {
+    return (
+      <div className="flex min-h-[220px] w-full items-center justify-center bg-slate-100 text-sm text-slate-500">
+        Imagen promocional no disponible.
+      </div>
+    );
+  }
 
   return (
     <Image
       src={isMobile ? images.mobile : images.desktop}
       alt={alt}
-      width={isMobile ? 600 : 1200}
-      height={isMobile ? 1000 : 800}
-      className="object-contain w-full h-auto"
-      priority
+      width={isMobile ? 720 : 1280}
+      height={isMobile ? 1120 : 840}
+      sizes="(max-width: 767px) 92vw, (max-width: 1280px) 76vw, 900px"
+      className="h-auto w-full object-contain"
+      loading="eager"
+      priority={false}
+      onError={() => setHasError(true)}
     />
   );
 }

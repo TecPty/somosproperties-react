@@ -61,11 +61,11 @@ Para que los emails vengan de tu dominio (`noreply@somosproperties.com`):
 ```bash
 # Resend Email Configuration
 RESEND_API_KEY=re_xxxxxxxxxxxxx
-CONTACT_EMAIL_FROM=onboarding@resend.dev     # O tu dominio verificado
+CONTACT_EMAIL_FROM=info@somosproperties.com     # O tu dominio verificado
 CONTACT_EMAIL_TO=ventas@somosproperties.com
 ```
 
-**Nota:** Mientras no verifiques dominio, usar `onboarding@resend.dev` funciona en modo prueba.
+**Nota:** Mientras no verifiques dominio, usar `info@somosproperties.com` funciona en modo prueba.
 
 ### 5️⃣ Testing Local
 

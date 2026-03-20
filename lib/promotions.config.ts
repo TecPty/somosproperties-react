@@ -9,7 +9,30 @@ export const MODAL_CONFIG = {
 };
 
 export const SHARED_PROMOTIONS: Promotion[] = [
-  // No hay promociones compartidas actualmente
+  // Example structure for time-based promotions:
+  // {
+  //   id: 'sunset-strip-launch',
+  //   title: 'Sunset Strip - lanzamiento',
+  //   description: 'Reserva tu visita esta semana.',
+  //   type: 'shared',
+  //   images: {
+  //     desktop: '/images/properties/sunset-strip/flyers/modal-desktop.png',
+  //     mobile: '/images/properties/sunset-strip/flyers/modal-mobile.png',
+  //     thumbnail: '/images/properties/sunset-strip/flyers/modal-thumb.png',
+  //   },
+  //   video: {
+  //     desktop: '/videos/promotions/sunset-strip-desktop.mp4',
+  //     mobile: '/videos/promotions/sunset-strip-mobile.mp4',
+  //     poster: '/images/properties/sunset-strip/flyers/modal-thumb.png',
+  //     autoplay: true,
+  //     loop: true,
+  //     muted: true,
+  //   },
+  //   autoOpen: true,
+  //   priority: 100,
+  //   validFrom: '2026-03-01T00:00:00.000Z',
+  //   validUntil: '2026-05-01T00:00:00.000Z',
+  // },
 ];
 
 // Ejemplo de banner informativo para Kings Park

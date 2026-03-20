@@ -1,3 +1,16 @@
+export type PromotionDateInput = Date | string
+
+export interface PromotionVideoAsset {
+  desktop: string
+  mobile?: string
+  poster?: string
+  thumbnail?: string
+  autoplay?: boolean
+  loop?: boolean
+  muted?: boolean
+  controls?: boolean
+}
+
 export interface Promotion {
   id: string;
   title: string;
@@ -11,10 +24,13 @@ export interface Promotion {
   propertySlug?: string;
   autoOpen?: boolean;
   priority?: number;
-  validUntil?: Date;
+  validFrom?: PromotionDateInput;
+  validUntil?: PromotionDateInput;
+  video?: PromotionVideoAsset;
   config?: {
     showDelayMs?: number;
     autoCloseAfterMs?: number;
     disableAutoOpenMobile?: boolean;
+    showOncePerSession?: boolean;
   };
 }
