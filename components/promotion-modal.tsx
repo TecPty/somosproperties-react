@@ -38,7 +38,8 @@ export function PromotionModal({ isOpen, promotion, onClose }: Props) {
     >
       <div
         ref={modalRef}
-        className="relative bg-white rounded-lg shadow-2xl max-w-4xl w-[95vw] p-0"
+        className="relative bg-white rounded-lg shadow-2xl max-w-3xl w-[70vw] p-0"
+        style={{ maxWidth: '75vw', width: '75vw' }}
         onClick={(e) => e.stopPropagation()}
       >
         <button
