@@ -2,6 +2,8 @@
 import { useRef } from 'react';
 import { Promotion } from '@/types/promotion';
 import { PromotionImage } from './promotion-image';
+
+import styles from './promotion-modal.module.css';
 import { useFocusTrap } from '@/hooks/use-focus-trap';
 
 interface Props {
@@ -38,12 +40,11 @@ export function PromotionModal({ isOpen, promotion, onClose }: Props) {
     >
       <div
         ref={modalRef}
-        className="relative bg-white rounded-lg shadow-2xl max-w-3xl w-[70vw] p-0"
-        style={{ maxWidth: '75vw', width: '75vw' }}
+        className="relative w-full max-w-xs sm:max-w-lg md:max-w-2xl flex flex-col items-center"
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 rounded-full p-2 focus:ring-2 focus:ring-white z-10"
+          className="absolute top-3 right-3 bg-black/60 hover:bg-black/80 rounded-full p-2 focus:ring-2 focus:ring-white z-10"
           aria-label="Cerrar promoción"
           onClick={onClose}
         >
@@ -51,8 +52,14 @@ export function PromotionModal({ isOpen, promotion, onClose }: Props) {
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        <div className="cursor-pointer" onClick={handleImageClick} title="Solicitar información">
-          <PromotionImage images={promotion.images} alt={promotion.title} />
+        <div
+          className="cursor-pointer flex items-center justify-center w-full"
+          onClick={handleImageClick}
+          title="Solicitar información"
+        >
+          <div className="w-full max-h-[50vh] sm:max-h-[60vh] md:max-h-[75vh] flex justify-center items-center">
+            <PromotionImage images={promotion.images} alt={promotion.title} />
+          </div>
         </div>
       </div>
     </div>

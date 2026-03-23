@@ -20,7 +20,8 @@ export function PromotionImage({ images, alt }: Props) {
     return () => media.removeEventListener('change', update);
   }, []);
 
-  if (hasError) {
+  const src = isMobile ? images.mobile : images.desktop;
+  if (hasError || !src) {
     return (
       <div className="flex min-h-[220px] w-full items-center justify-center bg-slate-100 text-sm text-slate-500">
         Imagen promocional no disponible.
@@ -30,7 +31,7 @@ export function PromotionImage({ images, alt }: Props) {
 
   return (
     <Image
-      src={isMobile ? images.mobile : images.desktop}
+      src={src}
       alt={alt}
       width={isMobile ? 720 : 1280}
       height={isMobile ? 1120 : 840}
