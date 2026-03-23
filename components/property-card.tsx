@@ -72,7 +72,8 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       <button
         onClick={handleFavoriteToggle}
         aria-label={isFavorite ? "Quitar de favoritos" : "Guardar en favoritos"}
-        aria-pressed={isFavorite}
+        aria-pressed={Boolean(isFavorite)}
+        role="button"
         className={`absolute top-3 right-3 z-20 flex items-center justify-center w-10 h-10 rounded-full shadow-md transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2 ${
           isFavorite ? "bg-white text-[#ea384c]" : "bg-white/80 text-[#aaaaaa] hover:text-[#ea384c]"
         }`}
@@ -87,7 +88,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         <div className="relative h-56 overflow-hidden bg-[#f3f3f3]">    
           {!imageError ? (
             <OptimizedImage
-              src={property.image || "/placeholder.svg"}
+              src={property.thumbnail || property.image || "/placeholder.svg"}
               alt={property.title}
               type="propertyCard"
               fill
@@ -96,10 +97,17 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               onError={() => setImageError(true)}
               className="group-hover:scale-105 transition-transform duration-500"
             />
+          ) : property.thumbnail ? (
+            <img
+              src={property.thumbnail}
+              alt={property.title}
+              className="object-cover w-full h-full rounded-md"
+            />
           ) : (
-            <div className="w-full h-full flex flex-col items-center justify-center bg-[#f3f3f3] gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-[#cccccc]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            <div className="w-full h-full flex flex-col items-center justify-center bg-[#e5e7eb] gap-2 rounded-md border border-[#e0e0e0]">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[#cccccc]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="4" stroke="#cccccc" strokeWidth="1.5" fill="#f3f3f3" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 15l2.5-3 2.5 3 3.5-4.5L21 18H3l5-6z" />
               </svg>
               <span className="text-xs text-[#bbbbbb]">Sin imagen</span>
             </div>

@@ -84,7 +84,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
   },
   {
     id: 'balboa-boutique-info',
-    propertyId: 32, // ID real de Balboa Boutique
+    propertyId: 134, // ID adicional de Balboa Boutique
     title: 'Balboa Boutique: Vive en el centro',
     description: 'Promoción exclusiva en Balboa Boutique. Consulta condiciones.',
     type: 'property-specific',

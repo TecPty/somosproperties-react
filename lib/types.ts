@@ -16,6 +16,7 @@ export interface Property {
   builtYear: number
   image: string
   images: string[]
+  thumbnail?: string // Imagen cuadrada optimizada para thumbnail
   planos?: string[]
   highlights?: string[]
   virtualTour?: string

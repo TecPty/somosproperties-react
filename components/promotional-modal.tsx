@@ -2,6 +2,7 @@
 
 
 import { useEffect, useRef, useState } from "react"
+import styles from "./promotional-modal.module.css"
 import { X } from "lucide-react"
 import { useFocusTrap } from "@/hooks/use-focus-trap"
 
@@ -88,8 +89,13 @@ export function PromotionalModal({
       items.push(
         <div
           key={"star-" + i}
-          className="absolute text-yellow-200 opacity-80"
-          style={{ left: `${left}%`, top: `${top}%`, fontSize: size, pointerEvents: "none" }}
+          className={styles.starDecoration}
+          style={{
+            // @ts-ignore
+            ['--left' as any]: `${left}%`,
+            ['--top' as any]: `${top}%`,
+            ['--size' as any]: `${size}px`,
+          }}
         >
           ★
         </div>
@@ -102,8 +108,13 @@ export function PromotionalModal({
       items.push(
         <div
           key={"snow-" + i}
-          className="absolute text-white opacity-60"
-          style={{ left: `${left}%`, top: `${top}%`, fontSize: size, pointerEvents: "none" }}
+          className={styles.snowDecoration}
+          style={{
+            // @ts-ignore
+            ['--left' as any]: `${left}%`,
+            ['--top' as any]: `${top}%`,
+            ['--size' as any]: `${size}px`,
+          }}
         >
           ❄
         </div>
