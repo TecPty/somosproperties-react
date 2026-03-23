@@ -49,7 +49,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     images: {
       desktop: '/images/properties/kings-park/promotional/modal-kings-park-desktop.png',
       mobile: '/images/properties/kings-park/promotional/modal-kings-park-mobile.png',
-      thumbnail: '',
+      thumbnail: '/images/properties/kings-park/promotional/modal-kings-park-thumb.png',
     },
     propertySlug: 'kings-park',
     autoOpen: true,
@@ -70,7 +70,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     images: {
       desktop: '/images/properties/kings-park/promotional/modal-kings-park-desktop.png',
       mobile: '/images/properties/kings-park/promotional/modal-kings-park-mobile.png',
-      thumbnail: '',
+      thumbnail: '/images/properties/kings-park/promotional/modal-kings-park-thumb.png',
     },
     propertySlug: 'kings-park',
     autoOpen: true,
@@ -91,7 +91,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     images: {
       desktop: '/images/properties/balboa-boutique/promotional/modal-balboa-desktop.png',
       mobile: '/images/properties/balboa-boutique/promotional/modal-balboa-mobile.png',
-      thumbnail: '',
+      thumbnail: '/images/properties/balboa-boutique/promotional/thumbnail-balboa.png',
     },
     propertySlug: 'balboa-boutique',
     autoOpen: true,
@@ -112,7 +112,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     images: {
       desktop: '/images/properties/playa-escondida/promotional/modal-playa-escondida-desktop.png',
       mobile: '/images/properties/playa-escondida/promotional/modal-playa-escondida-mobile.png',
-      thumbnail: '',
+      thumbnail: '/images/properties/playa-escondida/promotional/modal-playa-escondida-thumb.png',
     },
     propertySlug: 'playa-escondida',
     autoOpen: true,
