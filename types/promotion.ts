@@ -21,6 +21,7 @@ export interface Promotion {
     mobile: string;
     thumbnail: string;
   };
+  propertyId?: number; // CAMBIO: permite asociar la promoción a una propiedad por ID
   propertySlug?: string;
   autoOpen?: boolean;
   priority?: number;

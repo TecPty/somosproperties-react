@@ -1,5 +1,5 @@
 import { Promotion } from '@/types/promotion';
-import { SHARED_PROMOTIONS } from './promotions.config';
+import { SHARED_PROMOTIONS, PROPERTY_PROMOTIONS } from './promotions.config';
 
 function normalizeDate(value?: Date | string): Date | null {
   if (!value) return null;
@@ -19,35 +19,12 @@ export function isPromotionActive(promotion: Promotion, now: Date = new Date()):
 }
 
 export function getPropertyPromotions(slugOrId: string | number): Promotion[] {
-  const propertyPromos: Promotion[] = [];
-  // Mostrar banner para Kings Park por slug o por ID (1 y 238)
-  if (slugOrId === 'kings-park' || slugOrId === 1 || slugOrId === 238) {
-    propertyPromos.push({
-      id: 'kings-park-info',
-      title: 'Apartamentos en venta',
-      description: 'Descubre los mejores apartamentos en Kings Park.',
-      // CAMBIO: usar el literal válido del dominio de promociones.
-      // RAZÓN: `Promotion.type` solo admite `'property-specific' | 'shared'`.
-      type: 'property-specific',
-      images: {
-        desktop: `/images/properties/kings-park/promotional/modal-desktop-kings-park.png`,
-        mobile: `/images/properties/kings-park/promotional/modal-mobile-kings-park.png`,
-        thumbnail: `/images/properties/kings-park/promotional/modal-desktop-kings-park.png`,
-      },
-      propertySlug: 'kings-park',
-      autoOpen: true,
-      priority: 10,
-      validFrom: '2026-01-01T00:00:00.000Z',
-      validUntil: '2026-12-31T23:59:59.999Z',
-      config: {
-        showDelayMs: 2200,
-        showOncePerSession: true,
-      },
-    });
-  }
-  // CAMBIO: envolver callback para no pasar `index` como segundo argumento.
-  // RAZÓN: evita incompatibilidad de tipos con la firma `(promotion, now?: Date)`.
-  return [...propertyPromos, ...SHARED_PROMOTIONS].filter((promotion) => isPromotionActive(promotion));
+  // CAMBIO: buscar promociones por propertyId o propertySlug
+  // RAZÓN: permite asociar cualquier propiedad a su promoción desde PROPERTY_PROMOTIONS
+  const promos = PROPERTY_PROMOTIONS.filter(
+    (promo) => promo.propertyId === slugOrId || promo.propertySlug === slugOrId
+  );
+  return [...promos, ...SHARED_PROMOTIONS].filter((promotion) => isPromotionActive(promotion));
 }
 
 export function getAutoOpenPromotion(promotions: Promotion[]): Promotion | undefined {
