@@ -669,7 +669,26 @@ export default function PropertyDetailClient({ property, similarProperties, prom
             </div>
           )}
 
-          {/* Map */}
+
+          {/* Thumbnail promocional después de requisitos y antes del mapa */}
+          {/* RAZÓN: UX solicitado, solo si hay promoción activa y thumbnail */}
+          {promotion?.images?.thumbnail && (
+            <button
+              className="mx-auto my-12 block promotion-thumbnail transition-transform hover:scale-105 focus:ring-2 focus:ring-blue-500"
+              aria-label={`Ver promoción: ${promotion.title}`}
+              onClick={() => openModal(promotion)}
+            >
+              <img
+                src={promotion.images.thumbnail}
+                alt={promotion.title}
+                className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg border border-[#e5e7eb] bg-white"
+                loading="lazy"
+              />
+            </button>
+          )}
+
+
+          {/* Mapa de ubicación después del thumbnail */}
           <div className="mb-16">
             <h2 className="text-2xl font-semibold text-[#222222] mb-4">Ubicación</h2>
             <LazyMap mapSrc={mapSrc} propertyLocation={property.location} />
@@ -712,7 +731,6 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           )}
         </div>
       </main>
-
       <Footer />
     </>
   )
