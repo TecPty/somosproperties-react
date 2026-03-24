@@ -49,7 +49,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     images: {
       desktop: '/images/properties/kings-park/promotional/modal-kings-park-desktop.png',
       mobile: '/images/properties/kings-park/promotional/modal-kings-park-mobile.png',
-      thumbnail: '/images/properties/kings-park/promotional/modal-kings-park-thumb.png',
+      thumbnail: '/images/properties/kings-park/promotional/thumbnail-kings-park.png',
     },
     propertySlug: 'kings-park',
     autoOpen: true,
@@ -70,7 +70,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     images: {
       desktop: '/images/properties/kings-park/promotional/modal-kings-park-desktop.png',
       mobile: '/images/properties/kings-park/promotional/modal-kings-park-mobile.png',
-      thumbnail: '/images/properties/kings-park/promotional/modal-kings-park-thumb.png',
+      thumbnail: '/images/properties/kings-park/promotional/thumbnail-kings-park.png',
     },
     propertySlug: 'kings-park',
     autoOpen: true,
@@ -110,9 +110,9 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     description: 'Vive frente al mar con beneficios únicos. Consulta detalles.',
     type: 'property-specific',
     images: {
-      desktop: '/images/properties/playa-escondida/promotional/modal-playa-escondida-desktop.png',
-      mobile: '/images/properties/playa-escondida/promotional/modal-playa-escondida-mobile.png',
-      thumbnail: '/images/properties/playa-escondida/promotional/modal-playa-escondida-thumb.png',
+      desktop: '/images/properties/playa-escondida/promotional/modal-playa-desktop.png',
+      mobile: '/images/properties/playa-escondida/promotional/modal-playa-mobile.png',
+      thumbnail: '/images/properties/playa-escondida/promotional/thumbnail-playa.png',
     },
     propertySlug: 'playa-escondida',
     autoOpen: true,

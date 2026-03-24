@@ -215,6 +215,7 @@
       "featured": true,
       "status": "available",
       "id": 1,
+      "thumbnail": "/images/properties/kings-park/promotional/thumbnail-kings-park.png",
       "title": "Kings Park - Torre 500, Apto 3-B",
       "description": "Apartamento 3-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 4 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas), Sistema Smart Home y 2 estacionamientos.",
       "amenities": [
@@ -279,6 +280,7 @@
       "featured": true,
       "status": "available",
       "id": 238,
+      "thumbnail": "/images/properties/kings-park/promotional/modal-kings-park-thumb.png",
       "title": "Kings Park - Torre 500, Apto 10-B",
       "description": "Apartamento 10-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 5 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye 2 estacionamientos + 1 depósito. Línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas), Sistema Smart Home.",
       "amenities": [
@@ -1927,6 +1929,7 @@
       "bathrooms": 2,
       "parkingSpots": 4,
       "id": 134,
+      "thumbnail": "/images/properties/balboa-boutique/promotional/thumbnail-balboa.png",
       "highlights": [
         "Local B-102/202: 339 m² en mezzanine",
         "Fachada y terraza con vistas a la Calzada",
@@ -3164,6 +3167,7 @@
       "featured": false,
       "status": "available",
       "id": 164,
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
       "title": "Playa Escondida Torre 100 - Unidad 1201",
       "price": 912542,
       "area": 263.36,
