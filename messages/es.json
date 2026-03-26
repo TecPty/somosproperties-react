@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "premium": "Premium",
+    "residential": "Residenciales",
+    "commercial": "Comerciales",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "home": {
+    "hero": {
+      "title": "Propiedades que transforman vidas",
+      "subtitle": "Tu asesor inmobiliario de confianza en Panamá",
+      "viewPremium": "Ver Premium",
+      "viewProperties": "Ver Propiedades"
+    },
+    "premium": {
+      "badge": "PROPIEDADES PREMIUM",
+      "title": "Vive la Excelencia",
+      "subtitle": "Propiedades exclusivas con ubicaciones privilegiadas y acabados de lujo",
+      "viewAll": "Ver Todas las Propiedades Premium",
+      "premiumLabel": "PREMIUM"
+    },
+    "featured": {
+      "title": "Propiedades Destacadas",
+      "subtitle": "Descubre las mejores oportunidades del mercado inmobiliario",
+      "viewAll": "Ver Todas las Propiedades"
+    },
+    "whyChooseUs": {
+      "title": "¿Por Qué Elegirnos?",
+      "subtitle": "Encuentra tu propiedad ideal en menos de 30 días con asesoría personalizada",
+      "advisory": {
+        "title": "Asesoría Personalizada",
+        "description": "Nuestro equipo de expertos certificados te acompaña en cada paso del proceso hasta encontrar tu propiedad ideal. Atención en español e inglés."
+      },
+      "prices": {
+        "title": "Mejores Precios",
+        "description": "Trabajamos directamente con propietarios para ofrecerte los mejores precios del mercado. Sin costos ocultos ni comisiones extras."
+      },
+      "security": {
+        "title": "Confianza y Seguridad",
+        "description": "5 años de experiencia desde 2021 en el mercado inmobiliario panameño. Todas nuestras propiedades son verificadas con documentación legal completa."
+      }
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "Estamos aquí para ayudarte",
+      "formTitle": "Conoce tu próxima propiedad",
+      "formSubtitle": "Agenda tu cita",
+      "employmentTitle": "Únete a Nuestro Equipo"
+    }
+  },
+  "footer": {
+    "properties": "Propiedades",
+    "premium": "Premium",
+    "residential": "Residenciales",
+    "commercial": "Comerciales",
+    "company": "Empresa",
+    "aboutUs": "Sobre Nosotros",
+    "contact": "Contacto",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookiePolicy": "Política de Cookies",
+    "cookiePreferences": "Preferencias de Cookies"
+  },
+  "common": {
+    "perMonth": "/mes",
+    "sale": "Venta",
+    "rent": "Alquiler",
+    "bedrooms": "habitaciones",
+    "bathrooms": "baños",
+    "area": "área",
+    "images": "imágenes",
+    "available": "Disponible",
+    "notAvailable": "No Disponible"
+  },
+  "metadata": {
+    "home": {
+      "title": "SOMOS Properties - Propiedades en Panamá | Venta y Alquiler",
+      "description": "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler en las mejores ubicaciones."
+    }
+  }
+}

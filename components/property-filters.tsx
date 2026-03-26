@@ -124,17 +124,15 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
         <legend className="text-sm font-semibold text-[#333333] mb-2.5">Operación</legend>
         <div className="flex gap-2">
           {(["Venta", "Alquiler"] as const).map((op) => (
-            <>
-              <button
-                key={op}
-                type="button"
-                onClick={() => onFiltersChange({ operation: filters.operation === op ? undefined : op })}
-                className={pill(filters.operation === op)}
-                aria-pressed={filters.operation === op}
-              >
-                {op}
-              </button>
-            </>
+            <button
+              key={op}
+              type="button"
+              onClick={() => onFiltersChange({ operation: filters.operation === op ? undefined : op })}
+              className={pill(filters.operation === op)}
+              aria-pressed={filters.operation === op ? "true" : "false"}
+            >
+              {op}
+            </button>
           ))}
         </div>
       </fieldset>
@@ -146,17 +144,15 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
           {propertyTypes.map((type) => {
             const active = (filters.types || []).includes(type)
             return (
-              <>
-                <button
-                  key={type}
-                  type="button"
-                  onClick={() => handleTypeToggle(type)}
-                  className={pill(active)}
-                  aria-pressed={active}
-                >
-                  {type}
-                </button>
-              </>
+              <button
+                key={type}
+                type="button"
+                onClick={() => handleTypeToggle(type)}
+                className={pill(active)}
+                aria-pressed={active ? "true" : "false"}
+              >
+                {type}
+              </button>
             )
           })}
         </div>
@@ -169,17 +165,15 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
         </legend>
         <div className="grid grid-cols-2 gap-2">
           {pricePresets.map(({ label, min, max }) => (
-            <>
-              <button
-                key={label}
-                type="button"
-                onClick={() => handlePricePreset(min, max)}
-                className={pill(isPricePresetActive(min, max))}
-                aria-pressed={isPricePresetActive(min, max)}
-              >
-                {label}
-              </button>
-            </>
+            <button
+              key={label}
+              type="button"
+              onClick={() => handlePricePreset(min, max)}
+              className={pill(isPricePresetActive(min, max))}
+              aria-pressed={isPricePresetActive(min, max) ? "true" : "false"}
+            >
+              {label}
+            </button>
           ))}
         </div>
         <details className="mt-2 group">
@@ -216,19 +210,16 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
         <legend className="text-sm font-semibold text-[#333333] mb-2.5">Habitaciones</legend>
         <div className="flex gap-2">
           {[1, 2, 3, 4].map((num) => (
-            <>
-              {/* eslint-disable-next-line jsx-a11y/aria-proptypes */}
-              <button
-                key={num}
-                type="button"
-                onClick={() => onFiltersChange({ bedrooms: filters.bedrooms === num ? undefined : num })}
-                className={`flex-1 ${pill(filters.bedrooms === num)}`}
-                aria-pressed={filters.bedrooms === num ? "true" : "false"}
-                aria-label={`${num}${num === 4 ? " o más" : ""} habitaciones`}
-              >
-                {num === 4 ? "4+" : num}
-              </button>
-            </>
+            <button
+              key={num}
+              type="button"
+              onClick={() => onFiltersChange({ bedrooms: filters.bedrooms === num ? undefined : num })}
+              className={`flex-1 ${pill(filters.bedrooms === num)}`}
+              aria-pressed={filters.bedrooms === num ? "true" : "false"}
+              aria-label={`${num}${num === 4 ? " o más" : ""} habitaciones`}
+            >
+              {num === 4 ? "4+" : num}
+            </button>
           ))}
         </div>
       </fieldset>

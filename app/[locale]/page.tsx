@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { getTranslations } from 'next-intl/server'
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import PropertyGrid from "@/components/property-grid"
@@ -9,18 +10,21 @@ import { SchemaMarkupMultiple } from "@/components/schema-markup"
 import type { Property } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { formatPrice } from "@/lib/formatters"
-import { createMetadata } from "@/lib/seo"
 import { isPremium } from "@/lib/utils-premium"
 import { getOrganizationSchema, getCollectionSchema } from "@/lib/schema"
 
-export const metadata = createMetadata({
-  title: "SOMOS Properties - Propiedades en Panamá | Venta y Alquiler",
-  description:
-    "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler en las mejores ubicaciones.",
-  path: "/",
-})
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.home' })
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
-export default function HomePage() {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
   const allProperties: Property[] = allPropertiesData
   
   // Filtrar propiedades con precio definido
@@ -45,6 +49,8 @@ export default function HomePage() {
   const featuredProperties = propertiesWithPrice
     .filter((p) => p.featured && !premiumIds.has(p.id))
     .slice(0, 6)
+
+  const t = await getTranslations('home')
 
   return (
     <>
@@ -82,22 +88,22 @@ export default function HomePage() {
         
         {/* Contenido del Hero - Versión simplificada */}
         <div className="container-custom text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg leading-tight max-w-4xl mx-auto">Propiedades que transforman vidas</h1>
-          <p className="text-lg md:text-xl mb-10 text-white/95 drop-shadow-md max-w-2xl mx-auto font-light">Tu asesor inmobiliario de confianza en Panamá</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg leading-tight max-w-4xl mx-auto">{t('hero.title')}</h1>
+          <p className="text-lg md:text-xl mb-10 text-white/95 drop-shadow-md max-w-2xl mx-auto font-light">{t('hero.subtitle')}</p>
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/premium"
+              href={`/${locale}/premium`}
               className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-xl"
             >
-              Ver Premium
+              {t('hero.viewPremium')}
             </Link>
             <Link
-              href="/propiedades"
+              href={`/${locale}/propiedades`}
               className="inline-block bg-white text-[#3898EC] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-xl"
             >
-              Ver Propiedades
+              {t('hero.viewProperties')}
             </Link>
           </div>
         </div>
@@ -114,17 +120,17 @@ export default function HomePage() {
           <div className="container-custom relative z-10">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-4 py-2 rounded-full text-sm font-bold mb-4">
-                <span>PROPIEDADES PREMIUM</span>
+                <span>{t('premium.badge')}</span>
               </div>
-              <h2 className="text-4xl font-bold text-white mb-4">Vive la Excelencia</h2>
-              <p className="text-lg text-white/80">Propiedades exclusivas con ubicaciones privilegiadas y acabados de lujo</p>
+              <h2 className="text-4xl font-bold text-white mb-4">{t('premium.title')}</h2>
+              <p className="text-lg text-white/80">{t('premium.subtitle')}</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {premiumProperties.map((property) => (
                 <Link
                   key={property.id}
-                  href={`/propiedad/${property.id}`}
+                  href={`/${locale}/propiedad/${property.id}`}
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 hover:border-[#d4af37] transition-all"
                 >
                   <div className="relative h-48">
@@ -139,7 +145,7 @@ export default function HomePage() {
                     />
                     <div className="absolute top-3 right-3">
                       <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-3 py-1 rounded-full text-xs font-bold">
-                        PREMIUM
+                        {t('premium.premiumLabel')}
                       </span>
                     </div>
                   </div>
@@ -161,10 +167,10 @@ export default function HomePage() {
             
             <div className="text-center">
               <Link
-                href="/premium"
+                href={`/${locale}/premium`}
                 className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all"
               >
-                Ver Todas las Propiedades Premium
+                {t('premium.viewAll')}
               </Link>
             </div>
           </div>
@@ -175,77 +181,72 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#222222] mb-4">Propiedades Destacadas</h2>
-            <p className="text-lg text-[#999999]">Descubre las mejores oportunidades del mercado inmobiliario</p>
+            <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('featured.title')}</h2>
+            <p className="text-lg text-[#999999]">{t('featured.subtitle')}</p>
           </div>
           <PropertyGrid properties={featuredProperties} />
           <div className="text-center mt-12">
             <Link
-              href="/propiedades"
+              href={`/${locale}/propiedades`}
               className="inline-block border-2 border-[#cccccc] text-[#333333] px-8 py-3 rounded-lg font-medium hover:bg-[#f3f3f3] transition-colors"
             >
-              Ver Todas las Propiedades
+              {t('featured.viewAll')}
             </Link>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-[#ebecec]">
+      <section className="py-20 bg-white">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#222222] mb-4">¿Por Qué Elegirnos?</h2>
-            <p className="text-lg text-[#999999]">Somos tu mejor opción para encontrar la propiedad perfecta</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.title')}</h2>
+            <p className="text-xl text-[#555555] max-w-2xl mx-auto">{t('whyChooseUs.subtitle')}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="text-center">
-              <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <OptimizedImage
-                  src="/images/icons/icon-security-3d.png"
-                  alt="Confianza y Seguridad"
-                  width={128}
-                  height={128}
-                  type="small"
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="text-center bg-[#f8f9fa] rounded-2xl p-8 transition-all hover:shadow-lg hover:-translate-y-1">
+              <div className="w-[336px] h-[336px] flex items-center justify-center mx-auto mb-6">
+                <img
+                  src="/images/icons/asesoria.svg"
+                  alt={t('whyChooseUs.advisory.title')}
+                  width={336}
+                  height={336}
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-semibold text-[#333333] mb-3">Confianza y Seguridad</h3>
-              <p className="text-[#999999] leading-relaxed">
-                Más de 15 años en el mercado inmobiliario panameño respaldándonos. Todas nuestras propiedades son
-                verificadas.
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.advisory.title')}</h3>
+              <p className="text-base text-[#555555] leading-relaxed">
+                {t('whyChooseUs.advisory.description')}
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <OptimizedImage
-                  src="/images/icons/icon-price-3d.png"
-                  alt="Mejores Precios"
-                  width={128}
-                  height={128}
-                  type="small"
+            <div className="text-center bg-[#f8f9fa] rounded-2xl p-8 transition-all hover:shadow-lg hover:-translate-y-1">
+              <div className="w-[336px] h-[336px] flex items-center justify-center mx-auto mb-6">
+                <img
+                  src="/images/icons/precio.svg"
+                  alt={t('whyChooseUs.prices.title')}
+                  width={336}
+                  height={336}
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-semibold text-[#333333] mb-3">Mejores Precios</h3>
-              <p className="text-[#999999] leading-relaxed">
-                Trabajamos directamente con propietarios para ofrecerte los mejores precios del mercado sin
-                intermediarios.
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.prices.title')}</h3>
+              <p className="text-base text-[#555555] leading-relaxed">
+                {t('whyChooseUs.prices.description')}
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6">
-                <OptimizedImage
-                  src="/images/icons/icon-support-3d.png"
-                  alt="Asesoría Personalizada"
-                  width={160}
-                  height={160}
-                  type="small"
+            <div className="text-center bg-[#f8f9fa] rounded-2xl p-8 transition-all hover:shadow-lg hover:-translate-y-1">
+              <div className="w-[336px] h-[336px] flex items-center justify-center mx-auto mb-6">
+                <img
+                  src="/images/icons/seguridad.svg"
+                  alt={t('whyChooseUs.security.title')}
+                  width={336}
+                  height={336}
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-semibold text-[#333333] mb-3">Asesoría Personalizada</h3>
-              <p className="text-[#999999] leading-relaxed">
-                Nuestro equipo de expertos te acompaña en cada paso del proceso hasta encontrar tu propiedad ideal.
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.security.title')}</h3>
+              <p className="text-base text-[#555555] leading-relaxed">
+                {t('whyChooseUs.security.description')}
               </p>
             </div>
           </div>
@@ -256,20 +257,20 @@ export default function HomePage() {
       <section className="py-20 bg-[#fafafa]">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#222222] mb-4">Contáctanos</h2>
-            <p className="text-lg text-[#999999]">Estamos aquí para ayudarte</p>
+            <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('contact.title')}</h2>
+            <p className="text-lg text-[#999999]">{t('contact.subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Formulario de Contacto General */}
             <div className="bg-white p-8 rounded-lg shadow-card">
-              <h3 className="text-2xl font-semibold text-[#222222] mb-2">Conoce tu próxima propiedad</h3>
-              <p className="text-[#999999] mb-6">Agenda tu cita</p>
+              <h3 className="text-2xl font-semibold text-[#222222] mb-2">{t('contact.formTitle')}</h3>
+              <p className="text-[#999999] mb-6">{t('contact.formSubtitle')}</p>
               <ContactForm compact propertyTitle="" /></div>
             
             {/* Formulario de Empleo */}
             <div className="bg-white p-8 rounded-lg shadow-card">
-              <h3 className="text-2xl font-semibold text-[#222222] mb-6">Únete a Nuestro Equipo</h3>
+              <h3 className="text-2xl font-semibold text-[#222222] mb-6">{t('contact.employmentTitle')}</h3>
               <EmploymentForm />
             </div>
           </div>

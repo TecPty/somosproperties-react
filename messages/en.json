@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "premium": "Premium",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "about": "About Us",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "Properties that transform lives",
+      "subtitle": "Your trusted real estate advisor in Panama",
+      "viewPremium": "View Premium",
+      "viewProperties": "View Properties"
+    },
+    "premium": {
+      "badge": "PREMIUM PROPERTIES",
+      "title": "Live Excellence",
+      "subtitle": "Exclusive properties with privileged locations and luxury finishes",
+      "viewAll": "View All Premium Properties",
+      "premiumLabel": "PREMIUM"
+    },
+    "featured": {
+      "title": "Featured Properties",
+      "subtitle": "Discover the best opportunities in the real estate market",
+      "viewAll": "View All Properties"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "subtitle": "Find your ideal property in less than 30 days with personalized consulting",
+      "advisory": {
+        "title": "Personalized Consulting",
+        "description": "Our team of certified experts accompanies you every step of the way until you find your ideal property. Service in Spanish and English."
+      },
+      "prices": {
+        "title": "Best Prices",
+        "description": "We work directly with property owners to offer you the best prices on the market. No hidden costs or extra commissions."
+      },
+      "security": {
+        "title": "Trust and Security",
+        "description": "5 years of experience since 2021 in the Panamanian real estate market. All our properties are verified with complete legal documentation."
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "We are here to help you",
+      "formTitle": "Discover your next property",
+      "formSubtitle": "Schedule your appointment",
+      "employmentTitle": "Join Our Team"
+    }
+  },
+  "footer": {
+    "properties": "Properties",
+    "premium": "Premium",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookiePolicy": "Cookie Policy",
+    "cookiePreferences": "Cookie Preferences"
+  },
+  "common": {
+    "perMonth": "/month",
+    "sale": "Sale",
+    "rent": "Rent",
+    "bedrooms": "bedrooms",
+    "bathrooms": "bathrooms",
+    "area": "area",
+    "images": "images",
+    "available": "Available",
+    "notAvailable": "Not Available"
+  },
+  "metadata": {
+    "home": {
+      "title": "SOMOS Properties - Properties in Panama | Sale and Rent",
+      "description": "Find your ideal property in Panama. Apartments and commercial spaces for sale and rent in the best locations."
+    }
+  }
+}

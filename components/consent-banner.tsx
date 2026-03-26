@@ -1,12 +1,6 @@
 "use client"
 
-import dynamic from "next/dynamic"
-
-// Carga dinámica del contenido del banner para evitar problemas de hidratación
-const ConsentBannerContent = dynamic(
-  () => import("@/components/consent-banner-content"),
-  { ssr: false }
-)
+import ConsentBannerContent from "@/components/consent-banner-content"
 
 export default function ConsentBanner() {
   return <ConsentBannerContent />

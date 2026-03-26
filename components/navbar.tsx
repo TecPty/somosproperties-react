@@ -1,6 +1,8 @@
 "use client"
 
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
+import { useParams } from 'next/navigation'
 import OptimizedImage from "@/components/optimized-image"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
@@ -11,6 +13,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
+  const params = useParams()
+  const locale = params.locale as string
+  const t = useTranslations('nav')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,40 +31,40 @@ export default function Navbar() {
   }, [pathname])
 
   const navLinks = [
-    { href: "/", label: "Inicio" },
-    { href: "/premium", label: "Premium" },
+    { href: `/${locale}`, label: t('home') },
+    { href: `/${locale}/premium`, label: t('premium') },
     {
-      href: "/residenciales",
-      label: "Residenciales",
+      href: `/${locale}/residenciales`,
+      label: t('residential'),
       children: [
-        { href: "/residenciales?search=Pacific%20Point", label: "Pacific Point" },
-        { href: "/residenciales?search=Kings%20Park", label: "Kings Park" },
-        { href: "/residenciales?search=Praderas%20de%20Arraijan", label: "Praderas de Arraijan" },
-        { href: "/residenciales?search=The%20Tower%20residences", label: "The Tower residences" },
-        { href: "/residenciales?search=Playa%20Escondida", label: "Playa Escondida" },
-        { href: "/residenciales?search=New%20West", label: "New West" },
+        { href: `/${locale}/residenciales?search=Pacific%20Point`, label: "Pacific Point" },
+        { href: `/${locale}/residenciales?search=Kings%20Park`, label: "Kings Park" },
+        { href: `/${locale}/residenciales?search=Praderas%20de%20Arraijan`, label: "Praderas de Arraijan" },
+        { href: `/${locale}/residenciales?search=The%20Tower%20residences`, label: "The Tower residences" },
+        { href: `/${locale}/residenciales?search=Playa%20Escondida`, label: "Playa Escondida" },
+        { href: `/${locale}/residenciales?search=New%20West`, label: "New West" },
       ],
     },
     {
-      href: "/comerciales",
-      label: "Comerciales",
+      href: `/${locale}/comerciales`,
+      label: t('commercial'),
       children: [
-        { href: "/comerciales?search=The%20Tower%20Business%20Plaza", label: "The Tower Business Plaza" },
-        { href: "/comerciales?search=Central%20Plaza%20de%20Arraijan", label: "Central Plaza de Arraijan" },
-        { href: "/comerciales?search=Sunset%20Strip", label: "Sunset Strip" },
-        { href: "/comerciales?search=Balboa%20Boutique", label: "Balboa Boutique" },
-        { href: "/comerciales?search=Plaza%20Los%20Guayacanes", label: "Plaza Los Guayacanes" },
-        { href: "/comerciales?search=Rali%20Business%20Center", label: "Rali Business Center" },
-        { href: "/comerciales?search=Evolution%20Tower", label: "Evolution Tower" },
-        { href: "/comerciales?search=Boulevard%20Plaza%20Costa%20Verde", label: "Boulevard Plaza Costa Verde" },
+        { href: `/${locale}/comerciales?search=The%20Tower%20Business%20Plaza`, label: "The Tower Business Plaza" },
+        { href: `/${locale}/comerciales?search=Central%20Plaza%20de%20Arraijan`, label: "Central Plaza de Arraijan" },
+        { href: `/${locale}/comerciales?search=Sunset%20Strip`, label: "Sunset Strip" },
+        { href: `/${locale}/comerciales?search=Balboa%20Boutique`, label: "Balboa Boutique" },
+        { href: `/${locale}/comerciales?search=Plaza%20Los%20Guayacanes`, label: "Plaza Los Guayacanes" },
+        { href: `/${locale}/comerciales?search=Rali%20Business%20Center`, label: "Rali Business Center" },
+        { href: `/${locale}/comerciales?search=Evolution%20Tower`, label: "Evolution Tower" },
+        { href: `/${locale}/comerciales?search=Boulevard%20Plaza%20Costa%20Verde`, label: "Boulevard Plaza Costa Verde" },
       ],
     },
-    { href: "/nosotros", label: "Nosotros" },
-    { href: "/contacto", label: "Contacto" },
+    { href: `/${locale}/nosotros`, label: t('about') },
+    { href: `/${locale}/contacto`, label: t('contact') },
   ]
 
   const isActive = (href: string) => {
-    if (href === "/") return pathname === "/"
+    if (href === `/${locale}`) return pathname === `/${locale}`
     return pathname.startsWith(href)
   }
 
@@ -75,7 +80,7 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href={`/${locale}`} className="flex items-center">
             <OptimizedImage
               src="/images/logo-somosproperties-250x250px-transparente.png"
               alt="SOMOS Properties"
@@ -132,17 +137,36 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={
-                    link.href === "/contacto"
+                    link.href === `/${locale}/contacto`
                       ? `inline-flex items-center px-4 py-2 rounded-lg bg-[#3898EC] text-white text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2`
                       : `text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded ${
                           isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
-                        } ${link.href === "/premium" ? "font-bold" : ""}`
+                        } ${link.href === `/${locale}/premium` ? "font-bold" : ""}`
                   }
                 >
                   {link.label}
                 </Link>
               )
             )}
+            
+            {/* Language Switcher */}
+            <div className="flex items-center gap-2 border-l border-[#e6e6e6] pl-6">
+              <Link
+                href={pathname.replace(`/${locale}`, '/es')}
+                className={`text-lg transition-opacity ${locale === 'es' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+                title="Español"
+              >
+                🇪🇸
+              </Link>
+              <span className="text-[#e6e6e6]">/</span>
+              <Link
+                href={pathname.replace(`/${locale}`, '/en')}
+                className={`text-lg transition-opacity ${locale === 'en' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+                title="English"
+              >
+                🇺🇸
+              </Link>
+            </div>
           </div>
 
           {/* Mobile: WhatsApp + Menu Button */}
@@ -220,6 +244,25 @@ export default function Navbar() {
                 </Link>
               )
             )}
+            
+            {/* Mobile Language Switcher */}
+            <div className="flex items-center gap-3 px-4 py-3 border-t border-[#eeeeee] mt-2">
+              <span className="text-sm text-[#666666]">{t('language')}:</span>
+              <Link
+                href={pathname.replace(`/${locale}`, '/es')}
+                className={`text-2xl transition-opacity ${locale === 'es' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+                title="Español"
+              >
+                🇪🇸
+              </Link>
+              <Link
+                href={pathname.replace(`/${locale}`, '/en')}
+                className={`text-2xl transition-opacity ${locale === 'en' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+                title="English"
+              >
+                🇺🇸
+              </Link>
+            </div>
           </div>
         )}
       </div>
