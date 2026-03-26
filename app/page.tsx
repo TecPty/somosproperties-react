@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import SearchBar from "@/components/search-bar"
 import PropertyGrid from "@/components/property-grid"
 import ContactForm from "@/components/contact-form"
 import EmploymentForm from "@/components/employment-form"
@@ -79,24 +78,26 @@ export default function HomePage() {
         </video>
         
         {/* Overlay oscuro para legibilidad */}
-        <div className="absolute inset-0 bg-black/40" /> 
-        {/* Contenido del Hero */}
+        <div className="absolute inset-0 bg-black/40" />
+        
+        {/* Contenido del Hero - Versión simplificada */}
         <div className="container-custom text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg">Encuentra tu Propiedad Ideal en Panamá</h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90 drop-shadow-lg">Apartamentos y locales. Venta y alquiler</p>
-          <SearchBar className="mx-auto mb-6" />
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg leading-tight max-w-4xl mx-auto">Propiedades que transforman vidas</h1>
+          <p className="text-lg md:text-xl mb-10 text-white/95 drop-shadow-md max-w-2xl mx-auto font-light">Tu asesor inmobiliario de confianza en Panamá</p>
+          
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/residenciales"
-              className="inline-block bg-[#3898EC] text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-[#0082f3] transition-colors shadow-lg"
+              href="/premium"
+              className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-xl"
             >
-              Ver Residenciales
+              Ver Premium
             </Link>
             <Link
-              href="/comerciales"
-              className="inline-block bg-white text-[#3898EC] px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-100 transition-colors shadow-lg"
+              href="/propiedades"
+              className="inline-block bg-white text-[#3898EC] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-xl"
             >
-              Ver Comerciales
+              Ver Propiedades
             </Link>
           </div>
         </div>

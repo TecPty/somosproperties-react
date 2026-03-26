@@ -4,6 +4,8 @@ import Link from "next/link"
 import OptimizedImage from "@/components/optimized-image"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
+import { MessageCircle } from "lucide-react"
+import { CONTACT } from "@/lib/config"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -143,29 +145,43 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden flex items-center justify-center w-11 h-11 rounded-xl text-[#333333] hover:bg-[#f3f3f3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
-            aria-expanded={isOpen}
-            aria-controls="mobile-menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
+          {/* Mobile: WhatsApp + Menu Button */}
+          <div className="md:hidden flex items-center gap-3">
+            {/* WhatsApp CTA */}
+            <a
+              href={`https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent("Hola, quiero información sobre propiedades en Panamá.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-11 h-11 bg-[#25D366] text-white rounded-full hover:bg-[#1ebe5d] transition-colors shadow-md"
+              aria-label="Contactar por WhatsApp"
             >
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+              <MessageCircle className="h-5 w-5" />
+            </a>
+            
+            {/* Mobile Menu Button */}
+            <button
+              className="flex items-center justify-center w-11 h-11 rounded-xl text-[#333333] hover:bg-[#f3f3f3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-expanded={isOpen ? "true" : "false"}
+              aria-controls="mobile-menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                {isOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

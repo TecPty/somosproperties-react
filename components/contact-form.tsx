@@ -42,13 +42,21 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
   const validateForm = (): boolean => {
     const newErrors: Partial<Record<keyof ContactFormData, string>> = {}
     if (!formData.name.trim()) newErrors.name = "El nombre es requerido"
-    if (!formData.email.trim()) {
-      newErrors.email = "El email es requerido"
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Email inválido"
+    
+    // En modo express (no compact), solo requerimos nombre y teléfono
+    if (!compact) {
+      if (!formData.phone.trim()) newErrors.phone = "El teléfono es requerido"
+    } else {
+      // En modo compact, validamos todos los campos
+      if (!formData.email.trim()) {
+        newErrors.email = "El email es requerido"
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+        newErrors.email = "Email inválido"
+      }
+      if (!formData.phone.trim()) newErrors.phone = "El teléfono es requerido"
+      if (!formData.message.trim()) newErrors.message = "El mensaje es requerido"
     }
-    if (!formData.phone.trim()) newErrors.phone = "El teléfono es requerido"
-    if (!formData.message.trim()) newErrors.message = "El mensaje es requerido"
+    
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
@@ -140,113 +148,68 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
 
       <p className="text-center text-xs text-[#aaaaaa]">Respuesta inmediata · Sin formularios</p>
 
-      {/* ── Secondary CTA: Email form toggle ── */}
+      {/* ── Divider ── */}
       {!compact && (
         <>
-          <button
-            type="button"
-            onClick={() => setShowForm((v) => !v)}
-            className="flex items-center justify-center gap-2 w-full py-3 border border-[#dddddd] rounded-xl text-sm text-[#555555] hover:border-[#3898EC] hover:text-[#3898EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
-            aria-expanded={showForm}
-          >
-            <Mail className="h-4 w-4" aria-hidden="true" />
-            Prefiero enviar un email
-            <ChevronDown
-              className={`h-4 w-4 transition-transform duration-200 ${showForm ? "rotate-180" : ""}`}
-              aria-hidden="true"
-            />
-          </button>
+          <div className="relative flex items-center gap-4 my-4">
+            <div className="flex-1 border-t border-gray-300" />
+            <span className="text-xs text-gray-500 font-medium uppercase">O déjanos tus datos</span>
+            <div className="flex-1 border-t border-gray-300" />
+          </div>
 
-          {showForm && (
-            <form onSubmit={handleSubmit} className="space-y-4 pt-2 animate-slide-up" noValidate>
-              {/* Name */}
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-[#333333] mb-1.5">
-                  Nombre *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={inputClass("name")}
-                  placeholder="Tu nombre"
-                  autoComplete="name"
-                />
-                {errors.name && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.name}</p>}
-              </div>
+          {/* ── Express Form: Always visible (2 campos) ── */}
+          <form onSubmit={handleSubmit} className="space-y-3" noValidate>
+            {/* Name */}
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className={inputClass("name")}
+                placeholder="Tu nombre"
+                autoComplete="name"
+              />
+              {errors.name && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.name}</p>}
+            </div>
 
-              {/* Email + Phone in 2-col on wider screens */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-[#333333] mb-1.5">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className={inputClass("email")}
-                    placeholder="tu@email.com"
-                    autoComplete="email"
-                  />
-                  {errors.email && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.email}</p>}
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-[#333333] mb-1.5">
-                    Teléfono *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className={inputClass("phone")}
-                    placeholder="+507 6789-0123"
-                    autoComplete="tel"
-                  />
-                  {errors.phone && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.phone}</p>}
-                </div>
-              </div>
+            {/* Phone */}
+            <div>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className={inputClass("phone")}
+                placeholder="Teléfono"
+                autoComplete="tel"
+              />
+              {errors.phone && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.phone}</p>}
+            </div>
 
-              {/* Message */}
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-[#333333] mb-1.5">
-                  Mensaje *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={compact ? 3 : 5}
-                  className={`${inputClass("message")} resize-none`}
-                  placeholder="Cuéntanos qué necesitas..."
-                />
-                {errors.message && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.message}</p>}
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="flex items-center justify-center gap-2 w-full min-h-[44px] bg-[#3898EC] text-white py-3 rounded-xl font-semibold text-sm hover:bg-[#0082f3] active:scale-[0.98] transition-all disabled:bg-[#eeeeee] disabled:text-[#aaaaaa] disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
-              >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-                    Enviando...
-                  </>
-                ) : (
-                  "Enviar Mensaje"
-                )}
-              </button>
-              {submitError && <p className="text-xs text-[#b00020]">{submitError}</p>}
-            </form>
-          )}
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="flex items-center justify-center gap-2 w-full min-h-[52px] bg-[#3898EC] text-white py-3.5 rounded-xl font-semibold hover:bg-[#0082f3] active:scale-[0.98] transition-all disabled:bg-[#eeeeee] disabled:text-[#aaaaaa] disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
+            >
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+                  Enviando...
+                </>
+              ) : (
+                "Recibir Información"
+              )}
+            </button>
+            
+            <p className="text-xs text-center text-gray-500">
+              Te contactamos en menos de 2 horas
+            </p>
+            
+            {submitError && <p className="text-xs text-center text-[#ea384c]">{submitError}</p>}
+          </form>
         </>
       )}
 

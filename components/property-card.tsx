@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState, useCallback } from "react"
-import { MapPin, Bed, Bath, Maximize2, Heart, Images } from "lucide-react"
+import { MapPin, Bed, Bath, Maximize2, Images } from "lucide-react"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { isPremium } from "@/lib/utils-premium"
@@ -16,16 +16,6 @@ interface PropertyCardProps {
 
 export default function PropertyCard({ property }: PropertyCardProps) {
   const [imageError, setImageError] = useState(false)
-  const [isFavorite, setIsFavorite] = useState(() => {
-    if (typeof window === "undefined") return false
-    try {
-      const saved = JSON.parse(localStorage.getItem("sp_favorites") || "[]") as number[]
-      return saved.includes(property.id)
-    } catch {
-      return false
-    }
-  })
-  const [heartAnimating, setHeartAnimating] = useState(false)
 
   const displayPrice =
     property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
@@ -50,45 +40,15 @@ export default function PropertyCard({ property }: PropertyCardProps) {
     trackGoogleAdsEvent("property_click", eventParams)
   }, [property])
 
-  const handleFavoriteToggle = useCallback((e: React.MouseEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
-    setHeartAnimating(true)
-    setTimeout(() => setHeartAnimating(false), 400)
-    setIsFavorite((prev) => {
-      const next = !prev
-      try {
-        const saved = JSON.parse(localStorage.getItem("sp_favorites") || "[]") as number[]
-        const updated = next ? [...saved, property.id] : saved.filter((id) => id !== property.id)
-        localStorage.setItem("sp_favorites", JSON.stringify(updated))
-      } catch { /* ignore */ }
-      return next
-    })
-  }, [property.id])
-
   return (
     <article className="relative bg-white rounded-xl border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full group">
-      {/* ── Favorite Button ── */}
-      <button
-        onClick={handleFavoriteToggle}
-        aria-label={isFavorite ? "Quitar de favoritos" : "Guardar en favoritos"}
-        aria-pressed={Boolean(isFavorite)}
-        role="button"
-        className={`absolute top-3 right-3 z-20 flex items-center justify-center w-10 h-10 rounded-full shadow-md transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2 ${
-          isFavorite ? "bg-white text-[#ea384c]" : "bg-white/80 text-[#aaaaaa] hover:text-[#ea384c]"
-        }`}
-      >
-        <Heart
-          className={`h-5 w-5 transition-all ${isFavorite ? "fill-[#ea384c]" : "fill-none"} ${heartAnimating ? "animate-heart-pop" : ""}`}
-          aria-hidden="true"
-        />
-      </button>
-
       <Link href={`/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={`Ver detalles: ${property.title}`}>
         <div className="relative h-56 overflow-hidden bg-[#f3f3f3]">    
-          {!imageError ? (
+          {/* CAMBIO: la imagen principal de la card es siempre la primera imagen de la propiedad */}
+          {/* RAZÓN: coherencia visual con el hero de la página de detalle */}
+          {!imageError && property.images && property.images.length > 0 ? (
             <OptimizedImage
-              src={property.thumbnail || property.image || "/placeholder.svg"}
+              src={property.images[0]}
               alt={property.title}
               type="propertyCard"
               fill
@@ -96,12 +56,6 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               blur
               onError={() => setImageError(true)}
               className="group-hover:scale-105 transition-transform duration-500"
-            />
-          ) : property.thumbnail ? (
-            <img
-              src={property.thumbnail}
-              alt={property.title}
-              className="object-cover w-full h-full rounded-md"
             />
           ) : (
             <div className="w-full h-full flex flex-col items-center justify-center bg-[#e5e7eb] gap-2 rounded-md border border-[#e0e0e0]">
@@ -161,9 +115,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       <div className="p-4 flex flex-col flex-grow">
         {/* Price — visual anchor */}
         <div className="flex items-baseline justify-between mb-2">
-          <p className={`text-xl font-bold leading-tight ${
-            property.operation === "Venta" ? "text-[#1f8f45]" : "text-[#0c6fdc]"
-          }`}>
+          <p className="text-3xl font-bold leading-tight text-[#3898EC]">
             {displayPrice}
           </p>
           {property.area > 0 && (
@@ -180,7 +132,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           </h3>
         </Link>
 
-        <div className="flex items-start gap-1 mb-3 text-[#888888] text-sm">
+        <div className="flex items-start gap-1.5 mb-3 text-[#555555] text-base font-medium">
           <MapPin className="h-4 w-4 text-[#ea384c] flex-shrink-0 mt-0.5" aria-hidden="true" />
           <span className="line-clamp-1">{property.location}</span>
         </div>
