@@ -2,7 +2,9 @@
 
 import Link from "next/link"
 import { useState, useCallback } from "react"
-import { MapPin, Bed, Bath, Maximize2, Images } from "lucide-react"
+import { MapPin, Bed, Bath, Maximize2, Images, MessageCircle } from "lucide-react"
+import { useParams } from "next/navigation"
+import { useTranslations } from "next-intl"
 import type { Property } from "@/lib/types"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { isPremium } from "@/lib/utils-premium"
@@ -15,11 +17,14 @@ interface PropertyCardProps {
 }
 
 export default function PropertyCard({ property }: PropertyCardProps) {
+  const params = useParams()
+  const locale = params.locale as string
+  const t = useTranslations('common')
   const [imageError, setImageError] = useState(false)
 
   const displayPrice =
-    property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
-  const statusLabel = property.status === "sold" ? "Vendido" : null
+    property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}${t('perMonth')}`
+  const statusLabel = property.status === "sold" ? t('sold') : null
   const isRented = property.status === "rented"
   const isPremiumProperty = isPremium(property)
   const imageCount = property.images?.length ?? 1
@@ -42,7 +47,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
   return (
     <article className="relative bg-white rounded-xl border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full group">
-      <Link href={`/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={`Ver detalles: ${property.title}`}>
+      <Link href={`/${locale}/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={`Ver detalles: ${property.title}`}>
         <div className="relative h-56 overflow-hidden bg-[#f3f3f3]">    
           {/* CAMBIO: la imagen principal de la card es siempre la primera imagen de la propiedad */}
           {/* RAZÓN: coherencia visual con el hero de la página de detalle */}
@@ -63,7 +68,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
                 <rect x="3" y="3" width="18" height="18" rx="4" stroke="#cccccc" strokeWidth="1.5" fill="#f3f3f3" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 15l2.5-3 2.5 3 3.5-4.5L21 18H3l5-6z" />
               </svg>
-              <span className="text-xs text-[#bbbbbb]">Sin imagen</span>
+              <span className="text-xs text-[#bbbbbb]">{t('noImage')}</span>
             </div>
           )}
 
@@ -99,8 +104,8 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           {/* Sold / Rented */}
           {isRented && (
             <div className="absolute inset-0 z-20 flex items-center justify-center">
-              <span className="rotate-[-15deg] border-[3px] border-[#ea384c] text-[#ea384c] text-xl font-black px-4 py-1 rounded opacity-75 select-none">
-                ALQUILADO
+              <span className="rotate-[-15deg] border-[3px] border-[#ea384c] text-[#ea384c] text-xl font-black px-4 py-1 rounded opacity-75 select-none uppercase">
+                {t('rented')}
               </span>
             </div>
           )}
@@ -126,7 +131,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           )}
         </div>
 
-        <Link href={`/propiedad/${property.id}`} onClick={handlePropertyClick} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded">
+        <Link href={`/${locale}/propiedad/${property.id}`} onClick={handlePropertyClick} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded">
           <h3 className="text-base font-semibold text-[#333333] mb-1.5 line-clamp-2 hover:text-[#3898EC] transition-colors leading-snug min-h-[2.6rem]">
             {property.title}
           </h3>
@@ -145,7 +150,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
                 <Bed className="h-4 w-4" aria-hidden="true" />
                 <span>
                   {property.bedrooms}{" "}
-                  <span className="hidden sm:inline">{property.bedrooms === 1 ? "hab." : "habs."}</span>
+                  <span className="hidden sm:inline">{property.bedrooms === 1 ? t('bed') : t('beds')}</span>
                 </span>
               </span>
             )}
@@ -154,7 +159,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
                 <Bath className="h-4 w-4" aria-hidden="true" />
                 <span>
                   {property.bathrooms}{" "}
-                  <span className="hidden sm:inline">{property.bathrooms === 1 ? "baño" : "baños"}</span>
+                  <span className="hidden sm:inline">{property.bathrooms === 1 ? t('bath') : t('baths')}</span>
                 </span>
               </span>
             )}
@@ -162,15 +167,14 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         )}
 
         {/* CTAs */}
-        <div className="mt-auto flex flex-col gap-2 pt-3 border-t border-[#f0f0f0]">
+        <div className="mt-auto pt-3 border-t border-[#f0f0f0]">
           <Link
-            href={`/propiedad/${property.id}`}
+            href={`/${locale}/propiedad/${property.id}`}
             className="flex items-center justify-center w-full min-h-[44px] bg-[#3898EC] text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
             onClick={handlePropertyClick}
           >
-            Ver Detalles
+            {t('viewDetails')}
           </Link>
-
         </div>
       </div>
     </article>

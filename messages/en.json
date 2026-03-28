@@ -13,11 +13,18 @@
       "title": "Properties that transform lives",
       "subtitle": "Your trusted real estate advisor in Panama",
       "viewPremium": "View Premium",
-      "viewProperties": "View Properties"
+      "viewProperties": "View Properties",
+      "whatsapp": "Chat with an Expert"
+    },
+    "stats": {
+      "experience": "15+ Years of Experience",
+      "families": "500+ Happy Families",
+      "sold": "1,200+ Properties Sold",
+      "trust": "Proven trust in the Panamanian market"
     },
     "premium": {
       "badge": "PREMIUM PROPERTIES",
-      "title": "Live Excellence",
+      "title": "Experience Excellence",
       "subtitle": "Exclusive properties with privileged locations and luxury finishes",
       "viewAll": "View All Premium Properties",
       "premiumLabel": "PREMIUM"
@@ -27,16 +34,36 @@
       "subtitle": "Discover the best opportunities in the real estate market",
       "viewAll": "View All Properties"
     },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "reviews": [
+        {
+          "name": "Charles Mendoza",
+          "role": "Investor",
+          "content": "Somos Properties' advisory was fundamental for my first investment in Panama. They know the market like no one else."
+        },
+        {
+          "name": "Ellen Rodriguez",
+          "role": "Owner",
+          "content": "I found the perfect apartment in less than 2 weeks. The process was transparent and very professional."
+        },
+        {
+          "name": "James Ortiz",
+          "role": "Buyer",
+          "content": "Excellent after-sales service. They accompanied me throughout the entire legal and paperwork process. Totally recommended."
+        }
+      ]
+    },
     "whyChooseUs": {
       "title": "Why Choose Us?",
-      "subtitle": "Find your ideal property in less than 30 days with personalized consulting",
+      "subtitle": "Find your ideal property in less than 30 days with personalized advisory",
       "advisory": {
-        "title": "Personalized Consulting",
-        "description": "Our team of certified experts accompanies you every step of the way until you find your ideal property. Service in Spanish and English."
+        "title": "Personalized Advisory",
+        "description": "Our team of certified experts accompanies you in every step of the process until you find your ideal property. Attention in Spanish and English."
       },
       "prices": {
         "title": "Best Prices",
-        "description": "We work directly with property owners to offer you the best prices on the market. No hidden costs or extra commissions."
+        "description": "We work directly with owners to offer you the best market prices. No hidden costs or extra commissions."
       },
       "security": {
         "title": "Trust and Security",
@@ -46,9 +73,32 @@
     "contact": {
       "title": "Contact Us",
       "subtitle": "We are here to help you",
-      "formTitle": "Discover your next property",
+      "formTitle": "Know your next property",
       "formSubtitle": "Schedule your appointment",
-      "employmentTitle": "Join Our Team"
+      "employmentTitle": "Join Our Team",
+      "namePlaceholder": "Your name",
+      "phonePlaceholder": "Phone number",
+      "emailPlaceholder": "Email address",
+      "messagePlaceholder": "What would you like to know?",
+      "submitButton": "Receive Information",
+      "submittingButton": "Sending...",
+      "successTitle": "Message Sent!",
+      "successSubtitle": "We will contact you shortly.",
+      "whatsappButton": "Inquire via WhatsApp",
+      "whatsappImmediate": "Immediate response · No forms",
+      "whatsappBodyProperty": "Hello, I am interested in the property: *{title}*. Is it available? I would like to receive more information.",
+      "whatsappBodyGeneral": "Hello, I would like to receive information about available properties.",
+      "dividerOr": "Or leave us your details",
+      "responseExpress": "We will contact you in less than 2 hours",
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email",
+        "phoneRequired": "Phone number is required",
+        "messageRequired": "Message is required",
+        "submitError": "The form could not be sent. Please try again.",
+        "networkError": "The form could not be sent. Check your connection."
+      }
     }
   },
   "footer": {
@@ -74,12 +124,23 @@
     "area": "area",
     "images": "images",
     "available": "Available",
-    "notAvailable": "Not Available"
+    "notAvailable": "Not Available",
+    "sold": "Sold",
+    "rented": "Rented",
+    "bed": "bed",
+    "beds": "beds",
+    "bath": "bath",
+    "baths": "baths",
+    "viewDetails": "View Details",
+    "noImage": "No image",
+    "whatsappQuery": "WhatsApp Query",
+    "whatsappPrompt": "Hello! How can we help you today?",
+    "urgency": "HIGH DEMAND: {count} views today"
   },
   "metadata": {
     "home": {
       "title": "SOMOS Properties - Properties in Panama | Sale and Rent",
-      "description": "Find your ideal property in Panama. Apartments and commercial spaces for sale and rent in the best locations."
+      "description": "Find your ideal property in Panama. Apartments and commercial premises for sale and rent in the best locations."
     }
   }
 }

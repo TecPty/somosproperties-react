@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation'
 import OptimizedImage from "@/components/optimized-image"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
-import { MessageCircle } from "lucide-react"
+import { MessageCircle, X, Menu, Phone } from "lucide-react"
 import { CONTACT } from "@/lib/config"
 
 export default function Navbar() {
@@ -16,6 +16,7 @@ export default function Navbar() {
   const params = useParams()
   const locale = params.locale as string
   const t = useTranslations('nav')
+  const tc = useTranslations('common')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -140,8 +141,8 @@ export default function Navbar() {
                     link.href === `/${locale}/contacto`
                       ? `inline-flex items-center px-4 py-2 rounded-lg bg-[#3898EC] text-white text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2`
                       : `text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded ${
-                          isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
-                        } ${link.href === `/${locale}/premium` ? "font-bold" : ""}`
+                        isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
+                      } ${link.href.includes('premium') ? "font-bold" : ""}`
                   }
                 >
                   {link.label}
@@ -169,19 +170,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Mobile: WhatsApp + Menu Button */}
-          <div className="md:hidden flex items-center gap-3">
-            {/* WhatsApp CTA */}
-            <a
-              href={`https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent("Hola, quiero información sobre propiedades en Panamá.")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-11 h-11 bg-[#25D366] text-white rounded-full hover:bg-[#1ebe5d] transition-colors shadow-md"
-              aria-label="Contactar por WhatsApp"
-            >
-              <MessageCircle className="h-5 w-5" />
-            </a>
-            
+          {/* Mobile: Menu Button Only */}
+          <div className="md:hidden flex items-center">
             {/* Mobile Menu Button */}
             <button
               className="flex items-center justify-center w-11 h-11 rounded-xl text-[#333333] hover:bg-[#f3f3f3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1"
@@ -238,7 +228,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`block py-3 px-4 text-[#222222] hover:bg-[#f3f3f3] hover:text-[#3898EC] transition-colors ${
                     isActive(link.href) ? "text-[#0082f3] bg-[#f3f3f3]" : ""
-                  } ${link.href === "/premium" ? "font-bold" : ""}`}
+                  } ${link.href.includes('premium') ? "font-bold" : ""}`}
                 >
                   {link.label}
                 </Link>
@@ -265,6 +255,22 @@ export default function Navbar() {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Floating WhatsApp Button */}
+      <div className="fixed bottom-6 right-6 z-[100] group flex flex-col items-end gap-3 pointer-events-none">
+        <div className="bg-white px-4 py-2 rounded-xl shadow-xl border border-gray-100 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 text-sm font-semibold text-gray-700 pointer-events-auto hidden md:block">
+          {tc('whatsappPrompt')}
+        </div>
+        <a
+          href={`https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent(tc('whatsappPrompt'))}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pointer-events-auto flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:bg-[#1ebe5d] hover:scale-110 active:scale-95 transition-all duration-300"
+          aria-label="WhatsApp"
+        >
+          <MessageCircle className="h-8 w-8 fill-white" />
+        </a>
       </div>
     </nav>
   )

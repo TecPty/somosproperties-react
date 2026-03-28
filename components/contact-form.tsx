@@ -3,6 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { MessageCircle, Mail, CheckCircle, Loader2, ChevronDown } from "lucide-react"
+import { useTranslations } from "next-intl"
 import type { ContactFormData } from "@/lib/types"
 import { trackGaEvent } from "@/lib/google-analytics"
 import { CONTACT } from "@/lib/config"
@@ -12,21 +13,22 @@ interface ContactFormProps {
   propertyTitle?: string
 }
 
-function buildWhatsAppUrl(propertyTitle?: string): string {
+function buildWhatsAppUrl(t: any, propertyTitle?: string): string {
   const body = propertyTitle
-    ? `Hola, me interesa la propiedad: *${propertyTitle}*. ¿Está disponible? Me gustaría recibir más información.`
-    : `Hola, me gustaría recibir información sobre propiedades disponibles.`
+    ? t('whatsappBodyProperty', { title: propertyTitle })
+    : t('whatsappBodyGeneral')
   return `https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent(body)}`
 }
 
 export default function ContactForm({ compact = false, propertyTitle }: ContactFormProps) {
+  const t = useTranslations('home.contact')
   const [showForm, setShowForm] = useState(false)
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
     phone: "",
-    consultationType: propertyTitle ? "Información sobre propiedad" : "",
-    message: propertyTitle ? `Me interesa ${propertyTitle}` : "",
+    consultationType: propertyTitle ? t('formTitle') : "",
+    message: propertyTitle ? `${t('messagePlaceholder')} ${propertyTitle}` : "",
     terms: true,
   })
 
@@ -41,20 +43,20 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
 
   const validateForm = (): boolean => {
     const newErrors: Partial<Record<keyof ContactFormData, string>> = {}
-    if (!formData.name.trim()) newErrors.name = "El nombre es requerido"
+    if (!formData.name.trim()) newErrors.name = t('errors.nameRequired')
     
     // En modo express (no compact), solo requerimos nombre y teléfono
     if (!compact) {
-      if (!formData.phone.trim()) newErrors.phone = "El teléfono es requerido"
+      if (!formData.phone.trim()) newErrors.phone = t('errors.phoneRequired')
     } else {
       // En modo compact, validamos todos los campos
       if (!formData.email.trim()) {
-        newErrors.email = "El email es requerido"
+        newErrors.email = t('errors.emailRequired')
       } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-        newErrors.email = "Email inválido"
+        newErrors.email = t('errors.emailInvalid')
       }
-      if (!formData.phone.trim()) newErrors.phone = "El teléfono es requerido"
-      if (!formData.message.trim()) newErrors.message = "El mensaje es requerido"
+      if (!formData.phone.trim()) newErrors.phone = t('errors.phoneRequired')
+      if (!formData.message.trim()) newErrors.message = t('errors.messageRequired')
     }
     
     setErrors(newErrors)
@@ -87,7 +89,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
         if (data?.errors) {
           setErrors((prev) => ({ ...prev, ...data.errors }))
         }
-        setSubmitError("No se pudo enviar el formulario. Intenta nuevamente.")
+        setSubmitError(t('errors.submitError'))
         return
       }
 
@@ -99,7 +101,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
         setShowForm(false)
       }, 4000)
     } catch {
-      setSubmitError("No se pudo enviar el formulario. Verifica tu conexión.")
+      setSubmitError(t('errors.networkError'))
     } finally {
       setIsSubmitting(false)
     }
@@ -125,8 +127,8 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
     return (
       <div className="bg-[#f0fdf4] border border-[#22c55e]/30 rounded-xl p-8 text-center">
         <CheckCircle className="h-12 w-12 text-[#22c55e] mx-auto mb-3" aria-hidden="true" />
-        <h3 className="text-lg font-semibold text-[#222222] mb-1">¡Mensaje Enviado!</h3>
-        <p className="text-sm text-[#555555]">Te contactaremos a la brevedad.</p>
+        <h3 className="text-lg font-semibold text-[#222222] mb-1">{t('successTitle')}</h3>
+        <p className="text-sm text-[#555555]">{t('successSubtitle')}</p>
       </div>
     )
   }
@@ -135,25 +137,25 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
     <div className="space-y-3">
       {/* ── Primary CTA: WhatsApp ── */}
       <a
-        href={buildWhatsAppUrl(propertyTitle)}
+        href={buildWhatsAppUrl(t, propertyTitle)}
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleWhatsApp}
         className="flex items-center justify-center gap-3 w-full min-h-[52px] bg-[#25D366] text-white rounded-xl font-semibold text-base hover:bg-[#1ebe5d] active:scale-[0.98] transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2"
-        aria-label={propertyTitle ? `Contactar por WhatsApp sobre ${propertyTitle}` : "Contactar por WhatsApp"}
+        aria-label={propertyTitle ? `${t('whatsappButton')} - ${propertyTitle}` : t('whatsappButton')}
       >
         <MessageCircle className="h-5 w-5 fill-white" aria-hidden="true" />
-        Consultar por WhatsApp
+        {t('whatsappButton')}
       </a>
 
-      <p className="text-center text-xs text-[#aaaaaa]">Respuesta inmediata · Sin formularios</p>
+      <p className="text-center text-xs text-[#aaaaaa]">{t('whatsappImmediate')}</p>
 
       {/* ── Divider ── */}
       {!compact && (
         <>
           <div className="relative flex items-center gap-4 my-4">
             <div className="flex-1 border-t border-gray-300" />
-            <span className="text-xs text-gray-500 font-medium uppercase">O déjanos tus datos</span>
+            <span className="text-xs text-gray-500 font-medium uppercase">{t('dividerOr')}</span>
             <div className="flex-1 border-t border-gray-300" />
           </div>
 
@@ -168,7 +170,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
                 value={formData.name}
                 onChange={handleChange}
                 className={inputClass("name")}
-                placeholder="Tu nombre"
+                placeholder={t('namePlaceholder')}
                 autoComplete="name"
               />
               {errors.name && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.name}</p>}
@@ -183,7 +185,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
                 value={formData.phone}
                 onChange={handleChange}
                 className={inputClass("phone")}
-                placeholder="Teléfono"
+                placeholder={t('phonePlaceholder')}
                 autoComplete="tel"
               />
               {errors.phone && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.phone}</p>}
@@ -197,15 +199,15 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
               {isSubmitting ? (
                 <>
                   <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-                  Enviando...
+                  {t('submittingButton')}
                 </>
               ) : (
-                "Recibir Información"
+                t('submitButton')
               )}
             </button>
             
             <p className="text-xs text-center text-gray-500">
-              Te contactamos en menos de 2 horas
+              {t('responseExpress')}
             </p>
             
             {submitError && <p className="text-xs text-center text-[#ea384c]">{submitError}</p>}
@@ -224,8 +226,8 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
                 value={formData.name}
                 onChange={handleChange}
                 className={inputClass("name")}
-                placeholder="Tu nombre"
-                aria-label="Nombre"
+                placeholder={t('namePlaceholder')}
+                aria-label={t('namePlaceholder')}
               />
               {errors.name && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.name}</p>}
             </div>
@@ -236,8 +238,8 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
                 value={formData.phone}
                 onChange={handleChange}
                 className={inputClass("phone")}
-                placeholder="+507 6789-0123"
-                aria-label="Teléfono"
+                placeholder={t('phonePlaceholder')}
+                aria-label={t('phonePlaceholder')}
               />
               {errors.phone && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.phone}</p>}
             </div>
@@ -248,8 +250,8 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
             onChange={handleChange}
             rows={3}
             className={`${inputClass("message")} resize-none`}
-            placeholder="¿Qué te gustaría saber?"
-            aria-label="Mensaje"
+            placeholder={t('messagePlaceholder')}
+            aria-label={t('messagePlaceholder')}
           />
           {errors.message && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.message}</p>}
           <button
@@ -258,7 +260,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
             className="flex items-center justify-center gap-2 w-full min-h-[44px] bg-[#3898EC] text-white py-3 rounded-xl font-semibold text-sm hover:bg-[#0082f3] active:scale-[0.98] transition-all disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
           >
             {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : null}
-            {isSubmitting ? "Enviando..." : "Enviar"}
+            {isSubmitting ? t('submittingButton') : t('submitButton')}
           </button>
           {submitError && <p className="text-xs text-[#b00020]">{submitError}</p>}
         </form>

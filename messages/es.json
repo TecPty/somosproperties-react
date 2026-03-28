@@ -13,7 +13,14 @@
       "title": "Propiedades que transforman vidas",
       "subtitle": "Tu asesor inmobiliario de confianza en Panamá",
       "viewPremium": "Ver Premium",
-      "viewProperties": "Ver Propiedades"
+      "viewProperties": "Ver Propiedades",
+      "whatsapp": "Hablar con un Experto"
+    },
+    "stats": {
+      "experience": "15+ Años de Experiencia",
+      "families": "500+ Familias Felices",
+      "sold": "1,200+ Propiedades Vendidas",
+      "trust": "Confianza comprobada en el mercado panameño"
     },
     "premium": {
       "badge": "PROPIEDADES PREMIUM",
@@ -26,6 +33,26 @@
       "title": "Propiedades Destacadas",
       "subtitle": "Descubre las mejores oportunidades del mercado inmobiliario",
       "viewAll": "Ver Todas las Propiedades"
+    },
+    "testimonials": {
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "reviews": [
+        {
+          "name": "Carlos Mendoza",
+          "role": "Inversionista",
+          "content": "La asesoría de Somos Properties fue fundamental para mi primera inversión en Panamá. Conocen el mercado como nadie."
+        },
+        {
+          "name": "Elena Rodríguez",
+          "role": "Propietaria",
+          "content": "Encontré el apartamento perfecto en menos de 2 semanas. El proceso fue transparente y muy profesional."
+        },
+        {
+          "name": "Diego Ortiz",
+          "role": "Comprador",
+          "content": "Excelente servicio post-venta. Me acompañaron en todo el proceso legal y de trámites. Totalmente recomendados."
+        }
+      ]
     },
     "whyChooseUs": {
       "title": "¿Por Qué Elegirnos?",
@@ -48,7 +75,30 @@
       "subtitle": "Estamos aquí para ayudarte",
       "formTitle": "Conoce tu próxima propiedad",
       "formSubtitle": "Agenda tu cita",
-      "employmentTitle": "Únete a Nuestro Equipo"
+      "employmentTitle": "Únete a Nuestro Equipo",
+      "namePlaceholder": "Tu nombre",
+      "phonePlaceholder": "Teléfono",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "¿Qué te gustaría saber?",
+      "submitButton": "Recibir Información",
+      "submittingButton": "Enviando...",
+      "successTitle": "¡Mensaje Enviado!",
+      "successSubtitle": "Te contactaremos a la brevedad.",
+      "whatsappButton": "Consultar por WhatsApp",
+      "whatsappImmediate": "Respuesta inmediata · Sin formularios",
+      "whatsappBodyProperty": "Hola, me interesa la propiedad: *{title}*. ¿Está disponible? Me gustaría recibir más información.",
+      "whatsappBodyGeneral": "Hola, me gustaría recibir información sobre propiedades disponibles.",
+      "dividerOr": "O déjanos tus datos",
+      "responseExpress": "Te contactamos en menos de 2 horas",
+      "errors": {
+        "nameRequired": "El nombre es requerido",
+        "emailRequired": "El email es requerido",
+        "emailInvalid": "Email inválido",
+        "phoneRequired": "El teléfono es requerido",
+        "messageRequired": "El mensaje es requerido",
+        "submitError": "No se pudo enviar el formulario. Intenta nuevamente.",
+        "networkError": "No se pudo enviar el formulario. Verifica tu conexión."
+      }
     }
   },
   "footer": {
@@ -74,7 +124,18 @@
     "area": "área",
     "images": "imágenes",
     "available": "Disponible",
-    "notAvailable": "No Disponible"
+    "notAvailable": "No Disponible",
+    "sold": "Vendido",
+    "rented": "Alquilado",
+    "bed": "hab.",
+    "beds": "habs.",
+    "bath": "baño",
+    "baths": "baños",
+    "viewDetails": "Ver Detalles",
+    "noImage": "Sin imagen",
+    "whatsappQuery": "Consultar por WhatsApp",
+    "whatsappPrompt": "¡Hola! ¿Cómo podemos ayudarte hoy?",
+    "urgency": "ALTA DEMANDA: {count} vistas hoy"
   },
   "metadata": {
     "home": {

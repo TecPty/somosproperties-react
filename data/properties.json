@@ -34,7 +34,7 @@
       "image": "/images/properties/pacific-point/hero/hero-1.webp",
       "pricePerMonth": null,
       "featured": false,
-      "status": "sold",
+      "status": "available",
       "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacífica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
@@ -100,7 +100,7 @@
       "image": "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.jpeg",
       "pricePerMonth": null,
       "featured": true,
-      "status": "sold",
+      "status": "available",
       "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacífica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025.",
       "amenities": [
         "Vista 180 al mar",
@@ -1272,11 +1272,11 @@
       "parkingSpots": 0,
       "area": 80,
       "builtYear": 2024,
-      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
+      "image": "/images/properties/plaza-guayacanes/hero/hero-1.webp",
       "images": [
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
+        "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
       "planos": [],
       "description": "Plaza Los Guayacanes es el nuevo centro comercial de La Chorrera, diseñado para ser el punto de encuentro comercial más importante de Panamá Oeste.\n\n42 locales comerciales distribuidos en 2 niveles, con metrajes variados para adaptarse a diferentes tipos de negocios y emprendimientos.\n\nCaracterísticas del Proyecto:\n—€¢ Ubicación estratégica en La Chorrera\n—€¢ Alto flujo vehicular y peatonal\n—€¢ Diseño moderno y funcional\n—€¢ Amplio estacionamiento para clientes\n—€¢ Fácil acceso desde la Panamericana\n\nLocales Disponibles:\n—€¢ Desde 40m² para tiendas pequeñas\n—€¢ Desde 80m² para comercios medianos\n—€¢ Desde 150m² para supermercados o gimnasios\n—€¢ Locales esquineros con doble vitrina\n\nPerfecto para:\n—€¢ Restaurantes y cafeterías\n—€¢ Tiendas de ropa y accesorios\n—€¢ Farmacias y ópticas\n—€¢ Bancos y financieras\n—€¢ Supermercados y minisupers\n—€¢ Gimnasios y centros de bienestar\n—€¢ Oficinas comerciales\n\nInvierta en el crecimiento de Panamá Oeste.",
@@ -1378,20 +1378,20 @@
       "parkingSpots": 0,
       "area": 90,
       "builtYear": 2024,
-      "image": "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
+      "image": "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
       "images": [
-        "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
-        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/fachada-torre-bella-vista.webp",
-        "/images/properties/sunset-strip/fachada-costado-estacionamiento.webp",
-        "/images/properties/sunset-strip/acceso-principal-estacionamiento.webp",
-        "/images/properties/sunset-strip/avenida-bella-vista-skyline.webp",
-        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp",
-        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp",
-        "/images/properties/sunset-strip/terraza-externa-jardin.webp",
-        "/images/properties/sunset-strip/totem-sunset-strip-logo.webp"
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/exterior/fachada-costado-estacionamiento.webp",
+        "/images/properties/sunset-strip/exterior/acceso-principal-estacionamiento.webp",
+        "/images/properties/sunset-strip/exterior/avenida-bella-vista-skyline.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
+        "/images/properties/sunset-strip/amenities/terraza-externa-jardin.webp",
+        "/images/properties/sunset-strip/amenities/totem-sunset-strip-logo.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp",
@@ -1443,21 +1443,21 @@
       "parkingSpots": 1,
       "area": 85,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/evolution-tower-frontal.webp",
+      "image": "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp",
       "images": [
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal-aereo.webp",
-        "/images/properties/evolution-tower/co-working-1.webp",
-        "/images/properties/evolution-tower/co-working-2.webp",
-        "/images/properties/evolution-tower/co-working-3.webp",
-        "/images/properties/evolution-tower/gym.webp",
-        "/images/properties/evolution-tower/piscina.webp",
-        "/images/properties/evolution-tower/terraza.webp",
-        "/images/properties/evolution-tower/pasillo.webp",
-        "/images/properties/evolution-tower/oficina.webp",
-        "/images/properties/evolution-tower/comedor.webp",
-        "/images/properties/evolution-tower/cocina.webp",
-        "/images/properties/evolution-tower/recepcion.webp"
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal-aereo.webp",
+        "/images/properties/evolution-tower/amenities/co-working-1.webp",
+        "/images/properties/evolution-tower/amenities/co-working-2.webp",
+        "/images/properties/evolution-tower/amenities/co-working-3.webp",
+        "/images/properties/evolution-tower/amenities/gym.webp",
+        "/images/properties/evolution-tower/amenities/piscina.webp",
+        "/images/properties/evolution-tower/amenities/terraza.webp",
+        "/images/properties/evolution-tower/gallery/pasillo.webp",
+        "/images/properties/evolution-tower/gallery/oficina.webp",
+        "/images/properties/evolution-tower/gallery/comedor.webp",
+        "/images/properties/evolution-tower/gallery/cocina.webp",
+        "/images/properties/evolution-tower/gallery/recepcion.webp"
       ],
       "planos": [],
       "description": "Evolution Tower es un proyecto residencial de vanguardia que redefine el concepto de vida urbana moderna en Ciudad de Panamá.\n\nTorre residencial con diseño arquitectónico contemporáneo, acabados premium y amenidades de Última generación para un estilo de vida sofisticado y confortable.\n\nUnidades Disponibles:\n—€¢ 1 habitación desde 55m²\n—€¢ 2 habitaciones desde 85m²\n—€¢ 3 habitaciones desde 110m²\n—€¢ Penthouses desde 150m²\n\nCaracterísticas de los Apartamentos:\n—€¢ Cocinas modulares europeas con tope de cuarzo\n—€¢ Electrodomésticos empotrados\n—€¢ Pisos en porcelanato de primera\n—€¢ Baños con acabados premium\n—€¢ Closets empotrados en todas las habitaciones\n—€¢ Balcones amplios con vistas panorámicas\n—€¢ Pre-instalación de aire acondicionado\n—€¢ Ventanas de piso a techo\n\nUbicación Estratégica:\n—€¢ Fácil acceso a principales avenidas\n—€¢ Cerca de centros comerciales\n—€¢ Colegios y universidades a minutos\n—€¢ Hospitales y clínicas cercanas\n—€¢ Restaurantes y entretenimiento\n—€¢ Transporte pÚblico accesible\n\nEvolucione a un mejor estilo de vida.",
@@ -2008,11 +2008,11 @@
       "title": "Plaza Los Guayacanes - Local 3",
       "pricePerMonth": 711.17,
       "area": 132.93,
-      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
+      "image": "/images/properties/plaza-guayacanes/hero/hero-1.webp",
       "images": [
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
+        "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
       "description": "Local 3 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 132.93 m2 en una sola planta. Alquiler $711.17/mes, deposito $664.65, mantenimiento $265.86/mes. Venta: $212,688.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
@@ -2064,11 +2064,11 @@
       "title": "Plaza Los Guayacanes - Local 4",
       "pricePerMonth": 721.71,
       "area": 134.9,
-      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
+      "image": "/images/properties/plaza-guayacanes/hero/hero-2.webp",
       "images": [
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
+        "/images/properties/plaza-guayacanes/hero/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
       "description": "Local 4 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 134.9 m² en una sola planta. Alquiler $721.71/mes, deposito $674.50, mantenimiento $269.80. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
@@ -2115,11 +2115,11 @@
       "title": "Plaza Los Guayacanes - Local 9",
       "pricePerMonth": 1636.56,
       "area": 305.9,
-      "image": "/images/properties/plaza-guayacanes/hero-3.webp",
+      "image": "/images/properties/plaza-guayacanes/hero/hero-3.webp",
       "images": [
-        "/images/properties/plaza-guayacanes/hero-3.webp",
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-2.webp"
+        "/images/properties/plaza-guayacanes/hero/hero-3.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-2.webp"
       ],
       "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m2 en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.8/mes. Venta: $489,440.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 2,
@@ -2171,11 +2171,11 @@
       "title": "Plaza Los Guayacanes - Local 16",
       "pricePerMonth": 410.55,
       "area": 76.74,
-      "image": "/images/properties/plaza-guayacanes/hero-1.webp",
+      "image": "/images/properties/plaza-guayacanes/hero/hero-1.webp",
       "images": [
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
+        "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
       "description": "Local 16 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 76.74 m² en una sola planta. Alquiler $410.55/mes, deposito $383.70, mantenimiento $153.48/mes. Venta: $122,784.00. Minimo 1 año de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz y gas. Promocion: cielo raso basico y camara de seguridad incluidos.",
       "bathrooms": 1,
@@ -2222,11 +2222,11 @@
       "title": "Plaza Los Guayacanes - Local 17",
       "pricePerMonth": 595.77,
       "area": 111.36,
-      "image": "/images/properties/plaza-guayacanes/hero-2.webp",
+      "image": "/images/properties/plaza-guayacanes/hero/hero-2.webp",
       "images": [
-        "/images/properties/plaza-guayacanes/hero-2.webp",
-        "/images/properties/plaza-guayacanes/hero-1.webp",
-        "/images/properties/plaza-guayacanes/hero-3.webp"
+        "/images/properties/plaza-guayacanes/hero/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
       "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.8, mantenimiento $222.72/mes. Venta: $186,176.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
       "bathrooms": 1,
@@ -2263,11 +2263,11 @@
       "title": "Sunset Strip - Local 409",
       "type": "Local",
       "area": 38,
-      "image": "/images/properties/sunset-strip/avenida-bella-vista-skyline.webp",
+      "image": "/images/properties/sunset-strip/exterior/avenida-bella-vista-skyline.webp",
       "images": [
-        "/images/properties/sunset-strip/avenida-bella-vista-skyline.webp",
-        "/images/properties/sunset-strip/fachada-torre-bella-vista.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp"
+        "/images/properties/sunset-strip/exterior/avenida-bella-vista-skyline.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp"
       ],
       "planos": [],
       "description": "Local 409 en Sunset Strip (Nivel 400), 38 m². Canon $700/mes. Ubicado en la placa superior con visibilidad sobre Vía Israel, ideal para oficinas boutique o servicios profesionales.",
@@ -2302,11 +2302,11 @@
       "title": "Sunset Strip - Local 11",
       "type": "Local",
       "area": 79,
-      "image": "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
-        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
@@ -2343,11 +2343,11 @@
       "title": "Sunset Strip - Local 10",
       "type": "Local",
       "area": 78,
-      "image": "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
-        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp",
-        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp"
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
@@ -2385,11 +2385,11 @@
       "title": "Sunset Strip - Local 14",
       "type": "Local",
       "area": 89,
-      "image": "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
+      "image": "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
       "images": [
-        "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp",
-        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
@@ -2427,11 +2427,11 @@
       "title": "Sunset Strip - Local 109",
       "type": "Local",
       "area": 162,
-      "image": "/images/properties/sunset-strip/lobby-recepcion-cowork.webp",
+      "image": "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
       "images": [
-        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp",
-        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-100.webp"
@@ -2469,11 +2469,11 @@
       "title": "Sunset Strip - Local 25",
       "type": "Local",
       "area": 114,
-      "image": "/images/properties/sunset-strip/fachada-costado-estacionamiento.webp",
+      "image": "/images/properties/sunset-strip/exterior/fachada-costado-estacionamiento.webp",
       "images": [
-        "/images/properties/sunset-strip/fachada-costado-estacionamiento.webp",
-        "/images/properties/sunset-strip/fachada-frontal-strip-mall.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp"
+        "/images/properties/sunset-strip/exterior/fachada-costado-estacionamiento.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
@@ -2510,11 +2510,11 @@
       "title": "Sunset Strip - Local 26",
       "type": "Local",
       "area": 98,
-      "image": "/images/properties/sunset-strip/terraza-externa-jardin.webp",
+      "image": "/images/properties/sunset-strip/amenities/terraza-externa-jardin.webp",
       "images": [
-        "/images/properties/sunset-strip/terraza-externa-jardin.webp",
-        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp"
+        "/images/properties/sunset-strip/amenities/terraza-externa-jardin.webp",
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-00.webp"
@@ -2551,11 +2551,11 @@
       "title": "Sunset Strip - Local 134",
       "type": "Local",
       "area": 47,
-      "image": "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
+      "image": "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
       "images": [
-        "/images/properties/sunset-strip/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/lobby-recepcion-cowork.webp",
-        "/images/properties/sunset-strip/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-100.webp"
@@ -2592,11 +2592,11 @@
       "title": "Sunset Strip - Oficina 206",
       "type": "Oficina",
       "area": 57,
-      "image": "/images/properties/sunset-strip/acceso-principal-estacionamiento.webp",
+      "image": "/images/properties/sunset-strip/exterior/acceso-principal-estacionamiento.webp",
       "images": [
-        "/images/properties/sunset-strip/acceso-principal-estacionamiento.webp",
-        "/images/properties/sunset-strip/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/pasillo-comercial-interior.webp"
+        "/images/properties/sunset-strip/exterior/acceso-principal-estacionamiento.webp",
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp"
       ],
       "planos": [
         "/images/properties/sunset-strip/nivel-200.webp"
@@ -2631,10 +2631,10 @@
       "parkingSpots": 1,
       "area": 153.25,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/co-working-1.webp",
+      "image": "/images/properties/evolution-tower/amenities/co-working-1.webp",
       "images": [
-        "/images/properties/evolution-tower/co-working-1.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/amenities/co-working-1.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2671,10 +2671,10 @@
       "parkingSpots": 1,
       "area": 100.91,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/co-working-2.webp",
+      "image": "/images/properties/evolution-tower/amenities/co-working-2.webp",
       "images": [
-        "/images/properties/evolution-tower/co-working-2.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/amenities/co-working-2.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2711,10 +2711,10 @@
       "parkingSpots": 1,
       "area": 103.08,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/co-working-3.webp",
+      "image": "/images/properties/evolution-tower/amenities/co-working-3.webp",
       "images": [
-        "/images/properties/evolution-tower/co-working-3.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/amenities/co-working-3.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2751,10 +2751,10 @@
       "parkingSpots": 1,
       "area": 100.82,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/cocina.webp",
+      "image": "/images/properties/evolution-tower/gallery/cocina.webp",
       "images": [
-        "/images/properties/evolution-tower/cocina.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/gallery/cocina.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2791,10 +2791,10 @@
       "parkingSpots": 1,
       "area": 136.39,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/comedor.webp",
+      "image": "/images/properties/evolution-tower/gallery/comedor.webp",
       "images": [
-        "/images/properties/evolution-tower/comedor.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/gallery/comedor.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2831,10 +2831,10 @@
       "parkingSpots": 1,
       "area": 181.68,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/escalera.webp",
+      "image": "/images/properties/evolution-tower/gallery/escalera.webp",
       "images": [
-        "/images/properties/evolution-tower/escalera.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/gallery/escalera.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2871,10 +2871,10 @@
       "parkingSpots": 1,
       "area": 153.17,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/gym.webp",
+      "image": "/images/properties/evolution-tower/amenities/gym.webp",
       "images": [
-        "/images/properties/evolution-tower/gym.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/amenities/gym.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2911,10 +2911,10 @@
       "parkingSpots": 1,
       "area": 99.38,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/oficina.webp",
+      "image": "/images/properties/evolution-tower/gallery/oficina.webp",
       "images": [
-        "/images/properties/evolution-tower/oficina.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/gallery/oficina.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2951,10 +2951,10 @@
       "parkingSpots": 1,
       "area": 101.64,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/pasillo.webp",
+      "image": "/images/properties/evolution-tower/gallery/pasillo.webp",
       "images": [
-        "/images/properties/evolution-tower/pasillo.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/gallery/pasillo.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -2991,10 +2991,10 @@
       "parkingSpots": 1,
       "area": 99.42,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/piscina.webp",
+      "image": "/images/properties/evolution-tower/amenities/piscina.webp",
       "images": [
-        "/images/properties/evolution-tower/piscina.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/amenities/piscina.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
@@ -3031,10 +3031,10 @@
       "parkingSpots": 1,
       "area": 151.32,
       "builtYear": 2024,
-      "image": "/images/properties/evolution-tower/terraza.webp",
+      "image": "/images/properties/evolution-tower/amenities/terraza.webp",
       "images": [
-        "/images/properties/evolution-tower/terraza.webp",
-        "/images/properties/evolution-tower/evolution-tower-frontal.webp"
+        "/images/properties/evolution-tower/amenities/terraza.webp",
+        "/images/properties/evolution-tower/hero/evolution-tower-frontal.webp"
       ],
       "planos": [],
       "description": "Oficina corporativa en Evolution Tower (Calle 50). Ocupación completa; se muestra para evidenciar portafolio y lista de espera.",
