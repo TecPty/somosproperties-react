@@ -143,6 +143,274 @@
     "home": {
       "title": "SOMOS Properties - Propiedades en Panamá | Venta y Alquiler",
       "description": "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler en las mejores ubicaciones."
+    },
+    "about": {
+      "title": "Nosotros - SOMOS Properties",
+      "description": "Somos un equipo de profesionales apasionados en bienes raíces, con 15 años en la industria."
+    },
+    "privacy": {
+      "title": "Política de Privacidad - SOMOS Properties",
+      "description": "Política de Privacidad de SOMOS Properties conforme a la Ley 81 de 2019 de Panamá."
+    },
+    "terms": {
+      "title": "Términos de Servicio - SOMOS Properties",
+      "description": "Términos y Condiciones de uso de SOMOS Properties."
+    }
+  },
+  "about": {
+    "hero": {
+      "tag": "Quiénes somos",
+      "title": "Sobre Nosotros",
+      "subtitle": "15 años de experiencia en bienes raíces en Panamá",
+      "talkBtn": "Hablemos",
+      "portfolioBtn": "Ver propiedades"
+    },
+    "whoWeAre": {
+      "title": "¿Quiénes Somos?",
+      "content": "Somos un equipo de profesionales apasionados en el mundo de bienes raíces, con una trayectoria de 15 años en la industria. Nos enorgullecemos de ser líderes en el mercado inmobiliario, brindando un servicio excepcional a nuestros clientes en cada paso del camino."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "content": "Ayudar a nuestros clientes a encontrar la propiedad ideal que se ajuste a sus necesidades y presupuesto, brindando asesoría personalizada y acompañamiento durante todo el proceso de compra, venta o alquiler."
+    },
+    "whyChooseUs": {
+      "title": "¿Por Qué Elegirnos?",
+      "features": [
+        {
+          "title": "Experiencia Comprobada",
+          "desc": "Más de 15 años en el mercado inmobiliario panameño nos respaldan."
+        },
+        {
+          "title": "Asesoría Personalizada",
+          "desc": "Te acompañamos en cada paso hasta encontrar tu propiedad ideal."
+        },
+        {
+          "title": "Propiedades Verificadas",
+          "desc": "Todas nuestras propiedades son rigurosamente verificadas."
+        },
+        {
+          "title": "Mejores Precios",
+          "desc": "Trabajamos directamente con propietarios para mejores precios."
+        }
+      ]
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "content": "Trabajamos con transparencia, velocidad y foco en resultados. Nuestro equipo combina experiencia local con procesos modernos para cerrar operaciones con seguridad y confianza.",
+      "bullets": [
+        "Transparencia y comunicación constante.",
+        "Velocidad de respuesta y gestión completa.",
+        "Cobertura en residencial y comercial.",
+        "Equipo dedicado a cada propiedad."
+      ],
+      "callBtn": "Agenda una llamada",
+      "portfolioBtn": "Ver portafolio"
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 11 de marzo de 2026",
+    "sections": {
+      "1": {
+        "title": "1. Introducción",
+        "p1": "SOMOS Properties (\"nosotros\", \"nuestro\" o \"la Empresa\") respeta tu privacidad y se compromete a proteger tus datos personales. Esta Política de Privacidad explica cómo recopilamos, utilizamos, divulgamos y salvaguardamos tus datos cuando visitas nuestro sitio web ",
+        "p2": " (el \"Sitio\").",
+        "lawText": "Cumplimos con la Ley 81 de 2019 sobre la Protección de Datos Personales (República de Panamá) y regulaciones internacionales de protección de datos."
+      },
+      "2": {
+        "title": "2. Datos que Recopilamos",
+        "sub1": "2.1 Información que nos proporcionas directamente:",
+        "list1": [
+          "Nombre, email, teléfono y dirección (a través de formularios de contacto)",
+          "Preferencias de propiedades e intereses inmobiliarios",
+          "Mensajes y consultas enviados a través del formulario de contacto",
+          "Datos de solicitud de empleo (si aplica)"
+        ],
+        "sub2": "2.2 Información recopilada automáticamente:",
+        "list2": [
+          "Cookies y tecnologías similares: Información sobre tu navegador, sistema operativo, URL de referencia y páginas visitadas",
+          "Google Analytics: Datos sobre comportamiento de navegación (sujeto a consentimiento)",
+          "Facebook Pixel: Información sobre conversiones y comportamiento (sujeto a consentimiento)",
+          "Dirección IP: Con fines de seguridad y análisis"
+        ]
+      },
+      "3": {
+        "title": "3. Cómo Utilizamos tus Datos",
+        "list": [
+          "Responder a tus consultas y solicitudes de información",
+          "Enviar actualizaciones sobre propiedades, promociones y ofertas especiales",
+          "Mejorar la experiencia del usuario y personalizar el contenido",
+          "Analizar tendencias y optimizar el sitio web",
+          "Cumplir obligaciones legales y resolver disputas",
+          "Prevenir fraude y actividades ilícitas"
+        ]
+      },
+      "4": {
+        "title": "4. Base Legal (Ley 81 de 2019)",
+        "intro": "El tratamiento de tus datos personales se basa en:",
+        "list": [
+          "Consentimiento: Que proporcionas al aceptar esta política y nuestro banner de cookies",
+          "Ejecución de contrato: Cuando solicitas información sobre propiedades",
+          "Cumplimiento de obligación legal: Según leyes panameñas aplicables",
+          "Interés legítimo: Mejorar nuestros servicios y experiencia del usuario"
+        ]
+      },
+      "5": {
+        "title": "5. Compartición de Datos",
+        "intro": "No vendemos, alquilamos ni compartimos tus datos personales con terceros, excepto:",
+        "list": [
+          "Proveedores de servicios (email, hosting, análisis) bajo acuerdos confidenciales",
+          "Agentes inmobiliarios asociados (solo si lo solicitas explícitamente)",
+          "Requisitos legales o regulatorios de autoridades panameñas",
+          "Protección de derechos, privacidad y seguridad"
+        ]
+      },
+      "6": {
+        "title": "6. Cookies y Tecnologías de Seguimiento",
+        "intro": "Utilizamos cookies para mejorar tu experiencia. Nuestro",
+        "link": "banner de consentimiento",
+        "outro": "permite personalizar tu experiencia:",
+        "list": [
+          "Cookies necesarias: Funcionamiento del sitio (sin consentimiento requerido)",
+          "Cookies analíticas: Google Analytics (consentimiento requerido)",
+          "Cookies de marketing: Facebook Pixel, TikTok Pixel (consentimiento requerido)"
+        ]
+      },
+      "7": {
+        "title": "7. Tus Derechos (Ley 81 de 2019)",
+        "intro": "Tienes derecho a:",
+        "list": [
+          "Acceso: Solicitar copia de tus datos personales",
+          "Rectificación: Corregir información inexacta",
+          "Cancelación: Solicitar eliminación bajo ciertas circunstancias",
+          "Oposición: Objetar el procesamiento de tus datos",
+          "Portabilidad: Recibir tus datos en formato estructurado"
+        ],
+        "contactIntro": "Para ejercer estos derechos, contacta a "
+      },
+      "8": {
+        "title": "8. Seguridad de Datos",
+        "intro": "Implementamos medidas de seguridad técnicas, administrativas y físicas para proteger tus datos:",
+        "list": [
+          "Cifrado HTTPS en todas las transmisiones",
+          "Firewalls y sistemas de detección de intrusiones",
+          "Acceso restringido a información personal",
+          "Capacitación regular del personal en privacidad"
+        ],
+        "disclaimer": "Sin embargo, ningún sistema es 100% seguro. No podemos garantizar seguridad absoluta."
+      },
+      "9": {
+        "title": "9. Retención de Datos",
+        "list": [
+          "Datos de contacto: Mientras mantengas interés en nuestros servicios (máx. 2 años sin contacto)",
+          "Datos analíticos: 26 meses (configuración estándar de Google Analytics)",
+          "Cookies: Según configuración del navegador (típicamente 1-2 años)"
+        ]
+      },
+      "10": {
+        "title": "10. Cambios a Esta Política",
+        "content": "Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos sobre cambios significativos publicando la política actualizada en el Sitio. La fecha de \"Última actualización\" será revisada para reflejar cualquier cambio."
+      },
+      "11": {
+        "title": "11. Contacto",
+        "intro": "Si tienes preguntas sobre esta Política de Privacidad o nuestras prácticas de privacidad:",
+        "emailLabel": "Email:",
+        "privacyLabel": "Privacidad:",
+        "phoneLabel": "Teléfono:",
+        "locationLabel": "Ubicación:"
+      }
+    }
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: 11 de marzo de 2026",
+    "sections": {
+      "1": {
+        "title": "1. Aceptación de Términos",
+        "p1": "Al acceder y usar este sitio web (",
+        "p2": "), aceptas estar vinculado por estos Términos de Servicio. Si no estás de acuerdo con alguna parte, por favor no uses el Sitio."
+      },
+      "2": {
+        "title": "2. Licencia de Uso",
+        "intro": "Se te otorga una licencia limitada, no exclusiva y revocable para usar este Sitio únicamente para fines personales y no comerciales. No puedes:",
+        "list": [
+          "Reproducir, distribuir o transmitir contenido sin autorización",
+          "Usar herramientas de scraping o bots para acceder al Sitio",
+          "Modificar, traducir o crear obras derivadas del contenido",
+          "Intentar obtener acceso no autorizado a sistemas o redes",
+          "Usar el Sitio para actividades ilegales o fraudulentas"
+        ]
+      },
+      "3": {
+        "title": "3. Propiedad Intelectual",
+        "content": "Todo contenido del Sitio (textos, imágenes, gráficos, logos, videos) es propiedad de SOMOS Properties o sus proveedores de contenido y está protegido por leyes de derechos de autor."
+      },
+      "4": {
+        "title": "4. Exactitud de Información",
+        "intro": "Nos esforzamos por mantener la información sobre propiedades precisa y actualizada. Sin embargo:",
+        "list": [
+          "No garantizamos que toda la información sea completamente precisa o actualizada",
+          "Los precios, disponibilidad y características pueden cambiar sin previo aviso",
+          "Recomendamos verificar información directamente con nuestros agentes"
+        ]
+      },
+      "5": {
+        "title": "5. Datos de Contacto y Formularios",
+        "intro": "Al enviar el formulario de contacto, aceptas:",
+        "list": [
+          "Proporcionar información precisa y completa",
+          "Que SOMOS Properties use tus datos para responder y seguimiento",
+          "La política de privacidad y cookies de SOMOS Properties"
+        ]
+      },
+      "6": {
+        "title": "6. Limitación de Responsabilidad",
+        "disclaimer": "SOMOS PROPERTIES SE PROPORCIONA \"TAL CUAL\" SIN GARANTÍAS, EXPRESAS O IMPLÍCITAS.",
+        "intro": "En la máxima medida permitida por la ley, SOMOS Properties no es responsable por:",
+        "list": [
+          "Daños directos, indirectos, incidentales, o consecuentes",
+          "Pérdida de datos, ingresos o ganancias",
+          "Interrupciones del Sitio o errores técnicos",
+          "Contenido de terceros o enlaces externos"
+        ]
+      },
+      "7": {
+        "title": "7. Enlaces Externos",
+        "content": "El Sitio puede contener enlaces a sitios web de terceros. SOMOS Properties no es responsable por el contenido, precisión o prácticas de privacidad de estos sitios. Accedes a ellos por tu propia cuenta y riesgo."
+      },
+      "8": {
+        "title": "8. Conducta del Usuario",
+        "intro": "Te comprometes a no usar el Sitio para:",
+        "list": [
+          "Acosar, intimidar o difamar a personas u organizaciones",
+          "Distribuir contenido difamatorio, obsceno o ilegal",
+          "Introducir virus, malware u otros códigos maliciosos",
+          "Espamear o publicar contenido no solicitado"
+        ]
+      },
+      "9": {
+        "title": "9. Indemnización",
+        "intro": "Aceptas indemnizar y eximir a SOMOS Properties de cualquier reclamo, daño o gasto (incluyendo honorarios de abogados) derivado de:",
+        "list": [
+          "Tu violación de estos Términos",
+          "Tu uso del Sitio de manera ilegal",
+          "Violación de derechos de terceros"
+        ]
+      },
+      "10": {
+        "title": "10. Modificación de Términos",
+        "content": "SOMOS Properties se reserva el derecho de modificar estos Términos en cualquier momento. Los cambios serán efectivos cuando se publiquen en el Sitio."
+      },
+      "11": {
+        "title": "11. Ley Aplicable",
+        "content": "Estos Términos se rigen por las leyes de la República de Panamá. Cualquier disputa será resuelta en los juzgados competentes de Panamá."
+      },
+      "12": {
+        "title": "12. Contacto",
+        "intro": "Para preguntas sobre estos Términos:",
+        "emailLabel": "Email:",
+        "phoneLabel": "Teléfono:"
+      }
     }
   }
 }

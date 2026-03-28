@@ -1,134 +1,162 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Link from "next/link"
+import { getTranslations } from "next-intl/server"
 
-export const metadata = {
-  title: "Política de Privacidad - SOMOS Properties",
-  description: "Política de Privacidad de SOMOS Properties conforme a la Ley 81 de 2019 de Panamá.",
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.privacy' })
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
 }
 
-const lastUpdated = "11 de marzo de 2026"
+export default async function PrivacidadPage() {
+  const t = await getTranslations('privacy')
 
-export default function PrivacidadPage() {
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-white py-16">
         <div className="container-custom max-w-4xl">
           <div className="mb-12">
-            <h1 className="text-4xl font-bold text-[#222222] mb-2">Política de Privacidad</h1>
-            <p className="text-[#999999]">Última actualización: {lastUpdated}</p>
+            <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>
+            <p className="text-[#999999]">{t('lastUpdated')}</p>
           </div>
 
           <div className="prose prose-sm max-w-none text-[#555555] space-y-6">
             {/* Introducción */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">1. Introducción</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.1.title')}</h2>
               <p>
-                SOMOS Properties ("nosotros", "nuestro" o "la Empresa") respeta tu privacidad y se compromete a 
-                proteger tus datos personales. Esta Política de Privacidad explica cómo recopilamos, utilizamos, 
-                divulgamos y salvaguardamos tus datos cuando visitas nuestro sitio web 
+                {t('sections.1.p1')}
                 <Link href="/" className="text-[#3898EC] hover:underline"> www.somosproperties.com</Link> 
-                (el "Sitio").
+                {t('sections.1.p2')}
               </p>
               <p className="mt-3 text-sm font-semibold text-[#333333]">
-                Cumplimos con la <strong>Ley 81 de 2019 sobre la Protección de Datos Personales</strong> (República de Panamá) 
-                y regulaciones internacionales de protección de datos.
+                {t('sections.1.lawText')}
               </p>
             </section>
 
             {/* Datos que recopilamos */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">2. Datos que Recopilamos</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.2.title')}</h2>
               
-              <h3 className="text-lg font-semibold text-[#333333] mb-2">2.1 Información que nos proporcionas directamente:</h3>
+              <h3 className="text-lg font-semibold text-[#333333] mb-2">{t('sections.2.sub1')}</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Nombre, email, teléfono y dirección (a través de formularios de contacto)</li>
-                <li>Preferencias de propiedades e intereses inmobiliarios</li>
-                <li>Mensajes y consultas enviados a través del formulario de contacto</li>
-                <li>Datos de solicitud de empleo (si aplica)</li>
+                {[0, 1, 2, 3].map((i) => (
+                  <li key={i}>{t(`sections.2.list1.${i}`)}</li>
+                ))}
               </ul>
 
-              <h3 className="text-lg font-semibold text-[#333333] mb-2 mt-4">2.2 Información recopilada automáticamente:</h3>
+              <h3 className="text-lg font-semibold text-[#333333] mb-2 mt-4">{t('sections.2.sub2')}</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Cookies y tecnologías similares:</strong> Información sobre tu navegador, sistema operativo, URL de referencia y páginas visitadas</li>
-                <li><strong>Google Analytics:</strong> Datos sobre comportamiento de navegación (sujeto a consentimiento)</li>
-                <li><strong>Facebook Pixel:</strong> Información sobre conversiones y comportamiento (sujeto a consentimiento)</li>
-                <li><strong>Dirección IP:</strong> Con fines de seguridad y análisis</li>
+                {[0, 1, 2, 3].map((i) => {
+                  const item = t(`sections.2.list2.${i}`)
+                  const [boldPart, rest] = item.split(': ')
+                  return (
+                    <li key={i}>
+                      {rest ? (
+                        <><strong>{boldPart}:</strong> {rest}</>
+                      ) : (
+                        item
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </section>
 
             {/* Uso de datos */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">3. Cómo Utilizamos tus Datos</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.3.title')}</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Responder a tus consultas y solicitudes de información</li>
-                <li>Enviar actualizaciones sobre propiedades, promociones y ofertas especiales</li>
-                <li>Mejorar la experiencia del usuario y personalizar el contenido</li>
-                <li>Analizar tendencias y optimizar el sitio web</li>
-                <li>Cumplir obligaciones legales y resolver disputas</li>
-                <li>Prevenir fraude y actividades ilícitas</li>
+                {[0, 1, 2, 3, 4, 5].map((i) => (
+                  <li key={i}>{t(`sections.3.list.${i}`)}</li>
+                ))}
               </ul>
             </section>
 
             {/* Base legal */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">4. Base Legal (Ley 81 de 2019)</h2>
-              <p>
-                El tratamiento de tus datos personales se basa en:
-              </p>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.4.title')}</h2>
+              <p>{t('sections.4.intro')}</p>
               <ul className="list-disc pl-6 space-y-2 mt-3">
-                <li><strong>Consentimiento:</strong> Que proporcionas al aceptar esta política y nuestro banner de cookies</li>
-                <li><strong>Ejecución de contrato:</strong> Cuando solicitas información sobre propiedades</li>
-                <li><strong>Cumplimiento de obligación legal:</strong> Según leyes panameñas aplicables</li>
-                <li><strong>Interés legítimo:</strong> Mejorar nuestros servicios y experiencia del usuario</li>
+                {[0, 1, 2, 3].map((i) => {
+                  const item = t(`sections.4.list.${i}`)
+                  const [boldPart, rest] = item.split(': ')
+                  return (
+                    <li key={i}>
+                      {rest ? (
+                        <><strong>{boldPart}:</strong> {rest}</>
+                      ) : (
+                        item
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </section>
 
             {/* Compartición de datos */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">5. Compartición de Datos</h2>
-              <p>
-                No vendemos, alquilamos ni compartimos tus datos personales con terceros, excepto:
-              </p>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.5.title')}</h2>
+              <p>{t('sections.5.intro')}</p>
               <ul className="list-disc pl-6 space-y-2 mt-3">
-                <li>Proveedores de servicios (email, hosting, análisis) bajo acuerdos confidenciales</li>
-                <li>Agentes inmobiliarios asociados (solo si lo solicitas explícitamente)</li>
-                <li>Requisitos legales o regulatorios de autoridades panameñas</li>
-                <li>Protección de derechos, privacidad y seguridad</li>
+                {[0, 1, 2, 3].map((i) => (
+                  <li key={i}>{t(`sections.5.list.${i}`)}</li>
+                ))}
               </ul>
             </section>
 
             {/* Cookies y tracking */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">6. Cookies y Tecnologías de Seguimiento</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.6.title')}</h2>
               <p>
-                Utilizamos cookies para mejorar tu experiencia. Nuestro 
-                <Link href="/politica-cookies" className="text-[#3898EC] hover:underline"> banner de consentimiento</Link> 
-                {" "}permite personalizar tu experiencia:
+                {t('sections.6.intro')}{" "}
+                <Link href="/politica-cookies" className="text-[#3898EC] hover:underline">{t('sections.6.link')}</Link> 
+                {" "}{t('sections.6.outro')}
               </p>
               <ul className="list-disc pl-6 space-y-2 mt-3">
-                <li><strong>Cookies necesarias:</strong> Funcionamiento del sitio (sin consentimiento requerido)</li>
-                <li><strong>Cookies analíticas:</strong> Google Analytics (consentimiento requerido)</li>
-                <li><strong>Cookies de marketing:</strong> Facebook Pixel, TikTok Pixel (consentimiento requerido)</li>
+                {[0, 1, 2].map((i) => {
+                  const item = t(`sections.6.list.${i}`)
+                  const [boldPart, rest] = item.split(': ')
+                  return (
+                    <li key={i}>
+                      {rest ? (
+                        <><strong>{boldPart}:</strong> {rest}</>
+                      ) : (
+                        item
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </section>
 
             {/* Derechos */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">7. Tus Derechos (Ley 81 de 2019)</h2>
-              <p>
-                Tienes derecho a:
-              </p>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.7.title')}</h2>
+              <p>{t('sections.7.intro')}</p>
               <ul className="list-disc pl-6 space-y-2 mt-3">
-                <li><strong>Acceso:</strong> Solicitar copia de tus datos personales</li>
-                <li><strong>Rectificación:</strong> Corregir información inexacta</li>
-                <li><strong>Cancelación:</strong> Solicitar eliminación bajo ciertas circunstancias</li>
-                <li><strong>Oposición:</strong> Objetar el procesamiento de tus datos</li>
-                <li><strong>Portabilidad:</strong> Recibir tus datos en formato estructurado</li>
+                {[0, 1, 2, 3, 4].map((i) => {
+                  const item = t(`sections.7.list.${i}`)
+                  const [boldPart, rest] = item.split(': ')
+                  return (
+                    <li key={i}>
+                      {rest ? (
+                        <><strong>{boldPart}:</strong> {rest}</>
+                      ) : (
+                        item
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
               <p className="mt-4">
-                Para ejercer estos derechos, contacta a{" "}
+                {t('sections.7.contactIntro')}
                 <a href="mailto:privacidad@somosproperties.com" className="text-[#3898EC] hover:underline">
                   privacidad@somosproperties.com
                 </a>
@@ -137,52 +165,55 @@ export default function PrivacidadPage() {
 
             {/* Seguridad */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">8. Seguridad de Datos</h2>
-              <p>
-                Implementamos medidas de seguridad técnicas, administrativas y físicas para proteger tus datos:
-              </p>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.8.title')}</h2>
+              <p>{t('sections.8.intro')}</p>
               <ul className="list-disc pl-6 space-y-2 mt-3">
-                <li>Cifrado HTTPS en todas las transmisiones</li>
-                <li>Firewalls y sistemas de detección de intrusiones</li>
-                <li>Acceso restringido a información personal</li>
-                <li>Capacitación regular del personal en privacidad</li>
+                {[0, 1, 2, 3].map((i) => (
+                  <li key={i}>{t(`sections.8.list.${i}`)}</li>
+                ))}
               </ul>
               <p className="mt-3 text-sm text-[#999999]">
-                Sin embargo, ningún sistema es 100% seguro. No podemos garantizar seguridad absoluta.
+                {t('sections.8.disclaimer')}
               </p>
             </section>
 
             {/* Retención */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">9. Retención de Datos</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.9.title')}</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Datos de contacto:</strong> Mientras mantengas interés en nuestros servicios (máx. 2 años sin contacto)</li>
-                <li><strong>Datos analíticos:</strong> 26 meses (configuración estándar de Google Analytics)</li>
-                <li><strong>Cookies:</strong> Según configuración del navegador (típicamente 1-2 años)</li>
+                {[0, 1, 2].map((i) => {
+                  const item = t(`sections.9.list.${i}`)
+                  const [boldPart, rest] = item.split(': ')
+                  return (
+                    <li key={i}>
+                      {rest ? (
+                        <><strong>{boldPart}:</strong> {rest}</>
+                      ) : (
+                        item
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </section>
 
             {/* Cambios */}
             <section>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">10. Cambios a Esta Política</h2>
-              <p>
-                Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos sobre cambios 
-                significativos publicando la política actualizada en el Sitio. La fecha de "Última actualización" 
-                será revisada para reflejar cualquier cambio.
-              </p>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.10.title')}</h2>
+              <p>{t('sections.10.content')}</p>
             </section>
 
             {/* Contacto */}
             <section className="bg-[#f9f9f9] p-6 rounded-lg border border-[#eeeeee]">
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">11. Contacto</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{t('sections.11.title')}</h2>
               <p className="mb-4">
-                Si tienes preguntas sobre esta Política de Privacidad o nuestras prácticas de privacidad:
+                {t('sections.11.intro')}
               </p>
               <div className="space-y-2">
-                <p><strong>Email:</strong> <a href="mailto:info@somosproperties.com" className="text-[#3898EC] hover:underline">info@somosproperties.com</a></p>
-                <p><strong>Privacidad:</strong> <a href="mailto:privacidad@somosproperties.com" className="text-[#3898EC] hover:underline">privacidad@somosproperties.com</a></p>
-                <p><strong>Teléfono:</strong> +507 6777-0577</p>
-                <p><strong>Ubicación:</strong> Panamá, República de Panamá</p>
+                <p><strong>{t('sections.11.emailLabel')}</strong> <a href="mailto:info@somosproperties.com" className="text-[#3898EC] hover:underline">info@somosproperties.com</a></p>
+                <p><strong>{t('sections.11.privacyLabel')}</strong> <a href="mailto:privacidad@somosproperties.com" className="text-[#3898EC] hover:underline">privacidad@somosproperties.com</a></p>
+                <p><strong>{t('sections.11.phoneLabel')}</strong> +507 6777-0577</p>
+                <p><strong>{t('sections.11.locationLabel')}</strong> Panamá, República de Panamá</p>
               </div>
             </section>
           </div>

@@ -143,6 +143,274 @@
     "home": {
       "title": "SOMOS Properties - Properties in Panama | Sale and Rent",
       "description": "Find your ideal property in Panama. Apartments and commercial premises for sale and rent in the best locations."
+    },
+    "about": {
+      "title": "About Us - SOMOS Properties",
+      "description": "We are a team of passionate real estate professionals with 15 years in the industry."
+    },
+    "privacy": {
+      "title": "Privacy Policy - SOMOS Properties",
+      "description": "Privacy Policy of SOMOS Properties in compliance with Law 81 of 2019 of Panama."
+    },
+    "terms": {
+      "title": "Terms of Service - SOMOS Properties",
+      "description": "Terms and Conditions of use of SOMOS Properties."
+    }
+  },
+  "about": {
+    "hero": {
+      "tag": "Who we are",
+      "title": "About Us",
+      "subtitle": "15 years of real estate experience in Panama",
+      "talkBtn": "Let's Talk",
+      "portfolioBtn": "View properties"
+    },
+    "whoWeAre": {
+      "title": "Who Are We?",
+      "content": "We are a team of passionate professionals in the real estate world, with a 15-year track record in the industry. We pride ourselves on being leaders in the real estate market, providing exceptional service to our clients every step of the way."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To help our clients find the ideal property that fits their needs and budget, providing personalized advice and companionship throughout the buying, selling or renting process."
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "features": [
+        {
+          "title": "Proven Experience",
+          "desc": "Backed by over 15 years in the Panamanian real estate market."
+        },
+        {
+          "title": "Personalized Advisory",
+          "desc": "We accompany you every step of the way until you find your ideal property."
+        },
+        {
+          "title": "Verified Properties",
+          "desc": "We rigorously verify all properties in our portfolio."
+        },
+        {
+          "title": "Best Prices",
+          "desc": "We work directly with property owners to secure the best deals."
+        }
+      ]
+    },
+    "values": {
+      "title": "Our Values",
+      "content": "We operate with transparency, speed, and a focus on results. Our team combines local expertise with modern processes to close deals securely and confidently.",
+      "bullets": [
+        "Transparency and constant communication.",
+        "Rapid response and comprehensive management.",
+        "Coverage across residential and commercial sectors.",
+        "A dedicated team for every property."
+      ],
+      "callBtn": "Schedule a call",
+      "portfolioBtn": "View portfolio"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 11, 2026",
+    "sections": {
+      "1": {
+        "title": "1. Introduction",
+        "p1": "SOMOS Properties (\"we\", \"our\", or \"the Company\") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website ",
+        "p2": " (the \"Site\").",
+        "lawText": "We comply with Law 81 of 2019 on Personal Data Protection (Republic of Panama) and international data protection regulations."
+      },
+      "2": {
+        "title": "2. Data We Collect",
+        "sub1": "2.1 Information you provide directly:",
+        "list1": [
+          "Name, email, phone number, and address (via contact forms)",
+          "Property preferences and real estate interests",
+          "Messages and inquiries sent through the contact form",
+          "Employment application data (if applicable)"
+        ],
+        "sub2": "2.2 Information collected automatically:",
+        "list2": [
+          "Cookies and similar technologies: Information about your browser, operating system, referring URL, and visited pages",
+          "Google Analytics: Navigation behavior data (subject to consent)",
+          "Facebook Pixel: Conversion and behavior information (subject to consent)",
+          "IP Address: For security and analysis purposes"
+        ]
+      },
+      "3": {
+        "title": "3. How We Use Your Data",
+        "list": [
+          "Respond to your inquiries and information requests",
+          "Send updates on properties, promotions, and special offers",
+          "Improve user experience and personalize content",
+          "Analyze trends and optimize the website",
+          "Comply with legal obligations and resolve disputes",
+          "Prevent fraud and illicit activities"
+        ]
+      },
+      "4": {
+        "title": "4. Legal Basis (Law 81 of 2019)",
+        "intro": "The processing of your personal data is based on:",
+        "list": [
+          "Consent: Provided by accepting this policy and our cookie banner",
+          "Contract execution: When you request information about properties",
+          "Legal obligation compliance: According to applicable Panamanian laws",
+          "Legitimate interest: Improving our services and user experience"
+        ]
+      },
+      "5": {
+        "title": "5. Data Sharing",
+        "intro": "We do not sell, rent, or share your personal data with third parties, except:",
+        "list": [
+          "Service providers (email, hosting, analytics) under confidentiality agreements",
+          "Associated real estate agents (only if explicitly requested)",
+          "Legal or regulatory requirements from Panamanian authorities",
+          "Protection of rights, privacy, and security"
+        ]
+      },
+      "6": {
+        "title": "6. Cookies and Tracking Technologies",
+        "intro": "We use cookies to improve your experience. Our",
+        "link": "consent banner",
+        "outro": "allows you to personalize your experience:",
+        "list": [
+          "Necessary cookies: Site functionality (no consent required)",
+          "Analytical cookies: Google Analytics (consent required)",
+          "Marketing cookies: Facebook Pixel, TikTok Pixel (consent required)"
+        ]
+      },
+      "7": {
+        "title": "7. Your Rights (Law 81 of 2019)",
+        "intro": "You have the right to:",
+        "list": [
+          "Access: Request a copy of your personal data",
+          "Rectification: Correct inaccurate information",
+          "Cancellation: Request deletion under certain circumstances",
+          "Opposition: Object to the processing of your data",
+          "Portability: Receive your data in a structured format"
+        ],
+        "contactIntro": "To exercise these rights, please contact "
+      },
+      "8": {
+        "title": "8. Data Security",
+        "intro": "We implement technical, administrative, and physical security measures to protect your data:",
+        "list": [
+          "HTTPS encryption on all transmissions",
+          "Firewalls and intrusion detection systems",
+          "Restricted access to personal information",
+          "Regular staff training on privacy"
+        ],
+        "disclaimer": "However, no system is 100% secure. We cannot guarantee absolute security."
+      },
+      "9": {
+        "title": "9. Data Retention",
+        "list": [
+          "Contact data: As long as you maintain interest in our services (max 2 years without contact)",
+          "Analytical data: 26 months (standard Google Analytics setting)",
+          "Cookies: Per browser settings (typically 1-2 years)"
+        ]
+      },
+      "10": {
+        "title": "10. Changes to This Policy",
+        "content": "We may update this Privacy Policy periodically. We will notify you of any significant changes by posting the updated policy on the Site. The \"Last updated\" date will be revised to reflect any changes."
+      },
+      "11": {
+        "title": "11. Contact",
+        "intro": "If you have questions about this Privacy Policy or our privacy practices:",
+        "emailLabel": "Email:",
+        "privacyLabel": "Privacy:",
+        "phoneLabel": "Phone:",
+        "locationLabel": "Location:"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 11, 2026",
+    "sections": {
+      "1": {
+        "title": "1. Acceptance of Terms",
+        "p1": "By accessing and using this website (",
+        "p2": "), you agree to be bound by these Terms of Service. If you do not agree with any part, please do not use the Site."
+      },
+      "2": {
+        "title": "2. License of Use",
+        "intro": "You are granted a limited, non-exclusive, and revocable license to use this Site solely for personal and non-commercial purposes. You may not:",
+        "list": [
+          "Reproduce, distribute, or transmit content without authorization",
+          "Use scraping tools or bots to access the Site",
+          "Modify, translate, or create derivative works of the content",
+          "Attempt to gain unauthorized access to systems or networks",
+          "Use the Site for illegal or fraudulent activities"
+        ]
+      },
+      "3": {
+        "title": "3. Intellectual Property",
+        "content": "All content on the Site (texts, images, graphics, logos, videos) is the property of SOMOS Properties or its content suppliers and is protected by copyright laws."
+      },
+      "4": {
+        "title": "4. Accuracy of Information",
+        "intro": "We strive to maintain accurate and updated property information. However:",
+        "list": [
+          "We do not guarantee that all information is completely accurate or up-to-date",
+          "Prices, availability, and features may change without prior notice",
+          "We recommend verifying information directly with our agents"
+        ]
+      },
+      "5": {
+        "title": "5. Contact Data and Forms",
+        "intro": "By submitting the contact form, you agree to:",
+        "list": [
+          "Provide accurate and complete information",
+          "Allow SOMOS Properties to use your data for responses and follow-up",
+          "The privacy and cookies policy of SOMOS Properties"
+        ]
+      },
+      "6": {
+        "title": "6. Limitation of Liability",
+        "disclaimer": "SOMOS PROPERTIES IS PROVIDED \"AS IS\" WITHOUT WARRANTIES, EXPRESS OR IMPLIED.",
+        "intro": "To the maximum extent permitted by law, SOMOS Properties is not liable for:",
+        "list": [
+          "Direct, indirect, incidental, or consequential damages",
+          "Loss of data, revenue, or profits",
+          "Site interruptions or technical errors",
+          "Third-party content or external links"
+        ]
+      },
+      "7": {
+        "title": "7. External Links",
+        "content": "The Site may contain links to third-party websites. SOMOS Properties is not responsible for the content, accuracy, or privacy practices of these sites. You access them at your own risk."
+      },
+      "8": {
+        "title": "8. User Conduct",
+        "intro": "You agree not to use the Site to:",
+        "list": [
+          "Harass, intimidate, or defame individuals or organizations",
+          "Distribute defamatory, obscene, or illegal content",
+          "Introduce viruses, malware, or other malicious code",
+          "Spam or post unsolicited content"
+        ]
+      },
+      "9": {
+        "title": "9. Indemnification",
+        "intro": "You agree to indemnify and hold SOMOS Properties harmless from any claim, damage, or expense (including attorneys' fees) arising from:",
+        "list": [
+          "Your violation of these Terms",
+          "Your use of the Site in an illegal manner",
+          "Violation of third-party rights"
+        ]
+      },
+      "10": {
+        "title": "10. Modification of Terms",
+        "content": "SOMOS Properties reserves the right to modify these Terms at any time. Changes will be effective when posted on the Site."
+      },
+      "11": {
+        "title": "11. Applicable Law",
+        "content": "These Terms are governed by the laws of the Republic of Panama. Any dispute will be resolved in the competent courts of Panama."
+      },
+      "12": {
+        "title": "12. Contact",
+        "intro": "For questions about these Terms:",
+        "emailLabel": "Email:",
+        "phoneLabel": "Phone:"
+      }
     }
   }
 }
