@@ -113,7 +113,9 @@
     "privacy": "Privacidad",
     "terms": "Términos",
     "cookiePolicy": "Política de Cookies",
-    "cookiePreferences": "Preferencias de Cookies"
+    "cookiePreferences": "Preferencias de Cookies",
+    "address": "Somos Properties - Calle 50, Bella Vista, Ciudad de Panamá",
+    "copyright": "© {year} SOMOS Properties. Todos los derechos reservados."
   },
   "common": {
     "perMonth": "/mes",

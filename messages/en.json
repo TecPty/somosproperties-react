@@ -113,7 +113,9 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "cookiePolicy": "Cookie Policy",
-    "cookiePreferences": "Cookie Preferences"
+    "cookiePreferences": "Cookie Preferences",
+    "address": "Somos Properties - 50th Street, Bella Vista, Panama City",
+    "copyright": "© {year} SOMOS Properties. All rights reserved."
   },
   "common": {
     "perMonth": "/month",

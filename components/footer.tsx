@@ -1,16 +1,18 @@
-﻿import Link from "next/link"
+import Link from "next/link"
 import OptimizedImage from "@/components/optimized-image"
 import { CONTACT, SOCIAL, COMPANY } from "@/lib/config"
+import { useTranslations } from "next-intl"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const t = useTranslations("footer")
 
   return (
     <footer className="bg-[#222222] text-white/80">
       <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Logo & Description */}
-          <div>
+          <div className="md:col-span-2 lg:col-span-3 lg:pr-6">
             <OptimizedImage
               src="/images/Logo-SP.png"
               alt={COMPANY.name}
@@ -18,7 +20,7 @@ export default function Footer() {
               width={180}
               height={60}
               priority
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="w-40 mb-6 brightness-0 invert opacity-90"
             />
             <p className="text-sm leading-relaxed">
               {COMPANY.description}
@@ -26,74 +28,74 @@ export default function Footer() {
           </div>
 
           {/* Propiedades */}
-          <div>
-            <h4 className="text-white text-lg font-semibold mb-4">Propiedades</h4>
+          <div className="md:col-span-1 lg:col-span-2">
+            <h4 className="text-white text-lg font-semibold mb-4">{t('properties')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/premium" className="hover:text-[#d4af37] transition-colors text-sm font-semibold">
-                  Premium
+                  {t('premium')}
                 </Link>
               </li>
               <li>
                 <Link href="/residenciales" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Residenciales
+                  {t('residential')}
                 </Link>
               </li>
               <li>
                 <Link href="/comerciales" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Comerciales
+                  {t('commercial')}
                 </Link>
               </li>
             </ul>
           </div>
 
           {/* Empresa */}
-          <div>
-            <h4 className="text-white text-lg font-semibold mb-4">Empresa</h4>
+          <div className="md:col-span-1 lg:col-span-2">
+            <h4 className="text-white text-lg font-semibold mb-4">{t('company')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/nosotros" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Sobre Nosotros
+                  {t('aboutUs')}
                 </Link>
               </li>
               <li>
                 <Link href="/contacto" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Contacto
+                  {t('contact')}
                 </Link>
               </li>
             </ul>
           </div>
 
           {/* Legal */}
-          <div>
-            <h4 className="text-white text-lg font-semibold mb-4">Legal</h4>
+          <div className="md:col-span-1 lg:col-span-2">
+            <h4 className="text-white text-lg font-semibold mb-4">{t('legal')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/privacidad" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Privacidad
+                  {t('privacy')}
                 </Link>
               </li>
               <li>
                 <Link href="/terminos" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Términos
+                  {t('terms')}
                 </Link>
               </li>
               <li>
                 <Link href="/politica-cookies" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Política de Cookies
+                  {t('cookiePolicy')}
                 </Link>
               </li>
               <li>
                 <Link href="/preferencias-cookies" className="hover:text-[#3898EC] transition-colors text-sm">
-                  Preferencias de Cookies
+                  {t('cookiePreferences')}
                 </Link>
               </li>
             </ul>
           </div>
 
           {/* Contacto */}
-          <div>
-            <h4 className="text-white text-lg font-semibold mb-4">Contacto</h4>
+          <div className="md:col-span-1 lg:col-span-3">
+            <h4 className="text-white text-lg font-semibold mb-4">{t('contact')}</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm">
                 <svg
@@ -158,7 +160,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="hover:text-[#3898EC] transition-colors"
                 >
-                  Somos Properties - Calle 50, Bella Vista, Ciudad de Panamá
+                  {t('address')}
                 </Link>
               </li>
             </ul>
@@ -218,7 +220,7 @@ export default function Footer() {
       <div className="bg-[#333333]">
         <div className="container-custom py-4">
           <p className="text-center text-sm text-white/60">
-            © {currentYear} SOMOS Properties. Todos los derechos reservados.
+            {t('copyright', { year: currentYear })}
           </p>
         </div>
       </div>

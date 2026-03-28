@@ -69,7 +69,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[600px] md:h-[600px] flex items-center justify-center text-white overflow-hidden -mt-20 pt-20">
+      <section className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center justify-center text-white overflow-hidden">
         {/* Video Background */}
         <video
           autoPlay
