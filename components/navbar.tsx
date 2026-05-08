@@ -2,9 +2,9 @@
 
 import Link from "next/link"
 import { useTranslations } from 'next-intl'
-import { useParams } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import OptimizedImage from "@/components/optimized-image"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useTransition } from "react"
 import { usePathname } from "next/navigation"
 import { MessageCircle, X, Menu, Phone } from "lucide-react"
 import { CONTACT } from "@/lib/config"
@@ -12,8 +12,10 @@ import { CONTACT } from "@/lib/config"
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isPending, startTransition] = useTransition()
   const pathname = usePathname()
   const params = useParams()
+  const router = useRouter()
   const locale = params.locale as string
   const t = useTranslations('nav')
   const tc = useTranslations('common')
@@ -30,6 +32,20 @@ export default function Navbar() {
   useEffect(() => {
     setIsOpen(false)
   }, [pathname])
+
+  // Prefetch alternate locale on mount
+  useEffect(() => {
+    const altLocale = locale === 'es' ? 'en' : 'es'
+    const altPath = pathname.replace(`/${locale}`, `/${altLocale}`)
+    router.prefetch(altPath)
+  }, [locale, pathname, router])
+
+  const handleLocaleChange = (newLocale: string) => {
+    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`)
+    startTransition(() => {
+      router.push(newPath)
+    })
+  }
 
   const navLinks = [
     { href: `/${locale}`, label: t('home') },
@@ -152,22 +168,29 @@ export default function Navbar() {
             )}
             
             {/* Language Switcher */}
-            <div className="flex items-center gap-2 border-l border-[#e6e6e6] pl-6">
-              <Link
-                href={pathname.replace(`/${locale}`, '/es')}
-                className={`text-lg transition-opacity ${locale === 'es' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+            <div className="flex items-center gap-2 border-l border-[#e6e6e6] pl-6 relative">
+              {isPending && (
+                <div className="absolute -left-8 top-1/2 -translate-y-1/2">
+                  <div className="w-4 h-4 border-2 border-[#3898EC] border-t-transparent rounded-full animate-spin" />
+                </div>
+              )}
+              <button
+                onClick={() => handleLocaleChange('es')}
+                disabled={isPending}
+                className={`text-lg transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title="Español"
               >
                 🇪🇸
-              </Link>
+              </button>
               <span className="text-[#e6e6e6]">/</span>
-              <Link
-                href={pathname.replace(`/${locale}`, '/en')}
-                className={`text-lg transition-opacity ${locale === 'en' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+              <button
+                onClick={() => handleLocaleChange('en')}
+                disabled={isPending}
+                className={`text-lg transition-all ${locale === 'en' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title="English"
               >
                 🇺🇸
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -237,43 +260,35 @@ export default function Navbar() {
             )}
             
             {/* Mobile Language Switcher */}
-            <div className="flex items-center gap-3 px-4 py-3 border-t border-[#eeeeee] mt-2">
+            <div className="flex items-center gap-3 px-4 py-3 border-t border-[#eeeeee] mt-2 relative">
               <span className="text-sm text-[#666666]">{t('language')}:</span>
-              <Link
-                href={pathname.replace(`/${locale}`, '/es')}
-                className={`text-2xl transition-opacity ${locale === 'es' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+              {isPending && (
+                <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                  <div className="w-5 h-5 border-2 border-[#3898EC] border-t-transparent rounded-full animate-spin" />
+                </div>
+              )}
+              <button
+                onClick={() => handleLocaleChange('es')}
+                disabled={isPending}
+                className={`text-2xl transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title="Español"
               >
                 🇪🇸
-              </Link>
-              <Link
-                href={pathname.replace(`/${locale}`, '/en')}
-                className={`text-2xl transition-opacity ${locale === 'en' ? 'opacity-100' : 'opacity-40 hover:opacity-70'}`}
+              </button>
+              <button
+                onClick={() => handleLocaleChange('en')}
+                disabled={isPending}
+                className={`text-2xl transition-all ${locale === 'en' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title="English"
               >
                 🇺🇸
-              </Link>
+              </button>
             </div>
           </div>
         )}
       </div>
       </nav>
 
-      {/* Floating WhatsApp Button */}
-      <div className="fixed bottom-6 right-6 z-[100] group flex flex-col items-end gap-3 pointer-events-none">
-        <div className="bg-white px-4 py-2 rounded-xl shadow-xl border border-gray-100 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 text-sm font-semibold text-gray-700 pointer-events-auto hidden md:block">
-          {tc('whatsappPrompt')}
-        </div>
-        <a
-          href={`https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent(tc('whatsappPrompt'))}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pointer-events-auto flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:bg-[#1ebe5d] hover:scale-110 active:scale-95 transition-all duration-300"
-          aria-label="WhatsApp"
-        >
-          <MessageCircle className="h-8 w-8 fill-white" />
-        </a>
-      </div>
     </>
   )
 }

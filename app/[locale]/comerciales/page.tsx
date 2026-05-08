@@ -2,24 +2,34 @@ import type { Metadata } from "next"
 import { Suspense } from "react"
 import ComercialesContent from "./comerciales-content"
 
-export const metadata: Metadata = {
-  title: "Propiedades Comerciales en Panamá | SOMOS Properties",
-  description: "Locales comerciales y oficinas en venta y alquiler en Panamá. Invierte en propiedades comerciales premium.",
-  alternates: {
-    canonical: "https://somosproperties.com/comerciales",
-  },
-  openGraph: {
-    title: "Propiedades Comerciales en Panamá",
-    description: "Locales comerciales y oficinas en venta y alquiler.",
-    type: "website",
-    url: "https://somosproperties.com/comerciales",
-    siteName: "SOMOS Properties",
-  },
+import { getTranslations } from "next-intl/server"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.comerciales' })
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `https://somosproperties.com/${locale}/comerciales`,
+    },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: "website",
+      url: `https://somosproperties.com/${locale}/comerciales`,
+      siteName: "SOMOS Properties",
+    },
+  }
 }
 
-export default function ComercialesPage() {
+export default async function ComercialesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'common' })
+
   return (
-    <Suspense fallback={<div className="py-12 text-center">Cargando...</div>}>
+    <Suspense fallback={<div className="py-12 text-center">{t('loading')}...</div>}>
       <ComercialesContent />
     </Suspense>
   )

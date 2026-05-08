@@ -155,6 +155,30 @@
     "terms": {
       "title": "Términos de Servicio - SOMOS Properties",
       "description": "Términos y Condiciones de uso de SOMOS Properties."
+    },
+    "propiedades": {
+      "title": "Todas las Propiedades | SOMOS Properties",
+      "description": "Explora miles de propiedades en venta y alquiler en Panamá. Filtra por tipo, precio, ubicación y más."
+    },
+    "propertyDetail": {
+      "notFoundTitle": "Propiedad no encontrada - SOMOS Properties",
+      "notFoundDescription": "La propiedad que buscas no existe o ya no está disponible."
+    },
+    "premium": {
+      "title": "Propiedades Premium en Panamá | SOMOS Properties",
+      "description": "Propiedades exclusivas con ubicaciones privilegiadas, acabados de lujo y amenidades premium. Descubre las mejores opciones en Punta Pacífica, Costa del Este y más."
+    },
+    "contacto": {
+      "title": "Contacto - SOMOS Properties",
+      "description": "Contáctanos para más información sobre nuestras propiedades en Panamá."
+    },
+    "residenciales": {
+      "title": "Propiedades Residenciales en Panamá | SOMOS Properties",
+      "description": "Apartamentos y casas en venta y alquiler en Panamá. Encuentra tu propiedad residencial ideal."
+    },
+    "comerciales": {
+      "title": "Propiedades Comerciales en Panamá | SOMOS Properties",
+      "description": "Locales comerciales y oficinas en venta y alquiler en Panamá. Invierte en propiedades comerciales premium."
     }
   },
   "about": {
@@ -206,6 +230,88 @@
       "callBtn": "Agenda una llamada",
       "portfolioBtn": "Ver portafolio"
     }
+  },
+  "propiedades": {
+    "title": "Todas las Propiedades",
+    "subtitle": "{count} propiedades encontradas",
+    "loading": "Cargando..."
+  },
+  "contacto": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte a encontrar tu propiedad ideal",
+    "formHeading": "Envíanos un Mensaje",
+    "infoHeading": "Información de Contacto",
+    "phone": "Teléfono",
+    "email": "Email",
+    "address": "Dirección",
+    "addressText": "Somos Properties - Calle 50, Bella Vista, Ciudad de Panamá",
+    "hours": "Horario",
+    "hoursWeekdays": "Lunes a Viernes: 8:00 AM - 6:00 PM",
+    "hoursSaturday": "Sábados: 9:00 AM - 2:00 PM",
+    "hoursSunday": "Domingos: Cerrado"
+  },
+  "premium": {
+    "badge": "PROPIEDADES PREMIUM",
+    "hero": {
+      "title": "Vive la Excelencia",
+      "subtitle": "Ubicaciones privilegiadas, acabados de lujo y amenidades exclusivas en Panamá",
+      "viewProperties": "Ver Propiedades Premium",
+      "scheduleTour": "Agendar Tour Privado"
+    },
+    "whyChoose": {
+      "title": "¿Por Qué Elegir Premium?",
+      "subtitle": "Propiedades excepcionales que superan los más altos estándares de calidad y exclusividad"
+    },
+    "values": [
+      {
+        "title": "Ubicaciones Privilegiadas",
+        "desc": "Las mejores zonas de Panamá: Punta Pacífica, Costa del Este, Casco Viejo y Santa María"
+      },
+      {
+        "title": "Acabados de Lujo",
+        "desc": "Materiales premium, diseño arquitectónico exclusivo y tecnología de última generación"
+      },
+      {
+        "title": "Amenidades Exclusivas",
+        "desc": "Piscinas infinity, gimnasios premium, concierge 24/7 y espacios verdes privados"
+      },
+      {
+        "title": "Servicio VIP",
+        "desc": "Tours privados, asesoría dedicada y proceso facilitado de principio a fin"
+      }
+    ],
+    "propertiesHeading": "Propiedades Premium Disponibles",
+    "propertiesCount": "{count} propiedades exclusivas esperando por ti",
+    "noProperties": {
+      "title": "Próximamente Propiedades Premium",
+      "subtitle": "Estamos seleccionando las mejores propiedades para ofrecerte. Déjanos tus datos y te contactaremos.",
+      "contactBtn": "Quiero ser Notificado"
+    },
+    "cta": {
+      "title": "¿Listo para Encontrar tu Propiedad Ideal?",
+      "subtitle": "Nuestro equipo de asesores premium está listo para ayudarte a encontrar la propiedad perfecta",
+      "contactBtn": "Contactar Asesor VIP",
+      "viewAllBtn": "Ver Todas las Propiedades"
+    }
+  },
+  "filters": {
+    "title": "Filtros",
+    "clear": "Limpiar",
+    "clearAll": "Limpiar todos los filtros",
+    "operation": "Operación",
+    "propertyType": "Tipo de Propiedad",
+    "price": "Precio",
+    "priceMonthly": "Precio (mensual)",
+    "customRange": "Rango personalizado",
+    "min": "Mín",
+    "max": "Máx",
+    "bedrooms": "Habitaciones",
+    "bedroomsMin": "mínimo",
+    "location": "Ubicación",
+    "selectLocation": "Selecciona una ubicación",
+    "allLocations": "Todas las ubicaciones",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente"
   },
   "privacy": {
     "title": "Política de Privacidad",

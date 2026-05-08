@@ -49,6 +49,9 @@ Thumbs.db
 .cache/
 .turbo/
 
+# SDD / Agent infrastructure
+.atl/
+
 # One-time analysis scripts and their output reports
 analyze-*.js
 analyze-*.ps1

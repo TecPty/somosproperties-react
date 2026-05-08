@@ -7,8 +7,10 @@ import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { useProperties } from "@/hooks/use-properties"
 import { useFilters } from "@/hooks/use-filters"
+import { useTranslations } from "next-intl"
 
 export default function PropiedadesContent() {
+  const t = useTranslations('propiedades')
   const { filters, updateFilters, clearFilters } = useFilters()
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
 
@@ -19,8 +21,8 @@ export default function PropiedadesContent() {
       <main className="py-12 bg-[#fafafa] min-h-screen">
         <div className="container-custom">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold text-[#222222] mb-2">Todas las Propiedades</h1>
-            <p className="text-lg text-[#999999]">{totalProperties} propiedades encontradas</p>
+            <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>
+            <p className="text-lg text-[#999999]">{t('subtitle', { count: totalProperties })}</p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8">

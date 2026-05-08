@@ -1,0 +1,36 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Next.js 16 (App Router), React 19, TypeScript 5, Tailwind CSS v4
+  Architecture: App Router con [locale] para i18n (next-intl v4), localePrefix: always
+  i18n: next-intl v4, locales: [es, en], defaultLocale: es
+  Data: JSON estático en data/properties.json, sin API externa
+  Testing: Sin test runner instalado
+  Style: ESLint, sin Prettier, mezcla CRLF/LF
+
+strict_tdd: false
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Identify affected modules/packages
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Document architecture decisions with rationale
+    - Note when a change affects SEO or i18n routing
+  tasks:
+    - Group tasks by phase (infrastructure, implementation, testing)
+    - Use hierarchical numbering (1.1, 1.2, etc.)
+    - Keep tasks small enough to complete in one session
+  apply:
+    - Follow existing code patterns and conventions
+    - Never use hardcoded strings — use CONTACT constants or i18n
+    - Never use href without locale prefix when localePrefix is always
+  verify:
+    - Validate that all canonical URLs include /[locale]/ segment
+    - Confirm no hardcoded phone numbers or WhatsApp URLs
+    - Check that metadata uses generateMetadata (not static export) for i18n pages
+  archive:
+    - Warn before merging destructive deltas (large removals)

@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import styles from "./promotional-modal.module.css"
 import { X } from "lucide-react"
 import { useFocusTrap } from "@/hooks/use-focus-trap"
+import { CONTACT } from "@/lib/config"
 
 // CAMBIO: props flexibles y control de frecuencia
 // RAZÓN: permite reutilizar el modal para cualquier promoción y controlar aparición
@@ -65,7 +66,7 @@ export function PromotionalModal({
   function handleCTA() {
     if (ctaAction === "whatsapp") {
       const message = `Hola! Estoy interesado en una promoción. ¿Podrían darme más información?`
-      const whatsappUrl = `https://wa.me/50760000000?text=${encodeURIComponent(message)}`
+      const whatsappUrl = `https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent(message)}`
       window.open(whatsappUrl, "_blank")
     } else {
       const contactForm = document.getElementById("contact-section")
@@ -128,7 +129,7 @@ export function PromotionalModal({
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-modal-fade-in"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
@@ -137,14 +138,14 @@ export function PromotionalModal({
     >
       <div
         ref={modalRef}
-        className="relative max-w-sm md:max-w-md pointer-events-auto animate-scale-in rounded-2xl overflow-hidden shadow-2xl w-[95vw] md:w-auto"
+        className="relative max-w-sm md:max-w-md pointer-events-auto animate-modal-scale-in rounded-2xl overflow-hidden shadow-2xl w-[95vw] md:w-auto"
         onClick={e => e.stopPropagation()}
       >
         {/* CAMBIO: decoraciones deterministas */}
         <div className="absolute inset-0 z-0 pointer-events-none">{renderStarsAndSnowflakes()}</div>
         {/* Badge */}
         {badge && (
-          <div className="absolute top-4 right-4 z-10 bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce-subtle">
+          <div className="absolute top-4 right-4 z-10 bg-gradient-to-r from-red-600 to-red-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-modal-bounce-subtle">
             {badge}
           </div>
         )}
@@ -192,20 +193,6 @@ export function PromotionalModal({
           </div>
         )}
       </div>
-      <style jsx>{`
-        @keyframes fade-in {
-          from { opacity: 0; } to { opacity: 1; }
-        }
-        @keyframes scale-in {
-          from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); }
-        }
-        @keyframes bounce-subtle {
-          0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); }
-        }
-        .animate-fade-in { animation: fade-in 0.3s ease-out; }
-        .animate-scale-in { animation: scale-in 0.4s ease-out; }
-        .animate-bounce-subtle { animation: bounce-subtle 2s ease-in-out infinite; }
-      `}</style>
     </div>
   )
 }

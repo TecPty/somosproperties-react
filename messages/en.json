@@ -155,6 +155,30 @@
     "terms": {
       "title": "Terms of Service - SOMOS Properties",
       "description": "Terms and Conditions of use of SOMOS Properties."
+    },
+    "propiedades": {
+      "title": "All Properties | SOMOS Properties",
+      "description": "Explore thousands of properties for sale and rent in Panama. Filter by type, price, location and more."
+    },
+    "propertyDetail": {
+      "notFoundTitle": "Property not found - SOMOS Properties",
+      "notFoundDescription": "The property you are looking for does not exist or is no longer available."
+    },
+    "premium": {
+      "title": "Premium Properties in Panama | SOMOS Properties",
+      "description": "Exclusive properties with privileged locations, luxury finishes and premium amenities. Discover the best options in Punta Pacífica, Costa del Este and more."
+    },
+    "contacto": {
+      "title": "Contact - SOMOS Properties",
+      "description": "Contact us for more information about our properties in Panama."
+    },
+    "residenciales": {
+      "title": "Residential Properties in Panama | SOMOS Properties",
+      "description": "Apartments and houses for sale and rent in Panama. Find your ideal residential property."
+    },
+    "comerciales": {
+      "title": "Commercial Properties in Panama | SOMOS Properties",
+      "description": "Commercial spaces and offices for sale and rent in Panama. Invest in premium commercial properties."
     }
   },
   "about": {
@@ -206,6 +230,88 @@
       "callBtn": "Schedule a call",
       "portfolioBtn": "View portfolio"
     }
+  },
+  "propiedades": {
+    "title": "All Properties",
+    "subtitle": "{count} properties found",
+    "loading": "Loading..."
+  },
+  "contacto": {
+    "title": "Contact Us",
+    "subtitle": "We are here to help you find your ideal property",
+    "formHeading": "Send Us a Message",
+    "infoHeading": "Contact Information",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressText": "Somos Properties - 50th Street, Bella Vista, Panama City",
+    "hours": "Hours",
+    "hoursWeekdays": "Monday to Friday: 8:00 AM - 6:00 PM",
+    "hoursSaturday": "Saturdays: 9:00 AM - 2:00 PM",
+    "hoursSunday": "Sundays: Closed"
+  },
+  "premium": {
+    "badge": "PREMIUM PROPERTIES",
+    "hero": {
+      "title": "Experience Excellence",
+      "subtitle": "Privileged locations, luxury finishes and exclusive amenities in Panama",
+      "viewProperties": "View Premium Properties",
+      "scheduleTour": "Schedule Private Tour"
+    },
+    "whyChoose": {
+      "title": "Why Choose Premium?",
+      "subtitle": "Exceptional properties that exceed the highest standards of quality and exclusivity"
+    },
+    "values": [
+      {
+        "title": "Privileged Locations",
+        "desc": "The best areas of Panama: Punta Pacífica, Costa del Este, Casco Viejo and Santa María"
+      },
+      {
+        "title": "Luxury Finishes",
+        "desc": "Premium materials, exclusive architectural design and state-of-the-art technology"
+      },
+      {
+        "title": "Exclusive Amenities",
+        "desc": "Infinity pools, premium gyms, 24/7 concierge and private green spaces"
+      },
+      {
+        "title": "VIP Service",
+        "desc": "Private tours, dedicated advice and facilitated process from start to finish"
+      }
+    ],
+    "propertiesHeading": "Available Premium Properties",
+    "propertiesCount": "{count} exclusive properties waiting for you",
+    "noProperties": {
+      "title": "Premium Properties Coming Soon",
+      "subtitle": "We are selecting the best properties to offer you. Leave us your information and we will contact you.",
+      "contactBtn": "Notify Me"
+    },
+    "cta": {
+      "title": "Ready to Find Your Ideal Property?",
+      "subtitle": "Our team of premium advisors is ready to help you find the perfect property",
+      "contactBtn": "Contact VIP Advisor",
+      "viewAllBtn": "View All Properties"
+    }
+  },
+  "filters": {
+    "title": "Filters",
+    "clear": "Clear",
+    "clearAll": "Clear all filters",
+    "operation": "Operation",
+    "propertyType": "Property Type",
+    "price": "Price",
+    "priceMonthly": "Price (monthly)",
+    "customRange": "Custom range",
+    "min": "Min",
+    "max": "Max",
+    "bedrooms": "Bedrooms",
+    "bedroomsMin": "minimum",
+    "location": "Location",
+    "selectLocation": "Select a location",
+    "allLocations": "All locations",
+    "previousPage": "Previous page",
+    "nextPage": "Next page"
   },
   "privacy": {
     "title": "Privacy Policy",

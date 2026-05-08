@@ -4,11 +4,8 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true, // Bypass remaining linting during dev
-  },
   images: {
-    unoptimized: true, // Use unoptimized in dev for speed
+    unoptimized: process.env.NODE_ENV === 'development',
   },
   experimental: {
     optimizePackageImports: ["@radix-ui/react-*"],

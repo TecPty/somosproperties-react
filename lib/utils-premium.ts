@@ -2,10 +2,12 @@ import type { Property } from "./types"
 
 /**
  * Determina si una propiedad es Premium
- * Criterio: precio >= $250,000
+ * Criterio: Venta >= $250,000 o Alquiler >= $2,500/mes
  */
 export function isPremium(property: Property): boolean {
-  return Number.isFinite(property.price) && property.price >= 250000
+  const salePrice = Number(property.price) || 0
+  const rentPrice = Number(property.pricePerMonth) || 0
+  return salePrice >= 250000 || rentPrice >= 2500
 }
 
 /**

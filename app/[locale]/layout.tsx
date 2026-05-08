@@ -6,7 +6,6 @@ import { notFound } from 'next/navigation'
 import { locales } from '@/i18n'
 
 import RootLayoutClient from "@/components/root-layout-client"
-import { PromotionalModal } from "@/components/promotional-modal"
 import ConsentLayout from "@/components/consent-layout"
 
 export const metadata: Metadata = {
@@ -52,18 +51,7 @@ export default async function LocaleLayout({
       <body className="font-sans antialiased">
         <ConsentLayout>
           <NextIntlClientProvider messages={messages}>
-            {/* Modal promocional global navidad-2024 */}
-            <PromotionalModal
-              id="navidad-2024"
-              showOncePerSession
-              endsAt={new Date('2025-01-06')}
-              desktop="/images/promo-navidad-desktop.png"
-              mobile="/images/promo-navidad-mobile.png"
-              badge="¡Navidad!"
-              headline="Promoción especial de Navidad"
-              ctaText="Solicita tu regalo"
-              ctaAction="contact"
-            />
+
             <RootLayoutClient gaId={gaId}>
               {children}
             </RootLayoutClient>

@@ -4,6 +4,7 @@ import { useMemo } from "react"
 import { SlidersHorizontal, X } from "lucide-react"
 import type { Property, PropertyFilters } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
+import { useTranslations } from "next-intl"
 
 interface PropertyFiltersProps {
   filters: PropertyFilters
@@ -43,6 +44,9 @@ function countActiveFilters(f: PropertyFilters): number {
 }
 
 export default function PropertyFiltersComponent({ filters, onFiltersChange, onClear }: PropertyFiltersProps) {
+  const t = useTranslations('filters')
+  const tCommon = useTranslations('common')
+  
   const locations = useMemo(() => {
     const map = new Map<string, string>()
     for (const property of allPropertiesData) {
@@ -100,7 +104,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
       <div className="flex items-center justify-between mb-5">
         <div className="flex items-center gap-2">
           <SlidersHorizontal className="h-4 w-4 text-[#3898EC]" aria-hidden="true" />
-          <h3 className="text-base font-semibold text-[#222222]">Filtros</h3>
+          <h3 className="text-base font-semibold text-[#222222]">{t('title')}</h3>
           {activeCount > 0 && (
             <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#3898EC] text-white text-[11px] font-bold leading-none">
               {activeCount}
@@ -114,16 +118,16 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
             aria-label="Limpiar todos los filtros"
           >
             <X className="h-3.5 w-3.5" aria-hidden="true" />
-            Limpiar
+            {t('clear')}
           </button>
         )}
       </div>
 
       {/* Operation */}
       <fieldset className="mb-5">
-        <legend className="text-sm font-semibold text-[#333333] mb-2.5">Operación</legend>
+        <legend className="text-sm font-semibold text-[#333333] mb-2.5">{t('operation')}</legend>
         <div className="flex gap-2">
-          {(["Venta", "Alquiler"] as const).map((op) => (
+          {(['Venta', 'Alquiler'] as const).map((op) => (
             <button
               key={op}
               type="button"
@@ -131,7 +135,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
               className={pill(filters.operation === op)}
               aria-pressed={filters.operation === op ? "true" : "false"}
             >
-              {op}
+              {tCommon(op === 'Venta' ? 'sale' : 'rent')}
             </button>
           ))}
         </div>
@@ -139,7 +143,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
 
       {/* Property Types */}
       <fieldset className="mb-5">
-        <legend className="text-sm font-semibold text-[#333333] mb-2.5">Tipo de Propiedad</legend>
+        <legend className="text-sm font-semibold text-[#333333] mb-2.5">{t('propertyType')}</legend>
         <div className="flex flex-wrap gap-2">
           {propertyTypes.map((type) => {
             const active = (filters.types || []).includes(type)
@@ -161,7 +165,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
       {/* Price Range */}
       <fieldset className="mb-5">
         <legend className="text-sm font-semibold text-[#333333] mb-2.5">
-          Precio {filters.operation === "Alquiler" ? "(mensual)" : ""}
+          {t('price')} {filters.operation === "Alquiler" ? t('priceMonthly').replace('Precio ', '').replace('Price ', '') : ""}
         </legend>
         <div className="grid grid-cols-2 gap-2">
           {pricePresets.map(({ label, min, max }) => (
@@ -178,12 +182,12 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
         </div>
         <details className="mt-2 group">
           <summary className="text-xs text-[#3898EC] cursor-pointer hover:underline list-none focus-visible:outline-none">
-            Rango personalizado
+            {t('customRange')}
           </summary>
           <div className="flex gap-2 mt-2">
             <input
               type="number"
-              placeholder="Mín"
+              placeholder={t('min')}
               value={filters.priceMin ?? ""}
               onChange={(e) =>
                 onFiltersChange({ priceMin: e.target.value ? Number(e.target.value) : undefined })
@@ -193,7 +197,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
             />
             <input
               type="number"
-              placeholder="Máx"
+              placeholder={t('max')}
               value={filters.priceMax ?? ""}
               onChange={(e) =>
                 onFiltersChange({ priceMax: e.target.value ? Number(e.target.value) : undefined })
@@ -207,7 +211,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
 
       {/* Bedrooms */}
       <fieldset className="mb-5">
-        <legend className="text-sm font-semibold text-[#333333] mb-2.5">Habitaciones</legend>
+        <legend className="text-sm font-semibold text-[#333333] mb-2.5">{t('bedrooms')}</legend>
         <div className="flex gap-2">
           {[1, 2, 3, 4].map((num) => (
             <button
@@ -215,8 +219,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
               type="button"
               onClick={() => onFiltersChange({ bedrooms: filters.bedrooms === num ? undefined : num })}
               className={`flex-1 ${pill(filters.bedrooms === num)}`}
-              aria-pressed={filters.bedrooms === num ? "true" : "false"}
-              aria-label={`${num}${num === 4 ? " o más" : ""} habitaciones`}
+              aria-label={`${num}${num === 4 ? " " + t('bedroomsMin') : ""} ${tCommon('bedrooms')}`}
             >
               {num === 4 ? "4+" : num}
             </button>
@@ -227,7 +230,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
       {/* Location */}
       <div className="mb-2">
         <label htmlFor="filter-location" className="block text-sm font-semibold text-[#333333] mb-2.5">
-          Ubicación
+          {t('location')}
         </label>
         <select
           id="filter-location"
@@ -235,7 +238,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
           onChange={(e) => onFiltersChange({ location: e.target.value || undefined })}
           className="w-full px-3 py-2.5 text-sm border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-none focus:ring-2 focus:ring-[#3898EC]/20 transition-colors bg-white text-[#333333]"
         >
-          <option value="">Todas las ubicaciones</option>
+          <option value="">{t('allLocations')}</option>
           {locations.map((loc) => (
             <option key={loc} value={loc}>{loc}</option>
           ))}

@@ -4,6 +4,7 @@ import type { Property } from "@/lib/types"
 import { properties as propertiesData } from "@/lib/properties"
 import PropertyDetailClient from "@/components/property-detail-client"
 import { getPropertyPromotions } from "@/lib/promotions"
+import { getTranslations } from "next-intl/server"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://somosproperties.com"
 const fallbackImage = "/placeholder.svg"
@@ -78,22 +79,24 @@ function buildPropertyJsonLd(property: Property): Record<string, unknown> {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ id: string }>
+  params: Promise<{ id: string; locale: string }>
 }): Promise<Metadata> {
-  const { id } = await params
+  const { id, locale } = await params
   const propertyId = Number.parseInt(id, 10)
-  const fallbackCanonical = `${siteUrl}/propiedad/${id || ""}`.replace(/\/$/, "")
+  const t = await getTranslations({ locale, namespace: 'metadata.propertyDetail' })
+  
+  const fallbackCanonical = `${siteUrl}/${locale}/propiedad/${id || ""}`.replace(/\/$/, "")
   const fallbackMetadata: Metadata = {
-    title: "Propiedad no encontrada - SOMOS Properties",
-    description: "La propiedad que buscas no existe o ya no esta disponible.",
+    title: t('notFoundTitle'),
+    description: t('notFoundDescription'),
     alternates: {
-      canonical: fallbackCanonical || `${siteUrl}/propiedad`,
+      canonical: fallbackCanonical || `${siteUrl}/${locale}/propiedad`,
     },
     openGraph: {
-      title: "Propiedad no encontrada - SOMOS Properties",
-      description: "La propiedad que buscas no existe o ya no esta disponible.",
+      title: t('notFoundTitle'),
+      description: t('notFoundDescription'),
       type: "website",
-      url: fallbackCanonical || `${siteUrl}/propiedad`,
+      url: fallbackCanonical || `${siteUrl}/${locale}/propiedad`,
       images: [
         {
           url: toAbsoluteUrl(fallbackImage),

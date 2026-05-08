@@ -1,15 +1,25 @@
 ﻿import ContactForm from "@/components/contact-form"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
-import { createMetadata } from "@/lib/seo"
+import { getTranslations } from "next-intl/server"
+import type { Metadata } from "next"
 
-export const metadata = createMetadata({
-  title: "Contacto - SOMOS Properties",
-  description: "Contáctanos para más información sobre nuestras propiedades en Panamá.",
-  path: "/contacto",
-})
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.contacto' })
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `https://somosproperties.com/${locale}/contacto`,
+    },
+  }
+}
 
-export default function ContactoPage() {
+export default async function ContactoPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'contacto' })
   return (
     <>
       <Navbar />
@@ -17,21 +27,21 @@ export default function ContactoPage() {
       <main className="py-12 bg-[#fafafa] min-h-screen">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-[#222222] mb-4">Contáctanos</h1>
-            <p className="text-lg text-[#999999]">Estamos aquí para ayudarte a encontrar tu propiedad ideal</p>
+            <h1 className="text-4xl font-bold text-[#222222] mb-4">{t('title')}</h1>
+            <p className="text-lg text-[#999999]">{t('subtitle')}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-lg shadow-card">
-              <h2 className="text-2xl font-semibold text-[#222222] mb-6">Envíanos un Mensaje</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-6">{t('formHeading')}</h2>
               <ContactForm />
             </div>
 
             {/* Contact Info */}
             <div>
               <div className="bg-white p-8 rounded-lg shadow-card mb-6">
-                <h2 className="text-2xl font-semibold text-[#222222] mb-6">Información de Contacto</h2>
+                <h2 className="text-2xl font-semibold text-[#222222] mb-6">{t('infoHeading')}</h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -52,7 +62,7 @@ export default function ContactoPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#222222] mb-1">Teléfono</h3>
+                      <h3 className="font-semibold text-[#222222] mb-1">{t('phone')}</h3>
                       <p className="text-[#999999]">+507 6677-0577</p>
                     </div>
                   </div>
@@ -75,7 +85,7 @@ export default function ContactoPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#222222] mb-1">Email</h3>
+                      <h3 className="font-semibold text-[#222222] mb-1">{t('email')}</h3>
                       <a
                         href="mailto:ventas@somosproperties.com"
                         className="text-[#3898EC] hover:underline"
@@ -109,14 +119,14 @@ export default function ContactoPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#222222] mb-1">Dirección</h3>
+                      <h3 className="font-semibold text-[#222222] mb-1">{t('address')}</h3>
                       <a
                         href="https://www.google.com/maps/place/Somos+Properties/@8.980677,-79.5244254,21z/data=!4m6!3m5!1s0x8faca9087f0a1529:0xdf82217316d458da!8m2!3d8.9806391!4d-79.5243692!16s%2Fg%2F11pz09nkcx?authuser=0&entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[#3898EC] hover:underline"
                       >
-                        Somos Properties - Calle 50, Bella Vista, Ciudad de Panamá
+                        {t('addressText')}
                       </a>
                     </div>
                   </div>
@@ -139,10 +149,10 @@ export default function ContactoPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#222222] mb-1">Horario</h3>
-                      <p className="text-[#999999]">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
-                      <p className="text-[#999999]">Sábados: 9:00 AM - 2:00 PM</p>
-                      <p className="text-[#999999]">Domingos: Cerrado</p>
+                      <h3 className="font-semibold text-[#222222] mb-1">{t('hours')}</h3>
+                      <p className="text-[#999999]">{t('hoursWeekdays')}</p>
+                      <p className="text-[#999999]">{t('hoursSaturday')}</p>
+                      <p className="text-[#999999]">{t('hoursSunday')}</p>
                     </div>
                   </div>
                 </div>

@@ -1,25 +1,34 @@
 import type { Metadata } from "next"
 import { Suspense } from "react"
+import { getTranslations } from "next-intl/server"
 import PropiedadesContent from "./propiedades-content"
 
-export const metadata: Metadata = {
-  title: "Todas las Propiedades | SOMOS Properties",
-  description: "Explora miles de propiedades en venta y alquiler en Panamá. Residenciales, comerciales y locales.",
-  alternates: {
-    canonical: "https://somosproperties.com/propiedades",
-  },
-  openGraph: {
-    title: "Todas las Propiedades",
-    description: "Explora miles de propiedades en Panamá.",
-    type: "website",
-    url: "https://somosproperties.com/propiedades",
-    siteName: "SOMOS Properties",
-  },
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.propiedades' })
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `https://somosproperties.com/${locale}/propiedades`,
+    },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: "website",
+      url: `https://somosproperties.com/${locale}/propiedades`,
+      siteName: "SOMOS Properties",
+    },
+  }
 }
 
-export default function PropiedadesPage() {
+export default async function PropiedadesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'propiedades' })
+  
   return (
-    <Suspense fallback={<div className="py-12 text-center">Cargando...</div>}>
+    <Suspense fallback={<div className="py-12 text-center">{t('loading')}</div>}>
       <PropiedadesContent />
     </Suspense>
   )

@@ -1,0 +1,15 @@
+change: fix-critical-inconsistencies
+phase: verify
+artifact_store: hybrid
+artifacts:
+  explore: true
+  proposal: true
+  specs: true
+  design: false
+  tasks: false
+  apply-progress: false
+  verify-report: false
+tasks_progress:
+  completed: []
+  pending: []
+last_updated: "2026-05-08"

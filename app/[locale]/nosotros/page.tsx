@@ -14,8 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
-export default async function NosotrosPage() {
-  const t = await getTranslations('about')
+export default async function NosotrosPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'about' })
 
   const featureCards = [
     {
@@ -95,13 +96,13 @@ export default async function NosotrosPage() {
                 <p className="mt-3 text-lg text-[#1e293b] drop-shadow-sm">{t('hero.subtitle')}</p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
-                    href="/contacto"
+                    href={`/${locale}/contacto`}
                     className="rounded-lg bg-[#3898EC] text-white px-5 py-3 font-semibold hover:bg-[#2e8adb] transition shadow-sm"
                   >
                     {t('hero.talkBtn')}
                   </Link>
                   <Link
-                    href="/propiedades"
+                    href={`/${locale}/propiedades`}
                     className="rounded-lg border border-[#dbe7f3] px-5 py-3 font-semibold text-[#0f3d63] hover:bg-[#f5f9fd] transition"
                   >
                     {t('hero.portfolioBtn')}
@@ -184,13 +185,13 @@ export default async function NosotrosPage() {
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
-                    href="/contacto"
+                    href={`/${locale}/contacto`}
                     className="rounded-lg bg-[#3898EC] px-5 py-3 font-semibold text-white hover:bg-[#2e8adb] transition"
                   >
                     {t('values.callBtn')}
                   </Link>
                   <Link
-                    href="/propiedades"
+                    href={`/${locale}/propiedades`}
                     className="rounded-lg border border-[#dbe7f3] px-5 py-3 font-semibold text-[#0f3d63] hover:bg-[#f5f9fd] transition"
                   >
                     {t('values.portfolioBtn')}

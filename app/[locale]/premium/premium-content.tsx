@@ -6,8 +6,10 @@ import Footer from "@/components/footer"
 import PropertyGrid from "@/components/property-grid"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { getPremiumProperties } from "@/lib/utils-premium"
+import { useTranslations } from "next-intl"
 
 export default function PremiumContent() {
+  const t = useTranslations('premium')
   const premiumProperties = getPremiumProperties(allPropertiesData)
 
   return (
@@ -27,13 +29,13 @@ export default function PremiumContent() {
         {/* Contenido del Hero */}
         <div className="container-custom text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-4 py-2 rounded-full text-sm font-bold mb-6 shadow-lg">
-            <span>PROPIEDADES PREMIUM</span>
+            <span>{t('badge')}</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Vive la Excelencia</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">{t('hero.title')}</h1>
 
           <p className="text-xl md:text-2xl mb-8 text-white/90 drop-shadow-lg max-w-3xl mx-auto">
-            Ubicaciones privilegiadas, acabados de lujo y amenidades exclusivas en Panamá
+            {t('hero.subtitle')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -41,13 +43,13 @@ export default function PremiumContent() {
               href="#propiedades-premium"
               className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all shadow-lg"
             >
-              Ver Propiedades Premium
+              {t('hero.viewProperties')}
             </a>
             <Link
               href="/contacto"
               className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all shadow-lg"
             >
-              Agendar Tour Privado
+              {t('hero.scheduleTour')}
             </Link>
           </div>
         </div>
@@ -57,9 +59,9 @@ export default function PremiumContent() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#222222] mb-4">¿Por Qué Elegir Premium?</h2>
+            <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('whyChoose.title')}</h2>
             <p className="text-lg text-[#999999] max-w-2xl mx-auto">
-              Propiedades excepcionales que superan los más altos estándares de calidad y exclusividad
+              {t('whyChoose.subtitle')}
             </p>
           </div>
 
@@ -82,9 +84,9 @@ export default function PremiumContent() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#222222] mb-3">Ubicaciones Privilegiadas</h3>
+              <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.0.title')}</h3>
               <p className="text-[#999999] leading-relaxed">
-                Las mejores zonas de Panamá: Punta Pacífica, Costa del Este, Casco Viejo y Santa María
+                {t('values.0.desc')}
               </p>
             </div>
 
@@ -106,9 +108,9 @@ export default function PremiumContent() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#222222] mb-3">Acabados de Lujo</h3>
+              <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.1.title')}</h3>
               <p className="text-[#999999] leading-relaxed">
-                Materiales premium, diseño arquitectónico exclusivo y tecnología de última generación
+                {t('values.1.desc')}
               </p>
             </div>
 
@@ -130,9 +132,9 @@ export default function PremiumContent() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#222222] mb-3">Amenidades Exclusivas</h3>
+              <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.2.title')}</h3>
               <p className="text-[#999999] leading-relaxed">
-                Piscinas infinity, gimnasios premium, concierge 24/7 y espacios verdes privados
+                {t('values.2.desc')}
               </p>
             </div>
 
@@ -154,9 +156,9 @@ export default function PremiumContent() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#222222] mb-3">Servicio VIP</h3>
+              <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.3.title')}</h3>
               <p className="text-[#999999] leading-relaxed">
-                Tours privados, asesoría dedicada y proceso facilitado de principio a fin
+                {t('values.3.desc')}
               </p>
             </div>
           </div>
@@ -167,8 +169,8 @@ export default function PremiumContent() {
       <section id="propiedades-premium" className="py-20 bg-[#fafafa]">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#222222] mb-4">Propiedades Premium Disponibles</h2>
-            <p className="text-lg text-[#999999]">{premiumProperties.length} propiedades exclusivas esperando por ti</p>
+            <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('propertiesHeading')}</h2>
+            <p className="text-lg text-[#999999]">{t('propertiesCount', { count: premiumProperties.length })}</p>
           </div>
 
           {premiumProperties.length > 0 ? (
@@ -191,15 +193,15 @@ export default function PremiumContent() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[#222222] mb-4">Próximamente Propiedades Premium</h3>
+              <h3 className="text-2xl font-bold text-[#222222] mb-4">{t('noProperties.title')}</h3>
               <p className="text-[#999999] mb-8 max-w-md mx-auto">
-                Estamos seleccionando las mejores propiedades para ofrecerte. Déjanos tus datos y te contactaremos.
+                {t('noProperties.subtitle')}
               </p>
               <Link
                 href="/contacto"
                 className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold hover:shadow-xl transition-all"
               >
-                Quiero ser Notificado
+                {t('noProperties.contactBtn')}
               </Link>
             </div>
           )}
@@ -213,22 +215,22 @@ export default function PremiumContent() {
         </div>
 
         <div className="container-custom text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">¿Listo para Encontrar tu Propiedad Ideal?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('cta.title')}</h2>
           <p className="text-xl mb-8 text-white/80 max-w-2xl mx-auto">
-            Nuestro equipo de asesores premium está listo para ayudarte a encontrar la propiedad perfecta
+            {t('cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contacto"
               className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all"
             >
-              Contactar Asesor VIP
+              {t('cta.contactBtn')}
             </Link>
             <Link
               href="/propiedades"
               className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all"
             >
-              Ver Todas las Propiedades
+              {t('cta.viewAllBtn')}
             </Link>
           </div>
         </div>

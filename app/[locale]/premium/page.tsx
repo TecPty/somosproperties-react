@@ -1,18 +1,35 @@
 import type { Metadata } from "next"
 import { Suspense } from "react"
+import { getTranslations } from "next-intl/server"
 import PremiumContent from "./premium-content"
-import { createMetadata } from "@/lib/seo"
 
-export const metadata: Metadata = createMetadata({
-  title: "Propiedades Premium en Panamá | SOMOS Properties",
-  description:
-    "Propiedades exclusivas con ubicaciones privilegiadas, acabados de lujo y amenidades premium. Descubre las mejores opciones en Punta Pacífica, Costa del Este y más.",
-  path: "/premium",
-})
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.premium' })
+  const tPremium = await getTranslations({ locale, namespace: 'premium' })
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `https://somosproperties.com/${locale}/premium`,
+    },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      type: "website",
+      url: `https://somosproperties.com/${locale}/premium`,
+      siteName: "SOMOS Properties",
+    },
+  }
+}
 
-export default function PremiumPage() {
+export default async function PremiumPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'premium' })
+  
   return (
-    <Suspense fallback={<div className="py-12 text-center">Cargando propiedades premium...</div>}>
+    <Suspense fallback={<div className="py-12 text-center">{t('hero.title')}...</div>}>
       <PremiumContent />
     </Suspense>
   )

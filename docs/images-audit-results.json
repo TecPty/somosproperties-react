@@ -1,0 +1,1049 @@
+﻿{
+    "ImagenesFaltantes":  [
+                              {
+                                  "PropertyId":  1,
+                                  "PropertyTitle":  "Kings Park - Torre 500, Apto 3-B",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/kings-park/plano-modelo-a.png"
+                              },
+                              {
+                                  "PropertyId":  1,
+                                  "PropertyTitle":  "Kings Park - Torre 500, Apto 3-B",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/kings-park/plano-modelo-b.png"
+                              },
+                              {
+                                  "PropertyId":  238,
+                                  "PropertyTitle":  "Kings Park - Torre 500, Apto 10-B",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/kings-park/plano-modelo-a.png"
+                              },
+                              {
+                                  "PropertyId":  238,
+                                  "PropertyTitle":  "Kings Park - Torre 500, Apto 10-B",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/kings-park/plano-modelo-b.png"
+                              },
+                              {
+                                  "PropertyId":  2,
+                                  "PropertyTitle":  "Central Plaza - La Chorrera",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/central-plaza/hero.png"
+                              },
+                              {
+                                  "PropertyId":  2,
+                                  "PropertyTitle":  "Central Plaza - La Chorrera",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/central-plaza/hero.png"
+                              },
+                              {
+                                  "PropertyId":  2,
+                                  "PropertyTitle":  "Central Plaza - La Chorrera",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/central-plaza/hero-1080.png"
+                              },
+                              {
+                                  "PropertyId":  2,
+                                  "PropertyTitle":  "Central Plaza - La Chorrera",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/central-plaza/hero-1600.png"
+                              },
+                              {
+                                  "PropertyId":  25,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E3 Casa 182 (Unifamiliar 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png"
+                              },
+                              {
+                                  "PropertyId":  25,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E3 Casa 182 (Unifamiliar 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  239,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E2 Casa 186 (Unifamiliar 2 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png"
+                              },
+                              {
+                                  "PropertyId":  239,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E2 Casa 186 (Unifamiliar 2 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  240,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E4 Casa 26 (DÃšplex 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  241,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E1 Casa 272 (DÃšplex 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  243,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E1 Casa 287 (DÃšplex 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  244,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E2 Casa 189 (Unifamiliar 2 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png"
+                              },
+                              {
+                                  "PropertyId":  244,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E2 Casa 189 (Unifamiliar 2 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  245,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E2 Casa 192 (Unifamiliar 2 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png"
+                              },
+                              {
+                                  "PropertyId":  245,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E2 Casa 192 (Unifamiliar 2 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  246,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E3 Casa 198 (Unifamiliar 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png"
+                              },
+                              {
+                                  "PropertyId":  246,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E3 Casa 198 (Unifamiliar 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  247,
+                                  "PropertyTitle":  "Praderas de ArraijÃ¡n - E4 Casa 29 (DÃšplex 3 Rec)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                              },
+                              {
+                                  "PropertyId":  243,
+                                  "PropertyTitle":  "The Towers Business Plaza - Local 4-A Nivel 4",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                              },
+                              {
+                                  "PropertyId":  243,
+                                  "PropertyTitle":  "The Towers Business Plaza - Local 4-A Nivel 4",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                              },
+                              {
+                                  "PropertyId":  244,
+                                  "PropertyTitle":  "The Towers Business Plaza - Local Planta Baja Frente a Calle",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                              },
+                              {
+                                  "PropertyId":  244,
+                                  "PropertyTitle":  "The Towers Business Plaza - Local Planta Baja Frente a Calle",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                              },
+                              {
+                                  "PropertyId":  27,
+                                  "PropertyTitle":  "The Tower Business Calle 50 - Oficinas Ocupadas",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                              },
+                              {
+                                  "PropertyId":  27,
+                                  "PropertyTitle":  "The Tower Business Calle 50 - Oficinas Ocupadas",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                              },
+                              {
+                                  "PropertyId":  33,
+                                  "PropertyTitle":  "Sunset Strip - VÃ­a Israel",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-00.webp"
+                              },
+                              {
+                                  "PropertyId":  33,
+                                  "PropertyTitle":  "Sunset Strip - VÃ­a Israel",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-100.webp"
+                              },
+                              {
+                                  "PropertyId":  33,
+                                  "PropertyTitle":  "Sunset Strip - VÃ­a Israel",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-200.webp"
+                              },
+                              {
+                                  "PropertyId":  39,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 228",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  39,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 228",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  39,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 228",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-street-view.webp"
+                              },
+                              {
+                                  "PropertyId":  39,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 228",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  40,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 231",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/rali/pasillo-acceso-glass.webp"
+                              },
+                              {
+                                  "PropertyId":  40,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 231",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/pasillo-acceso-glass.webp"
+                              },
+                              {
+                                  "PropertyId":  40,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 231",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-street-view.webp"
+                              },
+                              {
+                                  "PropertyId":  40,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 231",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  41,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 244",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/rali/oficina-shell-38m2.webp"
+                              },
+                              {
+                                  "PropertyId":  41,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 244",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/oficina-shell-38m2.webp"
+                              },
+                              {
+                                  "PropertyId":  41,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 244",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-street-view.webp"
+                              },
+                              {
+                                  "PropertyId":  41,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 244",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  42,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 802",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/rali/lounge-vista-mar.webp"
+                              },
+                              {
+                                  "PropertyId":  42,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 802",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lounge-vista-mar.webp"
+                              },
+                              {
+                                  "PropertyId":  42,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 802",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-street-view.webp"
+                              },
+                              {
+                                  "PropertyId":  42,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 802",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  43,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 806",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/rali/lounge-muro-verde.webp"
+                              },
+                              {
+                                  "PropertyId":  43,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 806",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lounge-muro-verde.webp"
+                              },
+                              {
+                                  "PropertyId":  43,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 806",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-street-view.webp"
+                              },
+                              {
+                                  "PropertyId":  43,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 806",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  44,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 810",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/rali/sala-juntas-ejecutiva.webp"
+                              },
+                              {
+                                  "PropertyId":  44,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 810",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/sala-juntas-ejecutiva.webp"
+                              },
+                              {
+                                  "PropertyId":  44,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 810",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-street-view.webp"
+                              },
+                              {
+                                  "PropertyId":  44,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 810",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  45,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 826",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-avenida-balboa.webp"
+                              },
+                              {
+                                  "PropertyId":  45,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 826",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-avenida-balboa.webp"
+                              },
+                              {
+                                  "PropertyId":  45,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 826",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/fachada-rali-street-view.webp"
+                              },
+                              {
+                                  "PropertyId":  45,
+                                  "PropertyTitle":  "Rali Business Center - Oficina 826",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                              },
+                              {
+                                  "PropertyId":  135,
+                                  "PropertyTitle":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-1.webp"
+                              },
+                              {
+                                  "PropertyId":  135,
+                                  "PropertyTitle":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-1.webp"
+                              },
+                              {
+                                  "PropertyId":  135,
+                                  "PropertyTitle":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-2.webp"
+                              },
+                              {
+                                  "PropertyId":  135,
+                                  "PropertyTitle":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-3.webp"
+                              },
+                              {
+                                  "PropertyId":  135,
+                                  "PropertyTitle":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-4.webp"
+                              },
+                              {
+                                  "PropertyId":  135,
+                                  "PropertyTitle":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-5.webp"
+                              },
+                              {
+                                  "PropertyId":  135,
+                                  "PropertyTitle":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-6.webp"
+                              },
+                              {
+                                  "PropertyId":  141,
+                                  "PropertyTitle":  "Sunset Strip - Local 11",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-00.webp"
+                              },
+                              {
+                                  "PropertyId":  146,
+                                  "PropertyTitle":  "Sunset Strip - Local 10",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-00.webp"
+                              },
+                              {
+                                  "PropertyId":  147,
+                                  "PropertyTitle":  "Sunset Strip - Local 14",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-00.webp"
+                              },
+                              {
+                                  "PropertyId":  148,
+                                  "PropertyTitle":  "Sunset Strip - Local 109",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-100.webp"
+                              },
+                              {
+                                  "PropertyId":  142,
+                                  "PropertyTitle":  "Sunset Strip - Local 25",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-00.webp"
+                              },
+                              {
+                                  "PropertyId":  143,
+                                  "PropertyTitle":  "Sunset Strip - Local 26",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-00.webp"
+                              },
+                              {
+                                  "PropertyId":  144,
+                                  "PropertyTitle":  "Sunset Strip - Local 134",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-100.webp"
+                              },
+                              {
+                                  "PropertyId":  145,
+                                  "PropertyTitle":  "Sunset Strip - Oficina 206",
+                                  "ImageType":  "Plano",
+                                  "ImagePath":  "/images/properties/sunset-strip/nivel-200.webp"
+                              },
+                              {
+                                  "PropertyId":  161,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L13",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-1.webp"
+                              },
+                              {
+                                  "PropertyId":  161,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L13",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-1.webp"
+                              },
+                              {
+                                  "PropertyId":  161,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L13",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-2.webp"
+                              },
+                              {
+                                  "PropertyId":  161,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L13",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-3.webp"
+                              },
+                              {
+                                  "PropertyId":  161,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L13",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-4.webp"
+                              },
+                              {
+                                  "PropertyId":  161,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L13",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-5.webp"
+                              },
+                              {
+                                  "PropertyId":  161,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L13",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-6.webp"
+                              },
+                              {
+                                  "PropertyId":  162,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L14",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-1.webp"
+                              },
+                              {
+                                  "PropertyId":  162,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L14",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-1.webp"
+                              },
+                              {
+                                  "PropertyId":  162,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L14",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-2.webp"
+                              },
+                              {
+                                  "PropertyId":  162,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L14",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-3.webp"
+                              },
+                              {
+                                  "PropertyId":  162,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L14",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-4.webp"
+                              },
+                              {
+                                  "PropertyId":  162,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L14",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-5.webp"
+                              },
+                              {
+                                  "PropertyId":  162,
+                                  "PropertyTitle":  "Boulevard Costa Verde - Local L14",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/boulevard-plaza/hero-6.webp"
+                              },
+                              {
+                                  "PropertyId":  258,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Nevada (Entrega Inmediata)",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/new-west/modelo-nevada.webp"
+                              },
+                              {
+                                  "PropertyId":  258,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Nevada (Entrega Inmediata)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/new-west/modelo-nevada.webp"
+                              },
+                              {
+                                  "PropertyId":  259,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Ilana",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/new-west/modelo-ilana.webp"
+                              },
+                              {
+                                  "PropertyId":  259,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Ilana",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/new-west/modelo-ilana.webp"
+                              },
+                              {
+                                  "PropertyId":  260,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Jazmin",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/new-west/modelo-jazmin.webp"
+                              },
+                              {
+                                  "PropertyId":  260,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Jazmin",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/new-west/modelo-jazmin.webp"
+                              },
+                              {
+                                  "PropertyId":  261,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Cedro (Entrega Inmediata)",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/new-west/modelo-cedro.webp"
+                              },
+                              {
+                                  "PropertyId":  261,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Cedro (Entrega Inmediata)",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/new-west/modelo-cedro.webp"
+                              },
+                              {
+                                  "PropertyId":  262,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Roble",
+                                  "ImageType":  "Principal",
+                                  "ImagePath":  "/images/properties/new-west/modelo-roble.webp"
+                              },
+                              {
+                                  "PropertyId":  262,
+                                  "PropertyTitle":  "New West Costa Verde - Modelo Roble",
+                                  "ImageType":  "Galeria",
+                                  "ImagePath":  "/images/properties/new-west/modelo-roble.webp"
+                              }
+                          ],
+    "TotalImagenesExistentes":  917,
+    "PropiedadesConImagenesFaltantes":  39,
+    "TotalPropiedades":  152,
+    "Fecha":  "2026-03-30 17:19:32",
+    "TotalImagenesFaltantes":  98,
+    "PropiedadesAfectadas":  [
+                                 {
+                                     "Id":  1,
+                                     "Title":  "Kings Park - Torre 500, Apto 3-B",
+                                     "Type":  "Apartamento",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/kings-park/plano-modelo-a.png",
+                                                           "Plano: /images/properties/kings-park/plano-modelo-b.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  238,
+                                     "Title":  "Kings Park - Torre 500, Apto 10-B",
+                                     "Type":  "Apartamento",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/kings-park/plano-modelo-a.png",
+                                                           "Plano: /images/properties/kings-park/plano-modelo-b.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  2,
+                                     "Title":  "Central Plaza - La Chorrera",
+                                     "Type":  "Local",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/central-plaza/hero.png",
+                                                           "Galeria: /images/properties/central-plaza/hero.png",
+                                                           "Galeria: /images/properties/central-plaza/hero-1080.png",
+                                                           "Galeria: /images/properties/central-plaza/hero-1600.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  25,
+                                     "Title":  "Praderas de ArraijÃ¡n - E3 Casa 182 (Unifamiliar 3 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  239,
+                                     "Title":  "Praderas de ArraijÃ¡n - E2 Casa 186 (Unifamiliar 2 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  240,
+                                     "Title":  "Praderas de ArraijÃ¡n - E4 Casa 26 (DÃšplex 3 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  241,
+                                     "Title":  "Praderas de ArraijÃ¡n - E1 Casa 272 (DÃšplex 3 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  243,
+                                     "Title":  "Praderas de ArraijÃ¡n - E1 Casa 287 (DÃšplex 3 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  244,
+                                     "Title":  "Praderas de ArraijÃ¡n - E2 Casa 189 (Unifamiliar 2 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  245,
+                                     "Title":  "Praderas de ArraijÃ¡n - E2 Casa 192 (Unifamiliar 2 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  246,
+                                     "Title":  "Praderas de ArraijÃ¡n - E3 Casa 198 (Unifamiliar 3 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  247,
+                                     "Title":  "Praderas de ArraijÃ¡n - E4 Casa 29 (DÃšplex 3 Rec)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Galeria: /images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  243,
+                                     "Title":  "The Towers Business Plaza - Local 4-A Nivel 4",
+                                     "Type":  "Local",
+                                     "Operation":  "Venta/Alquiler",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg",
+                                                           "Galeria: /images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  244,
+                                     "Title":  "The Towers Business Plaza - Local Planta Baja Frente a Calle",
+                                     "Type":  "Local",
+                                     "Operation":  "Venta/Alquiler",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg",
+                                                           "Galeria: /images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  27,
+                                     "Title":  "The Tower Business Calle 50 - Oficinas Ocupadas",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg",
+                                                           "Galeria: /images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  33,
+                                     "Title":  "Sunset Strip - VÃ­a Israel",
+                                     "Type":  "Local",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  3,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-00.webp",
+                                                           "Plano: /images/properties/sunset-strip/nivel-100.webp",
+                                                           "Plano: /images/properties/sunset-strip/nivel-200.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  39,
+                                     "Title":  "Rali Business Center - Oficina 228",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/rali/lobby-escaleras-anillo-luz.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-street-view.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  40,
+                                     "Title":  "Rali Business Center - Oficina 231",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/rali/pasillo-acceso-glass.webp",
+                                                           "Galeria: /images/properties/rali/pasillo-acceso-glass.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-street-view.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  41,
+                                     "Title":  "Rali Business Center - Oficina 244",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/rali/oficina-shell-38m2.webp",
+                                                           "Galeria: /images/properties/rali/oficina-shell-38m2.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-street-view.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  42,
+                                     "Title":  "Rali Business Center - Oficina 802",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/rali/lounge-vista-mar.webp",
+                                                           "Galeria: /images/properties/rali/lounge-vista-mar.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-street-view.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  43,
+                                     "Title":  "Rali Business Center - Oficina 806",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/rali/lounge-muro-verde.webp",
+                                                           "Galeria: /images/properties/rali/lounge-muro-verde.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-street-view.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  44,
+                                     "Title":  "Rali Business Center - Oficina 810",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/rali/sala-juntas-ejecutiva.webp",
+                                                           "Galeria: /images/properties/rali/sala-juntas-ejecutiva.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-street-view.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  45,
+                                     "Title":  "Rali Business Center - Oficina 826",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  4,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/rali/fachada-rali-avenida-balboa.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-avenida-balboa.webp",
+                                                           "Galeria: /images/properties/rali/fachada-rali-street-view.webp",
+                                                           "Galeria: /images/properties/rali/lobby-escaleras-anillo-luz.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  135,
+                                     "Title":  "Boulevard Plaza Costa Verde - OcupaciÃ³n Completa",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  7,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/boulevard-plaza/hero-1.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-1.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-2.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-3.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-4.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-5.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-6.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  141,
+                                     "Title":  "Sunset Strip - Local 11",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-00.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  146,
+                                     "Title":  "Sunset Strip - Local 10",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-00.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  147,
+                                     "Title":  "Sunset Strip - Local 14",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-00.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  148,
+                                     "Title":  "Sunset Strip - Local 109",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-100.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  142,
+                                     "Title":  "Sunset Strip - Local 25",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-00.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  143,
+                                     "Title":  "Sunset Strip - Local 26",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-00.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  144,
+                                     "Title":  "Sunset Strip - Local 134",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-100.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  145,
+                                     "Title":  "Sunset Strip - Oficina 206",
+                                     "Type":  "Oficina",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  1,
+                                     "MissingImages":  [
+                                                           "Plano: /images/properties/sunset-strip/nivel-200.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  161,
+                                     "Title":  "Boulevard Costa Verde - Local L13",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  7,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/boulevard-plaza/hero-1.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-1.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-2.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-3.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-4.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-5.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-6.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  162,
+                                     "Title":  "Boulevard Costa Verde - Local L14",
+                                     "Type":  "Local",
+                                     "Operation":  "Alquiler",
+                                     "MissingCount":  7,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/boulevard-plaza/hero-1.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-1.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-2.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-3.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-4.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-5.webp",
+                                                           "Galeria: /images/properties/boulevard-plaza/hero-6.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  258,
+                                     "Title":  "New West Costa Verde - Modelo Nevada (Entrega Inmediata)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/new-west/modelo-nevada.webp",
+                                                           "Galeria: /images/properties/new-west/modelo-nevada.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  259,
+                                     "Title":  "New West Costa Verde - Modelo Ilana",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/new-west/modelo-ilana.webp",
+                                                           "Galeria: /images/properties/new-west/modelo-ilana.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  260,
+                                     "Title":  "New West Costa Verde - Modelo Jazmin",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/new-west/modelo-jazmin.webp",
+                                                           "Galeria: /images/properties/new-west/modelo-jazmin.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  261,
+                                     "Title":  "New West Costa Verde - Modelo Cedro (Entrega Inmediata)",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/new-west/modelo-cedro.webp",
+                                                           "Galeria: /images/properties/new-west/modelo-cedro.webp"
+                                                       ]
+                                 },
+                                 {
+                                     "Id":  262,
+                                     "Title":  "New West Costa Verde - Modelo Roble",
+                                     "Type":  "Casa",
+                                     "Operation":  "Venta",
+                                     "MissingCount":  2,
+                                     "MissingImages":  [
+                                                           "Principal: /images/properties/new-west/modelo-roble.webp",
+                                                           "Galeria: /images/properties/new-west/modelo-roble.webp"
+                                                       ]
+                                 }
+                             ],
+    "CoberturaImagenes":  90.34
+}
