@@ -182,7 +182,8 @@
         "Balcon con vista al mar",
         "Alquiler: $5,750/mes"
       ],
-      "minIncome": 3000
+      "minIncome": 3000,
+      "slug": "pacific-point-t-00-lb-y-aa"
     },
     {
       "type": "Apartamento",
@@ -241,7 +242,8 @@
       "incentives": [
         "Sin abono inicial",
         "Gastos legales gratis"
-      ]
+      ],
+      "slug": "kings-park-torre-00-apto-b"
     },
     {
       "type": "Apartamento",
@@ -306,7 +308,8 @@
       "incentives": [
         "Sin abono inicial",
         "Gastos legales gratis"
-      ]
+      ],
+      "slug": "kings-park-torre-00-apto-0-b"
     },
     {
       "id": 2,
@@ -348,7 +351,8 @@
         "Fachada visible con estacionamientos",
         "Acceso directo desde vía principal",
         "Ideal retail o servicios"
-      ]
+      ],
+      "slug": "central-plaza-la-chorrera"
     },
     {
       "id": 25,
@@ -406,7 +410,8 @@
         "Pumptrack y amenidades recreativas",
         "A 34km de Ciudad de Panamá, cerca del Metro"
       ],
-      "minIncome": 1500
+      "minIncome": 1500,
+      "slug": "praderas-de-arraijan-e-casa-unifamiliar-rec"
     },
     {
       "id": 239,
@@ -463,7 +468,8 @@
         "Conexión directa Metro Línea 3",
         "Pumptrack Único en Panamá"
       ],
-      "minIncome": 1300
+      "minIncome": 1300,
+      "slug": "praderas-de-arraijan-e-casa-unifamiliar-rec-239"
     },
     {
       "id": 240,
@@ -520,7 +526,8 @@
         "Family room en planta alta",
         "Metro Línea 3 cercano"
       ],
-      "minIncome": 1500
+      "minIncome": 1500,
+      "slug": "praderas-de-arraijan-e-casa-duplex-rec"
     },
     {
       "id": 241,
@@ -577,7 +584,8 @@
         "90m² de construcción",
         "Precio: $118,073"
       ],
-      "minIncome": 1500
+      "minIncome": 1500,
+      "slug": "praderas-de-arraijan-e-casa-duplex-rec-241"
     },
     {
       "id": 242,
@@ -686,7 +694,8 @@
         "90m² de construcción",
         "Precio: $118,073"
       ],
-      "minIncome": 1500
+      "minIncome": 1500,
+      "slug": "praderas-de-arraijan-e-casa-duplex-rec-243"
     },
     {
       "id": 244,
@@ -743,7 +752,8 @@
         "80m² de construcción",
         "Precio: $87,997"
       ],
-      "minIncome": 1300
+      "minIncome": 1300,
+      "slug": "praderas-de-arraijan-e-casa-unifamiliar-rec-244"
     },
     {
       "id": 245,
@@ -800,7 +810,8 @@
         "80m² de construcción",
         "Precio: $87,997"
       ],
-      "minIncome": 1300
+      "minIncome": 1300,
+      "slug": "praderas-de-arraijan-e-casa-unifamiliar-rec-245"
     },
     {
       "id": 246,
@@ -858,7 +869,8 @@
         "80m² de construcción",
         "Precio: $97,997"
       ],
-      "minIncome": 1500
+      "minIncome": 1500,
+      "slug": "praderas-de-arraijan-e-casa-unifamiliar-rec-246"
     },
     {
       "id": 247,
@@ -915,7 +927,8 @@
         "90m² de construcción",
         "Precio: $116,997"
       ],
-      "minIncome": 1500
+      "minIncome": 1500,
+      "slug": "praderas-de-arraijan-e-casa-duplex-rec-247"
     },
     {
       "id": 26,
@@ -1004,7 +1017,8 @@
         "Mantenimiento: $958/mes",
         "Opción sin piso: $1,070,505"
       ],
-      "hidden": true
+      "hidden": true,
+      "slug": "the-towers-business-plaza-local-a-nivel"
     },
     {
       "id": 244,
@@ -1045,7 +1059,8 @@
         "Frente a calle con alta visibilidad",
         "Mantenimiento: $531/mes"
       ],
-      "hidden": true
+      "hidden": true,
+      "slug": "the-towers-business-plaza-local-planta-baja-frente-a-calle"
     },
     {
       "id": 27,
@@ -1093,7 +1108,8 @@
         "Ubicación prime en distrito financiero",
         "Seguridad y lobby empresarial"
       ],
-      "hidden": true
+      "hidden": true,
+      "slug": "the-tower-business-calle-0-oficinas-ocupadas"
     },
     {
       "id": 245,
@@ -1148,7 +1164,8 @@
         "272 m² de lujo",
         "Vista 360Â° ciudad",
         "Acabados europeos"
-      ]
+      ],
+      "slug": "the-towers-residences-apto-b-torre-00"
     },
     {
       "id": 29,
@@ -1200,7 +1217,8 @@
         "Cocina gourmet premium",
         "Piso alto Torre 100",
         "Proyecto exclusivo San Francisco"
-      ]
+      ],
+      "slug": "the-towers-residences-apto-b-torre-00-29"
     },
     {
       "id": 30,
@@ -1254,7 +1272,8 @@
         "Piso alto vista panorámica",
         "Acabados importados",
         "Proyecto exclusivo"
-      ]
+      ],
+      "slug": "the-towers-residences-apto-b-torre-00-30"
     },
     {
       "id": 31,
@@ -1307,7 +1326,8 @@
         "Amplio estacionamiento y CCTV 24/7",
         "Acceso controlado y zonas de carga"
       ],
-      "hidden": true
+      "hidden": true,
+      "slug": "plaza-los-guayacanes-la-chorrera"
     },
     {
       "type": "Local",
@@ -1360,7 +1380,8 @@
         "Balboa, zona turística de alto tráfico",
         "Canon $4,375/mes + mant. $316/mes",
         "2 meses de gracia, actualización anual 5%"
-      ]
+      ],
+      "slug": "balboa-boutiques-local-a-0"
     },
     {
       "id": 33,
@@ -1425,7 +1446,8 @@
         "Alta visibilidad y estacionamiento frontal",
         "Locales con pasillo climatizado y vitrina",
         "Seguridad y mantenimiento constante"
-      ]
+      ],
+      "slug": "sunset-strip-via-israel"
     },
     {
       "id": 34,
@@ -1487,7 +1509,8 @@
         "Unidades 1-3 recámaras con vistas",
         "Amenidades: piscina rooftop, gym y cowork",
         "Seguridad 24/7 y acceso biométrico"
-      ]
+      ],
+      "slug": "evolution-tower-apartamentos-modernos"
     },
     {
       "type": "Oficina",
@@ -1528,7 +1551,8 @@
         "Canon $ 802.50 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
         "Ubicación premium en Avenida Balboa"
-      ]
+      ],
+      "slug": "rali-business-center-oficina"
     },
     {
       "type": "Oficina",
@@ -1569,7 +1593,8 @@
         "Canon $ 1,070.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
         "Ubicación premium en Avenida Balboa"
-      ]
+      ],
+      "slug": "rali-business-center-oficina-40"
     },
     {
       "type": "Oficina",
@@ -1610,7 +1635,8 @@
         "Canon $ 1,284.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
         "Ubicación premium en Avenida Balboa"
-      ]
+      ],
+      "slug": "rali-business-center-oficina-41"
     },
     {
       "type": "Oficina",
@@ -1651,7 +1677,8 @@
         "Canon $ 1,284.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
         "Ubicación premium en Avenida Balboa"
-      ]
+      ],
+      "slug": "rali-business-center-oficina-0"
     },
     {
       "type": "Oficina",
@@ -1692,7 +1719,8 @@
         "Canon $ 1,551.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
         "Ubicación premium en Avenida Balboa"
-      ]
+      ],
+      "slug": "rali-business-center-oficina-0-43"
     },
     {
       "type": "Oficina",
@@ -1733,7 +1761,8 @@
         "Canon $ 1,605.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
         "Ubicación premium en Avenida Balboa"
-      ]
+      ],
+      "slug": "rali-business-center-oficina-0-44"
     },
     {
       "type": "Oficina",
@@ -1774,7 +1803,8 @@
         "Canon $ 1,712.00 (ITBM incluido)",
         "A/C central y lobby ejecutivo",
         "Ubicación premium en Avenida Balboa"
-      ]
+      ],
+      "slug": "rali-business-center-oficina-45"
     },
     {
       "type": "Local",
@@ -1827,7 +1857,8 @@
         "Balboa Boutiques mezzanine 100",
         "Canon $3,200/mes + mant. $269/mes",
         "Vitrinas y terraza para food o retail"
-      ]
+      ],
+      "slug": "balboa-boutiques-local-a-0-132"
     },
     {
       "type": "Local",
@@ -1880,7 +1911,8 @@
         "Balboa Boutiques, mezzanine 100",
         "Canon $6,360/mes + mant. $1,272/mes",
         "Ideal anchor, gimnasio o restaurante grande"
-      ]
+      ],
+      "slug": "balboa-boutiques-local-a-0-133"
     },
     {
       "type": "Local",
@@ -1935,7 +1967,8 @@
         "Fachada y terraza con vistas a la Calzada",
         "Canon $9,000/mes + mant. $1,356/mes",
         "Ideal anchor premium/fitness/restaurante"
-      ]
+      ],
+      "slug": "balboa-boutiques-local-b-0-0"
     },
     {
       "id": 135,
@@ -1973,7 +2006,8 @@
         "Visibilidad comercial alta"
       ],
       "featured": false,
-      "status": "rented"
+      "status": "rented",
+      "slug": "boulevard-plaza-costa-verde-ocupacion-completa"
     },
     {
       "type": "Local",
@@ -2029,7 +2063,8 @@
         "Cedula o pasaporte.",
         "Aviso de operaciones.",
         "Mes de deposito y mes de alquiler a la firma del contrato."
-      ]
+      ],
+      "slug": "plaza-los-guayacanes-local"
     },
     {
       "type": "Local",
@@ -2080,7 +2115,8 @@
         "Contratos desde 1 año con gracia",
         "Zona de alto crecimiento en La Chorrera"
       ],
-      "hidden": true
+      "hidden": true,
+      "slug": "plaza-los-guayacanes-local-137"
     },
     {
       "type": "Local",
@@ -2136,7 +2172,8 @@
         "Cedula o pasaporte.",
         "Aviso de operaciones.",
         "Mes de deposito y mes de alquiler a la firma del contrato."
-      ]
+      ],
+      "slug": "plaza-los-guayacanes-local-138"
     },
     {
       "type": "Local",
@@ -2187,7 +2224,8 @@
         "2 meses de gracia para acondicionar",
         "Ubicación estratégica en La Chorrera"
       ],
-      "hidden": true
+      "hidden": true,
+      "slug": "plaza-los-guayacanes-local-140"
     },
     {
       "type": "Local",
@@ -2243,7 +2281,8 @@
         "Cedula o pasaporte.",
         "Aviso de operaciones.",
         "Mes de deposito y mes de alquiler a la firma del contrato."
-      ]
+      ],
+      "slug": "plaza-los-guayacanes-local-139"
     },
     {
       "category": "Comercial",
@@ -2282,7 +2321,8 @@
         "Canon $700/mes",
         "Acceso por ascensor y lobby climatizado",
         "Visibilidad hacia Vía Israel"
-      ]
+      ],
+      "slug": "sunset-strip-local-0"
     },
     {
       "category": "Comercial",
@@ -2323,7 +2363,8 @@
         "Canon $2,000 + mant. $2.00/m²",
         "Vitrina frontal hacia pasillo y estacionamientos",
         "Listo para retail o servicios"
-      ]
+      ],
+      "slug": "sunset-strip-local"
     },
     {
       "category": "Comercial",
@@ -2365,7 +2406,8 @@
         "Canon $2,000 + mant. $117/mes",
         "Estacionamiento 1 hora gratis",
         "Listo para retail o servicios"
-      ]
+      ],
+      "slug": "sunset-strip-local-0-146"
     },
     {
       "category": "Comercial",
@@ -2407,7 +2449,8 @@
         "Canon $2,300 + mant. $133.50/mes",
         "Alto flujo peatonal",
         "Ideal para retail o restaurante"
-      ]
+      ],
+      "slug": "sunset-strip-local-147"
     },
     {
       "category": "Comercial",
@@ -2449,7 +2492,8 @@
         "Canon $1,800 + mant. $324/mes",
         "Espacio amplio para gimnasio o showroom",
         "Excelente relación precio/m²"
-      ]
+      ],
+      "slug": "sunset-strip-local-0-148"
     },
     {
       "category": "Comercial",
@@ -2490,7 +2534,8 @@
         "Canon $3,500 + mant. $2.00/m²",
         "Ideal para restaurante o tienda ancla",
         "Alta visibilidad en Vía Israel"
-      ]
+      ],
+      "slug": "sunset-strip-local-142"
     },
     {
       "category": "Comercial",
@@ -2531,7 +2576,8 @@
         "Canon $2,200 + mant. $2.00/m²",
         "Frente con terraza para food & beverage",
         "Ubicación estratégica en Vía Israel"
-      ]
+      ],
+      "slug": "sunset-strip-local-143"
     },
     {
       "category": "Comercial",
@@ -2572,7 +2618,8 @@
         "Canon $940 + mant. $1.50/m²",
         "Fachada acristalada",
         "Ideal para consultorio u oficina"
-      ]
+      ],
+      "slug": "sunset-strip-local-144"
     },
     {
       "category": "Comercial",
@@ -2613,7 +2660,8 @@
         "Canon $1,200 + mant. $1.50/m²",
         "Circulación climatizada",
         "Ubicación céntrica en Vía Israel"
-      ]
+      ],
+      "slug": "sunset-strip-oficina-0"
     },
     {
       "id": 150,
@@ -2653,7 +2701,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina"
     },
     {
       "id": 151,
@@ -2693,7 +2742,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-151"
     },
     {
       "id": 152,
@@ -2733,7 +2783,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-152"
     },
     {
       "id": 153,
@@ -2773,7 +2824,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-153"
     },
     {
       "id": 154,
@@ -2813,7 +2865,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-154"
     },
     {
       "id": 155,
@@ -2853,7 +2906,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-155"
     },
     {
       "id": 156,
@@ -2893,7 +2947,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-156"
     },
     {
       "id": 157,
@@ -2933,7 +2988,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-157"
     },
     {
       "id": 158,
@@ -2973,7 +3029,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-158"
     },
     {
       "id": 159,
@@ -3013,7 +3070,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-0"
     },
     {
       "id": 160,
@@ -3053,7 +3111,8 @@
         "Edificio clase A con seguridad 24/7",
         "Planta eléctrica y A/C central",
         "Estacionamiento incluido"
-      ]
+      ],
+      "slug": "evolution-tower-oficina-160"
     },
     {
       "id": 161,
@@ -3098,7 +3157,8 @@
         "Proyecto ocupado, lista de espera",
         "Mantenimiento $2.25/m²",
         "Seguridad y estacionamientos amplios"
-      ]
+      ],
+      "slug": "boulevard-costa-verde-local-l"
     },
     {
       "id": 162,
@@ -3143,7 +3203,8 @@
         "Proyecto ocupado, lista de espera",
         "Mantenimiento $2.25/m²",
         "Seguridad y estacionamientos amplios"
-      ]
+      ],
+      "slug": "boulevard-costa-verde-local-l-162"
     },
     {
       "type": "Apartamento",
@@ -3190,7 +3251,8 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
+      ],
+      "slug": "playa-escondida-torre-00-unidad-0"
     },
     {
       "type": "Apartamento",
@@ -3236,8 +3298,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-165"
     },
     {
       "type": "Apartamento",
@@ -3283,8 +3346,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-166"
     },
     {
       "type": "Apartamento",
@@ -3330,8 +3394,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-167"
     },
     {
       "type": "Apartamento",
@@ -3377,8 +3442,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-168"
     },
     {
       "type": "Apartamento",
@@ -3424,8 +3490,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-00"
     },
     {
       "type": "Apartamento",
@@ -3471,8 +3538,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-00-170"
     },
     {
       "type": "Apartamento",
@@ -3518,8 +3586,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-00-171"
     },
     {
       "type": "Apartamento",
@@ -3565,8 +3634,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-172"
     },
     {
       "type": "Apartamento",
@@ -3612,8 +3682,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-173"
     },
     {
       "type": "Apartamento",
@@ -3659,8 +3730,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-174"
     },
     {
       "category": "Residencial",
@@ -3705,8 +3777,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-175"
     },
     {
       "type": "Apartamento",
@@ -3752,8 +3825,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-176"
     },
     {
       "type": "Apartamento",
@@ -3799,8 +3873,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-177"
     },
     {
       "type": "Apartamento",
@@ -3846,8 +3921,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-178"
     },
     {
       "type": "Apartamento",
@@ -3893,8 +3969,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-179"
     },
     {
       "type": "Apartamento",
@@ -3940,8 +4017,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-180"
     },
     {
       "type": "Apartamento",
@@ -3987,8 +4065,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-181"
     },
     {
       "type": "Apartamento",
@@ -4034,8 +4113,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-182"
     },
     {
       "type": "Apartamento",
@@ -4081,8 +4161,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-183"
     },
     {
       "type": "Apartamento",
@@ -4128,8 +4209,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-184"
     },
     {
       "type": "Apartamento",
@@ -4175,8 +4257,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-185"
     },
     {
       "type": "Apartamento",
@@ -4222,8 +4305,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-186"
     },
     {
       "type": "Apartamento",
@@ -4269,8 +4353,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-187"
     },
     {
       "type": "Apartamento",
@@ -4316,8 +4401,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-188"
     },
     {
       "type": "Apartamento",
@@ -4363,8 +4449,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-189"
     },
     {
       "type": "Apartamento",
@@ -4410,8 +4497,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-190"
     },
     {
       "type": "Apartamento",
@@ -4457,8 +4545,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-191"
     },
     {
       "type": "Apartamento",
@@ -4504,8 +4593,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-192"
     },
     {
       "type": "Apartamento",
@@ -4551,8 +4641,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-193"
     },
     {
       "type": "Apartamento",
@@ -4598,8 +4689,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-194"
     },
     {
       "type": "Apartamento",
@@ -4645,8 +4737,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-195"
     },
     {
       "type": "Apartamento",
@@ -4692,8 +4785,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-196"
     },
     {
       "type": "Apartamento",
@@ -4739,8 +4833,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-197"
     },
     {
       "type": "Apartamento",
@@ -4786,8 +4881,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-00-unidad-0-198"
     },
     {
       "type": "Apartamento",
@@ -4833,8 +4929,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0"
     },
     {
       "type": "Apartamento",
@@ -4880,8 +4977,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-200"
     },
     {
       "type": "Apartamento",
@@ -4927,8 +5025,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-201"
     },
     {
       "type": "Apartamento",
@@ -4974,8 +5073,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-00"
     },
     {
       "type": "Apartamento",
@@ -5021,8 +5121,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-00-203"
     },
     {
       "type": "Apartamento",
@@ -5068,8 +5169,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-204"
     },
     {
       "type": "Apartamento",
@@ -5115,8 +5217,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-205"
     },
     {
       "type": "Apartamento",
@@ -5162,8 +5265,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-206"
     },
     {
       "type": "Apartamento",
@@ -5209,8 +5313,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-207"
     },
     {
       "type": "Apartamento",
@@ -5256,8 +5361,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-208"
     },
     {
       "type": "Apartamento",
@@ -5303,8 +5409,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-209"
     },
     {
       "type": "Apartamento",
@@ -5350,8 +5457,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-210"
     },
     {
       "type": "Apartamento",
@@ -5397,8 +5505,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-211"
     },
     {
       "type": "Apartamento",
@@ -5444,8 +5553,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-212"
     },
     {
       "type": "Villa",
@@ -5491,8 +5601,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0"
     },
     {
       "type": "Villa",
@@ -5538,8 +5649,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-214"
     },
     {
       "type": "Villa",
@@ -5585,8 +5697,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-215"
     },
     {
       "type": "Villa",
@@ -5632,8 +5745,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-216"
     },
     {
       "type": "Villa",
@@ -5679,8 +5793,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-217"
     },
     {
       "type": "Villa",
@@ -5726,8 +5841,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-218"
     },
     {
       "type": "Villa",
@@ -5773,8 +5889,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-00"
     },
     {
       "type": "Villa",
@@ -5820,8 +5937,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-00-220"
     },
     {
       "type": "Villa",
@@ -5867,8 +5985,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-00-221"
     },
     {
       "type": "Villa",
@@ -5914,8 +6033,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-00-222"
     },
     {
       "type": "Villa",
@@ -5961,8 +6081,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-223"
     },
     {
       "type": "Villa",
@@ -6008,8 +6129,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-224"
     },
     {
       "type": "Villa",
@@ -6055,8 +6177,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-225"
     },
     {
       "type": "Villa",
@@ -6102,8 +6225,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-226"
     },
     {
       "type": "Villa",
@@ -6149,8 +6273,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-227"
     },
     {
       "type": "Villa",
@@ -6196,8 +6321,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-arenas-village-villa-0-228"
     },
     {
       "type": "Apartamento",
@@ -6243,8 +6369,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-00-229"
     },
     {
       "type": "Apartamento",
@@ -6290,8 +6417,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-230"
     },
     {
       "type": "Apartamento",
@@ -6337,8 +6465,9 @@
         "A/C y ventilación natural",
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
-      ]
-      ,"thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "slug": "playa-escondida-torre-0-unidad-0-231"
     },
     {
       "type": "Casa",
@@ -6383,7 +6512,8 @@
         "Precio desde $ 240,000",
         "Entrega inmediata (10% de abono inicial)"
       ],
-      "minIncome": 3000
+      "minIncome": 3000,
+      "slug": "new-west-i-modelo-nevada"
     },
     {
       "type": "Casa",
@@ -6432,7 +6562,8 @@
         "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-baja.png",
         "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-alta.png"
       ],
-      "minIncome": 3000
+      "minIncome": 3000,
+      "slug": "new-west-i-modelo-jazmin"
     },
     {
       "type": "Casa",
@@ -6481,7 +6612,8 @@
         "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-baja.png",
         "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-alta.png"
       ],
-      "minIncome": 3000
+      "minIncome": 3000,
+      "slug": "new-west-ii-modelo-jazmin"
     },
     {
       "type": "Casa",
@@ -6530,7 +6662,8 @@
         "/images/properties/new-west/floorplans/roble/plano-roble-planta-baja.png",
         "/images/properties/new-west/floorplans/roble/plano-roble-planta-alta.png"
       ],
-      "minIncome": 3000
+      "minIncome": 3000,
+      "slug": "new-west-ii-modelo-roble"
     },
     {
       "id": 248,
@@ -6566,7 +6699,8 @@
         "188 m² en Torre 100",
         "Precio $400,000",
         "Mantenimiento $375.52/mes"
-      ]
+      ],
+      "slug": "the-tower-residences-apto-c-torre-00"
     },
     {
       "id": 249,
@@ -6602,7 +6736,8 @@
         "188 m² en Torre 100",
         "Precio $400,000",
         "Alquilado hasta 2027"
-      ]
+      ],
+      "slug": "the-tower-residences-apto-c-torre-00-alquilado-hasta-0"
     },
     {
       "id": 251,
@@ -6641,7 +6776,8 @@
         "65.63 m² en La Chorrera",
         "Venta $105,008 | Alquiler $351/mes",
         "Ideal para comercio pequeño"
-      ]
+      ],
+      "slug": "plaza-los-guayacanes-local-251"
     },
     {
       "id": 255,
@@ -6680,7 +6816,8 @@
         "Alquiler $2,000/mes",
         "Planta Baja con alta visibilidad",
         "ITBMS no incluido"
-      ]
+      ],
+      "slug": "plaza-sunset-strip-local-0-planta-00"
     },
     {
       "id": 256,
@@ -6719,7 +6856,8 @@
         "Alquiler $2,300/mes",
         "Planta Baja premium",
         "ITBMS no incluido"
-      ]
+      ],
+      "slug": "plaza-sunset-strip-local-planta-00"
     },
     {
       "id": 257,
@@ -6758,7 +6896,8 @@
         "Alquiler $1,800/mes",
         "Ideal oficina o comercio",
         "ITBMS no incluido"
-      ]
+      ],
+      "slug": "plaza-sunset-strip-local-0-nivel-00"
     },
     {
       "id": 258,
@@ -6801,7 +6940,8 @@
         "Lotes desde 180 m²",
         "10% abono inicial - Trabaja con todos los bancos"
       ],
-      "minIncome": 3500
+      "minIncome": 3500,
+      "slug": "new-west-costa-verde-modelo-nevada-entrega-inmediata"
     },
     {
       "id": 259,
@@ -6839,7 +6979,8 @@
         "Precio $180,000",
         "Lote 180 m²"
       ],
-      "minIncome": 3500
+      "minIncome": 3500,
+      "slug": "new-west-costa-verde-modelo-ilana"
     },
     {
       "id": 260,
@@ -6875,7 +7016,8 @@
         "157 m² - 3 recámaras",
         "Precio $220,000"
       ],
-      "minIncome": 3500
+      "minIncome": 3500,
+      "slug": "new-west-costa-verde-modelo-jazmin"
     },
     {
       "id": 261,
@@ -6914,7 +7056,8 @@
         "Lote 200 m²",
         "Desde $150,000"
       ],
-      "minIncome": 3500
+      "minIncome": 3500,
+      "slug": "new-west-costa-verde-modelo-cedro-entrega-inmediata"
     },
     {
       "id": 262,
@@ -6951,7 +7094,8 @@
         "Lote desde 220 m²",
         "Precio $150,000"
       ],
-      "minIncome": 3500
+      "minIncome": 3500,
+      "slug": "new-west-costa-verde-modelo-roble"
     },
     {
       "id": 263,
