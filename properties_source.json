@@ -1,0 +1,310 @@
+﻿--- ID: 2 ---
+{
+    "id":  2,
+    "title":  "Central Plaza - La Chorrera",
+    "type":  "Local",
+    "category":  "Comercial",
+    "operation":  "Venta",
+    "price":  0,
+    "pricePerMonth":  null,
+    "location":  "La Chorrera, PanamÃ¡ Oeste",
+    "city":  "PanamÃ¡ Oeste",
+    "district":  "La Chorrera",
+    "bedrooms":  0,
+    "bathrooms":  0,
+    "parkingSpots":  70,
+    "area":  0,
+    "builtYear":  2024,
+    "image":  "/images/properties/central-plaza/hero.png",
+    "images":  [
+                   "/images/properties/central-plaza/hero.png",
+                   "/images/properties/central-plaza/hero-1080.png",
+                   "/images/properties/central-plaza/hero-1600.png"
+               ],
+    "planos":  [
+
+               ],
+    "description":  "Central Plaza consta de dos niveles con un total de 42 locales comerciales con diferentes metrajes ideales para su proyecto. Restaurantes, Zona de juegos, Gimnasio, Bancos, FerreterÃ­a, SalÃ³n de belleza, EnvÃ­os y mÃ¡s. Cuenta con 70 estacionamientos y acceso entre Av. Juan DemÃ³stenes Arosemena y Av. Omar Torrijos.",
+    "amenities":  [
+                      "CCTV",
+                      "Estacionamiento (70 espacios)",
+                      "Seguridad 24/7",
+                      "Alarma contra incendios",
+                      "DepÃ³sito de desechos",
+                      "Acceso a dos vÃ­as principales"
+                  ],
+    "featured":  true,
+    "status":  "rented",
+    "hidden":  true,
+    "highlights":  [
+                       "Local comercial en Central Plaza La Chorrera",
+                       "Fachada visible con estacionamientos",
+                       "Acceso directo desde vÃ­a principal",
+                       "Ideal retail o servicios"
+                   ]
+}
+--- ID: 25 ---
+{
+    "id":  25,
+    "etapa":  "E3",
+    "casa":  182,
+    "title":  "Praderas de ArraijÃ¡n - E3 Casa 182 (Unifamiliar 3 Rec)",
+    "type":  "Casa",
+    "category":  "Residencial",
+    "operation":  "Venta",
+    "price":  97997,
+    "pricePerMonth":  null,
+    "location":  "ArraijÃ¡n, PanamÃ¡ Oeste",
+    "city":  "ArraijÃ¡n",
+    "district":  "ArraijÃ¡n",
+    "bedrooms":  3,
+    "bathrooms":  2,
+    "parkingSpots":  1,
+    "area":  80,
+    "builtYear":  2025,
+    "image":  "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
+    "images":  [
+                   "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
+                   "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
+                   "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
+                   "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
+                   "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
+                   "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+               ],
+    "planos":  [
+
+               ],
+    "virtualTour":  "https://my.matterport.com/show/?m=SHsQfWJMM9J",
+    "description":  "Casa unifamiliar de una planta en Praderas de ArraijÃ¡n, proyecto habitacional en PanamÃ¡ Oeste con diseÃ±os modernos y cercanÃ­a a todo. Modelo Roble de 3 recÃ¡maras.\n\nCaracterÃ­sticas principales:\nâ€”â‚¬Â¢ 3 recÃ¡maras amplias con closets\nâ€”â‚¬Â¢ 2 baÃ±os completos\nâ€”â‚¬Â¢ Sala y comedor integrados con diseÃ±o moderno\nâ€”â‚¬Â¢ Cocina con gabinetes\nâ€”â‚¬Â¢ Ã‘Ârea de lavanderÃ­a\nâ€”â‚¬Â¢ Estacionamiento bajo techo\nâ€”â‚¬Â¢ 84 mÂ² de construcciÃ³n\n\nAmenidades del Proyecto:\nâ€”â‚¬Â¢ Parque infantil\nâ€”â‚¬Â¢ Pumptrack (pista de bicicletas y patines)\nâ€”â‚¬Â¢ Cancha de fÃštbol\nâ€”â‚¬Â¢ Cancha de basketball\nâ€”â‚¬Â¢ Mini golf\nâ€”â‚¬Â¢ Ã‘Ârea de volleyball\nâ€”â‚¬Â¢ Gazebo y Ã¡reas verdes\nâ€”â‚¬Â¢ Zona de ejercicio y yoga\nâ€”â‚¬Â¢ Garita de seguridad 24/7\nâ€”â‚¬Â¢ Tanque de reserva de agua\nâ€”â‚¬Â¢ Calles de concreto\n\nUbicaciÃ³n EstratÃ©gica (34km de Ciudad de PanamÃ¡):\nâ€”â‚¬Â¢ A metros de la LÃ­nea 3 del Metro\nâ€”â‚¬Â¢ Cerca de escuelas y colegios\nâ€”â‚¬Â¢ Supermercados y farmacias\nâ€”â‚¬Â¢ EstaciÃ³n de gasolina y ferreterÃ­as\nâ€”â‚¬Â¢ EstaciÃ³n de policÃ­a\n\nFinanciamiento disponible. Ingreso familiar minimo: $1,500. Tour virtual disponible.",
+    "amenities":  [
+                      "Condominio cerrado con seguridad 24/7",
+                      "Garita de control vehicular",
+                      "Parque infantil",
+                      "Pumptrack (rampas para bicicletas)",
+                      "Cancha de fÃštbol",
+                      "Cancha de basketball",
+                      "Mini golf",
+                      "Ã‘Ârea de volleyball",
+                      "Zona de ejercicio y yoga",
+                      "Gazebo",
+                      "Ã‘Âreas verdes amplias",
+                      "Tanque de reserva de agua",
+                      "Calles de concreto",
+                      "Alumbrado pÃšblico",
+                      "Cerca de LÃ­nea 3 del Metro",
+                      "Tour virtual 3D disponible"
+                  ],
+    "featured":  true,
+    "status":  "available",
+    "highlights":  [
+                       "Casa unifamiliar 3 recÃ¡maras desde $87,997",
+                       "Una planta con estacionamiento techado",
+                       "Pumptrack y amenidades recreativas",
+                       "A 34km de Ciudad de PanamÃ¡, cerca del Metro"
+                   ],
+    "minIncome":  1500
+}
+--- ID: 32 ---
+{
+    "type":  "Local",
+    "category":  "Comercial",
+    "operation":  "Alquiler",
+    "price":  0,
+    "location":  "Balboa, Ancon, Ciudad de Panama",
+    "city":  "Ciudad de Panama",
+    "district":  "Ancon",
+    "builtYear":  2024,
+    "bedrooms":  0,
+    "status":  "available",
+    "featured":  true,
+    "amenities":  [
+                      "Ubicacion historica en Balboa",
+                      "Zona turistica de alto trafico",
+                      "Diseno arquitectonico contemporaneo",
+                      "Estacionamientos disponibles",
+                      "Seguridad 24/7 y CCTV",
+                      "Acceso controlado",
+                      "Vitrinas panoramicas",
+                      "Aires acondicionados individuales",
+                      "Sistema contra incendios",
+                      "Banos en areas comunes",
+                      "Cercania a la Calzada de Amador",
+                      "Ambiente cultural y artistico"
+                  ],
+    "planos":  [
+                   "/images/properties/balboa-boutique/floorplans/plano-nivel-100.webp",
+                   "/images/properties/balboa-boutique/floorplans/plano-nivel-200.webp"
+               ],
+    "title":  "Balboa Boutiques - Local A-104",
+    "pricePerMonth":  3700,
+    "area":  151,
+    "image":  "/images/properties/balboa-boutique/hero/hero-1.webp",
+    "images":  [
+                   "/images/properties/balboa-boutique/hero/hero-1.webp",
+                   "/images/properties/balboa-boutique/hero/hero-2.webp",
+                   "/images/properties/balboa-boutique/amenities/terraza-exterior.webp",
+                   "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
+                   "/images/properties/balboa-boutique/gallery/local-interior-1.webp",
+                   "/images/properties/balboa-boutique/gallery/local-interior-3.webp"
+               ],
+    "description":  "Local A-104 en Balboa Boutiques, mezzanine 100. Ã‘Ârea cerrada de 84 mÂ² mÃ¡s terraza de 67 mÂ² (total 151 mÂ²), ideal para restaurante boutique, cafÃ© o retail con outdoor seating. Renta mensual $3,700. Contrato 3 aÃ±os negociable, depÃ³sito + primer mes; 2 meses de gracia. ActualizaciÃ³n anual 5%. Mantenimiento $4.50/mÂ² ($316/mes) y valet opcional $100/mes.",
+    "bathrooms":  1,
+    "parkingSpots":  2,
+    "id":  32,
+    "highlights":  [
+                       "Local A-104: 84 mÂ² + 67 mÂ² terraza (151 mÂ²)",
+                       "Balboa, zona turÃ­stica de alto trÃ¡fico",
+                       "Canon $3,700/mes + mant. $316/mes",
+                       "2 meses de gracia, actualizaciÃ³n anual 5%"
+                   ]
+}
+--- ID: 134 ---
+{
+    "type":  "Local",
+    "category":  "Comercial",
+    "operation":  "Alquiler",
+    "price":  0,
+    "location":  "Balboa, Ancon, Ciudad de PanamÃ¡",
+    "city":  "Ciudad de PanamÃ¡",
+    "district":  "Ancon",
+    "builtYear":  2024,
+    "bedrooms":  0,
+    "status":  "available",
+    "featured":  true,
+    "amenities":  [
+                      "Ubicacion historica en Balboa",
+                      "Zona turistica de alto trafico",
+                      "Diseno arquitectonico contemporaneo",
+                      "Estacionamientos disponibles",
+                      "Seguridad 24/7 y CCTV",
+                      "Acceso controlado",
+                      "Vitrinas panoramicas",
+                      "Aires acondicionados individuales",
+                      "Sistema contra incendios",
+                      "Banos en areas comunes",
+                      "Cercania a la Calzada de Amador",
+                      "Ambiente cultural y artistico"
+                  ],
+    "planos":  [
+                   "/images/properties/balboa-boutique/floorplans/plano-nivel-100.webp",
+                   "/images/properties/balboa-boutique/floorplans/plano-nivel-200.webp"
+               ],
+    "title":  "Balboa Boutiques - Local B-102/202",
+    "pricePerMonth":  9000,
+    "area":  339,
+    "image":  "/images/properties/balboa-boutique/hero/hero-4.webp",
+    "images":  [
+                   "/images/properties/balboa-boutique/hero/hero-4.webp",
+                   "/images/properties/balboa-boutique/hero/hero-2.webp",
+                   "/images/properties/balboa-boutique/amenities/parking-acceso.webp",
+                   "/images/properties/balboa-boutique/amenities/terraza-exterior.webp",
+                   "/images/properties/balboa-boutique/gallery/local-interior-1.webp",
+                   "/images/properties/balboa-boutique/gallery/local-interior-3.webp",
+                   "/images/properties/balboa-boutique/gallery/local-interior-1.webp"
+               ],
+    "description":  "Local B-102/202 en Balboa Boutiques, mezzanine 100. Ã‘Ârea cerrada de 339 mÂ²; perfecto para anchor tenant, gimnasio premium o restaurante insignia. Renta mensual $9,000. Contrato 3 aÃ±os negociable, depÃ³sito + primer mes; 2 meses de gracia. ActualizaciÃ³n anual 5%. Mantenimiento $4.50/mÂ² ($1,356/mes) y valet opcional $100/mes.",
+    "bathrooms":  2,
+    "parkingSpots":  4,
+    "id":  134,
+    "thumbnail":  "/images/properties/balboa-boutique/promotional/thumbnail-balboa.png",
+    "highlights":  [
+                       "Local B-102/202: 339 mÂ² en mezzanine",
+                       "Fachada y terraza con vistas a la Calzada",
+                       "Canon $9,000/mes + mant. $1,356/mes",
+                       "Ideal anchor premium/fitness/restaurante"
+                   ]
+}
+--- ID: 161 ---
+{
+    "id":  161,
+    "title":  "Boulevard Costa Verde - Local L13",
+    "type":  "Local",
+    "category":  "Comercial",
+    "operation":  "Alquiler",
+    "price":  0,
+    "pricePerMonth":  2576.4,
+    "location":  "Boulevard Costa Verde, La Chorrera, PanamÃ¡ Oeste",
+    "city":  "PanamÃ¡ Oeste",
+    "district":  "La Chorrera",
+    "bedrooms":  0,
+    "bathrooms":  1,
+    "parkingSpots":  0,
+    "area":  67.8,
+    "builtYear":  2020,
+    "image":  "/images/properties/boulevard-plaza/hero-1.webp",
+    "images":  [
+                   "/images/properties/boulevard-plaza/hero-1.webp",
+                   "/images/properties/boulevard-plaza/hero-2.webp",
+                   "/images/properties/boulevard-plaza/hero-3.webp",
+                   "/images/properties/boulevard-plaza/hero-4.webp",
+                   "/images/properties/boulevard-plaza/hero-5.webp",
+                   "/images/properties/boulevard-plaza/hero-6.webp"
+               ],
+    "planos":  [
+
+               ],
+    "description":  "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gestiÃ³n comercial.",
+    "amenities":  [
+                      "Strip mall consolidado en Costa Verde",
+                      "Alto flujo vehicular y peatonal",
+                      "650 estacionamientos disponibles",
+                      "Acceso desde vÃ­a principal",
+                      "Seguridad y mantenimiento en sitio"
+                  ],
+    "featured":  false,
+    "status":  "rented",
+    "highlights":  [
+                       "Local Local L13 - 67.8 mÂ²",
+                       "Boulevard Costa Verde, La Chorrera",
+                       "Proyecto ocupado, lista de espera",
+                       "Mantenimiento $2.25/mÂ²",
+                       "Seguridad y estacionamientos amplios"
+                   ]
+}
+--- ID: 162 ---
+{
+    "id":  162,
+    "title":  "Boulevard Costa Verde - Local L14",
+    "type":  "Local",
+    "category":  "Comercial",
+    "operation":  "Alquiler",
+    "price":  0,
+    "pricePerMonth":  2426.3,
+    "location":  "Boulevard Costa Verde, La Chorrera, PanamÃ¡ Oeste",
+    "city":  "PanamÃ¡ Oeste",
+    "district":  "La Chorrera",
+    "bedrooms":  0,
+    "bathrooms":  1,
+    "parkingSpots":  0,
+    "area":  63.85,
+    "builtYear":  2020,
+    "image":  "/images/properties/boulevard-plaza/hero-1.webp",
+    "images":  [
+                   "/images/properties/boulevard-plaza/hero-1.webp",
+                   "/images/properties/boulevard-plaza/hero-2.webp",
+                   "/images/properties/boulevard-plaza/hero-3.webp",
+                   "/images/properties/boulevard-plaza/hero-4.webp",
+                   "/images/properties/boulevard-plaza/hero-5.webp",
+                   "/images/properties/boulevard-plaza/hero-6.webp"
+               ],
+    "planos":  [
+
+               ],
+    "description":  "Local en Boulevard Costa Verde (La Chorrera). Proyecto ocupado; se muestra para lista de espera y gestiÃ³n comercial.",
+    "amenities":  [
+                      "Strip mall consolidado en Costa Verde",
+                      "Alto flujo vehicular y peatonal",
+                      "650 estacionamientos disponibles",
+                      "Acceso desde VÃ­a principal",
+                      "Seguridad y mantenimiento en sitio"
+                  ],
+    "featured":  false,
+    "status":  "rented",
+    "highlights":  [
+                       "Local Local L14 - 63.85 mÂ²",
+                       "Boulevard Costa Verde, La Chorrera",
+                       "Proyecto ocupado, lista de espera",
+                       "Mantenimiento $2.25/mÂ²",
+                       "Seguridad y estacionamientos amplios"
+                   ]
+}
