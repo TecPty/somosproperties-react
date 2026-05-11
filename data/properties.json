@@ -358,7 +358,7 @@
       "type": "Casa",
       "category": "Residencial",
       "operation": "Venta",
-      "price": 97997,
+      "price": 87997,
       "pricePerMonth": null,
       "location": "Arraiján, Panamá Oeste",
       "city": "Arraiján",
@@ -1340,7 +1340,7 @@
         "/images/properties/balboa-boutique/floorplans/plano-nivel-200.webp"
       ],
       "title": "Balboa Boutiques - Local A-104",
-      "pricePerMonth": 3700,
+      "pricePerMonth": 4375,
       "area": 151,
       "image": "/images/properties/balboa-boutique/hero/hero-1.webp",
       "images": [
@@ -1351,14 +1351,14 @@
         "/images/properties/balboa-boutique/gallery/local-interior-1.webp",
         "/images/properties/balboa-boutique/gallery/local-interior-3.webp"
       ],
-      "description": "Local A-104 en Balboa Boutiques, mezzanine 100. Ñrea cerrada de 84 m² más terraza de 67 m² (total 151 m²), ideal para restaurante boutique, café o retail con outdoor seating. Renta mensual $3,700. Contrato 3 años negociable, depósito + primer mes; 2 meses de gracia. Actualización anual 5%. Mantenimiento $4.50/m² ($316/mes) y valet opcional $100/mes.",
+      "description": "Local A-104 en Balboa Boutiques, mezzanine 100. Ñrea cerrada de 84 m² más terraza de 67 m² (total 151 m²), ideal para restaurante boutique, café o retail con outdoor seating. Renta mensual $4,375. Contrato 3 años negociable, depósito + primer mes; 2 meses de gracia. Actualización anual 5%. Mantenimiento $4.50/m² ($316/mes) y valet opcional $100/mes.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 32,
       "highlights": [
         "Local A-104: 84 m² + 67 m² terraza (151 m²)",
         "Balboa, zona turística de alto tráfico",
-        "Canon $3,700/mes + mant. $316/mes",
+        "Canon $4,375/mes + mant. $316/mes",
         "2 meses de gracia, actualización anual 5%"
       ]
     },
@@ -1914,7 +1914,7 @@
       ],
       "title": "Balboa Boutiques - Local B-102/202",
       "pricePerMonth": 9000,
-      "area": 339,
+      "area": 360,
       "image": "/images/properties/balboa-boutique/hero/hero-4.webp",
       "images": [
         "/images/properties/balboa-boutique/hero/hero-4.webp",
@@ -1925,13 +1925,13 @@
         "/images/properties/balboa-boutique/gallery/local-interior-3.webp",
         "/images/properties/balboa-boutique/gallery/local-interior-1.webp"
       ],
-      "description": "Local B-102/202 en Balboa Boutiques, mezzanine 100. Ñrea cerrada de 339 m²; perfecto para anchor tenant, gimnasio premium o restaurante insignia. Renta mensual $9,000. Contrato 3 años negociable, depósito + primer mes; 2 meses de gracia. Actualización anual 5%. Mantenimiento $4.50/m² ($1,356/mes) y valet opcional $100/mes.",
+      "description": "Local B-102/202 en Balboa Boutiques, mezzanine 100. Ñrea cerrada de 360 m²; perfecto para anchor tenant, gimnasio premium o restaurante insignia. Renta mensual $9,000. Contrato 3 años negociable, depósito + primer mes; 2 meses de gracia. Actualización anual 5%. Mantenimiento $4.50/m² ($1,356/mes) y valet opcional $100/mes.",
       "bathrooms": 2,
       "parkingSpots": 4,
       "id": 134,
       "thumbnail": "/images/properties/balboa-boutique/promotional/thumbnail-balboa.png",
       "highlights": [
-        "Local B-102/202: 339 m² en mezzanine",
+        "Local B-102/202: 360 m² en mezzanine",
         "Fachada y terraza con vistas a la Calzada",
         "Canon $9,000/mes + mant. $1,356/mes",
         "Ideal anchor premium/fitness/restaurante"
@@ -3091,6 +3091,7 @@
       ],
       "featured": false,
       "status": "rented",
+      "hidden": true,
       "highlights": [
         "Local Local L13 - 67.8 m²",
         "Boulevard Costa Verde, La Chorrera",
@@ -3135,6 +3136,7 @@
       ],
       "featured": false,
       "status": "rented",
+      "hidden": true,
       "highlights": [
         "Local Local L14 - 63.85 m²",
         "Boulevard Costa Verde, La Chorrera",
@@ -7099,6 +7101,206 @@
         "Precio $150,000"
       ],
       "minIncome": 3500
+    },
+    {
+      "id": 263,
+      "title": "Balboa Boutiques - Local A-106",
+      "slug": "balboa-boutiques-local-a-106",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 3700,
+      "location": "Balboa, Ancon, Ciudad de Panama",
+      "city": "Ciudad de Panama",
+      "district": "Ancon",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 2,
+      "area": 147,
+      "status": "available",
+      "featured": false,
+      "hidden": true,
+      "image": "/images/properties/balboa-boutique/hero/hero-1.webp",
+      "images": [
+        "/images/properties/balboa-boutique/hero/hero-1.webp",
+        "/images/properties/balboa-boutique/hero/hero-2.webp"
+      ],
+      "planos": [
+        "/images/properties/balboa-boutique/floorplans/plano-nivel-100.webp"
+      ],
+      "description": "Local A-106 en Balboa Boutiques. Área total de 147 m² (79 m² cerrados + 68 m² de terraza), ideal para restaurante boutique o retail con espacio exterior. Renta mensual $3,700. Ubicación privilegiada de alto tráfico en zona turística cerca de la Calzada de Amador.",
+      "amenities": [
+        "Ubicacion historica en Balboa",
+        "Zona turistica de alto trafico",
+        "Diseno arquitectonico contemporaneo",
+        "Estacionamientos disponibles",
+        "Seguridad 24/7 y CCTV",
+        "Vitrinas panoramicas",
+        "Sistema contra incendios"
+      ],
+      "highlights": [
+        "Local A-106: 79 m² + 68 m² terraza (147 m²)",
+        "Balboa, zona turística de alto tráfico",
+        "Canon $3,700/mes",
+        "Estatus: Negociación"
+      ]
+    },
+    {
+      "id": 264,
+      "title": "Ocean View - Torre 100 Apto 1103",
+      "slug": "ocean-view-1103",
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "price": 903776,
+      "pricePerMonth": null,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "parkingSpots": 2,
+      "area": 260.83,
+      "builtYear": 2025,
+      "status": "available",
+      "featured": false,
+      "image": "/images/properties/pacific-point/hero/hero-1.webp",
+      "images": [
+        "/images/properties/pacific-point/hero/hero-1.webp"
+      ],
+      "planos": [],
+      "description": "Apartamento 1103 en Ocean View (Torre 100). Amplia unidad residencial de 260.83 m² con 4 recámaras y cuarto de servicio. Ubicado en el corazón de San Francisco, ofrece vistas panorámicas y acabados modernos.",
+      "amenities": [
+        "Vistas panorámicas",
+        "Seguridad 24/7",
+        "Área social completa",
+        "Gimnasio",
+        "Piscina"
+      ],
+      "highlights": [
+        "Apto 1103: 260.83 m²",
+        "4 Recámaras + C/S",
+        "Ubicación céntrica en San Francisco",
+        "Precio: $903,776"
+      ]
+    },
+    {
+      "id": 265,
+      "title": "Ocean View - Torre 100 Apto 1202",
+      "slug": "ocean-view-1202",
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "price": 624750,
+      "pricePerMonth": null,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "area": 148.75,
+      "builtYear": 2025,
+      "status": "available",
+      "featured": false,
+      "image": "/images/properties/pacific-point/hero/hero-2.webp",
+      "images": [
+        "/images/properties/pacific-point/hero/hero-2.webp"
+      ],
+      "planos": [],
+      "description": "Apartamento 1202 en Ocean View (Torre 100). Unidad de 148.75 m² con 2 recámaras, den y cuarto de servicio. Diseño funcional y elegante en San Francisco.",
+      "amenities": [
+        "Den familiar",
+        "Seguridad 24/7",
+        "Área social completa",
+        "Gimnasio",
+        "Piscina"
+      ],
+      "highlights": [
+        "Apto 1202: 148.75 m²",
+        "2 Recámaras + Den + C/S",
+        "Ubicación céntrica en San Francisco",
+        "Precio: $624,750"
+      ]
+    },
+    {
+      "id": 266,
+      "title": "Ocean View - Torre 100 Apto 1002",
+      "slug": "ocean-view-1002",
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "price": 654226,
+      "pricePerMonth": null,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parkingSpots": 2,
+      "area": 194.71,
+      "builtYear": 2025,
+      "status": "available",
+      "featured": false,
+      "image": "/images/properties/pacific-point/hero/hero-3.webp",
+      "images": [
+        "/images/properties/pacific-point/hero/hero-3.webp"
+      ],
+      "planos": [],
+      "description": "Apartamento 1002 en Ocean View (Torre 100). 194.71 m² con 3 recámaras y cuarto de servicio. Excelente distribución y vistas a la ciudad en San Francisco.",
+      "amenities": [
+        "Seguridad 24/7",
+        "Área social completa",
+        "Gimnasio",
+        "Piscina"
+      ],
+      "highlights": [
+        "Apto 1002: 194.71 m²",
+        "3 Recámaras + C/S",
+        "Ubicación céntrica en San Francisco",
+        "Precio: $654,226"
+      ]
+    },
+    {
+      "id": 267,
+      "title": "Ocean View - Torre 100 Apto 1004",
+      "slug": "ocean-view-1004",
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "price": 421281,
+      "pricePerMonth": null,
+      "location": "San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "parkingSpots": 2,
+      "area": 111.45,
+      "builtYear": 2025,
+      "status": "available",
+      "featured": false,
+      "image": "/images/properties/pacific-point/hero/hero-4.webp",
+      "images": [
+        "/images/properties/pacific-point/hero/hero-4.webp"
+      ],
+      "planos": [],
+      "description": "Apartamento 1004 en Ocean View (Torre 100). Unidad eficiente de 111.45 m² con 1 recámara, den y cuarto de servicio. Ideal para inversión o parejas en San Francisco.",
+      "amenities": [
+        "Den familiar",
+        "Seguridad 24/7",
+        "Área social completa",
+        "Gimnasio",
+        "Piscina"
+      ],
+      "highlights": [
+        "Apto 1004: 111.45 m²",
+        "1 Recámara + Den + C/S",
+        "Ubicación céntrica en San Francisco",
+        "Precio: $421,281"
+      ]
     }
   ]
 }
