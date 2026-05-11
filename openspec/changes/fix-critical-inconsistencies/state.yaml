@@ -1,5 +1,5 @@
 change: fix-critical-inconsistencies
-phase: verify
+phase: archive
 artifact_store: hybrid
 artifacts:
   explore: true

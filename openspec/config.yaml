@@ -2,11 +2,11 @@ schema: spec-driven
 
 context: |
   Tech stack: Next.js 16 (App Router), React 19, TypeScript 5, Tailwind CSS v4
-  Architecture: App Router con [locale] para i18n (next-intl v4), localePrefix: always
+  Architecture: App Router with [locale] for i18n (next-intl v4)
   i18n: next-intl v4, locales: [es, en], defaultLocale: es
-  Data: JSON estático en data/properties.json, sin API externa
-  Testing: Sin test runner instalado
-  Style: ESLint, sin Prettier, mezcla CRLF/LF
+  Data: Static JSON in data/properties.json
+  Testing: No test runner installed
+  Style: ESLint, standard React/Next patterns
 
 strict_tdd: false
 
@@ -26,11 +26,29 @@ rules:
     - Keep tasks small enough to complete in one session
   apply:
     - Follow existing code patterns and conventions
+    - Load relevant coding skills for the project stack
     - Never use hardcoded strings — use CONTACT constants or i18n
-    - Never use href without locale prefix when localePrefix is always
   verify:
-    - Validate that all canonical URLs include /[locale]/ segment
-    - Confirm no hardcoded phone numbers or WhatsApp URLs
-    - Check that metadata uses generateMetadata (not static export) for i18n pages
+    - Run tests if test infrastructure exists (currently unavailable)
+    - Compare implementation against every spec scenario
+    - Check that metadata uses generateMetadata for i18n pages
   archive:
     - Warn before merging destructive deltas (large removals)
+
+testing:
+  strict_tdd: false
+  test_runner:
+    available: false
+    command: null
+    framework: null
+  layers:
+    unit: { available: false, tool: null }
+    integration: { available: false, tool: null }
+    e2e: { available: false, tool: null }
+  coverage:
+    available: false
+    command: null
+  quality:
+    linter: { available: true, command: "npm run lint" }
+    type_checker: { available: true, command: "tsc --noEmit" }
+    formatter: { available: false, command: null }
