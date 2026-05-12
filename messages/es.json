@@ -367,7 +367,15 @@
     "selectLocation": "Selecciona una ubicación",
     "allLocations": "Todas las ubicaciones",
     "previousPage": "Página anterior",
-    "nextPage": "Página siguiente"
+    "nextPage": "Página siguiente",
+    "types": {
+      "Apartamento": "Apartamento",
+      "Casa": "Casa",
+      "Villa": "Villa",
+      "Local": "Local Comercial",
+      "Oficina": "Oficina",
+      "Terreno": "Terreno"
+    }
   },
   "privacy": {
     "title": "Política de Privacidad",

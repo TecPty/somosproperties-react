@@ -155,7 +155,7 @@ export default function PropertyFiltersComponent({ filters, onFiltersChange, onC
                 className={pill(active)}
                 aria-pressed={active ? "true" : "false"}
               >
-                {type}
+                {t(`types.${type}` as `types.${FilterableType}`)}
               </button>
             )
           })}

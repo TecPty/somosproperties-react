@@ -367,7 +367,15 @@
     "selectLocation": "Select a location",
     "allLocations": "All locations",
     "previousPage": "Previous page",
-    "nextPage": "Next page"
+    "nextPage": "Next page",
+    "types": {
+      "Apartamento": "Apartment",
+      "Casa": "House",
+      "Villa": "Villa",
+      "Local": "Commercial Space",
+      "Oficina": "Office",
+      "Terreno": "Land"
+    }
   },
   "privacy": {
     "title": "Privacy Policy",
