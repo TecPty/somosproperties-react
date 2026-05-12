@@ -10,6 +10,9 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ["@radix-ui/react-*"],
   },
+  turbopack: {
+    root: process.cwd(),
+  },
 }
 
 export default withNextIntl(nextConfig)
