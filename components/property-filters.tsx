@@ -17,7 +17,7 @@ const normalizeValue = (value: string) => stripAccents(value).toLowerCase()
 
 const filterableTypes = ["Apartamento", "Casa", "Villa", "Local", "Oficina"] as const
 type FilterableType = (typeof filterableTypes)[number]
-const isFilterableType = (type: Property["type"]): type is FilterableType => type !== "Terreno"
+const isFilterableType = (type: Property["type"]): type is FilterableType => !!type && type !== "Terreno"
 
 /** Preset price-range buckets */
 const PRICE_PRESETS_VENTA = [
