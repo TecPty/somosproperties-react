@@ -1,6 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import { useTranslations } from "next-intl"
 import { trackGaEvent } from "@/lib/google-analytics"
 import { trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackContact, trackLead } from "@/lib/facebook-pixel"
@@ -14,6 +15,7 @@ type LeadQualifierProps = {
 const WHATSAPP_NUMBER = "50766770577"
 
 export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: LeadQualifierProps) {
+  const t = useTranslations('leadQualifier')
   const [ingreso, setIngreso] = useState("")
   const [tiempo, setTiempo] = useState("")
   const [tipo, setTipo] = useState("")
@@ -43,17 +45,16 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
   }, [incomeValue, minIncome])
 
   const message = useMemo(() => {
-    return (
-      `Hola, soy ${nombre}.\n` +
-      "Vengo de SomosProperties.com y me interesa recibir opciones que se ajusten a mi perfil.\n\n" +
-      `Propiedad de referencia: ${propertyTitle}\n` +
-      `Que busco: ${tipo}\n` +
-      `Deseo: ${operacion}\n` +
-      `Ingreso familiar mensual: ${ingreso}\n` +
-      `Tiempo estimado para ${operacion ? operacion.toLowerCase() : "comprar"}: ${tiempo}\n\n` +
-      "Podrian enviarme 2-3 opciones recomendadas y los requisitos?"
-    )
-  }, [ingreso, nombre, operacion, propertyTitle, tiempo, tipo])
+    return t('whatsappMessage', {
+      name: nombre,
+      property: propertyTitle,
+      type: tipo,
+      operation: operacion,
+      income: ingreso,
+      operationLower: operacion ? operacion.toLowerCase() : t('operationBuy').toLowerCase(),
+      timeframe: tiempo,
+    })
+  }, [ingreso, nombre, operacion, propertyTitle, tiempo, tipo, t])
 
   const validate = () => {
     const isValid = nombre && ingreso && tiempo && tipo && operacion
@@ -90,15 +91,15 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
   return (
     <div className="mt-6 rounded-xl border border-[#cfe3ff] bg-[#f2f8ff] p-5 shadow-sm">
       <div className="flex items-center justify-between gap-2">
-        <h3 className="text-lg font-semibold text-[#0b3d91]">Califica en 30 segundos</h3>
-        <span className="rounded-full bg-[#0b3d91] px-2 py-1 text-xs font-semibold text-white">Nuevo</span>
+        <h3 className="text-lg font-semibold text-[#0b3d91]">{t('title')}</h3>
+        <span className="rounded-full bg-[#0b3d91] px-2 py-1 text-xs font-semibold text-white">{t('badge')}</span>
       </div>
-      <p className="mt-1 text-sm text-[#234a80]">Te mostramos opciones reales segun tu perfil.</p>
+      <p className="mt-1 text-sm text-[#234a80]">{t('subtitle')}</p>
 
       <div className="mt-4 space-y-3 text-sm text-[#333333]">
         <div>
           <label className="block mb-1 font-medium" htmlFor="lead-nombre">
-            1) Tu nombre
+            {t('nameLabel')}
           </label>
           <input
             id="lead-nombre"
@@ -107,13 +108,13 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
             value={nombre}
             onChange={(event) => setNombre(event.target.value)}
             className="w-full rounded-lg border border-[#dddddd] px-3 py-2"
-            placeholder="Ej: Maria Perez"
+            placeholder={t('namePlaceholder')}
           />
         </div>
 
         <div>
           <label className="block mb-1 font-medium" htmlFor="lead-tipo">
-            2) Que buscas?
+            {t('typeLabel')}
           </label>
           <select
             id="lead-tipo"
@@ -123,16 +124,16 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
             className="w-full rounded-lg border border-[#dddddd] px-3 py-2"
           >
             <option value="" disabled>
-              Selecciona
+              {t('typeSelect')}
             </option>
-            <option value="Apartamento">Apartamento</option>
-            <option value="Local comercial">Local comercial</option>
+            <option value={t('typeApartment')}>{t('typeApartment')}</option>
+            <option value={t('typeCommercial')}>{t('typeCommercial')}</option>
           </select>
         </div>
 
         <div>
           <label className="block mb-1 font-medium" htmlFor="lead-operacion">
-            3) Deseas comprar o alquilar?
+            {t('operationLabel')}
           </label>
           <select
             id="lead-operacion"
@@ -142,16 +143,16 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
             className="w-full rounded-lg border border-[#dddddd] px-3 py-2"
           >
             <option value="" disabled>
-              Selecciona
+              {t('operationSelect')}
             </option>
-            <option value="Comprar">Comprar</option>
-            <option value="Alquilar">Alquilar</option>
+            <option value={t('operationBuy')}>{t('operationBuy')}</option>
+            <option value={t('operationRent')}>{t('operationRent')}</option>
           </select>
         </div>
 
         <div>
           <label className="block mb-1 font-medium" htmlFor="lead-ingreso">
-            4) Ingreso familiar mensual aprox.
+            {t('incomeLabel')}
           </label>
           <select
             id="lead-ingreso"
@@ -161,7 +162,7 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
             className="w-full rounded-lg border border-[#dddddd] px-3 py-2"
           >
             <option value="" disabled>
-              Selecciona
+              {t('incomeSelect')}
             </option>
             <option value="Menos de $1,500">Menos de $1,500</option>
             <option value="$1,500 - $2,499">$1,500 - $2,499</option>
@@ -175,7 +176,7 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
 
         <div>
           <label className="block mb-1 font-medium" htmlFor="lead-tiempo">
-            5) En cuanto tiempo deseas comprar / alquilar?
+            {t('timeframeLabel')}
           </label>
           <select
             id="lead-tiempo"
@@ -185,13 +186,13 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
             className="w-full rounded-lg border border-[#dddddd] px-3 py-2"
           >
             <option value="" disabled>
-              Selecciona
+              {t('timeframeSelect')}
             </option>
-            <option value="0-30 dias">0-30 dias</option>
-            <option value="1-3 meses">1-3 meses</option>
-            <option value="3-6 meses">3-6 meses</option>
-            <option value="6-12 meses">6-12 meses</option>
-            <option value="Solo explorando">Solo explorando</option>
+            <option value={t('timeframe30')}>{t('timeframe30')}</option>
+            <option value={t('timeframe1_3')}>{t('timeframe1_3')}</option>
+            <option value={t('timeframe3_6')}>{t('timeframe3_6')}</option>
+            <option value={t('timeframe6_12')}>{t('timeframe6_12')}</option>
+            <option value={t('timeframeExploring')}>{t('timeframeExploring')}</option>
           </select>
         </div>
       </div>
@@ -202,18 +203,18 @@ export default function LeadQualifier({ propertyId, propertyTitle, minIncome }: 
           onClick={handleWhatsApp}
           className="w-full rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]"
         >
-          Ver opciones por WhatsApp
+          {t('whatsappBtn')}
         </button>
       </div>
 
       {!isQualified && incomeValue !== null && minIncome !== undefined && (
         <p className="mt-3 rounded-lg border border-[#ffd7a8] bg-[#fff3e6] px-3 py-2 text-sm text-[#8a4b00]">
-          No calificas para esta propiedad, pero podemos ofrecer alternativas.
+          {t('notQualified')}
         </p>
       )}
 
       {showError && (
-        <p className="mt-3 text-sm text-[#b00020]">Completa todas las opciones para continuar.</p>
+        <p className="mt-3 text-sm text-[#b00020]">{t('validationError')}</p>
       )}
     </div>
   )

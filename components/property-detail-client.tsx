@@ -37,6 +37,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImage, setLightboxImage] = useState("")
   const tCommon = useTranslations('common')
+  const tDetail = useTranslations('propertyDetail')
   const hasTrackedView = useRef(false)
   const [urgencyCount] = useState(() => Math.floor(Math.random() * 8) + 5)
 
@@ -340,7 +341,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       />
                     </svg>
                     <div className="text-2xl font-bold text-[#222222]">{property.bedrooms}</div>
-                    <div className="text-sm text-[#999999]">Habitaciones</div>
+                    <div className="text-sm text-[#999999]">{tDetail('bedrooms')}</div>
                   </div>
                 )}
                 {property.bathrooms > 0 && (
@@ -360,7 +361,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       />
                     </svg>
                     <div className="text-2xl font-bold text-[#222222]">{property.bathrooms}</div>
-                    <div className="text-sm text-[#999999]">Baños</div>
+                    <div className="text-sm text-[#999999]">{tDetail('bathrooms')}</div>
                   </div>
                 )}
                 <div className="text-center">
@@ -379,7 +380,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     />
                   </svg>
                   <div className="text-2xl font-bold text-[#222222]">{formatArea(property.area)}</div>
-                  <div className="text-sm text-[#999999]">Área Total</div>
+                  <div className="text-sm text-[#999999]">{tDetail('totalArea')}</div>
                 </div>
                 {property.parkingSpots > 0 && (
                   <div className="text-center">
@@ -398,7 +399,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       />
                     </svg>
                     <div className="text-2xl font-bold text-[#222222]">{property.parkingSpots}</div>
-                    <div className="text-sm text-[#999999]">Parqueos</div>
+                    <div className="text-sm text-[#999999]">{tDetail('parking')}</div>
                   </div>
                 )}
               </div>
@@ -415,7 +416,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                         : "text-[#999999] hover:text-[#333333]"
                     }`}
                   >
-                    Descripción
+                    {tDetail('tabDescription')}
                   </button>
                   <button
                     onClick={() => setActiveTab("amenities")}
@@ -425,7 +426,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                         : "text-[#999999] hover:text-[#333333]"
                     }`}
                   >
-                    Amenidades
+                    {tDetail('tabAmenities')}
                   </button>
                   {hasPlanos && (
                     <button
@@ -436,7 +437,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                           : "text-[#999999] hover:text-[#333333]"
                       }`}
                     >
-                      Planos
+                      {tDetail('tabPlans')}
                     </button>
                   )}
                 </div>
@@ -444,14 +445,14 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 {/* Tab Content */}
                 {activeTab === "description" && (
                   <div>
-                    <h2 className="text-2xl font-semibold text-[#222222] mb-4">Descripción</h2>
+                    <h2 className="text-2xl font-semibold text-[#222222] mb-4">{tDetail('descriptionHeading')}</h2>
                     <p className="text-[#333333] leading-relaxed whitespace-pre-line">{property.description}</p>
                   </div>
                 )}
 
                 {activeTab === "amenities" && hasAmenities && (
                   <div>
-                    <h2 className="text-2xl font-semibold text-[#222222] mb-4">Amenidades</h2>
+                    <h2 className="text-2xl font-semibold text-[#222222] mb-4">{tDetail('amenitiesHeading')}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {property.amenities.map((amenity, index) => (
                         <div key={index} className="flex items-center gap-3 p-3 bg-[#fafafa] rounded-lg">
@@ -473,7 +474,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
                 {activeTab === "plans" && hasPlanos && (
                   <div>
-                    <h2 className="text-2xl font-semibold text-[#222222] mb-4">Planos Disponibles</h2>
+                    <h2 className="text-2xl font-semibold text-[#222222] mb-4">{tDetail('plansHeading')}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {property.planos?.map((plano, index) => (
                         <button
