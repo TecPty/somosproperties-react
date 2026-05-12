@@ -10,9 +10,7 @@ export const trackGaEvent = (eventName: string, params?: GaEventParams) => {
   // ✅ Validar consentimiento antes de trackear
   if (!canTrack("analytics")) return
 
-  // @ts-ignore
   if (window.gtag) {
-    // @ts-ignore
     window.gtag("event", eventName, {
       send_to: GOOGLE_ANALYTICS_ID,
       ...(params || {}),

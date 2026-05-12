@@ -13,7 +13,7 @@ interface ContactFormProps {
   propertyTitle?: string
 }
 
-function buildWhatsAppUrl(t: any, propertyTitle?: string): string {
+function buildWhatsAppUrl(t: (key: string, values?: Record<string, string>) => string, propertyTitle?: string): string {
   const body = propertyTitle
     ? t('whatsappBodyProperty', { title: propertyTitle })
     : t('whatsappBodyGeneral')

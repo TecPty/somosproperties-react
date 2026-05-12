@@ -9,25 +9,18 @@ export const initGoogleAds = () => {
   script.async = true
   document.head.appendChild(script)
 
-  // @ts-ignore
   window.dataLayer = window.dataLayer || []
-  // @ts-ignore
-  function gtag() {
-    // @ts-ignore
-    dataLayer.push(arguments)
+  window.gtag = function (...args: unknown[]) {
+    window.dataLayer!.push(args)
   }
-  // @ts-ignore
-  gtag("js", new Date())
-  // @ts-ignore
-  gtag("config", GOOGLE_ADS_ID)
+  window.gtag("js", new Date())
+  window.gtag("config", GOOGLE_ADS_ID)
 }
 
 export const trackGoogleAdsConversion = (conversionLabel: string, value?: number) => {
   if (typeof window === "undefined" || !GOOGLE_ADS_ID || GOOGLE_ADS_ID === "YOUR_GOOGLE_ADS_ID") return
 
-  // @ts-ignore
   if (window.gtag) {
-    // @ts-ignore
     window.gtag("event", "conversion", {
       send_to: `${GOOGLE_ADS_ID}/${conversionLabel}`,
       value: value || 0,
@@ -39,9 +32,7 @@ export const trackGoogleAdsConversion = (conversionLabel: string, value?: number
 export const trackGoogleAdsEvent = (eventName: string, params?: Record<string, unknown>) => {
   if (typeof window === "undefined" || !GOOGLE_ADS_ID || GOOGLE_ADS_ID === "YOUR_GOOGLE_ADS_ID") return
 
-  // @ts-ignore
   if (window.gtag) {
-    // @ts-ignore
     window.gtag("event", eventName, params)
   }
 }

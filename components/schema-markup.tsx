@@ -3,7 +3,7 @@
 import { useEffect } from "react"
 
 interface SchemaProps {
-  schema: any
+  schema: Record<string, unknown>
 }
 
 /**
@@ -37,7 +37,7 @@ export function SchemaMarkup({ schema }: SchemaProps) {
  * Multiple schemas injector
  * Pass array of schemas to inject multiple structured data blocks
  */
-export function SchemaMarkupMultiple({ schemas }: { schemas: any[] }) {
+export function SchemaMarkupMultiple({ schemas }: { schemas: Record<string, unknown>[] }) {
   useEffect(() => {
     if (!schemas || schemas.length === 0) return
 

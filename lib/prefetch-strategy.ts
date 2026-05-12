@@ -29,7 +29,7 @@ export function getPrefetchPriority(href: string): "high" | "low" | false {
 export function shouldReducePrefetch(): boolean {
   if (typeof navigator === "undefined") return false
 
-  const connection = (navigator as any).connection
+  const connection = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string; rtt?: number } }).connection
   if (!connection) return false
 
   // Reduce prefetch on slow networks or data saver mode

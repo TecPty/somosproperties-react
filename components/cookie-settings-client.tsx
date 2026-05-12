@@ -1,6 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
+import { useParams } from "next/navigation"
 import { useConsentManager } from "@/hooks/use-consent-manager"
 import { Button } from "@/components/ui/button"
 import { Copy, CheckCircle2, AlertCircle } from "lucide-react"
@@ -8,6 +10,8 @@ import { Copy, CheckCircle2, AlertCircle } from "lucide-react"
 export default function CookieSettingsClient() {
   const { consent, setConsent, acceptAll, rejectAll } = useConsentManager()
   const [saved, setSaved] = useState(false)
+  const params = useParams()
+  const locale = (params?.locale as string) || 'es'
   const [copied, setCopied] = useState(false)
 
   // Reset saved state after 2 seconds
@@ -217,13 +221,13 @@ Actualizado: ${new Date(consent.timestamp).toLocaleString("es-ES")}`
       <div className="p-4 bg-gray-50 text-center text-xs text-[#999999]">
         <p>
           Al usar nuestro sitio, aceptas nuestra{" "}
-          <a href="/politica-cookies" className="text-[#3898EC] hover:underline">
+          <Link href={`/${locale}/politica-cookies`} className="text-[#3898EC] hover:underline">
             Política de Cookies
-          </a>
+          </Link>
           {" "}y{" "}
-          <a href="/privacidad" className="text-[#3898EC] hover:underline">
+          <Link href={`/${locale}/privacidad`} className="text-[#3898EC] hover:underline">
             Política de Privacidad
-          </a>
+          </Link>
         </p>
       </div>
     </div>

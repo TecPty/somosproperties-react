@@ -113,7 +113,7 @@ export default function PoliticaCookiesPage() {
               
               <h3 className="text-lg font-semibold text-[#333333] mb-2">4.1 A través de SOMOS Properties</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Haz clic en "Personalizar" en nuestro banner de consentimiento</li>
+                <li>Haz clic en &ldquo;Personalizar&rdquo; en nuestro banner de consentimiento</li>
                 <li>Selecciona qué tipos de cookies permitir</li>
                 <li>Tu preferencia se guarda por 12 meses</li>
               </ul>
@@ -156,7 +156,7 @@ export default function PoliticaCookiesPage() {
             <section>
               <h2 className="text-2xl font-semibold text-[#222222] mb-4">7. Cambios a Esta Política</h2>
               <p>
-                Podemos actualizar esta Política de Cookies periódicamente. La fecha de "Última actualización" 
+                Podemos actualizar esta Política de Cookies periódicamente. La fecha de &ldquo;Última actualización&rdquo; 
                 en la parte superior reflejará cualquier cambio.
               </p>
             </section>

@@ -61,7 +61,7 @@ export function getPropertyListingSchema(property: Property, imageUrl?: string) 
   const priceValidUntil = new Date()
   priceValidUntil.setDate(priceValidUntil.getDate() + 90) // Valid for 90 days
 
-  const schema: any = {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "PropertyListing",
     "@id": `${baseUrl}/propiedad/${property.id}`,

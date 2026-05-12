@@ -46,7 +46,7 @@ export function shouldPrefetch(slowConnection?: boolean): boolean {
   if (typeof window === "undefined") return false
 
   // Check for slow connection
-  const connection = (navigator as any).connection
+  const connection = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection
   if (slowConnection || (connection?.saveData && connection?.effectiveType === "4g")) {
     return false
   }

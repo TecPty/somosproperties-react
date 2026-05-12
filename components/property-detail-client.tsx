@@ -38,6 +38,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const [lightboxImage, setLightboxImage] = useState("")
   const tCommon = useTranslations('common')
   const hasTrackedView = useRef(false)
+  const [urgencyCount] = useState(() => Math.floor(Math.random() * 8) + 5)
 
   // --- PROMOCIONES Y MODAL INTELIGENTE ---
   const { isOpen, promotion, openModal, closeModal } = usePromotionModal();
@@ -305,7 +306,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ea384c] opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ea384c]"></span>
                     </span>
-                    {tCommon('urgency', { count: Math.floor(Math.random() * 8) + 5 })}
+                    {tCommon('urgency', { count: urgencyCount })}
                   </div>
                 </div>
                 {computedHighlights.length > 0 && (

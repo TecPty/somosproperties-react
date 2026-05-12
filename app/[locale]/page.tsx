@@ -210,7 +210,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {(t.raw('testimonials.reviews') as any[]).map((review, i) => (
+            {(t.raw('testimonials.reviews') as { author: string; content: string; role: string }[]).map((review, i) => (
               <div key={i} className="bg-[#fafafa] p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                 <div className="flex gap-1 text-yellow-400 mb-6 group-hover:scale-110 transition-transform origin-left">
                   {[...Array(5)].map((_, i) => (
@@ -219,7 +219,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-600 italic mb-8 leading-relaxed text-lg">"{review.content}"</p>
+                <p className="text-gray-600 italic mb-8 leading-relaxed text-lg">&ldquo;{review.content}&rdquo;</p>
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-[#3898EC]/10 flex items-center justify-center text-[#3898EC] font-bold text-xl border-2 border-[#3898EC]/20">
                     {review.name.charAt(0)}

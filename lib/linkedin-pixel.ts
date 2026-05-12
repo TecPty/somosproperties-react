@@ -8,31 +8,23 @@ export const initLinkedInPixel = () => {
   )
     return
 
-  // @ts-ignore
   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []
-  // @ts-ignore
   window._linkedin_data_partner_ids.push(LINKEDIN_PARTNER_ID)
 
   // Cargar el script de LinkedIn Insight Tag
-  // @ts-ignore
   ;(function (l) {
     if (!l) {
-      // @ts-ignore
       window.lintrk = function (a, b) {
-        // @ts-ignore
-        window.lintrk.q.push([a, b])
+        // Queue calls until the script loads
+        console.debug("[LinkedIn]", a, b)
       }
-      // @ts-ignore
-      window.lintrk.q = []
     }
-    var s = document.getElementsByTagName("script")[0]
-    var b = document.createElement("script")
+    const s = document.getElementsByTagName("script")[0]
+    const b = document.createElement("script")
     b.type = "text/javascript"
     b.async = true
     b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"
-    // @ts-ignore
-    s.parentNode.insertBefore(b, s)
-    // @ts-ignore
+    s.parentNode?.insertBefore(b, s)
   })(window.lintrk)
 }
 
@@ -44,9 +36,7 @@ export const trackLinkedInConversion = (conversionId: string) => {
   )
     return
 
-  // @ts-ignore
   if (window.lintrk) {
-    // @ts-ignore
     window.lintrk("track", { conversion_id: conversionId })
   }
 }
@@ -59,9 +49,7 @@ export const trackLinkedInEvent = (eventName: string) => {
   )
     return
 
-  // @ts-ignore
   if (window.lintrk) {
-    // @ts-ignore
     window.lintrk("track", { event: eventName })
   }
 }

@@ -92,11 +92,10 @@ export function PromotionalModal({
           key={"star-" + i}
           className={styles.starDecoration}
           style={{
-            // @ts-ignore
-            ['--left' as any]: `${left}%`,
-            ['--top' as any]: `${top}%`,
-            ['--size' as any]: `${size}px`,
-          }}
+            ['--left']: `${left}%`,
+            ['--top']: `${top}%`,
+            ['--size']: `${size}px`,
+          } as React.CSSProperties}
         >
           ★
         </div>
@@ -111,11 +110,10 @@ export function PromotionalModal({
           key={"snow-" + i}
           className={styles.snowDecoration}
           style={{
-            // @ts-ignore
-            ['--left' as any]: `${left}%`,
-            ['--top' as any]: `${top}%`,
-            ['--size' as any]: `${size}px`,
-          }}
+            ['--left']: `${left}%`,
+            ['--top']: `${top}%`,
+            ['--size']: `${size}px`,
+          } as React.CSSProperties}
         >
           ❄
         </div>

@@ -17,12 +17,12 @@ export interface PerformanceMetrics {
 /**
  * Send Web Vitals to Google Analytics
  */
-export function reportWebVitals(metric: any) {
+export function reportWebVitals(metric: { name: string; id: string; value: number; rating: string }) {
   if (typeof window === "undefined") return
 
   // Send to Google Analytics
-  if ((window as any).gtag) {
-    ;(window as any).gtag("event", metric.name, {
+  if (window.gtag) {
+    window.gtag("event", metric.name, {
       event_category: "Web Vitals",
       event_label: metric.id,
       value: Math.round(metric.value),
