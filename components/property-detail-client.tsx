@@ -564,9 +564,9 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
               {/* Formulario Califica en 30 segundos */}
               <section className="formulario-califica">
-                <h3 className="formulario-titulo">Califica en 30 segundos</h3>
+                <h3 className="formulario-titulo">{tDetail('qualifyTitle')}</h3>
                 <p className="formulario-subtexto">
-                  Descubre si calificas para esta propiedad completando este breve formulario.
+                  {tDetail('qualifySubtitle')}
                 </p>
                 <LeadQualifier
                   propertyId={property.id}
@@ -577,7 +577,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
               {/* Formulario de contacto clásico */}
               <section className="formulario-contacto">
-                <h3 className="formulario-titulo">Solicita Información</h3>
+                <h3 className="formulario-titulo">{tDetail('requestInfoTitle')}</h3>
                 <ContactForm compact propertyTitle={property.title} />
               </section>
             </aside>
@@ -585,20 +585,20 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
           {(hasEligibility || hasRequirements || hasIncentives) && (
             <div className="mb-16 rounded-lg border border-[#eeeeee] bg-[#fafafa] p-6">
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">Requisitos y condiciones</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{tDetail('requirementsTitle')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-[#333333]">
                 <div className="space-y-4">
                   {hasEligibility && (
                     <div>
-                      <h3 className="font-semibold text-[#222222] mb-2">Ingreso familiar</h3>
+                      <h3 className="font-semibold text-[#222222] mb-2">{tDetail('householdIncomeLabel')}</h3>
                       <p className="text-[#555555]">
-                        Ingreso familiar mínimo: {formatPrice(property.minIncome || 0)}
+                        {tDetail('householdIncomeMin', { amount: formatPrice(property.minIncome || 0) })}
                       </p>
                     </div>
                   )}
                   {hasIncentives && (
                     <div>
-                      <h3 className="font-semibold text-[#222222] mb-2">Beneficios</h3>
+                      <h3 className="font-semibold text-[#222222] mb-2">{tDetail('benefitsLabel')}</h3>
                       <ul className="list-disc list-inside space-y-1 text-[#555555]">
                         {property.incentives?.map((item, index) => (
                           <li key={index}>{item}</li>
@@ -609,7 +609,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 </div>
                 {hasRequirements && (
                   <div>
-                    <h3 className="font-semibold text-[#222222] mb-2">Requisitos</h3>
+                    <h3 className="font-semibold text-[#222222] mb-2">{tDetail('requirementsLabel')}</h3>
                     <ul className="list-disc list-inside space-y-1 text-[#555555]">
                       {property.requirements?.map((item, index) => (
                         <li key={index}>{item}</li>
@@ -624,7 +624,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           {/* Virtual Tour */}
           {property.virtualTour && (
             <div className="mb-16">
-              <h2 className="text-2xl font-semibold text-[#222222] mb-4">Visita Virtual 3D</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-4">{tDetail('virtualTourTitle')}</h2>
               <div className="bg-gradient-to-r from-[#3898EC] to-[#2e8adb] p-6 rounded-lg shadow-lg">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div className="flex items-center gap-4">
@@ -645,8 +645,8 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       </svg>
                     </div>
                     <div className="text-white">
-                      <h3 className="text-lg font-semibold">Recorre esta propiedad desde tu casa</h3>
-                      <p className="text-sm text-white/90">Tour virtual 360° en Matterport</p>
+                      <h3 className="text-lg font-semibold">{tDetail('virtualTourTagline')}</h3>
+                      <p className="text-sm text-white/90">{tDetail('virtualTourSubtitle')}</p>
                     </div>
                   </div>
                   <a
@@ -675,7 +675,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                         d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    Iniciar Tour Virtual
+                    {tDetail('virtualTourCta')}
                   </a>
                 </div>
               </div>
@@ -688,7 +688,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           {promotion?.images?.thumbnail && (
             <button
               className="mx-auto my-12 block promotion-thumbnail transition-transform hover:scale-105 focus:ring-2 focus:ring-blue-500"
-              aria-label={`Ver promoción: ${promotion.title}`}
+              aria-label={tDetail('promoBannerAriaLabel', { title: promotion.title })}
               onClick={() => openModal(promotion)}
             >
               <img
@@ -703,7 +703,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
           {/* Mapa de ubicación después del thumbnail */}
           <div className="mb-16">
-            <h2 className="text-2xl font-semibold text-[#222222] mb-4">Ubicación</h2>
+            <h2 className="text-2xl font-semibold text-[#222222] mb-4">{tDetail('locationTitle')}</h2>
             <LazyMap mapSrc={mapSrc} propertyLocation={property.location} />
             <div className="mt-4 flex items-start gap-3 p-4 bg-[#fafafa] rounded-lg">
               <svg
@@ -738,7 +738,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           {/* Similar Properties */}
           {similarProperties.length > 0 && (
             <div>
-              <h2 className="text-2xl font-semibold text-[#222222] mb-6">Propiedades Similares</h2>
+              <h2 className="text-2xl font-semibold text-[#222222] mb-6">{tDetail('similarTitle')}</h2>
               <PropertyGrid properties={similarProperties} />
             </div>
           )}
@@ -749,7 +749,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
       {/* Mobile Sticky CTA Bar */}
       <div className="md:hidden fixed bottom-16 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] flex gap-3 animate-slide-up">
         <a
-          href={`https://wa.me/50766770577?text=${encodeURIComponent(`Hola, me interesa la propiedad: ${property.title}. ¿Está disponible?`)}`}
+          href={`https://wa.me/50766770577?text=${encodeURIComponent(tDetail('mobileWhatsapp', { title: property.title }))}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-all"
