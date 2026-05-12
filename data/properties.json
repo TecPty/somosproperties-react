@@ -979,7 +979,7 @@
       ]
     },
     {
-      "id": 243,
+      "id": 268,
       "title": "The Towers Business Plaza - Local 4-A Nivel 4",
       "type": "Local",
       "category": "Comercial",
@@ -1021,7 +1021,7 @@
       "slug": "the-towers-business-plaza-local-a-nivel"
     },
     {
-      "id": 244,
+      "id": 269,
       "title": "The Towers Business Plaza - Local Planta Baja Frente a Calle",
       "type": "Local",
       "category": "Comercial",
@@ -1112,7 +1112,7 @@
       "slug": "the-tower-business-calle-0-oficinas-ocupadas"
     },
     {
-      "id": 245,
+      "id": 270,
       "title": "The Towers Residences - Apto. 31 B Torre 100",
       "type": "Apartamento",
       "category": "Residencial",
@@ -2298,7 +2298,7 @@
       "builtYear": 2024,
       "featured": false,
       "status": "rented",
-      "id": 246,
+      "id": 271,
       "title": "Sunset Strip - Local 409",
       "type": "Local",
       "area": 38,
