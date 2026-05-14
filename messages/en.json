@@ -165,7 +165,29 @@
     "locationTitle": "Location",
     "similarTitle": "Similar Properties",
     "mobileWhatsapp": "Hello, I'm interested in the property: {title}. Is it available?",
-    "promoBannerAriaLabel": "View promotion: {title}"
+    "promoBannerAriaLabel": "View promotion: {title}",
+    "additionalInfo": "Additional Information",
+    "yearBuilt": "Year Built",
+    "typeLabel": "Type",
+    "categoryLabel": "Category",
+    "statusLabel": "Status",
+    "types": {
+      "Apartamento": "Apartment",
+      "Casa": "House",
+      "Villa": "Villa",
+      "Local": "Commercial Space",
+      "Oficina": "Office",
+      "Terreno": "Land"
+    },
+    "categories": {
+      "Residencial": "Residential",
+      "Comercial": "Commercial"
+    },
+    "statuses": {
+      "available": "Available",
+      "rented": "Rented",
+      "sold": "Sold"
+    }
   },
   "leadQualifier": {
     "title": "Qualify in 30 seconds",
@@ -291,6 +313,22 @@
     "title": "All Properties",
     "subtitle": "{count} properties found",
     "loading": "Loading..."
+  },
+  "residenciales": {
+    "title": "Residential Properties",
+    "resultsCount": "{count} residential properties found",
+    "seo": {
+      "collectionName": "Residential Properties in Panama",
+      "path": "/residenciales"
+    }
+  },
+  "comerciales": {
+    "title": "Commercial Properties",
+    "resultsCount": "{count} commercial properties found",
+    "seo": {
+      "collectionName": "Commercial Properties in Panama",
+      "path": "/comerciales"
+    }
   },
   "contacto": {
     "title": "Contact Us",

@@ -150,7 +150,7 @@ export const SEO = {
     "inmobiliaria panamá",
     "bienes raíces",
   ],
-  ogImage: "https://somosproperties.com/og-image.png",
+  ogImage: "https://somosproperties.com/og-image.webp",
   ogType: "website",
   twitterHandle: "@somosproperties",
 } as const

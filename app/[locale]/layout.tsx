@@ -7,6 +7,8 @@ import { locales } from '@/i18n'
 
 import RootLayoutClient from "@/components/root-layout-client"
 import ConsentLayout from "@/components/consent-layout"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "SOMOS Properties - Propiedades en Panamá",
@@ -53,7 +55,11 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
 
             <RootLayoutClient gaId={gaId}>
-              {children}
+              <Navbar />
+              <main className="min-h-screen">
+                {children}
+              </main>
+              <Footer />
             </RootLayoutClient>
           </NextIntlClientProvider>
         </ConsentLayout>

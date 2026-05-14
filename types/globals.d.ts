@@ -7,8 +7,17 @@ declare global {
     gtag: (...args: unknown[]) => void
 
     // Meta Pixel (fbq)
-    fbq: (action: string, event: string, params?: Record<string, unknown>) => void
-    _fbq: typeof window.fbq
+    type FbqFunction = ((...args: unknown[]) => void) & {
+      callMethod?: (...args: unknown[]) => void
+      queue: unknown[]
+      loaded?: boolean
+      version?: string
+    }
+
+    interface Window {
+      fbq?: FbqFunction
+      _fbq?: FbqFunction
+    }
 
     // TikTok Pixel (ttq)
     ttq: {

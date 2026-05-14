@@ -76,28 +76,28 @@
         "/images/properties/pacific-point/floorplans/plano-modelo-b.webp"
       ],
       "images": [
-        "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-bano-principal-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-bano-principal-02.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-bano-secundario-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-cocina-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-comedor-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-comedor-02.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-comedor-03.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-lavanderia-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-pasillo-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-rec-principal-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-rec-principal-02.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-rec-secundaria-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-rec-secundaria-02.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-sala-03.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-sala-04.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-sala-05.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-sala-comedor-01.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-sala-comedor-02.jpeg",
-        "/images/properties/pacific-point/units/236/pacific-point-236-walkin-closet-01.jpeg"
+        "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-bano-principal-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-bano-principal-02.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-bano-secundario-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-cocina-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-comedor-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-comedor-02.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-comedor-03.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-lavanderia-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-pasillo-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-rec-principal-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-rec-principal-02.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-rec-secundaria-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-rec-secundaria-02.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-sala-03.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-sala-04.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-sala-05.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-sala-comedor-01.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-sala-comedor-02.webp",
+        "/images/properties/pacific-point/units/236/pacific-point-236-walkin-closet-01.webp"
       ],
-      "image": "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.jpeg",
+      "image": "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.webp",
       "pricePerMonth": null,
       "featured": true,
       "status": "available",
@@ -141,22 +141,22 @@
       "parkingSpots": 0,
       "area": 305,
       "builtYear": 2024,
-      "image": "/images/properties/pacific-point/units/237/sala1.jpeg",
+      "image": "/images/properties/pacific-point/units/237/sala1.webp",
       "images": [
-        "/images/properties/pacific-point/units/237/sala1.jpeg",
-        "/images/properties/pacific-point/units/237/bathroom.png",
-        "/images/properties/pacific-point/units/237/closet.png",
-        "/images/properties/pacific-point/units/237/entrada.jpeg",
-        "/images/properties/pacific-point/units/237/kitchen.jpeg",
-        "/images/properties/pacific-point/units/237/room-1.jpeg",
-        "/images/properties/pacific-point/units/237/room-2.jpeg",
-        "/images/properties/pacific-point/units/237/room.jpeg",
-        "/images/properties/pacific-point/units/237/sala-2.jpeg",
-        "/images/properties/pacific-point/units/237/sala-3.jpeg",
-        "/images/properties/pacific-point/units/237/sala.jpeg",
-        "/images/properties/pacific-point/units/237/terraza-1.jpeg",
-        "/images/properties/pacific-point/units/237/terraza-2.jpeg",
-        "/images/properties/pacific-point/units/237/terraza.png"
+        "/images/properties/pacific-point/units/237/sala1.webp",
+        "/images/properties/pacific-point/units/237/bathroom.webp",
+        "/images/properties/pacific-point/units/237/closet.webp",
+        "/images/properties/pacific-point/units/237/entrada.webp",
+        "/images/properties/pacific-point/units/237/kitchen.webp",
+        "/images/properties/pacific-point/units/237/room-1.webp",
+        "/images/properties/pacific-point/units/237/room-2.webp",
+        "/images/properties/pacific-point/units/237/room.webp",
+        "/images/properties/pacific-point/units/237/sala-2.webp",
+        "/images/properties/pacific-point/units/237/sala-3.webp",
+        "/images/properties/pacific-point/units/237/sala.webp",
+        "/images/properties/pacific-point/units/237/terraza-1.webp",
+        "/images/properties/pacific-point/units/237/terraza-2.webp",
+        "/images/properties/pacific-point/units/237/terraza.webp"
       ],
       "planos": [],
       "description": "Pacific Point Torre 400 en Punta Pacífica. Apartamento en alquiler con 305 m2, 3 recamaras y 3.5 banos. Incluye LB y AA.\n\nDistribucion:\n- Cocina\n- Lavanderia y CBE\n- Sala y comedor\n- Balcon con vista al mar\n\nAlquiler mensual: $5,750",
@@ -199,24 +199,24 @@
       "parkingSpots": 2,
       "area": 155.7,
       "builtYear": 2021,
-      "image": "/images/properties/kings-park/torre-500/apto-3b/room-1.png",
+      "image": "/images/properties/kings-park/torre-500/apto-3b/room-1.webp",
       "images": [
-        "/images/properties/kings-park/torre-500/apto-3b/room-1.png",
-        "/images/properties/kings-park/torre-500/apto-3b/room.png",
-        "/images/properties/kings-park/torre-500/apto-3b/kitchen.png",
-        "/images/properties/kings-park/torre-500/apto-3b/bathroom.png",
-        "/images/properties/kings-park/torre-500/apto-3b/closet.png",
-        "/images/properties/kings-park/torre-500/apto-3b/laundry-service.png",
-        "/images/properties/kings-park/torre-500/apto-3b/laundry-service-1.png"
+        "/images/properties/kings-park/torre-500/apto-3b/room-1.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/room.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/kitchen.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/bathroom.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/closet.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/laundry-service.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/laundry-service-1.webp"
       ],
       "planos": [
-        "/images/properties/kings-park/plano-modelo-a.png",
-        "/images/properties/kings-park/plano-modelo-b.png"
+        "/images/properties/kings-park/plano-modelo-a.webp",
+        "/images/properties/kings-park/plano-modelo-b.webp"
       ],
       "featured": true,
       "status": "available",
       "id": 1,
-      "thumbnail": "/images/properties/kings-park/promotional/thumbnail-kings-park.png",
+      "thumbnail": "/images/properties/kings-park/promotional/thumbnail-kings-park.webp",
       "title": "Kings Park - Torre 500, Apto 3-B",
       "description": "Apartamento 3-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 4 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas), Sistema Smart Home y 2 estacionamientos.",
       "amenities": [
@@ -259,30 +259,30 @@
       "parkingSpots": 2,
       "area": 155.7,
       "builtYear": 2021,
-      "image": "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-sala-01-empty.png",
+      "image": "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-sala-01-empty.webp",
       "images": [
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-sala-01-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-sala-03-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-cocina-01.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-cocina-02-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-cocina-03-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-recamara-01-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-recamara-02-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-recamara-03-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-bano-01.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-bano-02.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-closet-01-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-closet-03-empty.png",
-        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-pasillo-01-empty.png"
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-sala-01-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-sala-03-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-cocina-01.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-cocina-02-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-cocina-03-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-recamara-01-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-recamara-02-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-recamara-03-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-bano-01.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-bano-02.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-closet-01-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-closet-03-empty.webp",
+        "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-pasillo-01-empty.webp"
       ],
       "planos": [
-        "/images/properties/kings-park/plano-modelo-a.png",
-        "/images/properties/kings-park/plano-modelo-b.png"
+        "/images/properties/kings-park/plano-modelo-a.webp",
+        "/images/properties/kings-park/plano-modelo-b.webp"
       ],
       "featured": true,
       "status": "available",
       "id": 238,
-      "thumbnail": "/images/properties/kings-park/promotional/thumbnail-kings-park.png",
+      "thumbnail": "/images/properties/kings-park/promotional/thumbnail-kings-park.webp",
       "title": "Kings Park - Torre 500, Apto 10-B",
       "description": "Apartamento 10-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 5 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye 2 estacionamientos + 1 depósito. Línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas), Sistema Smart Home.",
       "amenities": [
@@ -327,11 +327,11 @@
       "parkingSpots": 70,
       "area": 0,
       "builtYear": 2024,
-      "image": "/images/properties/central-plaza/hero.png",
+      "image": "/images/properties/central-plaza/hero.webp",
       "images": [
-        "/images/properties/central-plaza/hero.png",
-        "/images/properties/central-plaza/hero-1080.png",
-        "/images/properties/central-plaza/hero-1600.png"
+        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero-1080.webp",
+        "/images/properties/central-plaza/hero-1600.webp"
       ],
       "planos": [],
       "description": "Central Plaza consta de dos niveles con un total de 42 locales comerciales con diferentes metrajes ideales para su proyecto. Restaurantes, Zona de juegos, Gimnasio, Bancos, Ferretería, Salón de belleza, Envíos y más. Cuenta con 70 estacionamientos y acceso entre Av. Juan Demóstenes Arosemena y Av. Omar Torrijos.",
@@ -372,14 +372,14 @@
       "parkingSpots": 1,
       "area": 80,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
+      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -431,13 +431,13 @@
       "parkingSpots": 1,
       "area": 80,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.png",
+      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -489,13 +489,13 @@
       "parkingSpots": 2,
       "area": 90,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
+      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
-        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
+        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=ASotyyK41C1",
@@ -547,13 +547,13 @@
       "parkingSpots": 2,
       "area": 90,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
+      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
-        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
+        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=ASotyyK41C1",
@@ -604,18 +604,18 @@
       "parkingSpots": 0,
       "area": 235.82,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-business-plaza/property-026/local-pb-1.jpeg",
+      "image": "/images/properties/the-towers-business-plaza/property-026/local-pb-1.webp",
       "images": [
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-1.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-2.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-3.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-4.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-5.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-6.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-7.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-8.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-9.jpeg",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-10.jpeg"
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-1.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-2.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-3.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-4.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-5.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-6.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-7.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-8.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-9.webp",
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-10.webp"
       ],
       "planos": [],
       "description": "Local Comercial en Alquiler - The Towers Business Plaza, Planta Baja frente a Calle 50. 235.82 m² de oportunidad en ubicación estratégica con alto tráfico vehicular. Ideal para negocio. Disponible inmediatamente. Alquiler: $4,000/mes + Mantenimiento $531/mes. Contacto: 6677-0577.",
@@ -657,13 +657,13 @@
       "parkingSpots": 2,
       "area": 90,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
+      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
-        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
+        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=ASotyyK41C1",
@@ -715,13 +715,13 @@
       "parkingSpots": 1,
       "area": 80,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.png",
+      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -773,13 +773,13 @@
       "parkingSpots": 1,
       "area": 80,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.png",
+      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -831,14 +831,14 @@
       "parkingSpots": 1,
       "area": 80,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
+      "image": "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -890,13 +890,13 @@
       "parkingSpots": 2,
       "area": 90,
       "builtYear": 2025,
-      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
+      "image": "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
       "images": [
-        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
-        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
-        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+        "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
+        "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
+        "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=ASotyyK41C1",
@@ -947,13 +947,13 @@
       "parkingSpots": 0,
       "area": 425.78,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-01.jpeg",
+      "image": "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-01.webp",
       "images": [
-        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-01.jpeg",
-        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-02.jpeg",
-        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-03.jpeg",
-        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-04.jpeg",
-        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-05.jpeg"
+        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-01.webp",
+        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-02.webp",
+        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-03.webp",
+        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-04.webp",
+        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-05.webp"
       ],
       "planos": [],
       "description": "Local Comercial en Alquiler - The Towers Business Plaza, Local 2A Nivel 2 en Calle 50. 425.78 m² de oportunidad en ubicación estratégica con alto tráfico vehicular. Ideal para negocio. Disponible inmediatamente. Alquiler: $6,378/mes + Mantenimiento $958/mes. Aire con ducto central incluido. Contacto: 6677-0577.",
@@ -994,9 +994,9 @@
       "parkingSpots": 2,
       "area": 425.78,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg",
+      "image": "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.webp",
       "images": [
-        "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+        "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.webp"
       ],
       "planos": [],
       "description": "Local 4-A en Nivel 4 de The Towers Business Plaza, San Francisco. 425.78 m². Venta: $1,105,000 | Alquiler: $7,276/mes + depósito $6,800. Mantenimiento $958/mes ($2.25/m²). Edificio corporativo de 6 niveles con 4 niveles de estacionamientos. Contrato mínimo 2 años con 2 meses de gracia.",
@@ -1036,9 +1036,9 @@
       "parkingSpots": 1,
       "area": 235.82,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg",
+      "image": "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.webp",
       "images": [
-        "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+        "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.webp"
       ],
       "planos": [],
       "description": "Local en Planta Baja frente a calle de The Towers Business Plaza, San Francisco. Total 235.82 m² (PB: 118.26 m², Mezzanine: 87.39 m², Terraza: 30.17 m²). Venta: $707,460 | Alquiler: $4,280/mes + depósito $4,000. Mantenimiento $531/mes ($2.25/m²). Ubicación premium con fachada a calle principal. Contrato mínimo 2 años, 2 meses de gracia.",
@@ -1078,9 +1078,9 @@
       "parkingSpots": 1,
       "area": 60,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg",
+      "image": "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.webp",
       "images": [
-        "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.jpeg"
+        "/images/properties/the-towers-business-plaza/local-1a-nivel-1/local-1a-interior-01.webp"
       ],
       "planos": [],
       "description": "Oficinas en The Tower Business Calle 50. Actualmente con ocupación completa. Mostrado para referencia de portafolio.",
@@ -1127,16 +1127,16 @@
       "parkingSpots": 2,
       "area": 273,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/units/245/sala.png",
+      "image": "/images/properties/the-towers-residences/units/245/sala.webp",
       "images": [
-        "/images/properties/the-towers-residences/units/245/sala.png",
-        "/images/properties/the-towers-residences/units/245/bathroom.png",
-        "/images/properties/the-towers-residences/units/245/closet.png",
-        "/images/properties/the-towers-residences/units/245/kitchen.png",
-        "/images/properties/the-towers-residences/units/245/laundry.png",
-        "/images/properties/the-towers-residences/units/245/room.png",
-        "/images/properties/the-towers-residences/units/245/sala-1.png",
-        "/images/properties/the-towers-residences/units/245/terraza.png"
+        "/images/properties/the-towers-residences/units/245/sala.webp",
+        "/images/properties/the-towers-residences/units/245/bathroom.webp",
+        "/images/properties/the-towers-residences/units/245/closet.webp",
+        "/images/properties/the-towers-residences/units/245/kitchen.webp",
+        "/images/properties/the-towers-residences/units/245/laundry.webp",
+        "/images/properties/the-towers-residences/units/245/room.webp",
+        "/images/properties/the-towers-residences/units/245/sala-1.webp",
+        "/images/properties/the-towers-residences/units/245/terraza.webp"
       ],
       "planos": [],
       "description": "The Towers Residences - Apartamento 31 B en Torre 100, el penÚltimo piso con 272.50 m² de lujo absoluto.\n\n Características Premium:\n• 3 recámaras tipo suite\n• 4 baños de diseño italiano\n• Sala-comedor con vista 360Â°\n• Cocina europea integrada\n• Walk-in closet en recámara principal\n• Área de TV/Estudio\n• Terraza techada\n• 2 estacionamientos VIP\n• Bodega privada\n\n Proyecto The Towers Residences:\nDos edificios conectados por un área social Única, con gimnasio, piscina infinita, canchas deportivas y salón de eventos.\n\nDiseñado con materiales de primera calidad y estilo contemporáneo para familias que buscan exclusividad.\n\n San Francisco - La Mejor Ubicación:\n• Piso 31 con vistas impresionantes\n• Cerca de todo lo que necesitas\n• Zona de alta valorización\n• Seguridad y privacidad\n\n Precio: $480,000 (negociable)\n Mantenimiento: $4,981/mes",
@@ -1183,14 +1183,14 @@
       "parkingSpots": 2,
       "area": 273,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/units/29/sala.jpg",
+      "image": "/images/properties/the-towers-residences/units/29/sala.webp",
       "images": [
-        "/images/properties/the-towers-residences/units/29/sala.jpg",
-        "/images/properties/the-towers-residences/units/29/sala-1.jpg",
-        "/images/properties/the-towers-residences/units/29/kitchen.jpg",
-        "/images/properties/the-towers-residences/units/29/room.jpg",
-        "/images/properties/the-towers-residences/units/29/room-1.jpg",
-        "/images/properties/the-towers-residences/units/29/room-2.jpg"
+        "/images/properties/the-towers-residences/units/29/sala.webp",
+        "/images/properties/the-towers-residences/units/29/sala-1.webp",
+        "/images/properties/the-towers-residences/units/29/kitchen.webp",
+        "/images/properties/the-towers-residences/units/29/room.webp",
+        "/images/properties/the-towers-residences/units/29/room-1.webp",
+        "/images/properties/the-towers-residences/units/29/room-2.webp"
       ],
       "planos": [],
       "description": "The Towers Residences - Apartamento 28 B en Torre 100, un espacio de 272.50 m² diseñado para el máximo confort y elegancia.\n\n Características del Apartamento:\n• 3 amplias recámaras con closets walk-in\n• 4 baños de lujo con acabados importados\n• Sala-comedor de concepto abierto\n• Cocina gourmet con barra americana\n• Área de estar familiar\n• Balcón con vista espectacular\n• 2 estacionamientos\n• Cuarto de servicio con baño\n\n Exclusividad y Diseño:\nProyecto de dos edificios conectados por áreas sociales de primer nivel, con materiales de alta calidad y estilo moderno contemporáneo.\n\n San Francisco Premium:\n• Mejor zona residencial de la ciudad\n• Walking distance a Multiplaza Pacific\n• Cerca de colegios internacionales\n• Fácil acceso a Cinta Costera\n\n Precio: $500,000\n Mantenimiento: $4,981/mes",
@@ -1236,16 +1236,16 @@
       "parkingSpots": 2,
       "area": 273,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/units/30/sala-1.png",
+      "image": "/images/properties/the-towers-residences/units/30/sala-1.webp",
       "images": [
-        "/images/properties/the-towers-residences/units/30/sala-1.png",
-        "/images/properties/the-towers-residences/units/30/bathroom.png",
-        "/images/properties/the-towers-residences/units/30/closet.png",
-        "/images/properties/the-towers-residences/units/30/kitchen.png",
-        "/images/properties/the-towers-residences/units/30/laundry.png",
-        "/images/properties/the-towers-residences/units/30/room.png",
-        "/images/properties/the-towers-residences/units/30/sala.png",
-        "/images/properties/the-towers-residences/units/30/terraza.png"
+        "/images/properties/the-towers-residences/units/30/sala-1.webp",
+        "/images/properties/the-towers-residences/units/30/bathroom.webp",
+        "/images/properties/the-towers-residences/units/30/closet.webp",
+        "/images/properties/the-towers-residences/units/30/kitchen.webp",
+        "/images/properties/the-towers-residences/units/30/laundry.webp",
+        "/images/properties/the-towers-residences/units/30/room.webp",
+        "/images/properties/the-towers-residences/units/30/sala.webp",
+        "/images/properties/the-towers-residences/units/30/terraza.webp"
       ],
       "planos": [],
       "description": "The Towers Residences - Apartamento 29 B en Torre 100, 272.50 m² de elegancia y sofisticación en el corazón de San Francisco.\n\n Especificaciones:\n• 3 recámaras master con baño privado\n• 4 baños completos de lujo\n• Sala de estar con doble altura\n• Comedor formal para 8 personas\n• Cocina italiana con isla central\n• Family room adicional\n• Terraza privada\n• 2 estacionamientos\n• Depósito privado\n\n The Towers Residences:\nProyecto exclusivo de dos torres conectadas por áreas sociales de clase mundial. Diseño contemporáneo con materiales importados de la más alta calidad.\n\n Ubicación Estratégica:\n• San Francisco, zona premium\n• Vista panorámica a la ciudad\n• Cerca de bancos y corporativos\n• Excelente plusvalía\n\n Precio: $480,000\n Mantenimiento: $4,981/mes",
@@ -1961,7 +1961,7 @@
       "bathrooms": 2,
       "parkingSpots": 4,
       "id": 134,
-      "thumbnail": "/images/properties/balboa-boutique/promotional/thumbnail-balboa.png",
+      "thumbnail": "/images/properties/balboa-boutique/promotional/thumbnail-balboa.webp",
       "highlights": [
         "Local B-102/202: 360 m² en mezzanine",
         "Fachada y terraza con vistas a la Calzada",
@@ -3216,21 +3216,21 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
       "status": "available",
       "id": 164,
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "title": "Playa Escondida Torre 100 - Unidad 1201",
       "price": 912542,
       "area": 263.36,
@@ -3264,15 +3264,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3299,7 +3299,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-165"
     },
     {
@@ -3312,15 +3312,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/hero/torres-espejo-agua.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/hero/torres-espejo-agua.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3347,7 +3347,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-166"
     },
     {
@@ -3360,15 +3360,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3395,7 +3395,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-167"
     },
     {
@@ -3408,15 +3408,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3443,7 +3443,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-168"
     },
     {
@@ -3456,15 +3456,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3491,7 +3491,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-00"
     },
     {
@@ -3504,15 +3504,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3539,7 +3539,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-00-170"
     },
     {
@@ -3552,15 +3552,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/villa-jardin-piscina.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3587,7 +3587,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-00-171"
     },
     {
@@ -3600,15 +3600,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3635,7 +3635,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-172"
     },
     {
@@ -3648,15 +3648,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3683,7 +3683,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-173"
     },
     {
@@ -3696,15 +3696,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/villa-jardin-piscina.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3731,7 +3731,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-174"
     },
     {
@@ -3743,15 +3743,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3778,7 +3778,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-175"
     },
     {
@@ -3791,15 +3791,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3826,7 +3826,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-176"
     },
     {
@@ -3839,15 +3839,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3874,7 +3874,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-177"
     },
     {
@@ -3887,15 +3887,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3922,7 +3922,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-178"
     },
     {
@@ -3935,15 +3935,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -3970,7 +3970,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-179"
     },
     {
@@ -3983,15 +3983,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4018,7 +4018,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-180"
     },
     {
@@ -4031,15 +4031,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4066,7 +4066,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-181"
     },
     {
@@ -4079,15 +4079,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4114,7 +4114,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-182"
     },
     {
@@ -4127,15 +4127,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4162,7 +4162,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-183"
     },
     {
@@ -4175,15 +4175,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4210,7 +4210,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-184"
     },
     {
@@ -4223,15 +4223,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4258,7 +4258,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-185"
     },
     {
@@ -4271,15 +4271,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4306,7 +4306,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-186"
     },
     {
@@ -4319,15 +4319,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/hero/villa-jardin-piscina.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4354,7 +4354,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-187"
     },
     {
@@ -4367,15 +4367,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4402,7 +4402,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-188"
     },
     {
@@ -4415,15 +4415,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4450,7 +4450,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-189"
     },
     {
@@ -4463,15 +4463,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4498,7 +4498,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-190"
     },
     {
@@ -4511,15 +4511,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/villa-jardin-piscina.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4546,7 +4546,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-191"
     },
     {
@@ -4559,15 +4559,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/hero/villa-jardin-piscina.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4594,7 +4594,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-192"
     },
     {
@@ -4607,15 +4607,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4642,7 +4642,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-193"
     },
     {
@@ -4655,15 +4655,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4690,7 +4690,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-194"
     },
     {
@@ -4703,15 +4703,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4738,7 +4738,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-195"
     },
     {
@@ -4751,15 +4751,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4786,7 +4786,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-196"
     },
     {
@@ -4799,15 +4799,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4834,7 +4834,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-197"
     },
     {
@@ -4847,15 +4847,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4882,7 +4882,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-198"
     },
     {
@@ -4895,15 +4895,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/torres-espejo-agua.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/torres-espejo-agua.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4930,7 +4930,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0"
     },
     {
@@ -4943,15 +4943,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -4978,7 +4978,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-200"
     },
     {
@@ -4991,15 +4991,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5026,7 +5026,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-201"
     },
     {
@@ -5039,15 +5039,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5074,7 +5074,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-00"
     },
     {
@@ -5087,15 +5087,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5122,7 +5122,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-00-203"
     },
     {
@@ -5135,15 +5135,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5170,7 +5170,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-204"
     },
     {
@@ -5183,15 +5183,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5218,7 +5218,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-205"
     },
     {
@@ -5231,15 +5231,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5266,7 +5266,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-206"
     },
     {
@@ -5279,15 +5279,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5314,7 +5314,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-207"
     },
     {
@@ -5327,15 +5327,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5362,7 +5362,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-208"
     },
     {
@@ -5375,15 +5375,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/torres-espejo-agua.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/torres-espejo-agua.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5410,7 +5410,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-209"
     },
     {
@@ -5423,15 +5423,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5458,7 +5458,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-210"
     },
     {
@@ -5471,15 +5471,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5506,7 +5506,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-211"
     },
     {
@@ -5519,15 +5519,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5554,7 +5554,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-212"
     },
     {
@@ -5567,15 +5567,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5602,7 +5602,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0"
     },
     {
@@ -5615,15 +5615,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/hero/torres-espejo-agua.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/hero/torres-espejo-agua.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5650,7 +5650,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-214"
     },
     {
@@ -5663,15 +5663,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/torres-espejo-agua.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/torres-espejo-agua.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5698,7 +5698,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-215"
     },
     {
@@ -5711,15 +5711,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/torres-espejo-agua.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/villa-jardin-piscina.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/torres-espejo-agua.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5746,7 +5746,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-216"
     },
     {
@@ -5759,15 +5759,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5794,7 +5794,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-217"
     },
     {
@@ -5807,15 +5807,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/masterplan-resort-aerea.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5842,7 +5842,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-218"
     },
     {
@@ -5855,15 +5855,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5890,7 +5890,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-00"
     },
     {
@@ -5903,15 +5903,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5938,7 +5938,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-00-220"
     },
     {
@@ -5951,15 +5951,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -5986,7 +5986,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-00-221"
     },
     {
@@ -5999,15 +5999,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/hero/club-de-playa-pabellon.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6034,7 +6034,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-00-222"
     },
     {
@@ -6047,15 +6047,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.png",
-        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/entrada-blu-beach-club.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6082,7 +6082,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-223"
     },
     {
@@ -6095,15 +6095,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.png",
-        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-laguna-aerea.webp",
+        "/images/properties/playa-escondida/hero/masterplan-isometrico-amenidades.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6130,7 +6130,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-224"
     },
     {
@@ -6143,15 +6143,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-bahia.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6178,7 +6178,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-225"
     },
     {
@@ -6191,15 +6191,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/torres-espejo-agua.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/villas-playa-palmas.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/torres-espejo-agua.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/villas-playa-palmas.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6226,7 +6226,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-226"
     },
     {
@@ -6239,15 +6239,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/marina-atardecer.png",
-        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.png",
-        "/images/properties/playa-escondida/gallery/dormitorio-blanco.png",
-        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/marina-atardecer.webp",
+        "/images/properties/playa-escondida/hero/cancha-futbol-cesped.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/comedor-sala-luz-natural.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6274,7 +6274,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-227"
     },
     {
@@ -6287,15 +6287,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
+      "image": "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/torres-tenis-piscina.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/gallery/interior-comedor-costero.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/torres-tenis-piscina.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6322,7 +6322,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-arenas-village-villa-0-228"
     },
     {
@@ -6335,15 +6335,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
+      "image": "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.png",
-        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/gallery/lobby-doble-altura.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/masterplan-aerea-costa.webp",
+        "/images/properties/playa-escondida/hero/playa-sombrilla-palapa.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/gallery/lobby-doble-altura.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6370,7 +6370,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-00-229"
     },
     {
@@ -6383,15 +6383,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/piscinas-frente-torres.png",
-        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.png",
-        "/images/properties/playa-escondida/hero/torres-fachada-jardin.png",
-        "/images/properties/playa-escondida/hero/piscina-privada.png",
-        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.png",
-        "/images/properties/playa-escondida/gallery/sala-sofa-azul.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/arenas-village-hero-beachfront.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/piscina-privada.webp",
+        "/images/properties/playa-escondida/gallery/cocina-barra-colgantes.webp",
+        "/images/properties/playa-escondida/gallery/sala-sofa-azul.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6418,7 +6418,7 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-230"
     },
     {
@@ -6431,15 +6431,15 @@
       "district": "Costa Arriba",
       "parkingSpots": 2,
       "builtYear": 2025,
-      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
       "images": [
-        "/images/properties/playa-escondida/hero/piscinas-frente-playa.png",
-        "/images/properties/playa-escondida/hero/playa-water-bike.png",
-        "/images/properties/playa-escondida/hero/fachada-torre-balcones.png",
-        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.png",
-        "/images/properties/playa-escondida/hero/piscina-infinita-playa.png",
-        "/images/properties/playa-escondida/gallery/sala-de-estar.png",
-        "/images/properties/playa-escondida/gallery/cocina-teal-barra.png"
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/hero/playa-water-bike.webp",
+        "/images/properties/playa-escondida/hero/fachada-torre-balcones.webp",
+        "/images/properties/playa-escondida/hero/masterplan-aerea-verde.webp",
+        "/images/properties/playa-escondida/hero/piscina-infinita-playa.webp",
+        "/images/properties/playa-escondida/gallery/sala-de-estar.webp",
+        "/images/properties/playa-escondida/gallery/cocina-teal-barra.webp"
       ],
       "planos": [],
       "featured": false,
@@ -6466,205 +6466,10 @@
         "Acceso a club de playa y piscinas",
         "Seguridad y estacionamientos"
       ],
-      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.png",
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-231"
     },
-    {
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Venta",
-      "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panamá Oeste",
-      "city": "Panamá Oeste",
-      "district": "Costa Verde",
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "featured": false,
-      "status": "available",
-      "id": 232,
-      "title": "New West I - Modelo Nevada",
-      "price": 240000,
-      "area": 167,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "image": "/images/properties/new-west/hero/townhouses-conjunto.png",
-      "images": [
-        "/images/properties/new-west/hero/townhouses-conjunto.png",
-        "/images/properties/new-west/hero/familia-paseo-urbanizacion.png",
-        "/images/properties/new-west/hero/cancha-futbol-cesped.png",
-        "/images/properties/new-west/gallery/comedor-iluminado.png",
-        "/images/properties/new-west/gallery/cocina-con-isla.png"
-      ],
-      "description": "New West I - Modelo Nevada en Costa Verde. 167 m2 de construcción en lotes desde 180 m2, 3 recámaras, 2 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
-      "amenities": [
-        "сrea social independiente",
-        "Piscina para niños y adultos",
-        "Gimnasio",
-        "Juegos infantiles",
-        "Jardines y gazebos",
-        "Salón de fiestas",
-        "Cancha deportiva",
-        "Opciones de 3 o 4 recámaras (den convertible)"
-      ],
-      "highlights": [
-        "167 m2 de construcción",
-        "Lotes desde 180 m2",
-        "Precio desde $ 240,000",
-        "Entrega inmediata (10% de abono inicial)"
-      ],
-      "minIncome": 3000,
-      "slug": "new-west-i-modelo-nevada"
-    },
-    {
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Venta",
-      "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panamá Oeste",
-      "city": "Panamá Oeste",
-      "district": "Costa Verde",
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "featured": false,
-      "status": "available",
-      "id": 233,
-      "title": "New West I - Modelo Jazmín",
-      "price": 220000,
-      "area": 157,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "image": "/images/properties/new-west/hero/fachada-modelo-jazmin.png",
-      "images": [
-        "/images/properties/new-west/hero/fachada-modelo-jazmin.png",
-        "/images/properties/new-west/hero/club-amenidades-aerea.png",
-        "/images/properties/new-west/hero/piscina-pergolas.png",
-        "/images/properties/new-west/gallery/comedor-iluminado.png",
-        "/images/properties/new-west/gallery/cocina-con-isla.png"
-      ],
-      "description": "New West I - Modelo Jazmín en Costa Verde. 157 m2 de construcción en lotes desde 180 m2, 3 recámaras, 2 piso(s). Estado: A futuro.",
-      "amenities": [
-        "сrea social independiente",
-        "Piscina para niños y adultos",
-        "Gimnasio",
-        "Juegos infantiles",
-        "Jardines y gazebos",
-        "Salón de fiestas",
-        "Cancha deportiva",
-        "Opciones de 3 o 4 recámaras (den convertible)"
-      ],
-      "highlights": [
-        "157 m2 de construcción",
-        "Lotes desde 180 m2",
-        "Precio desde $ 220,000",
-        "A futuro"
-      ],
-      "planos": [
-        "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-baja.png",
-        "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-alta.png"
-      ],
-      "minIncome": 3000,
-      "slug": "new-west-i-modelo-jazmin"
-    },
-    {
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Venta",
-      "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panamá Oeste",
-      "city": "Panamá Oeste",
-      "district": "Costa Verde",
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "featured": false,
-      "status": "available",
-      "id": 234,
-      "title": "New West II - Modelo Jazmín",
-      "price": 209000,
-      "area": 157,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "image": "/images/properties/new-west/hero/fachada-modelo-jazmin.png",
-      "images": [
-        "/images/properties/new-west/hero/fachada-modelo-jazmin.png",
-        "/images/properties/new-west/hero/club-amenidades-aerea.png",
-        "/images/properties/new-west/hero/piscina-pergolas.png",
-        "/images/properties/new-west/gallery/comedor-iluminado.png",
-        "/images/properties/new-west/gallery/cocina-con-isla.png"
-      ],
-      "description": "New West II - Modelo Jazmín en Costa Verde. 157 m2 de construcción en lotes desde 160 m2, 3 recámaras, 2 piso(s). Estado: A futuro.",
-      "amenities": [
-        "сrea social independiente",
-        "Piscina para niños y adultos",
-        "Gimnasio",
-        "Juegos infantiles",
-        "Jardines y gazebos",
-        "Salón de fiestas",
-        "Cancha deportiva",
-        "Opciones de 3 o 4 recámaras (den convertible)"
-      ],
-      "highlights": [
-        "157 m2 de construcción",
-        "Lotes desde 160 m2",
-        "Precio desde $ 209,000",
-        "A futuro"
-      ],
-      "planos": [
-        "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-baja.png",
-        "/images/properties/new-west/floorplans/jazmin/plano-jazmin-planta-alta.png"
-      ],
-      "minIncome": 3000,
-      "slug": "new-west-ii-modelo-jazmin"
-    },
-    {
-      "type": "Casa",
-      "category": "Residencial",
-      "operation": "Venta",
-      "pricePerMonth": null,
-      "location": "Costa Verde, La Chorrera, Panamá Oeste",
-      "city": "Panamá Oeste",
-      "district": "Costa Verde",
-      "parkingSpots": 2,
-      "builtYear": 2025,
-      "featured": false,
-      "status": "available",
-      "id": 235,
-      "title": "New West II - Modelo Roble",
-      "price": 180000,
-      "area": 122,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "image": "/images/properties/new-west/hero/fachada-modelo-roble.png",
-      "images": [
-        "/images/properties/new-west/hero/fachada-modelo-roble.png",
-        "/images/properties/new-west/hero/fachada-modelo-roble (2).png",
-        "/images/properties/new-west/hero/piscina-solarium.png",
-        "/images/properties/new-west/gallery/comedor-iluminado.png",
-        "/images/properties/new-west/gallery/cocina-con-isla.png"
-      ],
-      "description": "New West II - Modelo Roble en Costa Verde. 122 m2 de construcción en lotes desde 209 m2, 3 recámaras, 1 piso(s). Estado: Entrega inmediata (10% de abono inicial).",
-      "amenities": [
-        "сrea social independiente",
-        "Piscina para niños y adultos",
-        "Gimnasio",
-        "Juegos infantiles",
-        "Jardines y gazebos",
-        "Salón de fiestas",
-        "Cancha deportiva",
-        "Opciones de 3 o 4 recámaras (den convertible)"
-      ],
-      "highlights": [
-        "122 m2 de construcción",
-        "Lotes desde 209 m2",
-        "Precio desde $ 180,000",
-        "Entrega inmediata (10% de abono inicial)"
-      ],
-      "planos": [
-        "/images/properties/new-west/floorplans/roble/plano-roble-planta-baja.png",
-        "/images/properties/new-west/floorplans/roble/plano-roble-planta-alta.png"
-      ],
-      "minIncome": 3000,
-      "slug": "new-west-ii-modelo-roble"
-    },
+
     {
       "id": 248,
       "title": "The Tower Residences - Apto. 18 C Torre 100",
@@ -6681,9 +6486,9 @@
       "parkingSpots": 2,
       "area": 188.26,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/units/30/sala-1.png",
+      "image": "/images/properties/the-towers-residences/units/30/sala-1.webp",
       "images": [
-        "/images/properties/the-towers-residences/units/30/sala-1.png"
+        "/images/properties/the-towers-residences/units/30/sala-1.webp"
       ],
       "planos": [],
       "description": "The Towers Residences - Apartamento 18 C en Torre 100, 188.26 m². Precio de venta $400,000. Mantenimiento mensual $375.52.",
@@ -6718,9 +6523,9 @@
       "parkingSpots": 2,
       "area": 188.26,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-residences/units/30/sala-1.png",
+      "image": "/images/properties/the-towers-residences/units/30/sala-1.webp",
       "images": [
-        "/images/properties/the-towers-residences/units/30/sala-1.png"
+        "/images/properties/the-towers-residences/units/30/sala-1.webp"
       ],
       "planos": [],
       "description": "The Towers Residences - Apartamento 23 C en Torre 100, 188.26 m². Actualmente alquilado hasta 2027. Precio de venta $400,000. Mantenimiento mensual $375.52.",
@@ -6907,7 +6712,7 @@
       "operation": "Venta",
       "price": 240000,
       "pricePerMonth": null,
-      "location": "Costa Verde, Panamá Oeste",
+      "location": "Bulevar Costa Verde, La Chorrera",
       "city": "Panamá Oeste",
       "district": "Costa Verde",
       "bedrooms": 3,
@@ -6918,9 +6723,14 @@
       "lote": 180,
       "image": "/images/properties/new-west/modelo-nevada.webp",
       "images": [
-        "/images/properties/new-west/modelo-nevada.webp"
+        "/images/properties/new-west/modelo-nevada.webp",
+        "/images/properties/new-west/hero/townhouses-conjunto.webp",
+        "/images/properties/new-west/hero/piscina.webp",
+        "/images/properties/new-west/hero/gazebo-area-social.webp"
       ],
-      "planos": [],
+      "planos": [
+        "/images/properties/new-west/14.svg"
+      ],
       "description": "Casa modelo Nevada en New West I Costa Verde. 2 plantas, 3 recámaras, 167 m² de construcción. Lotes desde 180 m². Conjunto residencial de 140 casas con área social independiente. Entrega inmediata con 10% de abono inicial. Aplica con ingreso familiar de $3,500. Se trabaja con todos los bancos.",
       "amenities": [
         "Conjunto residencial 140 casas",
@@ -6930,7 +6740,8 @@
         "Áreas verdes",
         "Garita de acceso",
         "Canchas deportivas",
-        "Salón de eventos"
+        "Salón de eventos",
+        "Gimnasio equipado"
       ],
       "featured": true,
       "status": "available",
@@ -6951,7 +6762,7 @@
       "operation": "Venta",
       "price": 180000,
       "pricePerMonth": null,
-      "location": "Costa Verde, Panamá Oeste",
+      "location": "Bulevar Costa Verde, La Chorrera",
       "city": "Panamá Oeste",
       "district": "Costa Verde",
       "bedrooms": 3,
@@ -6962,15 +6773,21 @@
       "lote": 180,
       "image": "/images/properties/new-west/modelo-ilana.webp",
       "images": [
-        "/images/properties/new-west/modelo-ilana.webp"
+        "/images/properties/new-west/modelo-ilana.webp",
+        "/images/properties/new-west/hero/townhouses-conjunto.webp",
+        "/images/properties/new-west/hero/piscina.webp"
       ],
-      "planos": [],
+      "planos": [
+        "/images/properties/new-west/12.svg"
+      ],
       "description": "Casa modelo Ilana en New West I Costa Verde. 2 plantas, 3 recámaras, 137 m² de construcción. Lote 180 m². Conjunto residencial con amenidades completas. Aplica con ingreso familiar de $3,500.",
       "amenities": [
         "Conjunto residencial 140 casas",
         "Área social independiente",
         "Seguridad 24/7",
-        "Parque infantil"
+        "Parque infantil",
+        "Piscina",
+        "Gimnasio"
       ],
       "featured": false,
       "status": "available",
@@ -6990,7 +6807,7 @@
       "operation": "Venta",
       "price": 220000,
       "pricePerMonth": null,
-      "location": "Costa Verde, Panamá Oeste",
+      "location": "Bulevar Costa Verde, La Chorrera",
       "city": "Panamá Oeste",
       "district": "Costa Verde",
       "bedrooms": 3,
@@ -7001,14 +6818,20 @@
       "lote": 180,
       "image": "/images/properties/new-west/modelo-jazmin.webp",
       "images": [
-        "/images/properties/new-west/modelo-jazmin.webp"
+        "/images/properties/new-west/modelo-jazmin.webp",
+        "/images/properties/new-west/hero/piscina-pergolas.webp",
+        "/images/properties/new-west/hero/gazebo-area-social.webp"
       ],
-      "planos": [],
+      "planos": [
+        "/images/properties/new-west/13.svg"
+      ],
       "description": "Casa modelo Jazmin en New West I Costa Verde. 2 plantas, 3 recámaras, 157 m² de construcción. Lotes desde 180 m². Aplica con ingreso familiar de $3,500.",
       "amenities": [
         "Conjunto residencial 140 casas",
         "Área social independiente",
-        "Seguridad 24/7"
+        "Seguridad 24/7",
+        "Área de BBQ",
+        "Piscina"
       ],
       "featured": false,
       "status": "available",
@@ -7027,7 +6850,7 @@
       "operation": "Venta",
       "price": 150000,
       "pricePerMonth": null,
-      "location": "Costa Verde, Panamá Oeste",
+      "location": "Bulevar Costa Verde, La Chorrera",
       "city": "Panamá Oeste",
       "district": "Costa Verde",
       "bedrooms": 2,
@@ -7038,23 +6861,31 @@
       "lote": 200,
       "image": "/images/properties/new-west/modelo-cedro.webp",
       "images": [
-        "/images/properties/new-west/modelo-cedro.webp"
+        "/images/properties/new-west/modelo-cedro.webp",
+        "/images/properties/new-west/hero/piscina-pergolas.webp",
+        "/images/properties/new-west/hero/gazebo-area-social.webp",
+        "/images/properties/new-west/hero/juegos-infantiles.webp"
       ],
-      "planos": [],
-      "description": "Casa modelo Cedro en New West II Costa Verde. 1 planta, 2 recámaras, 122 m² de construcción. Lote 200 m². Casa unifamiliar con área social independiente. Entrega inmediata con 10% de abono inicial. Aplica con ingreso familiar de $3,500.",
+      "planos": [
+        "/images/properties/new-west/17.svg"
+      ],
+      "description": "Casa unifamiliar de una sola planta con diseño optimizado para aprovechar cada metro cuadrado en New West II Costa Verde. Cuenta con cocina abierta integrada al área social.",
       "amenities": [
         "Casa unifamiliar 1 planta",
-        "Área social independiente",
-        "Seguridad 24/7",
-        "Parque infantil"
+        "Área social con piscina",
+        "Gimnasio equipado",
+        "Gazebo para eventos",
+        "Áreas verdes y parques",
+        "Seguridad 24/7"
       ],
       "featured": true,
       "status": "available",
       "highlights": [
         "122 m² - 2 recámaras - 1 planta",
-        "Entrega inmediata",
-        "Lote 200 m²",
-        "Desde $150,000"
+        "Den Familiar: Espacio versátil",
+        "Cocina Abierta",
+        "Walk-in Closet en recámara principal",
+        "Acabados de alta calidad"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-cedro-entrega-inmediata"
@@ -7067,7 +6898,7 @@
       "operation": "Venta",
       "price": 150000,
       "pricePerMonth": null,
-      "location": "Costa Verde, Panamá Oeste",
+      "location": "Bulevar Costa Verde, La Chorrera",
       "city": "Panamá Oeste",
       "district": "Costa Verde",
       "bedrooms": 3,
@@ -7078,21 +6909,31 @@
       "lote": 220,
       "image": "/images/properties/new-west/modelo-roble.webp",
       "images": [
-        "/images/properties/new-west/modelo-roble.webp"
+        "/images/properties/new-west/modelo-roble.webp",
+        "/images/properties/new-west/hero/piscina-solarium.webp",
+        "/images/properties/new-west/hero/gazebo-area-social.webp",
+        "/images/properties/new-west/hero/juegos-infantiles.webp"
       ],
-      "planos": [],
-      "description": "Casa modelo Roble en New West II Costa Verde. 1 planta, 3 recámaras, 122 m² de construcción. Lotes desde 220 m². Opción de 2 ó 3 recámaras. Aplica con ingreso familiar de $3,500.",
+      "planos": [
+        "/images/properties/new-west/17.svg"
+      ],
+      "description": "Modelo unifamiliar de una sola planta que prioriza el espacio familiar y la conexión con el exterior en New West II Costa Verde. Cuenta con amplia sala-comedor y terraza techada.",
       "amenities": [
         "Casa unifamiliar 1 planta",
-        "Área social independiente",
+        "Área social con piscina",
+        "Gimnasio equipado",
+        "Gazebo para eventos",
+        "Áreas verdes y parques",
         "Seguridad 24/7"
       ],
       "featured": false,
       "status": "available",
       "highlights": [
         "122 m² - 3 recámaras - 1 planta",
-        "Lote desde 220 m²",
-        "Precio $150,000"
+        "Terraza techada ideal para reuniones",
+        "Walk-in Closet en recámara principal",
+        "Distribución: Amplia sala-comedor",
+        "Opción de 2 ó 3 recámaras"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-roble"

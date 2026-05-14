@@ -15,11 +15,11 @@
     "parkingSpots":  70,
     "area":  0,
     "builtYear":  2024,
-    "image":  "/images/properties/central-plaza/hero.png",
+    "image":  "/images/properties/central-plaza/hero.webp",
     "images":  [
-                   "/images/properties/central-plaza/hero.png",
-                   "/images/properties/central-plaza/hero-1080.png",
-                   "/images/properties/central-plaza/hero-1600.png"
+                   "/images/properties/central-plaza/hero.webp",
+                   "/images/properties/central-plaza/hero-1080.webp",
+                   "/images/properties/central-plaza/hero-1600.webp"
                ],
     "planos":  [
 
@@ -62,14 +62,14 @@
     "parkingSpots":  1,
     "area":  80,
     "builtYear":  2025,
-    "image":  "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
+    "image":  "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.webp",
     "images":  [
-                   "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.png",
-                   "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.png",
-                   "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.png",
-                   "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.png",
-                   "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.png",
-                   "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.png"
+                   "/images/properties/praderas-de-arraijan/exterior/praderas-casa-unifamiliar-frontal.webp",
+                   "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
+                   "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
+                   "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
+                   "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
+                   "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
                ],
     "planos":  [
 
@@ -206,7 +206,7 @@
     "bathrooms":  2,
     "parkingSpots":  4,
     "id":  134,
-    "thumbnail":  "/images/properties/balboa-boutique/promotional/thumbnail-balboa.png",
+    "thumbnail":  "/images/properties/balboa-boutique/promotional/thumbnail-balboa.webp",
     "highlights":  [
                        "Local B-102/202: 339 mÂ² en mezzanine",
                        "Fachada y terraza con vistas a la Calzada",

@@ -24,7 +24,7 @@ export default function ResidencialesContent() {
         schemas={[
           getOrganizationSchema(),
           getCollectionSchema(residencialProperties, "Residenciales", "/residenciales"),
-        ].filter(Boolean)}
+        ].filter(Boolean) as Record<string, unknown>[]}
       />
 
       <Navbar />

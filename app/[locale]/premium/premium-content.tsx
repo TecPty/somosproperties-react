@@ -1,8 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+import { useParams } from "next/navigation"
 import PropertyGrid from "@/components/property-grid"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { getPremiumProperties } from "@/lib/utils-premium"
@@ -10,12 +9,12 @@ import { useTranslations } from "next-intl"
 
 export default function PremiumContent() {
   const t = useTranslations('premium')
+  const params = useParams()
+  const locale = params?.locale || 'es'
   const premiumProperties = getPremiumProperties(allPropertiesData)
 
   return (
     <>
-      <Navbar />
-
       {/* Hero Premium */}
       <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden -mt-20 pt-20">
         {/* Background con gradiente dorado */}
@@ -46,7 +45,7 @@ export default function PremiumContent() {
               {t('hero.viewProperties')}
             </a>
             <Link
-              href="/contacto"
+              href={`/${locale}/contacto`}
               className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all shadow-lg"
             >
               {t('hero.scheduleTour')}
@@ -198,7 +197,7 @@ export default function PremiumContent() {
                 {t('noProperties.subtitle')}
               </p>
               <Link
-                href="/contacto"
+                href={`/${locale}/contacto`}
                 className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold hover:shadow-xl transition-all"
               >
                 {t('noProperties.contactBtn')}
@@ -221,13 +220,13 @@ export default function PremiumContent() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contacto"
+              href={`/${locale}/contacto`}
               className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all"
             >
               {t('cta.contactBtn')}
             </Link>
             <Link
-              href="/propiedades"
+              href={`/${locale}/propiedades`}
               className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all"
             >
               {t('cta.viewAllBtn')}
@@ -235,8 +234,6 @@ export default function PremiumContent() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

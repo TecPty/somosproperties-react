@@ -32,10 +32,10 @@ const MARK_CONTACT_DATA: BusinessCardData = {
   website: 'www.somosproperties.com',
   company: 'H Group Capital',
   cardUrl: 'https://www.somosproperties.com/card/mark',
-  logoSrc: '/images/logo-hgroupcapital.png',
-  profileImageSrc: '/images/profile-card-boss.png',
-  backgroundImageSrc: '/images/mark/background-hgroup.png',
-  headerBackgroundImageSrc: '/images/mark/header-background-hgroup.png',
+  logoSrc: '/images/logo-hgroupcapital.webp',
+  profileImageSrc: '/images/profile-card-boss.webp',
+  backgroundImageSrc: '/images/mark/background-hgroup.webp',
+  headerBackgroundImageSrc: '/images/mark/header-background-hgroup.webp',
   theme: {
     iconClassName: 'text-[#0f4c81]',
     primaryButtonClassName:

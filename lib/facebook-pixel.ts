@@ -1,20 +1,6 @@
 import { useEffect } from "react"
 import { canTrack } from "@/lib/consent-utils"
 
-type FbqFunction = ((...args: unknown[]) => void) & {
-  callMethod?: (...args: unknown[]) => void
-  queue: unknown[]
-  loaded?: boolean
-  version?: string
-}
-
-declare global {
-  interface Window {
-    fbq?: FbqFunction
-    _fbq?: FbqFunction
-  }
-}
-
 const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || ""
 
 const ensurePixel = () => {

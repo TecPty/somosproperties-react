@@ -1,7 +1,5 @@
 import Link from "next/link"
 import { getTranslations } from 'next-intl/server'
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 import PropertyGrid from "@/components/property-grid"
 import ContactForm from "@/components/contact-form"
 import EmploymentForm from "@/components/employment-form"
@@ -63,10 +61,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             "Todas las Propiedades",
             "/propiedades"
           ),
-        ].filter(Boolean)}
+        ].filter(Boolean) as Record<string, unknown>[]}
       />
 
-      <Navbar />
+
 
       {/* Hero Section */}
       <section className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center justify-center text-white overflow-hidden">
@@ -210,7 +208,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {(t.raw('testimonials.reviews') as { author: string; content: string; role: string }[]).map((review, i) => (
+            {(t.raw('testimonials.reviews') as { name: string; content: string; role: string }[]).map((review, i) => (
               <div key={i} className="bg-[#fafafa] p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                 <div className="flex gap-1 text-yellow-400 mb-6 group-hover:scale-110 transition-transform origin-left">
                   {[...Array(5)].map((_, i) => (
@@ -316,7 +314,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <Footer />
+
     </>
   )
 }

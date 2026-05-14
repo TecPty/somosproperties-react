@@ -1,7 +1,5 @@
 "use client"
 
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 import PropertyGrid from "@/components/property-grid"
 import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
@@ -16,7 +14,7 @@ export default function PropiedadesContent() {
 
   return (
     <>
-      <Navbar />
+
 
       <main className="py-12 bg-[#fafafa] min-h-screen">
         <div className="container-custom">
@@ -40,7 +38,7 @@ export default function PropiedadesContent() {
         </div>
       </main>
 
-      <Footer />
+
     </>
   )
 }

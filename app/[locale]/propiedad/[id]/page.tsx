@@ -76,6 +76,8 @@ function buildPropertyJsonLd(property: Property): Record<string, unknown> {
   }
 }
 
+import { createMetadata } from "@/lib/seo"
+
 export async function generateMetadata({
   params,
 }: {
@@ -85,80 +87,38 @@ export async function generateMetadata({
   const propertyId = Number.parseInt(id, 10)
   const t = await getTranslations({ locale, namespace: 'metadata.propertyDetail' })
   
-  const fallbackCanonical = `${siteUrl}/${locale}/propiedad/${id || ""}`.replace(/\/$/, "")
-  const fallbackMetadata: Metadata = {
-    title: t('notFoundTitle'),
-    description: t('notFoundDescription'),
-    alternates: {
-      canonical: fallbackCanonical || `${siteUrl}/${locale}/propiedad`,
-    },
-    openGraph: {
+  if (Number.isNaN(propertyId)) {
+    return createMetadata({
       title: t('notFoundTitle'),
       description: t('notFoundDescription'),
-      type: "website",
-      url: fallbackCanonical || `${siteUrl}/${locale}/propiedad`,
-      images: [
-        {
-          url: toAbsoluteUrl(fallbackImage),
-          width: 1200,
-          height: 630,
-          alt: "SOMOS Properties",
-        },
-      ],
-      siteName: "SOMOS Properties",
-    },
-    robots: {
-      index: false,
-      follow: false,
-    },
-  }
-
-  if (Number.isNaN(propertyId)) {
-    return fallbackMetadata
+      path: `/propiedad/${id}`,
+      locale,
+      robots: { index: false, follow: false }
+    })
   }
 
   const property = getPropertyById(propertyId)
 
   if (!property) {
-    return fallbackMetadata
+    return createMetadata({
+      title: t('notFoundTitle'),
+      description: t('notFoundDescription'),
+      path: `/propiedad/${id}`,
+      locale,
+      robots: { index: false, follow: false }
+    })
   }
 
   const description = buildPropertyDescription(property)
-  const propertyUrl = `${siteUrl}/propiedad/${property.id}`
   const ogImage = toAbsoluteUrl(property.image || property.images?.[0] || fallbackImage)
 
-  // CAMBIO: metadata dinamica por propiedad con canonical y OG por imagen principal.
-  // RAZÓN: mejora indexacion y compartido social para cada detalle individual.
-  return {
-    metadataBase: new URL(siteUrl),
+  return createMetadata({
     title: `${property.title} | SOMOS Properties`,
     description,
-    alternates: {
-      canonical: propertyUrl,
-    },
-    openGraph: {
-      title: property.title,
-      description,
-      type: "website",
-      url: propertyUrl,
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: property.title,
-        },
-      ],
-      siteName: "SOMOS Properties",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: property.title,
-      description,
-      images: [ogImage],
-      creator: "@SomosProperties",
-    },
-  }
+    path: `/propiedad/${property.id}`,
+    locale,
+    image: ogImage
+  })
 }
 
 export default async function PropertyDetailsPage({ params }: { params: Promise<{ id: string }> }) {

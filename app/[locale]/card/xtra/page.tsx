@@ -18,10 +18,10 @@ const XTRA_CONTACT_DATA: BusinessCardData = {
   website: 'www.superxtra.com',
   company: 'Xtra',
   cardUrl: 'https://www.somosproperties.com/card/xtra',
-  logoSrc: '/images/logo-xtra.png',
-  profileImageSrc: '/images/profile-card-boss.png',
-  backgroundImageSrc: '/images/xtra/background-xtra.png',
-  headerBackgroundImageSrc: '/images/xtra/header-background-xtra.png',
+  logoSrc: '/images/logo-xtra.webp',
+  profileImageSrc: '/images/profile-card-boss.webp',
+  backgroundImageSrc: '/images/xtra/background-xtra.webp',
+  headerBackgroundImageSrc: '/images/xtra/header-background-xtra.webp',
   theme: {
     iconClassName: 'text-[#16a34a]',
     primaryButtonClassName:

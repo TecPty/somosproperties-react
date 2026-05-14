@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2 lg:col-span-3 lg:pr-6">
             <OptimizedImage
-              src="/images/Logo-SP.png"
+              src="/images/Logo-SP.webp"
               alt={COMPANY.name}
               type="small"
               width={180}

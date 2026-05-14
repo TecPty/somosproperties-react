@@ -1,0 +1,12 @@
+change: consolidate-templates-and-fix-i18n
+phase: apply
+artifact_store: hybrid
+artifacts:
+  explore: true
+  proposal: false
+  spec: false
+  design: false
+  tasks: false
+  apply: false
+  verify: false
+  archive: false

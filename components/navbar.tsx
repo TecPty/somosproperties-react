@@ -100,7 +100,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center">
             <OptimizedImage
-              src="/images/logo-somosproperties-250x250px-transparente.png"
+              src="/images/logo-somosproperties-250x250px-transparente.webp"
               alt="SOMOS Properties"
               type="small"
               width={110}

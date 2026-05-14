@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "SOMOS Properties",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://somosproperties.com",
   description: "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler.",
-  ogImage: "/images/logo-somosproperties-1200x630px.png",
+  ogImage: "/images/logo-somosproperties-1200x630px.webp",
   creator: "@SomosProperties",
   keywords: [
     "propiedades en Panamá",
@@ -38,31 +38,39 @@ export const categoryKeywords = {
 
 export const metadataBase = new URL(siteConfig.url)
 
+import type { Metadata } from "next"
+
 export function createMetadata({
   title,
   description,
   path = "",
+  locale = "es",
   image,
   noIndex = false,
   keywords,
+  robots,
 }: {
   title: string
   description?: string
   path?: string
+  locale?: string
   image?: string
   noIndex?: boolean
   keywords?: string[]
+  robots?: Metadata['robots']
 }) {
-  const url = `${siteConfig.url}${path}`
+  // Ensure path starts with / if not empty
+  const normalizedPath = path && !path.startsWith("/") ? `/${path}` : path
+  const url = `${siteConfig.url}/${locale}${normalizedPath}`.replace(/\/$/, "")
   const ogImage = image || siteConfig.ogImage
   const metaKeywords = keywords || siteConfig.keywords
 
   return {
     metadataBase,
-    title,
+    title: `${title} | ${siteConfig.name}`,
     description: description || siteConfig.description,
     keywords: metaKeywords,
-    ...(noIndex && { robots: { index: false, follow: false } }),
+    robots: robots || (noIndex ? { index: false, follow: false } : undefined),
     alternates: {
       canonical: url,
     },
@@ -72,9 +80,10 @@ export function createMetadata({
       title,
       description: description || siteConfig.description,
       siteName: siteConfig.name,
+      locale: locale === "es" ? "es_PA" : "en_US",
       images: [
         {
-          url: ogImage,
+          url: ogImage.startsWith("http") ? ogImage : `${siteConfig.url}${ogImage}`,
           width: 1200,
           height: 630,
           alt: title,
@@ -86,7 +95,7 @@ export function createMetadata({
       title,
       description: description || siteConfig.description,
       creator: siteConfig.creator,
-      images: [ogImage],
+      images: [ogImage.startsWith("http") ? ogImage : `${siteConfig.url}${ogImage}`],
     },
   }
 }

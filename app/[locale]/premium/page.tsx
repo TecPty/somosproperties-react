@@ -3,25 +3,18 @@ import { Suspense } from "react"
 import { getTranslations } from "next-intl/server"
 import PremiumContent from "./premium-content"
 
+import { createMetadata } from "@/lib/seo"
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'metadata.premium' })
-  const tPremium = await getTranslations({ locale, namespace: 'premium' })
   
-  return {
+  return createMetadata({
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `https://somosproperties.com/${locale}/premium`,
-    },
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      type: "website",
-      url: `https://somosproperties.com/${locale}/premium`,
-      siteName: "SOMOS Properties",
-    },
-  }
+    path: "/premium",
+    locale
+  })
 }
 
 export default async function PremiumPage({ params }: { params: Promise<{ locale: string }> }) {

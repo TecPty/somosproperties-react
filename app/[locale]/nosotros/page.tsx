@@ -1,5 +1,3 @@
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 import OptimizedImage from "@/components/optimized-image"
 import Link from "next/link"
 import { getTranslations } from 'next-intl/server'
@@ -69,7 +67,7 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
 
   return (
     <>
-      <Navbar />
+
 
       <main className="bg-white">
         {/* Hero Section */}
@@ -112,7 +110,7 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
               <div className="flex justify-center lg:justify-end items-end">
                 <div className="relative w-full max-w-[320px] lg:max-w-[360px] flex justify-center pb-2">
                   <OptimizedImage
-                    src="/images/logo-somosproperties-250x250px-transparente.png"
+                    src="/images/logo-somosproperties-250x250px-transparente.webp"
                     alt="Logo SOMOS Properties"
                     type="small"
                     width={360}
@@ -218,7 +216,7 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
         </section>
       </main>
 
-      <Footer />
+
     </>
   )
 }

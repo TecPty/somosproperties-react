@@ -6,8 +6,6 @@ import { usePromotionModal } from "@/hooks/use-promotion-modal"
 import { useIntersectionTrigger } from "@/hooks/use-intersection-trigger"
 import { useSessionStorage } from "@/hooks/use-session-storage"
 import { getAutoOpenPromotion } from "@/lib/promotions"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 import ContactForm from "@/components/contact-form"
 import LeadQualifier from "@/components/lead-qualifier"
 import PropertyGrid from "@/components/property-grid"
@@ -126,7 +124,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
       {/* Modal Promocional Inteligente */}
       <PromotionModal isOpen={isOpen} promotion={promotion} onClose={closeModal} />
 
-      <Navbar />
+
 
       {/* Lightbox Modal */}
       {lightboxOpen && (
@@ -214,15 +212,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#333333] p-3 rounded-full transition-all shadow-lg"
                     aria-label="Imagen anterior"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
+                    <img src="/images/icons/left-arrow.svg" alt="Anterior" className="h-6 w-6" />
                   </button>
                   <button
                     onClick={() => {
@@ -232,15 +222,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#333333] p-3 rounded-full transition-all shadow-lg"
                     aria-label="Imagen siguiente"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
+                    <img src="/images/icons/right-arrow.svg" alt="Siguiente" className="h-6 w-6" />
                   </button>
                 </>
               )}
@@ -326,78 +308,34 @@ export default function PropertyDetailClient({ property, similarProperties, prom
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 p-6 bg-[#fafafa] rounded-lg">
                 {property.bedrooms > 0 && (
                   <div className="text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 mx-auto mb-2 text-[#3898EC]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                      />
-                    </svg>
+                    <div className="h-16 flex items-center justify-center mb-2">
+                      <img src="/images/icons/icon-cama.png" alt="Camas" className="h-8 w-8 object-contain" />
+                    </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.bedrooms}</div>
                     <div className="text-sm text-[#999999]">{tDetail('bedrooms')}</div>
                   </div>
                 )}
                 {property.bathrooms > 0 && (
                   <div className="text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 mx-auto mb-2 text-[#3898EC]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                      />
-                    </svg>
+                    <div className="h-16 flex items-center justify-center mb-2">
+                      <img src="/images/icons/icon-bano.png" alt="Baños" className="h-8 w-8 object-contain" />
+                    </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.bathrooms}</div>
                     <div className="text-sm text-[#999999]">{tDetail('bathrooms')}</div>
                   </div>
                 )}
                 <div className="text-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 mx-auto mb-2 text-[#3898EC]"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5m11 5l-5-5m5 5v-4m0 4h-4"
-                    />
-                  </svg>
+                  <div className="h-16 flex items-center justify-center mb-2">
+                    <img src="/images/icons/icon-metraje.png" alt="Área" className="h-8 w-8 object-contain" />
+                  </div>
                   <div className="text-2xl font-bold text-[#222222]">{formatArea(property.area)}</div>
                   <div className="text-sm text-[#999999]">{tDetail('totalArea')}</div>
                 </div>
                 {property.parkingSpots > 0 && (
                   <div className="text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 mx-auto mb-2 text-[#3898EC]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
-                      />
-                    </svg>
+                    <div className="h-16 flex items-center justify-center mb-2">
+                      <img src="/images/icons/icon-carro.png" alt="Estacionamientos" className="h-16 w-16 object-contain" />
+                    </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.parkingSpots}</div>
                     <div className="text-sm text-[#999999]">{tDetail('parking')}</div>
                   </div>
@@ -485,7 +423,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                           }}
                           className="bg-[#fafafa] rounded-lg overflow-hidden border border-[#eeeeee] hover:border-[#3898EC] transition-all hover:shadow-lg cursor-pointer"
                         >
-                          <div className="relative h-[400px]">
+                          <div className="relative h-[250px] w-full">
                             <OptimizedImage
                               src={plano}
                               alt={`Plano ${index + 1} - ${property.title}`}
@@ -527,23 +465,29 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
               {/* Additional Info */}
               <div className="p-6 bg-[#fafafa] rounded-lg">
-                <h3 className="text-lg font-semibold text-[#222222] mb-3">Información Adicional</h3>
+                <h3 className="text-lg font-semibold text-[#222222] mb-3">{tDetail('additionalInfo')}</h3>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
-                    <span className="text-[#999999]">Año de construcción:</span>
+                    <span className="text-[#999999]">{tDetail('yearBuilt')}:</span>
                     <span className="ml-2 text-[#333333] font-medium">{property.builtYear}</span>
                   </div>
                   <div>
-                    <span className="text-[#999999]">Tipo:</span>
-                    <span className="ml-2 text-[#333333] font-medium">{property.type}</span>
+                    <span className="text-[#999999]">{tDetail('typeLabel')}:</span>
+                    <span className="ml-2 text-[#333333] font-medium">
+                      {property.type ? tDetail(`types.${property.type}` as 'types.Apartamento') : property.type}
+                    </span>
                   </div>
                   <div>
-                    <span className="text-[#999999]">Categoría:</span>
-                    <span className="ml-2 text-[#333333] font-medium">{property.category}</span>
+                    <span className="text-[#999999]">{tDetail('categoryLabel')}:</span>
+                    <span className="ml-2 text-[#333333] font-medium">
+                      {property.category ? tDetail(`categories.${property.category}` as 'categories.Residencial') : property.category}
+                    </span>
                   </div>
                   <div>
-                    <span className="text-[#999999]">Estado:</span>
-                    <span className="ml-2 text-[#28a745] font-medium">Disponible</span>
+                    <span className="text-[#999999]">{tDetail('statusLabel')}:</span>
+                    <span className={`ml-2 font-medium ${property.status === 'sold' ? 'text-[#dc3545]' : property.status === 'rented' ? 'text-[#ff9500]' : 'text-[#28a745]'}`}>
+                      {property.status ? tDetail(`statuses.${property.status}` as 'statuses.available') : ''}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -628,21 +572,8 @@ export default function PropertyDetailClient({ property, similarProperties, prom
               <div className="bg-gradient-to-r from-[#3898EC] to-[#2e8adb] p-6 rounded-lg shadow-lg">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="bg-white/20 p-3 rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-8 w-8 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                        />
-                      </svg>
+                    <div className="bg-white/20 p-3 rounded-full flex items-center justify-center">
+                      <img src="/images/icons/play.svg" alt="Play" className="h-8 w-8" />
                     </div>
                     <div className="text-white">
                       <h3 className="text-lg font-semibold">{tDetail('virtualTourTagline')}</h3>
@@ -728,9 +659,12 @@ export default function PropertyDetailClient({ property, similarProperties, prom
               </svg>
               <div>
                 <h3 className="font-semibold text-[#333333] mb-1">{property.location}</h3>
-                <p className="text-sm text-[#999999]">
-                  {property.district}, {property.city}
-                </p>
+                {property.location.toLowerCase().includes(property.district.toLowerCase()) && 
+                 property.location.toLowerCase().includes(property.city.toLowerCase()) ? null : (
+                  <p className="text-sm text-[#999999]">
+                    {property.district}, {property.city}
+                  </p>
+                )}
               </div>
             </div>
           </div>
@@ -744,7 +678,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           )}
         </div>
       </main>
-      <Footer />
+
 
       {/* Mobile Sticky CTA Bar */}
       <div className="md:hidden fixed bottom-16 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] flex gap-3 animate-slide-up">
@@ -754,9 +688,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-all"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 fill-white" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-          </svg>
+          <img src="/images/icons/whatsapp.webp" alt="WhatsApp" className="h-5 w-5 object-contain" />
           WhatsApp
         </a>
         <button

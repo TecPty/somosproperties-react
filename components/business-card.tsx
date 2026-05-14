@@ -50,8 +50,8 @@ const DEFAULT_CONTACT_DATA: BusinessCardData = {
   website: 'www.provivirpanama.com',
   company: 'PROVIVIR',
   cardUrl: 'https://www.somosproperties.com/card/provivir',
-  logoSrc: '/images/logo-provivir.png',
-  profileImageSrc: '/images/profile-card.png',
+  logoSrc: '/images/logo-provivir.webp',
+  profileImageSrc: '/images/profile-card.webp',
 };
 
 function buildVCard(contactData: BusinessCardData) {

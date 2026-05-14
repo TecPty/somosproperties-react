@@ -18,10 +18,10 @@ const BIZ_SOLUTIONS_CONTACT_DATA: BusinessCardData = {
   website: 'www.bizsolutions.com.pa',
   company: 'Biz Solutions',
   cardUrl: 'https://www.somosproperties.com/card/bizsolutions',
-  logoSrc: '/images/logo-bizsolutions.png',
-  profileImageSrc: '/images/profile-card-boss.png',
-  backgroundImageSrc: '/images/bizsolutions/background-bizsolutios.png',
-  headerBackgroundImageSrc: '/images/bizsolutions/header-background-bizsolutions.png',
+  logoSrc: '/images/logo-bizsolutions.webp',
+  profileImageSrc: '/images/profile-card-boss.webp',
+  backgroundImageSrc: '/images/bizsolutions/background-bizsolutios.webp',
+  headerBackgroundImageSrc: '/images/bizsolutions/header-background-bizsolutions.webp',
   theme: {
     iconClassName: 'text-[#f59e0b]',
     primaryButtonClassName:

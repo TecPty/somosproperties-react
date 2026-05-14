@@ -165,7 +165,29 @@
     "locationTitle": "Ubicación",
     "similarTitle": "Propiedades Similares",
     "mobileWhatsapp": "Hola, me interesa la propiedad: {title}. ¿Está disponible?",
-    "promoBannerAriaLabel": "Ver promoción: {title}"
+    "promoBannerAriaLabel": "Ver promoción: {title}",
+    "additionalInfo": "Información Adicional",
+    "yearBuilt": "Año de construcción",
+    "typeLabel": "Tipo",
+    "categoryLabel": "Categoría",
+    "statusLabel": "Estado",
+    "types": {
+      "Apartamento": "Apartamento",
+      "Casa": "Casa",
+      "Villa": "Villa",
+      "Local": "Local Comercial",
+      "Oficina": "Oficina",
+      "Terreno": "Terreno"
+    },
+    "categories": {
+      "Residencial": "Residencial",
+      "Comercial": "Comercial"
+    },
+    "statuses": {
+      "available": "Disponible",
+      "rented": "Alquilado",
+      "sold": "Vendido"
+    }
   },
   "leadQualifier": {
     "title": "Califica en 30 segundos",
@@ -291,6 +313,22 @@
     "title": "Todas las Propiedades",
     "subtitle": "{count} propiedades encontradas",
     "loading": "Cargando..."
+  },
+  "residenciales": {
+    "title": "Propiedades Residenciales",
+    "resultsCount": "{count} propiedades residenciales encontradas",
+    "seo": {
+      "collectionName": "Propiedades Residenciales en Panamá",
+      "path": "/residenciales"
+    }
+  },
+  "comerciales": {
+    "title": "Propiedades Comerciales",
+    "resultsCount": "{count} propiedades comerciales encontradas",
+    "seo": {
+      "collectionName": "Propiedades Comerciales en Panamá",
+      "path": "/comerciales"
+    }
   },
   "contacto": {
     "title": "Contáctanos",

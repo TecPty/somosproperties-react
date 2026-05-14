@@ -24,7 +24,7 @@ export default function ComercialesContent() {
         schemas={[
           getOrganizationSchema(),
           getCollectionSchema(comercialProperties, "Comerciales", "/comerciales"),
-        ].filter(Boolean)}
+        ].filter(Boolean) as Record<string, unknown>[]}
       />
 
       <Navbar />
