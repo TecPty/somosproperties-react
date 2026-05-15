@@ -1478,7 +1478,8 @@
         "Seguridad y mantenimiento constante"
       ],
       "slug": "sunset-strip-via-israel",
-      "description_en": "Sunset Strip: modern strip-mall development on Vía Israel. Spaces from 70 m² with maximum visibility, front parking and high vehicle traffic."
+      "description_en": "Sunset Strip: modern strip-mall development on Vía Israel. Spaces from 70 m² with maximum visibility, front parking and high vehicle traffic.",
+      "hidden": true
     },
     {
       "id": 34,
@@ -2336,7 +2337,7 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "pricePerMonth": 700,
+      "pricePerMonth": 680,
       "location": "Vía Israel, San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
       "district": "San Francisco",
@@ -2345,19 +2346,23 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "rented",
+      "status": "available",
       "id": 271,
-      "title": "Sunset Strip - Local 409",
+      "title": "Sunset Strip – Local 411",
       "type": "Local",
-      "area": 38,
-      "image": "/images/properties/sunset-strip/exterior/avenida-bella-vista-skyline.webp",
+      "area": 36,
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
-        "/images/properties/sunset-strip/exterior/avenida-bella-vista-skyline.webp",
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
         "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
-        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp"
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [],
-      "description": "Local 409 en Sunset Strip (Nivel 400), 38 m². Canon $700/mes. Ubicado en la placa superior con visibilidad sobre Vía Israel, ideal para oficinas boutique o servicios profesionales.",
+      "description": "Local 411 en Plaza Sunset Strip (Nivel 4), 36 m². Canon $680/mes + mantenimiento $1.50/m² ($54/mes). Ideal para oficina boutique, consultorio o estudio creativo en planta alta.",
       "amenities": [
         "Vista elevada hacia Vía Israel",
         "Lobby y circulación climatizada",
@@ -2365,19 +2370,21 @@
         "Seguridad y CCTV 24/7"
       ],
       "highlights": [
-        "Nivel 400, 38 m² listos para oficinas boutique",
-        "Canon $700/mes",
-        "Acceso por ascensor y lobby climatizado",
-        "Visibilidad hacia Vía Israel"
+        "36 m² en Nivel 4",
+        "Canon $680 + HOA $54/mes",
+        "Pasillo climatizado",
+        "Seguridad 24/7"
       ],
-      "slug": "sunset-strip-local-0",
-      "description_en": "Unit 409 at Sunset Strip (Level 400), 38 m². Rent $700/month. Upper level with visibility over Vía Israel, ideal for boutique offices or professional services."
+      "slug": "sunset-strip-local-411",
+      "description_en": "Unit 411 at Plaza Sunset Strip (Level 4), 36 m². Rent $680/mo + maintenance fee $1.50/m² ($54/mo). Ideal for a boutique office, clinic, or creative studio on the upper floor.",
+      "hoa": 54,
+      "hidden": false
     },
     {
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "pricePerMonth": 2000,
+      "pricePerMonth": 1375,
       "location": "Vía Israel, San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
       "district": "San Francisco",
@@ -2386,21 +2393,25 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "rented",
+      "status": "available",
       "id": 141,
-      "title": "Sunset Strip - Local 11",
+      "title": "Sunset Strip – Local 306",
       "type": "Local",
-      "area": 79,
+      "area": 80,
       "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
         "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
         "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [
-        "/images/properties/sunset-strip/nivel-00.webp"
+        "/images/properties/sunset-strip/floorplans/nivel-200.webp"
       ],
-      "description": "Local 11 en Sunset Strip (Planta 00), 79 m². Canon $2,000/mes + mantenimiento $2.00/m². Frente peatonal y acceso directo desde estacionamiento, ideal para retail o servicios de alto tráfico.",
+      "description": "Local 306 en Plaza Sunset Strip (Nivel 3), 80 m². Canon $1,375/mes + mantenimiento $1.50/m² ($120/mes). Local interior en pasillo climatizado con escaleras eléctricas. Ideal para boutique, estudio o servicio especializado.",
       "amenities": [
         "Planta 00 con acceso directo desde estacionamiento",
         "Fachada con vitrina de piso a techo",
@@ -2408,13 +2419,15 @@
         "Seguridad 24/7 y CCTV"
       ],
       "highlights": [
-        "79 m² en planta 00",
-        "Canon $2,000 + mant. $2.00/m²",
-        "Vitrina frontal hacia pasillo y estacionamientos",
-        "Listo para retail o servicios"
+        "80 m² en Nivel 3",
+        "Canon $1,375 + HOA $120/mes",
+        "Pasillo climatizado",
+        "Seguridad 24/7"
       ],
-      "slug": "sunset-strip-local",
-      "description_en": "Unit 11 at Sunset Strip (Ground Floor), 79 m². Rent $2,000/month + HOA $2.00/m². Pedestrian-facing frontage, ideal for retail or high-traffic services."
+      "slug": "sunset-strip-local-306",
+      "description_en": "Unit 306 at Plaza Sunset Strip (Level 3), 80 m². Rent $1,375/mo + maintenance fee $1.50/m² ($120/mo). Interior unit in climate-controlled corridor with escalators. Ideal for boutique, studio or specialized services.",
+      "hoa": 120,
+      "hidden": false
     },
     {
       "category": "Comercial",
@@ -2458,7 +2471,8 @@
         "Listo para retail o servicios"
       ],
       "slug": "sunset-strip-local-0-146",
-      "description_en": "Unit 10 at Sunset Strip (Ground Floor), 78 m². Rent $2,000/month + HOA $1.50/m² ($117/month). 1 hour free parking. Tax not included."
+      "description_en": "Unit 10 at Sunset Strip (Ground Floor), 78 m². Rent $2,000/month + HOA $1.50/m² ($117/month). 1 hour free parking. Tax not included.",
+      "hidden": true
     },
     {
       "category": "Comercial",
@@ -2502,13 +2516,14 @@
         "Ideal para retail o restaurante"
       ],
       "slug": "sunset-strip-local-147",
-      "description_en": "Unit 14 at Sunset Strip (Ground Floor), 89 m². Rent $2,300/month + HOA $1.50/m² ($133.50/month). 1 hour free parking. Tax not included."
+      "description_en": "Unit 14 at Sunset Strip (Ground Floor), 89 m². Rent $2,300/month + HOA $1.50/m² ($133.50/month). 1 hour free parking. Tax not included.",
+      "hidden": true
     },
     {
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "pricePerMonth": 1800,
+      "pricePerMonth": 5100,
       "location": "Vía Israel, San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
       "district": "San Francisco",
@@ -2519,19 +2534,23 @@
       "featured": true,
       "status": "available",
       "id": 148,
-      "title": "Sunset Strip - Local 109",
+      "title": "Sunset Strip – Local 029",
       "type": "Local",
-      "area": 162,
-      "image": "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
+      "area": 164,
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
-        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
         "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [
-        "/images/properties/sunset-strip/nivel-100.webp"
+        "/images/properties/sunset-strip/floorplans/nivel-00.webp"
       ],
-      "description": "Local 109 en Sunset Strip (Nivel 100), 162 m² (84 m² + 78 m²). Canon $1,800/mes + mantenimiento $2.00/m² ($324/mes). Estacionamientos aire libre y bajo techo (1 hora gratis). Espacio amplio ideal para gimnasio, showroom o restaurante. ITBMS no incluido.",
+      "description": "Local 029 en Plaza Sunset Strip (Planta Baja), 164 m². Canon $5,100/mes + mantenimiento $2.00/m² ($328/mes). El local más grande de Planta Baja, con acceso directo desde estacionamiento y frente a vía principal.",
       "amenities": [
         "Nivel 100 con acceso por escaleras eléctricas",
         "162 m² de espacio amplio (84+78)",
@@ -2540,13 +2559,15 @@
         "1 hora gratis de estacionamiento"
       ],
       "highlights": [
-        "162 m² en nivel 100 (84+78)",
-        "Canon $1,800 + mant. $324/mes",
-        "Espacio amplio para gimnasio o showroom",
-        "Excelente relación precio/m²"
+        "164 m² en Planta Baja",
+        "Canon $5,100 + HOA $328/mes",
+        "Acceso directo desde estacionamiento",
+        "Local de mayor tamaño en Planta Baja"
       ],
-      "slug": "sunset-strip-local-0-148",
-      "description_en": "Unit 109 at Sunset Strip (Level 100), 162 m² (84 m² + 78 m²). Rent $1,800/month + HOA $2.00/m² ($324/month). Ideal for gym, showroom or restaurant. Tax not included."
+      "slug": "sunset-strip-local-029",
+      "description_en": "Unit 029 at Plaza Sunset Strip (Ground Floor), 164 m². Rent $5,100/mo + maintenance fee $2.00/m² ($328/mo). Largest ground-floor unit with direct parking access and main street frontage.",
+      "hoa": 328,
+      "hidden": false
     },
     {
       "category": "Comercial",
@@ -2589,13 +2610,14 @@
         "Alta visibilidad en Vía Israel"
       ],
       "slug": "sunset-strip-local-142",
-      "description_en": "Unit 25 at Sunset Strip (Ground Floor), 114 m². Rent $3,500/month + HOA $2.00/m². Perfect for casual restaurant, pharmacy or anchor store."
+      "description_en": "Unit 25 at Sunset Strip (Ground Floor), 114 m². Rent $3,500/month + HOA $2.00/m². Perfect for casual restaurant, pharmacy or anchor store.",
+      "hidden": true
     },
     {
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "pricePerMonth": 2200,
+      "pricePerMonth": 2500,
       "location": "Vía Israel, San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
       "district": "San Francisco",
@@ -2604,21 +2626,25 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "rented",
+      "status": "available",
       "id": 143,
-      "title": "Sunset Strip - Local 26",
+      "title": "Sunset Strip – Local 026",
       "type": "Local",
       "area": 98,
-      "image": "/images/properties/sunset-strip/amenities/terraza-externa-jardin.webp",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
-        "/images/properties/sunset-strip/amenities/terraza-externa-jardin.webp",
         "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
         "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [
-        "/images/properties/sunset-strip/nivel-00.webp"
+        "/images/properties/sunset-strip/floorplans/nivel-00.webp"
       ],
-      "description": "Local 26 en Sunset Strip (Planta 00), 69 m² interiores + 29 m² de terraza (98 m² totales). Canon $2,200/mes + mantenimiento $2.00/m². Terraza frontal para mesas exteriores, ideal para café o concepto de comida rápida.",
+      "description": "Local 026 en Plaza Sunset Strip (Planta Baja), 69 m² interiores + 29 m² de terraza = 98 m² totales. Canon $2,500/mes + mantenimiento $2.00/m² ($196/mes). Con acceso directo desde estacionamiento y vitrina de piso a techo.",
       "amenities": [
         "Terraza de 29 m² para mesas exteriores",
         "Acceso peatonal y estacionamientos al frente",
@@ -2626,19 +2652,21 @@
         "Seguridad y CCTV 24/7"
       ],
       "highlights": [
-        "69 m² interiores + 29 m² de terraza",
-        "Canon $2,200 + mant. $2.00/m²",
-        "Frente con terraza para food & beverage",
-        "Ubicación estratégica en Vía Israel"
+        "69 m² + 29 m² terraza (98 m² totales)",
+        "Canon $2,500 + HOA $196/mes",
+        "Acceso directo desde estacionamiento",
+        "Vitrina de piso a techo"
       ],
-      "slug": "sunset-strip-local-143",
-      "description_en": "Unit 26 at Sunset Strip (Ground Floor), 69 m² + 29 m² terrace (98 m² total). Rent $2,200/month + HOA $2.00/m². Front terrace for outdoor seating, ideal for café or quick-service concept."
+      "slug": "sunset-strip-local-026",
+      "description_en": "Unit 026 at Plaza Sunset Strip (Ground Floor), 69 m² interior + 29 m² terrace = 98 m² total. Rent $2,500/mo + maintenance fee $2.00/m² ($196/mo). Direct parking access and floor-to-ceiling storefront window.",
+      "hoa": 196,
+      "hidden": false
     },
     {
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "pricePerMonth": 940,
+      "pricePerMonth": 830,
       "location": "Vía Israel, San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
       "district": "San Francisco",
@@ -2647,21 +2675,25 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "rented",
+      "status": "available",
       "id": 144,
-      "title": "Sunset Strip - Local 134",
+      "title": "Sunset Strip – Local 112",
       "type": "Local",
-      "area": 47,
-      "image": "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+      "area": 46,
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
         "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
-        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [
-        "/images/properties/sunset-strip/nivel-100.webp"
+        "/images/properties/sunset-strip/floorplans/nivel-100.webp"
       ],
-      "description": "Local 134 en Sunset Strip (Mezanine 100), 47 m². Canon $940/mes + mantenimiento $1.50/m². Espacio eficiente con frente acristalado, ideal para consultorio, showroom o oficina de servicios.",
+      "description": "Local 112 en Plaza Sunset Strip (Nivel 1), 46 m². Canon $830/mes + mantenimiento $1.50/m² ($69/mes). Local en planta alta con escaleras eléctricas y pasillo climatizado.",
       "amenities": [
         "Mezanine 100 con acceso por escaleras eléctricas y ascensor",
         "Fachada de vidrio para máxima visibilidad",
@@ -2669,13 +2701,15 @@
         "Seguridad 24/7"
       ],
       "highlights": [
-        "47 m² en mezanine 100",
-        "Canon $940 + mant. $1.50/m²",
-        "Fachada acristalada",
-        "Ideal para consultorio u oficina"
+        "46 m² en Nivel 1",
+        "Canon $830 + HOA $69/mes",
+        "Acceso por escaleras eléctricas",
+        "Pasillo climatizado"
       ],
-      "slug": "sunset-strip-local-144",
-      "description_en": "Unit 134 at Sunset Strip (Mezzanine 100), 47 m². Rent $940/month + HOA $1.50/m². Ideal for medical office, showroom or service office."
+      "slug": "sunset-strip-local-112",
+      "description_en": "Unit 112 at Plaza Sunset Strip (Level 1), 46 m². Rent $830/mo + maintenance fee $1.50/m² ($69/mo). Upper-floor unit with escalator access and climate-controlled corridor.",
+      "hoa": 69,
+      "hidden": false
     },
     {
       "category": "Comercial",
@@ -2718,7 +2752,8 @@
         "Ubicación céntrica en Vía Israel"
       ],
       "slug": "sunset-strip-oficina-0",
-      "description_en": "Office 206 at Sunset Strip (Level 200), 57 m². Rent $1,200/month + HOA $1.50/m². Efficient layout with views towards Vía Israel."
+      "description_en": "Office 206 at Sunset Strip (Level 200), 57 m². Rent $1,200/month + HOA $1.50/m². Efficient layout with views towards Vía Israel.",
+      "hidden": true
     },
     {
       "id": 150,
@@ -6788,7 +6823,8 @@
         "ITBMS no incluido"
       ],
       "slug": "plaza-sunset-strip-local-0-planta-00",
-      "description_en": "Unit 10 at Plaza Sunset Strip Ground Floor, Vía Israel. 78 m². Rent $2,000/month + HOA $117/month ($1.50/m²). Tax not included."
+      "description_en": "Unit 10 at Plaza Sunset Strip Ground Floor, Vía Israel. 78 m². Rent $2,000/month + HOA $117/month ($1.50/m²). Tax not included.",
+      "hidden": true
     },
     {
       "id": 256,
@@ -6829,7 +6865,8 @@
         "ITBMS no incluido"
       ],
       "slug": "plaza-sunset-strip-local-planta-00",
-      "description_en": "Unit 14 at Plaza Sunset Strip Ground Floor, Vía Israel. 89 m². Rent $2,300/month + HOA $133.50/month ($1.50/m²). Tax not included."
+      "description_en": "Unit 14 at Plaza Sunset Strip Ground Floor, Vía Israel. 89 m². Rent $2,300/month + HOA $133.50/month ($1.50/m²). Tax not included.",
+      "hidden": true
     },
     {
       "id": 257,
@@ -6870,7 +6907,8 @@
         "ITBMS no incluido"
       ],
       "slug": "plaza-sunset-strip-local-0-nivel-00",
-      "description_en": "Unit 109 at Plaza Sunset Strip Level 100, Vía Israel. 162 m² (84 m² + 78 m²). Rent $1,800/month + HOA $324/month ($2.00/m²). Tax not included."
+      "description_en": "Unit 109 at Plaza Sunset Strip Level 100, Vía Israel. 162 m² (84 m² + 78 m²). Rent $1,800/month + HOA $324/month ($2.00/m²). Tax not included.",
+      "hidden": true
     },
     {
       "id": 258,
@@ -7315,6 +7353,153 @@
         "Precio: $421,281"
       ],
       "description_en": "Apartment 1004 at Ocean View (Tower 100). 111.45 m², 1 bedroom + den + service room. Ideal for investment or couples. Price: $421,281."
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "type": "Local",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+      "images": [
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/floorplans/nivel-00.webp"
+      ],
+      "amenities": [
+        "Acceso directo desde estacionamiento",
+        "Fachada con vitrina de piso a techo",
+        "Pasillo climatizado y escaleras eléctricas",
+        "Seguridad 24/7 y CCTV"
+      ],
+      "hidden": false,
+      "id": 272,
+      "title": "Sunset Strip – Local 019",
+      "slug": "sunset-strip-local-019",
+      "area": 113,
+      "pricePerMonth": 3500,
+      "hoa": 226,
+      "description": "Local 019 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $2.00/m² ($226/mes). Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.",
+      "description_en": "Unit 019 at Plaza Sunset Strip (Ground Floor), 113 m². Rent $3,500/mo + maintenance fee $2.00/m² ($226/mo). Large pedestrian frontage with floor-to-ceiling window and direct parking access.",
+      "highlights": [
+        "113 m² en Planta Baja",
+        "Canon $3,500 + HOA $226/mes",
+        "Frente peatonal",
+        "Vitrina de piso a techo"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "type": "Local",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+      "images": [
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/floorplans/nivel-00.webp"
+      ],
+      "amenities": [
+        "Acceso directo desde estacionamiento",
+        "Fachada con vitrina de piso a techo",
+        "Pasillo climatizado y escaleras eléctricas",
+        "Seguridad 24/7 y CCTV"
+      ],
+      "hidden": false,
+      "id": 273,
+      "title": "Sunset Strip – Local 021",
+      "slug": "sunset-strip-local-021",
+      "area": 113,
+      "pricePerMonth": 3500,
+      "hoa": 226,
+      "description": "Local 021 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $2.00/m² ($226/mes). Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.",
+      "description_en": "Unit 021 at Plaza Sunset Strip (Ground Floor), 113 m². Rent $3,500/mo + maintenance fee $2.00/m² ($226/mo). Large pedestrian frontage with floor-to-ceiling window and direct parking access.",
+      "highlights": [
+        "113 m² en Planta Baja",
+        "Canon $3,500 + HOA $226/mes",
+        "Frente peatonal",
+        "Vitrina de piso a techo"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "available",
+      "type": "Local",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+      "images": [
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
+      ],
+      "planos": [
+        "/images/properties/sunset-strip/floorplans/nivel-200.webp"
+      ],
+      "amenities": [
+        "Acceso directo desde estacionamiento",
+        "Fachada con vitrina de piso a techo",
+        "Pasillo climatizado y escaleras eléctricas",
+        "Seguridad 24/7 y CCTV"
+      ],
+      "hidden": false,
+      "id": 274,
+      "title": "Sunset Strip – Local 311",
+      "slug": "sunset-strip-local-311",
+      "area": 36,
+      "pricePerMonth": 650,
+      "hoa": 54,
+      "description": "Local 311 en Plaza Sunset Strip (Nivel 3), 36 m². Canon $650/mes + mantenimiento $1.50/m² ($54/mes). Compacto y eficiente, ideal para oficina unipersonal o consultorio.",
+      "description_en": "Unit 311 at Plaza Sunset Strip (Level 3), 36 m². Rent $650/mo + maintenance fee $1.50/m² ($54/mo). Compact and efficient — ideal for a solo office or consulting room.",
+      "highlights": [
+        "36 m² en Nivel 3",
+        "Canon $650 + HOA $54/mes",
+        "Pasillo climatizado",
+        "Seguridad 24/7"
+      ]
     }
   ]
 }
