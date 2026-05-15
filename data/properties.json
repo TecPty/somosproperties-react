@@ -221,7 +221,7 @@
       "id": 1,
       "thumbnail": "/images/properties/kings-park/promotional/thumbnail-kings-park.webp",
       "title": "Kings Park - Torre 500, Apto 3-B",
-      "description": "Apartamento 3-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 4 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas), Sistema Smart Home y 2 estacionamientos.",
+      "description": "Apartamento 3-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 4 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas) y 2 estacionamientos.",
       "amenities": [
         "Sistema Smart Home integrado",
         "Línea blanca completa incluida",
@@ -247,7 +247,7 @@
         "Gastos legales gratis"
       ],
       "slug": "kings-park-torre-00-apto-b",
-      "description_en": "Apartment 3-B in Tower 500 at Kings Park, Condado del Rey. 155.70 m² with 4 bedrooms and 4½ bathrooms. Sale price $280,000, HOA $295.83/month. Includes full appliances, Smart Home system and 2 parking spaces."
+      "description_en": "Apartment 3-B in Tower 500 at Kings Park, Condado del Rey. 155.70 m² with 4 bedrooms and 4½ bathrooms. Sale price $280,000, HOA $295.83/month. Includes full appliances and 2 parking spaces."
     },
     {
       "type": "Apartamento",
@@ -314,7 +314,8 @@
         "Gastos legales gratis"
       ],
       "slug": "kings-park-torre-00-apto-0-b",
-      "description_en": "Apartment 10-B in Tower 500 at Kings Park, Condado del Rey. 155.70 m² with 4 bedrooms and 5½ bathrooms. Sale price $280,000, HOA $295.83/month. Includes 2 parking spaces + 1 storage unit. Full appliances and Smart Home system."
+      "description_en": "Apartment 10-B in Tower 500 at Kings Park, Condado del Rey. 155.70 m² with 4 bedrooms and 5½ bathrooms. Sale price $280,000, HOA $295.83/month. Includes 2 parking spaces + 1 storage unit. Full appliances and Smart Home system.",
+      "hidden": true
     },
     {
       "id": 2,
