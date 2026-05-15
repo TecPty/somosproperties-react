@@ -1145,7 +1145,7 @@
       "bedrooms": 3,
       "bathrooms": 4,
       "parkingSpots": 2,
-      "area": 273,
+      "area": 272.5,
       "builtYear": 2024,
       "image": "/images/properties/the-towers-residences/units/245/sala.webp",
       "images": [
@@ -1186,7 +1186,8 @@
         "Acabados europeos"
       ],
       "slug": "the-towers-residences-apto-b-torre-00",
-      "description_en": "The Towers Residences — Apartment 31 B in Tower 100, 272.50 m² of absolute luxury. 3 bedrooms, 4 bathrooms, covered terrace, 2 VIP parking spaces. Price: $480,000. HOA: $4,981/month."
+      "description_en": "The Towers Residences — Apartment 31 B in Tower 100, 272.50 m² of absolute luxury. 3 bedrooms, 4 bathrooms, covered terrace, 2 VIP parking spaces. Price: $480,000. HOA: $4,981/month.",
+      "hoa": 498.1
     },
     {
       "id": 29,
@@ -1202,7 +1203,7 @@
       "bedrooms": 3,
       "bathrooms": 4,
       "parkingSpots": 2,
-      "area": 273,
+      "area": 272.5,
       "builtYear": 2024,
       "image": "/images/properties/the-towers-residences/units/29/sala.webp",
       "images": [
@@ -1240,7 +1241,8 @@
         "Proyecto exclusivo San Francisco"
       ],
       "slug": "the-towers-residences-apto-b-torre-00-29",
-      "description_en": "The Towers Residences — Apartment 28 B in Tower 100, 272.50 m². 3 bedrooms, 4 luxury bathrooms, gourmet kitchen. Price: $500,000. HOA: $4,981/month."
+      "description_en": "The Towers Residences — Apartment 28 B in Tower 100, 272.50 m². 3 bedrooms, 4 luxury bathrooms, gourmet kitchen. Price: $500,000. HOA: $4,981/month.",
+      "hoa": 498.1
     },
     {
       "id": 30,
@@ -1256,7 +1258,7 @@
       "bedrooms": 3,
       "bathrooms": 4,
       "parkingSpots": 2,
-      "area": 273,
+      "area": 272.5,
       "builtYear": 2024,
       "image": "/images/properties/the-towers-residences/units/30/sala-1.webp",
       "images": [
@@ -1296,7 +1298,8 @@
         "Proyecto exclusivo"
       ],
       "slug": "the-towers-residences-apto-b-torre-00-30",
-      "description_en": "Apartment 29 B at The Towers Residences, San Francisco. 272.50 m² with luxury finishes. Double-height living room, Italian kitchen, panoramic terrace. Price: $480,000. HOA: $545/month."
+      "description_en": "Apartment 29 B at The Towers Residences, San Francisco. 272.50 m² with luxury finishes. Double-height living room, Italian kitchen, panoramic terrace. Price: $480,000. HOA: $545/month.",
+      "hoa": 498.1
     },
     {
       "id": 31,
@@ -6638,7 +6641,8 @@
         "Mantenimiento $375.52/mes"
       ],
       "slug": "the-tower-residences-apto-c-torre-00",
-      "description_en": "The Towers Residences — Apartment 18 C in Tower 100, 188.26 m². Sale price $400,000. Monthly HOA $375.52."
+      "description_en": "The Towers Residences — Apartment 18 C in Tower 100, 188.26 m². Sale price $400,000. Monthly HOA $375.52.",
+      "hoa": 375.52
     },
     {
       "id": 249,
@@ -6676,7 +6680,8 @@
         "Alquilado hasta 2027"
       ],
       "slug": "the-tower-residences-apto-c-torre-00-alquilado-hasta-0",
-      "description_en": "The Towers Residences — Apartment 23 C in Tower 100, 188.26 m². Currently rented until 2027. Sale price $400,000. Monthly HOA $375.52."
+      "description_en": "The Towers Residences — Apartment 23 C in Tower 100, 188.26 m². Currently rented until 2027. Sale price $400,000. Monthly HOA $375.52.",
+      "hoa": 375.52
     },
     {
       "id": 251,
