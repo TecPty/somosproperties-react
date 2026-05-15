@@ -1,12 +1,19 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { createMetadata } from "@/lib/seo"
+import { getTranslations } from 'next-intl/server'
 
-export const metadata = createMetadata({
-  title: "Blog - SOMOS Properties",
-  description: "Consejos, noticias y tendencias del mercado inmobiliario en Panamá.",
-  path: "/blog",
-})
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.blog' })
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 export default function BlogPage() {
   return (

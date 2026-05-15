@@ -1,10 +1,19 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Link from "next/link"
+import { getTranslations } from 'next-intl/server'
 
-export const metadata = {
-  title: "Política de Cookies - SOMOS Properties",
-  description: "Información sobre cookies, seguimiento y tecnologías similares en SOMOS Properties.",
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.cookies' })
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
 }
 
 const lastUpdated = "11 de marzo de 2026"

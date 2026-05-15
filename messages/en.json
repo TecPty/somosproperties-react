@@ -278,6 +278,14 @@
     "comerciales": {
       "title": "Commercial Properties in Panama | SOMOS Properties",
       "description": "Commercial spaces and offices for sale and rent in Panama. Invest in premium commercial properties."
+    },
+    "cookies": {
+      "title": "Cookie Policy - SOMOS Properties",
+      "description": "Information about cookies, tracking and similar technologies used on SOMOS Properties."
+    },
+    "blog": {
+      "title": "Blog - SOMOS Properties",
+      "description": "Tips, news and trends from the Panamanian real estate market."
     }
   },
   "about": {

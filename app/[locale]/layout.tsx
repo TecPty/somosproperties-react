@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages } from 'next-intl/server'
+import { getMessages, getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { locales } from '@/i18n'
 
@@ -10,18 +10,26 @@ import ConsentLayout from "@/components/consent-layout"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
-export const metadata: Metadata = {
-  title: "SOMOS Properties - Propiedades en Panamá",
-  description: "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler.",
-  icons: {
-    icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon.ico" },
-      { url: "/favicon.png", type: "image/png" },
-    ],
-    shortcut: "/favicon.png",
-    apple: "/apple-touch-icon.png"
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata.home' })
+  return {
+    title: t('title'),
+    description: t('description'),
+    icons: {
+      icon: [
+        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+        { url: "/favicon.ico" },
+        { url: "/favicon.png", type: "image/png" },
+      ],
+      shortcut: "/favicon.png",
+      apple: "/apple-touch-icon.png"
+    }
   }
 }
 

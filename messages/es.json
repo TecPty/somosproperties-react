@@ -277,8 +277,14 @@
     },
     "comerciales": {
       "title": "Propiedades Comerciales en Panamá | SOMOS Properties",
-      "description": "Locales comerciales y oficinas en venta y alquiler en Panamá. Invierte en propiedades comerciales premium."
-    }
+      "description": "Locales comerciales y oficinas en venta y alquiler en Panamá. Invierte en propiedades comerciales premium."    },
+    "cookies": {
+      "title": "Pol\u00edtica de Cookies - SOMOS Properties",
+      "description": "Informaci\u00f3n sobre cookies, seguimiento y tecnolog\u00edas similares en SOMOS Properties."
+    },
+    "blog": {
+      "title": "Blog - SOMOS Properties",
+      "description": "Consejos, noticias y tendencias del mercado inmobiliario en Panam\u00e1."    }
   },
   "about": {
     "hero": {
