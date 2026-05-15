@@ -21,6 +21,7 @@ export interface Property {
   highlights?: string[]
   virtualTour?: string
   description: string
+  description_en?: string
   amenities: string[]
   minIncome?: number
   requirements?: string[]

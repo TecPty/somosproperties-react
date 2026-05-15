@@ -18,7 +18,7 @@ import type { Promotion } from "@/types/promotion"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { trackGoogleAdsConversion, trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 
 type PropertyDetailsProps = {
   property: Property
@@ -36,6 +36,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const [lightboxImage, setLightboxImage] = useState("")
   const tCommon = useTranslations('common')
   const tDetail = useTranslations('propertyDetail')
+  const locale = useLocale()
   const hasTrackedView = useRef(false)
   const [urgencyCount] = useState(() => Math.floor(Math.random() * 8) + 5)
 
@@ -384,7 +385,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 {activeTab === "description" && (
                   <div>
                     <h2 className="text-2xl font-semibold text-[#222222] mb-4">{tDetail('descriptionHeading')}</h2>
-                    <p className="text-[#333333] leading-relaxed whitespace-pre-line">{property.description}</p>
+                    <p className="text-[#333333] leading-relaxed whitespace-pre-line">{locale === 'en' && property.description_en ? property.description_en : property.description}</p>
                   </div>
                 )}
 
