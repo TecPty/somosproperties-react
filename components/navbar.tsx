@@ -93,7 +93,7 @@ export default function Navbar() {
           ? "bg-white/98 shadow-[0_2px_12px_rgba(0,0,0,0.08)]"
           : "bg-white/95"
       }`}
-      aria-label="Navegación principal"
+      aria-label={t('mainNav')}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
@@ -178,7 +178,7 @@ export default function Navbar() {
                 onClick={() => handleLocaleChange('es')}
                 disabled={isPending}
                 className={`text-lg transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
-                title="Español"
+                title={t('spanish')}
               >
                 🇪🇸
               </button>
@@ -200,7 +200,7 @@ export default function Navbar() {
             <button
               className="flex items-center justify-center w-11 h-11 rounded-xl text-[#333333] hover:bg-[#f3f3f3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1"
               onClick={() => setIsOpen(!isOpen)}
-              aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-label={isOpen ? t('closeMenu') : t('openMenu')}
               aria-expanded={isOpen ? "true" : "false"}
               aria-controls="mobile-menu"
             >
@@ -271,7 +271,7 @@ export default function Navbar() {
                 onClick={() => handleLocaleChange('es')}
                 disabled={isPending}
                 className={`text-2xl transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
-                title="Español"
+                title={t('spanish')}
               >
                 🇪🇸
               </button>

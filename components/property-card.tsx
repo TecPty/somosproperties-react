@@ -125,7 +125,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           </p>
           {property.area > 0 && (
             <span className="flex items-center gap-1.5 text-xs text-[#888888]">
-              <img src="/images/icons/icon-metraje.png" alt="Área" className="h-4 w-4 object-contain opacity-70" />
+              <img src="/images/icons/icon-metraje.png" alt={t('area')} className="h-4 w-4 object-contain opacity-70" />
               {formatArea(property.area)}
             </span>
           )}
@@ -147,7 +147,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           <div className="flex items-center gap-4 mb-4 text-[#758696] text-sm">
             {property.bedrooms > 0 && (
               <span className="flex items-center gap-1.5">
-                <img src="/images/icons/icon-cama.png" alt="Camas" className="h-4 w-4 object-contain" />
+                <img src="/images/icons/icon-cama.png" alt={t('beds')} className="h-4 w-4 object-contain" />
                 <span>
                   {property.bedrooms}{" "}
                   <span className="hidden sm:inline">{property.bedrooms === 1 ? t('bed') : t('beds')}</span>
@@ -156,7 +156,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             )}
             {property.bathrooms > 0 && (
               <span className="flex items-center gap-1.5">
-                <img src="/images/icons/icon-bano.png" alt="Baños" className="h-4 w-4 object-contain" />
+                <img src="/images/icons/icon-bano.png" alt={t('bathrooms')} className="h-4 w-4 object-contain" />
                 <span>
                   {property.bathrooms}{" "}
                   <span className="hidden sm:inline">{property.bathrooms === 1 ? t('bath') : t('baths')}</span>

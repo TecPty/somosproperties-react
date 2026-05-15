@@ -6,7 +6,11 @@
     "commercial": "Commercial",
     "about": "About Us",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "mainNav": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "spanish": "Spanish"
   },
   "home": {
     "hero": {
@@ -137,7 +141,9 @@
     "noImage": "No image",
     "whatsappQuery": "WhatsApp Query",
     "whatsappPrompt": "Hello! How can we help you today?",
-    "urgency": "HIGH DEMAND: {count} views today"
+    "urgency": "HIGH DEMAND: {count} views today",
+    "previousPage": "Previous page",
+    "nextPage": "Next page"
   },
   "propertyDetail": {
     "bedrooms": "Bedrooms",
@@ -195,7 +201,14 @@
       "parking": "parking",
       "rent": "Rent",
       "sale": "Sale"
-    }
+    },
+    "iconBedsAlt": "Bedrooms",
+    "iconBathsAlt": "Bathrooms",
+    "iconAreaAlt": "Area",
+    "iconParkingAlt": "Parking",
+    "expandedView": "Expanded view",
+    "prevImage": "Previous",
+    "nextImage": "Next"
   },
   "leadQualifier": {
     "title": "Qualify in 30 seconds",

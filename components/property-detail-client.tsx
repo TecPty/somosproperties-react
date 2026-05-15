@@ -150,7 +150,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           <div className="relative w-full h-[90vh] max-w-7xl mx-auto flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
             <OptimizedImage
               src={lightboxImage}
-              alt="Vista ampliada"
+              alt={tDetail('expandedView')}
               type="hero"
               fill
               priority
@@ -212,7 +212,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#333333] p-3 rounded-full transition-all shadow-lg"
                     aria-label="Imagen anterior"
                   >
-                    <img src="/images/icons/left-arrow.svg" alt="Anterior" className="h-6 w-6" />
+                    <img src="/images/icons/left-arrow.svg" alt={tDetail('prevImage')} className="h-6 w-6" />
                   </button>
                   <button
                     onClick={() => {
@@ -222,7 +222,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#333333] p-3 rounded-full transition-all shadow-lg"
                     aria-label="Imagen siguiente"
                   >
-                    <img src="/images/icons/right-arrow.svg" alt="Siguiente" className="h-6 w-6" />
+                    <img src="/images/icons/right-arrow.svg" alt={tDetail('nextImage')} className="h-6 w-6" />
                   </button>
                 </>
               )}
@@ -309,7 +309,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 {property.bedrooms > 0 && (
                   <div className="text-center">
                     <div className="h-16 flex items-center justify-center mb-2">
-                      <img src="/images/icons/icon-cama.png" alt="Camas" className="h-8 w-8 object-contain" />
+                      <img src="/images/icons/icon-cama.png" alt={tDetail('iconBedsAlt')} className="h-8 w-8 object-contain" />
                     </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.bedrooms}</div>
                     <div className="text-sm text-[#999999]">{tDetail('bedrooms')}</div>
@@ -318,7 +318,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 {property.bathrooms > 0 && (
                   <div className="text-center">
                     <div className="h-16 flex items-center justify-center mb-2">
-                      <img src="/images/icons/icon-bano.png" alt="Baños" className="h-8 w-8 object-contain" />
+                      <img src="/images/icons/icon-bano.png" alt={tDetail('iconBathsAlt')} className="h-8 w-8 object-contain" />
                     </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.bathrooms}</div>
                     <div className="text-sm text-[#999999]">{tDetail('bathrooms')}</div>
@@ -326,7 +326,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 )}
                 <div className="text-center">
                   <div className="h-16 flex items-center justify-center mb-2">
-                    <img src="/images/icons/icon-metraje.png" alt="Área" className="h-8 w-8 object-contain" />
+                    <img src="/images/icons/icon-metraje.png" alt={tDetail('iconAreaAlt')} className="h-8 w-8 object-contain" />
                   </div>
                   <div className="text-2xl font-bold text-[#222222]">{formatArea(property.area)}</div>
                   <div className="text-sm text-[#999999]">{tDetail('totalArea')}</div>
@@ -334,7 +334,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 {property.parkingSpots > 0 && (
                   <div className="text-center">
                     <div className="h-16 flex items-center justify-center mb-2">
-                      <img src="/images/icons/icon-carro.png" alt="Estacionamientos" className="h-16 w-16 object-contain" />
+                      <img src="/images/icons/icon-carro.png" alt={tDetail('iconParkingAlt')} className="h-16 w-16 object-contain" />
                     </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.parkingSpots}</div>
                     <div className="text-sm text-[#999999]">{tDetail('parking')}</div>

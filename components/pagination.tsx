@@ -1,5 +1,7 @@
 "use client"
 
+import { useTranslations } from "next-intl"
+
 interface PaginationProps {
   currentPage: number
   totalPages: number
@@ -7,6 +9,7 @@ interface PaginationProps {
 }
 
 export default function Pagination({ currentPage, totalPages, onPageChange }: PaginationProps) {
+  const t = useTranslations('common')
   const getPageNumbers = () => {
     const pages: (number | string)[] = []
 
@@ -35,7 +38,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
         className="px-4 py-2 border border-[#cccccc] rounded-lg text-[#333333] hover:border-[#3898EC] hover:text-[#3898EC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-[#cccccc] disabled:hover:text-[#333333]"
-        aria-label="Página anterior"
+        aria-label={t('previousPage')}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +72,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
         className="px-4 py-2 border border-[#cccccc] rounded-lg text-[#333333] hover:border-[#3898EC] hover:text-[#3898EC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-[#cccccc] disabled:hover:text-[#333333]"
-        aria-label="Página siguiente"
+        aria-label={t('nextPage')}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -6,7 +6,11 @@
     "commercial": "Comerciales",
     "about": "Nosotros",
     "contact": "Contacto",
-    "language": "Idioma"
+    "language": "Idioma",
+    "mainNav": "Navegación principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "spanish": "Español"
   },
   "home": {
     "hero": {
@@ -137,7 +141,9 @@
     "noImage": "Sin imagen",
     "whatsappQuery": "Consultar por WhatsApp",
     "whatsappPrompt": "¡Hola! ¿Cómo podemos ayudarte hoy?",
-    "urgency": "ALTA DEMANDA: {count} vistas hoy"
+    "urgency": "ALTA DEMANDA: {count} vistas hoy",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente"
   },
   "propertyDetail": {
     "bedrooms": "Habitaciones",
@@ -195,7 +201,14 @@
       "parking": "estacionamientos",
       "rent": "Alquiler",
       "sale": "Venta"
-    }
+    },
+    "iconBedsAlt": "Habitaciones",
+    "iconBathsAlt": "Ba\u00f1os",
+    "iconAreaAlt": "\u00c1rea",
+    "iconParkingAlt": "Estacionamientos",
+    "expandedView": "Vista ampliada",
+    "prevImage": "Anterior",
+    "nextImage": "Siguiente"
   },
   "leadQualifier": {
     "title": "Califica en 30 segundos",
