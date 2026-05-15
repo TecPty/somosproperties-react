@@ -1242,7 +1242,8 @@
       ],
       "slug": "the-towers-residences-apto-b-torre-00-29",
       "description_en": "The Towers Residences — Apartment 28 B in Tower 100, 272.50 m². 3 bedrooms, 4 luxury bathrooms, gourmet kitchen. Price: $500,000. HOA: $4,981/month.",
-      "hoa": 498.1
+      "hoa": 498.1,
+      "hidden": true
     },
     {
       "id": 30,
@@ -6607,7 +6608,7 @@
     },
     {
       "id": 248,
-      "title": "The Tower Residences - Apto. 18 C Torre 100",
+      "title": "The Towers Residences - Apto. 18 C Torre 100",
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
@@ -6646,7 +6647,7 @@
     },
     {
       "id": 249,
-      "title": "The Tower Residences - Apto. 23 C Torre 100 (Alquilado hasta 2027)",
+      "title": "The Towers Residences - Apto. 23 C Torre 100 (Alquilado hasta 2027)",
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
