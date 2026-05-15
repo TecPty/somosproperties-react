@@ -61,7 +61,7 @@ export default function EmploymentForm() {
         if (data?.errors) {
           setErrors((prev) => ({ ...prev, ...data.errors }))
         }
-        setSubmitError("No se pudo enviar tu solicitud. Intenta nuevamente.")
+        setSubmitError(t('errors.submitFailed'))
         return
       }
 
@@ -75,7 +75,7 @@ export default function EmploymentForm() {
         setSubmitted(false)
       }, 4000)
     } catch {
-      setSubmitError("No se pudo enviar tu solicitud. Verifica tu conexión.")
+      setSubmitError(t('errors.networkError'))
     } finally {
       setIsSubmitting(false)
     }
@@ -85,8 +85,8 @@ export default function EmploymentForm() {
     return (
       <div className="bg-[#f0fdf4] border border-[#22c55e]/30 rounded-xl p-8 text-center">
         <CheckCircle className="h-12 w-12 text-[#22c55e] mx-auto mb-3" aria-hidden="true" />
-        <h3 className="text-lg font-semibold text-[#222222] mb-1">¡Solicitud enviada!</h3>
-        <p className="text-sm text-[#555555]">Te contactaremos a la brevedad.</p>
+        <h3 className="text-lg font-semibold text-[#222222] mb-1">{t('successTitle')}</h3>
+        <p className="text-sm text-[#555555]">{t('successMessage')}</p>
       </div>
     )
   }
@@ -95,7 +95,7 @@ export default function EmploymentForm() {
     <form className="space-y-4" onSubmit={handleSubmit} noValidate>
       <div>
         <label htmlFor="emp-name" className="block text-sm font-medium text-[#333333] mb-2">
-          Nombre completo *
+          {t('nameLabel')}
         </label>
         <input
           type="text"
@@ -104,7 +104,7 @@ export default function EmploymentForm() {
           value={name}
           onChange={(event) => setName(event.target.value)}
           className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-2 focus:outline-[#2895f7] bg-white"
-          placeholder="Tu nombre"
+          placeholder={t('namePlaceholder')}
           autoComplete="name"
         />
         {errors.name && <p className="mt-1 text-xs text-[#ea384c]">{errors.name}</p>}
@@ -112,7 +112,7 @@ export default function EmploymentForm() {
 
       <div>
         <label htmlFor="emp-email" className="block text-sm font-medium text-[#333333] mb-2">
-          Email *
+          {t('emailLabel')}
         </label>
         <input
           type="email"
@@ -129,7 +129,7 @@ export default function EmploymentForm() {
 
       <div>
         <label htmlFor="emp-phone" className="block text-sm font-medium text-[#333333] mb-2">
-          Teléfono *
+          {t('phoneLabel')}
         </label>
         <input
           type="tel"
@@ -146,7 +146,7 @@ export default function EmploymentForm() {
 
       <div>
         <label htmlFor="emp-education" className="block text-sm font-medium text-[#333333] mb-2">
-          Nivel de educación *
+          {t('educationLabel')}
         </label>
         <select
           id="emp-education"
@@ -155,18 +155,18 @@ export default function EmploymentForm() {
           onChange={(event) => setEducation(event.target.value)}
           className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-2 focus:outline-[#2895f7] bg-white text-[#333333]"
         >
-          <option value="">Selecciona una opción</option>
-          <option value="secundaria">Secundaria</option>
-          <option value="tecnico">Técnico</option>
-          <option value="universitario">Universitario</option>
-          <option value="postgrado">Postgrado</option>
+          <option value="">{t('educationSelect')}</option>
+          <option value="secundaria">{t('educationSecondary')}</option>
+          <option value="tecnico">{t('educationTechnical')}</option>
+          <option value="universitario">{t('educationUniversity')}</option>
+          <option value="postgrado">{t('educationPostgrad')}</option>
         </select>
         {errors.education && <p className="mt-1 text-xs text-[#ea384c]">{errors.education}</p>}
       </div>
 
       <div>
         <label htmlFor="emp-cv" className="block text-sm font-medium text-[#333333] mb-2">
-          Adjuntar CV *
+          {t('cvLabel')}
         </label>
         <input
           type="file"
@@ -176,7 +176,7 @@ export default function EmploymentForm() {
           onChange={(event) => {
             const file = event.target.files?.[0] ?? null
             if (file && file.size > 3.5 * 1024 * 1024) {
-              setErrors((prev) => ({ ...prev, cv: "El archivo supera 3.5 MB. Comprime o reduce el PDF antes de adjuntarlo." }))
+              setErrors((prev) => ({ ...prev, cv: t('errors.cvSize') }))
               event.target.value = ""
               setCv(null)
               return
@@ -197,10 +197,10 @@ export default function EmploymentForm() {
         {isSubmitting ? (
           <span className="inline-flex items-center gap-2">
             <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-            Enviando...
+            {t('submitting')}
           </span>
         ) : (
-          "Enviar Solicitud"
+          t('submitBtn')
         )}
       </button>
       {submitError && <p className="text-xs text-[#b00020]">{submitError}</p>}

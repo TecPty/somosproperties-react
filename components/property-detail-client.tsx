@@ -69,12 +69,12 @@ export default function PropertyDetailClient({ property, similarProperties, prom
     }
 
     const items: string[] = []
-    if (property.area) items.push(`${formatArea(property.area)} totales`)
-    if (property.bedrooms > 0) items.push(`${property.bedrooms} habitaciones`)
-    if (property.bathrooms > 0) items.push(`${property.bathrooms} baños`)
-    if (property.parkingSpots > 0) items.push(`${property.parkingSpots} estacionamientos`)
-    if (property.operation === "Alquiler" && property.pricePerMonth) items.push(`Alquiler ${displayPrice}`)
-    if (property.operation === "Venta" && property.price) items.push(`Venta ${formatPrice(property.price)}`)
+    if (property.area) items.push(`${formatArea(property.area)} ${tDetail('highlights.total')}`)
+    if (property.bedrooms > 0) items.push(`${property.bedrooms} ${tDetail('highlights.bedrooms')}`)
+    if (property.bathrooms > 0) items.push(`${property.bathrooms} ${tDetail('highlights.bathrooms')}`)
+    if (property.parkingSpots > 0) items.push(`${property.parkingSpots} ${tDetail('highlights.parking')}`)
+    if (property.operation === "Alquiler" && property.pricePerMonth) items.push(`${tDetail('highlights.rent')} ${displayPrice}`)
+    if (property.operation === "Venta" && property.price) items.push(`${tDetail('highlights.sale')} ${formatPrice(property.price)}`)
     items.push(`${property.district}, ${property.city}`)
 
     if (items.length < 4 && property.amenities?.length) {

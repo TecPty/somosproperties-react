@@ -6,6 +6,7 @@ import styles from "./promotional-modal.module.css"
 import { X } from "lucide-react"
 import { useFocusTrap } from "@/hooks/use-focus-trap"
 import { CONTACT } from "@/lib/config"
+import { useTranslations } from "next-intl"
 
 // CAMBIO: props flexibles y control de frecuencia
 // RAZÓN: permite reutilizar el modal para cualquier promoción y controlar aparición
@@ -32,10 +33,11 @@ export function PromotionalModal({
   mobile,
   badge,
   headline,
-  ctaText = "Más Información",
+  ctaText,
   ctaAction = "contact",
   onClose,
 }: PromotionalModalProps) {
+  const t = useTranslations('promotionalModal')
   const [isVisible, setIsVisible] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
@@ -65,7 +67,7 @@ export function PromotionalModal({
 
   function handleCTA() {
     if (ctaAction === "whatsapp") {
-      const message = `Hola! Estoy interesado en una promoción. ¿Podrían darme más información?`
+      const message = t('whatsappMessage')
       const whatsappUrl = `https://wa.me/${CONTACT.whatsapp.raw}?text=${encodeURIComponent(message)}`
       window.open(whatsappUrl, "_blank")
     } else {
@@ -151,7 +153,7 @@ export function PromotionalModal({
         <button
           onClick={handleClose}
           className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-sm hover:bg-white p-2 rounded-full shadow-lg transition-all hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          aria-label="Cerrar"
+          aria-label={t('close')}
           data-autofocus="true"
         >
           <X className="w-5 h-5 text-gray-700" />
@@ -160,7 +162,7 @@ export function PromotionalModal({
         <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl">
           <img
             src={imageSrc}
-            alt={headline || "Promoción"}
+            alt={headline || t('promoAlt')}
             className="w-full h-auto max-w-full"
             loading="eager"
           />
@@ -171,13 +173,13 @@ export function PromotionalModal({
                 onClick={handleCTA}
                 className="flex-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all hover:scale-105 active:scale-95 text-sm"
               >
-                {ctaText}
+                {ctaText ?? t('ctaDefault')}
               </button>
               <button
                 onClick={handleClose}
                 className="sm:w-auto bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-semibold py-3 px-6 rounded-lg border border-white/30 transition-all hover:scale-105 active:scale-95 text-sm"
               >
-                Cerrar
+                {t('close')}
               </button>
             </div>
           </div>

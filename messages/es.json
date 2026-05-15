@@ -187,6 +187,14 @@
       "available": "Disponible",
       "rented": "Alquilado",
       "sold": "Vendido"
+    },
+    "highlights": {
+      "total": "totales",
+      "bedrooms": "habitaciones",
+      "bathrooms": "baños",
+      "parking": "estacionamientos",
+      "rent": "Alquiler",
+      "sale": "Venta"
     }
   },
   "leadQualifier": {
@@ -386,6 +394,53 @@
       "subtitle": "Nuestro equipo de asesores premium está listo para ayudarte a encontrar la propiedad perfecta",
       "contactBtn": "Contactar Asesor VIP",
       "viewAllBtn": "Ver Todas las Propiedades"
+    }
+  },
+  "promotionalModal": {
+    "ctaDefault": "Más Información",
+    "close": "Cerrar",
+    "promoAlt": "Promoción",
+    "whatsappMessage": "Hola! Estoy interesado en una promoción. ¿Podrían darme más información?"
+  },
+  "searchBar": {
+    "formAriaLabel": "Buscar propiedades",
+    "placeholder": "Buscar por ubicación, residencial, tipo...",
+    "inputAriaLabel": "Campo de búsqueda",
+    "clearAriaLabel": "Limpiar búsqueda",
+    "submitAriaLabel": "Buscar",
+    "suggestionsAriaLabel": "Sugerencias de búsqueda",
+    "popularSearches": "Búsquedas populares",
+    "suggestions": {
+      "apartment": "Apartamento en Panamá",
+      "commercial": "Local comercial"
+    }
+  },
+  "employmentForm": {
+    "nameLabel": "Nombre completo *",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Email *",
+    "phoneLabel": "Teléfono *",
+    "educationLabel": "Nivel de educación *",
+    "educationSelect": "Selecciona una opción",
+    "educationSecondary": "Secundaria",
+    "educationTechnical": "Técnico",
+    "educationUniversity": "Universitario",
+    "educationPostgrad": "Postgrado",
+    "cvLabel": "Adjuntar CV *",
+    "submitBtn": "Enviar Solicitud",
+    "submitting": "Enviando...",
+    "successTitle": "¡Solicitud enviada!",
+    "successMessage": "Te contactaremos a la brevedad.",
+    "errors": {
+      "nameRequired": "El nombre es requerido",
+      "emailRequired": "El email es requerido",
+      "emailInvalid": "Email inválido",
+      "phoneRequired": "El teléfono es requerido",
+      "educationRequired": "Selecciona una opción",
+      "cvRequired": "Adjunta tu CV",
+      "cvSize": "El archivo supera 3.5 MB. Comprime o reduce el PDF antes de adjuntarlo.",
+      "submitFailed": "No se pudo enviar tu solicitud. Intenta nuevamente.",
+      "networkError": "No se pudo enviar tu solicitud. Verifica tu conexión."
     }
   },
   "filters": {

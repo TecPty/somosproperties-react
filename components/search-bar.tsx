@@ -83,7 +83,7 @@ export default function SearchBar({ initialValue = "", className = "" }: SearchB
       onSubmit={handleSubmit}
       className={`max-w-[600px] w-full ${className}`}
       role="search"
-      aria-label="Buscar propiedades"
+      aria-label={t('formAriaLabel')}
     >
       <div className="relative">
         {/* Input */}
@@ -101,9 +101,9 @@ export default function SearchBar({ initialValue = "", className = "" }: SearchB
             onChange={(e) => { setSearch(e.target.value); setActiveIndex(-1) }}
             onFocus={() => setIsFocused(true)}
             onKeyDown={handleKeyDown}
-            placeholder="Buscar por ubicación, residencial, tipo..."
+            placeholder={t('placeholder')}
             className="w-full pl-12 pr-24 py-4 rounded-xl bg-transparent focus:outline-none placeholder:text-[#aaaaaa] text-[#222222] text-base"
-            aria-label="Campo de búsqueda"
+            aria-label={t('inputAriaLabel')}
             aria-autocomplete="list"
             aria-controls={showDropdown ? listboxId : undefined}
             aria-activedescendant={activeIndex >= 0 ? `${listboxId}-option-${activeIndex}` : undefined}
@@ -114,15 +114,14 @@ export default function SearchBar({ initialValue = "", className = "" }: SearchB
               type="button"
               onClick={() => { setSearch(""); inputRef.current?.focus() }}
               className="absolute right-14 flex items-center justify-center w-8 h-8 rounded-full text-[#aaaaaa] hover:text-[#555] hover:bg-[#f3f3f3] transition-colors"
-              aria-label="Limpiar búsqueda"
-            >
+              aria-label={t('clearAriaLabel')}>
               <X className="h-4 w-4" aria-hidden="true" />
             </button>
           )}
           <button
             type="submit"
             className="absolute right-2 flex items-center justify-center w-11 h-11 bg-[#3898EC] text-white rounded-lg hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
-            aria-label="Buscar"
+            aria-label={t('submitAriaLabel')}
           >
             <Search className="h-5 w-5" aria-hidden="true" />
           </button>
@@ -133,13 +132,13 @@ export default function SearchBar({ initialValue = "", className = "" }: SearchB
           <ul
             id={listboxId}
             role="listbox"
-            aria-label="Sugerencias de búsqueda"
+            aria-label={t('suggestionsAriaLabel')}
             className="absolute z-50 top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-[#eeeeee] overflow-hidden animate-slide-up"
           >
             {search.trim().length === 0 && (
               <div className="flex items-center gap-2 px-4 py-2.5 text-xs text-[#aaaaaa] font-medium border-b border-[#f3f3f3]" role="presentation">
                 <TrendingUp className="h-3.5 w-3.5" aria-hidden="true" />
-                Búsquedas populares
+                {t('popularSearches')}
               </div>
             )}
             {suggestions.map((s, i) => (
@@ -148,7 +147,8 @@ export default function SearchBar({ initialValue = "", className = "" }: SearchB
                   key={s}
                   id={`${listboxId}-option-${i}`}
                   role="option"
-                  aria-selected={i === activeIndex}
+                  // eslint-disable-next-line jsx-a11y/aria-proptypes
+                  aria-selected={i === activeIndex ? true : false}
                   onMouseDown={(e) => { e.preventDefault(); commit(s) }}
                   onMouseEnter={() => setActiveIndex(i)}
                   className={`flex items-center gap-3 px-4 py-3 cursor-pointer text-sm transition-colors ${

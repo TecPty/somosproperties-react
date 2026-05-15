@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 const nextConfig = {
   images: {
     unoptimized: process.env.NODE_ENV === 'development',
+    qualities: [75, 80],
   },
   experimental: {
     optimizePackageImports: ["@radix-ui/react-*"],

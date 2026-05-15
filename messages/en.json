@@ -187,6 +187,14 @@
       "available": "Available",
       "rented": "Rented",
       "sold": "Sold"
+    },
+    "highlights": {
+      "total": "total",
+      "bedrooms": "bedrooms",
+      "bathrooms": "bathrooms",
+      "parking": "parking",
+      "rent": "Rent",
+      "sale": "Sale"
     }
   },
   "leadQualifier": {
@@ -386,6 +394,53 @@
       "subtitle": "Our team of premium advisors is ready to help you find the perfect property",
       "contactBtn": "Contact VIP Advisor",
       "viewAllBtn": "View All Properties"
+    }
+  },
+  "promotionalModal": {
+    "ctaDefault": "More Information",
+    "close": "Close",
+    "promoAlt": "Promotion",
+    "whatsappMessage": "Hi! I'm interested in a promotion. Could you give me more information?"
+  },
+  "searchBar": {
+    "formAriaLabel": "Search properties",
+    "placeholder": "Search by location, residential, type...",
+    "inputAriaLabel": "Search field",
+    "clearAriaLabel": "Clear search",
+    "submitAriaLabel": "Search",
+    "suggestionsAriaLabel": "Search suggestions",
+    "popularSearches": "Popular searches",
+    "suggestions": {
+      "apartment": "Apartment in Panama",
+      "commercial": "Commercial space"
+    }
+  },
+  "employmentForm": {
+    "nameLabel": "Full Name *",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email *",
+    "phoneLabel": "Phone *",
+    "educationLabel": "Education Level *",
+    "educationSelect": "Select an option",
+    "educationSecondary": "High School",
+    "educationTechnical": "Technical",
+    "educationUniversity": "University",
+    "educationPostgrad": "Postgraduate",
+    "cvLabel": "Attach CV *",
+    "submitBtn": "Send Application",
+    "submitting": "Sending...",
+    "successTitle": "Application sent!",
+    "successMessage": "We will contact you shortly.",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "phoneRequired": "Phone is required",
+      "educationRequired": "Select an option",
+      "cvRequired": "Attach your CV",
+      "cvSize": "File exceeds 3.5 MB. Compress or reduce the PDF before attaching.",
+      "submitFailed": "Your application could not be sent. Try again.",
+      "networkError": "Your application could not be sent. Check your connection."
     }
   },
   "filters": {
