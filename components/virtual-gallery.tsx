@@ -14,8 +14,13 @@ export function VirtualGallery({ images, selectedImage, onSelectImage, propertyT
   const containerRef = useRef<HTMLDivElement>(null)
   const itemsPerRow = typeof window !== "undefined" && window.innerWidth >= 1024 ? 6 : typeof window !== "undefined" && window.innerWidth >= 768 ? 5 : 3
   const visibleRange = useMemo(() => {
-    // Show selected image and neighbors to avoid jarring transitions
-    const buffer = itemsPerRow * 2
+    // Para galerías pequeñas (menos de 48 fotos), mostrar todo de una
+    if (images.length <= 48) {
+      return { start: 0, end: images.length }
+    }
+    
+    // Para galerías gigantes, mostrar una ventana alrededor de la seleccionada
+    const buffer = itemsPerRow * 3 // Aumentado de 2 a 3 filas
     const start = Math.max(0, selectedImage - buffer)
     const end = Math.min(images.length, selectedImage + buffer)
     return { start, end }
