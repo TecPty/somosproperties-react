@@ -1,6 +1,7 @@
 ﻿"use client"
 
 import { useState } from "react"
+import { useTranslations } from "next-intl"
 import { CheckCircle, Loader2 } from "lucide-react"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -10,6 +11,7 @@ type EmploymentErrors = Partial<
 >
 
 export default function EmploymentForm() {
+  const t = useTranslations('employmentForm')
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
