@@ -1,10 +1,15 @@
-﻿import { NextResponse, type NextRequest } from "next/server"
+import { NextResponse, type NextRequest } from "next/server"
 import { Resend } from "resend"
 import { employmentEmailHTML } from "@/lib/email-templates/employment"
+import { rateLimit, getClientIp } from "@/lib/rate-limit"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const MAX_FILE_BYTES = 3.5 * 1024 * 1024
 const ALLOWED_EXTENSIONS = new Set([".pdf", ".doc", ".docx"])
+
+// Rate limit: 3 job applications per IP per 30 minutes
+const RATE_LIMIT = 3
+const RATE_WINDOW_MS = 30 * 60 * 1000
 
 function getExtension(filename: string) {
   const idx = filename.lastIndexOf(".")
@@ -12,6 +17,17 @@ function getExtension(filename: string) {
 }
 
 export async function POST(request: NextRequest) {
+  // ── Rate limiting ──────────────────────────────────────────────────────────
+  const ip = getClientIp(request)
+  const rl = rateLimit(ip, RATE_LIMIT, RATE_WINDOW_MS)
+  if (rl.limited) {
+    return NextResponse.json(
+      { ok: false, error: "Demasiadas solicitudes. Intenta nuevamente más tarde." },
+      { status: 429, headers: { 'Retry-After': String(Math.ceil((rl.resetAt - Date.now()) / 1000)) } }
+    )
+  }
+  // ──────────────────────────────────────────────────────────────────────────
+
   let formData: FormData
 
   try {
@@ -20,10 +36,10 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "Invalid form data" }, { status: 400 })
   }
 
-  const name = String(formData.get("name") || "").trim()
-  const email = String(formData.get("email") || "").trim()
-  const phone = String(formData.get("phone") || "").trim()
-  const education = String(formData.get("education") || "").trim()
+  const name = String(formData.get("name") || "").trim().slice(0, 100)
+  const email = String(formData.get("email") || "").trim().slice(0, 254)
+  const phone = String(formData.get("phone") || "").trim().slice(0, 30)
+  const education = String(formData.get("education") || "").trim().slice(0, 100)
   const cv = formData.get("cv")
 
   const errors: Record<string, string> = {}

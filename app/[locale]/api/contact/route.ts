@@ -1,11 +1,27 @@
-﻿import { NextResponse } from "next/server"
+import { NextResponse } from "next/server"
 import { Resend } from "resend"
 import { contactEmailHTML } from "@/lib/email-templates/contact"
+import { rateLimit, getClientIp } from "@/lib/rate-limit"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+// Rate limit: 5 submissions per IP per 10 minutes
+const RATE_LIMIT = 5
+const RATE_WINDOW_MS = 10 * 60 * 1000
+
 export async function POST(request: Request) {
+  // ── Rate limiting ──────────────────────────────────────────────────────────
+  const ip = getClientIp(request)
+  const rl = rateLimit(ip, RATE_LIMIT, RATE_WINDOW_MS)
+  if (rl.limited) {
+    return NextResponse.json(
+      { ok: false, error: "Demasiadas solicitudes. Intenta nuevamente más tarde." },
+      { status: 429, headers: { 'Retry-After': String(Math.ceil((rl.resetAt - Date.now()) / 1000)) } }
+    )
+  }
+  // ──────────────────────────────────────────────────────────────────────────
+
   let payload: {
     name?: string
     email?: string
@@ -25,13 +41,21 @@ export async function POST(request: Request) {
   const errors: Record<string, string> = {}
 
   if (!payload.name?.trim()) errors.name = "El nombre es requerido"
+  else if (payload.name.length > 100) errors.name = "Nombre demasiado largo"
+
   if (!payload.email?.trim()) {
     errors.email = "El email es requerido"
   } else if (!EMAIL_RE.test(payload.email)) {
     errors.email = "Email inválido"
+  } else if (payload.email.length > 254) {
+    errors.email = "Email demasiado largo"
   }
+
   if (!payload.phone?.trim()) errors.phone = "El teléfono es requerido"
+  else if (payload.phone.length > 30) errors.phone = "Teléfono demasiado largo"
+
   if (!payload.message?.trim()) errors.message = "El mensaje es requerido"
+  else if (payload.message.length > 2000) errors.message = "Mensaje demasiado largo (máx. 2000 caracteres)"
 
   if (Object.keys(errors).length > 0) {
     return NextResponse.json({ ok: false, errors }, { status: 400 })
