@@ -4,6 +4,7 @@ import type React from "react"
 import { useState, useRef, useEffect, useId } from "react"
 import { useRouter } from "next/navigation"
 import { Search, X, TrendingUp } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const POPULAR_SEARCHES = [
   "Pacific Point",
@@ -21,6 +22,7 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ initialValue = "", className = "" }: SearchBarProps) {
+  const t = useTranslations('searchBar')
   const [search, setSearch] = useState(initialValue)
   const [isFocused, setIsFocused] = useState(false)
   const [activeIndex, setActiveIndex] = useState(-1)
