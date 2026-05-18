@@ -12,9 +12,9 @@ export const initLinkedInPixel = () => {
   window._linkedin_data_partner_ids.push(LINKEDIN_PARTNER_ID)
 
   // Cargar el script de LinkedIn Insight Tag
-  ;(function (l) {
+  ;(function (l: any) {
     if (!l) {
-      window.lintrk = function (a, b) {
+      window.lintrk = function (a: string, b?: any) {
         // Queue calls until the script loads
         console.debug("[LinkedIn]", a, b)
       }

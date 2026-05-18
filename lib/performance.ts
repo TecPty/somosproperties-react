@@ -17,7 +17,7 @@ export interface PerformanceMetrics {
 /**
  * Send Web Vitals to Google Analytics
  */
-export function reportWebVitals(metric: { name: string; id: string; value: number; rating: string }) {
+export function reportWebVitals(metric: { name: string; id: string; value: number; rating: string; delta?: number }) {
   if (typeof window === "undefined") return
 
   // Send to Google Analytics
