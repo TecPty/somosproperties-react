@@ -213,8 +213,8 @@
         "/images/properties/kings-park/torre-500/apto-3b/laundry-service-1.webp"
       ],
       "planos": [
-        "/images/properties/kings-park/plano-modelo-a.webp",
-        "/images/properties/kings-park/plano-modelo-b.webp"
+        "/images/properties/kings-park/floorplans/plano-modelo-a.webp",
+        "/images/properties/kings-park/floorplans/plano-modelo-b.webp"
       ],
       "featured": true,
       "status": "available",
@@ -280,8 +280,8 @@
         "/images/properties/kings-park/torre-500/apto-10b/kings-park-apt-pasillo-01-empty.webp"
       ],
       "planos": [
-        "/images/properties/kings-park/plano-modelo-a.webp",
-        "/images/properties/kings-park/plano-modelo-b.webp"
+        "/images/properties/kings-park/floorplans/plano-modelo-a.webp",
+        "/images/properties/kings-park/floorplans/plano-modelo-b.webp"
       ],
       "featured": true,
       "status": "available",
