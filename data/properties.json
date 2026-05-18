@@ -3208,7 +3208,8 @@
         "Seguridad y estacionamientos"
       ],
       "slug": "playa-escondida-torre-00-unidad-0",
-      "description_en": "Unit 1201 in Tower 100 at Playa Escondida. 263.36 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $912,542."
+      "description_en": "Unit 1201 in Tower 100 at Playa Escondida. 263.36 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $912,542.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -3232,7 +3233,7 @@
       ],
       "planos": [],
       "featured": false,
-      "status": "sold",
+      "status": "available",
       "id": 165,
       "title": "Playa Escondida Torre 100 - Unidad 1202",
       "price": 624750,
@@ -3257,7 +3258,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-165",
-      "description_en": "Unit 1202 in Tower 100 at Playa Escondida. 148.75 m², Ocean View. Layout: 2 bedrooms + den + service room. Sale price: $624,750."
+      "description_en": "Unit 1202 in Tower 100 at Playa Escondida. 148.75 m², Ocean View. Layout: 2 bedrooms + den + service room. Sale price: $624,750.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -3306,7 +3308,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-166",
-      "description_en": "Unit 1203 in Tower 100 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $903,776."
+      "description_en": "Unit 1203 in Tower 100 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $903,776.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -3355,7 +3358,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-167",
-      "description_en": "Unit 1101 in Tower 100 at Playa Escondida. 263.36 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $912,542."
+      "description_en": "Unit 1101 in Tower 100 at Playa Escondida. 263.36 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $912,542.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -3379,7 +3383,7 @@
       ],
       "planos": [],
       "featured": false,
-      "status": "sold",
+      "status": "available",
       "id": 168,
       "title": "Playa Escondida Torre 100 - Unidad 1103",
       "price": 903776,
@@ -3404,7 +3408,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-0-168",
-      "description_en": "Unit 1103 in Tower 100 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $903,776."
+      "description_en": "Unit 1103 in Tower 100 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $903,776.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -3477,11 +3482,11 @@
       ],
       "planos": [],
       "featured": false,
-      "status": "sold",
+      "status": "available",
       "id": 170,
       "title": "Playa Escondida Torre 100 - Unidad 1002",
-      "price": 670992,
-      "area": 199.7,
+      "price": 654226,
+      "area": 194.71,
       "bedrooms": 3,
       "bathrooms": 3,
       "view": "Ocean View",
@@ -3502,7 +3507,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-00-170",
-      "description_en": "Unit 1002 in Tower 100 at Playa Escondida. 199.70 m², Ocean View. Layout: 3 bedrooms + service room. Sale price: $670,992."
+      "description_en": "Unit 1002 in Tower 100 at Playa Escondida. 199.70 m², Ocean View. Layout: 3 bedrooms + service room. Sale price: $670,992.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -3526,12 +3532,12 @@
       ],
       "planos": [],
       "featured": false,
-      "status": "sold",
+      "status": "available",
       "id": 171,
       "title": "Playa Escondida Torre 100 - Unidad 1004",
-      "price": 671698,
-      "area": 199.91,
-      "bedrooms": 3,
+      "price": 421281,
+      "area": 111.45,
+      "bedrooms": 1,
       "bathrooms": 3,
       "view": "Lake & Ocean View",
       "description": "Unidad 1004 en Torre 100 de Playa Escondida. 199.91 m², Lake & Ocean View. Tipologia 3C + S. Precio de venta $ 671,698.",
@@ -3551,7 +3557,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-00-unidad-00-171",
-      "description_en": "Unit 1004 in Tower 100 at Playa Escondida. 199.91 m², Lake & Ocean View. Layout: 3 bedrooms + service room. Sale price: $671,698."
+      "description_en": "Unit 1004 in Tower 100 at Playa Escondida. 199.91 m², Lake & Ocean View. Layout: 3 bedrooms + service room. Sale price: $671,698.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -4652,7 +4659,7 @@
       ],
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "sold",
       "id": 194,
       "title": "Playa Escondida Torre 100 - Unidad 203",
       "price": 543488,
@@ -4701,7 +4708,7 @@
       ],
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "sold",
       "id": 195,
       "title": "Playa Escondida Torre 100 - Unidad 204",
       "price": 543488,
@@ -4900,7 +4907,7 @@
       "status": "available",
       "id": 199,
       "title": "Playa Escondida Torre 90 - Unidad 1203",
-      "price": 860739,
+      "price": 834656,
       "area": 260.83,
       "bedrooms": 4,
       "bathrooms": 4,
@@ -4922,7 +4929,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0",
-      "description_en": "Unit 1203 in Tower 90 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $860,739."
+      "description_en": "Unit 1203 in Tower 90 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $860,739.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -4949,7 +4957,7 @@
       "status": "available",
       "id": 200,
       "title": "Playa Escondida Torre 90 - Unidad 1101",
-      "price": 869088,
+      "price": 895161,
       "area": 263.36,
       "bedrooms": 4,
       "bathrooms": 4,
@@ -4971,7 +4979,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-200",
-      "description_en": "Unit 1101 in Tower 90 at Playa Escondida. 263.36 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $869,088."
+      "description_en": "Unit 1101 in Tower 90 at Playa Escondida. 263.36 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $869,088.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -4998,7 +5007,7 @@
       "status": "available",
       "id": 201,
       "title": "Playa Escondida Torre 90 - Unidad 1103",
-      "price": 860739,
+      "price": 834656,
       "area": 260.83,
       "bedrooms": 4,
       "bathrooms": 4,
@@ -5020,7 +5029,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-201",
-      "description_en": "Unit 1103 in Tower 90 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $860,739."
+      "description_en": "Unit 1103 in Tower 90 at Playa Escondida. 260.83 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $860,739.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5145,7 +5155,7 @@
       "status": "available",
       "id": 204,
       "title": "Playa Escondida Torre 90 - Unidad 801",
-      "price": 451440,
+      "price": 464983,
       "area": 150.48,
       "bedrooms": 3,
       "bathrooms": 3,
@@ -5167,7 +5177,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-204",
-      "description_en": "Unit 801 in Tower 90 at Playa Escondida. 150.48 m², Lake View. Layout: 3 bedrooms + service room. Sale price: $451,440."
+      "description_en": "Unit 801 in Tower 90 at Playa Escondida. 150.48 m², Lake View. Layout: 3 bedrooms + service room. Sale price: $451,440.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5194,7 +5205,7 @@
       "status": "available",
       "id": 205,
       "title": "Playa Escondida Torre 90 - Unidad 701",
-      "price": 451440,
+      "price": 464983,
       "area": 150.48,
       "bedrooms": 3,
       "bathrooms": 3,
@@ -5216,7 +5227,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-205",
-      "description_en": "Unit 701 in Tower 90 at Playa Escondida. 150.48 m², Lake View. Layout: 3 bedrooms + service room. Sale price: $451,440."
+      "description_en": "Unit 701 in Tower 90 at Playa Escondida. 150.48 m², Lake View. Layout: 3 bedrooms + service room. Sale price: $451,440.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5292,7 +5304,7 @@
       "status": "available",
       "id": 207,
       "title": "Playa Escondida Torre 90 - Unidad 501",
-      "price": 457740,
+      "price": 471472,
       "area": 152.58,
       "bedrooms": 3,
       "bathrooms": 3,
@@ -5314,7 +5326,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-207",
-      "description_en": "Unit 501 in Tower 90 at Playa Escondida. 152.58 m², Lake View. Layout: 3 bedrooms + service room. Sale price: $457,740."
+      "description_en": "Unit 501 in Tower 90 at Playa Escondida. 152.58 m², Lake View. Layout: 3 bedrooms + service room. Sale price: $457,740.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5341,7 +5354,7 @@
       "status": "available",
       "id": 208,
       "title": "Playa Escondida Torre 90 - Unidad 401",
-      "price": 457740,
+      "price": 471472,
       "area": 152.58,
       "bedrooms": 4,
       "bathrooms": 4,
@@ -5363,7 +5376,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-208",
-      "description_en": "Unit 401 in Tower 90 at Playa Escondida. 152.58 m², Lake View. Layout: 4 bedrooms. Sale price: $457,740."
+      "description_en": "Unit 401 in Tower 90 at Playa Escondida. 152.58 m², Lake View. Layout: 4 bedrooms. Sale price: $457,740.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5390,7 +5404,7 @@
       "status": "available",
       "id": 209,
       "title": "Playa Escondida Torre 90 - Unidad 306",
-      "price": 411090,
+      "price": 423423,
       "area": 137.03,
       "bedrooms": 3,
       "bathrooms": 3,
@@ -5412,7 +5426,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-209",
-      "description_en": "Unit 306 in Tower 90 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $411,090."
+      "description_en": "Unit 306 in Tower 90 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $411,090.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5439,7 +5454,7 @@
       "status": "available",
       "id": 210,
       "title": "Playa Escondida Torre 90 - Unidad 206",
-      "price": 411090,
+      "price": 423423,
       "area": 137.03,
       "bedrooms": 3,
       "bathrooms": 3,
@@ -5461,7 +5476,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-210",
-      "description_en": "Unit 206 in Tower 90 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $411,090."
+      "description_en": "Unit 206 in Tower 90 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $411,090.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5488,7 +5504,7 @@
       "status": "available",
       "id": 211,
       "title": "Playa Escondida Torre 90 - Unidad 101",
-      "price": 1350000,
+      "price": 1250000,
       "area": 434.5,
       "bedrooms": 4,
       "bathrooms": 4,
@@ -5510,7 +5526,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-211",
-      "description_en": "Unit 101 in Tower 90 at Playa Escondida. 434.50 m², Lake & Ocean View. Layout: 4 bedrooms + den + service room. Sale price: $1,350,000."
+      "description_en": "Unit 101 in Tower 90 at Playa Escondida. 434.50 m², Lake & Ocean View. Layout: 4 bedrooms + den + service room. Sale price: $1,350,000.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -5537,7 +5554,7 @@
       "status": "available",
       "id": 212,
       "title": "Playa Escondida Torre 90 - Unidad 102",
-      "price": 1400000,
+      "price": 1350000,
       "area": 510.97,
       "bedrooms": 5,
       "bathrooms": 5,
@@ -5559,7 +5576,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-212",
-      "description_en": "Unit 102 in Tower 90 at Playa Escondida. 510.97 m², Lake & Ocean View. Layout: 5 bedrooms + den + service room. Sale price: $1,400,000."
+      "description_en": "Unit 102 in Tower 90 at Playa Escondida. 510.97 m², Lake & Ocean View. Layout: 5 bedrooms + den + service room. Sale price: $1,400,000.",
+      "hidden": false
     },
     {
       "type": "Villa",
@@ -6367,10 +6385,10 @@
       ],
       "planos": [],
       "featured": false,
-      "status": "sold",
+      "status": "available",
       "id": 229,
       "title": "Playa Escondida Torre 80 - Unidad 1001",
-      "price": 911400,
+      "price": 1082464,
       "area": 338.27,
       "bedrooms": 4,
       "bathrooms": 4,
@@ -6392,7 +6410,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-00-229",
-      "description_en": "Unit 1001 in Tower 80 at Playa Escondida. 338.27 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $911,400."
+      "description_en": "Unit 1001 in Tower 80 at Playa Escondida. 338.27 m², Lake & Ocean View. Layout: 4 bedrooms + service room. Sale price: $911,400.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -6441,7 +6460,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-230",
-      "description_en": "Unit 206 in Tower 80 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $423,423."
+      "description_en": "Unit 206 in Tower 80 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $423,423.",
+      "hidden": false
     },
     {
       "type": "Apartamento",
@@ -6490,7 +6510,8 @@
       ],
       "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
       "slug": "playa-escondida-torre-0-unidad-0-231",
-      "description_en": "Unit 306 in Tower 80 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $423,423."
+      "description_en": "Unit 306 in Tower 80 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $423,423.",
+      "hidden": false
     },
     {
       "id": 248,
@@ -8442,6 +8463,206 @@
       ],
       "slug": "central-plaza-local-21",
       "description_en": "Central Plaza offers two levels with 42 commercial spaces in various sizes, ideal for any business. Restaurants, game zone, gym, banks, hardware store, beauty salon, shipping services and more. 70 parking spaces with access from Av. Juan Demóstenes Arosemena and Av. Omar Torrijos."
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Playa Escondida, Colon",
+      "city": "Colon",
+      "district": "Costa Arriba",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+      "images": [
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
+      ],
+      "planos": [],
+      "featured": false,
+      "status": "available",
+      "id": 2003,
+      "title": "Playa Escondida Torre 80 - Unidad 301",
+      "price": 471472,
+      "area": 152.58,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "view": "Lake View",
+      "description": "Unidad 206 en Torre 100 de Playa Escondida. 137.03 m2, Lake View. Tipologia 3C. Precio de venta $ 431,645.",
+      "highlights": [
+        "137.03 m2, tipologia 3C",
+        "Vista: Lake View",
+        "Precio $ 431,645",
+        "Acceso a amenidades de resort en Playa Escondida"
+      ],
+      "amenities": [
+        "Vistas al mar Caribe y lagos interiores",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
+        "Acceso a club de playa y piscinas",
+        "Seguridad y estacionamientos"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
+      "slug": "playa-escondida-torre-80-unidad-301",
+      "description_en": "Unit 206 in Tower 100 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $431,645.",
+      "hidden": false
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Playa Escondida, Colon",
+      "city": "Colon",
+      "district": "Costa Arriba",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+      "images": [
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
+      ],
+      "planos": [],
+      "featured": false,
+      "status": "available",
+      "id": 2004,
+      "title": "Playa Escondida Torre 90 - Unidad 601",
+      "price": 413782,
+      "area": 133.91,
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "view": "Lake View",
+      "description": "Unidad 206 en Torre 100 de Playa Escondida. 137.03 m2, Lake View. Tipologia 3C. Precio de venta $ 431,645.",
+      "highlights": [
+        "137.03 m2, tipologia 3C",
+        "Vista: Lake View",
+        "Precio $ 431,645",
+        "Acceso a amenidades de resort en Playa Escondida"
+      ],
+      "amenities": [
+        "Vistas al mar Caribe y lagos interiores",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
+        "Acceso a club de playa y piscinas",
+        "Seguridad y estacionamientos"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
+      "slug": "playa-escondida-torre-90-unidad-601",
+      "description_en": "Unit 206 in Tower 100 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $431,645.",
+      "hidden": false
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Playa Escondida, Colon",
+      "city": "Colon",
+      "district": "Costa Arriba",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+      "images": [
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
+      ],
+      "planos": [],
+      "featured": false,
+      "status": "available",
+      "id": 2005,
+      "title": "Playa Escondida Torre 90 - Unidad 203",
+      "price": 533136,
+      "area": 143.78,
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "view": "Lake View",
+      "description": "Unidad 206 en Torre 100 de Playa Escondida. 137.03 m2, Lake View. Tipologia 3C. Precio de venta $ 431,645.",
+      "highlights": [
+        "137.03 m2, tipologia 3C",
+        "Vista: Lake View",
+        "Precio $ 431,645",
+        "Acceso a amenidades de resort en Playa Escondida"
+      ],
+      "amenities": [
+        "Vistas al mar Caribe y lagos interiores",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
+        "Acceso a club de playa y piscinas",
+        "Seguridad y estacionamientos"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
+      "slug": "playa-escondida-torre-90-unidad-203",
+      "description_en": "Unit 206 in Tower 100 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $431,645.",
+      "hidden": false
+    },
+    {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "pricePerMonth": null,
+      "location": "Playa Escondida, Colon",
+      "city": "Colon",
+      "district": "Costa Arriba",
+      "parkingSpots": 2,
+      "builtYear": 2025,
+      "image": "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+      "images": [
+        "/images/properties/playa-escondida/hero/piscinas-frente-torres.webp",
+        "/images/properties/playa-escondida/hero/torres-fachada-jardin.webp",
+        "/images/properties/playa-escondida/hero/villa-jardin-piscina.webp",
+        "/images/properties/playa-escondida/hero/playa-palmeras-water-bike.webp",
+        "/images/properties/playa-escondida/hero/piscinas-frente-playa.webp",
+        "/images/properties/playa-escondida/gallery/dormitorio-blanco.webp",
+        "/images/properties/playa-escondida/gallery/interior-comedor-costero.webp"
+      ],
+      "planos": [],
+      "featured": false,
+      "status": "available",
+      "id": 2006,
+      "title": "Playa Escondida Torre 90 - Unidad 204",
+      "price": 533136,
+      "area": 143.78,
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "view": "Lake View",
+      "description": "Unidad 206 en Torre 100 de Playa Escondida. 137.03 m2, Lake View. Tipologia 3C. Precio de venta $ 431,645.",
+      "highlights": [
+        "137.03 m2, tipologia 3C",
+        "Vista: Lake View",
+        "Precio $ 431,645",
+        "Acceso a amenidades de resort en Playa Escondida"
+      ],
+      "amenities": [
+        "Vistas al mar Caribe y lagos interiores",
+        "Balcón amplio",
+        "Cocina y lavandería",
+        "A/C y ventilación natural",
+        "Acceso a club de playa y piscinas",
+        "Seguridad y estacionamientos"
+      ],
+      "thumbnail": "/images/properties/playa-escondida/promotional/thumbnail-playa-escondida.webp",
+      "slug": "playa-escondida-torre-90-unidad-204",
+      "description_en": "Unit 206 in Tower 100 at Playa Escondida. 137.03 m², Lake View. Layout: 3 bedrooms. Sale price: $431,645.",
+      "hidden": false
     }
   ]
 }
