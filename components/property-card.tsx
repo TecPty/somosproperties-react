@@ -26,7 +26,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
     property.operation === "Venta" 
       ? (property.price > 0 ? formatPrice(property.price) : "Consultar Precio")
       : ((property.pricePerMonth || 0) > 0 ? `${formatPrice(property.pricePerMonth || 0)}${t('perMonth')}` : "Consultar Precio")
-  const statusLabel = property.status === "sold" ? t('sold') : null
+  const isSold = property.status === "sold"
   const isRented = property.status === "rented"
   const isPremiumProperty = isPremium(property)
   const imageCount = property.images?.length ?? 1
@@ -103,18 +103,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             </div>
           )}
 
-          {/* Sold / Rented */}
-          {isRented && (
-            <div className="absolute inset-0 z-20 flex items-center justify-center">
+          {/* Sold / Rented Stamp */}
+          {(isRented || isSold) && (
+            <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
               <span className="rotate-[-15deg] border-[3px] border-[#ea384c] text-[#ea384c] text-xl font-black px-4 py-1 rounded opacity-75 select-none uppercase">
-                {t('rented')}
+                {isRented ? t('rented') : t('sold')}
               </span>
             </div>
-          )}
-          {statusLabel && (
-            <span className="absolute bottom-3 right-3 z-10 rounded-md px-3 py-1 text-xs font-semibold uppercase text-white shadow-sm bg-[#d92d2d]">
-              {statusLabel}
-            </span>
           )}
         </div>
       </Link>
