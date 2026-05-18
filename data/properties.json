@@ -283,7 +283,7 @@
       ],
       "featured": true,
       "status": "rented",
-      "hidden": true,
+      "hidden": false,
       "highlights": [
         "Local comercial en Central Plaza La Chorrera",
         "Fachada visible con estacionamientos",
@@ -1480,7 +1480,8 @@
         "Seguridad 24/7 y acceso biométrico"
       ],
       "slug": "evolution-tower-apartamentos-modernos",
-      "description_en": "Evolution Tower: cutting-edge residential project in Panama City. Units with 1–3 bedrooms from 55 m². Infinity pool, gym, co-working lounge and 24/7 security."
+      "description_en": "Evolution Tower: cutting-edge residential project in Panama City. Units with 1–3 bedrooms from 55 m². Infinity pool, gym, co-working lounge and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Oficina",
@@ -2633,7 +2634,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 151,
@@ -2675,7 +2677,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-151",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 152,
@@ -2717,7 +2720,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-152",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 153,
@@ -2759,7 +2763,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-153",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 154,
@@ -2801,7 +2806,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-154",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 155,
@@ -2843,7 +2849,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-155",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 156,
@@ -2885,7 +2892,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-156",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 157,
@@ -2927,7 +2935,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-157",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 158,
@@ -2969,7 +2978,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-158",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 159,
@@ -3011,7 +3021,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-0",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 160,
@@ -3053,7 +3064,8 @@
         "Estacionamiento incluido"
       ],
       "slug": "evolution-tower-oficina-160",
-      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist."
+      "description_en": "Corporate office at Evolution Tower (Calle 50). Currently at full occupancy; shown for portfolio reference and waitlist.",
+      "hidden": false
     },
     {
       "id": 161,
@@ -8298,6 +8310,138 @@
       ],
       "description": "Casa 274 – Praderas de Arraiján (Etapa 2). Modelo Almendro Dúplex 2 Pisos · Entrega Junio 2026.\n\n3 recámaras, 2.5 baños, 90 m², 2 estacionamientos techados. Diseño en 2 plantas con sala-comedor en planta baja y recámaras en planta alta. Acceso directo a Línea 3 del Metro. Pumptrack, piscina, gimnasio y áreas verdes. Ingreso familiar desde $1,500.",
       "description_en": "House 274 at Praderas de Arraiján (Stage 2). Almendro 2-story duplex — Entrega Junio 2026. 3 bedrooms, 2.5 bathrooms, 90 m², 2 covered parking spaces. Two-story layout: living/dining on ground floor, bedrooms upstairs. Direct access to Metro Line 3. Pumptrack, pool, gym and green areas. Min. household income $1,500."
+    },
+    {
+      "id": 2000,
+      "title": "Central Plaza - Local 16",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 837.15,
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "La Chorrera",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "parkingSpots": 70,
+      "area": 55.81,
+      "builtYear": 2024,
+      "image": "/images/properties/central-plaza/hero.webp",
+      "images": [
+        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero-1080.webp",
+        "/images/properties/central-plaza/hero-1600.webp"
+      ],
+      "planos": [],
+      "description": "Central Plaza consta de dos niveles con un total de 42 locales comerciales con diferentes metrajes ideales para su proyecto. Restaurantes, Zona de juegos, Gimnasio, Bancos, Ferretería, Salón de belleza, Envíos y más. Cuenta con 70 estacionamientos y acceso entre Av. Juan Demóstenes Arosemena y Av. Omar Torrijos.",
+      "amenities": [
+        "CCTV",
+        "Estacionamiento (70 espacios)",
+        "Seguridad 24/7",
+        "Alarma contra incendios",
+        "Depósito de desechos",
+        "Acceso a dos vías principales"
+      ],
+      "featured": true,
+      "status": "rented",
+      "hidden": false,
+      "highlights": [
+        "Local comercial en Central Plaza La Chorrera",
+        "Fachada visible con estacionamientos",
+        "Acceso directo desde vía principal",
+        "Ideal retail o servicios"
+      ],
+      "slug": "central-plaza-local-16",
+      "description_en": "Central Plaza offers two levels with 42 commercial spaces in various sizes, ideal for any business. Restaurants, game zone, gym, banks, hardware store, beauty salon, shipping services and more. 70 parking spaces with access from Av. Juan Demóstenes Arosemena and Av. Omar Torrijos."
+    },
+    {
+      "id": 2001,
+      "title": "Central Plaza - Local 20",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 1004.25,
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "La Chorrera",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "parkingSpots": 70,
+      "area": 66.95,
+      "builtYear": 2024,
+      "image": "/images/properties/central-plaza/hero.webp",
+      "images": [
+        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero-1080.webp",
+        "/images/properties/central-plaza/hero-1600.webp"
+      ],
+      "planos": [],
+      "description": "Central Plaza consta de dos niveles con un total de 42 locales comerciales con diferentes metrajes ideales para su proyecto. Restaurantes, Zona de juegos, Gimnasio, Bancos, Ferretería, Salón de belleza, Envíos y más. Cuenta con 70 estacionamientos y acceso entre Av. Juan Demóstenes Arosemena y Av. Omar Torrijos.",
+      "amenities": [
+        "CCTV",
+        "Estacionamiento (70 espacios)",
+        "Seguridad 24/7",
+        "Alarma contra incendios",
+        "Depósito de desechos",
+        "Acceso a dos vías principales"
+      ],
+      "featured": true,
+      "status": "rented",
+      "hidden": false,
+      "highlights": [
+        "Local comercial en Central Plaza La Chorrera",
+        "Fachada visible con estacionamientos",
+        "Acceso directo desde vía principal",
+        "Ideal retail o servicios"
+      ],
+      "slug": "central-plaza-local-20",
+      "description_en": "Central Plaza offers two levels with 42 commercial spaces in various sizes, ideal for any business. Restaurants, game zone, gym, banks, hardware store, beauty salon, shipping services and more. 70 parking spaces with access from Av. Juan Demóstenes Arosemena and Av. Omar Torrijos."
+    },
+    {
+      "id": 2002,
+      "title": "Central Plaza - Local 21",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": 1704.3,
+      "location": "La Chorrera, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "La Chorrera",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "parkingSpots": 70,
+      "area": 113.62,
+      "builtYear": 2024,
+      "image": "/images/properties/central-plaza/hero.webp",
+      "images": [
+        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero-1080.webp",
+        "/images/properties/central-plaza/hero-1600.webp"
+      ],
+      "planos": [],
+      "description": "Central Plaza consta de dos niveles con un total de 42 locales comerciales con diferentes metrajes ideales para su proyecto. Restaurantes, Zona de juegos, Gimnasio, Bancos, Ferretería, Salón de belleza, Envíos y más. Cuenta con 70 estacionamientos y acceso entre Av. Juan Demóstenes Arosemena y Av. Omar Torrijos.",
+      "amenities": [
+        "CCTV",
+        "Estacionamiento (70 espacios)",
+        "Seguridad 24/7",
+        "Alarma contra incendios",
+        "Depósito de desechos",
+        "Acceso a dos vías principales"
+      ],
+      "featured": true,
+      "status": "rented",
+      "hidden": false,
+      "highlights": [
+        "Local comercial en Central Plaza La Chorrera",
+        "Fachada visible con estacionamientos",
+        "Acceso directo desde vía principal",
+        "Ideal retail o servicios"
+      ],
+      "slug": "central-plaza-local-21",
+      "description_en": "Central Plaza offers two levels with 42 commercial spaces in various sizes, ideal for any business. Restaurants, game zone, gym, banks, hardware store, beauty salon, shipping services and more. 70 parking spaces with access from Av. Juan Demóstenes Arosemena and Av. Omar Torrijos."
     }
   ]
 }
