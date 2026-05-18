@@ -76,7 +76,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
           poster="/images/hero-poster.webp"
         >
@@ -252,6 +252,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   width={336}
                   height={336}
                   className="object-contain"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.advisory.title')}</h3>
@@ -267,6 +268,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   width={336}
                   height={336}
                   className="object-contain"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.prices.title')}</h3>
@@ -282,6 +284,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   width={336}
                   height={336}
                   className="object-contain"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.security.title')}</h3>
