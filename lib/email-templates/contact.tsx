@@ -108,7 +108,7 @@ export const contactEmailHTML = ({
           
           <div class="footer">
             <p>SOMOS Properties</p>
-            <p>📧 info@somosproperties.com | 🌐 somosproperties.com | 📍 Panamá</p>
+            <p>📧 ventas@somosproperties.com | 🌐 somosproperties.com | 📍 Panamá</p>
           </div>
         </div>
       </div>

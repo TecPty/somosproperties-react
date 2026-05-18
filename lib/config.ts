@@ -14,7 +14,7 @@ export const CONTACT = {
   },
 
   // Email general
-  email: "info@somosproperties.com",
+  email: "ventas@somosproperties.com",
 
   // Email para leads/ventas (formularios)
   sales_email: "ventas@somosproperties.com",

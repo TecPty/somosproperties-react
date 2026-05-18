@@ -193,7 +193,7 @@ export function getLocalBusinessSchema() {
     description: "Agencia de bienes raíces en Panamá",
     url: baseUrl,
     telephone: "+507-XXXX-XXXX",
-    email: "info@somosproperties.com",
+    email: "ventas@somosproperties.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Panama City",
@@ -208,7 +208,7 @@ export function getLocalBusinessSchema() {
       "@type": "ContactPoint",
       contactType: "Customer Service",
       telephone: "+507-XXXX-XXXX",
-      email: "info@somosproperties.com",
+      email: "ventas@somosproperties.com",
     },
   }
 }

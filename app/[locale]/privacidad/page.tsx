@@ -210,7 +210,7 @@ export default async function PrivacidadPage() {
                 {t('sections.11.intro')}
               </p>
               <div className="space-y-2">
-                <p><strong>{t('sections.11.emailLabel')}</strong> <a href="mailto:info@somosproperties.com" className="text-[#3898EC] hover:underline">info@somosproperties.com</a></p>
+                <p><strong>{t('sections.11.emailLabel')}</strong> <a href="mailto:ventas@somosproperties.com" className="text-[#3898EC] hover:underline">ventas@somosproperties.com</a></p>
                 <p><strong>{t('sections.11.privacyLabel')}</strong> <a href="mailto:privacidad@somosproperties.com" className="text-[#3898EC] hover:underline">privacidad@somosproperties.com</a></p>
                 <p><strong>{t('sections.11.phoneLabel')}</strong> +507 6777-0577</p>
                 <p><strong>{t('sections.11.locationLabel')}</strong> Panamá, República de Panamá</p>

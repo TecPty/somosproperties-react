@@ -110,8 +110,8 @@ export default function CookiePrefencesPage() {
               </p>
               <p className="text-[#666666]">
                 <strong>Email:</strong>{" "}
-                <a href="mailto:info@somosproperties.com" className="text-[#3898EC] hover:underline">
-                  info@somosproperties.com
+                <a href="mailto:ventas@somosproperties.com" className="text-[#3898EC] hover:underline">
+                  ventas@somosproperties.com
                 </a>
               </p>
             </div>

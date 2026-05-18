@@ -125,7 +125,7 @@ export default async function TerminosPage() {
                 {t('sections.12.intro')}
               </p>
               <div className="space-y-2">
-                <p><strong>{t('sections.12.emailLabel')}</strong> <a href="mailto:info@somosproperties.com" className="text-[#3898EC] hover:underline">info@somosproperties.com</a></p>
+                <p><strong>{t('sections.12.emailLabel')}</strong> <a href="mailto:ventas@somosproperties.com" className="text-[#3898EC] hover:underline">ventas@somosproperties.com</a></p>
                 <p><strong>{t('sections.12.phoneLabel')}</strong> +507 6777-0577</p>
               </div>
             </section>
