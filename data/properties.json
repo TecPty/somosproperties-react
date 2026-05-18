@@ -565,7 +565,7 @@
         "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
+        "/images/properties/praderas-de-arraijan/amenities/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=ASotyyK41C1",
@@ -677,7 +677,7 @@
         "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
+        "/images/properties/praderas-de-arraijan/amenities/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=ASotyyK41C1",
@@ -736,8 +736,8 @@
         "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
+        "/images/properties/praderas-de-arraijan/amenities/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenities/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -795,8 +795,8 @@
         "/images/properties/praderas-de-arraijan/exterior/praderas-fachada-principal.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-mesa-redonda.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
+        "/images/properties/praderas-de-arraijan/amenities/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenities/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -855,8 +855,8 @@
         "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-comedor-formal.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-area-juegos-infantiles.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
+        "/images/properties/praderas-de-arraijan/amenities/praderas-area-juegos-infantiles.webp",
+        "/images/properties/praderas-de-arraijan/amenities/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=SHsQfWJMM9J",
@@ -916,7 +916,7 @@
         "/images/properties/praderas-de-arraijan/exterior/praderas-dos-niveles-fachada.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-recamara-principal.webp",
         "/images/properties/praderas-de-arraijan/gallery/praderas-sala-ventanal-parque.webp",
-        "/images/properties/praderas-de-arraijan/amenidades/praderas-parque-central-caminos.webp"
+        "/images/properties/praderas-de-arraijan/amenities/praderas-parque-central-caminos.webp"
       ],
       "planos": [],
       "virtualTour": "https://my.matterport.com/show/?m=ASotyyK41C1",
@@ -2367,7 +2367,7 @@
         "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [],
-      "description": "Local 411 en Plaza Sunset Strip (Nivel 4), 36 m². Canon $680/mes + mantenimiento $1.50/m² ($54/mes). Ideal para oficina boutique, consultorio o estudio creativo en planta alta.",
+      "description": "Local 411 en Plaza Sunset Strip (Nivel 4), 36 m². Canon $680/mes + mantenimiento $1.50/m² ($54/mes). Ideal para oficina boutique, consultorio o estudio creativo en planta alta.\n\nMantenimiento mensual: $54",
       "amenities": [
         "Vista elevada hacia Vía Israel",
         "Lobby y circulación climatizada",
@@ -2416,7 +2416,7 @@
       "planos": [
         "/images/properties/sunset-strip/floorplans/nivel-200.webp"
       ],
-      "description": "Local 306 en Plaza Sunset Strip (Nivel 3), 80 m². Canon $1,375/mes + mantenimiento $1.50/m² ($120/mes). Local interior en pasillo climatizado con escaleras eléctricas. Ideal para boutique, estudio o servicio especializado.",
+      "description": "Local 306 en Plaza Sunset Strip (Nivel 3), 80 m². Canon $1,375/mes + mantenimiento $1.50/m² ($120/mes). Local interior en pasillo climatizado con escaleras eléctricas. Ideal para boutique, estudio o servicio especializado.\n\nMantenimiento mensual: $120",
       "amenities": [
         "Planta 00 con acceso directo desde estacionamiento",
         "Fachada con vitrina de piso a techo",
@@ -2528,56 +2528,6 @@
       "category": "Comercial",
       "operation": "Alquiler",
       "price": 0,
-      "pricePerMonth": 5100,
-      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "builtYear": 2024,
-      "featured": true,
-      "status": "available",
-      "id": 148,
-      "title": "Sunset Strip – Local 029",
-      "type": "Local",
-      "area": 164,
-      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
-      "images": [
-        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
-        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
-        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
-        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
-        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
-      ],
-      "planos": [
-        "/images/properties/sunset-strip/floorplans/nivel-00.webp"
-      ],
-      "description": "Local 029 en Plaza Sunset Strip (Planta Baja), 164 m². Canon $5,100/mes + mantenimiento $2.00/m² ($328/mes). El local más grande de Planta Baja, con acceso directo desde estacionamiento y frente a vía principal.",
-      "amenities": [
-        "Nivel 100 con acceso por escaleras eléctricas",
-        "162 m² de espacio amplio (84+78)",
-        "Estacionamientos aire libre y bajo techo",
-        "4 elevadores y seguridad 24/7",
-        "1 hora gratis de estacionamiento"
-      ],
-      "highlights": [
-        "164 m² en Planta Baja",
-        "Canon $5,100 + HOA $328/mes",
-        "Acceso directo desde estacionamiento",
-        "Local de mayor tamaño en Planta Baja"
-      ],
-      "slug": "sunset-strip-local-029",
-      "description_en": "Unit 029 at Plaza Sunset Strip (Ground Floor), 164 m². Rent $5,100/mo + maintenance fee $2.00/m² ($328/mo). Largest ground-floor unit with direct parking access and main street frontage.",
-      "hoa": 328,
-      "hidden": false
-    },
-    {
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
       "pricePerMonth": 3500,
       "location": "Vía Israel, San Francisco, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
@@ -2649,7 +2599,7 @@
       "planos": [
         "/images/properties/sunset-strip/floorplans/nivel-00.webp"
       ],
-      "description": "Local 026 en Plaza Sunset Strip (Planta Baja), 69 m² interiores + 29 m² de terraza = 98 m² totales. Canon $2,500/mes + mantenimiento $2.00/m² ($196/mes). Con acceso directo desde estacionamiento y vitrina de piso a techo.",
+      "description": "Local 026 en Plaza Sunset Strip (Planta Baja), 69 m² interiores + 29 m² de terraza = 98 m² totales. Canon $2,500/mes + mantenimiento $2.00/m² ($196/mes). Con acceso directo desde estacionamiento y vitrina de piso a techo.\n\nMantenimiento mensual: $196",
       "amenities": [
         "Terraza de 29 m² para mesas exteriores",
         "Acceso peatonal y estacionamientos al frente",
@@ -2665,55 +2615,6 @@
       "slug": "sunset-strip-local-026",
       "description_en": "Unit 026 at Plaza Sunset Strip (Ground Floor), 69 m² interior + 29 m² terrace = 98 m² total. Rent $2,500/mo + maintenance fee $2.00/m² ($196/mo). Direct parking access and floor-to-ceiling storefront window.",
       "hoa": 196,
-      "hidden": false
-    },
-    {
-      "category": "Comercial",
-      "operation": "Alquiler",
-      "price": 0,
-      "pricePerMonth": 830,
-      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
-      "city": "Ciudad de Panamá",
-      "district": "San Francisco",
-      "bedrooms": 0,
-      "bathrooms": 1,
-      "parkingSpots": 0,
-      "builtYear": 2024,
-      "featured": false,
-      "status": "available",
-      "id": 144,
-      "title": "Sunset Strip – Local 112",
-      "type": "Local",
-      "area": 46,
-      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
-      "images": [
-        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
-        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
-        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
-        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
-        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
-        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
-        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
-      ],
-      "planos": [
-        "/images/properties/sunset-strip/floorplans/nivel-100.webp"
-      ],
-      "description": "Local 112 en Plaza Sunset Strip (Nivel 1), 46 m². Canon $830/mes + mantenimiento $1.50/m² ($69/mes). Local en planta alta con escaleras eléctricas y pasillo climatizado.",
-      "amenities": [
-        "Mezanine 100 con acceso por escaleras eléctricas y ascensor",
-        "Fachada de vidrio para máxima visibilidad",
-        "Pasillo climatizado",
-        "Seguridad 24/7"
-      ],
-      "highlights": [
-        "46 m² en Nivel 1",
-        "Canon $830 + HOA $69/mes",
-        "Acceso por escaleras eléctricas",
-        "Pasillo climatizado"
-      ],
-      "slug": "sunset-strip-local-112",
-      "description_en": "Unit 112 at Plaza Sunset Strip (Level 1), 46 m². Rent $830/mo + maintenance fee $1.50/m² ($69/mo). Upper-floor unit with escalator access and climate-controlled corridor.",
-      "hoa": 69,
       "hidden": false
     },
     {
@@ -7399,7 +7300,7 @@
       "area": 113,
       "pricePerMonth": 3500,
       "hoa": 226,
-      "description": "Local 019 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $2.00/m² ($226/mes). Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.",
+      "description": "Local 019 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $2.00/m² ($226/mes). Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.\n\nMantenimiento mensual: $226",
       "description_en": "Unit 019 at Plaza Sunset Strip (Ground Floor), 113 m². Rent $3,500/mo + maintenance fee $2.00/m² ($226/mo). Large pedestrian frontage with floor-to-ceiling window and direct parking access.",
       "highlights": [
         "113 m² en Planta Baja",
@@ -7448,7 +7349,7 @@
       "area": 113,
       "pricePerMonth": 3500,
       "hoa": 226,
-      "description": "Local 021 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $2.00/m² ($226/mes). Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.",
+      "description": "Local 021 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $2.00/m² ($226/mes). Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.\n\nMantenimiento mensual: $226",
       "description_en": "Unit 021 at Plaza Sunset Strip (Ground Floor), 113 m². Rent $3,500/mo + maintenance fee $2.00/m² ($226/mo). Large pedestrian frontage with floor-to-ceiling window and direct parking access.",
       "highlights": [
         "113 m² en Planta Baja",
@@ -7497,7 +7398,7 @@
       "area": 36,
       "pricePerMonth": 650,
       "hoa": 54,
-      "description": "Local 311 en Plaza Sunset Strip (Nivel 3), 36 m². Canon $650/mes + mantenimiento $1.50/m² ($54/mes). Compacto y eficiente, ideal para oficina unipersonal o consultorio.",
+      "description": "Local 311 en Plaza Sunset Strip (Nivel 3), 36 m². Canon $650/mes + mantenimiento $1.50/m² ($54/mes). Compacto y eficiente, ideal para oficina unipersonal o consultorio.\n\nMantenimiento mensual: $54",
       "description_en": "Unit 311 at Plaza Sunset Strip (Level 3), 36 m². Rent $650/mo + maintenance fee $1.50/m² ($54/mo). Compact and efficient — ideal for a solo office or consulting room.",
       "highlights": [
         "36 m² en Nivel 3",
