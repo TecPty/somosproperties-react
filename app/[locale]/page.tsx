@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { preload } from "react-dom"
 import { getTranslations } from 'next-intl/server'
 import PropertyGrid from "@/components/property-grid"
 import ContactForm from "@/components/contact-form"
@@ -22,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  preload('/images/hero-poster.webp', { as: 'image', fetchPriority: 'high' })
   const { locale } = await params
   const allProperties: Property[] = allPropertiesData
   
@@ -74,6 +76,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           loop
           muted
           playsInline
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
           poster="/images/hero-poster.webp"
         >
