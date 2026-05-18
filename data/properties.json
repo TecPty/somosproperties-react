@@ -265,9 +265,9 @@
       "parkingSpots": 70,
       "area": 0,
       "builtYear": 2024,
-      "image": "/images/properties/central-plaza/hero.webp",
+      "image": "/images/properties/central-plaza/hero/hero.webp",
       "images": [
-        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero/hero.webp",
         "/images/properties/central-plaza/hero-1080.webp",
         "/images/properties/central-plaza/hero-1600.webp"
       ],
@@ -8327,9 +8327,9 @@
       "parkingSpots": 70,
       "area": 55.81,
       "builtYear": 2024,
-      "image": "/images/properties/central-plaza/hero.webp",
+      "image": "/images/properties/central-plaza/hero/hero.webp",
       "images": [
-        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero/hero.webp",
         "/images/properties/central-plaza/hero-1080.webp",
         "/images/properties/central-plaza/hero-1600.webp"
       ],
@@ -8371,9 +8371,9 @@
       "parkingSpots": 70,
       "area": 66.95,
       "builtYear": 2024,
-      "image": "/images/properties/central-plaza/hero.webp",
+      "image": "/images/properties/central-plaza/hero/hero.webp",
       "images": [
-        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero/hero.webp",
         "/images/properties/central-plaza/hero-1080.webp",
         "/images/properties/central-plaza/hero-1600.webp"
       ],
@@ -8415,9 +8415,9 @@
       "parkingSpots": 70,
       "area": 113.62,
       "builtYear": 2024,
-      "image": "/images/properties/central-plaza/hero.webp",
+      "image": "/images/properties/central-plaza/hero/hero.webp",
       "images": [
-        "/images/properties/central-plaza/hero.webp",
+        "/images/properties/central-plaza/hero/hero.webp",
         "/images/properties/central-plaza/hero-1080.webp",
         "/images/properties/central-plaza/hero-1600.webp"
       ],
