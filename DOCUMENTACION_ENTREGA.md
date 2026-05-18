@@ -10,7 +10,7 @@ Plataforma Inmobiliaria Premium y Catálogo Multilingüe
 
 ## 1. Resumen Ejecutivo
 La plataforma web de Somos Properties ha finalizado exitosamente su ciclo de reestructuración técnica y auditoría visual. Pasó de tener bloqueos críticos de compilación y datos de inventario ocultos, a ser una plataforma "Type-Safe", completamente integrada con herramientas de marketing (Píxeles), optimizada en SEO y con una interfaz de catálogo altamente profesional.
-Se consolidaron y sincronizaron los inventarios de proyectos macro (Playa Escondida, Central Plaza, Evolution Tower), y se establecieron lógicas dinámicas que protegen la experiencia del usuario (ej. estampas gigantes para propiedades alquiladas/vendidas, y textos protectores para precios indefinidos).
+Se consolidaron y sincronizaron los inventarios de todos los proyectos macro a nivel nacional, y se establecieron lógicas dinámicas que protegen la experiencia del usuario (ej. estampas gigantes para propiedades alquiladas/vendidas, y textos protectores para precios indefinidos).
 
 ## 2. Métricas Finales
 • **~235 propiedades indexadas** en el inventario consolidado.
@@ -25,10 +25,10 @@ Se consolidaron y sincronizaron los inventarios de proyectos macro (Playa Escond
 Desarrollo de la base en Next.js 16 (App Router), maquetación con TailwindCSS, y soporte para internacionalización básica.
 
 * **V2 — Normalización de Inventario y Motores SEO (Fase Intermedia)**
-Consolidación de proyectos macro (New West), eliminación de archivos redundantes mediante la arquitectura `PropertyCategoryView` y el desarrollo de un motor centralizado (`lib/seo.ts`) para metadatos dinámicos.
+Consolidación de inventario global en proyectos macro, eliminación de archivos redundantes mediante la arquitectura `PropertyCategoryView` y el desarrollo de un motor centralizado (`lib/seo.ts`) para metadatos dinámicos.
 
 * **V3 — Optimización Visual, Performance y Auditoría Comercial (Fase Final)**
-Migración a WebP, despliegue global de estampas de "ALQUILADO / VENDIDO" estandarizadas, salvaguarda condicional para precios en `$0`, limpieza profunda de TypeScript y sincronización fina de la disponibilidad en *Playa Escondida*. Mejora del PageSpeed a nivel código mediante cargas asíncronas (`requestIdleCallback`) y `preload="metadata"`.
+Migración a WebP, despliegue global de estampas de "ALQUILADO / VENDIDO" estandarizadas, salvaguarda condicional para precios en `$0`, limpieza profunda de TypeScript y sincronización fina de la disponibilidad en todo el catálogo. Mejora del PageSpeed a nivel código mediante cargas asíncronas (`requestIdleCallback`) y `preload="metadata"`.
 
 ## 4. Decisiones Técnicas y Mejoras Implementadas
 • Componente unificado `PropertyCategoryView` (reduciendo la deuda técnica a la mitad).
@@ -39,7 +39,7 @@ Migración a WebP, despliegue global de estampas de "ALQUILADO / VENDIDO" estand
 
 ## 5. Guía de Cierre y Próximos Pasos
 1. **Validar Vercel:** Asegurarse de que el último deploy ha concluido correctamente (los cambios de performance ya están empujados).
-2. **Revisión del Catálogo:** Verificar desde un dispositivo móvil la nueva sincronización del inventario de Playa Escondida y las estampas diagonales rojas.
+2. **Revisión del Catálogo:** Verificar desde un dispositivo móvil la nueva sincronización global del inventario y las estampas diagonales rojas.
 3. **Análisis de Métricas:** Dejar reposar los cambios y volver a correr PageSpeed Insights para ver el impacto en LCP y Performance.
 
 ## 6. Plan de Mantenimiento Sugerido
