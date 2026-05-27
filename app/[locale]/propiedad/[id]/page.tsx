@@ -21,10 +21,11 @@ function getPropertyById(id: number): Property | undefined {
 function buildPropertyDescription(property: Property): string {
   const basePrice =
     property.operation === "Venta"
-      ? `$${property.price.toLocaleString("es-PA")}`
-      : `$${(property.pricePerMonth ?? 0).toLocaleString("es-PA")}/mes`
+      ? property.price ? `$${property.price.toLocaleString("es-PA")}` : "Precio a consultar"
+      : property.pricePerMonth ? `$${property.pricePerMonth.toLocaleString("es-PA")}/mes` : "Precio a consultar"
 
-  const summary = `${property.title} en ${property.location}. ${property.bedrooms} habitaciones, ${property.bathrooms} banos. ${basePrice}. ${property.description}`
+  const bedroomsPart = property.bedrooms ? `${property.bedrooms} habitaciones, ${property.bathrooms} banos. ` : ""
+  const summary = `${property.title} en ${property.location}. ${bedroomsPart}${basePrice}. ${property.description}`
   return summary.length <= 160 ? summary : `${summary.slice(0, 157)}...`
 }
 
