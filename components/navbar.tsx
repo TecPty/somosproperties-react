@@ -74,6 +74,12 @@ export default function Navbar() {
         { href: `/${locale}/comerciales?search=Rali%20Business%20Center`, label: "Rali Business Center" },
         { href: `/${locale}/comerciales?search=Evolution%20Tower`, label: "Evolution Tower" },
         { href: `/${locale}/comerciales?search=Boulevard%20Plaza%20Costa%20Verde`, label: "Boulevard Plaza Costa Verde" },
+        { href: `/${locale}/comerciales`, label: "— Oportunidades de Inversión —", isDivider: true },
+        { href: `/${locale}/comerciales?search=Azuero%20Terminal`, label: "Azuero Terminal Plaza, Chitré" },
+        { href: `/${locale}/comerciales?search=Cativ%C3%A1%20Plaza`, label: "Cativá Plaza, Colón" },
+        { href: `/${locale}/comerciales?search=David%20Chiriqui`, label: "Locales David, Chiriquí" },
+        { href: `/${locale}/comerciales?search=El%20Ingenio`, label: "Terreno El Ingenio, Ciudad Pmá" },
+        { href: `/${locale}/comerciales?search=Juan%20D%C3%ADaz%20Arango`, label: "Terrenos Juan Díaz, Av. Arango" },
       ],
     },
     { href: `/${locale}/nosotros`, label: t('about') },
@@ -138,15 +144,24 @@ export default function Navbar() {
                   </Link>
                   <div className="absolute left-0 top-full hidden min-w-[220px] pt-2 group-hover:block">
                     <div className="rounded-xl border border-[#e6e6e6] bg-white/95 p-2 shadow-lg backdrop-blur-sm">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="block rounded-lg px-3 py-2 text-sm text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC]"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                      {link.children.map((child) =>
+                        child.isDivider ? (
+                          <div
+                            key={child.label}
+                            className="px-3 pt-3 pb-1 text-[10px] font-bold text-[#3898EC] uppercase tracking-widest border-t border-[#e6e6e6] mt-1"
+                          >
+                            Oportunidades de Inversión
+                          </div>
+                        ) : (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            className="block rounded-lg px-3 py-2 text-sm text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC]"
+                          >
+                            {child.label}
+                          </Link>
+                        )
+                      )}
                     </div>
                   </div>
                 </div>
@@ -201,7 +216,7 @@ export default function Navbar() {
               className="flex items-center justify-center w-11 h-11 rounded-xl text-[#333333] hover:bg-[#f3f3f3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1"
               onClick={() => setIsOpen(!isOpen)}
               aria-label={isOpen ? t('closeMenu') : t('openMenu')}
-              aria-expanded={isOpen ? "true" : "false"}
+              aria-expanded={isOpen}
               aria-controls="mobile-menu"
             >
               <svg
@@ -236,15 +251,24 @@ export default function Navbar() {
                   >
                     {link.label}
                   </Link>
-                  {link.children.map((child) => (
-                    <Link
-                      key={child.href}
-                      href={child.href}
-                      className="block py-2 pl-8 pr-4 text-sm text-[#4b4b4b] hover:bg-[#f3f3f3] hover:text-[#3898EC]"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
+                  {link.children.map((child) =>
+                    child.isDivider ? (
+                      <div
+                        key={child.label}
+                        className="pl-8 pr-4 pt-3 pb-1 text-[10px] font-bold text-[#3898EC] uppercase tracking-widest border-t border-[#eeeeee] mt-1"
+                      >
+                        Oportunidades de Inversión
+                      </div>
+                    ) : (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block py-2 pl-8 pr-4 text-sm text-[#4b4b4b] hover:bg-[#f3f3f3] hover:text-[#3898EC]"
+                      >
+                        {child.label}
+                      </Link>
+                    )
+                  )}
                 </div>
               ) : (
                 <Link

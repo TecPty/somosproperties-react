@@ -50,6 +50,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     .filter((p) => p.featured && !premiumIds.has(p.id))
     .slice(0, 6)
 
+  // Oportunidades comerciales (batch 2007-2019)
+  const commercialOpportunities = allProperties
+    .filter((p) => p.id >= 2007 && p.id <= 2019 && !p.hidden && p.status === "available")
+    .slice(0, 6)
+
   const t = await getTranslations('home')
 
   return (
@@ -201,6 +206,80 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
         </div>
       </section>
+
+      {/* Oportunidades Comerciales */}
+      {commercialOpportunities.length > 0 && (
+        <section className="py-20 bg-[#f8f9fa]">
+          <div className="container-custom">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-[#1a1a1a] text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                <span>Inversión Comercial</span>
+              </div>
+              <h2 className="text-4xl font-bold text-[#222222] mb-4">Oportunidades Comerciales</h2>
+              <p className="text-lg text-[#999999]">Terrenos, locales y centros de distribución en ubicaciones estratégicas de Panamá</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {commercialOpportunities.map((property) => {
+                const displayPrice = property.price
+                  ? formatPrice(property.price)
+                  : property.pricePerMonth
+                    ? `${formatPrice(property.pricePerMonth)}/mes`
+                    : null
+                return (
+                  <Link
+                    key={property.id}
+                    href={`/${locale}/propiedad/${property.id}`}
+                    className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100 hover:border-[#3898EC]/30"
+                  >
+                    <div className="relative h-44">
+                      <OptimizedImage
+                        src={property.image || "/placeholder.svg"}
+                        alt={property.title}
+                        type="propertyCard"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-3 left-3">
+                        {displayPrice ? (
+                          <span className="bg-[#3898EC] text-white px-3 py-1 rounded-full text-xs font-bold">
+                            {displayPrice}
+                          </span>
+                        ) : (
+                          <span className="bg-[#1a1a1a] text-white px-3 py-1 rounded-full text-xs font-bold">
+                            Contáctanos
+                          </span>
+                        )}
+                      </div>
+                      <div className="absolute top-3 right-3">
+                        <span className="bg-white/90 text-[#333] px-2 py-1 rounded-md text-xs font-medium">
+                          {property.type}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-bold text-[#1a1a1a] mb-1 line-clamp-2 text-sm leading-snug group-hover:text-[#3898EC] transition-colors">{property.title}</h3>
+                      <p className="text-[#999] text-xs mb-2">{property.district}, {property.city}</p>
+                      {property.area && (
+                        <span className="text-xs text-[#666]">{property.area.toLocaleString("es-PA")} m²</span>
+                      )}
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link
+                href={`/${locale}/comerciales`}
+                className="inline-block border-2 border-[#1a1a1a] text-[#1a1a1a] px-8 py-3 rounded-lg font-medium hover:bg-[#1a1a1a] hover:text-white transition-colors"
+              >
+                Ver todas las oportunidades comerciales
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Testimonials Section */}
       <section className="py-24 bg-white relative overflow-hidden">
