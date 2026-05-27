@@ -51,18 +51,6 @@ export default function Navbar() {
     { href: `/${locale}`, label: t('home') },
     { href: `/${locale}/premium`, label: t('premium') },
     {
-      href: `/${locale}/residenciales`,
-      label: t('residential'),
-      children: [
-        { href: `/${locale}/residenciales?search=Pacific%20Point`, label: "Pacific Point" },
-        { href: `/${locale}/residenciales?search=Kings%20Park`, label: "Kings Park" },
-        { href: `/${locale}/residenciales?search=Praderas%20de%20Arraijan`, label: "Praderas de Arraijan" },
-        { href: `/${locale}/residenciales?search=The%20Tower%20residences`, label: "The Tower residences" },
-        { href: `/${locale}/residenciales?search=Playa%20Escondida`, label: "Playa Escondida" },
-        { href: `/${locale}/residenciales?search=New%20West`, label: "New West" },
-      ],
-    },
-    {
       href: `/${locale}/comerciales`,
       label: t('commercial'),
       children: [
@@ -80,6 +68,18 @@ export default function Navbar() {
         { href: `/${locale}/comerciales?search=David%20Chiriqui`, label: "Locales David, Chiriquí" },
         { href: `/${locale}/comerciales?search=El%20Ingenio`, label: "Terreno El Ingenio, Ciudad Pmá" },
         { href: `/${locale}/comerciales?search=Juan%20D%C3%ADaz%20Arango`, label: "Terrenos Juan Díaz, Av. Arango" },
+      ],
+    },
+    {
+      href: `/${locale}/residenciales`,
+      label: t('residential'),
+      children: [
+        { href: `/${locale}/residenciales?search=Pacific%20Point`, label: "Pacific Point" },
+        { href: `/${locale}/residenciales?search=Kings%20Park`, label: "Kings Park" },
+        { href: `/${locale}/residenciales?search=Praderas%20de%20Arraijan`, label: "Praderas de Arraijan" },
+        { href: `/${locale}/residenciales?search=The%20Tower%20residences`, label: "The Tower residences" },
+        { href: `/${locale}/residenciales?search=Playa%20Escondida`, label: "Playa Escondida" },
+        { href: `/${locale}/residenciales?search=New%20West`, label: "New West" },
       ],
     },
     { href: `/${locale}/nosotros`, label: t('about') },
