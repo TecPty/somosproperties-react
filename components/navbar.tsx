@@ -125,7 +125,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) =>
               link.children ? (
-                <div key={link.href} className="relative group">
+                <div key={link.label} className="relative group">
                   <Link
                     href={link.href}
                     className={`inline-flex items-center gap-2 text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 ${
@@ -163,7 +163,7 @@ export default function Navbar() {
                 </div>
               ) : (
                 <Link
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
                   className={
                     link.href === `/${locale}/contacto`
@@ -238,7 +238,7 @@ export default function Navbar() {
           <div id="mobile-menu" className="md:hidden py-4 border-t border-[#eeeeee] animate-slide-up">
             {navLinks.map((link) =>
               link.children ? (
-                <div key={link.href} className="py-2">
+                <div key={link.label} className="py-2">
                   <Link
                     href={link.href}
                     className={`block py-2 px-4 text-[#222222] hover:bg-[#f3f3f3] hover:text-[#3898EC] transition-colors ${
@@ -259,7 +259,7 @@ export default function Navbar() {
                 </div>
               ) : (
                 <Link
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
                   className={`block py-3 px-4 text-[#222222] hover:bg-[#f3f3f3] hover:text-[#3898EC] transition-colors ${
                     isActive(link.href) ? "text-[#0082f3] bg-[#f3f3f3]" : ""
