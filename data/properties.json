@@ -560,7 +560,10 @@
         "/images/properties/the-towers-business-plaza/property-026/local-pb-7.webp",
         "/images/properties/the-towers-business-plaza/property-026/local-pb-8.webp",
         "/images/properties/the-towers-business-plaza/property-026/local-pb-9.webp",
-        "/images/properties/the-towers-business-plaza/property-026/local-pb-10.webp"
+        "/images/properties/the-towers-business-plaza/property-026/local-pb-10.webp",
+        "/images/properties/the-towers-business-plaza/property-026/5.webp",
+        "/images/properties/the-towers-business-plaza/property-026/6.webp",
+        "/images/properties/the-towers-business-plaza/property-026/7.webp"
       ],
       "planos": [],
       "description": "Local Comercial en Alquiler - The Towers Business Plaza, Planta Baja frente a Calle 50. 235.82 m² de oportunidad en ubicación estratégica con alto tráfico vehicular. Ideal para negocio. Disponible inmediatamente. Alquiler: $4,000/mes + Mantenimiento $531/mes. Contacto: 6677-0577.",
@@ -906,7 +909,16 @@
         "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-02.webp",
         "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-03.webp",
         "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-04.webp",
-        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-05.webp"
+        "/images/properties/the-towers-business-plaza/property-242/local-2a-interior-05.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-1.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-2.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-3.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-4.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-5.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-6.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-7.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-8.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-9.webp"
       ],
       "planos": [],
       "description": "Local Comercial en Alquiler - The Towers Business Plaza, Local 2A Nivel 2 en Calle 50. 425.78 m² de oportunidad en ubicación estratégica con alto tráfico vehicular. Ideal para negocio. Disponible inmediatamente. Alquiler: $6,378/mes + Mantenimiento $958/mes. Aire con ducto central incluido. Contacto: 6677-0577.",
@@ -9255,6 +9267,117 @@
         "Ubicación turística Río Hato"
       ],
       "virtualTour": "https://maps.google.com/?q=Playa+Sea+Cliff+Rio+Hato+Cocle+Panama"
+    },
+    {
+      "id": 2020,
+      "title": "The Towers Business Plaza - Local 1-A Nivel 1",
+      "slug": "the-towers-business-plaza-local-1a-nivel-1",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Venta/Alquiler",
+      "price": 655000,
+      "pricePerMonth": 4556,
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 14,
+      "area": 425.78,
+      "builtYear": 2024,
+      "featured": true,
+      "status": "available",
+      "hidden": false,
+      "image": "/images/properties/the-towers-business-plaza/property-2020/foto-1.webp",
+      "images": [
+        "/images/properties/the-towers-business-plaza/property-2020/foto-1.webp",
+        "/images/properties/the-towers-business-plaza/property-2020/foto-2.webp",
+        "/images/properties/the-towers-business-plaza/property-2020/foto-3.webp"
+      ],
+      "planos": [],
+      "description": "Local 1-A en Nivel 1 de The Towers Business Plaza, Calle 50. 425.78 m². Venta: $655,000 | Alquiler: $4,556/mes + depósito $4,258. Mantenimiento $958/mes. Edificio corporativo de 6 niveles con 4 niveles de estacionamientos, 14 puestos incluidos. Contrato mínimo 2 años con 2 meses de gracia para acondicionar.",
+      "description_en": "Unit 1-A on Level 1 at The Towers Business Plaza, Calle 50. 425.78 m². Sale: $655,000 | Rent: $4,556/month + deposit $4,258. HOA $958/month. 14 parking spots included. Minimum 2-year lease with 2 months grace period.",
+      "amenities": [
+        "Local 1-A Nivel 1",
+        "Calle 50",
+        "425.78 m²",
+        "14 estacionamientos incluidos",
+        "Sistema de aire por ducto central",
+        "4 niveles de estacionamientos",
+        "1 hora gratis de estacionamiento",
+        "Seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "2 meses de gracia para acondicionar"
+      ],
+      "highlights": [
+        "425.78 m² en Nivel 1",
+        "Venta: $655,000 | Alquiler: $4,556/mes",
+        "14 estacionamientos incluidos",
+        "Mantenimiento: $958/mes"
+      ],
+      "requirements": [
+        "Datos personales del firmante (email, celular y dirección residencial).",
+        "Cédula o pasaporte.",
+        "Aviso de operaciones.",
+        "Depósito $4,258 y primer mes a la firma del contrato."
+      ]
+    },
+    {
+      "id": 2021,
+      "title": "The Towers Business Plaza - Local 4-A Nivel 4",
+      "slug": "the-towers-business-plaza-local-4a-nivel-4",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Venta/Alquiler",
+      "price": 655000,
+      "pricePerMonth": 4556,
+      "location": "Calle 50, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 14,
+      "area": 425.78,
+      "builtYear": 2024,
+      "featured": true,
+      "status": "available",
+      "hidden": false,
+      "image": "/images/properties/the-towers-business-plaza/property-2021/foto-1.webp",
+      "images": [
+        "/images/properties/the-towers-business-plaza/property-2021/foto-1.webp",
+        "/images/properties/the-towers-business-plaza/property-2021/foto-2.webp",
+        "/images/properties/the-towers-business-plaza/property-2021/foto-3.webp",
+        "/images/properties/the-towers-business-plaza/property-2021/foto-4.webp",
+        "/images/properties/the-towers-business-plaza/property-2021/foto-5.webp",
+        "/images/properties/the-towers-business-plaza/property-2021/foto-6.webp"
+      ],
+      "planos": [],
+      "description": "Local 4-A en Nivel 4 de The Towers Business Plaza, Calle 50. 425.78 m². Venta: $655,000 | Alquiler: $4,556/mes + depósito $4,258. Mantenimiento $958/mes. Edificio corporativo de 6 niveles con 4 niveles de estacionamientos, 14 puestos incluidos. Contrato mínimo 2 años con 2 meses de gracia para acondicionar.",
+      "description_en": "Unit 4-A on Level 4 at The Towers Business Plaza, Calle 50. 425.78 m². Sale: $655,000 | Rent: $4,556/month + deposit $4,258. HOA $958/month. 14 parking spots included. Minimum 2-year lease with 2 months grace period.",
+      "amenities": [
+        "Local 4-A Nivel 4",
+        "Calle 50",
+        "425.78 m²",
+        "14 estacionamientos incluidos",
+        "Sistema de aire por ducto central",
+        "4 niveles de estacionamientos",
+        "1 hora gratis de estacionamiento",
+        "Seguridad 24/7",
+        "Elevadores de alta velocidad",
+        "2 meses de gracia para acondicionar"
+      ],
+      "highlights": [
+        "425.78 m² en Nivel 4",
+        "Venta: $655,000 | Alquiler: $4,556/mes",
+        "14 estacionamientos incluidos",
+        "Mantenimiento: $958/mes"
+      ],
+      "requirements": [
+        "Datos personales del firmante (email, celular y dirección residencial).",
+        "Cédula o pasaporte.",
+        "Aviso de operaciones.",
+        "Depósito $4,258 y primer mes a la firma del contrato."
+      ]
     }
   ]
 }
