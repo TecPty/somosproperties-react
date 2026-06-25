@@ -23,9 +23,9 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   const [imageError, setImageError] = useState(false)
 
   const displayPrice =
-    property.operation === "Venta" 
-      ? (property.price > 0 ? formatPrice(property.price) : "Consultar Precio")
-      : ((property.pricePerMonth || 0) > 0 ? `${formatPrice(property.pricePerMonth || 0)}${t('perMonth')}` : "Consultar Precio")
+    property.operation === "Venta"
+      ? (property.price > 0 ? formatPrice(property.price) : t('priceOnRequest'))
+      : ((property.pricePerMonth || 0) > 0 ? `${formatPrice(property.pricePerMonth || 0)}${t('perMonth')}` : t('priceOnRequest'))
   const isSold = property.status === "sold"
   const isRented = property.status === "rented"
   const isPremiumProperty = isPremium(property)
@@ -49,7 +49,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
   return (
     <article className="relative bg-white rounded-xl border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full group">
-      <Link href={`/${locale}/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={`Ver detalles: ${property.title}`}>
+      <Link href={`/${locale}/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={t('viewDetailsAria', { title: property.title })}>
         <div className="relative h-56 overflow-hidden bg-[#f3f3f3]">    
           {/* CAMBIO: la imagen principal de la card es siempre la primera imagen de la propiedad */}
           {/* RAZÓN: coherencia visual con el hero de la página de detalle */}
@@ -91,7 +91,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             <span className={`px-2.5 py-1 rounded-md text-xs font-bold text-white shadow-sm tracking-wide ${
               property.operation === "Venta" ? "bg-[#28a745]" : "bg-[#3898EC]"
             }`}>
-              {property.operation.toUpperCase()}
+              {property.operation === "Venta" ? t('sale').toUpperCase() : t('rent').toUpperCase()}
             </span>
           </div>
 

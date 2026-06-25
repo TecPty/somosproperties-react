@@ -114,7 +114,7 @@ export async function generateMetadata({
   const ogImage = toAbsoluteUrl(property.image || property.images?.[0] || fallbackImage)
 
   return createMetadata({
-    title: `${property.title} | SOMOS Properties`,
+    title: property.title,
     description,
     path: `/propiedad/${property.id}`,
     locale,

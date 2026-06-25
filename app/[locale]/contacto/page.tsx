@@ -1,6 +1,4 @@
 ﻿import ContactForm from "@/components/contact-form"
-import Footer from "@/components/footer"
-import Navbar from "@/components/navbar"
 import { getTranslations } from "next-intl/server"
 import type { Metadata } from "next"
 
@@ -22,8 +20,6 @@ export default async function ContactoPage({ params }: { params: Promise<{ local
   const t = await getTranslations({ locale, namespace: 'contacto' })
   return (
     <>
-      <Navbar />
-
       <main className="py-12 bg-[#fafafa] min-h-screen">
         <div className="container-custom">
           <div className="text-center mb-12">
@@ -175,8 +171,6 @@ export default async function ContactoPage({ params }: { params: Promise<{ local
           </div>
         </div>
       </main>
-
-      <Footer />
     </>
   )
 }

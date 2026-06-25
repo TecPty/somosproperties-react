@@ -37,7 +37,7 @@ export function getOrganizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Support",
-      telephone: "+507-XXXX-XXXX",
+      telephone: "+50766770577",
     },
     sameAs: [
       "https://www.facebook.com/somosproperties",
@@ -192,7 +192,7 @@ export function getLocalBusinessSchema() {
     image: `${baseUrl}/images/Logo-SP.png`,
     description: "Agencia de bienes raíces en Panamá",
     url: baseUrl,
-    telephone: "+507-XXXX-XXXX",
+    telephone: "+50766770577",
     email: "ventas@somosproperties.com",
     address: {
       "@type": "PostalAddress",
@@ -207,7 +207,7 @@ export function getLocalBusinessSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
-      telephone: "+507-XXXX-XXXX",
+      telephone: "+50766770577",
       email: "ventas@somosproperties.com",
     },
   }

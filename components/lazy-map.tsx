@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import { useTranslations } from "next-intl"
 
 interface LazyMapProps {
   mapSrc: string | null
@@ -10,6 +11,7 @@ interface LazyMapProps {
 export function LazyMap({ mapSrc, propertyLocation }: LazyMapProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
+  const t = useTranslations('common')
 
   useEffect(() => {
     if (!mapSrc || typeof window === "undefined") return
@@ -22,7 +24,7 @@ export function LazyMap({ mapSrc, propertyLocation }: LazyMapProps) {
         }
       },
       {
-        rootMargin: "50px", // Start loading 50px before entering viewport
+        rootMargin: "50px",
         threshold: 0.01,
       }
     )
@@ -43,6 +45,7 @@ export function LazyMap({ mapSrc, propertyLocation }: LazyMapProps) {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          aria-hidden="true"
         >
           <path
             strokeLinecap="round"
@@ -52,7 +55,7 @@ export function LazyMap({ mapSrc, propertyLocation }: LazyMapProps) {
           />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
-        <span>Ubicación no disponible</span>
+        <span>{t('locationUnavailable')}</span>
       </div>
     )
   }
@@ -67,10 +70,9 @@ export function LazyMap({ mapSrc, propertyLocation }: LazyMapProps) {
           className="border-0"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          title={`Mapa de ${propertyLocation}`}
+          title={`Map: ${propertyLocation}`}
         />
       ) : (
-        // Loading placeholder
         <div className="w-full h-full bg-gradient-to-br from-[#f0f0f0] to-[#e8e8e8] flex items-center justify-center">
           <div className="text-[#999999] text-center">
             <div className="inline-block">
@@ -79,6 +81,7 @@ export function LazyMap({ mapSrc, propertyLocation }: LazyMapProps) {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path
@@ -88,7 +91,7 @@ export function LazyMap({ mapSrc, propertyLocation }: LazyMapProps) {
                 ></path>
               </svg>
             </div>
-            <p className="text-sm mt-2">Cargando mapa...</p>
+            <p className="text-sm mt-2">{t('loadingMap')}</p>
           </div>
         </div>
       )}

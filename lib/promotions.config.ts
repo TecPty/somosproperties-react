@@ -1,7 +1,7 @@
 import { Promotion } from '@/types/promotion';
 
 export const MODAL_CONFIG = {
-  SHOW_DELAY_MS: 2500,
+  SHOW_DELAY_MS: 30000,
   SESSION_KEY_PREFIX: 'promo-',
   OBSERVER_THRESHOLD: 0.5,
   AUTO_OPEN_ENABLED: true,
@@ -57,7 +57,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     validFrom: '2026-01-01T00:00:00.000Z',
     validUntil: '2026-12-31T23:59:59.999Z',
     config: {
-      showDelayMs: 2200,
+      showDelayMs: 30000,
       showOncePerSession: true,
     },
   },
@@ -78,7 +78,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     validFrom: '2026-01-01T00:00:00.000Z',
     validUntil: '2026-12-31T23:59:59.999Z',
     config: {
-      showDelayMs: 2200,
+      showDelayMs: 30000,
       showOncePerSession: true,
     },
   },
@@ -99,7 +99,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     validFrom: '2026-01-01T00:00:00.000Z',
     validUntil: '2026-12-31T23:59:59.999Z',
     config: {
-      showDelayMs: 2200,
+      showDelayMs: 30000,
       showOncePerSession: true,
     },
   },
@@ -120,7 +120,7 @@ export const PROPERTY_PROMOTIONS: Promotion[] = [
     validFrom: '2026-01-01T00:00:00.000Z', 
     validUntil: '2026-12-31T23:59:59.999Z',
     config: {
-      showDelayMs: 2200,
+      showDelayMs: 30000,
       showOncePerSession: true,
     },
   },

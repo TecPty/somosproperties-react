@@ -25,15 +25,15 @@ export default function EmploymentForm() {
   const validate = () => {
     const nextErrors: EmploymentErrors = {}
 
-    if (!name.trim()) nextErrors.name = "El nombre es requerido"
+    if (!name.trim()) nextErrors.name = t('errors.nameRequired')
     if (!email.trim()) {
-      nextErrors.email = "El email es requerido"
+      nextErrors.email = t('errors.emailRequired')
     } else if (!EMAIL_RE.test(email)) {
-      nextErrors.email = "Email inválido"
+      nextErrors.email = t('errors.emailInvalid')
     }
-    if (!phone.trim()) nextErrors.phone = "El teléfono es requerido"
-    if (!education.trim()) nextErrors.education = "Selecciona una opción"
-    if (!cv) nextErrors.cv = "Adjunta tu CV"
+    if (!phone.trim()) nextErrors.phone = t('errors.phoneRequired')
+    if (!education.trim()) nextErrors.education = t('errors.educationRequired')
+    if (!cv) nextErrors.cv = t('errors.cvRequired')
 
     setErrors(nextErrors)
     return Object.keys(nextErrors).length === 0
@@ -123,7 +123,7 @@ export default function EmploymentForm() {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           className="w-full px-4 py-3 border border-[#cccccc] rounded-lg focus:border-[#3898EC] focus:outline-2 focus:outline-[#2895f7] bg-white"
-          placeholder="tu@email.com"
+          placeholder={t('emailPlaceholder')}
           autoComplete="email"
         />
         {errors.email && <p className="mt-1 text-xs text-[#ea384c]">{errors.email}</p>}

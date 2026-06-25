@@ -11,15 +11,18 @@ import { properties as allPropertiesData } from "@/lib/properties"
 import { formatPrice } from "@/lib/formatters"
 import { isPremium } from "@/lib/utils-premium"
 import { getOrganizationSchema, getCollectionSchema } from "@/lib/schema"
+import { createMetadata } from "@/lib/seo"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'metadata.home' })
-  
-  return {
-    title: t('title'),
+
+  return createMetadata({
+    title: locale === 'en' ? 'Real Estate in Panama' : 'Bienes Raíces en Panamá',
     description: t('description'),
-  }
+    path: '',
+    locale,
+  })
 }
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -213,10 +216,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="container-custom">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-[#1a1a1a] text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                <span>Inversión Comercial</span>
+                <span>{t('commercial.badge')}</span>
               </div>
-              <h2 className="text-4xl font-bold text-[#222222] mb-4">Oportunidades Comerciales</h2>
-              <p className="text-lg text-[#999999]">Terrenos, locales y centros de distribución en ubicaciones estratégicas de Panamá</p>
+              <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('commercial.title')}</h2>
+              <p className="text-lg text-[#999999]">{t('commercial.subtitle')}</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -247,7 +250,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                           </span>
                         ) : (
                           <span className="bg-[#1a1a1a] text-white px-3 py-1 rounded-full text-xs font-bold">
-                            Contáctanos
+                            {t('commercial.contactUs')}
                           </span>
                         )}
                       </div>
@@ -274,7 +277,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 href={`/${locale}/comerciales`}
                 className="inline-block border-2 border-[#1a1a1a] text-[#1a1a1a] px-8 py-3 rounded-lg font-medium hover:bg-[#1a1a1a] hover:text-white transition-colors"
               >
-                Ver todas las oportunidades comerciales
+                {t('commercial.viewAll')}
               </Link>
             </div>
           </div>

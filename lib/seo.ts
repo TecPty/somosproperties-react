@@ -65,6 +65,9 @@ export function createMetadata({
   const ogImage = image || siteConfig.ogImage
   const metaKeywords = keywords || siteConfig.keywords
 
+  const esUrl = `${siteConfig.url}/es${normalizedPath}`.replace(/\/$/, "")
+  const enUrl = `${siteConfig.url}/en${normalizedPath}`.replace(/\/$/, "")
+
   return {
     metadataBase,
     title: `${title} | ${siteConfig.name}`,
@@ -73,6 +76,11 @@ export function createMetadata({
     robots: robots || (noIndex ? { index: false, follow: false } : undefined),
     alternates: {
       canonical: url,
+      languages: {
+        es: esUrl,
+        en: enUrl,
+        "x-default": esUrl,
+      },
     },
     openGraph: {
       type: "website",

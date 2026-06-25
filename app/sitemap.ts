@@ -2,62 +2,38 @@ import { MetadataRoute } from 'next'
 import { properties as allPropertiesData } from '@/lib/properties'
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://somosproperties.com'
+const locales = ['es', 'en'] as const
+
+const staticPaths = [
+  { path: '', priority: 1, changeFrequency: 'weekly' as const },
+  { path: '/residenciales', priority: 0.9, changeFrequency: 'weekly' as const },
+  { path: '/comerciales', priority: 0.9, changeFrequency: 'weekly' as const },
+  { path: '/propiedades', priority: 0.9, changeFrequency: 'weekly' as const },
+  { path: '/premium', priority: 0.8, changeFrequency: 'weekly' as const },
+  { path: '/nosotros', priority: 0.7, changeFrequency: 'monthly' as const },
+  { path: '/contacto', priority: 0.7, changeFrequency: 'monthly' as const },
+]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
+  const staticRoutes: MetadataRoute.Sitemap = staticPaths.flatMap(({ path, priority, changeFrequency }) =>
+    locales.map((locale) => ({
+      url: `${baseUrl}/${locale}${path}`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/residenciales`,
-      lastModified: new Date(), 
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/comerciales`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/propiedades`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/nosotros`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contacto`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-  ]
-
-  // Rutas dinámicas para propiedades
-  const propertyRoutes: MetadataRoute.Sitemap = allPropertiesData
-    .filter((property) => !property.hidden)
-    .map((property) => ({
-      url: `${baseUrl}/propiedad/${property.id}`,
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 0.8,
+      changeFrequency,
+      priority,
     }))
+  )
+
+  const propertyRoutes: MetadataRoute.Sitemap = allPropertiesData
+    .filter((property) => !property.hidden && property.status === 'available')
+    .flatMap((property) =>
+      locales.map((locale) => ({
+        url: `${baseUrl}/${locale}/propiedad/${property.id}`,
+        lastModified: new Date(),
+        changeFrequency: 'daily' as const,
+        priority: 0.8,
+      }))
+    )
 
   return [...staticRoutes, ...propertyRoutes]
 }

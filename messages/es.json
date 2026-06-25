@@ -75,6 +75,13 @@
         "description": "5 años de experiencia desde 2021 en el mercado inmobiliario panameño. Todas nuestras propiedades son verificadas con documentación legal completa."
       }
     },
+    "commercial": {
+      "badge": "Inversión Comercial",
+      "title": "Oportunidades Comerciales",
+      "subtitle": "Terrenos, locales y centros de distribución en ubicaciones estratégicas de Panamá",
+      "viewAll": "Ver todas las oportunidades comerciales",
+      "contactUs": "Contáctanos"
+    },
     "contact": {
       "title": "Contáctanos",
       "subtitle": "Estamos aquí para ayudarte",
@@ -120,7 +127,8 @@
     "cookiePolicy": "Política de Cookies",
     "cookiePreferences": "Preferencias de Cookies",
     "address": "Somos Properties - Calle 50, Bella Vista, Ciudad de Panamá",
-    "copyright": "© {year} SOMOS Properties. Todos los derechos reservados."
+    "copyright": "© {year} SOMOS Properties. Todos los derechos reservados.",
+    "description": "SOMOS Properties es la plataforma líder en venta y alquiler de propiedades en Panamá. Con más de 150 propiedades certificadas y un equipo profesional dedicado."
   },
   "common": {
     "perMonth": "/mes",
@@ -144,7 +152,12 @@
     "whatsappPrompt": "¡Hola! ¿Cómo podemos ayudarte hoy?",
     "urgency": "ALTA DEMANDA: {count} vistas hoy",
     "previousPage": "Página anterior",
-    "nextPage": "Página siguiente"
+    "nextPage": "Página siguiente",
+    "priceOnRequest": "Contáctanos",
+    "locationUnavailable": "Ubicación no disponible",
+    "loadingMap": "Cargando mapa...",
+    "viewDetailsAria": "Ver detalles: {title}",
+    "whatsappAriaLabel": "Contactar por WhatsApp"
   },
   "propertyDetail": {
     "bedrooms": "Habitaciones",
@@ -257,7 +270,7 @@
       "description": "Términos y Condiciones de uso de SOMOS Properties."
     },
     "propiedades": {
-      "title": "Todas las Propiedades | SOMOS Properties",
+      "title": "Todas las Propiedades",
       "description": "Explora miles de propiedades en venta y alquiler en Panamá. Filtra por tipo, precio, ubicación y más."
     },
     "propertyDetail": {
@@ -265,7 +278,7 @@
       "notFoundDescription": "La propiedad que buscas no existe o ya no está disponible."
     },
     "premium": {
-      "title": "Propiedades Premium en Panamá | SOMOS Properties",
+      "title": "Propiedades Premium en Panamá",
       "description": "Propiedades exclusivas con ubicaciones privilegiadas, acabados de lujo y amenidades premium. Descubre las mejores opciones en Punta Pacífica, Costa del Este y más."
     },
     "contacto": {
@@ -273,12 +286,13 @@
       "description": "Contáctanos para más información sobre nuestras propiedades en Panamá."
     },
     "residenciales": {
-      "title": "Propiedades Residenciales en Panamá | SOMOS Properties",
+      "title": "Propiedades Residenciales en Panamá",
       "description": "Apartamentos y casas en venta y alquiler en Panamá. Encuentra tu propiedad residencial ideal."
     },
     "comerciales": {
-      "title": "Propiedades Comerciales en Panamá | SOMOS Properties",
-      "description": "Locales comerciales y oficinas en venta y alquiler en Panamá. Invierte en propiedades comerciales premium."    },
+      "title": "Propiedades Comerciales en Panamá",
+      "description": "Locales comerciales y oficinas en venta y alquiler en Panamá. Invierte en propiedades comerciales premium."
+    },
     "cookies": {
       "title": "Pol\u00edtica de Cookies - SOMOS Properties",
       "description": "Informaci\u00f3n sobre cookies, seguimiento y tecnolog\u00edas similares en SOMOS Properties."
@@ -439,6 +453,7 @@
     "nameLabel": "Nombre completo *",
     "namePlaceholder": "Tu nombre",
     "emailLabel": "Email *",
+    "emailPlaceholder": "tu@email.com",
     "phoneLabel": "Teléfono *",
     "educationLabel": "Nivel de educación *",
     "educationSelect": "Selecciona una opción",

@@ -75,6 +75,13 @@
         "description": "5 years of experience since 2021 in the Panamanian real estate market. All our properties are verified with complete legal documentation."
       }
     },
+    "commercial": {
+      "badge": "Commercial Investment",
+      "title": "Commercial Opportunities",
+      "subtitle": "Land, commercial spaces and distribution centers in strategic locations in Panama",
+      "viewAll": "View all commercial opportunities",
+      "contactUs": "Contact Us"
+    },
     "contact": {
       "title": "Contact Us",
       "subtitle": "We are here to help you",
@@ -120,7 +127,8 @@
     "cookiePolicy": "Cookie Policy",
     "cookiePreferences": "Cookie Preferences",
     "address": "Somos Properties - 50th Street, Bella Vista, Panama City",
-    "copyright": "© {year} SOMOS Properties. All rights reserved."
+    "copyright": "© {year} SOMOS Properties. All rights reserved.",
+    "description": "SOMOS Properties is the leading platform for buying and renting properties in Panama. Over 150 certified properties and a dedicated professional team."
   },
   "common": {
     "perMonth": "/month",
@@ -144,7 +152,12 @@
     "whatsappPrompt": "Hello! How can we help you today?",
     "urgency": "HIGH DEMAND: {count} views today",
     "previousPage": "Previous page",
-    "nextPage": "Next page"
+    "nextPage": "Next page",
+    "priceOnRequest": "Contact Us",
+    "locationUnavailable": "Location not available",
+    "loadingMap": "Loading map...",
+    "viewDetailsAria": "View details: {title}",
+    "whatsappAriaLabel": "Contact via WhatsApp"
   },
   "propertyDetail": {
     "bedrooms": "Bedrooms",
@@ -257,7 +270,7 @@
       "description": "Terms and Conditions of use of SOMOS Properties."
     },
     "propiedades": {
-      "title": "All Properties | SOMOS Properties",
+      "title": "All Properties",
       "description": "Explore thousands of properties for sale and rent in Panama. Filter by type, price, location and more."
     },
     "propertyDetail": {
@@ -265,7 +278,7 @@
       "notFoundDescription": "The property you are looking for does not exist or is no longer available."
     },
     "premium": {
-      "title": "Premium Properties in Panama | SOMOS Properties",
+      "title": "Premium Properties in Panama",
       "description": "Exclusive properties with privileged locations, luxury finishes and premium amenities. Discover the best options in Punta Pacífica, Costa del Este and more."
     },
     "contacto": {
@@ -273,11 +286,11 @@
       "description": "Contact us for more information about our properties in Panama."
     },
     "residenciales": {
-      "title": "Residential Properties in Panama | SOMOS Properties",
+      "title": "Residential Properties in Panama",
       "description": "Apartments and houses for sale and rent in Panama. Find your ideal residential property."
     },
     "comerciales": {
-      "title": "Commercial Properties in Panama | SOMOS Properties",
+      "title": "Commercial Properties in Panama",
       "description": "Commercial spaces and offices for sale and rent in Panama. Invest in premium commercial properties."
     },
     "cookies": {
@@ -441,6 +454,7 @@
     "nameLabel": "Full Name *",
     "namePlaceholder": "Your name",
     "emailLabel": "Email *",
+    "emailPlaceholder": "your@email.com",
     "phoneLabel": "Phone *",
     "educationLabel": "Education Level *",
     "educationSelect": "Select an option",

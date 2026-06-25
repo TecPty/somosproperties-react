@@ -61,8 +61,15 @@ export default function PropertyDetailClient({ property, similarProperties, prom
     // eslint-disable-next-line
   }, [autoPromo, isVisible]);
 
-  const displayPrice =
-    property.operation === "Venta" ? formatPrice(property.price) : `${formatPrice(property.pricePerMonth || 0)}/mes`
+  const displayPrice = (() => {
+    if (property.operation === "Venta") {
+      return property.price > 0 ? formatPrice(property.price) : tCommon('priceOnRequest')
+    }
+    const monthly = property.pricePerMonth || 0
+    return monthly > 0
+      ? `${formatPrice(monthly)}${tCommon('perMonth')}`
+      : tCommon('priceOnRequest')
+  })()
 
   const computedHighlights = (() => {
     if (property.highlights && property.highlights.length > 0) {
@@ -136,7 +143,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           <button
             onClick={() => setLightboxOpen(false)}
             className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
-            aria-label="Cerrar"
+            aria-label={locale === 'en' ? 'Close' : 'Cerrar'}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -253,7 +260,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       property.operation === "Venta" ? "bg-[#28a745]" : "bg-[#3898EC]"
                     }`}
                   >
-                    {property.operation.toUpperCase()}
+                    {property.operation === "Venta" ? tCommon('sale').toUpperCase() : tCommon('rent').toUpperCase()}
                   </span>
                   <span className="px-3 py-1 rounded text-xs font-semibold bg-[#f3f3f3] text-[#333333]">
                     {property.type}
