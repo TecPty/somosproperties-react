@@ -157,7 +157,8 @@
     "locationUnavailable": "Location not available",
     "loadingMap": "Loading map...",
     "viewDetailsAria": "View details: {title}",
-    "whatsappAriaLabel": "Contact via WhatsApp"
+    "whatsappAriaLabel": "Contact via WhatsApp",
+    "highInterest": "High interest property"
   },
   "propertyDetail": {
     "bedrooms": "Bedrooms",
@@ -258,15 +259,15 @@
       "description": "Find your ideal property in Panama. Apartments and commercial premises for sale and rent in the best locations."
     },
     "about": {
-      "title": "About Us - SOMOS Properties",
+      "title": "About Us",
       "description": "We are a team of passionate real estate professionals with 15 years in the industry."
     },
     "privacy": {
-      "title": "Privacy Policy - SOMOS Properties",
+      "title": "Privacy Policy",
       "description": "Privacy Policy of SOMOS Properties in compliance with Law 81 of 2019 of Panama."
     },
     "terms": {
-      "title": "Terms of Service - SOMOS Properties",
+      "title": "Terms of Service",
       "description": "Terms and Conditions of use of SOMOS Properties."
     },
     "propiedades": {
@@ -282,7 +283,7 @@
       "description": "Exclusive properties with privileged locations, luxury finishes and premium amenities. Discover the best options in Punta Pacífica, Costa del Este and more."
     },
     "contacto": {
-      "title": "Contact - SOMOS Properties",
+      "title": "Contact",
       "description": "Contact us for more information about our properties in Panama."
     },
     "residenciales": {
@@ -385,7 +386,8 @@
     "hours": "Hours",
     "hoursWeekdays": "Monday to Friday: 8:00 AM - 6:00 PM",
     "hoursSaturday": "Saturdays: 9:00 AM - 2:00 PM",
-    "hoursSunday": "Sundays: Closed"
+    "hoursSunday": "Sundays: Closed",
+    "locationHeading": "Our Location"
   },
   "premium": {
     "badge": "PREMIUM PROPERTIES",

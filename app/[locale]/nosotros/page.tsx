@@ -1,15 +1,18 @@
 import OptimizedImage from "@/components/optimized-image"
 import Link from "next/link"
 import { getTranslations } from 'next-intl/server'
+import { createMetadata } from "@/lib/seo"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'metadata.about' })
-  
-  return {
+
+  return createMetadata({
     title: t('title'),
     description: t('description'),
-  }
+    path: '/nosotros',
+    locale,
+  })
 }
 
 export default async function NosotrosPage({ params }: { params: Promise<{ locale: string }> }) {

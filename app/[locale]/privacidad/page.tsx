@@ -1,16 +1,17 @@
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 import Link from "next/link"
 import { getTranslations } from "next-intl/server"
+import { createMetadata } from "@/lib/seo"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'metadata.privacy' })
-  
-  return {
+
+  return createMetadata({
     title: t('title'),
     description: t('description'),
-  }
+    path: '/privacidad',
+    locale,
+  })
 }
 
 export default async function PrivacidadPage() {
@@ -18,8 +19,7 @@ export default async function PrivacidadPage() {
 
   return (
     <>
-      <Navbar />
-      <main className="min-h-screen bg-white py-16">
+      <div className="min-h-screen bg-white py-16">
         <div className="container-custom max-w-4xl">
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>
@@ -218,8 +218,7 @@ export default async function PrivacidadPage() {
             </section>
           </div>
         </div>
-      </main>
-      <Footer />
+      </div>
     </>
   )
 }

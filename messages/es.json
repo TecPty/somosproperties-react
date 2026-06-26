@@ -157,7 +157,8 @@
     "locationUnavailable": "Ubicación no disponible",
     "loadingMap": "Cargando mapa...",
     "viewDetailsAria": "Ver detalles: {title}",
-    "whatsappAriaLabel": "Contactar por WhatsApp"
+    "whatsappAriaLabel": "Contactar por WhatsApp",
+    "highInterest": "Propiedad de alto interés"
   },
   "propertyDetail": {
     "bedrooms": "Habitaciones",
@@ -258,15 +259,15 @@
       "description": "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler en las mejores ubicaciones."
     },
     "about": {
-      "title": "Nosotros - SOMOS Properties",
+      "title": "Nosotros",
       "description": "Somos un equipo de profesionales apasionados en bienes raíces, con 15 años en la industria."
     },
     "privacy": {
-      "title": "Política de Privacidad - SOMOS Properties",
+      "title": "Política de Privacidad",
       "description": "Política de Privacidad de SOMOS Properties conforme a la Ley 81 de 2019 de Panamá."
     },
     "terms": {
-      "title": "Términos de Servicio - SOMOS Properties",
+      "title": "Términos de Servicio",
       "description": "Términos y Condiciones de uso de SOMOS Properties."
     },
     "propiedades": {
@@ -282,7 +283,7 @@
       "description": "Propiedades exclusivas con ubicaciones privilegiadas, acabados de lujo y amenidades premium. Descubre las mejores opciones en Punta Pacífica, Costa del Este y más."
     },
     "contacto": {
-      "title": "Contacto - SOMOS Properties",
+      "title": "Contacto",
       "description": "Contáctanos para más información sobre nuestras propiedades en Panamá."
     },
     "residenciales": {
@@ -384,7 +385,8 @@
     "hours": "Horario",
     "hoursWeekdays": "Lunes a Viernes: 8:00 AM - 6:00 PM",
     "hoursSaturday": "Sábados: 9:00 AM - 2:00 PM",
-    "hoursSunday": "Domingos: Cerrado"
+    "hoursSunday": "Domingos: Cerrado",
+    "locationHeading": "Nuestra Ubicación"
   },
   "premium": {
     "badge": "PROPIEDADES PREMIUM",

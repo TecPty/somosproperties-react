@@ -1,18 +1,17 @@
 ﻿import ContactForm from "@/components/contact-form"
 import { getTranslations } from "next-intl/server"
-import type { Metadata } from "next"
+import { createMetadata } from "@/lib/seo"
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'metadata.contacto' })
-  
-  return {
+
+  return createMetadata({
     title: t('title'),
     description: t('description'),
-    alternates: {
-      canonical: `https://somosproperties.com/${locale}/contacto`,
-    },
-  }
+    path: '/contacto',
+    locale,
+  })
 }
 
 export default async function ContactoPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -156,7 +155,7 @@ export default async function ContactoPage({ params }: { params: Promise<{ local
 
               {/* Map */}
               <div className="bg-white p-8 rounded-lg shadow-card">
-                <h3 className="text-xl font-semibold text-[#222222] mb-4">Nuestra Ubicación</h3>
+                <h3 className="text-xl font-semibold text-[#222222] mb-4">{t('locationHeading')}</h3>
                 <div className="w-full overflow-hidden rounded-lg border border-[#eeeeee]">
                   <iframe
                     title="Mapa Somos Properties"
