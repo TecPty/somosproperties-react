@@ -501,11 +501,12 @@
     "nextPage": "Next page",
     "types": {
       "Apartamento": "Apartment",
+      "Bodega": "Warehouse",
       "Casa": "House",
-      "Villa": "Villa",
       "Local": "Commercial Space",
       "Oficina": "Office",
-      "Terreno": "Land"
+      "Terreno": "Land",
+      "Villa": "Villa"
     }
   },
   "privacy": {

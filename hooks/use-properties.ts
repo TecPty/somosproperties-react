@@ -44,9 +44,12 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
       filtered = filtered.filter((p) => p.category === filters.category)
     }
 
-    // Filter by types
+    // Filter by types — "Local Comercial" is treated as alias of "Local"
     if (filters.types && filters.types.length > 0) {
-      filtered = filtered.filter((p) => filters.types!.includes(p.type))
+      filtered = filtered.filter((p) => {
+        const normalizedType = p.type === "Local Comercial" ? "Local" : p.type
+        return filters.types!.includes(normalizedType)
+      })
     }
 
     // Filter by price

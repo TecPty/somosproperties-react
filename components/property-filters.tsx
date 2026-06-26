@@ -15,9 +15,10 @@ interface PropertyFiltersProps {
 const stripAccents = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 const normalizeValue = (value: string) => stripAccents(value).toLowerCase()
 
-const filterableTypes = ["Apartamento", "Casa", "Villa", "Local", "Oficina"] as const
+const filterableTypes = ["Apartamento", "Bodega", "Casa", "Local", "Oficina", "Villa"] as const
 type FilterableType = (typeof filterableTypes)[number]
-const isFilterableType = (type: Property["type"]): type is FilterableType => !!type && type !== "Terreno"
+const isFilterableType = (type: Property["type"]): type is FilterableType =>
+  !!type && (filterableTypes as readonly string[]).includes(type)
 
 /** Preset price-range buckets */
 const PRICE_PRESETS_VENTA = [

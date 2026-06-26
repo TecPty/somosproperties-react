@@ -500,11 +500,12 @@
     "nextPage": "Página siguiente",
     "types": {
       "Apartamento": "Apartamento",
+      "Bodega": "Bodega",
       "Casa": "Casa",
-      "Villa": "Villa",
       "Local": "Local Comercial",
       "Oficina": "Oficina",
-      "Terreno": "Terreno"
+      "Terreno": "Terreno",
+      "Villa": "Villa"
     }
   },
   "privacy": {
