@@ -1,7 +1,7 @@
 export interface Property {
   id: number
   title: string
-  type: "Apartamento" | "Casa" | "Local" | "Terreno" | "Villa" | "Oficina"
+  type: "Apartamento" | "Bodega" | "Casa" | "Local" | "Local Comercial" | "Oficina" | "Terreno" | "Villa"
   category: "Residencial" | "Comercial"
   operation: "Venta" | "Alquiler" | "Venta/Alquiler"
   price: number
