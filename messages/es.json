@@ -438,6 +438,12 @@
     "promoAlt": "Promoción",
     "whatsappMessage": "Hola! Estoy interesado en una promoción. ¿Podrían darme más información?"
   },
+  "giveawayModal": {
+    "title": "Giveaway Somos Properties - ¡Participa y gana!",
+    "imageAlt": "Giveaway Somos Properties: Participa y gana un Smart Light Switch y un Smart Wifi Photoelectric Smoke Detector",
+    "cta": "Participar en Instagram",
+    "close": "Cerrar"
+  },
   "searchBar": {
     "formAriaLabel": "Buscar propiedades",
     "placeholder": "Buscar por ubicación, residencial, tipo...",

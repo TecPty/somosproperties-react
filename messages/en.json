@@ -439,6 +439,12 @@
     "promoAlt": "Promotion",
     "whatsappMessage": "Hi! I'm interested in a promotion. Could you give me more information?"
   },
+  "giveawayModal": {
+    "title": "Somos Properties Giveaway - Enter and win!",
+    "imageAlt": "Somos Properties Giveaway: Enter and win a Smart Light Switch and a Smart Wifi Photoelectric Smoke Detector",
+    "cta": "Enter on Instagram",
+    "close": "Close"
+  },
   "searchBar": {
     "formAriaLabel": "Search properties",
     "placeholder": "Search by location, residential, type...",

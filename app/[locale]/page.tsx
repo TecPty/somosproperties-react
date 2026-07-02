@@ -6,6 +6,7 @@ import ContactForm from "@/components/contact-form"
 import EmploymentForm from "@/components/employment-form"
 import OptimizedImage from "@/components/optimized-image"
 import { SchemaMarkupMultiple } from "@/components/schema-markup"
+import { GiveawayModal } from "@/components/giveaway-modal"
 import type { Property } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { formatPrice } from "@/lib/formatters"
@@ -62,6 +63,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
+      <GiveawayModal />
+
       {/* Schema Markup for SEO */}
       <SchemaMarkupMultiple
         schemas={[
