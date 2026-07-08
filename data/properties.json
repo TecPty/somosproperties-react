@@ -2316,7 +2316,7 @@
       "slug": "sunset-strip-local-411",
       "description_en": "Unit 411 at Plaza Sunset Strip (Level 4), 36 m². Rent $680/mo + maintenance fee $1.50/m² ($54/mo). Ideal for a boutique office, clinic, or creative studio on the upper floor.",
       "hoa": 54,
-      "hidden": false
+      "hidden": true
     },
     {
       "category": "Comercial",
@@ -2365,7 +2365,7 @@
       "slug": "sunset-strip-local-306",
       "description_en": "Unit 306 at Plaza Sunset Strip (Level 3), 80 m². Rent $1,375/mo + maintenance fee $1.50/m² ($120/mo). Interior unit in climate-controlled corridor with escalators. Ideal for boutique, studio or specialized services.",
       "hoa": 120,
-      "hidden": false
+      "hidden": true
     },
     {
       "category": "Comercial",
@@ -6781,7 +6781,7 @@
       ],
       "slug": "plaza-sunset-strip-local-0-nivel-00",
       "description_en": "Unit 109 at Plaza Sunset Strip Level 100, Vía Israel. 162 m² (84 m² + 78 m²). Rent $1,800/month + HOA $324/month ($2.00/m²). Tax not included.",
-      "hidden": true
+      "hidden": false
     },
     {
       "id": 258,
@@ -7358,7 +7358,7 @@
         "Pasillo climatizado y escaleras eléctricas",
         "Seguridad 24/7 y CCTV"
       ],
-      "hidden": false,
+      "hidden": true,
       "id": 274,
       "title": "Sunset Strip – Local 311",
       "slug": "sunset-strip-local-311",
