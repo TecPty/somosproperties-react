@@ -268,4 +268,24 @@
   .animate-modal-bounce-subtle {
     animation: modal-bounce-subtle 2s ease-in-out infinite;
   }
+
+  @keyframes confetti-fall {
+    0% {
+      transform: translate3d(0, -5vh, 0) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translate3d(var(--confetti-drift, 0px), 50vh, 0) rotate(360deg);
+    }
+    100% {
+      transform: translate3d(0, 110vh, 0) rotate(720deg);
+      opacity: 0.85;
+    }
+  }
+
+  .animate-confetti-fall {
+    animation-name: confetti-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 }

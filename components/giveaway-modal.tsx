@@ -3,19 +3,27 @@
 import { useEffect, useRef, useState } from "react"
 import { X } from "lucide-react"
 import { useFocusTrap } from "@/hooks/use-focus-trap"
+import { useCountdown } from "@/hooks/use-countdown"
 import { useTranslations } from "next-intl"
+import { GIVEAWAY_DRAW_AT } from "@/lib/giveaway"
 
 const INSTAGRAM_URL = "https://www.instagram.com/somosproperties/?hl=es-la"
 const SESSION_KEY = "giveaway-seen"
 const SHOW_DELAY_MS = 800
 
+function pad(value: number) {
+  return value.toString().padStart(2, "0")
+}
+
 export function GiveawayModal() {
   const t = useTranslations("giveawayModal")
   const [isVisible, setIsVisible] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
+  const countdown = useCountdown(GIVEAWAY_DRAW_AT)
   useFocusTrap(isVisible, modalRef, handleClose)
 
   useEffect(() => {
+    if (Date.now() >= GIVEAWAY_DRAW_AT.getTime()) return
     if (sessionStorage.getItem(SESSION_KEY) === "true") return
     const timer = setTimeout(() => setIsVisible(true), SHOW_DELAY_MS)
     return () => clearTimeout(timer)
@@ -59,7 +67,7 @@ export function GiveawayModal() {
           href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="block bg-white rounded-2xl overflow-hidden shadow-2xl"
+          className="block rounded-2xl overflow-hidden shadow-2xl"
         >
           <img
             src="/promociones/giveaway.webp"
@@ -69,7 +77,26 @@ export function GiveawayModal() {
           />
         </a>
 
-        <div className="bg-white p-4">
+        <div className="px-4 pt-4 text-center">
+          {countdown.isOver ? (
+            <p className="text-sm font-bold text-white">{t("countdownEnded")}</p>
+          ) : (
+            <>
+              <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide mb-1">
+                {t("countdownLabel")}
+              </p>
+              <div className="flex items-center justify-center gap-1 font-mono text-[1.53rem] font-bold text-white tabular-nums">
+                <span>{pad(countdown.hours)}</span>
+                <span>:</span>
+                <span>{pad(countdown.minutes)}</span>
+                <span>:</span>
+                <span>{pad(countdown.seconds)}</span>
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className="p-4">
           <a
             href={INSTAGRAM_URL}
             target="_blank"

@@ -443,7 +443,9 @@
     "title": "Somos Properties Giveaway - Enter and win!",
     "imageAlt": "Somos Properties Giveaway: Enter and win a Smart Light Switch and a Smart Wifi Photoelectric Smoke Detector",
     "cta": "Enter on Instagram",
-    "close": "Close"
+    "close": "Close",
+    "countdownLabel": "Giveaway closes in",
+    "countdownEnded": "The giveaway has already taken place!"
   },
   "searchBar": {
     "formAriaLabel": "Search properties",

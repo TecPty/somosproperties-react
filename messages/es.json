@@ -442,7 +442,9 @@
     "title": "Giveaway Somos Properties - ¡Participa y gana!",
     "imageAlt": "Giveaway Somos Properties: Participa y gana un Smart Light Switch y un Smart Wifi Photoelectric Smoke Detector",
     "cta": "Participar en Instagram",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "countdownLabel": "El sorteo cierra en",
+    "countdownEnded": "¡El sorteo ya se realizó!"
   },
   "searchBar": {
     "formAriaLabel": "Buscar propiedades",
