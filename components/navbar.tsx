@@ -4,21 +4,142 @@ import Link from "next/link"
 import { useTranslations } from 'next-intl'
 import { useParams, useRouter } from 'next/navigation'
 import OptimizedImage from "@/components/optimized-image"
-import { useState, useEffect, useTransition } from "react"
+import { useState, useEffect, useRef, useTransition } from "react"
+import { createPortal } from "react-dom"
 import { usePathname } from "next/navigation"
-import { MessageCircle, X, Menu, Phone } from "lucide-react"
-import { CONTACT } from "@/lib/config"
+
+type NavChild = { href: string; label: string }
+type NavLink = { href: string; label: string; children?: NavChild[] }
+
+const CHEVRON = (
+  <svg className="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path
+      fillRule="evenodd"
+      d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+      clipRule="evenodd"
+    />
+  </svg>
+)
+
+function slugify(label: string) {
+  return label.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, "-")
+}
+
+function NavDropdown({
+  link,
+  isActive,
+  openMenu,
+  setOpenMenu,
+  toggleLabel,
+}: {
+  link: NavLink
+  isActive: (href: string) => boolean
+  openMenu: string | null
+  setOpenMenu: (updater: string | null | ((prev: string | null) => string | null)) => void
+  toggleLabel: (open: boolean) => string
+}) {
+  const triggerRef = useRef<HTMLDivElement>(null)
+  const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const [coords, setCoords] = useState<{ top: number; left: number } | null>(null)
+  const isOpenState = openMenu === link.label
+  const id = `submenu-${slugify(link.label)}`
+
+  const cancelClose = () => {
+    if (closeTimeout.current) {
+      clearTimeout(closeTimeout.current)
+      closeTimeout.current = null
+    }
+  }
+
+  const openAt = () => {
+    cancelClose()
+    const rect = triggerRef.current?.getBoundingClientRect()
+    if (rect) setCoords({ top: rect.bottom + 4, left: rect.left })
+    setOpenMenu(link.label)
+  }
+
+  const scheduleClose = () => {
+    cancelClose()
+    closeTimeout.current = setTimeout(() => {
+      setOpenMenu((prev) => (prev === link.label ? null : prev))
+    }, 150)
+  }
+
+  useEffect(() => () => cancelClose(), [])
+
+  return (
+    <div
+      ref={triggerRef}
+      data-nav-dropdown={link.label}
+      className="relative shrink-0"
+      onMouseEnter={openAt}
+      onMouseLeave={scheduleClose}
+      onFocus={openAt}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node)) scheduleClose()
+      }}
+    >
+      <span className="inline-flex items-center gap-1">
+        <Link
+          href={link.href}
+          className={`whitespace-nowrap text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded ${
+            isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
+          }`}
+        >
+          {link.label}
+        </Link>
+        <button
+          type="button"
+          onClick={() => (isOpenState ? scheduleClose() : openAt())}
+          aria-expanded={isOpenState}
+          aria-controls={id}
+          aria-label={`${link.label}: ${toggleLabel(isOpenState)}`}
+          className="flex items-center justify-center h-8 w-8 -mx-1 rounded-md text-[#222222] hover:text-[#3898EC] hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
+        >
+          {CHEVRON}
+        </button>
+      </span>
+
+      {isOpenState &&
+        coords &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <div
+            id={id}
+            data-nav-dropdown={link.label}
+            role="menu"
+            style={{ position: "fixed", top: coords.top, left: coords.left }}
+            className="z-[60] min-w-[220px] rounded-xl border border-[#e6e6e6] bg-white/95 p-2 shadow-lg backdrop-blur-sm"
+            onMouseEnter={openAt}
+            onMouseLeave={scheduleClose}
+          >
+            {link.children?.map((child) => (
+              <Link
+                key={child.href}
+                href={child.href}
+                role="menuitem"
+                className="block rounded-lg px-3 py-2 text-sm text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
+              >
+                {child.label}
+              </Link>
+            ))}
+          </div>,
+          document.body
+        )}
+    </div>
+  )
+}
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isPending, startTransition] = useTransition()
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
+  const scrollStripRef = useRef<HTMLDivElement>(null)
   const pathname = usePathname()
   const params = useParams()
   const router = useRouter()
   const locale = params.locale as string
   const t = useTranslations('nav')
-  const tc = useTranslations('common')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,8 +151,31 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
-    setIsOpen(false)
+    setOpenMenu(null)
   }, [pathname])
+
+  useEffect(() => {
+    if (!openMenu) return
+    const closeAll = () => setOpenMenu(null)
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement
+      if (!target.closest("[data-nav-dropdown]")) closeAll()
+    }
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeAll()
+    }
+    window.addEventListener("click", handleClick)
+    window.addEventListener("keydown", handleKey)
+    window.addEventListener("scroll", closeAll, { passive: true })
+    const strip = scrollStripRef.current
+    strip?.addEventListener("scroll", closeAll, { passive: true })
+    return () => {
+      window.removeEventListener("click", handleClick)
+      window.removeEventListener("keydown", handleKey)
+      window.removeEventListener("scroll", closeAll)
+      strip?.removeEventListener("scroll", closeAll)
+    }
+  }, [openMenu])
 
   // Prefetch alternate locale on mount
   useEffect(() => {
@@ -47,7 +191,7 @@ export default function Navbar() {
     })
   }
 
-  const navLinks = [
+  const navLinks: NavLink[] = [
     { href: `/${locale}`, label: t('home') },
     { href: `/${locale}/premium`, label: t('premium') },
     {
@@ -55,7 +199,7 @@ export default function Navbar() {
       label: t('commercial'),
       children: [
         { href: `/${locale}/comerciales?search=The%20Tower%20Business%20Plaza`, label: "The Tower Business Plaza" },
-        { href: `/${locale}/comerciales?search=Central%20Plaza%20de%20Arraijan`, label: "Central Plaza de Arraijan" },
+        { href: `/${locale}/comerciales?search=Central%20Plaza%20La%20Chorrera`, label: "Central Plaza, La Chorrera" },
         { href: `/${locale}/comerciales?search=Sunset%20Strip`, label: "Sunset Strip" },
         { href: `/${locale}/comerciales?search=Balboa%20Boutique`, label: "Balboa Boutique" },
         { href: `/${locale}/comerciales?search=Plaza%20Los%20Guayacanes`, label: "Plaza Los Guayacanes" },
@@ -96,10 +240,11 @@ export default function Navbar() {
     return pathname.startsWith(href)
   }
 
+  const toggleLabel = (open: boolean) => (open ? t('closeMenu') : t('openMenu'))
+
   return (
-    <>
-      <nav
-        className={`sticky top-0 z-50 backdrop-blur-md transition-all duration-300 ${
+    <nav
+      className={`sticky top-0 z-50 backdrop-blur-md transition-all duration-300 ${
         isScrolled
           ? "bg-white/98 shadow-[0_2px_12px_rgba(0,0,0,0.08)]"
           : "bg-white/95"
@@ -107,9 +252,9 @@ export default function Navbar() {
       aria-label={t('mainNav')}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 h-16 sm:h-20">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center">
+          <Link href={`/${locale}`} className="flex items-center shrink-0">
             <OptimizedImage
               src="/images/logo-somosproperties-250x250px-transparente.webp"
               alt="SOMOS Properties"
@@ -117,78 +262,55 @@ export default function Navbar() {
               width={110}
               height={110}
               priority
-              className="h-auto w-[88px] md:w-[100px]"
+              className="h-auto w-[64px] sm:w-[84px] md:w-[92px] lg:w-[100px]"
             />
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Unified nav: same links/order/CTAs at every breakpoint, wrapped in a
+              horizontally-scrolling strip so nothing gets hidden, cut off, or
+              replaced by a hamburger/drawer on narrow viewports. */}
+          <div
+            ref={scrollStripRef}
+            className="flex items-center gap-3 sm:gap-5 md:gap-6 lg:gap-8 overflow-x-auto flex-nowrap py-1 [overscroll-behavior-x:contain] [scrollbar-width:thin] [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-thumb]:bg-[#e6e6e6] [&::-webkit-scrollbar-thumb]:rounded-full"
+          >
             {navLinks.map((link) =>
               link.children ? (
-                <div key={link.label} className="relative group">
-                  <Link
-                    href={link.href}
-                    className={`inline-flex items-center gap-2 text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 ${
-                      isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
-                    }`}
-                    aria-haspopup="true"
-                  >
-                    {link.label}
-                    <svg
-                      className="h-3 w-3"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Link>
-                  <div className="absolute left-0 top-full hidden min-w-[220px] pt-2 group-hover:block">
-                    <div className="rounded-xl border border-[#e6e6e6] bg-white/95 p-2 shadow-lg backdrop-blur-sm">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="block rounded-lg px-3 py-2 text-sm text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC]"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                <NavDropdown
+                  key={link.label}
+                  link={link}
+                  isActive={isActive}
+                  openMenu={openMenu}
+                  setOpenMenu={setOpenMenu}
+                  toggleLabel={toggleLabel}
+                />
               ) : (
                 <Link
                   key={link.label}
                   href={link.href}
                   className={
                     link.href === `/${locale}/contacto`
-                      ? `inline-flex items-center px-4 py-2 rounded-lg bg-[#3898EC] text-white text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2`
-                      : `text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded ${
-                        isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
-                      } ${link.href.includes('premium') ? "font-bold" : ""}`
+                      ? `shrink-0 whitespace-nowrap inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[#3898EC] text-white text-xs sm:text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2`
+                      : `shrink-0 whitespace-nowrap text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded ${
+                          isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
+                        } ${link.href.includes('premium') ? "font-bold" : ""}`
                   }
                 >
                   {link.label}
                 </Link>
               )
             )}
-            
+
             {/* Language Switcher */}
-            <div className="flex items-center gap-2 border-l border-[#e6e6e6] pl-6 relative">
+            <div className="flex items-center gap-2 shrink-0 border-l border-[#e6e6e6] pl-3 sm:pl-4 md:pl-6 relative">
               {isPending && (
-                <div className="absolute -left-8 top-1/2 -translate-y-1/2">
+                <div className="absolute -left-6 top-1/2 -translate-y-1/2">
                   <div className="w-4 h-4 border-2 border-[#3898EC] border-t-transparent rounded-full animate-spin" />
                 </div>
               )}
               <button
                 onClick={() => handleLocaleChange('es')}
                 disabled={isPending}
-                className={`text-lg transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
+                className={`text-base sm:text-lg transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title={t('spanish')}
               >
                 🇪🇸
@@ -197,109 +319,15 @@ export default function Navbar() {
               <button
                 onClick={() => handleLocaleChange('en')}
                 disabled={isPending}
-                className={`text-lg transition-all ${locale === 'en' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
+                className={`text-base sm:text-lg transition-all ${locale === 'en' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title="English"
               >
                 🇺🇸
               </button>
             </div>
-          </div>
-
-          {/* Mobile: Menu Button Only */}
-          <div className="md:hidden flex items-center">
-            {/* Mobile Menu Button */}
-            <button
-              className="flex items-center justify-center w-11 h-11 rounded-xl text-[#333333] hover:bg-[#f3f3f3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-1"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label={isOpen ? t('closeMenu') : t('openMenu')}
-              aria-expanded={isOpen}
-              aria-controls="mobile-menu"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div id="mobile-menu" className="md:hidden py-4 border-t border-[#eeeeee] animate-slide-up">
-            {navLinks.map((link) =>
-              link.children ? (
-                <div key={link.label} className="py-2">
-                  <Link
-                    href={link.href}
-                    className={`block py-2 px-4 text-[#222222] hover:bg-[#f3f3f3] hover:text-[#3898EC] transition-colors ${
-                      isActive(link.href) ? "text-[#0082f3] bg-[#f3f3f3]" : ""
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                  {link.children.map((child) => (
-                    <Link
-                      key={child.href}
-                      href={child.href}
-                      className="block py-2 pl-8 pr-4 text-sm text-[#4b4b4b] hover:bg-[#f3f3f3] hover:text-[#3898EC]"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
-                </div>
-              ) : (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className={`block py-3 px-4 text-[#222222] hover:bg-[#f3f3f3] hover:text-[#3898EC] transition-colors ${
-                    isActive(link.href) ? "text-[#0082f3] bg-[#f3f3f3]" : ""
-                  } ${link.href.includes('premium') ? "font-bold" : ""}`}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
-            
-            {/* Mobile Language Switcher */}
-            <div className="flex items-center gap-3 px-4 py-3 border-t border-[#eeeeee] mt-2 relative">
-              <span className="text-sm text-[#666666]">{t('language')}:</span>
-              {isPending && (
-                <div className="absolute right-4 top-1/2 -translate-y-1/2">
-                  <div className="w-5 h-5 border-2 border-[#3898EC] border-t-transparent rounded-full animate-spin" />
-                </div>
-              )}
-              <button
-                onClick={() => handleLocaleChange('es')}
-                disabled={isPending}
-                className={`text-2xl transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
-                title={t('spanish')}
-              >
-                🇪🇸
-              </button>
-              <button
-                onClick={() => handleLocaleChange('en')}
-                disabled={isPending}
-                className={`text-2xl transition-all ${locale === 'en' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
-                title="English"
-              >
-                🇺🇸
-              </button>
-            </div>
-          </div>
-        )}
       </div>
-      </nav>
-
-    </>
+    </nav>
   )
 }
