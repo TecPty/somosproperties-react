@@ -99,6 +99,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const hasRequirements = Array.isArray(property.requirements) && property.requirements.length > 0
   const hasIncentives = Array.isArray(property.incentives) && property.incentives.length > 0
   const hasEligibility = typeof property.minIncome === "number" && Number.isFinite(property.minIncome)
+  const isUnavailable = property.status === "rented" || property.status === "sold"
 
   const googleMapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY
   const mapSrc = googleMapsKey
@@ -513,24 +514,38 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 />
               )}
 
-              {/* Formulario Califica en 30 segundos */}
-              <section className="formulario-califica">
-                <h3 className="formulario-titulo">{tDetail('qualifyTitle')}</h3>
-                <p className="formulario-subtexto">
-                  {tDetail('qualifySubtitle')}
-                </p>
-                <LeadQualifier
-                  propertyId={property.id}
-                  propertyTitle={property.title}
-                  minIncome={property.minIncome}
-                />
-              </section>
+              {isUnavailable ? (
+                /* Propiedad alquilada/vendida: sin CTAs de disponibilidad inmediata */
+                <section className="formulario-contacto" role="status">
+                  <div className="rounded-lg border border-[#ffe1b3] bg-[#fff8ef] p-6 text-center">
+                    <p className="text-lg font-bold text-[#ff9500] mb-2">
+                      {property.status === 'sold' ? tDetail('unavailable.soldTitle') : tDetail('unavailable.rentedTitle')}
+                    </p>
+                    <p className="text-sm text-[#666666]">{tDetail('unavailable.notice')}</p>
+                  </div>
+                </section>
+              ) : (
+                <>
+                  {/* Formulario Califica en 30 segundos */}
+                  <section className="formulario-califica">
+                    <h3 className="formulario-titulo">{tDetail('qualifyTitle')}</h3>
+                    <p className="formulario-subtexto">
+                      {tDetail('qualifySubtitle')}
+                    </p>
+                    <LeadQualifier
+                      propertyId={property.id}
+                      propertyTitle={property.title}
+                      minIncome={property.minIncome}
+                    />
+                  </section>
 
-              {/* Formulario de contacto clásico */}
-              <section className="formulario-contacto">
-                <h3 className="formulario-titulo">{tDetail('requestInfoTitle')}</h3>
-                <ContactForm compact propertyTitle={property.title} />
-              </section>
+                  {/* Formulario de contacto clásico */}
+                  <section className="formulario-contacto">
+                    <h3 className="formulario-titulo">{tDetail('requestInfoTitle')}</h3>
+                    <ContactForm compact propertyTitle={property.title} />
+                  </section>
+                </>
+              )}
             </aside>
           </div>
 
@@ -687,27 +702,29 @@ export default function PropertyDetailClient({ property, similarProperties, prom
       </main>
 
 
-      {/* Mobile Sticky CTA Bar */}
-      <div className="md:hidden fixed bottom-16 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] flex gap-3 animate-slide-up">
-        <a
-          href={`https://wa.me/50766770577?text=${encodeURIComponent(tDetail('mobileWhatsapp', { title: property.title }))}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-all"
-        >
-          <img src="/images/icons/whatsapp.webp" alt="WhatsApp" className="h-5 w-5 object-contain" />
-          WhatsApp
-        </a>
-        <button
-          onClick={() => {
-            const contactSection = document.querySelector('.formulario-contacto');
-            contactSection?.scrollIntoView({ behavior: 'smooth' });
-          }}
-          className="flex-1 bg-[#3898EC] text-white py-3 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-all"
-        >
-          {tCommon('whatsappQuery')}
-        </button>
-      </div>
+      {/* Mobile Sticky CTA Bar — oculta si la propiedad ya no está disponible */}
+      {!isUnavailable && (
+        <div className="md:hidden fixed bottom-16 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] flex gap-3 animate-slide-up">
+          <a
+            href={`https://wa.me/50766770577?text=${encodeURIComponent(tDetail('mobileWhatsapp', { title: property.title }))}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-all"
+          >
+            <img src="/images/icons/whatsapp.webp" alt="WhatsApp" className="h-5 w-5 object-contain" />
+            WhatsApp
+          </a>
+          <button
+            onClick={() => {
+              const contactSection = document.querySelector('.formulario-contacto');
+              contactSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="flex-1 bg-[#3898EC] text-white py-3 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-all"
+          >
+            {tCommon('whatsappQuery')}
+          </button>
+        </div>
+      )}
     </>
   )
 }

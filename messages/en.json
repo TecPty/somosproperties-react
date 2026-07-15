@@ -209,6 +209,11 @@
       "rented": "Rented",
       "sold": "Sold"
     },
+    "unavailable": {
+      "rentedTitle": "Rented property",
+      "soldTitle": "Sold property",
+      "notice": "This property is no longer available. Contact us to learn about similar options."
+    },
     "highlights": {
       "total": "total",
       "bedrooms": "bedrooms",

@@ -209,6 +209,11 @@
       "rented": "Alquilado",
       "sold": "Vendido"
     },
+    "unavailable": {
+      "rentedTitle": "Propiedad alquilada",
+      "soldTitle": "Propiedad vendida",
+      "notice": "Esta propiedad ya no está disponible. Contáctanos para conocer opciones similares."
+    },
     "highlights": {
       "total": "totales",
       "bedrooms": "habitaciones",
