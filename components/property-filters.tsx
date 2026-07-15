@@ -15,7 +15,7 @@ interface PropertyFiltersProps {
 const stripAccents = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 const normalizeValue = (value: string) => stripAccents(value).toLowerCase()
 
-const filterableTypes = ["Apartamento", "Bodega", "Casa", "Local", "Oficina", "Villa"] as const
+const filterableTypes = ["Apartamento", "Bodega", "Casa", "Local", "Oficina", "Terreno", "Villa"] as const
 type FilterableType = (typeof filterableTypes)[number]
 const isFilterableType = (type: Property["type"] | undefined): type is FilterableType =>
   !!type && (filterableTypes as readonly string[]).includes(type)

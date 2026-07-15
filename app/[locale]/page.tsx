@@ -55,10 +55,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     .filter((p) => p.featured && !premiumIds.has(p.id))
     .slice(0, 6)
 
-  // Oportunidades comerciales (batch 2007-2019)
-  const commercialOpportunities = allProperties
-    .filter((p) => p.id >= 2007 && p.id <= 2019 && !p.hidden && p.status === "available")
-    .slice(0, 6)
+  // Oportunidades comerciales: terrenos reales del catálogo.
+  // Nota: hoy existen 8 terrenos reales (type === "Terreno"), no 11 — se muestran todos, sin datos ficticios.
+  const commercialOpportunities = allProperties.filter(
+    (p) => p.type === "Terreno" && !p.hidden && p.status === "available"
+  )
 
   const t = await getTranslations('home')
 
