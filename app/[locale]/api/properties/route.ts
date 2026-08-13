@@ -40,6 +40,7 @@ export async function GET(request: NextRequest) {
 
     // Apply filters
     properties = properties.filter((prop) => {
+      if (prop.hidden) return false
       if (featured && !prop.featured) return false
       if (category && prop.category !== category) return false
       if (city && prop.city !== city) return false

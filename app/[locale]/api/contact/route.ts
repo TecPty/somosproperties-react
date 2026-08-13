@@ -4,7 +4,6 @@ import { contactEmailHTML } from "@/lib/email-templates/contact"
 import { rateLimit, getClientIp } from "@/lib/rate-limit"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 // Rate limit: 5 submissions per IP per 10 minutes
 const RATE_LIMIT = 5
@@ -63,8 +62,9 @@ export async function POST(request: Request) {
 
   const emailFrom = process.env.CONTACT_EMAIL_FROM || "ventas@somosproperties.com"
   const emailTo = process.env.CONTACT_EMAIL_TO || "ventas@somosproperties.com"
+  const apiKey = process.env.RESEND_API_KEY
 
-  if (!process.env.RESEND_API_KEY) {
+  if (!apiKey) {
     console.error("RESEND_API_KEY not configured")
     return NextResponse.json(
       {
@@ -74,6 +74,8 @@ export async function POST(request: Request) {
       { status: 500 },
     )
   }
+
+  const resend = new Resend(apiKey)
 
   const subject = `Nuevo contacto${payload.propertyTitle ? `: ${payload.propertyTitle}` : ""}`
 
