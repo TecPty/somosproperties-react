@@ -6757,10 +6757,15 @@
       "parkingSpots": 0,
       "area": 162,
       "builtYear": 2024,
-      "image": "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/exterior/fachada-costado-estacionamiento.webp",
+        "/images/properties/sunset-strip/exterior/acceso-principal-estacionamiento.webp",
         "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp",
-        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp"
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/amenities/totem-sunset-strip-logo.webp"
       ],
       "planos": [],
       "description": "Local 109 en Nivel 100 de Plaza Sunset Strip, Vía Israel. 162 m² (84m² + 78m²) ideal para oficina o comercio. Alquiler $1,800/mes + Mantenimiento $324/mes ($2.00/m²). ITBMS no incluido.",
