@@ -1,7 +1,7 @@
 ﻿"use client"
 
 import { useState } from "react"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import { CheckCircle, Loader2 } from "lucide-react"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -12,6 +12,7 @@ type EmploymentErrors = Partial<
 
 export default function EmploymentForm() {
   const t = useTranslations('employmentForm')
+  const locale = useLocale()
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
@@ -53,7 +54,7 @@ export default function EmploymentForm() {
       form.append("education", education)
       if (cv) form.append("cv", cv)
 
-      const response = await fetch("/api/empleo", {
+      const response = await fetch(`/${locale}/api/empleo`, {
         method: "POST",
         body: form,
       })

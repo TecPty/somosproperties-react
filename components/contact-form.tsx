@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { MessageCircle, Mail, CheckCircle, Loader2, ChevronDown } from "lucide-react"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import type { ContactFormData } from "@/lib/types"
 import { trackGaEvent } from "@/lib/google-analytics"
 import { CONTACT } from "@/lib/config"
@@ -22,6 +22,7 @@ function buildWhatsAppUrl(t: (key: string, values?: Record<string, string>) => s
 
 export default function ContactForm({ compact = false, propertyTitle }: ContactFormProps) {
   const t = useTranslations('home.contact')
+  const locale = useLocale()
   const [showForm, setShowForm] = useState(false)
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
@@ -44,21 +45,16 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
   const validateForm = (): boolean => {
     const newErrors: Partial<Record<keyof ContactFormData, string>> = {}
     if (!formData.name.trim()) newErrors.name = t('errors.nameRequired')
-    
-    // En modo express (no compact), solo requerimos nombre y teléfono
-    if (!compact) {
-      if (!formData.phone.trim()) newErrors.phone = t('errors.phoneRequired')
-    } else {
-      // En modo compact, validamos todos los campos
-      if (!formData.email.trim()) {
-        newErrors.email = t('errors.emailRequired')
-      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-        newErrors.email = t('errors.emailInvalid')
-      }
-      if (!formData.phone.trim()) newErrors.phone = t('errors.phoneRequired')
-      if (!formData.message.trim()) newErrors.message = t('errors.messageRequired')
+
+    if (!formData.email.trim()) {
+      newErrors.email = t('errors.emailRequired')
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = t('errors.emailInvalid')
     }
-    
+
+    if (!formData.phone.trim()) newErrors.phone = t('errors.phoneRequired')
+    if (!formData.message.trim()) newErrors.message = t('errors.messageRequired')
+
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
@@ -70,7 +66,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
     setSubmitError(null)
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch(`/${locale}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -159,11 +155,12 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
             <div className="flex-1 border-t border-gray-300" />
           </div>
 
-          {/* ── Express Form: Always visible (2 campos) ── */}
+          {/* ── Express Form: Always visible (4 campos) ── */}
           <form onSubmit={handleSubmit} className="space-y-3" noValidate>
             {/* Name */}
             <div>
               <input
+                required
                 type="text"
                 id="name"
                 name="name"
@@ -179,6 +176,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
             {/* Phone */}
             <div>
               <input
+                required
                 type="tel"
                 id="phone"
                 name="phone"
@@ -189,6 +187,39 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
                 autoComplete="tel"
               />
               {errors.phone && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.phone}</p>}
+            </div>
+
+            {/* Email */}
+            <div>
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className={inputClass("email")}
+                placeholder={t('emailPlaceholder')}
+                autoComplete="email"
+                maxLength={254}
+              />
+              {errors.email && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.email}</p>}
+            </div>
+
+            {/* Message */}
+            <div>
+              <textarea
+                required
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={3}
+                className={`${inputClass("message")} resize-none`}
+                placeholder={t('messagePlaceholder')}
+                maxLength={2000}
+              />
+              {errors.message && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.message}</p>}
             </div>
 
             <button
@@ -221,6 +252,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
               <input
+                required
                 type="text"
                 name="name"
                 value={formData.name}
@@ -233,6 +265,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
             </div>
             <div>
               <input
+                required
                 type="tel"
                 name="phone"
                 value={formData.phone}
@@ -244,7 +277,22 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
               {errors.phone && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.phone}</p>}
             </div>
           </div>
+          <div>
+            <input
+              required
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className={inputClass("email")}
+              placeholder={t('emailPlaceholder')}
+              aria-label={t('emailPlaceholder')}
+              maxLength={254}
+            />
+            {errors.email && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.email}</p>}
+          </div>
           <textarea
+            required
             name="message"
             value={formData.message}
             onChange={handleChange}
@@ -252,6 +300,7 @@ export default function ContactForm({ compact = false, propertyTitle }: ContactF
             className={`${inputClass("message")} resize-none`}
             placeholder={t('messagePlaceholder')}
             aria-label={t('messagePlaceholder')}
+            maxLength={2000}
           />
           {errors.message && <p className="mt-1 text-xs text-[#ea384c]" role="alert">{errors.message}</p>}
           <button
