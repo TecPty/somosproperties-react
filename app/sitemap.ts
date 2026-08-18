@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   )
 
   const propertyRoutes: MetadataRoute.Sitemap = allPropertiesData
-    .filter((property) => !property.hidden && property.status === 'available')
+    .filter((property) => !property.hidden)
     .flatMap((property) =>
       locales.map((locale) => ({
         url: `${baseUrl}/${locale}/propiedad/${property.id}`,
