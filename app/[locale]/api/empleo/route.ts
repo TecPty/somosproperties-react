@@ -19,7 +19,7 @@ function getExtension(filename: string) {
 export async function POST(request: NextRequest) {
   // ── Rate limiting ──────────────────────────────────────────────────────────
   const ip = getClientIp(request)
-  const rl = rateLimit(ip, RATE_LIMIT, RATE_WINDOW_MS)
+  const rl = rateLimit(`employment:${ip}`, RATE_LIMIT, RATE_WINDOW_MS)
   if (rl.limited) {
     return NextResponse.json(
       { ok: false, error: "Demasiadas solicitudes. Intenta nuevamente más tarde." },

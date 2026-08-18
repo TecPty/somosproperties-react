@@ -12,7 +12,7 @@ const RATE_WINDOW_MS = 10 * 60 * 1000
 export async function POST(request: Request) {
   // ── Rate limiting ──────────────────────────────────────────────────────────
   const ip = getClientIp(request)
-  const rl = rateLimit(ip, RATE_LIMIT, RATE_WINDOW_MS)
+  const rl = rateLimit(`contact:${ip}`, RATE_LIMIT, RATE_WINDOW_MS)
   if (rl.limited) {
     return NextResponse.json(
       { ok: false, error: "Demasiadas solicitudes. Intenta nuevamente más tarde." },
