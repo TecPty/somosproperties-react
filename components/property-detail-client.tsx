@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { PromotionModal } from "@/components/promotion-modal"
 import { usePromotionModal } from "@/hooks/use-promotion-modal"
 import { useIntersectionTrigger } from "@/hooks/use-intersection-trigger"
@@ -34,10 +34,14 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const [activeTab, setActiveTab] = useState<"description" | "amenities" | "plans">("description")
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImage, setLightboxImage] = useState("")
+  const [videoOpen, setVideoOpen] = useState(false)
   const tCommon = useTranslations('common')
   const tDetail = useTranslations('propertyDetail')
   const locale = useLocale()
   const hasTrackedView = useRef(false)
+  const videoRef = useRef<HTMLVideoElement | null>(null)
+  const videoOpenButtonRef = useRef<HTMLButtonElement | null>(null)
+  const shouldPlayVideoOnOpen = useRef(false)
 
   // --- PROMOCIONES Y MODAL INTELIGENTE ---
   const { isOpen, promotion, openModal, closeModal } = usePromotionModal();
@@ -105,6 +109,65 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const mapSrc = googleMapsKey
     ? `https://www.google.com/maps/embed/v1/place?key=${googleMapsKey}&q=${encodeURIComponent(property.location)}&zoom=15`
     : null
+  const propertyVideo = property.video?.[locale as "es" | "en"]
+  const videoModalTitleId = `property-video-title-${property.id}`
+
+  const openVideoModal = useCallback(() => {
+    shouldPlayVideoOnOpen.current = true
+    setVideoOpen(true)
+  }, [])
+
+  const closeVideoModal = useCallback(() => {
+    const video = videoRef.current
+    shouldPlayVideoOnOpen.current = false
+
+    if (video) {
+      video.pause()
+      video.currentTime = 0
+    }
+
+    setVideoOpen(false)
+    window.setTimeout(() => videoOpenButtonRef.current?.focus(), 0)
+  }, [])
+
+  useEffect(() => {
+    if (!videoOpen) return
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [videoOpen])
+
+  useEffect(() => {
+    if (!videoOpen) return
+
+    const video = videoRef.current
+    if (video && shouldPlayVideoOnOpen.current) {
+      shouldPlayVideoOnOpen.current = false
+      video.currentTime = 0
+      video.muted = false
+
+      const playPromise = video.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Si el navegador bloquea la reproducción, el modal queda abierto
+          // y los controles permiten iniciar manualmente sin reintentos.
+        })
+      }
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeVideoModal()
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [closeVideoModal, videoOpen])
 
   useEffect(() => {
     if (hasTrackedView.current) return
@@ -165,6 +228,54 @@ export default function PropertyDetailClient({ property, similarProperties, prom
               blur={false}
               objectFit="contain"
             />
+          </div>
+        </div>
+      )}
+
+      {/* Property Video Modal */}
+      {videoOpen && propertyVideo && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto overflow-x-hidden bg-black/90 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={videoModalTitleId}
+          onClick={closeVideoModal}
+        >
+          <div
+            className="relative flex w-full items-center justify-center"
+            style={{ maxWidth: "min(92vw, calc(86vh * 9 / 16))" }}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h2 id={videoModalTitleId} className="sr-only">
+              {tDetail('propertyVideoTitle')}
+            </h2>
+            <button
+              type="button"
+              onClick={closeVideoModal}
+              className="absolute -top-12 right-0 z-10 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+              aria-label={tDetail('closeVideo')}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <video
+              ref={videoRef}
+              className="aspect-[9/16] max-h-[86vh] w-full rounded-xl bg-black shadow-2xl md:max-h-[80vh]"
+              controls
+              playsInline
+              preload="none"
+              poster={propertyVideo.poster}
+            >
+              <source src={propertyVideo.src} type="video/mp4" />
+            </video>
           </div>
         </div>
       )}
@@ -245,6 +356,17 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 setImageError(false)
               }}
               propertyTitle={property.title}
+              videoThumbnail={
+                propertyVideo
+                  ? {
+                      poster: propertyVideo.poster,
+                      label: tDetail('viewVideo'),
+                      ariaLabel: tDetail('propertyVideoTitle'),
+                      onOpen: openVideoModal,
+                    }
+                  : undefined
+              }
+              videoButtonRef={videoOpenButtonRef}
             />
           </div>
 

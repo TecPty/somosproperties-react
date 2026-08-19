@@ -17,6 +17,7 @@ export interface Property {
   image: string
   images: string[]
   thumbnail?: string // Imagen cuadrada optimizada para thumbnail
+  video?: Partial<Record<"es" | "en", PropertyVideo>>
   planos?: string[]
   highlights?: string[]
   virtualTour?: string
@@ -31,6 +32,11 @@ export interface Property {
   status: "available" | "sold" | "rented"
   tier?: "premium" | "standard"
   promo?: PromotionalFlyer
+}
+
+export interface PropertyVideo {
+  src: string
+  poster: string
 }
 
 export interface PromotionalFlyer {

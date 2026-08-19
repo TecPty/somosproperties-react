@@ -18,6 +18,26 @@ function getPropertyById(id: number): Property | undefined {
   return propertiesData.find((property) => property.id === id && !property.hidden)
 }
 
+function withLocaleVideo(property: Property, locale: string): Property {
+  if (!property.video) return property
+
+  const localeKey = locale === "en" ? "en" : "es"
+  const localizedVideo = property.video[localeKey]
+
+  if (!localizedVideo) {
+    const propertyWithoutVideo = { ...property }
+    delete propertyWithoutVideo.video
+    return propertyWithoutVideo
+  }
+
+  return {
+    ...property,
+    video: {
+      [localeKey]: localizedVideo,
+    },
+  }
+}
+
 function buildPropertyDescription(property: Property): string {
   const basePrice =
     property.operation === "Venta"
@@ -122,8 +142,8 @@ export async function generateMetadata({
   })
 }
 
-export default async function PropertyDetailsPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
+export default async function PropertyDetailsPage({ params }: { params: Promise<{ id: string; locale: string }> }) {
+  const { id, locale } = await params
   const propertyId = Number.parseInt(id, 10)
 
   if (Number.isNaN(propertyId)) {
@@ -148,6 +168,8 @@ export default async function PropertyDetailsPage({ params }: { params: Promise<
 
   const promotions = getPropertyPromotions(property.id)
   const propertyJsonLd = buildPropertyJsonLd(property)
+  const localizedProperty = withLocaleVideo(property, locale)
+  const localizedSimilarProperties = similarProperties.map((item) => withLocaleVideo(item, locale))
 
   return (
     <>
@@ -158,8 +180,8 @@ export default async function PropertyDetailsPage({ params }: { params: Promise<
         dangerouslySetInnerHTML={{ __html: JSON.stringify(propertyJsonLd) }}
       />
       <PropertyDetailClient
-        property={property}
-        similarProperties={similarProperties}
+        property={localizedProperty}
+        similarProperties={localizedSimilarProperties}
         promotions={promotions}
       />
     </>

@@ -9087,7 +9087,7 @@
       "location": "Cativá, Colón, detrás Super Xtra, Vía Transistmica, Panamá",
       "city": "Colón",
       "district": "Cativá",
-      "area": 25503,
+      "area": 25780,
       "price": null,
       "pricePerMonth": null,
       "bedrooms": null,
@@ -9106,10 +9106,16 @@
       ],
       "planos": [],
       "thumbnail": "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-1.webp",
-      "description": "Terreno residencial de 25,503 m² en Cativá, Colón. Acceso por Vía Transistmica, detrás del Super Xtra. Zonificación Residencial R-E. Precio a consultar.",
-      "description_en": "Residential land of 25,503 m² in Cativá, Colón. Access from the Transistmica Highway, behind Super Xtra. Residential R-E zoning. Price upon request.",
+      "video": {
+        "es": {
+          "src": "/videos/propiedades/cativa/P2016-CATIVA-WEB.mp4",
+          "poster": "/videos/propiedades/cativa/P2016-CATIVA-POSTER.webp"
+        }
+      },
+      "description": "Terreno residencial de 25,780 m² en Cativá, Colón. Acceso por Vía Transistmica, detrás del Super Xtra. Zonificación Residencial R-E. Precio a consultar.",
+      "description_en": "Residential land of 25,780 m² in Cativá, Colón. Access from the Transistmica Highway, behind Super Xtra. Residential R-E zoning. Price upon request.",
       "highlights": [
-        "25,503 m² (2.55 Hectáreas)",
+        "25,780 m² (2.58 Hectáreas)",
         "Zonificación Residencial R-E",
         "Acceso por Vía Transistmica",
         "Detrás de Super Xtra Cativá",

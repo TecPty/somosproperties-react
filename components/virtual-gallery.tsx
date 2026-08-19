@@ -1,6 +1,6 @@
 "use client"
 
-import { useCallback, useMemo, useRef } from "react"
+import { useCallback, useMemo, useRef, type RefObject } from "react"
 import OptimizedImage from "@/components/optimized-image"
 
 interface VirtualGalleryProps {
@@ -8,9 +8,23 @@ interface VirtualGalleryProps {
   selectedImage: number
   onSelectImage: (index: number) => void
   propertyTitle: string
+  videoThumbnail?: {
+    poster: string
+    label: string
+    ariaLabel: string
+    onOpen: () => void
+  }
+  videoButtonRef?: RefObject<HTMLButtonElement | null>
 }
 
-export function VirtualGallery({ images, selectedImage, onSelectImage, propertyTitle }: VirtualGalleryProps) {
+export function VirtualGallery({
+  images,
+  selectedImage,
+  onSelectImage,
+  propertyTitle,
+  videoThumbnail,
+  videoButtonRef,
+}: VirtualGalleryProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const itemsPerRow = typeof window !== "undefined" && window.innerWidth >= 1024 ? 6 : typeof window !== "undefined" && window.innerWidth >= 768 ? 5 : 3
   const visibleRange = useMemo(() => {
@@ -69,6 +83,37 @@ export function VirtualGallery({ images, selectedImage, onSelectImage, propertyT
           </button>
         )
       })}
+      {videoThumbnail && (
+        <button
+          ref={videoButtonRef}
+          type="button"
+          onClick={videoThumbnail.onOpen}
+          aria-label={videoThumbnail.ariaLabel}
+          className="relative h-24 rounded-lg overflow-hidden border-2 border-transparent hover:border-[#3898EC] transition-all flex-shrink-0 group bg-black"
+        >
+          <OptimizedImage
+            src={videoThumbnail.poster}
+            alt=""
+            type="thumbnail"
+            width={200}
+            height={150}
+            sizes="96px"
+            priority={false}
+          />
+          <span className="absolute inset-0 bg-black/35 group-hover:bg-black/45 transition-colors" aria-hidden="true" />
+          <span
+            className="absolute inset-0 flex flex-col items-center justify-center gap-1 text-white text-xs font-semibold"
+            aria-hidden="true"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-[#3898EC] shadow-lg">
+              <svg className="h-4 w-4 translate-x-0.5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M6.5 4.5v11l9-5.5-9-5.5z" />
+              </svg>
+            </span>
+            <span>{videoThumbnail.label}</span>
+          </span>
+        </button>
+      )}
     </div>
   )
 }
