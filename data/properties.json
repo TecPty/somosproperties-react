@@ -8835,6 +8835,12 @@
       ],
       "planos": [],
       "thumbnail": "/images/properties/terreno-comercial-santiago-veraguas-terminal/foto-1.webp",
+      "video": {
+        "es": {
+          "src": "/videos/propiedades/veraguas/P2010-SANTIAGO-WEB.mp4",
+          "poster": "/videos/propiedades/veraguas/P2010-SANTIAGO-POSTER.webp"
+        }
+      },
       "description": "Terreno de 21,819 m² en Santiago, Veraguas. Frente a la Terminal de Transporte. Zonificación Comercial Urbano. Alta visibilidad y flujo peatonal y vehicular. Disponible para venta o alquiler. Precio a consultar.",
       "description_en": "Land of 21,819 m² in Santiago, Veraguas. Located in front of the Transport Terminal. Urban Commercial zoning. High visibility and vehicular/pedestrian traffic. Available for sale or lease.",
       "highlights": [
