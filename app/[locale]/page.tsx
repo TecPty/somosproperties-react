@@ -94,8 +94,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           className="absolute inset-0 w-full h-full object-cover"
           poster="/images/hero-poster.webp"
         >
-          <source src="/videos/hero-video-desktop_webm.webm" type="video/webm" />
           <source src="/videos/hero-video-desktop.mp4" type="video/mp4" />
+          <source src="/videos/hero-video-desktop_webm.webm" type="video/webm" />
         </video>
         
         {/* Overlay oscuro para legibilidad */}
