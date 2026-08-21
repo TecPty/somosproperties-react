@@ -103,7 +103,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         
         {/* Contenido del Hero - Versión simplificada */}
         <div className="container-custom text-center relative z-10">
-          <h1 className="text-4xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg leading-tight max-w-4xl mx-auto tracking-tight -translate-y-[15%]">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg leading-tight max-w-4xl mx-auto tracking-tight">
             {t('hero.title')}
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-white/95 drop-shadow-md max-w-2xl mx-auto font-light leading-relaxed">
