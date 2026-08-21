@@ -46,7 +46,6 @@ export function ConsentProvider({ children }: ConsentProviderProps) {
   const [consent, setConsentState] = useState<ConsentPreferences>(DEFAULT_PREFERENCES)
   const [hasConsented, setHasConsented] = useState(false)
   const [showBanner, setShowBanner] = useState(false)
-  const [hydrated, setHydrated] = useState(false)
 
   // Initialize from localStorage and setup cross-tab sync
   useEffect(() => {
@@ -61,7 +60,6 @@ export function ConsentProvider({ children }: ConsentProviderProps) {
     } catch {
       setShowBanner(true)
     }
-    setHydrated(true)
 
     // Setup cross-tab synchronization
     const unsubscribe = setupConsentSync((updatedConsent) => {
@@ -108,10 +106,6 @@ export function ConsentProvider({ children }: ConsentProviderProps) {
       timestamp: Date.now(),
     })
   }, [setConsent])
-
-  if (!hydrated) {
-    return <>{children}</>
-  }
 
   return (
     <ConsentContext.Provider
