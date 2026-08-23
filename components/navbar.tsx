@@ -7,9 +7,10 @@ import OptimizedImage from "@/components/optimized-image"
 import { useState, useEffect, useRef, useTransition } from "react"
 import { createPortal } from "react-dom"
 import { usePathname } from "next/navigation"
+import MobileNavDrawer from "@/components/mobile-nav-drawer"
 
-type NavChild = { href: string; label: string }
-type NavLink = { href: string; label: string; children?: NavChild[] }
+export type NavChild = { href: string; label: string }
+export type NavLink = { href: string; label: string; children?: NavChild[] }
 
 const CHEVRON = (
   <svg className="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -134,7 +135,8 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isPending, startTransition] = useTransition()
   const [openMenu, setOpenMenu] = useState<string | null>(null)
-  const scrollStripRef = useRef<HTMLDivElement>(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const burgerRef = useRef<HTMLButtonElement>(null)
   const pathname = usePathname()
   const params = useParams()
   const router = useRouter()
@@ -152,6 +154,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setOpenMenu(null)
+    setMobileMenuOpen(false)
   }, [pathname])
 
   useEffect(() => {
@@ -167,13 +170,10 @@ export default function Navbar() {
     window.addEventListener("click", handleClick)
     window.addEventListener("keydown", handleKey)
     window.addEventListener("scroll", closeAll, { passive: true })
-    const strip = scrollStripRef.current
-    strip?.addEventListener("scroll", closeAll, { passive: true })
     return () => {
       window.removeEventListener("click", handleClick)
       window.removeEventListener("keydown", handleKey)
       window.removeEventListener("scroll", closeAll)
-      strip?.removeEventListener("scroll", closeAll)
     }
   }, [openMenu])
 
@@ -266,13 +266,9 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Unified nav: same links/order/CTAs at every breakpoint, wrapped in a
-              horizontally-scrolling strip so nothing gets hidden, cut off, or
-              replaced by a hamburger/drawer on narrow viewports. */}
-          <div
-            ref={scrollStripRef}
-            className="flex items-center gap-3 sm:gap-5 md:gap-6 lg:gap-8 overflow-x-auto flex-nowrap py-1 [overscroll-behavior-x:contain] [scrollbar-width:thin] [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-thumb]:bg-[#e6e6e6] [&::-webkit-scrollbar-thumb]:rounded-full"
-          >
+          {/* Desktop nav: visible from lg (1024px). Compact spacing between lg
+              and xl, ample spacing restored from xl (1280px). */}
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) =>
               link.children ? (
                 <NavDropdown
@@ -289,7 +285,7 @@ export default function Navbar() {
                   href={link.href}
                   className={
                     link.href === `/${locale}/contacto`
-                      ? `shrink-0 whitespace-nowrap inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[#3898EC] text-white text-xs sm:text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2`
+                      ? `shrink-0 whitespace-nowrap inline-flex items-center px-3 py-1.5 xl:px-4 xl:py-2 rounded-lg bg-[#3898EC] text-white text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2`
                       : `shrink-0 whitespace-nowrap text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded ${
                           isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
                         } ${link.href.includes('premium') ? "font-bold" : ""}`
@@ -301,7 +297,7 @@ export default function Navbar() {
             )}
 
             {/* Language Switcher */}
-            <div className="flex items-center gap-2 shrink-0 border-l border-[#e6e6e6] pl-3 sm:pl-4 md:pl-6 relative">
+            <div className="flex items-center gap-2 shrink-0 border-l border-[#e6e6e6] pl-4 xl:pl-6 relative">
               {isPending && (
                 <div className="absolute -left-6 top-1/2 -translate-y-1/2">
                   <div className="w-4 h-4 border-2 border-[#3898EC] border-t-transparent rounded-full animate-spin" />
@@ -310,7 +306,7 @@ export default function Navbar() {
               <button
                 onClick={() => handleLocaleChange('es')}
                 disabled={isPending}
-                className={`text-base sm:text-lg transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
+                className={`text-lg transition-all ${locale === 'es' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title={t('spanish')}
               >
                 🇪🇸
@@ -319,15 +315,48 @@ export default function Navbar() {
               <button
                 onClick={() => handleLocaleChange('en')}
                 disabled={isPending}
-                className={`text-base sm:text-lg transition-all ${locale === 'en' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
+                className={`text-lg transition-all ${locale === 'en' ? 'opacity-100 scale-110' : 'opacity-40 hover:opacity-70'} ${isPending ? 'cursor-wait' : 'cursor-pointer'}`}
                 title="English"
               >
                 🇺🇸
               </button>
             </div>
           </div>
+
+          {/* Burger: visible below lg (1024px) */}
+          <button
+            ref={burgerRef}
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-nav-drawer"
+            aria-label={toggleLabel(mobileMenuOpen)}
+            className="lg:hidden flex h-10 w-10 items-center justify-center rounded-md text-[#222222] hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
+          >
+            <svg className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M3 5.75A.75.75 0 013.75 5h12.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.75zM3 10a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75A.75.75 0 013 10zm0 4.25a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clipRule="evenodd" />
+            </svg>
+          </button>
         </div>
       </div>
+
+      <MobileNavDrawer
+        id="mobile-nav-drawer"
+        open={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        navLinks={navLinks}
+        locale={locale}
+        isActive={isActive}
+        onLocaleChange={handleLocaleChange}
+        isPending={isPending}
+        returnFocusRef={burgerRef}
+        labels={{
+          mainNav: t('mainNav'),
+          closeMenu: t('closeMenu'),
+          openMenu: t('openMenu'),
+          spanish: t('spanish'),
+        }}
+      />
     </nav>
   )
 }
