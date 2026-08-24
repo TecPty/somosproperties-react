@@ -206,17 +206,18 @@ export default function Navbar() {
         { href: `/${locale}/comerciales?search=Rali%20Business%20Center`, label: "Rali Business Center" },
         { href: `/${locale}/comerciales?search=Evolution%20Tower`, label: "Evolution Tower" },
         { href: `/${locale}/comerciales?search=Boulevard%20Plaza%20Costa%20Verde`, label: "Boulevard Plaza Costa Verde" },
+        { href: `/${locale}/comerciales?search=Azuero%20Terminal`, label: "Azuero Terminal Plaza, Chitré" },
+        { href: `/${locale}/comerciales?search=Cativ%C3%A1%20Plaza`, label: "Cativá Plaza, Colón" },
+        { href: `/${locale}/comerciales?search=David%20Chiriqui`, label: "Locales David, Chiriquí" },
       ],
     },
     {
       href: `/${locale}/comerciales`,
       label: t('opportunities'),
       children: [
-        { href: `/${locale}/comerciales?search=Azuero%20Terminal`, label: "Azuero Terminal Plaza, Chitré" },
-        { href: `/${locale}/comerciales?search=Cativ%C3%A1%20Plaza`, label: "Cativá Plaza, Colón" },
-        { href: `/${locale}/comerciales?search=David%20Chiriqui`, label: "Locales David, Chiriquí" },
-        { href: `/${locale}/comerciales?search=El%20Ingenio`, label: "Terreno El Ingenio, Ciudad Pmá" },
-        { href: `/${locale}/comerciales?search=Juan%20D%C3%ADaz%20Arango`, label: "Terrenos Juan Díaz, Av. Arango" },
+        { href: `/${locale}/propiedad/2012`, label: "Terreno El Ingenio, Ciudad Pmá" },
+        { href: `/${locale}/propiedad/2007`, label: "Terreno Juan Díaz, Av. Arango (1.2 ha)" },
+        { href: `/${locale}/propiedad/2015`, label: "Terreno Juan Díaz, Av. Arango (12,794 m²)" },
       ],
     },
     {

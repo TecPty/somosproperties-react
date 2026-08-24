@@ -154,8 +154,7 @@ export default function MobileNavDrawer({
             aria-label={labels.mainNav}
             className="fixed inset-y-0 right-0 z-[71] flex h-full w-[min(88vw,380px)] flex-col bg-white shadow-2xl"
           >
-            <div className="flex items-center justify-between border-b border-[#eeeeee] px-4 py-4">
-              <span className="text-sm font-semibold text-[#222222]">{labels.mainNav}</span>
+            <div className="flex items-center justify-end border-b border-[#eeeeee] px-4 py-4">
               <button
                 ref={closeButtonRef}
                 type="button"
