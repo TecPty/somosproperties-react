@@ -8791,6 +8791,12 @@
       ],
       "planos": [],
       "thumbnail": "/images/properties/terreno-playa-mariabes-pedasi-146ha/foto-1.webp",
+      "video": {
+        "es": {
+          "src": "/videos/propiedades/pedasi/P2009-PEDASI-WEB.mp4",
+          "poster": "/videos/propiedades/pedasi/P2009-PEDASI-POSTER.webp"
+        }
+      },
       "description": "Terreno de playa en Mariabé, Pedasí. 146 hectáreas con 1.3 kilómetros lineales de frente de playa. Propiedad completamente titulada. Oportunidad única de inversión en el Pacífico panameño.",
       "description_en": "Beachfront land in Mariabé, Pedasí. 146 hectares with 1.3 linear kilometers of beachfront. Fully titled property. Unique investment opportunity on the Panamanian Pacific coast.",
       "highlights": [
@@ -8932,6 +8938,12 @@
       ],
       "planos": [],
       "thumbnail": "/images/properties/terreno-rm2-c3-el-igenio-ciudad-panama/foto-1.webp",
+      "video": {
+        "es": {
+          "src": "/videos/propiedades/el-ingenio/P2012-EL-INGENIO-WEB.mp4",
+          "poster": "/videos/propiedades/el-ingenio/P2012-EL-INGENIO-POSTER.webp"
+        }
+      },
       "description": "Terreno de 5,951.47 m² en El Ingenio, Ciudad de Panamá. Ubicado en Vía Transistmica, frente a la Parada del Metro El Ingenio. Zonificación RM2/C3. Precio: $1,300.00 por m².",
       "description_en": "Land of 5,951.47 m² in El Ingenio, Panama City. Located on the Transistmica Highway, near El Ingenio Metro Station. RM2/C3 zoning. Price: $1,300/m².",
       "highlights": [
@@ -9164,6 +9176,12 @@
       ],
       "planos": [],
       "thumbnail": "/images/properties/locales-david-chiriqui-interamericana/foto-1.webp",
+      "video": {
+        "es": {
+          "src": "/videos/propiedades/chiriqui/P2017-DAVID-CHIRIQUI-WEB.mp4",
+          "poster": "/videos/propiedades/chiriqui/P2017-DAVID-CHIRIQUI-POSTER.webp"
+        }
+      },
       "description": "Local comercial de 91.60 m² en alquiler en David, Chiriquí. Precio: $7.50 por m² (total $687/mes). Frente a la Carretera Interamericana. Excelente visibilidad y acceso.",
       "description_en": "Commercial space of 91.60 m² for lease in David, Chiriquí. Price: $7.50/m² (total $687/month). Located on the Pan-American Highway. Excellent visibility and access.",
       "highlights": [
