@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { useParams } from "next/navigation"
 import PropertyGrid from "@/components/property-grid"
@@ -13,17 +14,62 @@ export default function PremiumContent() {
   const locale = params?.locale || 'es'
   const premiumProperties = getPremiumProperties(allPropertiesData)
 
+  const [showHeroVideo, setShowHeroVideo] = useState(false)
+
+  useEffect(() => {
+    const desktopQuery = window.matchMedia("(min-width: 768px)")
+    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+
+    const evaluate = () => {
+      setShowHeroVideo(desktopQuery.matches && !reducedMotionQuery.matches)
+    }
+
+    evaluate()
+
+    desktopQuery.addEventListener("change", evaluate)
+    reducedMotionQuery.addEventListener("change", evaluate)
+
+    return () => {
+      desktopQuery.removeEventListener("change", evaluate)
+      reducedMotionQuery.removeEventListener("change", evaluate)
+    }
+  }, [])
+
   return (
     <>
       {/* Hero Premium */}
       <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden -mt-20 pt-20">
-        {/* Background con gradiente dorado */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#1a1a1a]">
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#d4af37] rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#b8942f] rounded-full blur-3xl"></div>
-          </div>
+        {/* Background: gradiente base + poster (siempre) + video (solo desktop sin reduced-motion) */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#1a1a1a]" />
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-premium-poster.webp"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {showHeroVideo && (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/videos/hero-premium-desktop-FINAL.mp4" type="video/mp4" />
+          </video>
+        )}
+
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#d4af37] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#b8942f] rounded-full blur-3xl"></div>
         </div>
+
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* Contenido del Hero */}
         <div className="container-custom text-center relative z-10">
