@@ -2285,7 +2285,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 271,
       "title": "Sunset Strip – Local 411",
       "type": "Local",
@@ -2332,7 +2332,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 141,
       "title": "Sunset Strip – Local 306",
       "type": "Local",
@@ -2381,7 +2381,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": true,
-      "status": "available",
+      "status": "rented",
       "id": 146,
       "title": "Sunset Strip - Local 10",
       "type": "Local",
@@ -2426,7 +2426,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": true,
-      "status": "available",
+      "status": "rented",
       "id": 147,
       "title": "Sunset Strip - Local 14",
       "type": "Local",
@@ -2515,7 +2515,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 143,
       "title": "Sunset Strip – Local 026",
       "type": "Local",
@@ -6689,7 +6689,7 @@
         "Seguridad 24/7"
       ],
       "featured": true,
-      "status": "available",
+      "status": "rented",
       "highlights": [
         "78 m² en Vía Israel",
         "Alquiler $2,000/mes",
@@ -6731,7 +6731,7 @@
         "Seguridad 24/7"
       ],
       "featured": true,
-      "status": "available",
+      "status": "rented",
       "highlights": [
         "89 m² en Vía Israel",
         "Alquiler $2,300/mes",
@@ -6778,7 +6778,7 @@
         "Seguridad 24/7"
       ],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "highlights": [
         "162 m² en Nivel 100",
         "Alquiler $1,800/mes",
@@ -7245,7 +7245,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "type": "Local",
       "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
@@ -7294,7 +7294,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "type": "Local",
       "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
@@ -7343,7 +7343,7 @@
       "parkingSpots": 0,
       "builtYear": 2024,
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "type": "Local",
       "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
       "images": [
