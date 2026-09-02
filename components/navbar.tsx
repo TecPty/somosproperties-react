@@ -226,6 +226,7 @@ export default function Navbar() {
       children: [
         { href: `/${locale}/residenciales?search=Pacific%20Point`, label: "Pacific Point" },
         { href: `/${locale}/residenciales?search=Kings%20Park`, label: "Kings Park" },
+        { href: `/${locale}/residenciales?search=Marbella`, label: "Marbella" },
         { href: `/${locale}/residenciales?search=Praderas%20de%20Arraijan`, label: "Praderas de Arraijan" },
         { href: `/${locale}/residenciales?search=The%20Tower%20residences`, label: "The Tower residences" },
         { href: `/${locale}/residenciales?search=Playa%20Escondida`, label: "Playa Escondida" },
