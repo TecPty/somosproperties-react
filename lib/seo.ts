@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "SOMOS Properties",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://somosproperties.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.somosproperties.com",
   description: "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler.",
   ogImage: "/images/logo-somosproperties-1200x630px.webp",
   creator: "@SomosProperties",
