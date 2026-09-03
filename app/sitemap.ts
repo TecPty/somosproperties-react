@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { properties as allPropertiesData } from '@/lib/properties'
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://somosproperties.com'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.somosproperties.com'
 const locales = ['es', 'en'] as const
 
 const staticPaths = [
@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = staticPaths.flatMap(({ path, priority, changeFrequency }) =>
     locales.map((locale) => ({
       url: `${baseUrl}/${locale}${path}`,
-      lastModified: new Date(),
       changeFrequency,
       priority,
     }))
@@ -29,7 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .flatMap((property) =>
       locales.map((locale) => ({
         url: `${baseUrl}/${locale}/propiedad/${property.id}`,
-        lastModified: new Date(),
         changeFrequency: 'daily' as const,
         priority: 0.8,
       }))

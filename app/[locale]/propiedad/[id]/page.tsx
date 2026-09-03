@@ -6,7 +6,7 @@ import PropertyDetailClient from "@/components/property-detail-client"
 import { getPropertyPromotions } from "@/lib/promotions"
 import { getTranslations } from "next-intl/server"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://somosproperties.com"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.somosproperties.com"
 const fallbackImage = "/placeholder.svg"
 
 function toAbsoluteUrl(path: string): string {
@@ -49,8 +49,8 @@ function buildPropertyDescription(property: Property): string {
   return summary.length <= 160 ? summary : `${summary.slice(0, 157)}...`
 }
 
-function buildPropertyJsonLd(property: Property): Record<string, unknown> {
-  const propertyUrl = `${siteUrl}/propiedad/${property.id}`
+function buildPropertyJsonLd(property: Property, locale: string): Record<string, unknown> {
+  const propertyUrl = `${siteUrl}/${locale}/propiedad/${property.id}`
   const primaryImage = toAbsoluteUrl(property.images?.[0] || property.image || fallbackImage)
   const listingPrice = property.operation === "Venta" ? property.price : property.pricePerMonth ?? property.price
 
@@ -167,7 +167,7 @@ export default async function PropertyDetailsPage({ params }: { params: Promise<
     .slice(0, 3)
 
   const promotions = getPropertyPromotions(property.id)
-  const propertyJsonLd = buildPropertyJsonLd(property)
+  const propertyJsonLd = buildPropertyJsonLd(property, locale)
   const localizedProperty = withLocaleVideo(property, locale)
   const localizedSimilarProperties = similarProperties.map((item) => withLocaleVideo(item, locale))
 

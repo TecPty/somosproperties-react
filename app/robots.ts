@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://somosproperties.com'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.somosproperties.com'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -22,6 +22,10 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'AdsBot-Google',
+        allow: '/',
+      },
+      {
+        userAgent: 'OAI-SearchBot',
         allow: '/',
       },
       {
