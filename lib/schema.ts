@@ -4,21 +4,31 @@
  */
 
 import type { Property } from "./types"
+import { CONTACT, SOCIAL } from "./config"
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.somosproperties.com"
 
 /**
  * Organization schema for homepage and global markup
+ *
+ * CAMBIO: @id ahora usa fragment (#organization) para distinguir la entidad
+ * de negocio de la propia WebPage/WebSite que comparte la misma URL base.
+ * Se agrega address (PostalAddress confirmada por el negocio) y email,
+ * ausentes hasta ahora en la unica entidad de negocio activa del sitio.
+ * RAZÓN: 001B2A — consolidar una identidad de negocio consistente para
+ * motores de busqueda y sistemas de IA.
  */
 export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": baseUrl,
+    "@id": `${baseUrl}/#organization`,
     name: "SOMOS Properties",
     url: baseUrl,
     logo: `${baseUrl}/images/Logo-SP.webp`,
     description: "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler.",
+    telephone: "+50766770577",
+    email: CONTACT.email,
     potentialAction: {
       "@type": "SearchAction",
       target: {
@@ -34,6 +44,13 @@ export function getOrganizationSchema() {
         "@id": "https://www.wikidata.org/wiki/Q804",
       },
     ],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: CONTACT.postalAddress.streetAddress,
+      addressLocality: CONTACT.postalAddress.addressLocality,
+      addressRegion: CONTACT.postalAddress.addressRegion,
+      addressCountry: CONTACT.postalAddress.addressCountry,
+    },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Support",
@@ -42,7 +59,8 @@ export function getOrganizationSchema() {
     sameAs: [
       "https://www.facebook.com/somosproperties",
       "https://www.instagram.com/somosproperties",
-      "https://www.linkedin.com/company/somosproperties",
+      SOCIAL.linkedin,
+      SOCIAL.tiktok,
     ],
   }
 }
