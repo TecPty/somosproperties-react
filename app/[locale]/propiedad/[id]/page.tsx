@@ -38,32 +38,112 @@ function withLocaleVideo(property: Property, locale: string): Property {
   }
 }
 
-function buildPropertyDescription(property: Property): string {
-  const basePrice =
-    property.operation === "Venta"
-      ? property.price ? `$${property.price.toLocaleString("es-PA")}` : "Precio a consultar"
-      : property.pricePerMonth ? `$${property.pricePerMonth.toLocaleString("es-PA")}/mes` : "Precio a consultar"
+// CAMBIO: la descripcion generada se arma con etiquetas traducidas y el texto del locale.
+// RAZÓN: las paginas /en emitian metadata en espanol pese a declararse en ingles.
+type DescriptionLabels = {
+  bedrooms: string
+  bathrooms: string
+  perMonth: string
+  inLocation: string
+  priceOnRequest: string
+  saleLabel: string
+  rentLabel: string
+}
 
-  const bedroomsPart = property.bedrooms ? `${property.bedrooms} habitaciones, ${property.bathrooms} banos. ` : ""
-  const summary = `${property.title} en ${property.location}. ${bedroomsPart}${basePrice}. ${property.description}`
+function getLocalizedDescription(property: Property, locale: string): string {
+  return locale === "en" ? property.description_en || property.description : property.description
+}
+
+// CAMBIO: "Venta/Alquiler" ahora muestra ambos precios en vez de colapsar a uno solo.
+// RAZÓN: el ternario binario original trataba cualquier operacion distinta de "Venta"
+// como alquiler puro, ocultando el precio de venta en propiedades duales.
+function buildPropertyDescription(property: Property, locale: string, labels: DescriptionLabels): string {
+  const numberLocale = locale === "en" ? "en-US" : "es-PA"
+  const formatPrice = (value: number) => `$${value.toLocaleString(numberLocale)}`
+
+  const saleText = hasValidPrice(property.price) ? formatPrice(property.price) : labels.priceOnRequest
+  const rentText = hasValidPrice(property.pricePerMonth)
+    ? `${formatPrice(property.pricePerMonth)}${labels.perMonth}`
+    : labels.priceOnRequest
+
+  const basePrice =
+    property.operation === "Venta/Alquiler"
+      ? `${labels.saleLabel}: ${saleText} · ${labels.rentLabel}: ${rentText}`
+      : property.operation === "Venta"
+        ? saleText
+        : rentText
+
+  const bedroomsPart = property.bedrooms
+    ? `${property.bedrooms} ${labels.bedrooms}, ${property.bathrooms} ${labels.bathrooms}. `
+    : ""
+  const description = getLocalizedDescription(property, locale)
+  const summary = `${property.title} ${labels.inLocation} ${property.location}. ${bedroomsPart}${basePrice}. ${description}`
   return summary.length <= 160 ? summary : `${summary.slice(0, 157)}...`
+}
+
+// CAMBIO: semantica explicita de transaccion via GoodRelations.
+// RAZÓN: un Offer sin businessFunction se interpreta como venta, y los alquileres
+// mensuales se publicaban como si fueran precio de compra.
+const BUSINESS_FUNCTION_SELL = "http://purl.org/goodrelations/v1#Sell"
+const BUSINESS_FUNCTION_LEASE_OUT = "http://purl.org/goodrelations/v1#LeaseOut"
+
+function getAvailability(status: Property["status"]): string {
+  if (status === "available") return "https://schema.org/InStock"
+  if (status === "sold") return "https://schema.org/SoldOut"
+  return "https://schema.org/OutOfStock"
+}
+
+function hasValidPrice(value: number | null | undefined): value is number {
+  return typeof value === "number" && Number.isFinite(value) && value > 0
+}
+
+// CAMBIO: se omite el Offer cuando no hay precio real en catalogo.
+// RAZÓN: antes se emitia price 0 o null, senalando propiedades gratuitas.
+function buildPropertyOffers(property: Property, propertyUrl: string): Record<string, unknown>[] {
+  const availability = getAvailability(property.status)
+  const offersForSale = property.operation === "Venta" || property.operation === "Venta/Alquiler"
+  const offersForRent = property.operation === "Alquiler" || property.operation === "Venta/Alquiler"
+  const offers: Record<string, unknown>[] = []
+
+  if (offersForSale && hasValidPrice(property.price)) {
+    offers.push({
+      "@type": "Offer",
+      businessFunction: BUSINESS_FUNCTION_SELL,
+      priceCurrency: "USD",
+      price: property.price,
+      availability,
+      url: propertyUrl,
+    })
+  }
+
+  if (offersForRent && hasValidPrice(property.pricePerMonth)) {
+    offers.push({
+      "@type": "Offer",
+      businessFunction: BUSINESS_FUNCTION_LEASE_OUT,
+      priceCurrency: "USD",
+      availability,
+      url: propertyUrl,
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: property.pricePerMonth,
+        priceCurrency: "USD",
+        unitCode: "MON",
+        billingDuration: 1,
+        billingIncrement: 1,
+      },
+    })
+  }
+
+  return offers
 }
 
 function buildPropertyJsonLd(property: Property, locale: string): Record<string, unknown> {
   const propertyUrl = `${siteUrl}/${locale}/propiedad/${property.id}`
   const primaryImage = toAbsoluteUrl(property.images?.[0] || property.image || fallbackImage)
-  const listingPrice = property.operation === "Venta" ? property.price : property.pricePerMonth ?? property.price
-
-  const offers = {
-    "@type": "Offer",
-    priceCurrency: "USD",
-    price: listingPrice,
-    availability:
-      property.status === "available"
-        ? "https://schema.org/InStock"
-        : "https://schema.org/OutOfStock",
-    url: propertyUrl,
-  }
+  const description = getLocalizedDescription(property, locale)
+  const inLanguage = locale === "en" ? "en" : "es"
+  const offers = buildPropertyOffers(property, propertyUrl)
+  const offersField = offers.length === 0 ? {} : { offers: offers.length === 1 ? offers[0] : offers }
 
   // CAMBIO: JSON-LD principal con `RealEstateListing` y fallback a `Product`.
   // RAZÓN: asegura datos estructurados legibles por buscadores aun si el tipo principal no aplica.
@@ -72,10 +152,11 @@ function buildPropertyJsonLd(property: Property, locale: string): Record<string,
       "@context": "https://schema.org",
       "@type": "RealEstateListing",
       name: property.title,
-      description: property.description,
+      description,
+      inLanguage,
       url: propertyUrl,
       image: [primaryImage],
-      offers,
+      ...offersField,
       address: {
         "@type": "PostalAddress",
         streetAddress: property.location,
@@ -90,10 +171,11 @@ function buildPropertyJsonLd(property: Property, locale: string): Record<string,
     "@context": "https://schema.org",
     "@type": "Product",
     name: property.title,
-    description: property.description,
+    description,
+    inLanguage,
     url: propertyUrl,
     image: [primaryImage],
-    offers,
+    ...offersField,
   }
 }
 
@@ -130,7 +212,16 @@ export async function generateMetadata({
     })
   }
 
-  const description = buildPropertyDescription(property)
+  const tCommon = await getTranslations({ locale, namespace: 'common' })
+  const description = buildPropertyDescription(property, locale, {
+    bedrooms: tCommon('bedrooms'),
+    bathrooms: tCommon('bathrooms'),
+    perMonth: tCommon('perMonth'),
+    inLocation: t('inLocation'),
+    priceOnRequest: t('priceOnRequest'),
+    saleLabel: t('saleLabel'),
+    rentLabel: t('rentLabel'),
+  })
   const ogImage = toAbsoluteUrl(property.image || property.images?.[0] || fallbackImage)
 
   return createMetadata({

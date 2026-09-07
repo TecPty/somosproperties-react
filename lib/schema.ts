@@ -5,7 +5,7 @@
 
 import type { Property } from "./types"
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://somosproperties.com"
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.somosproperties.com"
 
 /**
  * Organization schema for homepage and global markup
@@ -17,7 +17,7 @@ export function getOrganizationSchema() {
     "@id": baseUrl,
     name: "SOMOS Properties",
     url: baseUrl,
-    logo: `${baseUrl}/images/Logo-SP.png`,
+    logo: `${baseUrl}/images/Logo-SP.webp`,
     description: "Encuentra tu propiedad ideal en Panamá. Apartamentos y locales en venta y alquiler.",
     potentialAction: {
       "@type": "SearchAction",
@@ -189,7 +189,7 @@ export function getLocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     name: "SOMOS Properties",
-    image: `${baseUrl}/images/Logo-SP.png`,
+    image: `${baseUrl}/images/Logo-SP.webp`,
     description: "Agencia de bienes raíces en Panamá",
     url: baseUrl,
     telephone: "+50766770577",
@@ -214,8 +214,13 @@ export function getLocalBusinessSchema() {
 }
 
 /**
- * Collection/Aggregate schema for category pages
- * Shows price aggregation (min, max, average)
+ * Collection schema for category pages
+ * Represents the collection and its members, without price aggregation.
+ *
+ * CAMBIO: se elimino la agregacion de precios (aggregateOffer y ListItem.price).
+ * RAZÓN: la coleccion mezcla ventas y alquileres mensuales, por lo que un unico
+ * rango lowPrice/highPrice era semanticamente falso; ademas `|| 0` fabricaba
+ * precios cero. Preferimos menos datos estructurados antes que datos falsos.
  */
 export function getCollectionSchema(
   properties: Property[],
@@ -223,14 +228,6 @@ export function getCollectionSchema(
   path: string
 ) {
   if (properties.length === 0) return null
-
-  const prices = properties
-    .map((p) => (p.operation === "Venta" ? p.price : p.pricePerMonth || 0))
-    .filter((p): p is number => typeof p === "number")
-
-  const minPrice = Math.min(...prices)
-  const maxPrice = Math.max(...prices)
-  const avgPrice = prices.reduce((a, b) => a + b, 0) / prices.length
 
   return {
     "@context": "https://schema.org",
@@ -244,19 +241,7 @@ export function getCollectionSchema(
       item: `${baseUrl}/propiedad/${property.id}`,
       name: property.title,
       image: property.image,
-      price: String(
-        property.operation === "Venta"
-          ? property.price
-          : property.pricePerMonth || 0
-      ),
     })),
-    aggregateOffer: {
-      "@type": "AggregateOffer",
-      priceCurrency: "USD",
-      lowPrice: String(minPrice),
-      highPrice: String(maxPrice),
-      offerCount: properties.length,
-    },
   }
 }
 

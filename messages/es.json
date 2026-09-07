@@ -284,7 +284,11 @@
     },
     "propertyDetail": {
       "notFoundTitle": "Propiedad no encontrada - SOMOS Properties",
-      "notFoundDescription": "La propiedad que buscas no existe o ya no está disponible."
+      "notFoundDescription": "La propiedad que buscas no existe o ya no está disponible.",
+      "inLocation": "en",
+      "priceOnRequest": "Precio a consultar",
+      "saleLabel": "Venta",
+      "rentLabel": "Alquiler"
     },
     "premium": {
       "title": "Propiedades Premium en Panamá",
