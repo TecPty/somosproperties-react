@@ -284,7 +284,11 @@
     },
     "propertyDetail": {
       "notFoundTitle": "Property not found - SOMOS Properties",
-      "notFoundDescription": "The property you are looking for does not exist or is no longer available."
+      "notFoundDescription": "The property you are looking for does not exist or is no longer available.",
+      "inLocation": "in",
+      "priceOnRequest": "Price upon request",
+      "saleLabel": "Sale",
+      "rentLabel": "Rent"
     },
     "premium": {
       "title": "Premium Properties in Panama",
