@@ -23,9 +23,18 @@ export const CONTACT = {
   phone: "+507 6677-0577",
 
   // Dirección
-  address: "Vía España - Avenida Aquilino de la Guardia, Panamá",
+  address: "Calle 50, Bella Vista, PH Ejecutivo, frente al Edificio TowerBank",
   city: "Panamá",
   country: "República de Panamá",
+
+  // Dirección postal estructurada (para PostalAddress / schema.org)
+  // No incluye piso u oficina: no confirmados por el negocio.
+  postalAddress: {
+    streetAddress: "Calle 50, PH Ejecutivo",
+    addressLocality: "Bella Vista",
+    addressRegion: "Panamá",
+    addressCountry: "PA",
+  },
 } as const
 
 /**
@@ -34,7 +43,8 @@ export const CONTACT = {
 export const SOCIAL = {
   facebook: "https://facebook.com/somosproperties",
   instagram: "https://instagram.com/somosproperties",
-  linkedin: "https://linkedin.com/company/somos-properties",
+  linkedin: "https://www.linkedin.com/company/somosproperties",
+  tiktok: "https://www.tiktok.com/@somospropertiespanama",
   whatsapp: CONTACT.whatsapp.link,
 } as const
 
@@ -46,7 +56,7 @@ export const COMPANY = {
   tagline: "Plataforma inmobiliaria de confianza en Panamá",
   description:
     "SOMOS Properties es la plataforma líder en venta y alquiler de propiedades en Panamá. Con más de 150 propiedades certificadas y un equipo profesional dedicado.",
-  website: "https://somosproperties.com",
+  website: "https://www.somosproperties.com",
   email: CONTACT.email,
   phone: CONTACT.phone,
   address: CONTACT.address,
