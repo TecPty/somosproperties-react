@@ -461,7 +461,7 @@
   },
   "searchBar": {
     "formAriaLabel": "Search properties",
-    "placeholder": "Search by location, residential, type...",
+    "placeholder": "Search property, project or location...",
     "inputAriaLabel": "Search field",
     "clearAriaLabel": "Clear search",
     "submitAriaLabel": "Search",
@@ -470,7 +470,9 @@
     "suggestions": {
       "apartment": "Apartment in Panama",
       "commercial": "Commercial space"
-    }
+    },
+    "noResultsTitle": "No properties found",
+    "noResultsHint": "Try adjusting your search filters"
   },
   "employmentForm": {
     "nameLabel": "Full Name *",

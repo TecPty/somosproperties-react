@@ -1,6 +1,7 @@
 "use client"
 
 import PropertyGrid from "@/components/property-grid"
+import PropertySearchInput from "@/components/property-search-input"
 import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { useProperties } from "@/hooks/use-properties"
@@ -9,6 +10,7 @@ import { useTranslations } from "next-intl"
 
 export default function PropiedadesContent() {
   const t = useTranslations('propiedades')
+  const tSearch = useTranslations('searchBar')
   const { filters, updateFilters, clearFilters } = useFilters()
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
 
@@ -21,6 +23,19 @@ export default function PropiedadesContent() {
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>
             <p className="text-lg text-[#999999]">{t('subtitle', { count: totalProperties })}</p>
+          </div>
+
+          <div className="mb-8 max-w-2xl">
+            <PropertySearchInput
+              id="listing-search-propiedades"
+              value={filters.search ?? ""}
+              onChange={(value) => updateFilters({ search: value || undefined })}
+              onClear={() => updateFilters({ search: undefined })}
+              placeholder={tSearch('placeholder')}
+              ariaLabel={`${tSearch('inputAriaLabel')} — ${t('title')}`}
+              clearAriaLabel={tSearch('clearAriaLabel')}
+              formAriaLabel={`${tSearch('formAriaLabel')} — ${t('title')}`}
+            />
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8">
