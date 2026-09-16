@@ -2,17 +2,28 @@
 
 import PropertyGrid from "@/components/property-grid"
 import PropertySearchInput from "@/components/property-search-input"
+import { usePropertySearchBridge } from "@/components/property-search-bridge"
 import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { useProperties } from "@/hooks/use-properties"
 import { useFilters } from "@/hooks/use-filters"
 import { useTranslations } from "next-intl"
+import { useEffect } from "react"
 
 export default function PropiedadesContent() {
   const t = useTranslations('propiedades')
   const tSearch = useTranslations('searchBar')
   const { filters, updateFilters, clearFilters } = useFilters()
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
+  const bridge = usePropertySearchBridge()
+
+  // Let the global header drive this listing's search through the same
+  // updateFilters path the visible input uses, so useFilters stays the only
+  // writer of the search/filter query params.
+  useEffect(() => {
+    if (!bridge) return
+    return bridge.registerSearchUpdater((value) => updateFilters({ search: value }))
+  }, [bridge, updateFilters])
 
   return (
     <>

@@ -2,6 +2,7 @@
 
 import PropertyGrid from "@/components/property-grid"
 import PropertySearchInput from "@/components/property-search-input"
+import { usePropertySearchBridge } from "@/components/property-search-bridge"
 import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { SchemaMarkupMultiple } from "@/components/schema-markup"
@@ -10,7 +11,7 @@ import { useFilters } from "@/hooks/use-filters"
 import { getCollectionSchema, getOrganizationSchema } from "@/lib/schema"
 import { properties as allPropertiesData } from "@/lib/properties"
 import { useTranslations } from "next-intl"
-import { useMemo } from "react"
+import { useEffect, useMemo } from "react"
 
 interface PropertyCategoryViewProps {
   category: "Residencial" | "Comercial"
@@ -25,6 +26,14 @@ export default function PropertyCategoryView({ category, namespace }: PropertyCa
   const initialFilters = useMemo(() => ({ category }), [category])
   const { filters, updateFilters, clearFilters } = useFilters(initialFilters)
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
+  const bridge = usePropertySearchBridge()
+
+  // Same command registration as /propiedades: header search is applied via
+  // updateFilters so category/operation/bedrooms/... are never dropped.
+  useEffect(() => {
+    if (!bridge) return
+    return bridge.registerSearchUpdater((value) => updateFilters({ search: value }))
+  }, [bridge, updateFilters])
 
   const categoryProperties = allPropertiesData.filter((p) => p.category === category && !p.hidden)
 

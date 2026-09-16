@@ -9,6 +9,7 @@ import { createPortal } from "react-dom"
 import { usePathname } from "next/navigation"
 import MobileNavDrawer from "@/components/mobile-nav-drawer"
 import PropertySearchInput from "@/components/property-search-input"
+import { usePropertySearchBridge } from "@/components/property-search-bridge"
 
 export type NavChild = { href: string; label: string }
 export type NavLink = { href: string; label: string; children?: NavChild[] }
@@ -153,6 +154,7 @@ function GlobalPropertySearch() {
   const searchParams = useSearchParams()
   const locale = params.locale as string
   const inputRef = useRef<HTMLInputElement>(null)
+  const bridge = usePropertySearchBridge()
 
   const isListingRoute = useMemo(() => {
     const segments = pathname.split("/").filter(Boolean)
@@ -161,43 +163,30 @@ function GlobalPropertySearch() {
 
   const urlSearch = searchParams.get("search") ?? ""
   const [value, setValue] = useState(urlSearch)
+  const previousPathnameRef = useRef(pathname)
 
-  // Tracks a value this field wrote to the URL but that has not round-tripped
-  // back yet, so an in-flight write is never clobbered by a stale param read.
-  const pendingRef = useRef<string | null>(null)
-
+  // The URL is the authoritative display source. While the field has focus the
+  // user is the one driving it, so we do not overwrite what they are typing;
+  // every other transition (listing input, deep link, back/forward, clear,
+  // route change) reconciles the field to the canonical param. A route change
+  // always re-seeds, even if the field still holds focus.
   useEffect(() => {
-    if (pendingRef.current === null) {
-      // External change: deep link, the listing input, or browser back/forward.
-      setValue(urlSearch)
-    } else if (pendingRef.current === urlSearch) {
-      pendingRef.current = null
-    }
-  }, [urlSearch])
-
-  // Route changes reset the field to whatever the new route's URL declares.
-  useEffect(() => {
-    pendingRef.current = null
-    setValue(new URLSearchParams(window.location.search).get("search") ?? "")
-  }, [pathname])
-
-  const writeSearchParam = (next: string) => {
-    const merged = new URLSearchParams(searchParams.toString())
-    if (next) merged.set("search", next)
-    else merged.delete("search")
-    const queryString = merged.toString()
-    pendingRef.current = next
-    router.replace(`${pathname}${queryString ? `?${queryString}` : ""}`, { scroll: false })
-  }
+    const routeChanged = previousPathnameRef.current !== pathname
+    previousPathnameRef.current = pathname
+    const isFocused = inputRef.current !== null && document.activeElement === inputRef.current
+    if (routeChanged || !isFocused) setValue(urlSearch)
+  }, [urlSearch, pathname])
 
   const handleChange = (next: string) => {
     setValue(next)
-    if (isListingRoute) writeSearchParam(next)
+    // On listing routes the header never writes the URL. It asks the mounted
+    // listing to update filters.search, keeping useFilters the sole writer.
+    if (isListingRoute) bridge?.requestSearchUpdate(next || undefined)
   }
 
   const handleClear = () => {
     setValue("")
-    if (isListingRoute) writeSearchParam("")
+    if (isListingRoute) bridge?.requestSearchUpdate(undefined)
     inputRef.current?.focus()
   }
 

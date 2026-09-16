@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { getTranslations } from 'next-intl/server'
 
@@ -18,8 +17,6 @@ export async function generateMetadata({
 export default function BlogPage() {
   return (
     <>
-      <Navbar />
-
       <main className="py-12 bg-[#fafafa] min-h-screen">
         <div className="container-custom">
           <div className="text-center mb-12">
