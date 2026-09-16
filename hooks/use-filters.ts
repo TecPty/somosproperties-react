@@ -2,11 +2,42 @@
 
 import { useState, useCallback, useEffect } from "react"
 import type { PropertyFilters } from "@/lib/types"
-import { useSearchParams, useRouter, usePathname } from "next/navigation"
+import { useSearchParams, usePathname } from "next/navigation"
+
+const FILTER_KEYS = [
+  "operation",
+  "category",
+  "types",
+  "priceMin",
+  "priceMax",
+  "bedrooms",
+  "location",
+  "search",
+  "tier",
+] as const
+
+/**
+ * Compares two filter sets by meaning rather than by serialized shape.
+ * `buildFiltersFromParams` emits keys in a fixed order while `updateFilters`
+ * emits them in insertion order, so comparing JSON strings reported a
+ * difference for identical filters and caused a redundant state write.
+ * Array order is significant (`types` round-trips through the URL in order).
+ */
+function isSameFilters(a: PropertyFilters, b: PropertyFilters): boolean {
+  return FILTER_KEYS.every((key) => {
+    const left = a[key]
+    const right = b[key]
+    if (Array.isArray(left) || Array.isArray(right)) {
+      const leftArray = Array.isArray(left) ? left : []
+      const rightArray = Array.isArray(right) ? right : []
+      return leftArray.length === rightArray.length && leftArray.every((v, i) => v === rightArray[i])
+    }
+    return (left ?? undefined) === (right ?? undefined)
+  })
+}
 
 export function useFilters(initialFilters?: PropertyFilters) {
   const searchParams = useSearchParams()
-  const router = useRouter()
   const pathname = usePathname()
 
   const buildFiltersFromParams = useCallback((): PropertyFilters => {
@@ -69,9 +100,21 @@ export function useFilters(initialFilters?: PropertyFilters) {
         }
       })
       const queryString = params.toString()
-      router.replace(`${pathname}${queryString ? `?${queryString}` : ""}`, { scroll: false })
+      const nextUrl = `${pathname}${queryString ? `?${queryString}` : ""}`
+
+      if (typeof window === "undefined") return
+      // Nothing to persist: the address bar already says this.
+      if (`${window.location.pathname}${window.location.search}` === nextUrl) return
+
+      // Native History API instead of router.replace. Filters are applied
+      // entirely on the client (the listing routes read no searchParams on the
+      // server), so a router navigation would refetch the RSC payload and
+      // replace the filter subtree mid-interaction, dropping the next click.
+      // Next's History API integration keeps useSearchParams in sync without
+      // that navigation.
+      window.history.replaceState(null, "", nextUrl)
     },
-    [router, pathname],
+    [pathname],
   )
 
   const updateFilters = useCallback((newFilters: Partial<PropertyFilters>) => {
@@ -91,12 +134,7 @@ export function useFilters(initialFilters?: PropertyFilters) {
   // Sync state when URL params change (e.g., navbar dropdown links).
   useEffect(() => {
     const nextFilters = buildFiltersFromParams()
-    setFilters((prev) => {
-      if (JSON.stringify(prev) === JSON.stringify(nextFilters)) {
-        return prev
-      }
-      return nextFilters
-    })
+    setFilters((prev) => (isSameFilters(prev, nextFilters) ? prev : nextFilters))
   }, [buildFiltersFromParams])
 
   return {
