@@ -8,6 +8,7 @@ import { locales } from '@/i18n'
 import RootLayoutClient from "@/components/root-layout-client"
 import ConsentLayout from "@/components/consent-layout"
 import Navbar from "@/components/navbar"
+import { PropertySearchBridgeProvider } from "@/components/property-search-bridge"
 import Footer from "@/components/footer"
 
 export async function generateMetadata({
@@ -63,11 +64,13 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
 
             <RootLayoutClient gaId={gaId}>
-              <Navbar />
-              <main className="min-h-screen">
-                {children}
-              </main>
-              <Footer />
+              <PropertySearchBridgeProvider>
+                <Navbar />
+                <main className="min-h-screen">
+                  {children}
+                </main>
+                <Footer />
+              </PropertySearchBridgeProvider>
             </RootLayoutClient>
           </NextIntlClientProvider>
         </ConsentLayout>

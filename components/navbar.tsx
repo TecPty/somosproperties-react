@@ -2,12 +2,14 @@
 
 import Link from "next/link"
 import { useTranslations } from 'next-intl'
-import { useParams, useRouter } from 'next/navigation'
+import { useParams, useRouter, useSearchParams } from 'next/navigation'
 import OptimizedImage from "@/components/optimized-image"
-import { useState, useEffect, useRef, useTransition } from "react"
+import { Suspense, useState, useEffect, useMemo, useRef, useTransition } from "react"
 import { createPortal } from "react-dom"
 import { usePathname } from "next/navigation"
 import MobileNavDrawer from "@/components/mobile-nav-drawer"
+import PropertySearchInput from "@/components/property-search-input"
+import { usePropertySearchBridge } from "@/components/property-search-bridge"
 
 export type NavChild = { href: string; label: string }
 export type NavLink = { href: string; label: string; children?: NavChild[] }
@@ -131,6 +133,89 @@ function NavDropdown({
   )
 }
 
+/** Route segments that own a property listing bound to `filters.search`. */
+const LISTING_SEGMENTS = ["propiedades", "residenciales", "comerciales"]
+
+/**
+ * Global header search.
+ *
+ * On listing routes the URL `search` param is the transport for the canonical
+ * `filters.search` state, so typing rewrites that param in place (merging into
+ * the existing params so `category`, `operation`, ... survive). Elsewhere the
+ * field holds a local draft that only becomes a real query on submit.
+ *
+ * Uses useSearchParams, so it must stay inside the <Suspense> boundary below.
+ */
+function GlobalPropertySearch() {
+  const t = useTranslations("searchBar")
+  const router = useRouter()
+  const pathname = usePathname()
+  const params = useParams()
+  const searchParams = useSearchParams()
+  const locale = params.locale as string
+  const inputRef = useRef<HTMLInputElement>(null)
+  const bridge = usePropertySearchBridge()
+
+  const isListingRoute = useMemo(() => {
+    const segments = pathname.split("/").filter(Boolean)
+    return segments.length === 2 && LISTING_SEGMENTS.includes(segments[1])
+  }, [pathname])
+
+  const urlSearch = searchParams.get("search") ?? ""
+  const [value, setValue] = useState(urlSearch)
+  const previousPathnameRef = useRef(pathname)
+
+  // The URL is the authoritative display source. While the field has focus the
+  // user is the one driving it, so we do not overwrite what they are typing;
+  // every other transition (listing input, deep link, back/forward, clear,
+  // route change) reconciles the field to the canonical param. A route change
+  // always re-seeds, even if the field still holds focus.
+  useEffect(() => {
+    const routeChanged = previousPathnameRef.current !== pathname
+    previousPathnameRef.current = pathname
+    const isFocused = inputRef.current !== null && document.activeElement === inputRef.current
+    if (routeChanged || !isFocused) setValue(urlSearch)
+  }, [urlSearch, pathname])
+
+  const handleChange = (next: string) => {
+    setValue(next)
+    // On listing routes the header never writes the URL. It asks the mounted
+    // listing to update filters.search, keeping useFilters the sole writer.
+    if (isListingRoute) bridge?.requestSearchUpdate(next || undefined)
+  }
+
+  const handleClear = () => {
+    setValue("")
+    if (isListingRoute) bridge?.requestSearchUpdate(undefined)
+    inputRef.current?.focus()
+  }
+
+  const handleSubmit = (submitted: string) => {
+    const query = submitted.trim()
+    if (isListingRoute) {
+      inputRef.current?.blur()
+      return
+    }
+    if (!query) return
+    router.push(`/${locale}/propiedades?search=${encodeURIComponent(query)}`)
+  }
+
+  return (
+    <PropertySearchInput
+      ref={inputRef}
+      id="global-property-search"
+      value={value}
+      onChange={handleChange}
+      onClear={handleClear}
+      onSubmit={handleSubmit}
+      placeholder={t("placeholder")}
+      ariaLabel={t("inputAriaLabel")}
+      clearAriaLabel={t("clearAriaLabel")}
+      formAriaLabel={t("formAriaLabel")}
+    />
+  )
+}
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isPending, startTransition] = useTransition()
@@ -186,8 +271,11 @@ export default function Navbar() {
 
   const handleLocaleChange = (newLocale: string) => {
     const newPath = pathname.replace(`/${locale}`, `/${newLocale}`)
+    // Keep active search/filter params across the locale switch. Read from the
+    // location directly so Navbar itself stays free of useSearchParams.
+    const queryString = typeof window !== "undefined" ? window.location.search : ""
     startTransition(() => {
-      router.push(newPath)
+      router.push(`${newPath}${queryString}`)
     })
   }
 
@@ -339,6 +427,24 @@ export default function Navbar() {
               <path fillRule="evenodd" d="M3 5.75A.75.75 0 013.75 5h12.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.75zM3 10a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75A.75.75 0 013 10zm0 4.25a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clipRule="evenodd" />
             </svg>
           </button>
+        </div>
+      </div>
+
+      {/* Row 2: global property search (all routes) */}
+      <div className="border-t border-[#f0f0f0]">
+        <div className="container-custom">
+          <div className="py-3">
+            <Suspense
+              fallback={
+                <div
+                  className="h-12 w-full rounded-xl border border-[#e6e6e6] bg-[#fafafa]"
+                  aria-hidden="true"
+                />
+              }
+            >
+              <GlobalPropertySearch />
+            </Suspense>
+          </div>
         </div>
       </div>
 

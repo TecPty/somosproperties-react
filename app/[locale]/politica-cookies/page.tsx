@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Link from "next/link"
 import { getTranslations } from 'next-intl/server'
@@ -21,7 +20,6 @@ const lastUpdated = "11 de marzo de 2026"
 export default function PoliticaCookiesPage() {
   return (
     <>
-      <Navbar />
       <main className="min-h-screen bg-white py-16">
         <div className="container-custom max-w-4xl">
           <div className="mb-12">

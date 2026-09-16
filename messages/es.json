@@ -460,7 +460,7 @@
   },
   "searchBar": {
     "formAriaLabel": "Buscar propiedades",
-    "placeholder": "Buscar por ubicación, residencial, tipo...",
+    "placeholder": "Buscar propiedad, proyecto o ubicación...",
     "inputAriaLabel": "Campo de búsqueda",
     "clearAriaLabel": "Limpiar búsqueda",
     "submitAriaLabel": "Buscar",
@@ -469,7 +469,9 @@
     "suggestions": {
       "apartment": "Apartamento en Panamá",
       "commercial": "Local comercial"
-    }
+    },
+    "noResultsTitle": "No se encontraron propiedades",
+    "noResultsHint": "Intenta ajustar tus filtros de búsqueda"
   },
   "employmentForm": {
     "nameLabel": "Nombre completo *",

@@ -1,16 +1,29 @@
 "use client"
 
 import PropertyGrid from "@/components/property-grid"
+import PropertySearchInput from "@/components/property-search-input"
+import { usePropertySearchBridge } from "@/components/property-search-bridge"
 import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { useProperties } from "@/hooks/use-properties"
 import { useFilters } from "@/hooks/use-filters"
 import { useTranslations } from "next-intl"
+import { useEffect } from "react"
 
 export default function PropiedadesContent() {
   const t = useTranslations('propiedades')
+  const tSearch = useTranslations('searchBar')
   const { filters, updateFilters, clearFilters } = useFilters()
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
+  const bridge = usePropertySearchBridge()
+
+  // Let the global header drive this listing's search through the same
+  // updateFilters path the visible input uses, so useFilters stays the only
+  // writer of the search/filter query params.
+  useEffect(() => {
+    if (!bridge) return
+    return bridge.registerSearchUpdater((value) => updateFilters({ search: value }))
+  }, [bridge, updateFilters])
 
   return (
     <>
@@ -21,6 +34,19 @@ export default function PropiedadesContent() {
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>
             <p className="text-lg text-[#999999]">{t('subtitle', { count: totalProperties })}</p>
+          </div>
+
+          <div className="mb-8 max-w-2xl">
+            <PropertySearchInput
+              id="listing-search-propiedades"
+              value={filters.search ?? ""}
+              onChange={(value) => updateFilters({ search: value || undefined })}
+              onClear={() => updateFilters({ search: undefined })}
+              placeholder={tSearch('placeholder')}
+              ariaLabel={`${tSearch('inputAriaLabel')} — ${t('title')}`}
+              clearAriaLabel={tSearch('clearAriaLabel')}
+              formAriaLabel={`${tSearch('formAriaLabel')} — ${t('title')}`}
+            />
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8">
