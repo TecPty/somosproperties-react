@@ -174,6 +174,7 @@ export default function MobileNavDrawer({
                     <Link
                       key={link.label}
                       href={link.href}
+                      onClick={onClose}
                       className={
                         isContact
                           ? "mx-2 my-2 block rounded-lg bg-[#3898EC] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#0082f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
@@ -194,6 +195,7 @@ export default function MobileNavDrawer({
                     <div className="flex items-center">
                       <Link
                         href={link.href}
+                        onClick={onClose}
                         className={`flex-1 rounded-lg px-3 py-3 text-base text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
                           isActive(link.href) ? "font-semibold text-[#0082f3]" : ""
                         }`}
@@ -217,6 +219,7 @@ export default function MobileNavDrawer({
                           <Link
                             key={child.href}
                             href={child.href}
+                            onClick={onClose}
                             className="block rounded-lg px-3 py-2 text-sm text-[#666666] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
                           >
                             {child.label}
