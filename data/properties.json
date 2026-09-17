@@ -2029,7 +2029,7 @@
         "/images/properties/plaza-guayacanes/hero/hero-2.webp",
         "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
-      "description": "Local 3 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 132.93 m2 en una sola planta. Alquiler $711.17/mes, deposito $664.65, mantenimiento $265.86/mes. Venta: $212,688.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 3 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 132.93 m2 en una sola planta. Alquiler $711.17/mes, deposito $664.65, mantenimiento $265.86/mes. Venta: $212,688.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz y gas. Promoción: cielo raso básico y cámara de seguridad totalmente gratis.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 136,
@@ -2037,6 +2037,7 @@
         "Local 3 - 132.93 m² en planta baja",
         "Venta: $212,688 | Alquiler: $711.17/mes",
         "2 meses de gracia para acondicionar",
+        "Promoción: cielo raso básico y cámara de seguridad gratis",
         "Estacionamientos para clientes"
       ],
       "requirements": [
@@ -2046,7 +2047,7 @@
         "Mes de deposito y mes de alquiler a la firma del contrato."
       ],
       "slug": "plaza-los-guayacanes-local",
-      "description_en": "Unit 3 at Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 132.93 m² single level. Rent $711.17/month. Sale: $212,688. Minimum 1-year lease with 2 months grace period."
+      "description_en": "Unit 3 at Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 132.93 m² single level. Rent $711.17/month, deposit $664.65, maintenance $265.86/month. Sale: $212,688. Minimum 1-year lease with 2 months grace period. Promotion: basic ceiling installation and security camera included at no cost."
     },
     {
       "type": "Local",
@@ -2141,7 +2142,7 @@
         "/images/properties/plaza-guayacanes/hero/hero-2.webp",
         "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
-      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m2 en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.8/mes. Venta: $489,440.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 9 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 305.9 m2 en una sola planta. Alquiler $1,636.56/mes, deposito $1,529.50, mantenimiento $611.80/mes. Venta: $489,440.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz y gas. Promoción: cielo raso básico y cámara de seguridad totalmente gratis.",
       "bathrooms": 2,
       "parkingSpots": 4,
       "id": 138,
@@ -2149,6 +2150,7 @@
         "Local 9 - 305.9 m² en planta baja",
         "Venta: $489,440 | Alquiler: $1,636.56/mes",
         "Espacio amplio para anchor o gimnasio",
+        "Promoción: cielo raso básico y cámara de seguridad gratis",
         "Estacionamiento amplio y acceso controlado"
       ],
       "requirements": [
@@ -2158,7 +2160,59 @@
         "Mes de deposito y mes de alquiler a la firma del contrato."
       ],
       "slug": "plaza-los-guayacanes-local-138",
-      "description_en": "Unit 9 at Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 305.9 m² single level. Rent $1,636.56/month. Sale: $489,440. Minimum 1-year lease with 2 months grace period."
+      "description_en": "Unit 9 at Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 305.9 m² single level. Rent $1,636.56/month, deposit $1,529.50, maintenance $611.80/month. Sale: $489,440. Minimum 1-year lease with 2 months grace period. Promotion: basic ceiling installation and security camera included at no cost."
+    },
+    {
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Venta/Alquiler",
+      "price": 98880,
+      "location": "La Chorrera, Vía Las Mendozas, Panamá Oeste",
+      "city": "Panamá Oeste",
+      "district": "La Chorrera",
+      "builtYear": 2024,
+      "bedrooms": 0,
+      "status": "available",
+      "featured": false,
+      "amenities": [
+        "Ubicacion estrategica en La Chorrera",
+        "Estacionamientos para clientes",
+        "Seguridad 24/7 y CCTV",
+        "Acceso controlado",
+        "Zona de carga y descarga",
+        "Pasillos amplios",
+        "Senalizacion moderna",
+        "Iluminacion LED",
+        "Sistema contra incendios",
+        "Planta electrica de respaldo",
+        "Cisterna e hidroneumatico",
+        "Banos en areas comunes",
+        "Accesibilidad PMR",
+        "Cercania a transporte publico",
+        "Alto potencial de crecimiento"
+      ],
+      "planos": [],
+      "title": "Plaza Los Guayacanes - Local 14",
+      "pricePerMonth": 330.63,
+      "area": 61.8,
+      "image": "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+      "images": [
+        "/images/properties/plaza-guayacanes/hero/hero-1.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-2.webp",
+        "/images/properties/plaza-guayacanes/hero/hero-3.webp"
+      ],
+      "description": "Local 14 en Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 61.80 m². Alquiler $330.63/mes, depósito $309.00, mantenimiento $123.60/mes. Venta: $98,880.00. Promoción: cielo raso básico y cámara de seguridad totalmente gratis.",
+      "bathrooms": 0,
+      "parkingSpots": 0,
+      "id": 292,
+      "highlights": [
+        "Local 14 - 61.80 m²",
+        "Venta: $98,880 | Alquiler: $330.63/mes",
+        "Depósito $309.00 | Mantenimiento $123.60/mes",
+        "Promoción: cielo raso básico y cámara de seguridad gratis"
+      ],
+      "slug": "plaza-los-guayacanes-local-14",
+      "description_en": "Unit 14 at Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 61.80 m². Rent $330.63/month, deposit $309.00, maintenance $123.60/month. Sale: $98,880. Promotion: basic ceiling installation and security camera included at no cost."
     },
     {
       "type": "Local",
@@ -2253,7 +2307,7 @@
         "/images/properties/plaza-guayacanes/hero/hero-2.webp",
         "/images/properties/plaza-guayacanes/hero/hero-3.webp"
       ],
-      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.8, mantenimiento $222.72/mes. Venta: $186,176.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz, gas y cielo raso.",
+      "description": "Local 17 en Plaza Los Guayacanes (Via Las Mendozas, La Chorrera). 111.36 m2 en una sola planta. Alquiler $595.77/mes, deposito $556.80, mantenimiento $222.72/mes. Venta: $186,176.00. Minimo 1 ano de contrato, 2 meses de gracia para acondicionar. Arrendatario asume luz y gas. Promoción: cielo raso básico y cámara de seguridad totalmente gratis.",
       "bathrooms": 1,
       "parkingSpots": 2,
       "id": 139,
@@ -2261,6 +2315,7 @@
         "Local 17 - 111.36 m² en planta baja",
         "Venta: $186,176 | Alquiler: $595.77/mes",
         "Ideal retail mediano o servicios",
+        "Promoción: cielo raso básico y cámara de seguridad gratis",
         "Estacionamiento para clientes y CCTV"
       ],
       "requirements": [
@@ -2270,7 +2325,7 @@
         "Mes de deposito y mes de alquiler a la firma del contrato."
       ],
       "slug": "plaza-los-guayacanes-local-139",
-      "description_en": "Unit 17 at Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 111.36 m² single level. Rent $595.77/month. Sale: $186,176. Minimum 1-year lease with 2 months grace period."
+      "description_en": "Unit 17 at Plaza Los Guayacanes (Vía Las Mendozas, La Chorrera). 111.36 m² single level. Rent $595.77/month, deposit $556.80, maintenance $222.72/month. Sale: $186,176. Minimum 1-year lease with 2 months grace period. Promotion: basic ceiling installation and security camera included at no cost."
     },
     {
       "category": "Comercial",
@@ -6622,7 +6677,7 @@
       "category": "Comercial",
       "operation": "Venta/Alquiler",
       "price": 105008,
-      "pricePerMonth": 351,
+      "pricePerMonth": 351.12,
       "location": "La Chorrera, Vía Las Mendozas, Panamá Oeste",
       "city": "Panamá Oeste",
       "district": "La Chorrera",
@@ -6652,9 +6707,10 @@
       "status": "available",
       "highlights": [
         "65.63 m² en La Chorrera",
-        "Venta $105,008 | Alquiler $351/mes",
+        "Venta $105,008 | Alquiler $351.12/mes",
         "Ideal para comercio pequeño"
       ],
+      "hidden": true,
       "slug": "plaza-los-guayacanes-local-251",
       "description_en": "Commercial unit 5 at Plaza Los Guayacanes, La Chorrera. 65.63 m². Rent $351.12/month. Sale: $105,008. Promotion: basic ceiling and security camera included."
     },
