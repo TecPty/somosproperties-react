@@ -6,6 +6,7 @@ export interface Property {
   operation: "Venta" | "Alquiler" | "Venta/Alquiler"
   price: number
   pricePerMonth: number | null
+  showPrice?: boolean
   location: string
   city: string
   district: string

@@ -48,6 +48,8 @@ type DescriptionLabels = {
   priceOnRequest: string
   saleLabel: string
   rentLabel: string
+  sold: string
+  rented: string
 }
 
 function getLocalizedDescription(property: Property, locale: string): string {
@@ -66,18 +68,28 @@ function buildPropertyDescription(property: Property, locale: string, labels: De
     ? `${formatPrice(property.pricePerMonth)}${labels.perMonth}`
     : labels.priceOnRequest
 
+  const statusText =
+    property.status === "rented"
+      ? labels.rented
+      : property.status === "sold"
+        ? labels.sold
+        : ""
+
   const basePrice =
-    property.operation === "Venta/Alquiler"
-      ? `${labels.saleLabel}: ${saleText} · ${labels.rentLabel}: ${rentText}`
-      : property.operation === "Venta"
-        ? saleText
-        : rentText
+    property.showPrice === false
+      ? statusText
+      : property.operation === "Venta/Alquiler"
+        ? `${labels.saleLabel}: ${saleText} · ${labels.rentLabel}: ${rentText}`
+        : property.operation === "Venta"
+          ? saleText
+          : rentText
 
   const bedroomsPart = property.bedrooms
     ? `${property.bedrooms} ${labels.bedrooms}, ${property.bathrooms} ${labels.bathrooms}. `
     : ""
   const description = getLocalizedDescription(property, locale)
-  const summary = `${property.title} ${labels.inLocation} ${property.location}. ${bedroomsPart}${basePrice}. ${description}`
+  const pricePart = basePrice ? `${basePrice}. ` : ""
+  const summary = `${property.title} ${labels.inLocation} ${property.location}. ${bedroomsPart}${pricePart}${description}`
   return summary.length <= 160 ? summary : `${summary.slice(0, 157)}...`
 }
 
@@ -100,6 +112,8 @@ function hasValidPrice(value: number | null | undefined): value is number {
 // CAMBIO: se omite el Offer cuando no hay precio real en catalogo.
 // RAZÓN: antes se emitia price 0 o null, senalando propiedades gratuitas.
 function buildPropertyOffers(property: Property, propertyUrl: string): Record<string, unknown>[] {
+  if (property.showPrice === false) return []
+
   const availability = getAvailability(property.status)
   const offersForSale = property.operation === "Venta" || property.operation === "Venta/Alquiler"
   const offersForRent = property.operation === "Alquiler" || property.operation === "Venta/Alquiler"
@@ -221,6 +235,8 @@ export async function generateMetadata({
     priceOnRequest: t('priceOnRequest'),
     saleLabel: t('saleLabel'),
     rentLabel: t('rentLabel'),
+    sold: tCommon('sold'),
+    rented: tCommon('rented'),
   })
   const ogImage = toAbsoluteUrl(property.image || property.images?.[0] || fallbackImage)
 

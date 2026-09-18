@@ -44,6 +44,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const shouldPlayVideoOnOpen = useRef(false)
   const isUnavailable = property.status === "rented" || property.status === "sold"
   const effectivePromotions = isUnavailable ? [] : promotions || []
+  const shouldShowPrice = property.showPrice !== false
 
   // --- PROMOCIONES Y MODAL INTELIGENTE ---
   const { isOpen, promotion, openModal, closeModal } = usePromotionModal();
@@ -422,14 +423,22 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                   <span>{property.location}</span>
                 </div>
                 <div className="flex items-center gap-4 flex-wrap">
-                  <div className="text-4xl font-bold text-[#3898EC]">{displayPrice}</div>
-                  <div className="flex items-center gap-2 bg-[#ea384c]/10 text-[#ea384c] px-3 py-1.5 rounded-full text-xs font-bold animate-pulse">
+                  <div className="text-4xl font-bold text-[#3898EC]">
+                    {shouldShowPrice
+                      ? displayPrice
+                      : property.status === "rented"
+                        ? tCommon("rented").toUpperCase()
+                        : property.status === "sold"
+                          ? tCommon("sold").toUpperCase()
+                          : tCommon("priceOnRequest")}
+                  </div>
+                  {!isUnavailable && <div className="flex items-center gap-2 bg-[#ea384c]/10 text-[#ea384c] px-3 py-1.5 rounded-full text-xs font-bold animate-pulse">
                     <span className="relative flex h-2 w-2">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ea384c] opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ea384c]"></span>
                     </span>
                     {tCommon('highInterest')}
-                  </div>
+                  </div>}
                 </div>
                 {computedHighlights.length > 0 && (
                   <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#333333]">
@@ -606,10 +615,12 @@ export default function PropertyDetailClient({ property, similarProperties, prom
               <div className="p-6 bg-[#fafafa] rounded-lg">
                 <h3 className="text-lg font-semibold text-[#222222] mb-3">{tDetail('additionalInfo')}</h3>
                 <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <span className="text-[#999999]">{tDetail('yearBuilt')}:</span>
-                    <span className="ml-2 text-[#333333] font-medium">{property.builtYear}</span>
-                  </div>
+                  {property.builtYear > 0 && (
+                    <div>
+                      <span className="text-[#999999]">{tDetail('yearBuilt')}:</span>
+                      <span className="ml-2 text-[#333333] font-medium">{property.builtYear}</span>
+                    </div>
+                  )}
                   <div>
                     <span className="text-[#999999]">{tDetail('typeLabel')}:</span>
                     <span className="ml-2 text-[#333333] font-medium">
