@@ -315,6 +315,14 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 </div>
               )}
 
+              {isUnavailable && (
+                <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center">
+                  <span className="rotate-[-15deg] rounded border-[4px] border-[#ea384c] px-5 py-2 text-2xl font-black uppercase tracking-wide text-[#ea384c] opacity-85 select-none sm:text-4xl">
+                    {property.status === "rented" ? tCommon("rented") : tCommon("sold")}
+                  </span>
+                </div>
+              )}
+
               {/* Image counter */}
               <div className="absolute bottom-4 right-4 bg-black/70 text-white px-4 py-2 rounded-lg text-sm font-medium">
                 {selectedImage + 1} / {property.images.length}
