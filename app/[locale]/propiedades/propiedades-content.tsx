@@ -51,7 +51,7 @@ export default function PropiedadesContent() {
 
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Sidebar Filters */}
-            <div className="lg:w-[280px] flex-shrink-0">
+            <div className="hidden lg:block lg:w-[280px] flex-shrink-0">
               <PropertyFiltersComponent filters={filters} onFiltersChange={updateFilters} onClear={clearFilters} />
             </div>
 
