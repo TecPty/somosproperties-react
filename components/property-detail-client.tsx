@@ -42,13 +42,15 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const videoOpenButtonRef = useRef<HTMLButtonElement | null>(null)
   const shouldPlayVideoOnOpen = useRef(false)
+  const isUnavailable = property.status === "rented" || property.status === "sold"
+  const effectivePromotions = isUnavailable ? [] : promotions || []
 
   // --- PROMOCIONES Y MODAL INTELIGENTE ---
   const { isOpen, promotion, openModal, closeModal } = usePromotionModal();
   const { ref: heroRef, isVisible } = useIntersectionTrigger(0.5);
   const sessionKey = `promo-${property.id}-seen`;
   const { set: setSession } = useSessionStorage(sessionKey);
-  const autoPromo = getAutoOpenPromotion(promotions || []);
+  const autoPromo = getAutoOpenPromotion(effectivePromotions);
 
   // Lógica de apertura automática del modal promocional
   useEffect(() => {
@@ -103,7 +105,6 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const hasRequirements = Array.isArray(property.requirements) && property.requirements.length > 0
   const hasIncentives = Array.isArray(property.incentives) && property.incentives.length > 0
   const hasEligibility = typeof property.minIncome === "number" && Number.isFinite(property.minIncome)
-  const isUnavailable = property.status === "rented" || property.status === "sold"
 
   const googleMapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY
   const mapSrc = googleMapsKey
@@ -193,7 +194,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   return (
     <>
       {/* Modal Promocional Inteligente */}
-      <PromotionModal isOpen={isOpen} promotion={promotion} onClose={closeModal} />
+      {!isUnavailable && <PromotionModal isOpen={isOpen} promotion={promotion} onClose={closeModal} />}
 
 
 
@@ -312,6 +313,14 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
+                </div>
+              )}
+
+              {isUnavailable && (
+                <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center">
+                  <span className="rotate-[-15deg] rounded border-[4px] border-[#ea384c] px-5 py-2 text-2xl font-black uppercase tracking-wide text-[#ea384c] opacity-85 select-none sm:text-4xl">
+                    {property.status === "rented" ? tCommon("rented") : tCommon("sold")}
+                  </span>
                 </div>
               )}
 
@@ -629,9 +638,9 @@ export default function PropertyDetailClient({ property, similarProperties, prom
               {/* Imagen miniatura */}
 
               {/* Promociones (si existen) */}
-              {promotions && promotions.length > 0 && (
-                <PropertyPromotionsGrid 
-                  promotions={promotions} 
+              {effectivePromotions.length > 0 && (
+                <PropertyPromotionsGrid
+                  promotions={effectivePromotions}
                   onSelect={openModal}
                 />
               )}
@@ -760,7 +769,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
           {/* Thumbnail promocional después de requisitos y antes del mapa */}
           {/* RAZÓN: UX solicitado, solo si hay promoción activa y thumbnail */}
-          {promotion?.images?.thumbnail && (
+          {!isUnavailable && promotion?.images?.thumbnail && (
             <button
               className="mx-auto my-12 block promotion-thumbnail transition-transform hover:scale-105 focus:ring-2 focus:ring-blue-500"
               aria-label={tDetail('promoBannerAriaLabel', { title: promotion.title })}

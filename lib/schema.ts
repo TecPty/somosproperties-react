@@ -94,7 +94,9 @@ export function getPropertyListingSchema(property: Property, imageUrl?: string) 
     availability:
       property.status === "available"
         ? "https://schema.org/InStock"
-        : "https://schema.org/OutOfStock",
+        : property.status === "sold"
+          ? "https://schema.org/SoldOut"
+          : "https://schema.org/OutOfStock",
     location: {
       "@type": "Place",
       name: property.location,
