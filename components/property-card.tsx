@@ -29,6 +29,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   const isSold = property.status === "sold"
   const isRented = property.status === "rented"
   const isPremiumProperty = isPremium(property)
+  const shouldShowPrice = property.showPrice !== false
   const imageCount = property.images?.length ?? 1
 
   const handlePropertyClick = useCallback(() => {
@@ -118,7 +119,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         {/* Price — visual anchor */}
         <div className="flex items-baseline justify-between mb-2 gap-2">
           <p className="text-2xl font-bold leading-tight text-[#3898EC] truncate">
-            {displayPrice}
+            {shouldShowPrice
+              ? displayPrice
+              : isRented
+                ? t('rented').toUpperCase()
+                : isSold
+                  ? t('sold').toUpperCase()
+                  : t('priceOnRequest')}
           </p>
           {property.area > 0 && (
             <span className="flex items-center gap-1.5 text-xs text-[#888888] flex-shrink-0 whitespace-nowrap">

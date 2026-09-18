@@ -9548,6 +9548,49 @@
         "1 depósito",
         "Mantenimiento $325/mes"
       ]
+    },
+    {
+      "id": 2022,
+      "title": "Terrazas de Coronado",
+      "slug": "terrazas-de-coronado",
+      "type": "Local",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "pricePerMonth": null,
+      "showPrice": false,
+      "location": "Coronado, Panamá Oeste, Carretera Interamericana",
+      "city": "Panamá Oeste",
+      "district": "Coronado",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "parkingSpots": 0,
+      "area": 0,
+      "builtYear": 0,
+      "featured": false,
+      "status": "rented",
+      "hidden": false,
+      "image": "/images/properties/terrazas-coronado/hero.webp",
+      "images": [
+        "/images/properties/terrazas-coronado/hero.webp",
+        "/images/properties/terrazas-coronado/gallery-02.webp"
+      ],
+      "planos": [],
+      "description": "Plaza comercial ubicada en Coronado, Panamá Oeste, sobre la Carretera Interamericana. Cuenta con estacionamientos, distintos establecimientos comerciales y excelente exposición en una zona de alto tráfico vehicular. Actualmente, sus locales se encuentran alquilados.",
+      "description_en": "Commercial plaza located in Coronado, Panamá Oeste, along the Inter-American Highway. It offers parking, a variety of commercial establishments, and excellent exposure in a high-traffic area. Its commercial units are currently rented.",
+      "highlights": [
+        "Locales 100% alquilados",
+        "Carretera Interamericana",
+        "Coronado, Panamá Oeste",
+        "Estacionamientos",
+        "Alta exposición comercial"
+      ],
+      "amenities": [
+        "Ubicación estratégica",
+        "Alto tráfico vehicular",
+        "Estacionamientos",
+        "Variedad de establecimientos comerciales"
+      ]
     }
   ]
 }
