@@ -63,8 +63,8 @@ function buildPropertyDescription(property: Property, locale: string, labels: De
   const numberLocale = locale === "en" ? "en-US" : "es-PA"
   const formatPrice = (value: number) => `$${value.toLocaleString(numberLocale)}`
 
-  const saleText = hasValidPrice(property.price) ? formatPrice(property.price) : labels.priceOnRequest
-  const rentText = hasValidPrice(property.pricePerMonth)
+  const saleText = isPositiveNumber(property.price) ? formatPrice(property.price) : labels.priceOnRequest
+  const rentText = isPositiveNumber(property.pricePerMonth)
     ? `${formatPrice(property.pricePerMonth)}${labels.perMonth}`
     : labels.priceOnRequest
 
@@ -105,7 +105,7 @@ function getAvailability(status: Property["status"]): string {
   return "https://schema.org/OutOfStock"
 }
 
-function hasValidPrice(value: number | null | undefined): value is number {
+function isPositiveNumber(value: number | null | undefined): value is number {
   return typeof value === "number" && Number.isFinite(value) && value > 0
 }
 
@@ -119,7 +119,7 @@ function buildPropertyOffers(property: Property, propertyUrl: string): Record<st
   const offersForRent = property.operation === "Alquiler" || property.operation === "Venta/Alquiler"
   const offers: Record<string, unknown>[] = []
 
-  if (offersForSale && hasValidPrice(property.price)) {
+  if (offersForSale && isPositiveNumber(property.price)) {
     offers.push({
       "@type": "Offer",
       businessFunction: BUSINESS_FUNCTION_SELL,
@@ -130,7 +130,7 @@ function buildPropertyOffers(property: Property, propertyUrl: string): Record<st
     })
   }
 
-  if (offersForRent && hasValidPrice(property.pricePerMonth)) {
+  if (offersForRent && isPositiveNumber(property.pricePerMonth)) {
     offers.push({
       "@type": "Offer",
       businessFunction: BUSINESS_FUNCTION_LEASE_OUT,
@@ -149,6 +149,82 @@ function buildPropertyOffers(property: Property, propertyUrl: string): Record<st
   }
 
   return offers
+}
+
+// CAMBIO: los datos del inmueble (direccion, area, recamaras, banos, estacionamientos)
+// se publican en `mainEntity` en vez de colgarlos del RealEstateListing.
+// RAZÓN: RealEstateListing es un WebPage y no admite esas propiedades. El inmueble es un
+// Accommodation (residencial) o un Place (comercial/terreno), y son los datos que usan
+// los asistentes de IA para responder busquedas como "3 recamaras en Costa del Este".
+const ACCOMMODATION_TYPES: Partial<Record<Property["type"], string>> = {
+  Apartamento: "Apartment",
+  Casa: "House",
+  Villa: "House",
+}
+
+const ENTITY_LABELS = {
+  es: { area: "Área", parking: "Estacionamientos" },
+  en: { area: "Area", parking: "Parking spaces" },
+}
+
+function buildPropertyEntity(property: Property, locale: string): Record<string, unknown> {
+  const labels = ENTITY_LABELS[locale === "en" ? "en" : "es"]
+  const accommodationType = ACCOMMODATION_TYPES[property.type]
+  const entity: Record<string, unknown> = {
+    "@type": accommodationType ?? "Place",
+    name: property.title,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: property.location,
+      addressLocality: property.city,
+      addressRegion: property.district,
+      addressCountry: "PA",
+    },
+  }
+
+  if (isPositiveNumber(property.parkingSpots)) {
+    entity.amenityFeature = {
+      "@type": "LocationFeatureSpecification",
+      name: labels.parking,
+      value: property.parkingSpots,
+    }
+  }
+
+  // floorSize, numberOfBedrooms, banos y yearBuilt solo existen en Accommodation.
+  if (!accommodationType) {
+    if (isPositiveNumber(property.area)) {
+      entity.additionalProperty = {
+        "@type": "PropertyValue",
+        name: labels.area,
+        value: property.area,
+        unitCode: "MTK",
+      }
+    }
+    return entity
+  }
+
+  if (isPositiveNumber(property.area)) {
+    entity.floorSize = { "@type": "QuantitativeValue", value: property.area, unitCode: "MTK" }
+  }
+
+  if (isPositiveNumber(property.bedrooms)) {
+    entity.numberOfBedrooms = property.bedrooms
+  }
+
+  if (isPositiveNumber(property.bathrooms)) {
+    // Convencion RESO que sigue schema.org: 2.5 = 2 banos completos + 1 medio bano, total 3.
+    entity.numberOfBathroomsTotal = Math.ceil(property.bathrooms)
+    if (!Number.isInteger(property.bathrooms)) {
+      entity.numberOfFullBathrooms = Math.floor(property.bathrooms)
+      entity.numberOfPartialBathrooms = 1
+    }
+  }
+
+  if (isPositiveNumber(property.builtYear)) {
+    entity.yearBuilt = property.builtYear
+  }
+
+  return entity
 }
 
 function buildPropertyJsonLd(property: Property, locale: string): Record<string, unknown> {
@@ -171,13 +247,7 @@ function buildPropertyJsonLd(property: Property, locale: string): Record<string,
       url: propertyUrl,
       image: [primaryImage],
       ...offersField,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: property.location,
-        addressLocality: property.city,
-        addressRegion: property.district,
-        addressCountry: "PA",
-      },
+      mainEntity: buildPropertyEntity(property, locale),
     }
   }
 
