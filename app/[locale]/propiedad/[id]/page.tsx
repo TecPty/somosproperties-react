@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import type { Property } from "@/lib/types"
 import { properties as propertiesData } from "@/lib/properties"
 import PropertyDetailClient from "@/components/property-detail-client"
+import { SchemaMarkup } from "@/components/schema-markup"
 import { getPropertyPromotions } from "@/lib/promotions"
 import { getTranslations } from "next-intl/server"
 
@@ -282,10 +283,7 @@ export default async function PropertyDetailsPage({ params }: { params: Promise<
     <>
       {/* CAMBIO: JSON-LD se renderiza en servidor con la pagina de detalle. */}
       {/* RAZÓN: mejora indexacion SEO al entregar datos estructurados en el HTML inicial. */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(propertyJsonLd) }}
-      />
+      <SchemaMarkup schema={propertyJsonLd} />
       <PropertyDetailClient
         property={localizedProperty}
         similarProperties={localizedSimilarProperties}

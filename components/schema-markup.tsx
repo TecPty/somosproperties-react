@@ -1,68 +1,42 @@
-"use client"
-
-import { useEffect } from "react"
-
 interface SchemaProps {
   schema: Record<string, unknown>
 }
 
-/**
- * Component to inject JSON-LD schema markup into page head.
- * Must be used in a client component.
- * 
- * Example: SchemaMarkup component with getPropertyListingSchema from lib/schema
- */
-export function SchemaMarkup({ schema }: SchemaProps) {
-  useEffect(() => {
-    if (!schema) return
-
-    const script = document.createElement("script")
-    script.type = "application/ld+json"
-    script.innerHTML = JSON.stringify(schema)
-    script.async = true
-
-    // Add to head for best practices
-    document.head.appendChild(script)
-
-    // Cleanup
-    return () => {
-      document.head.removeChild(script)
-    }
-  }, [schema])
-
-  return null
+// CAMBIO: el JSON-LD se renderiza como <script> en el JSX en vez de inyectarse con useEffect.
+// RAZÓN: useEffect no corre en el servidor, asi que el HTML inicial no traia datos estructurados
+// y los crawlers de IA (GPTBot, ClaudeBot, OAI-SearchBot) no ejecutan JavaScript.
+// Se escapa "<" para que un texto con "</script>" no pueda cerrar el tag antes de tiempo.
+function serializeSchema(schema: Record<string, unknown>): string {
+  return JSON.stringify(schema).replace(/</g, "\\u003c")
 }
 
 /**
- * Multiple schemas injector
- * Pass array of schemas to inject multiple structured data blocks
+ * Renders a JSON-LD schema block into the initial HTML.
+ * Works in both server and client components.
+ */
+export function SchemaMarkup({ schema }: SchemaProps) {
+  if (!schema) return null
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: serializeSchema(schema) }}
+    />
+  )
+}
+
+/**
+ * Multiple schemas renderer
+ * Pass array of schemas to render multiple structured data blocks
  */
 export function SchemaMarkupMultiple({ schemas }: { schemas: Record<string, unknown>[] }) {
-  useEffect(() => {
-    if (!schemas || schemas.length === 0) return
+  if (!schemas || schemas.length === 0) return null
 
-    const scripts: HTMLScriptElement[] = []
-
-    schemas.forEach((schema) => {
-      const script = document.createElement("script")
-      script.type = "application/ld+json"
-      script.innerHTML = JSON.stringify(schema)
-      script.async = true
-      document.head.appendChild(script)
-      scripts.push(script)
-    })
-
-    // Cleanup
-    return () => {
-      scripts.forEach((script) => {
-        try {
-          document.head.removeChild(script)
-        } catch (e) {
-          // Already removed
-        }
-      })
-    }
-  }, [schemas])
-
-  return null
+  return (
+    <>
+      {schemas.map((schema, index) => (
+        <SchemaMarkup key={index} schema={schema} />
+      ))}
+    </>
+  )
 }
