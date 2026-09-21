@@ -3767,6 +3767,7 @@
       "description_en": "Unit 606 in Tower 100 at Playa Escondida. 126.48 m², Lake View. Layout: 2 bedrooms. Sale price: $398,412."
     },
     {
+      "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
       "pricePerMonth": null,
