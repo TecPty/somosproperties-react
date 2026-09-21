@@ -2,6 +2,8 @@ import OptimizedImage from "@/components/optimized-image"
 import Link from "next/link"
 import { getTranslations } from 'next-intl/server'
 import { createMetadata } from "@/lib/seo"
+import { SchemaMarkup } from "@/components/schema-markup"
+import { getOrganizationSchema } from "@/lib/schema"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -70,8 +72,7 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
 
   return (
     <>
-
-
+      <SchemaMarkup schema={getOrganizationSchema()} />
       <main className="bg-white">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-white">
