@@ -2357,7 +2357,7 @@
         "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
       ],
       "planos": [],
-      "description": "Local 411 en Plaza Sunset Strip (Nivel 4), 36 m². Canon $680/mes + mantenimiento $1.50/m² ($54/mes). Ideal para oficina boutique, consultorio o estudio creativo en planta alta.\n\nMantenimiento mensual: $54",
+      "description": "Local 411 en Plaza Sunset Strip (Nivel 4), 36 m². Canon $680/mes + mantenimiento $2.00/m² ($72/mes). Ideal para oficina boutique, consultorio o estudio creativo en planta alta.\n\nMantenimiento mensual: $72",
       "amenities": [
         "Vista elevada hacia Vía Israel",
         "Lobby y circulación climatizada",
@@ -2366,14 +2366,14 @@
       ],
       "highlights": [
         "36 m² en Nivel 4",
-        "Canon $680 + HOA $54/mes",
+        "Canon $680 + HOA $72/mes",
         "Pasillo climatizado",
         "Seguridad 24/7"
       ],
       "slug": "sunset-strip-local-411",
-      "description_en": "Unit 411 at Plaza Sunset Strip (Level 4), 36 m². Rent $680/mo + maintenance fee $1.50/m² ($54/mo). Ideal for a boutique office, clinic, or creative studio on the upper floor.",
-      "hoa": 54,
-      "hidden": true
+      "description_en": "Unit 411 at Plaza Sunset Strip (Level 4), 36 m². Rent $680/mo + maintenance fee $2.00/m² ($72/mo). Ideal for a boutique office, clinic, or creative studio on the upper floor.",
+      "hoa": 72,
+      "hidden": false
     },
     {
       "category": "Comercial",
@@ -2422,7 +2422,7 @@
       "slug": "sunset-strip-local-306",
       "description_en": "Unit 306 at Plaza Sunset Strip (Level 3), 80 m². Rent $1,375/mo + maintenance fee $1.50/m² ($120/mo). Interior unit in climate-controlled corridor with escalators. Ideal for boutique, studio or specialized services.",
       "hoa": 120,
-      "hidden": true
+      "hidden": false
     },
     {
       "category": "Comercial",
@@ -2589,7 +2589,7 @@
       "planos": [
         "/images/properties/sunset-strip/floorplans/nivel-00.webp"
       ],
-      "description": "Local 026 en Plaza Sunset Strip (Planta Baja), 69 m² interiores + 29 m² de terraza = 98 m² totales. Canon $2,500/mes + mantenimiento $2.00/m² ($196/mes). Con acceso directo desde estacionamiento y vitrina de piso a techo.\n\nMantenimiento mensual: $196",
+      "description": "Local 026 en Plaza Sunset Strip (Planta Baja), 69 m² interiores + 29 m² de terraza = 98 m² totales. Canon $2,500/mes + mantenimiento $2.50/m² ($245/mes). Con acceso directo desde estacionamiento y vitrina de piso a techo.\n\nMantenimiento mensual: $245",
       "amenities": [
         "Terraza de 29 m² para mesas exteriores",
         "Acceso peatonal y estacionamientos al frente",
@@ -2598,13 +2598,13 @@
       ],
       "highlights": [
         "69 m² + 29 m² terraza (98 m² totales)",
-        "Canon $2,500 + HOA $196/mes",
+        "Canon $2,500 + HOA $245/mes",
         "Acceso directo desde estacionamiento",
         "Vitrina de piso a techo"
       ],
       "slug": "sunset-strip-local-026",
-      "description_en": "Unit 026 at Plaza Sunset Strip (Ground Floor), 69 m² interior + 29 m² terrace = 98 m² total. Rent $2,500/mo + maintenance fee $2.00/m² ($196/mo). Direct parking access and floor-to-ceiling storefront window.",
-      "hoa": 196,
+      "description_en": "Unit 026 at Plaza Sunset Strip (Ground Floor), 69 m² interior + 29 m² terrace = 98 m² total. Rent $2,500/mo + maintenance fee $2.50/m² ($245/mo). Direct parking access and floor-to-ceiling storefront window.",
+      "hoa": 245,
       "hidden": false
     },
     {
@@ -7378,12 +7378,12 @@
       "slug": "sunset-strip-local-021",
       "area": 113,
       "pricePerMonth": 3500,
-      "hoa": 226,
-      "description": "Local 021 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $2.00/m² ($226/mes). Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.\n\nMantenimiento mensual: $226",
-      "description_en": "Unit 021 at Plaza Sunset Strip (Ground Floor), 113 m². Rent $3,500/mo + maintenance fee $2.00/m² ($226/mo). Large pedestrian frontage with floor-to-ceiling window and direct parking access.",
+      "hoa": 283,
+      "description": "Local 021 en Plaza Sunset Strip (Planta Baja), 113 m². Canon $3,500/mes + mantenimiento $283/mes. Local de gran frente peatonal con vitrina de piso a techo y acceso directo desde estacionamiento.\n\nMantenimiento mensual: $283",
+      "description_en": "Unit 021 at Plaza Sunset Strip (Ground Floor), 113 m². Rent $3,500/mo + maintenance fee $283/mo. Large pedestrian frontage with floor-to-ceiling window and direct parking access.",
       "highlights": [
         "113 m² en Planta Baja",
-        "Canon $3,500 + HOA $226/mes",
+        "Canon $3,500 + HOA $283/mes",
         "Frente peatonal",
         "Vitrina de piso a techo"
       ]
@@ -7421,18 +7421,65 @@
         "Pasillo climatizado y escaleras eléctricas",
         "Seguridad 24/7 y CCTV"
       ],
-      "hidden": true,
+      "hidden": false,
       "id": 274,
       "title": "Sunset Strip – Local 311",
       "slug": "sunset-strip-local-311",
       "area": 36,
       "pricePerMonth": 650,
-      "hoa": 54,
-      "description": "Local 311 en Plaza Sunset Strip (Nivel 3), 36 m². Canon $650/mes + mantenimiento $1.50/m² ($54/mes). Compacto y eficiente, ideal para oficina unipersonal o consultorio.\n\nMantenimiento mensual: $54",
-      "description_en": "Unit 311 at Plaza Sunset Strip (Level 3), 36 m². Rent $650/mo + maintenance fee $1.50/m² ($54/mo). Compact and efficient — ideal for a solo office or consulting room.",
+      "hoa": 72,
+      "description": "Local 311 en Plaza Sunset Strip (Nivel 3), 36 m². Canon $650/mes + mantenimiento $2.00/m² ($72/mes). Compacto y eficiente, ideal para oficina unipersonal o consultorio.\n\nMantenimiento mensual: $72",
+      "description_en": "Unit 311 at Plaza Sunset Strip (Level 3), 36 m². Rent $650/mo + maintenance fee $2.00/m² ($72/mo). Compact and efficient — ideal for a solo office or consulting room.",
       "highlights": [
         "36 m² en Nivel 3",
-        "Canon $650 + HOA $54/mes",
+        "Canon $650 + HOA $72/mes",
+        "Pasillo climatizado",
+        "Seguridad 24/7"
+      ]
+    },
+    {
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "price": 0,
+      "location": "Vía Israel, San Francisco, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "San Francisco",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "parkingSpots": 0,
+      "builtYear": 2024,
+      "featured": false,
+      "status": "rented",
+      "type": "Local",
+      "image": "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+      "images": [
+        "/images/properties/sunset-strip/hero/fachada-principal-via-israel.webp",
+        "/images/properties/sunset-strip/hero/fachada-frontal-strip-mall.webp",
+        "/images/properties/sunset-strip/hero/fachada-torre-bella-vista.webp",
+        "/images/properties/sunset-strip/gallery/lobby-vidrio-acceso-locales.webp",
+        "/images/properties/sunset-strip/gallery/escaleras-electricas-lobby.webp",
+        "/images/properties/sunset-strip/gallery/pasillo-comercial-interior.webp",
+        "/images/properties/sunset-strip/gallery/lobby-recepcion-cowork.webp"
+      ],
+      "planos": [],
+      "amenities": [
+        "Vista elevada hacia Vía Israel",
+        "Lobby y circulación climatizada",
+        "Ascensor y escaleras de emergencia",
+        "Seguridad y CCTV 24/7"
+      ],
+      "hidden": false,
+      "id": 2023,
+      "title": "Sunset Strip – Local 225",
+      "slug": "sunset-strip-local-225",
+      "area": 86,
+      "pricePerMonth": 1750,
+      "hoa": 172,
+      "description": "Local 225 en Plaza Sunset Strip (Nivel 2), 86 m². Canon $1,750/mes + mantenimiento $2.00/m² ($172/mes). Local interior en pasillo climatizado con escaleras eléctricas, en el mismo nivel que las oficinas 200.\n\nMantenimiento mensual: $172",
+      "description_en": "Unit 225 at Plaza Sunset Strip (Level 2), 86 m². Rent $1,750/mo + maintenance fee $2.00/m² ($172/mo). Interior unit in climate-controlled corridor with escalators, on the same level as the 200-series offices.",
+      "highlights": [
+        "86 m² en Nivel 2",
+        "Canon $1,750 + HOA $172/mes",
         "Pasillo climatizado",
         "Seguridad 24/7"
       ]
