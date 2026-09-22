@@ -86,38 +86,6 @@ export function getBreadcrumbSchema(
 }
 
 /**
- * Local Business schema for contact pages
- */
-export function getLocalBusinessSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    name: "SOMOS Properties",
-    image: `${baseUrl}/images/Logo-SP.webp`,
-    description: "Agencia de bienes raíces en Panamá",
-    url: baseUrl,
-    telephone: "+50766770577",
-    email: "ventas@somosproperties.com",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Panama City",
-      addressRegion: "PA",
-      addressCountry: "PA",
-    },
-    areaServed: {
-      "@type": "City",
-      name: "Panamá",
-    },
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "Customer Service",
-      telephone: "+50766770577",
-      email: "ventas@somosproperties.com",
-    },
-  }
-}
-
-/**
  * Collection schema for category pages
  * Represents the collection and its members, without price aggregation.
  *
