@@ -9222,8 +9222,11 @@
       "featured": false,
       "status": "available",
       "hidden": false,
-      "image": "/images/properties/locales-comerciales-cativa-colon-2016/foto-1.webp",
+      "image": "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-1.webp",
       "images": [
+        "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-1.webp",
+        "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-2.webp",
+        "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-3.webp",
         "/images/properties/locales-comerciales-cativa-colon-2016/foto-1.webp",
         "/images/properties/locales-comerciales-cativa-colon-2016/foto-2.webp",
         "/images/properties/locales-comerciales-cativa-colon-2016/foto-3.webp",
@@ -9232,15 +9235,14 @@
         "/images/properties/locales-comerciales-cativa-colon-2016/foto-6.webp"
       ],
       "planos": [],
-      "thumbnail": "/images/properties/locales-comerciales-cativa-colon-2016/foto-1.webp",
-      "description": "Locales comerciales disponibles en alquiler en Cativá, Colón, Vía Transistmica. Áreas desde aproximadamente 73.50 m² hasta 173.13 m². Mensualidades desde $1,359.75 hasta $3,202.91, con mantenimiento incluido.\n\nTarifa de alquiler: $16.00 por m² al mes. Mantenimiento: $2.50 por m² al mes. Total: $18.50 por m² al mes.\n\nLocales disponibles en planta baja:\n• Local 15: 92.49 m² — $1,711.07/mes.\n• Local 17: 91.56 m² — $1,693.86/mes.\n• Local 19: 173.13 m² — $3,202.91/mes.\n• Locales 21, 22 y 26: 73.50 m² cada uno — $1,359.75/mes cada uno.\n\nTodos los montos mensuales indicados incluyen mantenimiento.",
-      "description_en": "Commercial spaces available for rent in Cativá, Colón, on Vía Transistmica. Areas from approximately 73.50 m² to 173.13 m². Monthly prices from $1,359.75 to $3,202.91, including maintenance.\n\nMonthly rent: $16.00/m². Maintenance: $2.50/m². Total monthly rate: $18.50/m².\n\nAvailable ground-floor units:\n• Unit 15: 92.49 m² — $1,711.07/month.\n• Unit 17: 91.56 m² — $1,693.86/month.\n• Unit 19: 173.13 m² — $3,202.91/month.\n• Units 21, 22 and 26: 73.50 m² each — $1,359.75/month each.\n\nAll listed monthly prices include maintenance.",
+      "thumbnail": "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-1.webp",
+      "description": "Locales comerciales en alquiler en Cativá, Colón, Vía Transistmica. Áreas desde aproximadamente 73.50 m² hasta 173.13 m². Mensualidades desde $1,359.75 hasta $3,202.91, con mantenimiento incluido.\n\nTarifa de alquiler: $16.00 por m² al mes. Mantenimiento: $2.50 por m² al mes. Total: $18.50 por m² al mes.",
+      "description_en": "Commercial spaces for rent in Cativá, Colón, on Vía Transistmica. Areas from approximately 73.50 m² to 173.13 m². Monthly prices from $1,359.75 to $3,202.91, including maintenance.\n\nMonthly rent: $16.00/m². Maintenance: $2.50/m². Total monthly rate: $18.50/m².",
       "highlights": [
         "Locales desde 73.50 m² hasta 173.13 m²",
         "Alquiler desde $1,359.75 hasta $3,202.91 al mes",
         "Mantenimiento incluido",
         "Tarifa total: $18.50 por m² al mes",
-        "Locales disponibles en planta baja",
         "Cativá, Colón - Vía Transistmica"
       ],
       "amenities": [
