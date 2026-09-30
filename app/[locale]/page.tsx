@@ -198,7 +198,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       )}
 
       {/* Featured Properties */}
-      <section className="py-20 bg-white">
+      <section className="py-20 site-background">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('featured.title')}</h2>
@@ -218,7 +218,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       {/* Oportunidades Comerciales */}
       {commercialOpportunities.length > 0 && (
-        <section className="py-20 bg-[#f8f9fa]">
+        <section className="py-20 site-background">
           <div className="container-custom">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-[#1a1a1a] text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
@@ -291,7 +291,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       )}
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 site-background relative overflow-hidden">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-4">{t('testimonials.title')}</h2>
@@ -325,7 +325,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-20 site-background">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.title')}</h2>
@@ -385,7 +385,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Formularios Section */}
-      <section className="py-20 bg-[#fafafa]">
+      <section className="py-20 site-background">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('contact.title')}</h2>

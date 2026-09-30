@@ -19,7 +19,7 @@ export default async function PrivacidadPage() {
 
   return (
     <>
-      <div className="min-h-screen bg-white py-16">
+      <div className="min-h-screen site-background py-16">
         <div className="container-custom max-w-4xl">
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>
