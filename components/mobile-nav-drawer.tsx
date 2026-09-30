@@ -152,7 +152,7 @@ export default function MobileNavDrawer({
             role="dialog"
             aria-modal="true"
             aria-label={labels.mainNav}
-            className="fixed inset-y-0 right-0 z-[71] flex h-full w-[min(88vw,380px)] flex-col bg-white shadow-2xl"
+            className="fixed inset-y-0 right-0 z-[71] flex h-[100dvh] w-[min(88vw,380px)] flex-col bg-white shadow-2xl"
           >
             <div className="flex items-center justify-end border-b border-[#eeeeee] px-4 py-4">
               <button
@@ -160,7 +160,7 @@ export default function MobileNavDrawer({
                 type="button"
                 onClick={onClose}
                 aria-label={labels.closeMenu}
-                className="flex h-10 w-10 items-center justify-center rounded-md text-[#222222] hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
+                className="flex h-11 w-11 items-center justify-center rounded-md text-[#222222] hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
               >
                 <CloseIcon />
               </button>
@@ -220,7 +220,7 @@ export default function MobileNavDrawer({
                             key={child.href}
                             href={child.href}
                             onClick={onClose}
-                            className="block rounded-lg px-3 py-2 text-sm text-[#666666] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
+                            className="block rounded-lg min-h-[44px] flex items-center px-3 py-3 text-sm text-[#444444] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
                           >
                             {child.label}
                           </Link>
@@ -238,7 +238,7 @@ export default function MobileNavDrawer({
                 onClick={() => onLocaleChange("es")}
                 disabled={isPending}
                 title={labels.spanish}
-                className={`text-lg transition-all ${locale === "es" ? "scale-110 opacity-100" : "opacity-40 hover:opacity-70"} ${
+                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-lg transition-all ${locale === "es" ? "scale-110 opacity-100" : "opacity-40 hover:opacity-70"} ${
                   isPending ? "cursor-wait" : "cursor-pointer"
                 }`}
               >
@@ -250,7 +250,7 @@ export default function MobileNavDrawer({
                 onClick={() => onLocaleChange("en")}
                 disabled={isPending}
                 title="English"
-                className={`text-lg transition-all ${locale === "en" ? "scale-110 opacity-100" : "opacity-40 hover:opacity-70"} ${
+                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-lg transition-all ${locale === "en" ? "scale-110 opacity-100" : "opacity-40 hover:opacity-70"} ${
                   isPending ? "cursor-wait" : "cursor-pointer"
                 }`}
               >

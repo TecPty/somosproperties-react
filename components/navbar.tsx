@@ -335,6 +335,8 @@ export default function Navbar() {
     { href: `/${locale}/contacto`, label: t('contact') },
   ]
 
+  const hideMobileHeaderSearch = LISTING_SEGMENTS.includes(pathname.split("/").filter(Boolean)[1] || "")
+
   const isActive = (href: string) => {
     if (href === `/${locale}`) return pathname === `/${locale}`
     return pathname.startsWith(href)
@@ -352,7 +354,7 @@ export default function Navbar() {
       aria-label={t('mainNav')}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between gap-2 sm:gap-4 h-24 sm:h-[104px] lg:h-20">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 h-[92px] sm:h-[104px] lg:h-20">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center shrink-0">
             <OptimizedImage
@@ -432,7 +434,7 @@ export default function Navbar() {
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-nav-drawer"
             aria-label={toggleLabel(mobileMenuOpen)}
-            className="lg:hidden flex h-10 w-10 items-center justify-center rounded-md text-[#222222] hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
+            className="lg:hidden flex h-11 w-11 items-center justify-center rounded-md text-[#222222] hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
           >
             <svg className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fillRule="evenodd" d="M3 5.75A.75.75 0 013.75 5h12.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.75zM3 10a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75A.75.75 0 013 10zm0 4.25a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clipRule="evenodd" />
@@ -442,9 +444,9 @@ export default function Navbar() {
       </div>
 
       {/* Row 2: global property search (all routes) */}
-      <div className="border-t border-[#f0f0f0]">
+      <div className={`border-t border-[#f0f0f0] ${hideMobileHeaderSearch ? "hidden lg:block" : ""}`}>
         <div className="container-custom">
-          <div className="py-3">
+          <div className="py-2 sm:py-3">
             <Suspense
               fallback={
                 <div
