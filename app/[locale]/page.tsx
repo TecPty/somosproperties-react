@@ -197,7 +197,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </section>
       )}
 
-      <div className="site-background site-background-continuous">
+      <div className="site-background-continuous">
       {/* Featured Properties */}
       <section className="py-20">
         <div className="container-custom">

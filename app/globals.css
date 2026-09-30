@@ -293,7 +293,8 @@
 
 /* SOMOS: supplied Panama image, optimized as WebP.
    Overlay softens architectural detail behind text; cards remain opaque. */
-.site-background {
+.site-background,
+.site-background-continuous {
   background-color: var(--site-surface);
   background-image:
     linear-gradient(rgb(242 244 247 / 45%), rgb(242 244 247 / 45%)),
@@ -320,4 +321,10 @@
   .site-background-continuous {
     background-position: center top;
   }
+}
+
+/* Only the shared parent paints the home background. */
+.site-background-continuous > section {
+  background-color: transparent;
+  background-image: none;
 }
