@@ -18,6 +18,7 @@ import type { Promotion } from "@/types/promotion"
 import { formatPrice, formatArea } from "@/lib/formatters"
 import { trackGoogleAdsConversion, trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackGaEvent } from "@/lib/google-analytics"
+import { useConsentManager } from "@/hooks/use-consent-manager"
 import { useTranslations, useLocale } from "next-intl"
 
 type PropertyDetailsProps = {
@@ -38,6 +39,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
   const tCommon = useTranslations('common')
   const tDetail = useTranslations('propertyDetail')
   const locale = useLocale()
+  const { showBanner } = useConsentManager()
   const hasTrackedView = useRef(false)
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const videoOpenButtonRef = useRef<HTMLButtonElement | null>(null)
@@ -282,11 +284,11 @@ export default function PropertyDetailClient({ property, similarProperties, prom
         </div>
       )}
 
-      <main className="py-12 site-background">
+      <main className={`py-6 md:py-12 site-background ${!isUnavailable ? "pb-[calc(7rem+env(safe-area-inset-bottom))] md:pb-12" : ""}`}>
         <div className="container-custom max-w-screen-2xl mx-auto px-4">
           {/* Gallery */}
           <div className="mb-12">
-            <div ref={heroRef as React.RefObject<HTMLDivElement>} className="mb-4 relative h-[500px] md:h-[600px] rounded-lg overflow-hidden bg-[#f3f3f3] shadow-lg">
+            <div ref={heroRef as React.RefObject<HTMLDivElement>} className="mb-4 relative h-[260px] sm:h-[380px] md:h-[600px] rounded-lg overflow-hidden bg-[#f3f3f3] shadow-lg">
               {!imageError ? (
                 <OptimizedImage
                   src={property.images[selectedImage] || "/placeholder.svg"}
@@ -398,8 +400,8 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     {property.type}
                   </span>
                 </div>
-                <h1 className="text-4xl font-bold text-[#222222] mb-3">{property.title}</h1>
-                <div className="flex items-center gap-2 text-[#999999] mb-4">
+                <h1 className="text-2xl sm:text-4xl font-bold text-[#222222] mb-3">{property.title}</h1>
+                <div className="flex items-center gap-2 text-[#5d6c7b] mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-[#ea384c]"
@@ -423,7 +425,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                   <span>{property.location}</span>
                 </div>
                 <div className="flex items-center gap-4 flex-wrap">
-                  <div className="text-4xl font-bold text-[#3898EC]">
+                  <div className="text-2xl sm:text-4xl font-bold text-[#0082f3] break-words">
                     {shouldShowPrice
                       ? displayPrice
                       : property.status === "rented"
@@ -460,7 +462,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       <img src="/images/icons/icon-cama.png" alt={tDetail('iconBedsAlt')} className="h-8 w-8 object-contain" />
                     </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.bedrooms}</div>
-                    <div className="text-sm text-[#999999]">{tDetail('bedrooms')}</div>
+                    <div className="text-sm text-[#5d6c7b]">{tDetail('bedrooms')}</div>
                   </div>
                 )}
                 {property.bathrooms > 0 && (
@@ -469,7 +471,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       <img src="/images/icons/icon-bano.png" alt={tDetail('iconBathsAlt')} className="h-8 w-8 object-contain" />
                     </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.bathrooms}</div>
-                    <div className="text-sm text-[#999999]">{tDetail('bathrooms')}</div>
+                    <div className="text-sm text-[#5d6c7b]">{tDetail('bathrooms')}</div>
                   </div>
                 )}
                 <div className="text-center">
@@ -477,7 +479,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     <img src="/images/icons/icon-metraje.png" alt={tDetail('iconAreaAlt')} className="h-8 w-8 object-contain" />
                   </div>
                   <div className="text-2xl font-bold text-[#222222]">{property.areaMax ? `${property.area} – ${formatArea(property.areaMax)}` : formatArea(property.area)}</div>
-                  <div className="text-sm text-[#999999]">{tDetail('totalArea')}</div>
+                  <div className="text-sm text-[#5d6c7b]">{tDetail('totalArea')}</div>
                 </div>
                 {property.parkingSpots > 0 && (
                   <div className="text-center">
@@ -485,7 +487,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       <img src="/images/icons/icon-carro.png" alt={tDetail('iconParkingAlt')} className="h-16 w-16 object-contain" />
                     </div>
                     <div className="text-2xl font-bold text-[#222222]">{property.parkingSpots}</div>
-                    <div className="text-sm text-[#999999]">{tDetail('parking')}</div>
+                    <div className="text-sm text-[#5d6c7b]">{tDetail('parking')}</div>
                   </div>
                 )}
               </div>
@@ -499,7 +501,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     className={`pb-3 px-2 font-medium transition-colors ${
                       activeTab === "description"
                         ? "text-[#3898EC] border-b-2 border-[#3898EC]"
-                        : "text-[#999999] hover:text-[#333333]"
+                        : "text-[#5d6c7b] hover:text-[#333333]"
                     }`}
                   >
                     {tDetail('tabDescription')}
@@ -509,7 +511,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                     className={`pb-3 px-2 font-medium transition-colors ${
                       activeTab === "amenities"
                         ? "text-[#3898EC] border-b-2 border-[#3898EC]"
-                        : "text-[#999999] hover:text-[#333333]"
+                        : "text-[#5d6c7b] hover:text-[#333333]"
                     }`}
                   >
                     {tDetail('tabAmenities')}
@@ -520,7 +522,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                       className={`pb-3 px-2 font-medium transition-colors ${
                         activeTab === "plans"
                           ? "text-[#3898EC] border-b-2 border-[#3898EC]"
-                          : "text-[#999999] hover:text-[#333333]"
+                          : "text-[#5d6c7b] hover:text-[#333333]"
                       }`}
                     >
                       {tDetail('tabPlans')}
@@ -586,7 +588,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                             <h3 className="font-semibold text-[#333333]">
                               {index === 0 ? "Modelo A" : index === 1 ? "Modelo B" : `Modelo ${index + 1}`}
                             </h3>
-                            <p className="text-sm text-[#999999] mt-1 flex items-center gap-2">
+                            <p className="text-sm text-[#5d6c7b] mt-1 flex items-center gap-2">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-4 w-4"
@@ -617,24 +619,24 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   {property.builtYear > 0 && (
                     <div>
-                      <span className="text-[#999999]">{tDetail('yearBuilt')}:</span>
+                      <span className="text-[#5d6c7b]">{tDetail('yearBuilt')}:</span>
                       <span className="ml-2 text-[#333333] font-medium">{property.builtYear}</span>
                     </div>
                   )}
                   <div>
-                    <span className="text-[#999999]">{tDetail('typeLabel')}:</span>
+                    <span className="text-[#5d6c7b]">{tDetail('typeLabel')}:</span>
                     <span className="ml-2 text-[#333333] font-medium">
                       {property.type ? tDetail(`types.${property.type}` as 'types.Apartamento') : property.type}
                     </span>
                   </div>
                   <div>
-                    <span className="text-[#999999]">{tDetail('categoryLabel')}:</span>
+                    <span className="text-[#5d6c7b]">{tDetail('categoryLabel')}:</span>
                     <span className="ml-2 text-[#333333] font-medium">
                       {property.category ? tDetail(`categories.${property.category}` as 'categories.Residencial') : property.category}
                     </span>
                   </div>
                   <div>
-                    <span className="text-[#999999]">{tDetail('statusLabel')}:</span>
+                    <span className="text-[#5d6c7b]">{tDetail('statusLabel')}:</span>
                     <span className={`ml-2 font-medium ${property.status === 'sold' ? 'text-[#dc3545]' : property.status === 'rented' ? 'text-[#ff9500]' : 'text-[#28a745]'}`}>
                       {property.status ? tDetail(`statuses.${property.status}` as 'statuses.available') : ''}
                     </span>
@@ -645,7 +647,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
             {/* Columna derecha optimizada: sticky, espaciado, responsive y jerarquía visual */}
             {/* Sidebar/Formulario (40%) */}
-            <aside className="sidebar-formulario">
+            <aside className="sidebar-formulario scroll-mt-28 lg:scroll-mt-48" id="property-contact">
               {/* Imagen miniatura */}
 
               {/* Promociones (si existen) */}
@@ -825,7 +827,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                 <h3 className="font-semibold text-[#333333] mb-1">{property.location}</h3>
                 {property.location.toLowerCase().includes(property.district.toLowerCase()) && 
                  property.location.toLowerCase().includes(property.city.toLowerCase()) ? null : (
-                  <p className="text-sm text-[#999999]">
+                  <p className="text-sm text-[#5d6c7b]">
                     {property.district}, {property.city}
                   </p>
                 )}
@@ -845,8 +847,8 @@ export default function PropertyDetailClient({ property, similarProperties, prom
 
 
       {/* Mobile Sticky CTA Bar — oculta si la propiedad ya no está disponible */}
-      {!isUnavailable && (
-        <div className="md:hidden fixed bottom-16 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] flex gap-3 animate-slide-up">
+      {!isUnavailable && !showBanner && !videoOpen && !lightboxOpen && !isOpen && (
+        <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(0,0,0,0.1)] flex gap-3 animate-slide-up">
           <a
             href={`https://wa.me/50766770577?text=${encodeURIComponent(tDetail('mobileWhatsapp', { title: property.title }))}`}
             target="_blank"
@@ -858,7 +860,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
           </a>
           <button
             onClick={() => {
-              const contactSection = document.querySelector('.formulario-contacto');
+              const contactSection = document.getElementById('property-contact');
               contactSection?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="flex-1 bg-[#3898EC] text-white py-3 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-all"

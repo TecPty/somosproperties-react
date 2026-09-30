@@ -64,15 +64,18 @@
       "subtitle": "Find your ideal property in less than 30 days with personalized advisory",
       "advisory": {
         "title": "Personalized Advisory",
-        "description": "Our team of certified experts accompanies you in every step of the process until you find your ideal property. Attention in Spanish and English."
+        "description": "Our team of certified experts accompanies you in every step of the process until you find your ideal property. Attention in Spanish and English.",
+        "shortDescription": "Expert guidance to find your ideal property, in Spanish and English."
       },
       "prices": {
         "title": "Best Prices",
-        "description": "We work directly with owners to offer you the best market prices. No hidden costs or extra commissions."
+        "description": "We work directly with owners to offer you the best market prices. No hidden costs or extra commissions.",
+        "shortDescription": "Direct access to owners, with no hidden costs or extra commissions."
       },
       "security": {
         "title": "Trust and Security",
-        "description": "5 years of experience since 2021 in the Panamanian real estate market. All our properties are verified with complete legal documentation."
+        "description": "5 years of experience since 2021 in the Panamanian real estate market. All our properties are verified with complete legal documentation.",
+        "shortDescription": "Since 2021, verified properties and complete legal documentation."
       }
     },
     "commercial": {

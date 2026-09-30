@@ -23,8 +23,8 @@ export default function ConsentBannerContent() {
       )}
 
       {/* Banner */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-[#eeeeee] shadow-lg">
-        <div className="container-custom py-6 px-4">
+      <div className="fixed bottom-0 left-0 right-0 z-[60] max-h-[85dvh] overflow-y-auto pb-[env(safe-area-inset-bottom)] bg-white border-t border-[#eeeeee] shadow-lg">
+        <div className="container-custom py-4 sm:py-6 px-4">
           {!expanded ? (
             // Modo compacto
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -37,24 +37,24 @@ export default function ConsentBannerContent() {
                   </Link>
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+              <div className="grid grid-cols-2 sm:flex gap-2 sm:gap-3 min-h-[44px] w-full sm:w-auto">
                 <Button
                   onClick={() => setExpanded(true)}
                   variant="outline"
-                  className="text-[#3898EC] border-[#3898EC] hover:bg-[#3898EC]/5 w-full sm:w-auto"
+                  className="text-[#3898EC] border-[#3898EC] hover:bg-[#3898EC]/5 min-h-[44px] w-full sm:w-auto"
                 >
                   Personalizar
                 </Button>
                 <Button
                   onClick={rejectAll}
                   variant="outline"
-                  className="border-[#cccccc] text-[#666666] hover:bg-gray-50 w-full sm:w-auto"
+                  className="border-[#cccccc] text-[#666666] hover:bg-gray-50 min-h-[44px] w-full sm:w-auto"
                 >
                   Rechazar
                 </Button>
                 <Button
                   onClick={acceptAll}
-                  className="bg-[#3898EC] text-white hover:bg-[#2895f7] w-full sm:w-auto"
+                  className="bg-[#3898EC] text-white hover:bg-[#2895f7] min-h-[44px] w-full sm:w-auto col-span-2"
                 >
                   Aceptar Todo
                 </Button>
@@ -67,7 +67,7 @@ export default function ConsentBannerContent() {
                 <h2 className="text-xl font-semibold text-[#222222]">Gestionar Consentimiento</h2>
                 <button
                   onClick={() => setExpanded(false)}
-                  className="text-[#999999] hover:text-[#222222] text-2xl leading-none"
+                  className="min-h-[44px] min-w-[44px] text-[#555555] hover:text-[#222222] text-2xl leading-none"
                   aria-label="Cerrar"
                 >
                   ×

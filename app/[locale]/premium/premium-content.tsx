@@ -38,7 +38,7 @@ export default function PremiumContent() {
   return (
     <>
       {/* Hero Premium */}
-      <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden -mt-20 pt-20">
+      <section className="relative min-h-[420px] py-10 md:py-0 md:h-[600px] flex items-center justify-center text-white overflow-hidden md:-mt-20 md:pt-20">
         {/* Background: gradiente base + poster (siempre) + video (solo desktop sin reduced-motion) */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#1a1a1a]" />
 
@@ -77,7 +77,7 @@ export default function PremiumContent() {
             <span>{t('badge')}</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">{t('hero.title')}</h1>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">{t('hero.title')}</h1>
 
           <p className="text-xl md:text-2xl mb-8 text-white/90 drop-shadow-lg max-w-3xl mx-auto">
             {t('hero.subtitle')}
@@ -101,11 +101,11 @@ export default function PremiumContent() {
       </section>
 
       {/* Propuesta de Valor */}
-      <section className="py-20 site-background">
+      <section className="py-10 sm:py-20 site-background">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('whyChoose.title')}</h2>
-            <p className="text-lg text-[#999999] max-w-2xl mx-auto">
+            <p className="text-lg text-[#5d6c7b] max-w-2xl mx-auto">
               {t('whyChoose.subtitle')}
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function PremiumContent() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.0.title')}</h3>
-              <p className="text-[#999999] leading-relaxed">
+              <p className="text-[#5d6c7b] leading-relaxed">
                 {t('values.0.desc')}
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function PremiumContent() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.1.title')}</h3>
-              <p className="text-[#999999] leading-relaxed">
+              <p className="text-[#5d6c7b] leading-relaxed">
                 {t('values.1.desc')}
               </p>
             </div>
@@ -178,7 +178,7 @@ export default function PremiumContent() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.2.title')}</h3>
-              <p className="text-[#999999] leading-relaxed">
+              <p className="text-[#5d6c7b] leading-relaxed">
                 {t('values.2.desc')}
               </p>
             </div>
@@ -202,7 +202,7 @@ export default function PremiumContent() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-[#222222] mb-3">{t('values.3.title')}</h3>
-              <p className="text-[#999999] leading-relaxed">
+              <p className="text-[#5d6c7b] leading-relaxed">
                 {t('values.3.desc')}
               </p>
             </div>
@@ -211,11 +211,11 @@ export default function PremiumContent() {
       </section>
 
       {/* Propiedades Premium */}
-      <section id="propiedades-premium" className="py-20 site-background">
+      <section id="propiedades-premium" className="py-10 sm:py-20 site-background">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('propertiesHeading')}</h2>
-            <p className="text-lg text-[#999999]">{t('propertiesCount', { count: premiumProperties.length })}</p>
+            <p className="text-lg text-[#5d6c7b]">{t('propertiesCount', { count: premiumProperties.length })}</p>
           </div>
 
           {premiumProperties.length > 0 ? (
@@ -239,7 +239,7 @@ export default function PremiumContent() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-[#222222] mb-4">{t('noProperties.title')}</h3>
-              <p className="text-[#999999] mb-8 max-w-md mx-auto">
+              <p className="text-[#5d6c7b] mb-8 max-w-md mx-auto">
                 {t('noProperties.subtitle')}
               </p>
               <Link
@@ -254,7 +254,7 @@ export default function PremiumContent() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#1a1a1a] text-white relative overflow-hidden">
+      <section className="py-10 sm:py-20 bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#1a1a1a] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4af37] rounded-full blur-3xl"></div>
         </div>

@@ -33,11 +33,11 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
   if (totalPages <= 1) return null
 
   return (
-    <div className="flex items-center justify-center gap-2 mt-12">
+    <div className="flex flex-wrap items-center justify-center gap-2 mt-8 sm:mt-12">
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-4 py-2 border border-[#cccccc] rounded-lg text-[#333333] hover:border-[#3898EC] hover:text-[#3898EC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-[#cccccc] disabled:hover:text-[#333333]"
+        className="min-h-[44px] min-w-[44px] px-3 sm:px-4 py-2 border border-[#cccccc] rounded-lg text-[#333333] hover:border-[#3898EC] hover:text-[#3898EC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-[#cccccc] disabled:hover:text-[#333333]"
         aria-label={t('previousPage')}
       >
         <svg
@@ -51,12 +51,14 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
         </svg>
       </button>
 
+      <span className="sm:hidden text-sm font-medium text-[#333333] min-w-[72px] text-center" aria-live="polite">{currentPage} / {totalPages}</span>
       {getPageNumbers().map((page, index) => (
         <button
           key={index}
           onClick={() => typeof page === "number" && onPageChange(page)}
           disabled={page === "..."}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+          aria-current={page === currentPage ? "page" : undefined}
+          className={`hidden sm:inline-flex min-h-[44px] min-w-[44px] items-center justify-center px-4 py-2 rounded-lg font-medium transition-colors ${
             page === currentPage
               ? "bg-[#3898EC] text-white"
               : page === "..."
@@ -71,7 +73,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-4 py-2 border border-[#cccccc] rounded-lg text-[#333333] hover:border-[#3898EC] hover:text-[#3898EC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-[#cccccc] disabled:hover:text-[#333333]"
+        className="min-h-[44px] min-w-[44px] px-3 sm:px-4 py-2 border border-[#cccccc] rounded-lg text-[#333333] hover:border-[#3898EC] hover:text-[#3898EC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-[#cccccc] disabled:hover:text-[#333333]"
         aria-label={t('nextPage')}
       >
         <svg

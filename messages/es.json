@@ -64,15 +64,18 @@
       "subtitle": "Encuentra tu propiedad ideal en menos de 30 días con asesoría personalizada",
       "advisory": {
         "title": "Asesoría Personalizada",
-        "description": "Nuestro equipo de expertos certificados te acompaña en cada paso del proceso hasta encontrar tu propiedad ideal. Atención en español e inglés."
+        "description": "Nuestro equipo de expertos certificados te acompaña en cada paso del proceso hasta encontrar tu propiedad ideal. Atención en español e inglés.",
+        "shortDescription": "Te acompañamos a encontrar tu propiedad ideal. Atención en español e inglés."
       },
       "prices": {
         "title": "Mejores Precios",
-        "description": "Trabajamos directamente con propietarios para ofrecerte los mejores precios del mercado. Sin costos ocultos ni comisiones extras."
+        "description": "Trabajamos directamente con propietarios para ofrecerte los mejores precios del mercado. Sin costos ocultos ni comisiones extras.",
+        "shortDescription": "Trato directo con propietarios, sin costos ocultos ni comisiones extras."
       },
       "security": {
         "title": "Confianza y Seguridad",
-        "description": "5 años de experiencia desde 2021 en el mercado inmobiliario panameño. Todas nuestras propiedades son verificadas con documentación legal completa."
+        "description": "5 años de experiencia desde 2021 en el mercado inmobiliario panameño. Todas nuestras propiedades son verificadas con documentación legal completa.",
+        "shortDescription": "Desde 2021, propiedades verificadas y documentación legal completa."
       }
     },
     "commercial": {
