@@ -65,7 +65,7 @@
     {
       "type": "Apartamento",
       "category": "Residencial",
-      "operation": "Alquiler",
+      "operation": "Venta",
       "location": "Punta Pacífica, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
       "district": "Punta Pacífica",
@@ -99,10 +99,10 @@
         "/images/properties/pacific-point/units/236/pacific-point-236-walkin-closet-01.webp"
       ],
       "image": "/images/properties/pacific-point/units/236/pacific-point-236-sala-02.webp",
-      "pricePerMonth": 5000,
+      "pricePerMonth": null,
       "featured": true,
       "status": "available",
-      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacífica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025. Esta unidad está disponible únicamente en alquiler, a $5,000/mes, con opción a compra.",
+      "description": "Pacific Point Torre 400, apartamentos de lujo en Punta Pacífica. Unidades de planta generosa, vista al oceano, altura libre de 3m y acabados premium. Entrega estimada 2025. Esta unidad se vende amoblada por $1,759,000.",
       "amenities": [
         "Vista 180 al mar",
         "Altura libre 3m",
@@ -117,18 +117,18 @@
       ],
       "id": 236,
       "slug": "pacific-point-b-tipico-24b",
-      "title": "Pacific Point - Torre 400 B Tipico - 24B Modelo (Alquiler con opción a compra)",
+      "title": "Pacific Point - Torre 400 B Típico - 24B Amoblado",
       "area": 359,
-      "price": 0,
+      "price": 1759000,
       "highlights": [
         "Modelo B Tipico 24-B: 359 m2",
-        "Alquiler: $5,000/mes con opción a compra",
+        "Venta amoblado: $1,759,000",
         "Altura 3 m y vista al mar",
         "Club con infinity pool y canchas",
         "Seguridad 24/7 en Punta Pacifica"
       ],
       "minIncome": 3000,
-      "description_en": "Pacific Point Torre 400 — luxury apartments in Punta Pacífica. Generous floor plans, ocean views, 3 m ceiling height and premium finishes. Estimated delivery 2025. This unit is available for rent only, at $5,000/month, with an option to purchase."
+      "description_en": "Pacific Point Torre 400 — luxury apartments in Punta Pacífica. Generous floor plans, ocean views, 3 m ceiling height and premium finishes. Estimated delivery 2025. This furnished unit is available for sale at $1,759,000."
     },
     {
       "type": "Apartamento",
