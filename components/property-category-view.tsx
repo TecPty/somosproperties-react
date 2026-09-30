@@ -3,7 +3,6 @@
 import PropertyGrid from "@/components/property-grid"
 import PropertySearchInput from "@/components/property-search-input"
 import { usePropertySearchBridge } from "@/components/property-search-bridge"
-import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { SchemaMarkupMultiple } from "@/components/schema-markup"
 import { useProperties } from "@/hooks/use-properties"
@@ -24,7 +23,7 @@ export default function PropertyCategoryView({ category, namespace }: PropertyCa
   // Stable identity: an inline object literal here makes useFilters rebuild its
   // URL->state effect on every render, which reverts controlled input edits.
   const initialFilters = useMemo(() => ({ category }), [category])
-  const { filters, updateFilters, clearFilters } = useFilters(initialFilters)
+  const { filters, updateFilters } = useFilters(initialFilters)
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
   const bridge = usePropertySearchBridge()
 
@@ -67,18 +66,8 @@ export default function PropertyCategoryView({ category, namespace }: PropertyCa
             />
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Sidebar Filters */}
-            <div className="hidden lg:block lg:w-[280px] flex-shrink-0">
-              <PropertyFiltersComponent filters={filters} onFiltersChange={updateFilters} onClear={clearFilters} />
-            </div>
-
-            {/* Properties Grid */}
-            <div className="flex-1">
-              <PropertyGrid properties={properties} />
-              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
-            </div>
-          </div>
+          <PropertyGrid properties={properties} />
+          <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
         </div>
       </main>
     </>
