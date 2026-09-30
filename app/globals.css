@@ -310,3 +310,14 @@
     background-position: center, 58% center;
   }
 }
+
+/* One image across the home content below Premium, shown without cropping. */
+.site-background-continuous {
+  background-position: center top;
+  background-size: 100% 100%, 100% auto;
+}
+@media (max-width: 639px) {
+  .site-background-continuous {
+    background-position: center top;
+  }
+}
