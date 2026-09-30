@@ -25,7 +25,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   const displayPrice =
     property.operation === "Venta"
       ? (property.price > 0 ? formatPrice(property.price) : t('priceOnRequest'))
-      : ((property.pricePerMonth || 0) > 0 ? `${formatPrice(property.pricePerMonth || 0)}${t('perMonth')}` : t('priceOnRequest'))
+      : ((property.pricePerMonth || 0) > 0 ? `${formatPrice(property.pricePerMonth || 0)}${property.pricePerMonthMax ? ` – ${formatPrice(property.pricePerMonthMax)}` : ""}${t('perMonth')}` : t('priceOnRequest'))
   const isSold = property.status === "sold"
   const isRented = property.status === "rented"
   const isPremiumProperty = isPremium(property)
@@ -118,7 +118,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       <div className="p-4 flex flex-col flex-grow">
         {/* Price — visual anchor */}
         <div className="flex items-baseline justify-between mb-2 gap-2">
-          <p className="text-2xl font-bold leading-tight text-[#3898EC] truncate">
+          <p className="text-2xl font-bold leading-tight text-[#3898EC] break-words min-w-0">
             {shouldShowPrice
               ? displayPrice
               : isRented
@@ -130,7 +130,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           {property.area > 0 && (
             <span className="flex items-center gap-1.5 text-xs text-[#888888] flex-shrink-0 whitespace-nowrap">
               <img src="/images/icons/icon-metraje.png" alt={t('area')} className="h-4 w-4 object-contain opacity-70" />
-              {formatArea(property.area)}
+              {property.areaMax ? `${property.area} – ${formatArea(property.areaMax)}` : formatArea(property.area)}
             </span>
           )}
         </div>

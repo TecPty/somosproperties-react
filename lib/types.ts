@@ -14,6 +14,8 @@ export interface Property {
   bathrooms: number
   parkingSpots: number
   area: number
+  areaMax?: number
+  pricePerMonthMax?: number
   builtYear: number
   image: string
   images: string[]

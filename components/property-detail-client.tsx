@@ -73,7 +73,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
     }
     const monthly = property.pricePerMonth || 0
     return monthly > 0
-      ? `${formatPrice(monthly)}${tCommon('perMonth')}`
+      ? `${formatPrice(monthly)}${property.pricePerMonthMax ? ` – ${formatPrice(property.pricePerMonthMax)}` : ""}${tCommon('perMonth')}`
       : tCommon('priceOnRequest')
   })()
 
@@ -83,7 +83,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
     }
 
     const items: string[] = []
-    if (property.area) items.push(`${formatArea(property.area)} ${tDetail('highlights.total')}`)
+    if (property.area) items.push(`${property.areaMax ? `${property.area} – ${formatArea(property.areaMax)}` : formatArea(property.area)} ${tDetail('highlights.total')}`)
     if (property.bedrooms > 0) items.push(`${property.bedrooms} ${tDetail('highlights.bedrooms')}`)
     if (property.bathrooms > 0) items.push(`${property.bathrooms} ${tDetail('highlights.bathrooms')}`)
     if (property.parkingSpots > 0) items.push(`${property.parkingSpots} ${tDetail('highlights.parking')}`)
@@ -476,7 +476,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
                   <div className="h-16 flex items-center justify-center mb-2">
                     <img src="/images/icons/icon-metraje.png" alt={tDetail('iconAreaAlt')} className="h-8 w-8 object-contain" />
                   </div>
-                  <div className="text-2xl font-bold text-[#222222]">{formatArea(property.area)}</div>
+                  <div className="text-2xl font-bold text-[#222222]">{property.areaMax ? `${property.area} – ${formatArea(property.areaMax)}` : formatArea(property.area)}</div>
                   <div className="text-sm text-[#999999]">{tDetail('totalArea')}</div>
                 </div>
                 {property.parkingSpots > 0 && (

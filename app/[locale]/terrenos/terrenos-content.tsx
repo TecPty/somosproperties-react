@@ -1,0 +1,71 @@
+"use client"
+
+import { TERRENOS_PROPERTY_IDS } from "@/lib/terrenos"
+import PropertyGrid from "@/components/property-grid"
+import PropertySearchInput from "@/components/property-search-input"
+import { usePropertySearchBridge } from "@/components/property-search-bridge"
+import PropertyFiltersComponent from "@/components/property-filters"
+import Pagination from "@/components/pagination"
+import { useProperties } from "@/hooks/use-properties"
+import { useFilters } from "@/hooks/use-filters"
+import { useTranslations } from "next-intl"
+import { useEffect } from "react"
+
+export default function TerrenosContent() {
+  const t = useTranslations('terrenos')
+  const tSearch = useTranslations('searchBar')
+  const { filters, updateFilters, clearFilters } = useFilters()
+  const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters, 12, TERRENOS_PROPERTY_IDS)
+  const bridge = usePropertySearchBridge()
+
+  // Let the global header drive this listing's search through the same
+  // updateFilters path the visible input uses, so useFilters stays the only
+  // writer of the search/filter query params.
+  useEffect(() => {
+    if (!bridge) return
+    return bridge.registerSearchUpdater((value) => updateFilters({ search: value }))
+  }, [bridge, updateFilters])
+
+  return (
+    <>
+
+
+      <main className="py-12 site-background min-h-screen">
+        <div className="container-custom">
+          <div className="mb-8">
+            <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>
+            <p className="text-lg text-[#999999]">{t('subtitle', { count: totalProperties })}</p>
+          </div>
+
+          <div className="mb-8 max-w-2xl">
+            <PropertySearchInput
+              id="listing-search-terrenos"
+              value={filters.search ?? ""}
+              onChange={(value) => updateFilters({ search: value || undefined })}
+              onClear={() => updateFilters({ search: undefined })}
+              placeholder={tSearch('placeholder')}
+              ariaLabel={`${tSearch('inputAriaLabel')} — ${t('title')}`}
+              clearAriaLabel={tSearch('clearAriaLabel')}
+              formAriaLabel={`${tSearch('formAriaLabel')} — ${t('title')}`}
+            />
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Sidebar Filters */}
+            <div className="lg:w-[280px] flex-shrink-0">
+              <PropertyFiltersComponent filters={filters} onFiltersChange={updateFilters} onClear={clearFilters} />
+            </div>
+
+            {/* Properties Grid */}
+            <div className="flex-1">
+              <PropertyGrid properties={properties} />
+              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+    </>
+  )
+}

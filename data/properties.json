@@ -9203,17 +9203,17 @@
     },
     {
       "id": 2016,
-      "title": "Terreno Residencial - Cativá, Colón (Vía Transistmica)",
-      "slug": "terreno-residencial-cativa-colon-25503m2",
-      "type": "Terreno",
-      "category": "Residencial",
-      "operation": "Venta",
-      "location": "Cativá, Colón, detrás Super Xtra, Vía Transistmica, Panamá",
+      "title": "Locales Comerciales - Cativá, Colón (Vía Transistmica)",
+      "slug": "locales-comerciales-cativa-colon-via-transistmica",
+      "type": "Local Comercial",
+      "category": "Comercial",
+      "operation": "Alquiler",
+      "location": "Cativá, Colón, Vía Transistmica, Panamá",
       "city": "Colón",
       "district": "Cativá",
-      "area": 25780,
+      "area": 73.5,
       "price": null,
-      "pricePerMonth": null,
+      "pricePerMonth": 1359.75,
       "bedrooms": null,
       "bathrooms": null,
       "parkingSpots": null,
@@ -9226,31 +9226,29 @@
       "images": [
         "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-1.webp",
         "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-2.webp",
-        "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-3.webp"
+        "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-3.webp",
+        "/images/properties/locales-comerciales-cativa-colon-2016/foto-1.webp",
+        "/images/properties/locales-comerciales-cativa-colon-2016/foto-2.webp",
+        "/images/properties/locales-comerciales-cativa-colon-2016/foto-5.webp"
       ],
       "planos": [],
       "thumbnail": "/images/properties/terreno-residencial-cativa-colon-25503m2/foto-1.webp",
-      "video": {
-        "es": {
-          "src": "/videos/propiedades/cativa/P2016-CATIVA-WEB.mp4",
-          "poster": "/videos/propiedades/cativa/P2016-CATIVA-POSTER.webp"
-        }
-      },
-      "description": "Terreno residencial de 25,780 m² en Cativá, Colón. Acceso por Vía Transistmica, detrás del Super Xtra. Zonificación Residencial R-E. Precio a consultar.",
-      "description_en": "Residential land of 25,780 m² in Cativá, Colón. Access from the Transistmica Highway, behind Super Xtra. Residential R-E zoning. Price upon request.",
+      "description": "Locales comerciales en alquiler en Cativá, Colón, Vía Transistmica. Áreas desde aproximadamente 73.50 m² hasta 173.13 m². Mensualidades desde $1,359.75 hasta $3,202.91, con mantenimiento incluido.\n\nTarifa de alquiler: $16.00 por m² al mes. Mantenimiento: $2.50 por m² al mes. Total: $18.50 por m² al mes.",
+      "description_en": "Commercial spaces for rent in Cativá, Colón, on Vía Transistmica. Areas from approximately 73.50 m² to 173.13 m². Monthly prices from $1,359.75 to $3,202.91, including maintenance.\n\nMonthly rent: $16.00/m². Maintenance: $2.50/m². Total monthly rate: $18.50/m².",
       "highlights": [
-        "25,780 m² (2.58 Hectáreas)",
-        "Zonificación Residencial R-E",
-        "Acceso por Vía Transistmica",
-        "Detrás de Super Xtra Cativá",
-        "Precio a consultar"
+        "Locales desde 73.50 m² hasta 173.13 m²",
+        "Alquiler desde $1,359.75 hasta $3,202.91 al mes",
+        "Mantenimiento incluido",
+        "Tarifa total: $18.50 por m² al mes",
+        "Cativá, Colón - Vía Transistmica"
       ],
       "amenities": [
-        "Acceso por Vía Transistmica",
-        "Zonificación residencial R-E",
-        "Servicios comerciales cercanos"
+        "Planta baja",
+        "Mantenimiento incluido",
+        "Fachadas de vidrio"
       ],
-      "virtualTour": "https://maps.google.com/?q=Super+Xtra+Cativa+Colon+Panama"
+      "areaMax": 173.13,
+      "pricePerMonthMax": 3202.91
     },
     {
       "id": 2017,

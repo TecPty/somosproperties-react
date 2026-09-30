@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from "react"
 import type { Property, PropertyFilters } from "@/lib/types"
 import { properties as allPropertiesData } from "@/lib/properties"
 
-export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
+export function useProperties(filters?: PropertyFilters, itemsPerPage = 12, propertyIds?: readonly number[]) {
   const [currentPage, setCurrentPage] = useState(1)
   const [sortBy, setSortBy] = useState<"price" | "date" | "featured">("featured")
 
@@ -24,7 +24,7 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
       return p.pricePerMonth || p.price || 0
     }
 
-    let filtered = allProperties.filter((p) => !p.hidden)
+    let filtered = allProperties.filter((p) => !p.hidden && (!propertyIds || propertyIds.includes(p.id)))
 
     if (!filters) return filtered
 
@@ -90,7 +90,7 @@ export function useProperties(filters?: PropertyFilters, itemsPerPage = 12) {
     }
 
     return filtered
-  }, [allProperties, filters])
+  }, [allProperties, filters, propertyIds])
 
   const sortedProperties = useMemo(() => {
     const resolveComparablePrice = (p: Property, operationFilter?: PropertyFilters["operation"]) => {
