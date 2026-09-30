@@ -291,13 +291,15 @@
   }
 }
 
-/* SOMOS: soft pearl canvas with quiet architectural linework.
-   Decorative SVG contains no text and does not intercept interactions. */
+/* SOMOS: supplied Panama image, optimized as WebP.
+   Overlay softens architectural detail behind text; cards remain opaque. */
 .site-background {
   background-color: var(--site-surface);
-  background-image: url("/images/backgrounds/somos-architecture.svg");
-  background-position: center top;
-  background-size: 100% auto;
+  background-image:
+    linear-gradient(rgb(242 244 247 / 45%), rgb(242 244 247 / 45%)),
+    url("/images/backgrounds/somos-panama-background.webp");
+  background-position: center, center 35%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .site-header {
@@ -305,6 +307,6 @@
 }
 @media (max-width: 639px) {
   .site-background {
-    background-image: none;
+    background-position: center, 58% center;
   }
 }
