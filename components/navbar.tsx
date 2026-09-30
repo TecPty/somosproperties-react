@@ -343,7 +343,7 @@ export default function Navbar() {
       aria-label={t('mainNav')}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between gap-2 sm:gap-4 h-16 sm:h-20">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 h-24 sm:h-[104px] lg:h-20">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center shrink-0">
             <OptimizedImage
@@ -353,7 +353,8 @@ export default function Navbar() {
               width={110}
               height={110}
               priority
-              className="h-auto w-[64px] sm:w-[84px] md:w-[92px] lg:w-[100px]"
+              sizes="(min-width: 1024px) 100px, (min-width: 640px) 96px, 88px"
+              className="h-auto w-[88px] sm:w-[96px] lg:w-[100px]"
             />
           </Link>
 
