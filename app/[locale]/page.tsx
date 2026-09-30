@@ -159,8 +159,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     </div>
                   </div>
                   <div className="p-2.5 sm:p-4">
-                    <h3 className="text-sm sm:text-lg font-bold text-white mb-2 line-clamp-2 sm:line-clamp-1">{property.title}</h3>
-                    <p className="text-white/85 text-xs sm:text-sm mb-3 break-words">{property.district}, {property.city}</p>
+                    <h3 className="text-[13px] sm:text-lg font-semibold sm:font-bold text-white mb-1.5 sm:mb-2 line-clamp-2 min-h-[2.5em]">{property.title}</h3>
+                    <p className="text-white/85 text-[11px] sm:text-sm mb-2 sm:mb-3 break-words">{property.district}, {property.city}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-sm sm:text-2xl font-bold text-[#d4af37] break-words">
                         {property.operation === "Venta" 
@@ -177,7 +177,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="text-center">
               <Link
                 href={`/${locale}/premium`}
-                className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all"
+                className="inline-block bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] min-h-[44px] px-5 sm:px-8 py-3 sm:py-4 rounded-lg font-medium sm:font-bold text-sm sm:text-lg hover:shadow-2xl hover:scale-105 transition-all"
               >
                 {t('premium.viewAll')}
               </Link>
@@ -284,13 +284,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-700 italic mb-4 sm:mb-8 leading-relaxed text-sm sm:text-lg break-words">&ldquo;{review.content}&rdquo;</p>
+                <p className="text-gray-700 sm:italic mb-3 sm:mb-8 leading-snug sm:leading-relaxed text-sm sm:text-lg break-words">&ldquo;{review.content}&rdquo;</p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 min-w-0">
-                  <div className="w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-full bg-[#3898EC]/10 flex items-center justify-center text-[#3898EC] font-bold text-xl border-2 border-[#3898EC]/20">
+                  <div className="w-8 h-8 sm:w-14 sm:h-14 shrink-0 rounded-full bg-[#3898EC]/10 flex items-center justify-center text-[#3898EC] font-bold text-xl border-2 border-[#3898EC]/20">
                     {review.name.charAt(0)}
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900 text-sm sm:text-lg break-words">{review.name}</div>
+                    <div className="font-semibold sm:font-bold text-gray-900 text-xs sm:text-lg break-words">{review.name}</div>
                     <div className="text-xs sm:text-sm text-[#0066cc] font-medium break-words">{review.role}</div>
                   </div>
                 </div>
@@ -305,11 +305,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="container-custom">
           <div className="text-center mb-8 sm:mb-16">
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.title')}</h2>
-            <p className="text-xl text-[#555555] max-w-2xl mx-auto">{t('whyChooseUs.subtitle')}</p>
+            <p className="text-sm sm:text-xl text-[#555555] max-w-2xl mx-auto">{t('whyChooseUs.subtitle')}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 md:gap-12">
             <div className="min-w-0 text-center bg-[#f8f9fa] rounded-2xl p-3 sm:p-8 transition-all hover:shadow-lg hover:-translate-y-1">
-              <div className="w-full max-w-[112px] sm:max-w-[336px] aspect-square flex items-center justify-center mx-auto mb-6">
+              <div className="w-full max-w-[88px] sm:max-w-[336px] aspect-square flex items-center justify-center mx-auto mb-3 sm:mb-6">
                 <img
                   src="/images/icons/asesoria.svg"
                   alt={t('whyChooseUs.advisory.title')}
@@ -319,13 +319,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-sm sm:text-2xl font-bold text-[#1a1a1a] mb-3 sm:mb-4 break-words">{t('whyChooseUs.advisory.title')}</h3>
+              <h3 className="text-[13px] sm:text-2xl font-semibold sm:font-bold text-[#1a1a1a] mb-2 sm:mb-4 break-words">{t('whyChooseUs.advisory.title')}</h3>
               <p className="text-sm sm:text-base text-[#555555] leading-relaxed break-words">
-                {t('whyChooseUs.advisory.description')}
+                <span className="sm:hidden">{t('whyChooseUs.advisory.shortDescription')}</span>
+                <span className="hidden sm:inline">{t('whyChooseUs.advisory.description')}</span>
               </p>
             </div>
             <div className="min-w-0 text-center bg-[#f8f9fa] rounded-2xl p-3 sm:p-8 transition-all hover:shadow-lg hover:-translate-y-1">
-              <div className="w-full max-w-[112px] sm:max-w-[336px] aspect-square flex items-center justify-center mx-auto mb-6">
+              <div className="w-full max-w-[88px] sm:max-w-[336px] aspect-square flex items-center justify-center mx-auto mb-3 sm:mb-6">
                 <img
                   src="/images/icons/precio.svg"
                   alt={t('whyChooseUs.prices.title')}
@@ -335,13 +336,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-sm sm:text-2xl font-bold text-[#1a1a1a] mb-3 sm:mb-4 break-words">{t('whyChooseUs.prices.title')}</h3>
+              <h3 className="text-[13px] sm:text-2xl font-semibold sm:font-bold text-[#1a1a1a] mb-2 sm:mb-4 break-words">{t('whyChooseUs.prices.title')}</h3>
               <p className="text-sm sm:text-base text-[#555555] leading-relaxed break-words">
-                {t('whyChooseUs.prices.description')}
+                <span className="sm:hidden">{t('whyChooseUs.prices.shortDescription')}</span>
+                <span className="hidden sm:inline">{t('whyChooseUs.prices.description')}</span>
               </p>
             </div>
             <div className="min-w-0 text-center bg-[#f8f9fa] rounded-2xl p-3 sm:p-8 transition-all hover:shadow-lg hover:-translate-y-1">
-              <div className="w-full max-w-[112px] sm:max-w-[336px] aspect-square flex items-center justify-center mx-auto mb-6">
+              <div className="w-full max-w-[88px] sm:max-w-[336px] aspect-square flex items-center justify-center mx-auto mb-3 sm:mb-6">
                 <img
                   src="/images/icons/seguridad.svg"
                   alt={t('whyChooseUs.security.title')}
@@ -351,9 +353,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-sm sm:text-2xl font-bold text-[#1a1a1a] mb-3 sm:mb-4 break-words">{t('whyChooseUs.security.title')}</h3>
+              <h3 className="text-[13px] sm:text-2xl font-semibold sm:font-bold text-[#1a1a1a] mb-2 sm:mb-4 break-words">{t('whyChooseUs.security.title')}</h3>
               <p className="text-sm sm:text-base text-[#555555] leading-relaxed break-words">
-                {t('whyChooseUs.security.description')}
+                <span className="sm:hidden">{t('whyChooseUs.security.shortDescription')}</span>
+                <span className="hidden sm:inline">{t('whyChooseUs.security.description')}</span>
               </p>
             </div>
           </div>

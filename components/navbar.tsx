@@ -354,7 +354,7 @@ export default function Navbar() {
       aria-label={t('mainNav')}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between gap-2 sm:gap-4 h-[92px] sm:h-[104px] lg:h-20">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 h-[84px] sm:h-[104px] lg:h-20">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center shrink-0">
             <OptimizedImage
@@ -446,11 +446,11 @@ export default function Navbar() {
       {/* Row 2: global property search (all routes) */}
       <div className={`border-t border-[#f0f0f0] ${hideMobileHeaderSearch ? "hidden lg:block" : ""}`}>
         <div className="container-custom">
-          <div className="py-2 sm:py-3">
+          <div className="py-1 sm:py-3">
             <Suspense
               fallback={
                 <div
-                  className="h-12 w-full rounded-xl border border-[#e6e6e6] bg-[#fafafa]"
+                  className="h-11 sm:h-12 w-full rounded-xl border border-[#e6e6e6] bg-[#fafafa]"
                   aria-hidden="true"
                 />
               }

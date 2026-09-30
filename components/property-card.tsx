@@ -142,14 +142,14 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           </h3>
         </Link>
 
-        <div className="flex items-start gap-1 sm:gap-1.5 mb-2 sm:mb-3 text-[#555555] text-xs sm:text-base font-medium min-w-0">
+        <div className="flex items-start gap-1 sm:gap-1.5 mb-2 sm:mb-3 text-[#555555] text-[11px] sm:text-base font-normal sm:font-medium min-w-0">
           <MapPin className="h-3 w-3 sm:h-4 sm:w-4 text-[#ea384c] flex-shrink-0 mt-0.5" aria-hidden="true" />
           <span className="line-clamp-1">{property.location}</span>
         </div>
 
         {/* Beds / Baths */}
         {(property.bedrooms > 0 || property.bathrooms > 0) && (
-          <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-3 sm:mb-4 text-[#5d6c7b] text-xs sm:text-sm">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-3 sm:mb-4 text-[#5d6c7b] text-[11px] sm:text-sm">
             {property.bedrooms > 0 && (
               <span className="flex items-center gap-1.5">
                 <img src="/images/icons/icon-cama.png" alt={t('beds')} className="h-4 w-4 object-contain" />
@@ -172,10 +172,10 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         )}
 
         {/* CTAs */}
-        <div className="mt-auto pt-3 border-t border-[#f0f0f0]">
+        <div className="mt-auto pt-2 sm:pt-3 border-t border-[#f0f0f0]">
           <Link
             href={`/${locale}/propiedad/${property.id}`}
-            className="flex items-center justify-center w-full min-h-[44px] bg-[#3898EC] text-white py-2.5 rounded-lg text-xs sm:text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
+            className="flex items-center justify-center w-full min-h-[44px] bg-[#3898EC]/10 sm:bg-[#3898EC] text-[#0066b8] sm:text-white py-2 sm:py-2.5 rounded-lg text-[11px] sm:text-sm font-medium sm:font-semibold hover:bg-[#3898EC]/20 sm:hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
             onClick={handlePropertyClick}
           >
             {t('viewDetails')}

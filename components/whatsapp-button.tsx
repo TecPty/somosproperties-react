@@ -46,14 +46,14 @@ export default function WhatsAppButton() {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className={`fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 md:bottom-6 md:right-6 z-40 ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#20BA5A] hover:scale-110 transition-all duration-300 ${
+      className={`fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 md:bottom-6 md:right-6 z-40 ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#20BA5A] hover:scale-110 transition-all duration-300 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       }`}
       aria-label={`Contactar por WhatsApp a ${CONTACT.whatsapp.phone}`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-7 h-7"
+        className="w-6 h-6 md:w-7 md:h-7"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -61,7 +61,7 @@ export default function WhatsAppButton() {
       </svg>
 
       {/* Pulso animado */}
-      <span className="absolute w-full h-full bg-[#25D366] rounded-full animate-ping opacity-20" />
+      <span className="absolute w-full h-full bg-[#25D366] rounded-full hidden md:block animate-ping opacity-20" />
     </button>
   )
 }

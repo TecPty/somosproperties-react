@@ -47,7 +47,7 @@ const PropertySearchInput = forwardRef<HTMLInputElement, PropertySearchInputProp
           placeholder={placeholder}
           aria-label={ariaLabel}
           autoComplete="off"
-          className="h-12 w-full rounded-xl border border-[#e6e6e6] bg-white pl-12 pr-14 text-base text-[#222222] transition-colors placeholder:text-[#aaaaaa] focus:border-[#3898EC] focus:outline-none focus:ring-2 focus:ring-[#3898EC]/30 [&::-webkit-search-cancel-button]:appearance-none"
+          className="h-11 sm:h-12 w-full rounded-xl border border-[#e6e6e6] bg-white pl-12 pr-14 text-base text-[#222222] transition-colors placeholder:text-[#aaaaaa] focus:border-[#3898EC] focus:outline-none focus:ring-2 focus:ring-[#3898EC]/30 [&::-webkit-search-cancel-button]:appearance-none"
         />
         {value && (
           <button
