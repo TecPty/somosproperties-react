@@ -316,7 +316,6 @@ export default function Navbar() {
         { href: `/${locale}/propiedad/2017`, label: "Locales David, Chiriquí" },
         { href: `/${locale}/propiedad/2013`, label: "Cativá Plaza, Colón" },
         { href: `/${locale}/propiedad/2014`, label: "Centro de distribución, Juan Díaz" },
-        { href: `/${locale}/propiedad/2018`, label: "Local con autorápido, Cativá" },
       ],
     },
     {
