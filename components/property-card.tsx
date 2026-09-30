@@ -49,9 +49,9 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   }, [property])
 
   return (
-    <article className="relative bg-white rounded-xl border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full group">
+    <article className="relative min-w-0 bg-white rounded-xl border border-[#eeeeee] overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 shadow-card flex flex-col h-full group">
       <Link href={`/${locale}/propiedad/${property.id}`} className="block relative" onClick={handlePropertyClick} aria-label={t('viewDetailsAria', { title: property.title })}>
-        <div className="relative h-56 overflow-hidden bg-[#f3f3f3]">    
+        <div className="relative aspect-[4/3] sm:aspect-auto sm:h-56 overflow-hidden bg-[#f3f3f3]">    
           {/* CAMBIO: la imagen principal de la card es siempre la primera imagen de la propiedad */}
           {/* RAZÓN: coherencia visual con el hero de la página de detalle */}
           {!imageError && property.images && property.images.length > 0 ? (
@@ -60,6 +60,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
               alt={property.title}
               type="propertyCard"
               fill
+              sizes="(max-width: 1023px) 50vw, 33vw"
               priority={false}
               blur
               onError={() => setImageError(true)}
@@ -80,16 +81,16 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
           {/* Premium badge */}
           {isPremiumProperty && (
-            <div className="absolute top-3 left-3 z-10">
-              <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-3 py-1.5 rounded-full text-xs font-bold shadow-lg tracking-wide">
+            <div className="absolute top-2 left-2 sm:top-3 sm:left-3 z-10">
+              <span className="bg-gradient-to-r from-[#d4af37] to-[#f4e4b8] text-[#1a1a1a] px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold shadow-lg tracking-wide">
                 ★ PREMIUM
               </span>
             </div>
           )}
 
           {/* Operation badge */}
-          <div className={`absolute z-10 ${isPremiumProperty ? "top-11 left-3" : "top-3 left-3"}`}>
-            <span className={`px-2.5 py-1 rounded-md text-xs font-bold text-white shadow-sm tracking-wide ${
+          <div className={`absolute z-10 ${isPremiumProperty ? "top-9 left-2 sm:top-11 sm:left-3" : "top-2 left-2 sm:top-3 sm:left-3"}`}>
+            <span className={`px-2 sm:px-2.5 py-1 rounded-md text-[10px] sm:text-xs font-bold text-white shadow-sm tracking-wide ${
               property.operation === "Venta" ? "bg-[#28a745]" : "bg-[#3898EC]"
             }`}>
               {property.operation === "Venta" ? t('sale').toUpperCase() : t('rent').toUpperCase()}
@@ -98,7 +99,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
           {/* Photo count */}
           {imageCount > 1 && (
-            <div className="absolute bottom-3 left-3 z-10 flex items-center gap-1 bg-black/50 text-white text-xs px-2 py-0.5 rounded-full backdrop-blur-sm">
+            <div className="absolute bottom-2 left-2 sm:bottom-3 sm:left-3 z-10 flex items-center gap-1 bg-black/50 text-white text-xs px-2 py-0.5 rounded-full backdrop-blur-sm">
               <Images className="h-3 w-3" aria-hidden="true" />
               <span>{imageCount}</span>
             </div>
@@ -107,7 +108,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           {/* Sold / Rented Stamp */}
           {(isRented || isSold) && (
             <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
-              <span className="rotate-[-15deg] border-[3px] border-[#ea384c] text-[#ea384c] text-xl font-black px-4 py-1 rounded opacity-75 select-none uppercase">
+              <span className="rotate-[-15deg] border-[3px] border-[#ea384c] text-[#ea384c] text-sm sm:text-xl font-black px-2 sm:px-4 py-1 rounded opacity-75 select-none uppercase">
                 {isRented ? t('rented') : t('sold')}
               </span>
             </div>
@@ -115,10 +116,10 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         </div>
       </Link>
 
-      <div className="p-4 flex flex-col flex-grow">
+      <div className="p-2.5 sm:p-4 flex flex-col flex-grow min-w-0">
         {/* Price — visual anchor */}
-        <div className="flex items-baseline justify-between mb-2 gap-2">
-          <p className="text-2xl font-bold leading-tight text-[#3898EC] break-words min-w-0">
+        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2 gap-1 sm:gap-2">
+          <p className="text-sm sm:text-2xl font-bold leading-tight text-[#3898EC] break-words min-w-0">
             {shouldShowPrice
               ? displayPrice
               : isRented
@@ -128,27 +129,27 @@ export default function PropertyCard({ property }: PropertyCardProps) {
                   : t('priceOnRequest')}
           </p>
           {property.area > 0 && (
-            <span className="flex items-center gap-1.5 text-xs text-[#888888] flex-shrink-0 whitespace-nowrap">
-              <img src="/images/icons/icon-metraje.png" alt={t('area')} className="h-4 w-4 object-contain opacity-70" />
+            <span className="flex items-start sm:items-center gap-1 text-[11px] sm:text-xs text-[#666666] min-w-0 sm:flex-shrink-0 sm:whitespace-nowrap">
+              <img src="/images/icons/icon-metraje.png" alt={t('area')} className="h-3 w-3 sm:h-4 sm:w-4 object-contain opacity-70 shrink-0" />
               {property.areaMax ? `${property.area} – ${formatArea(property.areaMax)}` : formatArea(property.area)}
             </span>
           )}
         </div>
 
         <Link href={`/${locale}/propiedad/${property.id}`} onClick={handlePropertyClick} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded">
-          <h3 className="text-base font-semibold text-[#333333] mb-1.5 line-clamp-2 hover:text-[#3898EC] transition-colors leading-snug min-h-[2.6rem]">
+          <h3 className="text-xs sm:text-base font-semibold text-[#333333] mb-1.5 line-clamp-2 hover:text-[#3898EC] transition-colors leading-snug min-h-[2rem] sm:min-h-[2.6rem]">
             {property.title}
           </h3>
         </Link>
 
-        <div className="flex items-start gap-1.5 mb-3 text-[#555555] text-base font-medium">
-          <MapPin className="h-4 w-4 text-[#ea384c] flex-shrink-0 mt-0.5" aria-hidden="true" />
+        <div className="flex items-start gap-1 sm:gap-1.5 mb-2 sm:mb-3 text-[#555555] text-xs sm:text-base font-medium min-w-0">
+          <MapPin className="h-3 w-3 sm:h-4 sm:w-4 text-[#ea384c] flex-shrink-0 mt-0.5" aria-hidden="true" />
           <span className="line-clamp-1">{property.location}</span>
         </div>
 
         {/* Beds / Baths */}
         {(property.bedrooms > 0 || property.bathrooms > 0) && (
-          <div className="flex items-center gap-4 mb-4 text-[#758696] text-sm">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-3 sm:mb-4 text-[#5d6c7b] text-xs sm:text-sm">
             {property.bedrooms > 0 && (
               <span className="flex items-center gap-1.5">
                 <img src="/images/icons/icon-cama.png" alt={t('beds')} className="h-4 w-4 object-contain" />
@@ -174,7 +175,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         <div className="mt-auto pt-3 border-t border-[#f0f0f0]">
           <Link
             href={`/${locale}/propiedad/${property.id}`}
-            className="flex items-center justify-center w-full min-h-[44px] bg-[#3898EC] text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
+            className="flex items-center justify-center w-full min-h-[44px] bg-[#3898EC] text-white py-2.5 rounded-lg text-xs sm:text-sm font-semibold hover:bg-[#0082f3] active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
             onClick={handlePropertyClick}
           >
             {t('viewDetails')}
