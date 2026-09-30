@@ -4,7 +4,7 @@
     "premium": "Premium",
     "residential": "Residential",
     "commercial": "Commercial",
-    "opportunities": "Land for Sale",
+    "opportunities": "Land",
     "about": "About Us",
     "contact": "Contact",
     "language": "Language",
@@ -313,6 +313,10 @@
     "blog": {
       "title": "Blog - SOMOS Properties",
       "description": "Tips, news and trends from the Panamanian real estate market."
+    },
+    "terrenos": {
+      "title": "Land | SOMOS Properties",
+      "description": "Land and selected properties for sale and rent in Panama."
     }
   },
   "about": {
@@ -736,5 +740,10 @@
         "phoneLabel": "Phone:"
       }
     }
+  },
+  "terrenos": {
+    "title": "Land",
+    "subtitle": "{count} properties found",
+    "loading": "Loading..."
   }
 }

@@ -134,7 +134,7 @@ function NavDropdown({
 }
 
 /** Route segments that own a property listing bound to `filters.search`. */
-const LISTING_SEGMENTS = ["propiedades", "residenciales", "comerciales"]
+const LISTING_SEGMENTS = ["propiedades", "residenciales", "comerciales", "terrenos"]
 
 /**
  * Global header search.
@@ -301,12 +301,22 @@ export default function Navbar() {
       ],
     },
     {
-      href: `/${locale}/comerciales`,
+      href: `/${locale}/terrenos`,
       label: t('opportunities'),
       children: [
-        { href: `/${locale}/propiedad/2012`, label: "Terreno El Ingenio, Ciudad Pmá" },
-        { href: `/${locale}/propiedad/2007`, label: "Terreno Juan Díaz, Av. Arango (1.2 ha)" },
-        { href: `/${locale}/propiedad/2015`, label: "Terreno Juan Díaz, Av. Arango (12,794 m²)" },
+        { href: `/${locale}/propiedad/2007`, label: "Juan Díaz, Av. Arango (1.2 ha)" },
+        { href: `/${locale}/propiedad/2009`, label: "Mariabé, Pedasí" },
+        { href: `/${locale}/propiedad/2010`, label: "Santiago, Veraguas" },
+        { href: `/${locale}/propiedad/2011`, label: "Chilibre" },
+        { href: `/${locale}/propiedad/2012`, label: "El Ingenio" },
+        { href: `/${locale}/propiedad/2015`, label: "Juan Díaz, Av. Arango (12,794 m²)" },
+        { href: `/${locale}/propiedad/2016`, label: "Cativá, Colón" },
+        { href: `/${locale}/propiedad/2019`, label: "Río Hato, Playa Sea Cliff" },
+        { href: `/${locale}/propiedad/2008`, label: "Azuero Terminal Plaza, Chitré" },
+        { href: `/${locale}/propiedad/2017`, label: "Locales David, Chiriquí" },
+        { href: `/${locale}/propiedad/2013`, label: "Cativá Plaza, Colón" },
+        { href: `/${locale}/propiedad/2014`, label: "Centro de distribución, Juan Díaz" },
+        { href: `/${locale}/propiedad/2018`, label: "Local con autorápido, Cativá" },
       ],
     },
     {

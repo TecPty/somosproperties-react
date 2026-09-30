@@ -4,7 +4,7 @@
     "premium": "Premium",
     "residential": "Residenciales",
     "commercial": "Comerciales",
-    "opportunities": "Terrenos en venta",
+    "opportunities": "Terrenos",
     "about": "Nosotros",
     "contact": "Contacto",
     "language": "Idioma",
@@ -226,8 +226,8 @@
       "sale": "Venta"
     },
     "iconBedsAlt": "Habitaciones",
-    "iconBathsAlt": "Ba\u00f1os",
-    "iconAreaAlt": "\u00c1rea",
+    "iconBathsAlt": "Baños",
+    "iconAreaAlt": "Área",
     "iconParkingAlt": "Estacionamientos",
     "expandedView": "Vista ampliada",
     "prevImage": "Anterior",
@@ -307,12 +307,17 @@
       "description": "Locales comerciales y oficinas en venta y alquiler en Panamá. Invierte en propiedades comerciales premium."
     },
     "cookies": {
-      "title": "Pol\u00edtica de Cookies - SOMOS Properties",
-      "description": "Informaci\u00f3n sobre cookies, seguimiento y tecnolog\u00edas similares en SOMOS Properties."
+      "title": "Política de Cookies - SOMOS Properties",
+      "description": "Información sobre cookies, seguimiento y tecnologías similares en SOMOS Properties."
     },
     "blog": {
       "title": "Blog - SOMOS Properties",
-      "description": "Consejos, noticias y tendencias del mercado inmobiliario en Panam\u00e1."    }
+      "description": "Consejos, noticias y tendencias del mercado inmobiliario en Panamá."
+    },
+    "terrenos": {
+      "title": "Terrenos | SOMOS Properties",
+      "description": "Terrenos y propiedades seleccionadas en venta y alquiler en Panamá."
+    }
   },
   "about": {
     "hero": {
@@ -735,5 +740,10 @@
         "phoneLabel": "Teléfono:"
       }
     }
+  },
+  "terrenos": {
+    "title": "Terrenos",
+    "subtitle": "{count} propiedades encontradas",
+    "loading": "Cargando..."
   }
 }
