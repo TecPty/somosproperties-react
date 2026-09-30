@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function CookiePrefencesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#f9f9f9] to-white py-12 px-4">
+    <div className="min-h-screen site-background py-12 px-4">
       <div className="container-custom max-w-3xl">
         {/* Header */}
         <div className="mb-12">

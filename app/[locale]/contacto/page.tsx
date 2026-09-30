@@ -19,7 +19,7 @@ export default async function ContactoPage({ params }: { params: Promise<{ local
   const t = await getTranslations({ locale, namespace: 'contacto' })
   return (
     <>
-      <main className="py-12 bg-[#fafafa] min-h-screen">
+      <main className="py-12 site-background min-h-screen">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-[#222222] mb-4">{t('title')}</h1>

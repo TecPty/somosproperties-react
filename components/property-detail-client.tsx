@@ -282,7 +282,7 @@ export default function PropertyDetailClient({ property, similarProperties, prom
         </div>
       )}
 
-      <main className="py-12 bg-white">
+      <main className="py-12 site-background">
         <div className="container-custom max-w-screen-2xl mx-auto px-4">
           {/* Gallery */}
           <div className="mb-12">

@@ -101,7 +101,7 @@ export default function PremiumContent() {
       </section>
 
       {/* Propuesta de Valor */}
-      <section className="py-20 bg-white">
+      <section className="py-20 site-background">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('whyChoose.title')}</h2>
@@ -211,7 +211,7 @@ export default function PremiumContent() {
       </section>
 
       {/* Propiedades Premium */}
-      <section id="propiedades-premium" className="py-20 bg-[#fafafa]">
+      <section id="propiedades-premium" className="py-20 site-background">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#222222] mb-4">{t('propertiesHeading')}</h2>

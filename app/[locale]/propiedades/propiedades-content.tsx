@@ -29,7 +29,7 @@ export default function PropiedadesContent() {
     <>
 
 
-      <main className="py-12 bg-[#fafafa] min-h-screen">
+      <main className="py-12 site-background min-h-screen">
         <div className="container-custom">
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-[#222222] mb-2">{t('title')}</h1>

@@ -337,8 +337,8 @@ export default function Navbar() {
     <nav
       className={`sticky top-0 z-50 backdrop-blur-md transition-all duration-300 ${
         isScrolled
-          ? "bg-white/98 shadow-[0_2px_12px_rgba(0,0,0,0.08)]"
-          : "bg-white/95"
+          ? "site-header shadow-[0_2px_12px_rgba(0,0,0,0.08)]"
+          : "site-header"
       }`}
       aria-label={t('mainNav')}
     >

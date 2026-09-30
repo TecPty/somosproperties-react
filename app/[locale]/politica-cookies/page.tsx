@@ -20,7 +20,7 @@ const lastUpdated = "11 de marzo de 2026"
 export default function PoliticaCookiesPage() {
   return (
     <>
-      <main className="min-h-screen bg-white py-16">
+      <main className="min-h-screen site-background py-16">
         <div className="container-custom max-w-4xl">
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-[#222222] mb-2">Política de Cookies</h1>

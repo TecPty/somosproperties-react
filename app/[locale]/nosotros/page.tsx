@@ -73,9 +73,9 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
   return (
     <>
       <SchemaMarkup schema={getOrganizationSchema()} />
-      <main className="bg-white">
+      <main className="site-background">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-white">
+        <section className="relative overflow-hidden site-background">
           <div className="absolute inset-0">
             <OptimizedImage
               src="/images/nosotros/hero-0.webp"
@@ -127,7 +127,7 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
               </div>
             </div>
           </div>
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-white rounded-t-[48px]" />
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-[var(--site-surface)] rounded-t-[48px]" />
         </section>
 
         {/* Content Section */}

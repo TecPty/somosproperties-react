@@ -17,7 +17,7 @@ export async function generateMetadata({
 export default function BlogPage() {
   return (
     <>
-      <main className="py-12 bg-[#fafafa] min-h-screen">
+      <main className="py-12 site-background min-h-screen">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-[#222222] mb-4">Blog Inmobiliario</h1>
