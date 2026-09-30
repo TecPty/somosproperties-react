@@ -310,7 +310,7 @@ export default function Navbar() {
         { href: `/${locale}/propiedad/2011`, label: "Chilibre" },
         { href: `/${locale}/propiedad/2012`, label: "El Ingenio" },
         { href: `/${locale}/propiedad/2015`, label: "Juan Díaz, Av. Arango (12,794 m²)" },
-        { href: `/${locale}/propiedad/2016`, label: "Cativá, Colón" },
+        { href: `/${locale}/propiedad/2016`, label: "Locales comerciales, Cativá, Colón" },
         { href: `/${locale}/propiedad/2019`, label: "Río Hato, Playa Sea Cliff" },
         { href: `/${locale}/propiedad/2008`, label: "Azuero Terminal Plaza, Chitré" },
         { href: `/${locale}/propiedad/2017`, label: "Locales David, Chiriquí" },
