@@ -312,10 +312,10 @@
   }
 }
 
-/* One image across the home content below Premium, shown without cropping. */
+/* One complete image spans the home content from Premium to the footer. */
 .site-background-continuous {
   background-position: center top;
-  background-size: 100% 100%, 100% auto;
+  background-size: 100% 100%, 100% 100%;
 }
 @media (max-width: 639px) {
   .site-background-continuous {
