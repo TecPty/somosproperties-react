@@ -3,7 +3,6 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import PropertyGrid from "@/components/property-grid"
-import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { SchemaMarkupMultiple } from "@/components/schema-markup"
 import { useProperties } from "@/hooks/use-properties"
@@ -12,7 +11,7 @@ import { getCollectionSchema, getOrganizationSchema } from "@/lib/schema"
 import { properties as allPropertiesData } from "@/lib/properties"
 
 export default function ComercialesContent() {
-  const { filters, updateFilters, clearFilters } = useFilters({ category: "Comercial" })
+  const { filters } = useFilters({ category: "Comercial" })
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
 
   const comercialProperties = allPropertiesData.filter((p) => p.category === "Comercial" && !p.hidden)
@@ -36,18 +35,8 @@ export default function ComercialesContent() {
             <p className="text-lg text-[#999999]">{totalProperties} propiedades encontradas</p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Sidebar Filters */}
-            <div className="lg:w-[280px] flex-shrink-0">
-              <PropertyFiltersComponent filters={filters} onFiltersChange={updateFilters} onClear={clearFilters} />
-            </div>
-
-            {/* Properties Grid */}
-            <div className="flex-1">
-              <PropertyGrid properties={properties} />
-              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
-            </div>
-          </div>
+          <PropertyGrid properties={properties} />
+          <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
         </div>
       </main>
 

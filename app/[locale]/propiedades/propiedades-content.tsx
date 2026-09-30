@@ -3,7 +3,6 @@
 import PropertyGrid from "@/components/property-grid"
 import PropertySearchInput from "@/components/property-search-input"
 import { usePropertySearchBridge } from "@/components/property-search-bridge"
-import PropertyFiltersComponent from "@/components/property-filters"
 import Pagination from "@/components/pagination"
 import { useProperties } from "@/hooks/use-properties"
 import { useFilters } from "@/hooks/use-filters"
@@ -13,7 +12,7 @@ import { useEffect } from "react"
 export default function PropiedadesContent() {
   const t = useTranslations('propiedades')
   const tSearch = useTranslations('searchBar')
-  const { filters, updateFilters, clearFilters } = useFilters()
+  const { filters, updateFilters } = useFilters()
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters)
   const bridge = usePropertySearchBridge()
 
@@ -49,18 +48,8 @@ export default function PropiedadesContent() {
             />
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Sidebar Filters */}
-            <div className="hidden lg:block lg:w-[280px] flex-shrink-0">
-              <PropertyFiltersComponent filters={filters} onFiltersChange={updateFilters} onClear={clearFilters} />
-            </div>
-
-            {/* Properties Grid */}
-            <div className="flex-1">
-              <PropertyGrid properties={properties} />
-              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
-            </div>
-          </div>
+          <PropertyGrid properties={properties} />
+          <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
         </div>
       </main>
 
