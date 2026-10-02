@@ -7,8 +7,8 @@
 
 /* Shadcn/UI Default Styles */
 :root {
-  --background: #f2f4f7;
-  --site-surface: #f2f4f7;
+  --background: #ffffff;
+  --site-surface: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -291,40 +291,11 @@
   }
 }
 
-/* SOMOS: supplied Panama image, optimized as WebP.
-   Overlay softens architectural detail behind text; cards remain opaque. */
+/* Shared page surfaces use the original white background. */
 .site-background,
 .site-background-continuous {
   background-color: var(--site-surface);
-  background-image:
-    linear-gradient(rgb(242 244 247 / 45%), rgb(242 244 247 / 45%)),
-    url("/images/backgrounds/somos-panama-background.webp");
-  background-position: center, center 35%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .site-header {
-  background-color: rgb(242 244 247 / 97%);
-}
-@media (max-width: 639px) {
-  .site-background {
-    background-position: center, 58% center;
-  }
-}
-
-/* One complete image spans the home content from Premium to the footer. */
-.site-background-continuous {
-  background-position: center top;
-  background-size: 100% 100%, 100% 100%;
-}
-@media (max-width: 639px) {
-  .site-background-continuous {
-    background-position: center top;
-  }
-}
-
-/* Only the shared parent paints the home background. */
-.site-background-continuous > section {
-  background-color: transparent;
-  background-image: none;
+  background-color: #ffffff;
 }
