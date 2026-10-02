@@ -1515,7 +1515,7 @@
       "builtYear": 2019,
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 39,
       "title": "Rali Business Center - Oficina 228",
       "area": 22,
@@ -1525,7 +1525,7 @@
         "/images/properties/rali/exterior/fachada-rali-street-view.webp",
         "/images/properties/rali/gallery/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre A Piso 2 - Oficina 228 en Rali Business Center, 22.00 m?. Canon $ 802.50 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre A Piso 2 - Oficina 228 en Rali Business Center, 22.00 m?. Canon $ 802.50 (incluye ITBM). Oficina alquilada en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1541,7 +1541,8 @@
         "Ubicación premium en Avenida Balboa"
       ],
       "slug": "rali-business-center-oficina",
-      "description_en": "Tower A Floor 2 — Office 228 at Rali Business Center, 22.00 m². Rent $802.50/month (tax included). Ready to move in on Avenida Balboa with executive lobby, central A/C and 24/7 security."
+      "description_en": "Tower A Floor 2 — Office 228 at Rali Business Center, 22.00 m². Rent $802.50/month (tax included). Currently rented on Avenida Balboa with executive lobby, central A/C and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Oficina",
@@ -1558,7 +1559,7 @@
       "builtYear": 2019,
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 40,
       "title": "Rali Business Center - Oficina 231",
       "area": 28,
@@ -1568,7 +1569,7 @@
         "/images/properties/rali/exterior/fachada-rali-street-view.webp",
         "/images/properties/rali/gallery/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre A Piso 2 - Oficina 231 en Rali Business Center, 28.00 m?. Canon $ 1,070.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre A Piso 2 - Oficina 231 en Rali Business Center, 28.00 m?. Canon $ 1,070.00 (incluye ITBM). Oficina alquilada en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1584,7 +1585,8 @@
         "Ubicación premium en Avenida Balboa"
       ],
       "slug": "rali-business-center-oficina-40",
-      "description_en": "Tower A Floor 2 — Office 231 at Rali Business Center, 28.00 m². Rent $1,070.00/month (tax included). Ready to move in on Avenida Balboa with executive lobby, central A/C and 24/7 security."
+      "description_en": "Tower A Floor 2 — Office 231 at Rali Business Center, 28.00 m². Rent $1,070.00/month (tax included). Currently rented on Avenida Balboa with executive lobby, central A/C and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Oficina",
@@ -1601,7 +1603,7 @@
       "builtYear": 2019,
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 41,
       "title": "Rali Business Center - Oficina 244",
       "area": 38,
@@ -1611,7 +1613,7 @@
         "/images/properties/rali/exterior/fachada-rali-street-view.webp",
         "/images/properties/rali/gallery/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre A Piso 2 - Oficina 244 en Rali Business Center, 38.00 m?. Canon $ 1,284.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre A Piso 2 - Oficina 244 en Rali Business Center, 38.00 m?. Canon $ 1,284.00 (incluye ITBM). Oficina alquilada en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1627,7 +1629,8 @@
         "Ubicación premium en Avenida Balboa"
       ],
       "slug": "rali-business-center-oficina-41",
-      "description_en": "Tower A Floor 2 — Office 244 at Rali Business Center, 38.00 m². Rent $1,284.00/month (tax included). Ready to move in on Avenida Balboa with executive lobby, central A/C and 24/7 security."
+      "description_en": "Tower A Floor 2 — Office 244 at Rali Business Center, 38.00 m². Rent $1,284.00/month (tax included). Currently rented on Avenida Balboa with executive lobby, central A/C and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Oficina",
@@ -1644,7 +1647,7 @@
       "builtYear": 2019,
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 42,
       "title": "Rali Business Center - Oficina 802",
       "area": 52.64,
@@ -1654,7 +1657,7 @@
         "/images/properties/rali/exterior/fachada-rali-street-view.webp",
         "/images/properties/rali/gallery/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre B Piso 8 - Oficina 802 en Rali Business Center, 52.64 m². Canon $ 1,284.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre B Piso 8 - Oficina 802 en Rali Business Center, 52.64 m². Canon $ 1,284.00 (incluye ITBM). Oficina alquilada en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1670,7 +1673,8 @@
         "Ubicación premium en Avenida Balboa"
       ],
       "slug": "rali-business-center-oficina-0",
-      "description_en": "Tower B Floor 8 — Office 802 at Rali Business Center, 52.64 m². Rent $1,284.00/month (tax included). Ready to move in on Avenida Balboa with executive lobby, central A/C and 24/7 security."
+      "description_en": "Tower B Floor 8 — Office 802 at Rali Business Center, 52.64 m². Rent $1,284.00/month (tax included). Currently rented on Avenida Balboa with executive lobby, central A/C and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Oficina",
@@ -1687,7 +1691,7 @@
       "builtYear": 2019,
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 43,
       "title": "Rali Business Center - Oficina 806",
       "area": 71.99,
@@ -1697,7 +1701,7 @@
         "/images/properties/rali/exterior/fachada-rali-street-view.webp",
         "/images/properties/rali/gallery/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre B Piso 8 - Oficina 806 en Rali Business Center, 71.99 m?. Canon $ 1,551.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre B Piso 8 - Oficina 806 en Rali Business Center, 71.99 m?. Canon $ 1,551.00 (incluye ITBM). Oficina alquilada en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1713,7 +1717,8 @@
         "Ubicación premium en Avenida Balboa"
       ],
       "slug": "rali-business-center-oficina-0-43",
-      "description_en": "Tower B Floor 8 — Office 806 at Rali Business Center, 71.99 m². Rent $1,551.00/month (tax included). Ready to move in on Avenida Balboa with executive lobby, central A/C and 24/7 security."
+      "description_en": "Tower B Floor 8 — Office 806 at Rali Business Center, 71.99 m². Rent $1,551.00/month (tax included). Currently rented on Avenida Balboa with executive lobby, central A/C and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Oficina",
@@ -1730,7 +1735,7 @@
       "builtYear": 2019,
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 44,
       "title": "Rali Business Center - Oficina 810",
       "area": 75.77,
@@ -1740,7 +1745,7 @@
         "/images/properties/rali/exterior/fachada-rali-street-view.webp",
         "/images/properties/rali/gallery/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre B Piso 8 - Oficina 810 en Rali Business Center, 75.77 m?. Canon $ 1,605.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre B Piso 8 - Oficina 810 en Rali Business Center, 75.77 m?. Canon $ 1,605.00 (incluye ITBM). Oficina alquilada en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1756,7 +1761,8 @@
         "Ubicación premium en Avenida Balboa"
       ],
       "slug": "rali-business-center-oficina-0-44",
-      "description_en": "Tower B Floor 8 — Office 810 at Rali Business Center, 75.77 m². Rent $1,605.00/month (tax included). Ready to move in on Avenida Balboa with executive lobby, central A/C and 24/7 security."
+      "description_en": "Tower B Floor 8 — Office 810 at Rali Business Center, 75.77 m². Rent $1,605.00/month (tax included). Currently rented on Avenida Balboa with executive lobby, central A/C and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Oficina",
@@ -1773,7 +1779,7 @@
       "builtYear": 2019,
       "planos": [],
       "featured": false,
-      "status": "available",
+      "status": "rented",
       "id": 45,
       "title": "Rali Business Center - Oficina 826",
       "area": 79.82,
@@ -1783,7 +1789,7 @@
         "/images/properties/rali/exterior/fachada-rali-street-view.webp",
         "/images/properties/rali/gallery/lobby-escaleras-anillo-luz.webp"
       ],
-      "description": "Torre B Piso 8 - Oficina 826 en Rali Business Center, 79.82 m². Canon $ 1,712.00 (incluye ITBM). Oficina lista para ocupar en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
+      "description": "Torre B Piso 8 - Oficina 826 en Rali Business Center, 79.82 m². Canon $ 1,712.00 (incluye ITBM). Oficina alquilada en Avenida Balboa con lobby ejecutivo, A/C central y seguridad 24/7.",
       "amenities": [
         "Lobby ejecutivo y control de acceso",
         "Aire acondicionado central",
@@ -1799,7 +1805,8 @@
         "Ubicación premium en Avenida Balboa"
       ],
       "slug": "rali-business-center-oficina-45",
-      "description_en": "Tower B Floor 8 — Office 826 at Rali Business Center, 79.82 m². Rent $1,712.00/month (tax included). Ready to move in on Avenida Balboa with executive lobby, central A/C and 24/7 security."
+      "description_en": "Tower B Floor 8 — Office 826 at Rali Business Center, 79.82 m². Rent $1,712.00/month (tax included). Currently rented on Avenida Balboa with executive lobby, central A/C and 24/7 security.",
+      "hidden": false
     },
     {
       "type": "Local",
@@ -6869,7 +6876,7 @@
     },
     {
       "id": 258,
-      "title": "New West Costa Verde - Modelo Nevada (Entrega Inmediata)",
+      "title": "New West Costa Verde - Modelo Nevada",
       "type": "Casa",
       "category": "Residencial",
       "operation": "Venta",
@@ -6894,7 +6901,7 @@
       "planos": [
         "/images/properties/new-west/14.svg"
       ],
-      "description": "Casa modelo Nevada en New West I Costa Verde. 2 plantas, 3 recámaras, 167 m² de construcción. Lotes desde 180 m². Conjunto residencial de 140 casas con área social independiente. Entrega inmediata con 10% de abono inicial. Aplica con ingreso familiar de $3,500. Se trabaja con todos los bancos.",
+      "description": "Casa modelo Nevada en New West I Costa Verde. 2 plantas, 3 recámaras, 167 m² de construcción. Lotes desde 180 m². Conjunto residencial de 140 casas con área social independiente. 10% de abono inicial. Aplica con ingreso familiar de $3,500. Se trabaja con todos los bancos.",
       "amenities": [
         "Conjunto residencial 140 casas",
         "Área social independiente",
@@ -6910,13 +6917,12 @@
       "status": "available",
       "highlights": [
         "167 m² - 3 recámaras - 2 plantas",
-        "Entrega inmediata",
         "Lotes desde 180 m²",
         "10% abono inicial - Trabaja con todos los bancos"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-nevada-entrega-inmediata",
-      "description_en": "Nevada model home at New West I Costa Verde. 2 levels, 3 bedrooms, 167 m². Immediate delivery, 10% down payment. Minimum household income $3,500."
+      "description_en": "Nevada model home at New West I Costa Verde. 2 levels, 3 bedrooms, 167 m². 10% down payment. Minimum household income $3,500."
     },
     {
       "id": 259,
@@ -7010,7 +7016,7 @@
     },
     {
       "id": 261,
-      "title": "New West Costa Verde - Modelo Cedro (Entrega Inmediata)",
+      "title": "New West Costa Verde - Modelo Cedro",
       "type": "Casa",
       "category": "Residencial",
       "operation": "Venta",
@@ -7055,7 +7061,7 @@
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-cedro-entrega-inmediata",
-      "description_en": "Cedro model — single-level home with optimized design at New West II Costa Verde. Open kitchen integrated with the social area. Immediate delivery."
+      "description_en": "Cedro model — single-level home with optimized design at New West II Costa Verde. Open kitchen integrated with the social area."
     },
     {
       "id": 262,
@@ -7190,7 +7196,8 @@
         "Ubicación céntrica en San Francisco",
         "Precio: $903,776"
       ],
-      "description_en": "Apartment 1103 at Ocean View (Tower 100). 260.83 m², 4 bedrooms + service room. Panoramic views in San Francisco. Price: $903,776."
+      "description_en": "Apartment 1103 at Ocean View (Tower 100). 260.83 m², 4 bedrooms + service room. Panoramic views in San Francisco. Price: $903,776.",
+      "hidden": true
     },
     {
       "id": 265,
@@ -7230,7 +7237,8 @@
         "Ubicación céntrica en San Francisco",
         "Precio: $624,750"
       ],
-      "description_en": "Apartment 1202 at Ocean View (Tower 100). 148.75 m², 2 bedrooms + den + service room. Functional design in San Francisco. Price: $624,750."
+      "description_en": "Apartment 1202 at Ocean View (Tower 100). 148.75 m², 2 bedrooms + den + service room. Functional design in San Francisco. Price: $624,750.",
+      "hidden": true
     },
     {
       "id": 266,
@@ -7269,7 +7277,8 @@
         "Ubicación céntrica en San Francisco",
         "Precio: $654,226"
       ],
-      "description_en": "Apartment 1002 at Ocean View (Tower 100). 194.71 m², 3 bedrooms + service room. City views in San Francisco. Price: $654,226."
+      "description_en": "Apartment 1002 at Ocean View (Tower 100). 194.71 m², 3 bedrooms + service room. City views in San Francisco. Price: $654,226.",
+      "hidden": true
     },
     {
       "id": 267,
@@ -7309,7 +7318,8 @@
         "Ubicación céntrica en San Francisco",
         "Precio: $421,281"
       ],
-      "description_en": "Apartment 1004 at Ocean View (Tower 100). 111.45 m², 1 bedroom + den + service room. Ideal for investment or couples. Price: $421,281."
+      "description_en": "Apartment 1004 at Ocean View (Tower 100). 111.45 m², 1 bedroom + den + service room. Ideal for investment or couples. Price: $421,281.",
+      "hidden": true
     },
     {
       "category": "Comercial",
@@ -9530,7 +9540,7 @@
       "type": "Apartamento",
       "category": "Residencial",
       "operation": "Venta",
-      "price": 280000,
+      "price": 300000,
       "pricePerMonth": null,
       "location": "Marbella, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
@@ -9587,8 +9597,8 @@
         "/images/properties/marbella/torre-marbella-14a-41.webp"
       ],
       "thumbnail": "/images/properties/marbella/torre-marbella-14a-thumbnail.webp",
-      "description": "Apartamento 14A en PH Torre Marbella, ubicado en Marbella, Ciudad de Panamá. Cuenta con 187.15 m² de área cerrada, 3 recámaras y 4.5 baños. Disfruta de vista al mar, amplia sala-comedor, cocina cerrada, lavandería y walk-in closet en la recámara principal. También incluye cuarto y baño de servicio, baño de visita, 2 estacionamientos y 1 depósito. Precio de venta: $280,000. Mantenimiento mensual: $325.",
-      "description_en": "Apartment 14A at PH Torre Marbella, located in Marbella, Panama City. The apartment offers 187.15 m² of enclosed area, 3 bedrooms and 4.5 bathrooms. It features ocean views, a spacious living and dining area, closed kitchen, laundry area and a walk-in closet in the primary bedroom. It also includes a maid's room with bathroom, guest bathroom, 2 parking spaces and 1 storage unit. Sale price: $280,000. Monthly HOA fee: $325.",
+      "description": "Apartamento 14A en PH Torre Marbella, ubicado en Marbella, Ciudad de Panamá. Cuenta con 187.15 m² de área cerrada, 3 recámaras y 4.5 baños. Disfruta de vista al mar, amplia sala-comedor, cocina cerrada, lavandería y walk-in closet en la recámara principal. También incluye cuarto y baño de servicio, baño de visita, 2 estacionamientos y 1 depósito. Precio de venta: $300,000 negociable. Mantenimiento mensual: $325.",
+      "description_en": "Apartment 14A at PH Torre Marbella, located in Marbella, Panama City. The apartment offers 187.15 m² of enclosed area, 3 bedrooms and 4.5 bathrooms. It features ocean views, a spacious living and dining area, closed kitchen, laundry area and a walk-in closet in the primary bedroom. It also includes a maid's room with bathroom, guest bathroom, 2 parking spaces and 1 storage unit. Sale price: $300,000, negotiable. Monthly HOA fee: $325.",
       "amenities": [
         "Vista al mar",
         "Walk-in closet",
@@ -9600,6 +9610,7 @@
         "Piscina"
       ],
       "highlights": [
+        "Precio de venta: $300,000 negociable",
         "187.15 m² de área cerrada",
         "Vista al mar",
         "3 recámaras",
