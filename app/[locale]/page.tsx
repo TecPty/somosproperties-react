@@ -135,7 +135,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <p className="text-lg text-white/80">{t('premium.subtitle')}</p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-8 mb-8 sm:mb-12">
+            <div className="grid grid-cols-4 md:grid-cols-3 gap-3 sm:gap-8 mb-8 sm:mb-12 [&>*]:col-span-2 md:[&>*]:col-span-1 [&>:last-child:nth-child(odd)]:col-start-2 md:[&>:last-child:nth-child(odd)]:col-start-auto">
               {premiumProperties.map((property) => (
                 <Link
                   key={property.id}
@@ -218,7 +218,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <p className="text-lg text-[#5d6c7b]">{t('commercial.subtitle')}</p>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+            <div className="grid grid-cols-4 lg:grid-cols-3 gap-3 sm:gap-6 [&>*]:col-span-2 lg:[&>*]:col-span-1 [&>:last-child:nth-child(odd)]:col-start-2 lg:[&>:last-child:nth-child(odd)]:col-start-auto">
               {commercialOpportunities.map((property) => {
                 const displayPrice = property.price
                   ? formatPrice(property.price)
@@ -274,7 +274,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="w-24 h-1.5 bg-[#3898EC] mx-auto rounded-full"></div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 md:gap-10">
+          <div className="grid grid-cols-4 md:grid-cols-3 gap-3 sm:gap-6 md:gap-10 [&>*]:col-span-2 md:[&>*]:col-span-1 [&>:last-child:nth-child(odd)]:col-start-2 md:[&>:last-child:nth-child(odd)]:col-start-auto">
             {(t.raw('testimonials.reviews') as { name: string; content: string; role: string }[]).map((review, i) => (
               <div key={i} className="min-w-0 bg-[#fafafa] p-3 sm:p-6 md:p-10 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                 <div className="flex gap-0.5 sm:gap-1 text-yellow-400 mb-3 sm:mb-6 group-hover:scale-110 transition-transform origin-left">
@@ -307,7 +307,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-4">{t('whyChooseUs.title')}</h2>
             <p className="text-sm sm:text-xl text-[#555555] max-w-2xl mx-auto">{t('whyChooseUs.subtitle')}</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 md:gap-12">
+          <div className="grid grid-cols-4 md:grid-cols-3 gap-3 sm:gap-6 md:gap-12 [&>*]:col-span-2 md:[&>*]:col-span-1 [&>:last-child:nth-child(odd)]:col-start-2 md:[&>:last-child:nth-child(odd)]:col-start-auto">
             <div className="min-w-0 text-center bg-[#f8f9fa] rounded-2xl p-3 sm:p-8 transition-all hover:shadow-lg hover:-translate-y-1">
               <div className="w-full max-w-[88px] sm:max-w-[336px] aspect-square flex items-center justify-center mx-auto mb-3 sm:mb-6">
                 <img
