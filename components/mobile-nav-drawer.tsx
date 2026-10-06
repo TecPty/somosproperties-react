@@ -4,7 +4,6 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import type { NavLink } from "@/components/navbar"
-import OptimizedImage from "@/components/optimized-image"
 
 function ChevronIcon({ open }: { open: boolean }) {
   return (
@@ -19,14 +18,6 @@ function ChevronIcon({ open }: { open: boolean }) {
         d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
         clipRule="evenodd"
       />
-    </svg>
-  )
-}
-
-function CloseIcon() {
-  return (
-    <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-      <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
     </svg>
   )
 }
@@ -68,8 +59,7 @@ export default function MobileNavDrawer({
   const [openGroup, setOpenGroup] = useState<string | null>(null)
   const [rendered, setRendered] = useState(false)
   const panelRef = useRef<HTMLDivElement>(null)
-  const closeButtonRef = useRef<HTMLButtonElement>(null)
-  const wasOpenRef = useRef(false)
+  const [position, setPosition] = useState<{ top: number; right: number } | null>(null)
 
   // Keep the panel mounted briefly so its closing animation can finish.
   useEffect(() => {
@@ -81,57 +71,61 @@ export default function MobileNavDrawer({
     return () => window.clearTimeout(timeout)
   }, [open])
 
-  // Body scroll lock + initial focus + focus return on close/unmount
+  // A non-modal popover follows the header without locking page scrolling.
   useEffect(() => {
-    if (open) {
-      wasOpenRef.current = true
-      document.body.style.overflow = "hidden"
-      closeButtonRef.current?.focus()
-    } else {
-      document.body.style.overflow = ""
-      if (wasOpenRef.current) {
-        wasOpenRef.current = false
-        returnFocusRef.current?.focus()
-      }
+    if (!open) return
+    const updatePosition = () => {
+      const trigger = returnFocusRef.current
+      if (!trigger) return
+      const triggerRect = trigger.getBoundingClientRect()
+      const headerRect = trigger.closest("nav")?.getBoundingClientRect()
+      setPosition({
+        top: (headerRect?.bottom ?? triggerRect.bottom) + 6,
+        right: Math.max(12, document.documentElement.clientWidth - triggerRect.right),
+      })
     }
+    updatePosition()
+    const frame = window.requestAnimationFrame(() => panelRef.current?.querySelector<HTMLElement>("a[href]")?.focus())
+    window.addEventListener("resize", updatePosition)
+    window.addEventListener("scroll", updatePosition, { passive: true })
     return () => {
-      document.body.style.overflow = ""
+      window.cancelAnimationFrame(frame)
+      window.removeEventListener("resize", updatePosition)
+      window.removeEventListener("scroll", updatePosition)
     }
   }, [open, returnFocusRef])
 
-  // Reset accordions each time the drawer closes
   useEffect(() => {
-    if (!open) setOpenGroup(null)
-  }, [open])
+    if (!open && !rendered) setOpenGroup(null)
+  }, [open, rendered])
 
-  // Escape + focus trap
+  // Close on Escape, an outside press, or keyboard focus leaving the popover.
   useEffect(() => {
     if (!open) return
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
+    const outside = (target: EventTarget | null) => target instanceof Node &&
+      !panelRef.current?.contains(target) && !returnFocusRef.current?.contains(target)
+    const handlePointer = (event: PointerEvent) => {
+      if (outside(event.target)) onClose()
+    }
+    const handleFocus = (event: FocusEvent) => {
+      if (outside(event.target)) onClose()
+    }
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault()
         onClose()
-        return
-      }
-      if (e.key !== "Tab") return
-      const panel = panelRef.current
-      if (!panel) return
-      const focusable = Array.from(
-        panel.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')
-      ).filter((el) => el.offsetParent !== null)
-      if (focusable.length === 0) return
-      const first = focusable[0]
-      const last = focusable[focusable.length - 1]
-      if (e.shiftKey && document.activeElement === first) {
-        e.preventDefault()
-        last.focus()
-      } else if (!e.shiftKey && document.activeElement === last) {
-        e.preventDefault()
-        first.focus()
+        returnFocusRef.current?.focus()
       }
     }
-    document.addEventListener("keydown", handleKeyDown)
-    return () => document.removeEventListener("keydown", handleKeyDown)
-  }, [open, onClose])
+    document.addEventListener("pointerdown", handlePointer)
+    document.addEventListener("focusin", handleFocus)
+    document.addEventListener("keydown", handleKey)
+    return () => {
+      document.removeEventListener("pointerdown", handlePointer)
+      document.removeEventListener("focusin", handleFocus)
+      document.removeEventListener("keydown", handleKey)
+    }
+  }, [open, onClose, returnFocusRef])
 
   // Auto-close if the viewport crosses into the desktop breakpoint while open
   useEffect(() => {
@@ -153,52 +147,21 @@ export default function MobileNavDrawer({
   return createPortal(
     <div className={`lg:hidden ${open ? "" : "pointer-events-none"}`} aria-hidden={!open} inert={!open}>
       <style>{`
-        @keyframes somos-menu-in { from { transform: translateX(100%); } to { transform: translateX(0); } }
-        @keyframes somos-menu-out { from { transform: translateX(0); } to { transform: translateX(100%); } }
-        @keyframes somos-menu-backdrop-in { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes somos-menu-backdrop-out { from { opacity: 1; } to { opacity: 0; } }
+        @keyframes somos-menu-in { from { opacity: 0; transform: translateY(-8px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+        @keyframes somos-menu-out { from { opacity: 1; transform: translateY(0) scale(1); } to { opacity: 0; transform: translateY(-8px) scale(.98); } }
         @media (prefers-reduced-motion: reduce) {
           .somos-mobile-menu-motion { animation-duration: 1ms !important; }
         }
       `}</style>
       <>
           <div
-            aria-hidden="true"
-            onClick={onClose}
-            className={`somos-mobile-menu-motion fixed inset-0 z-[70] bg-black/50 ${open ? "animate-[somos-menu-backdrop-in_240ms_ease-out_both]" : "animate-[somos-menu-backdrop-out_180ms_ease-in_both]"}`}
-          />
-          <div
             ref={panelRef}
             id={id}
-            role="dialog"
-            aria-modal="true"
             aria-label={labels.mainNav}
-            className={`somos-mobile-menu-motion fixed inset-y-0 right-0 z-[71] flex h-[100dvh] w-[min(88vw,380px)] flex-col bg-white shadow-2xl ${open ? "animate-[somos-menu-in_240ms_ease-out_both]" : "animate-[somos-menu-out_180ms_ease-in_both]"}`}
+            style={{ top: position?.top, right: position?.right, maxHeight: `calc(100dvh - ${position?.top ?? 0}px - 12px)`, visibility: position ? "visible" : "hidden" }}
+            className={`somos-mobile-menu-motion fixed z-[71] flex w-[230px] max-w-[calc(100vw-24px)] origin-top-right flex-col overflow-y-auto overscroll-contain rounded-2xl border border-[#3898EC]/30 bg-white p-3 shadow-xl ${open ? "animate-[somos-menu-in_200ms_ease-out_both]" : "animate-[somos-menu-out_180ms_ease-in_both]"}`}
           >
-            <div className="flex shrink-0 items-center justify-between border-b border-[#eeeeee] px-5 py-3">
-              <Link href={`/${locale}`} onClick={onClose} className="rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]">
-                <OptimizedImage
-                  src="/images/logo-somosproperties-250x250px-transparente.webp"
-                  alt="SOMOS Properties"
-                  type="small"
-                  width={88}
-                  height={88}
-                  sizes="88px"
-                  className="h-auto w-[88px]"
-                />
-              </Link>
-              <button
-                ref={closeButtonRef}
-                type="button"
-                onClick={onClose}
-                aria-label={labels.closeMenu}
-                className="flex h-11 w-11 items-center justify-center rounded-md text-[#222222] hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
-              >
-                <CloseIcon />
-              </button>
-            </div>
-
-            <nav aria-label={labels.mainNav} className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain px-4 py-4">
+            <nav aria-label={labels.mainNav} className="space-y-1">
               {navLinks.map((link) => {
                 if (!link.children) {
                   const isContact = link.href === `/${locale}/contacto`
@@ -209,8 +172,8 @@ export default function MobileNavDrawer({
                       onClick={onClose}
                       className={
                         isContact
-                          ? "mx-2 my-2 block rounded-lg bg-[#3898EC] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#0082f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
-                          : `block min-h-[48px] rounded-lg px-4 py-3 text-base hover:bg-[#f2f6fb] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
+                          ? "mt-2 block rounded-lg bg-[#3898EC] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#0082f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
+                          : `block min-h-[44px] rounded-lg px-3 py-2 text-sm hover:bg-[#f2f6fb] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
                               isActive(link.href) ? "bg-[#f2f6fb] font-semibold text-[#0082f3]" : "text-[#222222] hover:text-[#3898EC]"
                             }`
                       }
@@ -228,7 +191,7 @@ export default function MobileNavDrawer({
                       <Link
                         href={link.href}
                         onClick={onClose}
-                        className={`min-h-[48px] flex-1 rounded-lg px-4 py-3 text-base hover:bg-[#f2f6fb] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
+                        className={`min-h-[44px] flex-1 rounded-lg px-3 py-2 text-sm hover:bg-[#f2f6fb] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
                           isActive(link.href) ? "bg-[#f2f6fb] font-semibold text-[#0082f3]" : "text-[#222222] hover:text-[#3898EC]"
                         }`}
                       >
@@ -264,7 +227,7 @@ export default function MobileNavDrawer({
               })}
             </nav>
 
-            <div className="flex shrink-0 items-center justify-center gap-3 border-t border-[#eeeeee] px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+            <div className="mt-2 flex shrink-0 items-center justify-center gap-1 border-t border-[#eeeeee] pt-2">
               <button
                 type="button"
                 onClick={() => onLocaleChange("es")}
@@ -272,11 +235,11 @@ export default function MobileNavDrawer({
                 title={labels.spanish}
                 aria-label={labels.spanish}
                 aria-pressed={locale === "es"}
-                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center rounded-lg px-3 text-lg text-[#222222] transition-colors ${locale === "es" ? "bg-[#f2f6fb] font-semibold" : "hover:bg-[#f3f3f3]"} ${
+                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center rounded-lg px-2 text-base text-[#222222] transition-colors ${locale === "es" ? "bg-[#f2f6fb] font-semibold" : "hover:bg-[#f3f3f3]"} ${
                   isPending ? "cursor-wait" : "cursor-pointer"
                 }`}
               >
-                <span aria-hidden="true">🇪🇸</span><span className="ml-2 text-sm font-medium">{labels.spanish}</span>
+                <span aria-hidden="true">🇪🇸</span><span className="ml-1 text-xs font-medium">{labels.spanish}</span>
               </button>
               <span className="text-[#e6e6e6]">/</span>
               <button
@@ -286,11 +249,11 @@ export default function MobileNavDrawer({
                 title="English"
                 aria-label="English"
                 aria-pressed={locale === "en"}
-                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center rounded-lg px-3 text-lg text-[#222222] transition-colors ${locale === "en" ? "bg-[#f2f6fb] font-semibold" : "hover:bg-[#f3f3f3]"} ${
+                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center rounded-lg px-2 text-base text-[#222222] transition-colors ${locale === "en" ? "bg-[#f2f6fb] font-semibold" : "hover:bg-[#f3f3f3]"} ${
                   isPending ? "cursor-wait" : "cursor-pointer"
                 }`}
               >
-                <span aria-hidden="true">🇺🇸</span><span className="ml-2 text-sm font-medium">English</span>
+                <span aria-hidden="true">🇺🇸</span><span className="ml-1 text-xs font-medium">English</span>
               </button>
             </div>
           </div>
