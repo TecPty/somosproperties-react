@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import type { NavLink } from "@/components/navbar"
+import OptimizedImage from "@/components/optimized-image"
 
 function ChevronIcon({ open }: { open: boolean }) {
   return (
@@ -65,9 +66,20 @@ export default function MobileNavDrawer({
   labels,
 }: MobileNavDrawerProps) {
   const [openGroup, setOpenGroup] = useState<string | null>(null)
+  const [rendered, setRendered] = useState(false)
   const panelRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const wasOpenRef = useRef(false)
+
+  // Keep the panel mounted briefly so its closing animation can finish.
+  useEffect(() => {
+    if (open) {
+      setRendered(true)
+      return
+    }
+    const timeout = window.setTimeout(() => setRendered(false), 180)
+    return () => window.clearTimeout(timeout)
+  }, [open])
 
   // Body scroll lock + initial focus + focus return on close/unmount
   useEffect(() => {
@@ -136,15 +148,24 @@ export default function MobileNavDrawer({
     return () => mql.removeEventListener("change", handleChange)
   }, [open, onClose])
 
-  if (!open || typeof document === "undefined") return null
+  if ((!open && !rendered) || typeof document === "undefined") return null
 
   return createPortal(
-    <div className="lg:hidden">
+    <div className={`lg:hidden ${open ? "" : "pointer-events-none"}`} aria-hidden={!open} inert={!open}>
+      <style>{`
+        @keyframes somos-menu-in { from { transform: translateX(100%); } to { transform: translateX(0); } }
+        @keyframes somos-menu-out { from { transform: translateX(0); } to { transform: translateX(100%); } }
+        @keyframes somos-menu-backdrop-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes somos-menu-backdrop-out { from { opacity: 1; } to { opacity: 0; } }
+        @media (prefers-reduced-motion: reduce) {
+          .somos-mobile-menu-motion { animation-duration: 1ms !important; }
+        }
+      `}</style>
       <>
           <div
             aria-hidden="true"
             onClick={onClose}
-            className="fixed inset-0 z-[70] bg-black/50"
+            className={`somos-mobile-menu-motion fixed inset-0 z-[70] bg-black/50 ${open ? "animate-[somos-menu-backdrop-in_240ms_ease-out_both]" : "animate-[somos-menu-backdrop-out_180ms_ease-in_both]"}`}
           />
           <div
             ref={panelRef}
@@ -152,9 +173,20 @@ export default function MobileNavDrawer({
             role="dialog"
             aria-modal="true"
             aria-label={labels.mainNav}
-            className="fixed inset-y-0 right-0 z-[71] flex h-[100dvh] w-[min(88vw,380px)] flex-col bg-white shadow-2xl"
+            className={`somos-mobile-menu-motion fixed inset-y-0 right-0 z-[71] flex h-[100dvh] w-[min(88vw,380px)] flex-col bg-white shadow-2xl ${open ? "animate-[somos-menu-in_240ms_ease-out_both]" : "animate-[somos-menu-out_180ms_ease-in_both]"}`}
           >
-            <div className="flex items-center justify-end border-b border-[#eeeeee] px-4 py-4">
+            <div className="flex shrink-0 items-center justify-between border-b border-[#eeeeee] px-5 py-3">
+              <Link href={`/${locale}`} onClick={onClose} className="rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]">
+                <OptimizedImage
+                  src="/images/logo-somosproperties-250x250px-transparente.webp"
+                  alt="SOMOS Properties"
+                  type="small"
+                  width={88}
+                  height={88}
+                  sizes="88px"
+                  className="h-auto w-[88px]"
+                />
+              </Link>
               <button
                 ref={closeButtonRef}
                 type="button"
@@ -166,7 +198,7 @@ export default function MobileNavDrawer({
               </button>
             </div>
 
-            <nav className="flex-1 overflow-y-auto overflow-x-hidden px-2 py-2">
+            <nav aria-label={labels.mainNav} className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain px-4 py-4">
               {navLinks.map((link) => {
                 if (!link.children) {
                   const isContact = link.href === `/${locale}/contacto`
@@ -178,8 +210,8 @@ export default function MobileNavDrawer({
                       className={
                         isContact
                           ? "mx-2 my-2 block rounded-lg bg-[#3898EC] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#0082f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] focus-visible:ring-offset-2"
-                          : `block rounded-lg px-3 py-3 text-base text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
-                              isActive(link.href) ? "font-semibold text-[#0082f3]" : ""
+                          : `block min-h-[48px] rounded-lg px-4 py-3 text-base hover:bg-[#f2f6fb] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
+                              isActive(link.href) ? "bg-[#f2f6fb] font-semibold text-[#0082f3]" : "text-[#222222] hover:text-[#3898EC]"
                             }`
                       }
                     >
@@ -196,8 +228,8 @@ export default function MobileNavDrawer({
                       <Link
                         href={link.href}
                         onClick={onClose}
-                        className={`flex-1 rounded-lg px-3 py-3 text-base text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
-                          isActive(link.href) ? "font-semibold text-[#0082f3]" : ""
+                        className={`min-h-[48px] flex-1 rounded-lg px-4 py-3 text-base hover:bg-[#f2f6fb] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] ${
+                          isActive(link.href) ? "bg-[#f2f6fb] font-semibold text-[#0082f3]" : "text-[#222222] hover:text-[#3898EC]"
                         }`}
                       >
                         {link.label}
@@ -214,7 +246,7 @@ export default function MobileNavDrawer({
                       </button>
                     </div>
                     {groupOpen && (
-                      <div id={groupId} className="pb-2 pl-4">
+                      <div id={groupId} className="my-2 ml-4 border-l-2 border-[#3898EC]/20 pb-2 pl-2">
                         {link.children.map((child) => (
                           <Link
                             key={child.href}
@@ -232,17 +264,19 @@ export default function MobileNavDrawer({
               })}
             </nav>
 
-            <div className="flex items-center justify-center gap-3 border-t border-[#eeeeee] px-4 py-4">
+            <div className="flex shrink-0 items-center justify-center gap-3 border-t border-[#eeeeee] px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
               <button
                 type="button"
                 onClick={() => onLocaleChange("es")}
                 disabled={isPending}
                 title={labels.spanish}
-                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-lg transition-all ${locale === "es" ? "scale-110 opacity-100" : "opacity-40 hover:opacity-70"} ${
+                aria-label={labels.spanish}
+                aria-pressed={locale === "es"}
+                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center rounded-lg px-3 text-lg text-[#222222] transition-colors ${locale === "es" ? "bg-[#f2f6fb] font-semibold" : "hover:bg-[#f3f3f3]"} ${
                   isPending ? "cursor-wait" : "cursor-pointer"
                 }`}
               >
-                🇪🇸
+                <span aria-hidden="true">🇪🇸</span><span className="ml-2 text-sm font-medium">{labels.spanish}</span>
               </button>
               <span className="text-[#e6e6e6]">/</span>
               <button
@@ -250,11 +284,13 @@ export default function MobileNavDrawer({
                 onClick={() => onLocaleChange("en")}
                 disabled={isPending}
                 title="English"
-                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-lg transition-all ${locale === "en" ? "scale-110 opacity-100" : "opacity-40 hover:opacity-70"} ${
+                aria-label="English"
+                aria-pressed={locale === "en"}
+                className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center rounded-lg px-3 text-lg text-[#222222] transition-colors ${locale === "en" ? "bg-[#f2f6fb] font-semibold" : "hover:bg-[#f3f3f3]"} ${
                   isPending ? "cursor-wait" : "cursor-pointer"
                 }`}
               >
-                🇺🇸
+                <span aria-hidden="true">🇺🇸</span><span className="ml-2 text-sm font-medium">English</span>
               </button>
             </div>
           </div>
