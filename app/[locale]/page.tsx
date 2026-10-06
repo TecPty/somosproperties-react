@@ -100,16 +100,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </p>
           
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+          <div className="flex flex-row gap-2 sm:gap-5 justify-center items-center max-w-[360px] sm:max-w-none mx-auto">
             <Link
               href={`/${locale}/premium`}
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-[#E1C26A] text-[#1a1a1a] px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#D4af37] hover:scale-105 transition-all shadow-xl"
+              className="flex-1 sm:flex-none min-w-0 min-h-[44px] sm:w-auto inline-flex items-center justify-center bg-[#E1C26A] text-[#1a1a1a] px-3 sm:px-10 py-2.5 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-[13px] sm:text-lg leading-snug sm:leading-normal hover:bg-[#D4af37] hover:scale-105 transition-all shadow-xl"
             >
               {t('hero.viewPremium')}
             </Link>
             <Link
               href={`/${locale}/propiedades`}
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-white text-[#3898EC] px-10 py-4 rounded-2xl font-bold text-lg hover:bg-gray-50 hover:scale-105 transition-all shadow-xl border border-gray-100"
+              className="flex-1 sm:flex-none min-w-0 min-h-[44px] sm:w-auto inline-flex items-center justify-center bg-white text-[#3898EC] px-3 sm:px-10 py-2.5 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-[13px] sm:text-lg leading-snug sm:leading-normal hover:bg-gray-50 hover:scale-105 transition-all shadow-xl border border-gray-100"
             >
               {t('hero.viewProperties')}
             </Link>
