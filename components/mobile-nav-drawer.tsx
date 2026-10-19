@@ -56,7 +56,8 @@ export default function MobileNavDrawer({
   returnFocusRef,
   labels,
 }: MobileNavDrawerProps) {
-  const [openGroup, setOpenGroup] = useState<string | null>(null)
+  // Subcategorías desplegadas por defecto; el chevron permite colapsar un grupo.
+  const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(() => new Set())
   const [rendered, setRendered] = useState(false)
   const panelRef = useRef<HTMLDivElement>(null)
   const [position, setPosition] = useState<{ top: number; right: number } | null>(null)
@@ -96,7 +97,7 @@ export default function MobileNavDrawer({
   }, [open, returnFocusRef])
 
   useEffect(() => {
-    if (!open && !rendered) setOpenGroup(null)
+    if (!open && !rendered) setCollapsedGroups(new Set())
   }, [open, rendered])
 
   // Close on Escape, an outside press, or keyboard focus leaving the popover.
@@ -159,7 +160,7 @@ export default function MobileNavDrawer({
             id={id}
             aria-label={labels.mainNav}
             style={{ top: position?.top, right: position?.right, maxHeight: `calc(100dvh - ${position?.top ?? 0}px - 12px)`, visibility: position ? "visible" : "hidden" }}
-            className={`somos-mobile-menu-motion fixed z-[71] flex w-[230px] max-w-[calc(100vw-24px)] origin-top-right flex-col overflow-y-auto overscroll-contain rounded-2xl border border-[#3898EC]/30 bg-white p-3 shadow-xl ${open ? "animate-[somos-menu-in_200ms_ease-out_both]" : "animate-[somos-menu-out_180ms_ease-in_both]"}`}
+            className={`somos-mobile-menu-motion fixed z-[71] flex w-[260px] max-w-[calc(100vw-24px)] origin-top-right flex-col overflow-y-auto overscroll-contain rounded-2xl border border-[#3898EC]/30 bg-white p-3 shadow-xl ${open ? "animate-[somos-menu-in_200ms_ease-out_both]" : "animate-[somos-menu-out_180ms_ease-in_both]"}`}
           >
             <nav aria-label={labels.mainNav} className="space-y-1">
               {navLinks.map((link) => {
@@ -184,7 +185,7 @@ export default function MobileNavDrawer({
                 }
 
                 const groupId = `mobile-accordion-${slugify(link.label)}`
-                const groupOpen = openGroup === link.label
+                const groupOpen = !collapsedGroups.has(link.label)
                 return (
                   <div key={link.label} className="border-b border-[#f3f3f3] last:border-b-0">
                     <div className="flex items-center">
@@ -199,7 +200,14 @@ export default function MobileNavDrawer({
                       </Link>
                       <button
                         type="button"
-                        onClick={() => setOpenGroup((prev) => (prev === link.label ? null : link.label))}
+                        onClick={() =>
+                          setCollapsedGroups((prev) => {
+                            const next = new Set(prev)
+                            if (next.has(link.label)) next.delete(link.label)
+                            else next.add(link.label)
+                            return next
+                          })
+                        }
                         aria-expanded={groupOpen}
                         aria-controls={groupId}
                         aria-label={`${link.label}: ${groupOpen ? labels.closeMenu : labels.openMenu}`}
@@ -209,13 +217,13 @@ export default function MobileNavDrawer({
                       </button>
                     </div>
                     {groupOpen && (
-                      <div id={groupId} className="my-2 ml-4 border-l-2 border-[#3898EC]/20 pb-2 pl-2">
+                      <div id={groupId} className="mb-2 ml-3 border-l-2 border-[#3898EC]/20 pl-2">
                         {link.children.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
                             onClick={onClose}
-                            className="block rounded-lg min-h-[44px] flex items-center px-3 py-3 text-sm text-[#444444] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
+                            className="flex min-h-[36px] items-center rounded-lg px-2 py-1.5 text-[13px] leading-snug text-[#555555] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
                           >
                             {child.label}
                           </Link>

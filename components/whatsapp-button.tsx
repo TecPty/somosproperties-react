@@ -9,6 +9,8 @@ import { trackGoogleAdsEvent } from "@/lib/google-ads"
 import { trackLinkedInEvent } from "@/lib/linkedin-pixel"
 import { CONTACT, FORMS } from "@/lib/config"
 
+const INSTAGRAM_URL = "https://www.instagram.com/somosproperties/"
+
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false)
   const pathname = usePathname()
@@ -43,7 +45,35 @@ export default function WhatsAppButton() {
 
   if (showBanner) return null
 
+  const visibility = isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+
   return (
+    <>
+    {/* Botón de Instagram, encima del de WhatsApp */}
+    <a
+      href={INSTAGRAM_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Síguenos en Instagram"
+      tabIndex={isVisible ? undefined : -1}
+      className={`fixed bottom-[calc(4.5rem+env(safe-area-inset-bottom))] right-4 md:bottom-[5.5rem] md:right-6 z-40 ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full text-white shadow-lg bg-[linear-gradient(45deg,#f09433_0%,#e6683c_25%,#dc2743_50%,#cc2366_75%,#bc1888_100%)] hover:scale-110 transition-all duration-300 ${visibility}`}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6 md:w-7 md:h-7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+      </svg>
+    </a>
     <button
       onClick={handleWhatsAppClick}
       className={`fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 md:bottom-6 md:right-6 z-40 ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#20BA5A] hover:scale-110 transition-all duration-300 ${
@@ -63,5 +93,6 @@ export default function WhatsAppButton() {
       {/* Pulso animado */}
       <span className="absolute w-full h-full bg-[#25D366] rounded-full hidden md:block animate-ping opacity-20" />
     </button>
+    </>
   )
 }
