@@ -12,23 +12,38 @@ import { CONTACT, FORMS } from "@/lib/config"
 const INSTAGRAM_URL = "https://www.instagram.com/somosproperties/"
 
 export default function WhatsAppButton() {
-  const [isVisible, setIsVisible] = useState(false)
+  // Siempre visibles en la esquina (como HomePower). Si el aviso de cookies
+  // está abierto, los botones suben para quedar por encima de él.
+  const [bannerOffset, setBannerOffset] = useState(0)
   const pathname = usePathname()
   const { showBanner } = useConsentManager()
   const isPropertyPage = pathname.split("/").includes("propiedad")
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true)
-      } else {
-        setIsVisible(false)
-      }
+    if (!showBanner) {
+      setBannerOffset(0)
+      return
     }
-
-    window.addEventListener("scroll", toggleVisibility)
-    return () => window.removeEventListener("scroll", toggleVisibility)
-  }, [])
+    // El aviso se carga de forma diferida: esperamos a que exista en el DOM.
+    let observer: ResizeObserver | null = null
+    let tries = 0
+    const attach = () => {
+      const banner = document.getElementById("consent-banner")
+      if (!banner) {
+        if (tries++ < 50) timer = window.setTimeout(attach, 200)
+        return
+      }
+      const update = () => setBannerOffset(banner.getBoundingClientRect().height)
+      update()
+      observer = new ResizeObserver(update)
+      observer.observe(banner)
+    }
+    let timer = window.setTimeout(attach, 0)
+    return () => {
+      window.clearTimeout(timer)
+      observer?.disconnect()
+    }
+  }, [showBanner])
 
   const handleWhatsAppClick = () => {
     // Rastrear evento en todos los píxeles
@@ -43,9 +58,9 @@ export default function WhatsAppButton() {
     window.open(whatsappUrl, "_blank", "noopener,noreferrer")
   }
 
-  if (showBanner) return null
-
-  const visibility = isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+  // Por encima del aviso de cookies (z-[60]) mientras esté abierto
+  const lift = bannerOffset ? { transform: `translateY(-${bannerOffset}px)` } : undefined
+  const layer = bannerOffset ? "z-[61]" : "z-40"
 
   return (
     <>
@@ -55,8 +70,8 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Síguenos en Instagram"
-      tabIndex={isVisible ? undefined : -1}
-      className={`fixed bottom-[calc(4.5rem+env(safe-area-inset-bottom))] right-4 md:bottom-[5.5rem] md:right-6 z-40 ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full text-white shadow-lg bg-[linear-gradient(45deg,#f09433_0%,#e6683c_25%,#dc2743_50%,#cc2366_75%,#bc1888_100%)] hover:scale-110 transition-all duration-300 ${visibility}`}
+      style={lift}
+      className={`fixed bottom-[calc(4.5rem+env(safe-area-inset-bottom))] right-4 md:bottom-[5.5rem] md:right-6 ${layer} ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full text-white shadow-lg bg-[linear-gradient(45deg,#f09433_0%,#e6683c_25%,#dc2743_50%,#cc2366_75%,#bc1888_100%)] hover:brightness-110 transition-all duration-300`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -76,9 +91,8 @@ export default function WhatsAppButton() {
     </a>
     <button
       onClick={handleWhatsAppClick}
-      className={`fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 md:bottom-6 md:right-6 z-40 ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#20BA5A] hover:scale-110 transition-all duration-300 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
-      }`}
+      style={lift}
+      className={`fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 md:bottom-6 md:right-6 ${layer} ${isPropertyPage ? "hidden md:flex" : "flex"} items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#20BA5A] transition-all duration-300`}
       aria-label={`Contactar por WhatsApp a ${CONTACT.whatsapp.phone}`}
     >
       <svg
