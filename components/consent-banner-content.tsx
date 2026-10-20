@@ -23,7 +23,7 @@ export default function ConsentBannerContent() {
       )}
 
       {/* Banner */}
-      <div className="fixed bottom-0 left-0 right-0 z-[60] max-h-[85dvh] overflow-y-auto pb-[env(safe-area-inset-bottom)] bg-white border-t border-[#eeeeee] shadow-lg">
+      <div id="consent-banner" className="fixed bottom-0 left-0 right-0 z-[60] max-h-[85dvh] overflow-y-auto pb-[env(safe-area-inset-bottom)] bg-white border-t border-[#eeeeee] shadow-lg">
         <div className="container-custom py-4 sm:py-6 px-4">
           {!expanded ? (
             // Modo compacto
