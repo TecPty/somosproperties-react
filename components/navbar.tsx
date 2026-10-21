@@ -299,7 +299,6 @@ export default function Navbar() {
         { href: `/${locale}/comerciales?search=Sunset%20Strip`, label: "Sunset Strip" },
         { href: `/${locale}/comerciales?search=Balboa%20Boutique`, label: "Balboa Boutique" },
         { href: `/${locale}/comerciales?search=Plaza%20Los%20Guayacanes`, label: "Plaza Los Guayacanes" },
-        { href: `/${locale}/comerciales?search=Rali%20Business%20Center`, label: "Rali Business Center" },
         { href: `/${locale}/comerciales?search=Evolution%20Tower`, label: "Evolution Tower" },
         { href: `/${locale}/comerciales?search=Boulevard%20Plaza%20Costa%20Verde`, label: "Boulevard Plaza Costa Verde" },
         { href: `/${locale}/comerciales?search=Terrazas%20de%20Coronado`, label: "Terrazas de Coronado" },
