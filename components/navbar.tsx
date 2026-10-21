@@ -87,7 +87,7 @@ function NavDropdown({
           href={link.href}
           className={`whitespace-nowrap text-[#222222] hover:text-[#3898EC] transition-colors relative pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC] rounded ${
             isActive(link.href) ? "text-[#0082f3] border-b-2 border-[#0082f3]" : ""
-          }`}
+          } ${link.href.includes("premium") ? "font-bold" : ""}`}
         >
           {link.label}
         </Link>
@@ -121,6 +121,7 @@ function NavDropdown({
                 key={child.href}
                 href={child.href}
                 role="menuitem"
+                onClick={() => setOpenMenu(null)}
                 className="block rounded-lg px-3 py-2 text-sm text-[#222222] hover:bg-[#f2f6fb] hover:text-[#3898EC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3898EC]"
               >
                 {child.label}
@@ -281,7 +282,14 @@ export default function Navbar() {
 
   const navLinks: NavLink[] = [
     { href: `/${locale}`, label: t('home') },
-    { href: `/${locale}/premium`, label: t('premium') },
+    {
+      href: `/${locale}/premium`,
+      label: t('premium'),
+      children: [
+        { href: `/${locale}/premium#premium-comerciales`, label: locale === 'en' ? "Commercial Spaces" : "Locales Comerciales" },
+        { href: `/${locale}/premium#premium-residenciales`, label: locale === 'en' ? "Residential" : "Residenciales" },
+      ],
+    },
     {
       href: `/${locale}/comerciales`,
       label: t('commercial'),
