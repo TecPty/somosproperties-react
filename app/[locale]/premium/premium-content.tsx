@@ -244,7 +244,7 @@ export default function PremiumContent() {
 
               <div className="space-y-16 sm:space-y-24">
                 {premiumGroups.map((group) => (
-                  <div key={group.id} id={group.id} className="scroll-mt-28">
+                  <div key={group.id} id={group.id} className="scroll-mt-44">
                     <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-8 border-b-2 border-[#d4af37]/40 pb-4">
                       <div>
                         <h3 className="text-2xl sm:text-3xl font-bold text-[#222222]">
