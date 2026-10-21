@@ -450,6 +450,17 @@
       "subtitle": "Our team of premium advisors is ready to help you find the perfect property",
       "contactBtn": "Contact VIP Advisor",
       "viewAllBtn": "View All Properties"
+    },
+    "groups": {
+      "residential": {
+        "title": "Residential",
+        "subtitle": "High-end apartments, homes and villas"
+      },
+      "commercial": {
+        "title": "Commercial Spaces",
+        "subtitle": "Retail units and commercial spaces in strategic locations"
+      },
+      "count": "{count} properties"
     }
   },
   "promotionalModal": {
