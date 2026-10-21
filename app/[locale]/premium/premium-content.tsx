@@ -13,6 +13,12 @@ export default function PremiumContent() {
   const params = useParams()
   const locale = params?.locale || 'es'
   const premiumProperties = getPremiumProperties(allPropertiesData)
+  const residentialPremium = premiumProperties.filter((p) => p.category === "Residencial")
+  const commercialPremium = premiumProperties.filter((p) => p.category === "Comercial")
+  const premiumGroups = [
+    { id: "premium-comerciales", key: "commercial", items: commercialPremium },
+    { id: "premium-residenciales", key: "residential", items: residentialPremium },
+  ].filter((g) => g.items.length > 0)
 
   const [showHeroVideo, setShowHeroVideo] = useState(false)
 
@@ -219,7 +225,42 @@ export default function PremiumContent() {
           </div>
 
           {premiumProperties.length > 0 ? (
-            <PropertyGrid properties={premiumProperties} />
+            <>
+              {/* Selector de categoría */}
+              <div className="flex flex-wrap justify-center gap-3 mb-12">
+                {premiumGroups.map((group) => (
+                  <a
+                    key={group.id}
+                    href={`#${group.id}`}
+                    className="inline-flex items-center gap-2 bg-white border-2 border-[#d4af37] text-[#1a1a1a] px-6 py-3 rounded-full font-semibold hover:bg-gradient-to-r hover:from-[#d4af37] hover:to-[#f4e4b8] transition-all shadow-sm"
+                  >
+                    {t(`groups.${group.key}.title`)}
+                    <span className="bg-[#1a1a1a] text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                      {group.items.length}
+                    </span>
+                  </a>
+                ))}
+              </div>
+
+              <div className="space-y-16 sm:space-y-24">
+                {premiumGroups.map((group) => (
+                  <div key={group.id} id={group.id} className="scroll-mt-28">
+                    <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-8 border-b-2 border-[#d4af37]/40 pb-4">
+                      <div>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-[#222222]">
+                          {t(`groups.${group.key}.title`)}
+                        </h3>
+                        <p className="text-[#5d6c7b] mt-1">{t(`groups.${group.key}.subtitle`)}</p>
+                      </div>
+                      <span className="text-sm font-semibold text-[#b8942f]">
+                        {t("groups.count", { count: group.items.length })}
+                      </span>
+                    </div>
+                    <PropertyGrid properties={group.items} />
+                  </div>
+                ))}
+              </div>
+            </>
           ) : (
             <div className="text-center py-20">
               <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-[#d4af37] to-[#f4e4b8] rounded-full flex items-center justify-center">

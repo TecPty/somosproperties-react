@@ -569,11 +569,17 @@
       "parkingSpots": 6,
       "area": 206.56,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-business-plaza/property-026/5.webp",
+      "image": "/images/properties/the-towers-business-plaza/property-242/foto-1.webp",
       "images": [
-        "/images/properties/the-towers-business-plaza/property-026/5.webp",
-        "/images/properties/the-towers-business-plaza/property-026/6.webp",
-        "/images/properties/the-towers-business-plaza/property-026/7.webp"
+        "/images/properties/the-towers-business-plaza/property-242/foto-1.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-2.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-3.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-4.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-5.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-6.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-7.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-8.webp",
+        "/images/properties/the-towers-business-plaza/property-242/foto-9.webp"
       ],
       "planos": [],
       "description": "Local en Planta Baja frente a Calle 50, The Towers Business Plaza. Total 206.56 m² (Mezzanine 87.90 m² + Planta baja 118.66 m²). Venta: $495,000 | Alquiler: $4,000/mes + depósito $3,772. Mantenimiento $465/mes ($2.25/m²). 6 estacionamientos incluidos. Ubicación estratégica con alto tráfico vehicular.",
@@ -915,17 +921,11 @@
       "parkingSpots": 6,
       "area": 171,
       "builtYear": 2024,
-      "image": "/images/properties/the-towers-business-plaza/property-242/foto-1.webp",
+      "image": "/images/properties/the-towers-business-plaza/property-026/5.webp",
       "images": [
-        "/images/properties/the-towers-business-plaza/property-242/foto-1.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-2.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-3.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-4.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-5.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-6.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-7.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-8.webp",
-        "/images/properties/the-towers-business-plaza/property-242/foto-9.webp"
+        "/images/properties/the-towers-business-plaza/property-026/5.webp",
+        "/images/properties/the-towers-business-plaza/property-026/6.webp",
+        "/images/properties/the-towers-business-plaza/property-026/7.webp"
       ],
       "planos": [],
       "description": "División del Local 2-A, The Towers Business Plaza, Calle 50. 171 m². Venta: $397,500 | Alquiler: $2,745/mes + depósito $2,565. Mantenimiento $396/mes ($2.25/m²). 6 estacionamientos. También disponible combinado con la división de 181 m² como Local Completo (352 m²): Venta $760,000 | Alquiler $5,650/mes + depósito $5,280 | Mantenimiento $792/mes.",
@@ -6889,7 +6889,7 @@
       "bathrooms": 2.5,
       "parkingSpots": 2,
       "area": 167,
-      "builtYear": 2026,
+      "builtYear": 2027,
       "lote": 180,
       "image": "/images/properties/new-west/modelo-nevada.webp",
       "images": [
@@ -6901,28 +6901,31 @@
       "planos": [
         "/images/properties/new-west/14.svg"
       ],
-      "description": "Casa modelo Nevada en New West I Costa Verde. 2 plantas, 3 recámaras, 167 m² de construcción. Lotes desde 180 m². Conjunto residencial de 140 casas con área social independiente. 10% de abono inicial. Aplica con ingreso familiar de $3,500. Se trabaja con todos los bancos.",
+      "description": "Casa modelo Nevada de 2 plantas en New West Costa Verde. 167 m² de construcción en lotes desde 180 m². Modelo amplio y exclusivo con 3 recámaras, walk-in closet en recámara principal, cocina abierta integrada al área de sala-comedor, terraza y depósito interno. Precio desde $240,000. New West es un proyecto residencial cerrado en Costa Verde, La Chorrera, con seguridad 24/7, amenidades para todas las edades y 2.25 hectáreas de reserva ecológica. Entrega en 12 meses.",
       "amenities": [
-        "Conjunto residencial 140 casas",
-        "Área social independiente",
+        "Proyecto residencial cerrado",
         "Seguridad 24/7",
-        "Parque infantil",
-        "Áreas verdes",
-        "Garita de acceso",
+        "Piscina para niños y adultos",
+        "Gimnasio full equipado",
         "Canchas deportivas",
-        "Salón de eventos",
-        "Gimnasio equipado"
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Gazebo para fiestas",
+        "2.25 hectáreas de reserva ecológica"
       ],
       "featured": true,
       "status": "available",
       "highlights": [
+        "Entrega en 12 meses",
         "167 m² - 3 recámaras - 2 plantas",
         "Lotes desde 180 m²",
-        "10% abono inicial - Trabaja con todos los bancos"
+        "Walk-in closet en recámara principal",
+        "Cocina abierta integrada a sala-comedor",
+        "Terraza y depósito interno"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-nevada-entrega-inmediata",
-      "description_en": "Nevada model home at New West I Costa Verde. 2 levels, 3 bedrooms, 167 m². 10% down payment. Minimum household income $3,500."
+      "description_en": "Nevada two-story model at New West Costa Verde. 167 m² built on lots from 180 m². Spacious, exclusive layout with 3 bedrooms, walk-in closet in the master bedroom, open kitchen integrated with the living-dining area, terrace and indoor storage. From $240,000. New West is a gated residential community in Costa Verde, La Chorrera, with 24/7 security, amenities for all ages and 2.25 hectares of ecological reserve. Delivery in 12 months."
     },
     {
       "id": 259,
@@ -6939,7 +6942,7 @@
       "bathrooms": 2.5,
       "parkingSpots": 2,
       "area": 137,
-      "builtYear": 2026,
+      "builtYear": 2027,
       "lote": 180,
       "image": "/images/properties/new-west/modelo-ilana.webp",
       "images": [
@@ -6950,29 +6953,34 @@
       "planos": [
         "/images/properties/new-west/12.svg"
       ],
-      "description": "Casa modelo Ilana en New West I Costa Verde. 2 plantas, 3 recámaras, 137 m² de construcción. Lote 180 m². Conjunto residencial con amenidades completas. Aplica con ingreso familiar de $3,500.",
+      "description": "Casa modelo Ilana de 2 plantas en New West Costa Verde. 137 m² de construcción en lotes desde 180 m². Distribución eficiente de 3 recámaras, cocina abierta, terraza, depósito interno y 1/2 baño de visitas. Práctica y accesible para la familia moderna. Precio desde $180,000. New West es un proyecto residencial cerrado en Costa Verde, La Chorrera, con seguridad 24/7, amenidades para todas las edades y 2.25 hectáreas de reserva ecológica. Entrega en 12 meses.",
       "amenities": [
-        "Conjunto residencial 140 casas",
-        "Área social independiente",
+        "Proyecto residencial cerrado",
         "Seguridad 24/7",
-        "Parque infantil",
-        "Piscina",
-        "Gimnasio"
+        "Piscina para niños y adultos",
+        "Gimnasio full equipado",
+        "Canchas deportivas",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Gazebo para fiestas",
+        "2.25 hectáreas de reserva ecológica"
       ],
       "featured": false,
       "status": "available",
       "highlights": [
-        "137 m² - 3 recámaras",
-        "Precio $180,000",
-        "Lote 180 m²"
+        "Entrega en 12 meses",
+        "137 m² - 3 recámaras - 2 plantas",
+        "Lotes desde 180 m²",
+        "Cocina abierta y terraza",
+        "1/2 baño de visitas y depósito interno"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-ilana",
-      "description_en": "Ilana model home at New West I Costa Verde. 2 levels, 3 bedrooms, 137 m². 180 m² lot. Minimum household income $3,500."
+      "description_en": "Ilana two-story model at New West Costa Verde. 137 m² built on lots from 180 m². Efficient layout with 3 bedrooms, open kitchen, terrace, indoor storage and a guest half bath. From $180,000. New West is a gated residential community in Costa Verde, La Chorrera, with 24/7 security, amenities for all ages and 2.25 hectares of ecological reserve. Delivery in 12 months."
     },
     {
       "id": 260,
-      "title": "New West Costa Verde - Modelo Jazmin",
+      "title": "New West Costa Verde - Modelo Jazmín",
       "type": "Casa",
       "category": "Residencial",
       "operation": "Venta",
@@ -6985,7 +6993,7 @@
       "bathrooms": 2.5,
       "parkingSpots": 2,
       "area": 157,
-      "builtYear": 2026,
+      "builtYear": 2027,
       "lote": 180,
       "image": "/images/properties/new-west/modelo-jazmin/1.webp",
       "images": [
@@ -7009,23 +7017,30 @@
       "planos": [
         "/images/properties/new-west/13.svg"
       ],
-      "description": "Casa modelo Jazmin en New West I Costa Verde. 2 plantas, 3 recámaras, 157 m² de construcción. Lotes desde 180 m². Aplica con ingreso familiar de $3,500.",
+      "description": "Casa modelo Jazmín de 2 plantas en New West Costa Verde. 157 m² de construcción en lotes desde 180 m². 3 recámaras con opción a una 4ta recámara en planta baja o den familiar, y medio baño de visitas. Arriba, la recámara principal cuenta con balcón privado y walk-in closet. Precio desde $220,000. New West es un proyecto residencial cerrado en Costa Verde, La Chorrera, con seguridad 24/7, amenidades para todas las edades y 2.25 hectáreas de reserva ecológica. Entrega en 12 meses.",
       "amenities": [
-        "Conjunto residencial 140 casas",
-        "Área social independiente",
+        "Proyecto residencial cerrado",
         "Seguridad 24/7",
-        "Área de BBQ",
-        "Piscina"
+        "Piscina para niños y adultos",
+        "Gimnasio full equipado",
+        "Canchas deportivas",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Gazebo para fiestas",
+        "2.25 hectáreas de reserva ecológica"
       ],
       "featured": false,
       "status": "available",
       "highlights": [
-        "157 m² - 3 recámaras",
-        "Precio $220,000"
+        "Entrega en 12 meses",
+        "157 m² - 3 recámaras - 2 plantas",
+        "Opción a 4ta recámara o den en planta baja",
+        "Recámara principal con balcón privado y walk-in closet",
+        "1/2 baño de visitas"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-jazmin",
-      "description_en": "Jasmine model home at New West I Costa Verde. 2 levels, 3 bedrooms, 157 m². Lots from 180 m². Minimum household income $3,500."
+      "description_en": "Jazmín two-story model at New West Costa Verde. 157 m² built on lots from 180 m². 3 bedrooms with the option of a 4th bedroom or family den on the ground floor, plus a guest half bath. Upstairs, the master bedroom has a private balcony and walk-in closet. From $220,000. New West is a gated residential community in Costa Verde, La Chorrera, with 24/7 security, amenities for all ages and 2.25 hectares of ecological reserve. Delivery in 12 months."
     },
     {
       "id": 261,
@@ -7033,7 +7048,7 @@
       "type": "Casa",
       "category": "Residencial",
       "operation": "Venta",
-      "price": 150000,
+      "price": 160000,
       "pricePerMonth": null,
       "location": "Bulevar Costa Verde, La Chorrera",
       "city": "Panamá Oeste",
@@ -7041,8 +7056,8 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "parkingSpots": 2,
-      "area": 122,
-      "builtYear": 2026,
+      "area": 118,
+      "builtYear": 2027,
       "lote": 200,
       "image": "/images/properties/new-west/modelo-cedro.webp",
       "images": [
@@ -7052,29 +7067,34 @@
         "/images/properties/new-west/hero/juegos-infantiles.webp"
       ],
       "planos": [
-        "/images/properties/new-west/17.svg"
+        "/images/properties/new-west/floorplans/cedro/plano-cedro.webp",
+        "/images/properties/new-west/floorplans/cedro/plano-cedro-ficha.webp"
       ],
-      "description": "Casa unifamiliar de una sola planta con diseño optimizado para aprovechar cada metro cuadrado en New West II Costa Verde. Cuenta con cocina abierta integrada al área social.",
+      "description": "Casa modelo Cedro de 1 planta en New West Costa Verde. 118 m² de construcción en lote de 200 m². Cuenta con den familiar con salida directa al patio trasero, 2 recámaras, 2 baños, cocina abierta, terraza, 2 estacionamientos y walk-in closet en recámara principal. Precio desde $160,000. New West es un proyecto residencial cerrado en Costa Verde, La Chorrera, con seguridad 24/7, amenidades para todas las edades y 2.25 hectáreas de reserva ecológica. Entrega en 12 meses.",
       "amenities": [
-        "Casa unifamiliar 1 planta",
-        "Área social con piscina",
-        "Gimnasio equipado",
-        "Gazebo para eventos",
-        "Áreas verdes y parques",
-        "Seguridad 24/7"
+        "Proyecto residencial cerrado",
+        "Seguridad 24/7",
+        "Piscina para niños y adultos",
+        "Gimnasio full equipado",
+        "Canchas deportivas",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Gazebo para fiestas",
+        "2.25 hectáreas de reserva ecológica"
       ],
       "featured": true,
       "status": "available",
       "highlights": [
-        "122 m² - 2 recámaras - 1 planta",
-        "Den Familiar: Espacio versátil",
-        "Cocina Abierta",
-        "Walk-in Closet en recámara principal",
-        "Acabados de alta calidad"
+        "Entrega en 12 meses",
+        "118 m² - 2 recámaras - 1 planta",
+        "Lote de 200 m²",
+        "Den familiar con salida al patio trasero",
+        "Cocina abierta",
+        "Walk-in closet en recámara principal"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-cedro-entrega-inmediata",
-      "description_en": "Cedro model — single-level home with optimized design at New West II Costa Verde. Open kitchen integrated with the social area."
+      "description_en": "Cedro single-level model at New West Costa Verde. 118 m² built on a 200 m² lot. Family den with direct access to the backyard, 2 bedrooms, 2 bathrooms, open kitchen, terrace, 2 parking spaces and walk-in closet in the master bedroom. From $160,000. New West is a gated residential community in Costa Verde, La Chorrera, with 24/7 security, amenities for all ages and 2.25 hectares of ecological reserve. Delivery in 12 months."
     },
     {
       "id": 262,
@@ -7082,7 +7102,7 @@
       "type": "Casa",
       "category": "Residencial",
       "operation": "Venta",
-      "price": 150000,
+      "price": 160000,
       "pricePerMonth": null,
       "location": "Bulevar Costa Verde, La Chorrera",
       "city": "Panamá Oeste",
@@ -7091,8 +7111,8 @@
       "bathrooms": 2,
       "parkingSpots": 2,
       "area": 122,
-      "builtYear": 2026,
-      "lote": 220,
+      "builtYear": 2027,
+      "lote": 200,
       "image": "/images/properties/new-west/modelo-roble.webp",
       "images": [
         "/images/properties/new-west/modelo-roble.webp",
@@ -7101,29 +7121,87 @@
         "/images/properties/new-west/hero/juegos-infantiles.webp"
       ],
       "planos": [
-        "/images/properties/new-west/17.svg"
+        "/images/properties/new-west/floorplans/roble/plano-roble.webp",
+        "/images/properties/new-west/floorplans/roble/plano-roble-ficha.webp"
       ],
-      "description": "Modelo unifamiliar de una sola planta que prioriza el espacio familiar y la conexión con el exterior en New West II Costa Verde. Cuenta con amplia sala-comedor y terraza techada.",
+      "description": "Casa modelo Roble de 1 planta en New West Costa Verde. 122 m² de construcción en lote de 200 m². Distribución tradicional con cocina cerrada; la sala-comedor conecta directamente con el patio trasero. 3 recámaras, 2 baños, terraza, 2 estacionamientos y walk-in closet en la habitación principal. Precio desde $160,000. New West es un proyecto residencial cerrado en Costa Verde, La Chorrera, con seguridad 24/7, amenidades para todas las edades y 2.25 hectáreas de reserva ecológica. Entrega en 12 meses.",
       "amenities": [
-        "Casa unifamiliar 1 planta",
-        "Área social con piscina",
-        "Gimnasio equipado",
-        "Gazebo para eventos",
-        "Áreas verdes y parques",
-        "Seguridad 24/7"
+        "Proyecto residencial cerrado",
+        "Seguridad 24/7",
+        "Piscina para niños y adultos",
+        "Gimnasio full equipado",
+        "Canchas deportivas",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Gazebo para fiestas",
+        "2.25 hectáreas de reserva ecológica"
       ],
       "featured": false,
       "status": "available",
       "highlights": [
+        "Entrega en 12 meses",
         "122 m² - 3 recámaras - 1 planta",
-        "Terraza techada ideal para reuniones",
-        "Walk-in Closet en recámara principal",
-        "Distribución: Amplia sala-comedor",
-        "Opción de 2 ó 3 recámaras"
+        "Lote de 200 m²",
+        "Cocina cerrada",
+        "Sala-comedor con salida al patio trasero",
+        "Walk-in closet en recámara principal"
       ],
       "minIncome": 3500,
       "slug": "new-west-costa-verde-modelo-roble",
-      "description_en": "Roble model — single-level home at New West II Costa Verde. Spacious living-dining area and covered terrace."
+      "description_en": "Roble single-level model at New West Costa Verde. 122 m² built on a 200 m² lot. Traditional layout with closed kitchen; the living-dining room opens directly to the backyard. 3 bedrooms, 2 bathrooms, terrace, 2 parking spaces and walk-in closet in the master bedroom. From $160,000. New West is a gated residential community in Costa Verde, La Chorrera, with 24/7 security, amenities for all ages and 2.25 hectares of ecological reserve. Delivery in 12 months."
+    },
+    {
+      "id": 293,
+      "title": "New West Costa Verde - Modelo Caoba",
+      "type": "Casa",
+      "category": "Residencial",
+      "operation": "Venta",
+      "price": 160000,
+      "pricePerMonth": null,
+      "location": "Bulevar Costa Verde, La Chorrera",
+      "city": "Panamá Oeste",
+      "district": "Costa Verde",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "parkingSpots": 2,
+      "area": 122,
+      "builtYear": 2027,
+      "lote": 200,
+      "image": "/images/properties/new-west/modelo-caoba.webp",
+      "images": [
+        "/images/properties/new-west/modelo-caoba.webp",
+        "/images/properties/new-west/hero/piscina-pergolas.webp",
+        "/images/properties/new-west/hero/gazebo-area-social.webp",
+        "/images/properties/new-west/hero/juegos-infantiles.webp"
+      ],
+      "planos": [
+        "/images/properties/new-west/floorplans/caoba/plano-caoba.webp",
+        "/images/properties/new-west/floorplans/caoba/plano-caoba-ficha.webp"
+      ],
+      "description": "Casa modelo Caoba de 1 planta en New West Costa Verde. 122 m² de construcción en lote de 200 m². Espacios interiores maximizados gracias a su diseño de concepto abierto con cocina integrada al área social. 3 recámaras, 2 baños, terraza, 2 estacionamientos y walk-in closet en la habitación principal. Precio desde $160,000. New West es un proyecto residencial cerrado en Costa Verde, La Chorrera, con seguridad 24/7, amenidades para todas las edades y 2.25 hectáreas de reserva ecológica. Entrega en 12 meses.",
+      "amenities": [
+        "Proyecto residencial cerrado",
+        "Seguridad 24/7",
+        "Piscina para niños y adultos",
+        "Gimnasio full equipado",
+        "Canchas deportivas",
+        "Juegos infantiles",
+        "Jardines y gazebos",
+        "Gazebo para fiestas",
+        "2.25 hectáreas de reserva ecológica"
+      ],
+      "featured": false,
+      "status": "available",
+      "highlights": [
+        "Entrega en 12 meses",
+        "122 m² - 3 recámaras - 1 planta",
+        "Lote de 200 m²",
+        "Concepto abierto: cocina integrada al área social",
+        "Walk-in closet en recámara principal"
+      ],
+      "minIncome": 3500,
+      "slug": "new-west-costa-verde-modelo-caoba",
+      "description_en": "Caoba single-level model at New West Costa Verde. 122 m² built on a 200 m² lot. Maximized interior space thanks to its open-concept design with the kitchen integrated into the social area. 3 bedrooms, 2 bathrooms, terrace, 2 parking spaces and walk-in closet in the master bedroom. From $160,000. New West is a gated residential community in Costa Verde, La Chorrera, with 24/7 security, amenities for all ages and 2.25 hectares of ecological reserve. Delivery in 12 months."
     },
     {
       "id": 263,

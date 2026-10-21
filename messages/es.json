@@ -450,6 +450,17 @@
       "subtitle": "Nuestro equipo de asesores premium está listo para ayudarte a encontrar la propiedad perfecta",
       "contactBtn": "Contactar Asesor VIP",
       "viewAllBtn": "Ver Todas las Propiedades"
+    },
+    "groups": {
+      "residential": {
+        "title": "Residenciales",
+        "subtitle": "Apartamentos, casas y villas de alto nivel"
+      },
+      "commercial": {
+        "title": "Locales Comerciales",
+        "subtitle": "Locales y espacios comerciales en ubicaciones estratégicas"
+      },
+      "count": "{count} propiedades"
     }
   },
   "promotionalModal": {
