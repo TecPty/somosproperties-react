@@ -558,8 +558,8 @@
       "slug": "the-towers-business-plaza-local-planta-baja-calle-50",
       "type": "Local",
       "category": "Comercial",
-      "operation": "Venta/Alquiler",
-      "price": 495000,
+      "operation": "Alquiler",
+      "price": 0,
       "pricePerMonth": 4000,
       "location": "Calle 50, Ciudad de Panamá",
       "city": "Ciudad de Panamá",
@@ -582,9 +582,9 @@
         "/images/properties/the-towers-business-plaza/property-242/foto-9.webp"
       ],
       "planos": [],
-      "description": "Local en Planta Baja frente a Calle 50, The Towers Business Plaza. Total 206.56 m² (Mezzanine 87.90 m² + Planta baja 118.66 m²). Venta: $495,000 | Alquiler: $4,000/mes + depósito $3,772. Mantenimiento $465/mes ($2.25/m²). 6 estacionamientos incluidos. Ubicación estratégica con alto tráfico vehicular.",
+      "description": "Local en Planta Baja frente a Calle 50, The Towers Business Plaza. Total 206.56 m² (Mezzanine 87.90 m² + Planta baja 118.66 m²). Alquiler: $4,000/mes + depósito $3,772. Mantenimiento $465/mes ($2.25/m²). 6 estacionamientos incluidos. Ubicación estratégica con alto tráfico vehicular.",
       "amenities": [
-        "Local Comercial en Venta/Alquiler",
+        "Local Comercial en Alquiler",
         "Planta Baja - Calle 50",
         "Mezzanine + Planta Baja",
         "206.56 m² Totales",
@@ -597,11 +597,11 @@
       "featured": false,
       "highlights": [
         "206.56 m² totales (Mezzanine 87.90 m² + PB 118.66 m²)",
-        "Venta: $495,000 | Alquiler: $4,000/mes",
+        "Alquiler: $4,000/mes + depósito $3,772",
         "6 estacionamientos incluidos",
         "Mantenimiento: $465/mes"
       ],
-      "description_en": "Ground-floor unit facing Calle 50 — The Towers Business Plaza. Total 206.56 m² (Mezzanine 87.90 m² + Ground floor 118.66 m²). Sale: $495,000 | Rent: $4,000/month + deposit $3,772. HOA $465/month. 6 parking spots included."
+      "description_en": "Ground-floor unit facing Calle 50 — The Towers Business Plaza. Total 206.56 m² (Mezzanine 87.90 m² + Ground floor 118.66 m²). Rent: $4,000/month + deposit $3,772. HOA $465/month. 6 parking spots included."
     },
     {
       "id": 243,
