@@ -342,8 +342,6 @@ export default function Navbar() {
     { href: `/${locale}/contacto`, label: t('contact') },
   ]
 
-  const hideMobileHeaderSearch = LISTING_SEGMENTS.includes(pathname.split("/").filter(Boolean)[1] || "")
-
   const isActive = (href: string) => {
     if (href === `/${locale}`) return pathname === `/${locale}`
     return pathname.startsWith(href)
@@ -457,7 +455,7 @@ export default function Navbar() {
       </div>
 
       {/* Row 2: global property search (all routes) */}
-      <div className={`border-t border-[#f0f0f0] ${hideMobileHeaderSearch ? "hidden lg:block" : ""}`}>
+      <div className="border-t border-[#f0f0f0]">
         <div className="container-custom">
           <div className="py-1 sm:py-3">
             <Suspense

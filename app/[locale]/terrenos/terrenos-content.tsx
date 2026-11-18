@@ -2,7 +2,6 @@
 
 import { TERRENOS_PROPERTY_IDS } from "@/lib/terrenos"
 import PropertyGrid from "@/components/property-grid"
-import PropertySearchInput from "@/components/property-search-input"
 import { usePropertySearchBridge } from "@/components/property-search-bridge"
 import Pagination from "@/components/pagination"
 import { useProperties } from "@/hooks/use-properties"
@@ -12,7 +11,6 @@ import { useEffect } from "react"
 
 export default function TerrenosContent() {
   const t = useTranslations('terrenos')
-  const tSearch = useTranslations('searchBar')
   const { filters, updateFilters } = useFilters()
   const { properties, totalProperties, currentPage, totalPages, setCurrentPage } = useProperties(filters, 12, TERRENOS_PROPERTY_IDS)
   const bridge = usePropertySearchBridge()
@@ -36,18 +34,6 @@ export default function TerrenosContent() {
             <p className="text-lg text-[#999999]">{t('subtitle', { count: totalProperties })}</p>
           </div>
 
-          <div className="mb-8 max-w-2xl">
-            <PropertySearchInput
-              id="listing-search-terrenos"
-              value={filters.search ?? ""}
-              onChange={(value) => updateFilters({ search: value || undefined })}
-              onClear={() => updateFilters({ search: undefined })}
-              placeholder={tSearch('placeholder')}
-              ariaLabel={`${tSearch('inputAriaLabel')} — ${t('title')}`}
-              clearAriaLabel={tSearch('clearAriaLabel')}
-              formAriaLabel={`${tSearch('formAriaLabel')} — ${t('title')}`}
-            />
-          </div>
 
           <PropertyGrid properties={properties} />
           <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />

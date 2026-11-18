@@ -1,7 +1,6 @@
 "use client"
 
 import PropertyGrid from "@/components/property-grid"
-import PropertySearchInput from "@/components/property-search-input"
 import { usePropertySearchBridge } from "@/components/property-search-bridge"
 import Pagination from "@/components/pagination"
 import { SchemaMarkupMultiple } from "@/components/schema-markup"
@@ -19,7 +18,6 @@ interface PropertyCategoryViewProps {
 
 export default function PropertyCategoryView({ category, namespace }: PropertyCategoryViewProps) {
   const t = useTranslations(namespace)
-  const tSearch = useTranslations('searchBar')
   // Stable identity: an inline object literal here makes useFilters rebuild its
   // URL->state effect on every render, which reverts controlled input edits.
   const initialFilters = useMemo(() => ({ category }), [category])
@@ -53,18 +51,6 @@ export default function PropertyCategoryView({ category, namespace }: PropertyCa
             <p className="text-lg text-[#999999]">{t('resultsCount', { count: totalProperties })}</p>
           </div>
 
-          <div className="mb-8 max-w-2xl">
-            <PropertySearchInput
-              id={`listing-search-${category.toLowerCase()}`}
-              value={filters.search ?? ""}
-              onChange={(value) => updateFilters({ search: value || undefined })}
-              onClear={() => updateFilters({ search: undefined })}
-              placeholder={tSearch('placeholder')}
-              ariaLabel={`${tSearch('inputAriaLabel')} — ${t('title')}`}
-              clearAriaLabel={tSearch('clearAriaLabel')}
-              formAriaLabel={`${tSearch('formAriaLabel')} — ${t('title')}`}
-            />
-          </div>
 
           <PropertyGrid properties={properties} />
           <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
