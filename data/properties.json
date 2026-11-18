@@ -261,6 +261,67 @@
       "description_en": "Apartment 3-B in Tower 500 at Kings Park, Condado del Rey. 155.70 m² with 4 bedrooms and 4½ bathrooms. Sale price $280,000, HOA $295.83/month. Includes full appliances and 2 parking spaces."
     },
     {
+      "type": "Apartamento",
+      "category": "Residencial",
+      "operation": "Venta",
+      "price": 280000,
+      "pricePerMonth": null,
+      "location": "Condado del Rey, Ciudad de Panamá",
+      "city": "Ciudad de Panamá",
+      "district": "Condado del Rey",
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "parkingSpots": 2,
+      "area": 155.7,
+      "builtYear": 2021,
+      "image": "/images/properties/kings-park/torre-500/apto-3b/room-1.webp",
+      "images": [
+        "/images/properties/kings-park/torre-500/apto-3b/room-1.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/room.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/kitchen.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/bathroom.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/closet.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/laundry-service.webp",
+        "/images/properties/kings-park/torre-500/apto-3b/laundry-service-1.webp"
+      ],
+      "planos": [
+        "/images/properties/kings-park/floorplans/plano-modelo-a.webp",
+        "/images/properties/kings-park/floorplans/plano-modelo-b.webp"
+      ],
+      "featured": true,
+      "status": "available",
+      "id": 295,
+      "thumbnail": "/images/properties/kings-park/promotional/thumbnail-kings-park.webp",
+      "title": "Kings Park - Torre 500, Apto 10-B",
+      "description": "Apartamento 10-B en Torre 500 de Kings Park, Condado del Rey. 155.70 m² con 4 recámaras y 4 1/2 baños. Precio de venta $280,000 y mantenimiento mensual $295.83. Incluye línea blanca completa (lavadora, secadora, cocina, refrigeradora, aires acondicionado split y lámparas) y 2 estacionamientos.",
+      "amenities": [
+        "Sistema Smart Home integrado",
+        "Línea blanca completa incluida",
+        "Cuarto y baño de servicio",
+        "Amplio balcón",
+        "2 estacionamientos",
+        "Garita de seguridad con sistema inteligente",
+        "Canchas deportivas",
+        "Salones de fiesta",
+        "Piscinas",
+        "сrea de barbacoa",
+        "Gimnasio",
+        "Salón de ping pong y salón billar"
+      ],
+      "highlights": [
+        "155.70 m² - 4 recámaras, 4 1/2 baños",
+        "Precio $280,000",
+        "Mantenimiento $295.83/mes",
+        "Sistema Smart Home y línea blanca incluida"
+      ],
+      "incentives": [
+        "Sin abono inicial",
+        "Gastos legales gratis"
+      ],
+      "slug": "kings-park-torre-500-apto-10b",
+      "description_en": "Apartment 10-B in Tower 500 at Kings Park, Condado del Rey. 155.70 m² with 4 bedrooms and 4½ bathrooms. Sale price $280,000, HOA $295.83/month. Includes full appliances and 2 parking spaces."
+    },
+    {
       "id": 2,
       "title": "Central Plaza - La Chorrera",
       "type": "Local",
